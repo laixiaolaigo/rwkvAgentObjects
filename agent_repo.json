@@ -1,5 +1,13 @@
 [
   {
+    "projectName": "RWKV-Scout",
+    "repositoryUrl": "https://github.com/rwkv-rs/RWKV-Scout",
+    "lastUpdated": "2026-08-21T15:18:08Z",
+    "stars": 2,
+    "forks": 0,
+    "watchers": 0
+  },
+  {
     "projectName": "noesis",
     "repositoryUrl": "https://github.com/Vaniell0/noesis",
     "lastUpdated": "2026-08-21T14:37:33Z",
@@ -24,75 +32,11 @@
     "watchers": 0
   },
   {
-    "projectName": "RWKV-Scout",
-    "repositoryUrl": "https://github.com/rwkv-rs/RWKV-Scout",
-    "lastUpdated": "2026-08-21T15:18:08Z",
-    "stars": 2,
-    "forks": 0,
-    "watchers": 0
-  },
-  {
-    "projectName": "rwkv-agent-kit",
-    "repositoryUrl": "https://github.com/Ai00-X/rwkv-agent-kit",
-    "lastUpdated": "2025-09-09T02:49:57Z",
-    "stars": 16,
-    "forks": 0,
-    "watchers": 0
-  },
-  {
-    "projectName": "RWKV_Agent_Lite",
-    "repositoryUrl": "https://github.com/No-22-Github/RWKV_Agent_Lite",
-    "lastUpdated": "2026-03-26T03:33:30Z",
-    "stars": 1,
-    "forks": 0,
-    "watchers": 0
-  },
-  {
-    "projectName": "rwkv-harness",
-    "repositoryUrl": "https://github.com/CodeDoes/rwkv-harness",
-    "lastUpdated": "2026-07-07T00:59:46Z",
-    "stars": 2,
-    "forks": 0,
-    "watchers": 0
-  },
-  {
-    "projectName": "decide-search-ask",
-    "repositoryUrl": "https://github.com/FyrikCN/decide-search-ask",
-    "lastUpdated": "2026-07-14T11:36:58Z",
-    "stars": 1,
-    "forks": 0,
-    "watchers": 0
-  },
-  {
-    "projectName": "browsecomp-plus-eval",
-    "repositoryUrl": "https://github.com/rwkv-rs/browsecomp-plus-eval",
-    "lastUpdated": "2026-07-21T10:37:13Z",
-    "stars": 1,
-    "forks": 0,
-    "watchers": 0
-  },
-  {
-    "projectName": "primitive-bench",
-    "repositoryUrl": "https://github.com/marty1885/primitive-bench",
-    "lastUpdated": "2026-07-18T05:41:29Z",
-    "stars": 3,
-    "forks": 2,
-    "watchers": 0
-  },
-  {
     "projectName": "RWKV-Agent",
     "repositoryUrl": "https://github.com/No-22-Github/RWKV-Agent",
     "lastUpdated": "2026-08-20T12:54:06Z",
     "stars": 1,
     "forks": 0,
-    "watchers": 0
-  },
-  {
-    "projectName": "rwkv-Primitive-Bench",
-    "repositoryUrl": "https://github.com/RWKV-Vibe/rwkv-Primitive-Bench",
-    "lastUpdated": "2026-08-12T10:26:05Z",
-    "stars": 3,
-    "forks": 1,
     "watchers": 0
   },
   {
@@ -112,11 +56,67 @@
     "watchers": 0
   },
   {
+    "projectName": "rwkv-Primitive-Bench",
+    "repositoryUrl": "https://github.com/RWKV-Vibe/rwkv-Primitive-Bench",
+    "lastUpdated": "2026-08-12T10:26:05Z",
+    "stars": 3,
+    "forks": 1,
+    "watchers": 0
+  },
+  {
     "projectName": "rwkv-agent",
     "repositoryUrl": "https://github.com/123123213weqw/rwkv-agent",
     "lastUpdated": "2026-08-10T06:45:55Z",
     "stars": 7,
     "forks": 1,
+    "watchers": 0
+  },
+  {
+    "projectName": "browsecomp-plus-eval",
+    "repositoryUrl": "https://github.com/rwkv-rs/browsecomp-plus-eval",
+    "lastUpdated": "2026-07-21T10:37:13Z",
+    "stars": 1,
+    "forks": 0,
+    "watchers": 0
+  },
+  {
+    "projectName": "primitive-bench",
+    "repositoryUrl": "https://github.com/marty1885/primitive-bench",
+    "lastUpdated": "2026-07-18T05:41:29Z",
+    "stars": 3,
+    "forks": 2,
+    "watchers": 0
+  },
+  {
+    "projectName": "decide-search-ask",
+    "repositoryUrl": "https://github.com/FyrikCN/decide-search-ask",
+    "lastUpdated": "2026-07-14T11:36:58Z",
+    "stars": 1,
+    "forks": 0,
+    "watchers": 0
+  },
+  {
+    "projectName": "rwkv-harness",
+    "repositoryUrl": "https://github.com/CodeDoes/rwkv-harness",
+    "lastUpdated": "2026-07-07T00:59:46Z",
+    "stars": 2,
+    "forks": 0,
+    "watchers": 0
+  },
+  {
+    "projectName": "RWKV_Agent_Lite",
+    "repositoryUrl": "https://github.com/No-22-Github/RWKV_Agent_Lite",
+    "lastUpdated": "2026-03-26T03:33:30Z",
+    "stars": 1,
+    "forks": 0,
+    "watchers": 0
+  },
+  {
+    "projectName": "rwkv-agent-kit",
+    "repositoryUrl": "https://github.com/Ai00-X/rwkv-agent-kit",
+    "lastUpdated": "2025-09-09T02:49:57Z",
+    "stars": 16,
+    "forks": 0,
     "watchers": 0
   }
 ]
