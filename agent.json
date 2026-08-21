@@ -699,5 +699,87 @@
             "en": "The repository provides runnable Agent roles with explicit tool-use and autonomous execution workflows, rather than only exposing an RWKV inference engine.",
             "zh": "仓库提供可运行的多种Agent角色，并实现明确的工具使用和自主执行工作流，不只是提供RWKV推理引擎。"
         }
+    },
+    {
+        "创建用户名": "cgisky1980",
+        "作者备注": {
+            "en": "Ai00-X ecosystem maintainer; RWKV-7 state-embedding research",
+            "zh": "Ai00-X生态维护者；RWKV-7状态嵌入研究"
+        },
+        "用户头像": "https://avatars.githubusercontent.com/u/82481660?v=4",
+        "GitHub地址": "https://github.com/cgisky1980/rwkv7-state-embedding",
+        "项目名称": "rwkv7-state-embedding",
+        "创建时间": "2026-07-31T21:51:24Z",
+        "最后更新时间": "2026-08-21T09:51:22Z",
+        "主要语言": "Python",
+        "许可证": "MIT",
+        "Stars": 2,
+        "项目类型": {
+            "en": "RWKV-7 semantic embedding and Agent model-routing research",
+            "zh": "RWKV-7语义嵌入与Agent模型路由研究"
+        },
+        "介绍": {
+            "en": "A reproducible research project for extracting semantic embeddings from RWKV-7 hidden and WKV states with supervised task-specific projectors. It evaluates semantic similarity, topic clustering, and task classification, and documents deployment of the classification pipeline as the smart model router in the Ai00-X desktop Agent.",
+            "zh": "从RWKV-7隐藏状态和WKV状态中通过有监督、任务专用投影器提取语义嵌入的可复现研究项目。项目评测语义相似度、主题聚类和任务分类，并记录了将分类流程部署为Ai00-X桌面Agent智能模型路由器的实践。"
+        },
+        "Agent循环判断": {
+            "en": "The repository does not implement an independent Agent execution loop. Its classification head is an upstream Agent component that routes each task to an appropriate model tier; the production deployment uses a local RWKV-7 2.9B int8 backbone and falls within a broader Agent workflow implemented by ai00-x-client.",
+            "zh": "仓库本身不实现独立的Agent执行循环。其分类头是Agent上游组件，用于把每个任务路由到合适的模型层级；生产部署使用本地RWKV-7 2.9B int8骨干，并由ai00-x-client纳入更完整的Agent工作流。"
+        },
+        "主要能力": {
+            "en": [
+                "Supervised semantic projection from RWKV-7 hidden states",
+                "Semantic similarity and topic-clustering evaluation",
+                "Task classification for agentic model routing",
+                "Production routing with a local RWKV-7 2.9B int8 model",
+                "Reproducible datasets, feature extraction, training, and ablation experiments"
+            ],
+            "zh": [
+                "从RWKV-7隐藏状态进行有监督语义投影",
+                "语义相似度与主题聚类评测",
+                "用于Agent模型路由的任务分类",
+                "基于本地RWKV-7 2.9B int8模型的生产路由",
+                "可复现的数据集、特征提取、训练和消融实验"
+            ]
+        },
+        "关键结果": {
+            "en": [
+                "STS-B Spearman: 0.8188",
+                "MTEB short-text clustering v-measure: 0.9506",
+                "Held-out task-classification accuracy: 0.9325",
+                "Production router test accuracy: 0.960 at 77 ms mean latency"
+            ],
+            "zh": [
+                "STS-B Spearman：0.8188",
+                "MTEB短文本聚类v-measure：0.9506",
+                "独立测试集任务分类准确率：0.9325",
+                "生产路由器测试准确率：0.960，平均延迟77毫秒"
+            ]
+        },
+        "关联项目": [
+            "https://github.com/cgisky1980/ai00-x-client"
+        ],
+        "信息来源": {
+            "en": [
+                "GitHub repository metadata",
+                "Project README",
+                "English research paper",
+                "Repository commit history"
+            ],
+            "zh": [
+                "GitHub仓库元数据",
+                "项目README",
+                "英文研究论文",
+                "仓库提交记录"
+            ]
+        },
+        "分类结论": {
+            "en": "Agent routing and embedding upstream",
+            "zh": "Agent路由与嵌入上游"
+        },
+        "分类依据": {
+            "en": "It directly develops semantic representations and a deployed task classifier for Agent model routing, but it is a research and upstream-capability repository rather than a standalone Agent runtime.",
+            "zh": "项目直接研发Agent模型路由所需的语义表示及已部署任务分类器，但定位是研究与上游能力仓库，而非独立Agent运行时。"
+        }
     }
 ]
