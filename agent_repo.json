@@ -1,77 +1,122 @@
 [
   {
-    "projectName": "rwkv-agent",
-    "repositoryUrl": "https://github.com/123123213weqw/rwkv-agent",
-    "lastUpdated": "2026-08-03T02:49:32Z"
-  },
-  {
-    "projectName": "rwkv-agent-kit",
-    "repositoryUrl": "https://github.com/Ai00-X/rwkv-agent-kit",
-    "lastUpdated": "2026-08-18T13:38:52Z"
-  },
-  {
-    "projectName": "RWKV_Agent_Lite",
-    "repositoryUrl": "https://github.com/No-22-Github/RWKV_Agent_Lite",
-    "lastUpdated": "2026-03-26T03:33:33Z"
-  },
-  {
-    "projectName": "RWKV-Agent",
-    "repositoryUrl": "https://github.com/No-22-Github/RWKV-Agent",
-    "lastUpdated": "2026-08-03T03:33:42Z"
-  },
-  {
-    "projectName": "RWKV-LH",
-    "repositoryUrl": "https://github.com/rwkv-rs/RWKV-LH",
-    "lastUpdated": "2026-08-09T08:54:50Z"
-  },
-  {
-    "projectName": "RWKV-Scout",
-    "repositoryUrl": "https://github.com/rwkv-rs/RWKV-Scout",
-    "lastUpdated": "2026-08-10T07:35:26Z"
-  },
-  {
-    "projectName": "rwkv-harness",
-    "repositoryUrl": "https://github.com/CodeDoes/rwkv-harness",
-    "lastUpdated": "2026-07-10T19:43:04Z"
-  },
-  {
-    "projectName": "decide-search-ask",
-    "repositoryUrl": "https://github.com/FyrikCN/decide-search-ask",
-    "lastUpdated": "2026-07-14T11:37:02Z"
-  },
-  {
-    "projectName": "rwkv-Primitive-Bench",
-    "repositoryUrl": "https://github.com/RWKV-Vibe/rwkv-Primitive-Bench",
-    "lastUpdated": "2026-08-06T07:13:07Z"
-  },
-  {
-    "projectName": "primitive-bench",
-    "repositoryUrl": "https://github.com/marty1885/primitive-bench",
-    "lastUpdated": "2026-07-23T06:08:08Z"
-  },
-  {
-    "projectName": "browsecomp-plus-eval",
-    "repositoryUrl": "https://github.com/rwkv-rs/browsecomp-plus-eval",
-    "lastUpdated": "2026-07-21T10:35:55Z"
-  },
-  {
-    "projectName": "rwkv-toolcaller-bench",
-    "repositoryUrl": "https://codeberg.org/scarletwolf_ai/rwkv-toolcaller-bench",
-    "lastUpdated": "2026-08-09T15:05:11+02:00"
-  },
-  {
     "projectName": "noesis",
     "repositoryUrl": "https://github.com/Vaniell0/noesis",
-    "lastUpdated": "2026-08-08T15:11:00Z"
+    "lastUpdated": "2026-08-21T14:37:44Z",
+    "stars": 3,
+    "forks": 1,
+    "watchers": 0
   },
   {
     "projectName": "ai00-x-client",
     "repositoryUrl": "https://github.com/cgisky1980/ai00-x-client",
-    "lastUpdated": "2026-08-13T03:48:44Z"
+    "lastUpdated": "2026-08-21T12:48:08Z",
+    "stars": 2,
+    "forks": 1,
+    "watchers": 0
   },
   {
     "projectName": "rwkv7-state-embedding",
     "repositoryUrl": "https://github.com/cgisky1980/rwkv7-state-embedding",
-    "lastUpdated": "2026-08-21T09:51:22Z"
+    "lastUpdated": "2026-08-21T09:51:29Z",
+    "stars": 2,
+    "forks": 0,
+    "watchers": 0
+  },
+  {
+    "projectName": "RWKV-Scout",
+    "repositoryUrl": "https://github.com/rwkv-rs/RWKV-Scout",
+    "lastUpdated": "2026-08-19T23:51:41Z",
+    "stars": 2,
+    "forks": 0,
+    "watchers": 0
+  },
+  {
+    "projectName": "rwkv-agent-kit",
+    "repositoryUrl": "https://github.com/Ai00-X/rwkv-agent-kit",
+    "lastUpdated": "2026-08-18T13:38:52Z",
+    "stars": 16,
+    "forks": 0,
+    "watchers": 0
+  },
+  {
+    "projectName": "RWKV_Agent_Lite",
+    "repositoryUrl": "https://github.com/No-22-Github/RWKV_Agent_Lite",
+    "lastUpdated": "2026-08-18T13:38:42Z",
+    "stars": 1,
+    "forks": 0,
+    "watchers": 0
+  },
+  {
+    "projectName": "rwkv-harness",
+    "repositoryUrl": "https://github.com/CodeDoes/rwkv-harness",
+    "lastUpdated": "2026-08-18T13:38:32Z",
+    "stars": 2,
+    "forks": 0,
+    "watchers": 0
+  },
+  {
+    "projectName": "decide-search-ask",
+    "repositoryUrl": "https://github.com/FyrikCN/decide-search-ask",
+    "lastUpdated": "2026-08-18T13:38:24Z",
+    "stars": 1,
+    "forks": 0,
+    "watchers": 0
+  },
+  {
+    "projectName": "browsecomp-plus-eval",
+    "repositoryUrl": "https://github.com/rwkv-rs/browsecomp-plus-eval",
+    "lastUpdated": "2026-08-18T13:38:14Z",
+    "stars": 1,
+    "forks": 0,
+    "watchers": 0
+  },
+  {
+    "projectName": "primitive-bench",
+    "repositoryUrl": "https://github.com/marty1885/primitive-bench",
+    "lastUpdated": "2026-08-18T13:38:04Z",
+    "stars": 3,
+    "forks": 2,
+    "watchers": 0
+  },
+  {
+    "projectName": "RWKV-Agent",
+    "repositoryUrl": "https://github.com/No-22-Github/RWKV-Agent",
+    "lastUpdated": "2026-08-18T13:37:45Z",
+    "stars": 1,
+    "forks": 0,
+    "watchers": 0
+  },
+  {
+    "projectName": "rwkv-Primitive-Bench",
+    "repositoryUrl": "https://github.com/RWKV-Vibe/rwkv-Primitive-Bench",
+    "lastUpdated": "2026-08-18T13:37:32Z",
+    "stars": 3,
+    "forks": 1,
+    "watchers": 0
+  },
+  {
+    "projectName": "RWKV-LH",
+    "repositoryUrl": "https://github.com/rwkv-rs/RWKV-LH",
+    "lastUpdated": "2026-08-18T13:37:03Z",
+    "stars": 1,
+    "forks": 0,
+    "watchers": 0
+  },
+  {
+    "projectName": "rwkv-toolcaller-bench",
+    "repositoryUrl": "https://codeberg.org/scarletwolf_ai/rwkv-toolcaller-bench",
+    "lastUpdated": "2026-08-14T15:42:17+02:00",
+    "stars": 0,
+    "forks": 0,
+    "watchers": 0
+  },
+  {
+    "projectName": "rwkv-agent",
+    "repositoryUrl": "https://github.com/123123213weqw/rwkv-agent",
+    "lastUpdated": "2026-08-10T06:46:19Z",
+    "stars": 7,
+    "forks": 1,
+    "watchers": 0
   }
 ]
