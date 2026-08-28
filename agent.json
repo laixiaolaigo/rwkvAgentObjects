@@ -1,5 +1,264 @@
 ﻿[
     {
+        "创建用户名": "scarletwolf_ai",
+        "账号平台": "Codeberg",
+        "GitHub地址": "https://codeberg.org/scarletwolf_ai/rwkv-toolcaller-bench",
+        "项目名称": "rwkv-toolcaller-bench",
+        "创建时间": "2026-07-22T00:33:47+02:00",
+        "最后更新时间": "2026-08-27T20:20:37+02:00",
+        "主要语言": "Python",
+        "许可证": "Apache-2.0",
+        "Stars": 0,
+        "Watch": 1,
+        "Fork": 0,
+        "项目类型": {"en": "RWKV tool-calling benchmark and training research", "zh": "RWKV工具调用评测与训练研究"},
+        "介绍": {
+            "en": "A reproducible research repository for RWKV tool selection, argument filling, abstention, and multi-step capability. It includes an 82-case judge, raw generations, scoring code, state-tuning and LoRA artifacts, GRPO experiments, checkpoint surveys, probes, schemas, and training recipes.",
+            "zh": "研究RWKV工具选择、参数填写、拒绝调用与多步能力的可复现仓库。包含82题judge、原始生成、评分代码、State Tuning与LoRA产物、GRPO实验、检查点调查、探针、schema和训练配方。"
+        },
+        "Agent循环判断": {"en": "Primarily evaluates and trains tool-calling behavior. The published judge is largely single-turn and its two multi-step cases currently score zero, so it is not an Agent runtime, but it is directly Agent-related.", "zh": "主要评测和训练工具调用行为。公开judge以单轮为主，两个多步案例当前得分为0，因此不是Agent运行时，但与Agent能力直接相关。"},
+        "信息来源": {"en": ["Codeberg metadata", "README", "Evaluation, judge, probe, and training files"], "zh": ["Codeberg元数据", "README", "评测、judge、探针与训练文件"]},
+        "分类结论": {"en": "Agent benchmark and training upstream", "zh": "Agent评测与训练上游"},
+        "分类依据": {"en": "Directly develops and measures RWKV tool-calling capabilities used by Agents.", "zh": "直接开发并衡量Agent所需的RWKV工具调用能力。"}
+    },
+    {
+        "创建用户名":  "123123213weqw",
+        "作者备注":  {
+            "en": "Community developer",
+            "zh": "社区开发者"
+        },
+        "用户头像":  "https://avatars.githubusercontent.com/u/300659282?v=4",
+        "GitHub地址":  "https://github.com/123123213weqw/rwkv-agent",
+        "曾用名或别名地址":  [
+                        "https://github.com/123123213weqw/rwkv-search"
+                    ],
+        "项目名称":  "rwkv-agent",
+        "创建时间":  "2026-07-19T12:11:52Z",
+        "最后更新时间":  "2026-08-27T16:53:37Z",
+        "主要语言":  "Python",
+        "许可证":  "MIT",
+        "Stars":  8,
+        "Watch":  0,
+        "Fork":  2,
+        "项目类型":  {
+            "en": "Local-first RWKV agent and web research system",
+            "zh": "本地优先的RWKV Agent与网络研究系统"
+        },
+        "介绍":  {
+            "en": "Provides multi-turn RWKV conversations, tool calling, web search, knowledge-base search, long-form question answering, evidence selection, citation generation, and reproducible evaluation. Its main interfaces are a Rust terminal client and an RWKV Agent HTTP backend. RWKV Search is its internal retrieval subsystem; the former rwkv-search repository now redirects to this repository with HTTP 301.",
+            "zh": "提供多轮RWKV对话、工具调用、网页搜索、知识库搜索、长文本问答、证据筛选、引用生成和可复现评测。主要界面是Rust终端客户端和RWKV Agent HTTP后端。RWKV Search是其内部检索子系统；旧仓库地址 rwkv-search 现已301跳转到本仓库。"
+        },
+        "Agent循环判断":  {
+            "en": "Implements a clearly defined tool loop. A Semantic Search Gate first decides between ordinary conversation and tool use. Retrieval, fetching, and evidence-selection results are returned to the model, which then produces an answer with citations. Research mode supports one to three rounds of stateful, multi-branch retrieval.",
+            "zh": "实现了较明确的工具循环。模型先由Semantic Search Gate决定普通对话或调用工具；工具执行结果经过检索、抓取、证据选择后返回模型，模型再生成带引用的回答。研究模式支持1至3轮、多分支状态化检索。"
+        },
+        "搜索能力":  {
+            "en": [
+                "Self-hosted SearXNG",
+                "Dogpile and Naver search channels",
+                "GitHub, MediaWiki, and Crossref",
+                "Restricted Bing fallback",
+                "Optional Tavily"
+            ],
+            "zh": [
+                "自托管SearXNG",
+                "Dogpile与Naver检索通道",
+                "GitHub、MediaWiki和Crossref",
+                "Bing受限回退",
+                "可选Tavily"
+            ]
+        },
+        "已知限制":  {
+            "en": [
+                "Beta release",
+                "The HTTP service has no built-in authentication or rate limiting",
+                "Public-web answer quality has not reached the project's own release threshold"
+            ],
+            "zh": [
+                "Beta版本",
+                "HTTP服务没有内置身份认证和限流",
+                "公开网页回答质量尚未达到项目自己的发布门槛"
+            ]
+        },
+        "信息来源":  {
+            "en": [
+                "GitHub repository metadata",
+                "Project README",
+                "HTTP 301 redirect verification"
+            ],
+            "zh": [
+                "GitHub仓库元数据",
+                "项目README",
+                "HTTP 301跳转核验"
+            ]
+        },
+        "分类结论":  {
+            "en": "Strict Agent",
+            "zh": "严格Agent"
+        },
+        "分类依据":  {
+            "en": "The model can select tools, receive retrieval and evidence results, and continue acting across multiple research rounds.",
+            "zh": "模型能够选择工具，接收检索与证据结果，并在多轮研究模式中继续行动。"
+        }
+    },
+    {
+        "创建用户名":  "No-22-Github",
+        "作者备注":  null,
+        "用户头像":  "https://avatars.githubusercontent.com/u/132265925?v=4",
+        "GitHub地址":  "https://github.com/No-22-Github/RWKV-Agent",
+        "项目名称":  "RWKV-Agent",
+        "创建时间":  "2026-07-27T13:41:03Z",
+        "最后更新时间":  "2026-08-26T11:05:14Z",
+        "主要语言":  "Go",
+        "许可证":  null,
+        "Stars":  1,
+        "Watch":  0,
+        "Fork":  0,
+        "项目类型":  {
+            "en": "Local RWKV CLI and agent runtime",
+            "zh": "本地RWKV CLI与Agent运行时"
+        },
+        "介绍":  {
+            "en": "A local RWKV command-line application for Apple Silicon macOS. The Go layer handles conversation transactions, session persistence, and terminal interaction, while a separate dynamic library handles tokenization, sampling, and MLX inference. The runtime does not depend on Python, PyTorch, an HTTP service, or external processes.",
+            "zh": "面向Apple Silicon macOS的本地RWKV命令行程序。Go层负责对话事务、Session持久化和终端交互，独立动态库负责tokenizer、采样和MLX推理；运行时不依赖Python、PyTorch、HTTP服务或外部进程。"
+        },
+        "Agent循环判断":  {
+            "en": "The repository includes an Agent Harness, Continuation, and Agent Protocol, implementing an agent runtime intended to let the model call tools, read observations, and continue execution. The current loop has defects, but the project still qualifies as an agent.",
+            "zh": "仓库包含Agent Harness、Continuation和Agent Protocol，并以模型调用工具、读取观察结果和继续执行为目标实现Agent运行时。当前闭环存在缺陷，但项目性质仍属于Agent。"
+        },
+        "用户反馈":  {
+            "en": [
+                "Tool-call information remains in the output",
+                "It continues using a directory after guessing the wrong path",
+                "The agent loop is not correctly understood or implemented"
+            ],
+            "zh": [
+                "调用信息仍然残留",
+                "猜错目录后仍继续调用该目录",
+                "没有正确理解或实现Agent循环"
+            ]
+        },
+        "支持平台":  {
+            "en": "The currently usable entry point supports Apple Silicon on macOS 15+; Windows and Linux remain target platforms",
+            "zh": "当前实际可用入口为Apple Silicon macOS 15+；Windows和Linux仍是目标平台"
+        },
+        "信息来源":  {
+            "en": [
+                "GitHub repository metadata",
+                "Project README",
+                "User-provided issue description",
+                "User-provided classification correction"
+            ],
+            "zh": [
+                "GitHub仓库元数据",
+                "项目README",
+                "用户提供的问题说明",
+                "用户提供的分类纠正"
+            ]
+        },
+        "分类结论":  {
+            "en": "Strict Agent",
+            "zh": "严格Agent"
+        },
+        "分类依据":  {
+            "en": "The project explicitly centers on an agent protocol, tool calling, and a continuous execution loop. Existing problems with tool feedback, directory correction, and loop implementation are implementation defects and do not change its status as an agent project.",
+            "zh": "项目明确以Agent协议、工具调用和持续执行循环为核心；现有工具反馈、目录纠错和循环实现问题属于实现缺陷，不改变其Agent项目属性。"
+        }
+    },
+    {
+        "创建用户名": "cgisky1980",
+        "作者备注": {
+            "en": "Ai00-X ecosystem maintainer",
+            "zh": "Ai00-X生态维护者"
+        },
+        "用户头像": "https://avatars.githubusercontent.com/u/82481660?v=4",
+        "GitHub地址": "https://github.com/cgisky1980/ai00-x-client",
+        "项目名称": "ai00-x-client",
+        "创建时间": "2026-08-12T06:11:04Z",
+        "最后更新时间": "2026-08-26T03:27:13Z",
+        "主要语言": "Rust",
+        "许可证": "MIT",
+        "Stars": 2,
+        "Watch": 0,
+        "Fork": 1,
+        "项目类型": {
+            "en": "Cross-platform RWKV AI assistant and Agent desktop client",
+            "zh": "跨平台RWKV AI助理与Agent桌面客户端"
+        },
+        "介绍": {
+            "en": "A Tauri 2 desktop client built with Rust and TypeScript. It combines local RWKV inference with remote AI APIs and provides a personal assistant, coding agent, knowledge-work agent, and Markdown-defined custom agents. The application also integrates long-term memory, tool-enabled workflows, Skills, MCP, and remote access through phone browsers and messaging platforms.",
+            "zh": "使用Rust和TypeScript构建的Tauri 2桌面客户端。它将本地RWKV推理与远程AI API结合，提供个人助理、Coding Agent、知识工作Agent和通过Markdown定义的自定义Agent；同时集成长时记忆、工具工作流、Skills、MCP，并支持手机浏览器及消息平台远程访问。"
+        },
+        "Agent循环判断": {
+            "en": "Defines several executable Agent modes. The Code Agent can autonomously read, edit, run, verify, debug, and review; the personal assistant orchestrates Code, Cowork, and custom Agents; and the system supports tool calls, memory, Skills, MCP, and remote commands. Local RWKV inference is used first, with routing to remote models for tasks that need stronger capabilities.",
+            "zh": "定义了多种可执行的Agent模式。Code Agent能够自主读取、编辑、运行、验证、调试和审查；个人助理可按需编排Code、Cowork及自定义Agent；系统还支持工具调用、记忆、Skills、MCP和远程命令。默认优先使用本地RWKV推理，复杂任务再路由到更强的远程模型。"
+        },
+        "主要能力": {
+            "en": [
+                "Personal assistant with long-term memory",
+                "Autonomous coding Agent with read/edit/run/verify workflows",
+                "Knowledge-work Agent for PDF, DOCX, XLSX, and PPTX",
+                "Custom Agents defined with Markdown",
+                "RWKV local inference with remote-model fallback",
+                "Skills, MCP, desktop companion, and remote access"
+            ],
+            "zh": [
+                "带长时记忆的个人助理",
+                "支持读取/编辑/运行/验证工作流的自主Coding Agent",
+                "处理PDF、DOCX、XLSX和PPTX的知识工作Agent",
+                "通过Markdown定义自定义Agent",
+                "RWKV本地推理与远程模型回退",
+                "Skills、MCP、桌面伴侣和远程访问"
+            ]
+        },
+        "支持平台": {
+            "en": "Windows, macOS, and Linux; local RWKV support is optimized for available platform backends",
+            "zh": "Windows、macOS和Linux；本地RWKV支持根据平台后端进行适配"
+        },
+        "信息来源": {
+            "en": [
+                "GitHub repository metadata",
+                "Project README",
+                "Repository Agent and runtime architecture"
+            ],
+            "zh": [
+                "GitHub仓库元数据",
+                "项目README",
+                "仓库中的Agent与运行时架构"
+            ]
+        },
+        "分类结论": {
+            "en": "Strict Agent",
+            "zh": "严格Agent"
+        },
+        "分类依据": {
+            "en": "The repository provides runnable Agent roles with explicit tool-use and autonomous execution workflows, rather than only exposing an RWKV inference engine.",
+            "zh": "仓库提供可运行的多种Agent角色，并实现明确的工具使用和自主执行工作流，不只是提供RWKV推理引擎。"
+        }
+    },
+    {
+        "创建用户名": "Vaniell0",
+        "用户头像": "https://avatars.githubusercontent.com/u/144351173?v=4",
+        "GitHub地址": "https://github.com/Vaniell0/noesis",
+        "项目名称": "noesis",
+        "创建时间": "2026-07-21T22:04:25Z",
+        "最后更新时间": "2026-08-25T04:55:36Z",
+        "主要语言": "Python",
+        "许可证": "Apache-2.0",
+        "Stars": 3,
+        "Watch": 0,
+        "Fork": 1,
+        "项目类型": {"en": "Persistent RWKV cognitive-runtime research", "zh": "持续运行的RWKV认知运行时研究"},
+        "介绍": {
+            "en": "A research project for an always-running RWKV cognitive runtime that ingests system events, organizes persistent memory, routes tools, and acts on the local environment through extensions. The repository includes runtime, memory, policy, DSL, training, and deployment foundations.",
+            "zh": "面向持续运行RWKV认知运行时的研究项目，计划吸收系统事件、组织持久记忆、路由工具，并通过扩展作用于本地环境；仓库已包含运行时、记忆、策略、DSL、训练和部署基础。"
+        },
+        "Agent循环判断": {"en": "The intended architecture is an Agent, but key pieces such as the composer, tool-call dispatcher, and extension surface remain incomplete or roadmap items.", "zh": "目标架构属于Agent，但composer、工具调用dispatcher和extension surface等关键部分仍未完成或处于路线图阶段。"},
+        "信息来源": {"en": ["GitHub metadata", "README", "ROADMAP", "Runtime, memory, and training sources"], "zh": ["GitHub元数据", "README", "ROADMAP", "运行时、记忆与训练源码"]},
+        "分类结论": {"en": "Agent boundary project", "zh": "Agent边界项目"},
+        "分类依据": {"en": "Explicitly designed as an RWKV Agent runtime and therefore included under the broader Agent-related criterion despite incomplete execution loops.", "zh": "明确以RWKV Agent运行时为目标；虽然执行闭环尚不完整，但按广义Agent相关标准收录。"}
+    },
+    {
         "创建用户名": "rwkv-rs",
         "账号类型": {
             "en": "GitHub organization",
@@ -20,7 +279,9 @@
         "最后更新时间": "2026-08-21T15:18:08Z",
         "主要语言": "Python",
         "许可证": "MIT",
-        "Stars": 0,
+        "Stars": 2,
+        "Watch": 0,
+        "Fork": 0,
         "项目类型": {
             "en": "Auditable RWKV web-retrieval agent",
             "zh": "可审计的RWKV联网检索Agent"
@@ -83,95 +344,6 @@
         }
     },
     {
-        "创建用户名": "Vaniell0",
-        "用户头像": "https://avatars.githubusercontent.com/u/144351173?v=4",
-        "GitHub地址": "https://github.com/Vaniell0/noesis",
-        "项目名称": "noesis",
-        "创建时间": "2026-07-21T22:04:25Z",
-        "最后更新时间": "2026-08-21T14:37:33Z",
-        "主要语言": "Python",
-        "许可证": "Apache-2.0",
-        "Stars": 1,
-        "项目类型": {"en": "Persistent RWKV cognitive-runtime research", "zh": "持续运行的RWKV认知运行时研究"},
-        "介绍": {
-            "en": "A research project for an always-running RWKV cognitive runtime that ingests system events, organizes persistent memory, routes tools, and acts on the local environment through extensions. The repository includes runtime, memory, policy, DSL, training, and deployment foundations.",
-            "zh": "面向持续运行RWKV认知运行时的研究项目，计划吸收系统事件、组织持久记忆、路由工具，并通过扩展作用于本地环境；仓库已包含运行时、记忆、策略、DSL、训练和部署基础。"
-        },
-        "Agent循环判断": {"en": "The intended architecture is an Agent, but key pieces such as the composer, tool-call dispatcher, and extension surface remain incomplete or roadmap items.", "zh": "目标架构属于Agent，但composer、工具调用dispatcher和extension surface等关键部分仍未完成或处于路线图阶段。"},
-        "信息来源": {"en": ["GitHub metadata", "README", "ROADMAP", "Runtime, memory, and training sources"], "zh": ["GitHub元数据", "README", "ROADMAP", "运行时、记忆与训练源码"]},
-        "分类结论": {"en": "Agent boundary project", "zh": "Agent边界项目"},
-        "分类依据": {"en": "Explicitly designed as an RWKV Agent runtime and therefore included under the broader Agent-related criterion despite incomplete execution loops.", "zh": "明确以RWKV Agent运行时为目标；虽然执行闭环尚不完整，但按广义Agent相关标准收录。"}
-    },
-    {
-        "创建用户名": "cgisky1980",
-        "作者备注": {
-            "en": "Ai00-X ecosystem maintainer",
-            "zh": "Ai00-X生态维护者"
-        },
-        "用户头像": "https://avatars.githubusercontent.com/u/82481660?v=4",
-        "GitHub地址": "https://github.com/cgisky1980/ai00-x-client",
-        "项目名称": "ai00-x-client",
-        "创建时间": "2026-08-12T06:11:04Z",
-        "最后更新时间": "2026-08-21T12:47:21Z",
-        "主要语言": "Rust",
-        "许可证": "MIT",
-        "Stars": 1,
-        "项目类型": {
-            "en": "Cross-platform RWKV AI assistant and Agent desktop client",
-            "zh": "跨平台RWKV AI助理与Agent桌面客户端"
-        },
-        "介绍": {
-            "en": "A Tauri 2 desktop client built with Rust and TypeScript. It combines local RWKV inference with remote AI APIs and provides a personal assistant, coding agent, knowledge-work agent, and Markdown-defined custom agents. The application also integrates long-term memory, tool-enabled workflows, Skills, MCP, and remote access through phone browsers and messaging platforms.",
-            "zh": "使用Rust和TypeScript构建的Tauri 2桌面客户端。它将本地RWKV推理与远程AI API结合，提供个人助理、Coding Agent、知识工作Agent和通过Markdown定义的自定义Agent；同时集成长时记忆、工具工作流、Skills、MCP，并支持手机浏览器及消息平台远程访问。"
-        },
-        "Agent循环判断": {
-            "en": "Defines several executable Agent modes. The Code Agent can autonomously read, edit, run, verify, debug, and review; the personal assistant orchestrates Code, Cowork, and custom Agents; and the system supports tool calls, memory, Skills, MCP, and remote commands. Local RWKV inference is used first, with routing to remote models for tasks that need stronger capabilities.",
-            "zh": "定义了多种可执行的Agent模式。Code Agent能够自主读取、编辑、运行、验证、调试和审查；个人助理可按需编排Code、Cowork及自定义Agent；系统还支持工具调用、记忆、Skills、MCP和远程命令。默认优先使用本地RWKV推理，复杂任务再路由到更强的远程模型。"
-        },
-        "主要能力": {
-            "en": [
-                "Personal assistant with long-term memory",
-                "Autonomous coding Agent with read/edit/run/verify workflows",
-                "Knowledge-work Agent for PDF, DOCX, XLSX, and PPTX",
-                "Custom Agents defined with Markdown",
-                "RWKV local inference with remote-model fallback",
-                "Skills, MCP, desktop companion, and remote access"
-            ],
-            "zh": [
-                "带长时记忆的个人助理",
-                "支持读取/编辑/运行/验证工作流的自主Coding Agent",
-                "处理PDF、DOCX、XLSX和PPTX的知识工作Agent",
-                "通过Markdown定义自定义Agent",
-                "RWKV本地推理与远程模型回退",
-                "Skills、MCP、桌面伴侣和远程访问"
-            ]
-        },
-        "支持平台": {
-            "en": "Windows, macOS, and Linux; local RWKV support is optimized for available platform backends",
-            "zh": "Windows、macOS和Linux；本地RWKV支持根据平台后端进行适配"
-        },
-        "信息来源": {
-            "en": [
-                "GitHub repository metadata",
-                "Project README",
-                "Repository Agent and runtime architecture"
-            ],
-            "zh": [
-                "GitHub仓库元数据",
-                "项目README",
-                "仓库中的Agent与运行时架构"
-            ]
-        },
-        "分类结论": {
-            "en": "Strict Agent",
-            "zh": "严格Agent"
-        },
-        "分类依据": {
-            "en": "The repository provides runnable Agent roles with explicit tool-use and autonomous execution workflows, rather than only exposing an RWKV inference engine.",
-            "zh": "仓库提供可运行的多种Agent角色，并实现明确的工具使用和自主执行工作流，不只是提供RWKV推理引擎。"
-        }
-    },
-    {
         "创建用户名": "cgisky1980",
         "作者备注": {
             "en": "Ai00-X ecosystem maintainer; RWKV-7 state-embedding research",
@@ -184,7 +356,9 @@
         "最后更新时间": "2026-08-21T09:51:25Z",
         "主要语言": "Python",
         "许可证": "MIT",
-        "Stars": 2,
+        "Stars": 4,
+        "Watch": 0,
+        "Fork": 1,
         "项目类型": {
             "en": "RWKV-7 semantic embedding and Agent model-routing research",
             "zh": "RWKV-7语义嵌入与Agent模型路由研究"
@@ -254,68 +428,6 @@
         }
     },
     {
-        "创建用户名":  "No-22-Github",
-        "作者备注":  null,
-        "用户头像":  "https://avatars.githubusercontent.com/u/132265925?v=4",
-        "GitHub地址":  "https://github.com/No-22-Github/RWKV-Agent",
-        "项目名称":  "RWKV-Agent",
-        "创建时间":  "2026-07-27T13:41:03Z",
-        "最后更新时间":  "2026-08-20T12:54:06Z",
-        "主要语言":  "Go",
-        "许可证":  null,
-        "Stars":  0,
-        "项目类型":  {
-            "en": "Local RWKV CLI and agent runtime",
-            "zh": "本地RWKV CLI与Agent运行时"
-        },
-        "介绍":  {
-            "en": "A local RWKV command-line application for Apple Silicon macOS. The Go layer handles conversation transactions, session persistence, and terminal interaction, while a separate dynamic library handles tokenization, sampling, and MLX inference. The runtime does not depend on Python, PyTorch, an HTTP service, or external processes.",
-            "zh": "面向Apple Silicon macOS的本地RWKV命令行程序。Go层负责对话事务、Session持久化和终端交互，独立动态库负责tokenizer、采样和MLX推理；运行时不依赖Python、PyTorch、HTTP服务或外部进程。"
-        },
-        "Agent循环判断":  {
-            "en": "The repository includes an Agent Harness, Continuation, and Agent Protocol, implementing an agent runtime intended to let the model call tools, read observations, and continue execution. The current loop has defects, but the project still qualifies as an agent.",
-            "zh": "仓库包含Agent Harness、Continuation和Agent Protocol，并以模型调用工具、读取观察结果和继续执行为目标实现Agent运行时。当前闭环存在缺陷，但项目性质仍属于Agent。"
-        },
-        "用户反馈":  {
-            "en": [
-                "Tool-call information remains in the output",
-                "It continues using a directory after guessing the wrong path",
-                "The agent loop is not correctly understood or implemented"
-            ],
-            "zh": [
-                "调用信息仍然残留",
-                "猜错目录后仍继续调用该目录",
-                "没有正确理解或实现Agent循环"
-            ]
-        },
-        "支持平台":  {
-            "en": "The currently usable entry point supports Apple Silicon on macOS 15+; Windows and Linux remain target platforms",
-            "zh": "当前实际可用入口为Apple Silicon macOS 15+；Windows和Linux仍是目标平台"
-        },
-        "信息来源":  {
-            "en": [
-                "GitHub repository metadata",
-                "Project README",
-                "User-provided issue description",
-                "User-provided classification correction"
-            ],
-            "zh": [
-                "GitHub仓库元数据",
-                "项目README",
-                "用户提供的问题说明",
-                "用户提供的分类纠正"
-            ]
-        },
-        "分类结论":  {
-            "en": "Strict Agent",
-            "zh": "严格Agent"
-        },
-        "分类依据":  {
-            "en": "The project explicitly centers on an agent protocol, tool calling, and a continuous execution loop. Existing problems with tool feedback, directory correction, and loop implementation are implementation defects and do not change its status as an agent project.",
-            "zh": "项目明确以Agent协议、工具调用和持续执行循环为核心；现有工具反馈、目录纠错和循环实现问题属于实现缺陷，不改变其Agent项目属性。"
-        }
-    },
-    {
         "创建用户名":  "rwkv-rs",
         "账号类型":  {
             "en": "GitHub organization",
@@ -332,7 +444,9 @@
         "最后更新时间":  "2026-08-20T08:43:36Z",
         "主要语言":  "Python",
         "许可证":  "MIT",
-        "Stars":  0,
+        "Stars":  1,
+        "Watch":  0,
+        "Fork":  0,
         "项目类型":  {
             "en": "Persistent and verifiable RWKV long-horizon agent runtime",
             "zh": "持久化、可验证的RWKV长程Agent运行时"
@@ -407,26 +521,6 @@
         }
     },
     {
-        "创建用户名": "scarletwolf_ai",
-        "账号平台": "Codeberg",
-        "GitHub地址": "https://codeberg.org/scarletwolf_ai/rwkv-toolcaller-bench",
-        "项目名称": "rwkv-toolcaller-bench",
-        "创建时间": "2026-07-22T00:33:47+02:00",
-        "最后更新时间": "2026-08-14T15:42:17+02:00",
-        "主要语言": "Python",
-        "许可证": "Apache-2.0",
-        "Stars": 0,
-        "项目类型": {"en": "RWKV tool-calling benchmark and training research", "zh": "RWKV工具调用评测与训练研究"},
-        "介绍": {
-            "en": "A reproducible research repository for RWKV tool selection, argument filling, abstention, and multi-step capability. It includes an 82-case judge, raw generations, scoring code, state-tuning and LoRA artifacts, GRPO experiments, checkpoint surveys, probes, schemas, and training recipes.",
-            "zh": "研究RWKV工具选择、参数填写、拒绝调用与多步能力的可复现仓库。包含82题judge、原始生成、评分代码、State Tuning与LoRA产物、GRPO实验、检查点调查、探针、schema和训练配方。"
-        },
-        "Agent循环判断": {"en": "Primarily evaluates and trains tool-calling behavior. The published judge is largely single-turn and its two multi-step cases currently score zero, so it is not an Agent runtime, but it is directly Agent-related.", "zh": "主要评测和训练工具调用行为。公开judge以单轮为主，两个多步案例当前得分为0，因此不是Agent运行时，但与Agent能力直接相关。"},
-        "信息来源": {"en": ["Codeberg metadata", "README", "Evaluation, judge, probe, and training files"], "zh": ["Codeberg元数据", "README", "评测、judge、探针与训练文件"]},
-        "分类结论": {"en": "Agent benchmark and training upstream", "zh": "Agent评测与训练上游"},
-        "分类依据": {"en": "Directly develops and measures RWKV tool-calling capabilities used by Agents.", "zh": "直接开发并衡量Agent所需的RWKV工具调用能力。"}
-    },
-    {
         "创建用户名": "RWKV-Vibe",
         "账号类型": {"en": "GitHub organization", "zh": "GitHub组织"},
         "作者备注": {"en": "RWKV adaptation of marty1885/primitive-bench", "zh": "marty1885/primitive-bench的RWKV适配版"},
@@ -437,7 +531,9 @@
         "最后更新时间": "2026-08-12T10:26:05Z",
         "主要语言": "Python",
         "许可证": null,
-        "Stars": 2,
+        "Stars": 3,
+        "Watch": 0,
+        "Fork": 1,
         "项目类型": {"en": "RWKV tool-use and Agent capability benchmark", "zh": "RWKV工具调用与Agent能力评测"},
         "介绍": {
             "en": "An RWKV-oriented fork of Primitive Bench that evaluates tool selection, file operations, multi-turn tool feedback, truthful reporting, prompt-injection resistance, and final submission across structured and raw-completion protocols.",
@@ -450,84 +546,6 @@
         "分类依据": {"en": "Directly evaluates RWKV models inside tool-using Agent loops.", "zh": "直接在工具型Agent循环中评测RWKV模型。"}
     },
     {
-        "创建用户名":  "123123213weqw",
-        "作者备注":  {
-            "en": "Community developer",
-            "zh": "社区开发者"
-        },
-        "用户头像":  "https://avatars.githubusercontent.com/u/300659282?v=4",
-        "GitHub地址":  "https://github.com/123123213weqw/rwkv-agent",
-        "曾用名或别名地址":  [
-                        "https://github.com/123123213weqw/rwkv-search"
-                    ],
-        "项目名称":  "rwkv-agent",
-        "创建时间":  "2026-07-19T12:11:52Z",
-        "最后更新时间":  "2026-08-10T06:45:55Z",
-        "主要语言":  "Python",
-        "许可证":  "MIT",
-        "Stars":  5,
-        "项目类型":  {
-            "en": "Local-first RWKV agent and web research system",
-            "zh": "本地优先的RWKV Agent与网络研究系统"
-        },
-        "介绍":  {
-            "en": "Provides multi-turn RWKV conversations, tool calling, web search, knowledge-base search, long-form question answering, evidence selection, citation generation, and reproducible evaluation. Its main interfaces are a Rust terminal client and an RWKV Agent HTTP backend. RWKV Search is its internal retrieval subsystem; the former rwkv-search repository now redirects to this repository with HTTP 301.",
-            "zh": "提供多轮RWKV对话、工具调用、网页搜索、知识库搜索、长文本问答、证据筛选、引用生成和可复现评测。主要界面是Rust终端客户端和RWKV Agent HTTP后端。RWKV Search是其内部检索子系统；旧仓库地址 rwkv-search 现已301跳转到本仓库。"
-        },
-        "Agent循环判断":  {
-            "en": "Implements a clearly defined tool loop. A Semantic Search Gate first decides between ordinary conversation and tool use. Retrieval, fetching, and evidence-selection results are returned to the model, which then produces an answer with citations. Research mode supports one to three rounds of stateful, multi-branch retrieval.",
-            "zh": "实现了较明确的工具循环。模型先由Semantic Search Gate决定普通对话或调用工具；工具执行结果经过检索、抓取、证据选择后返回模型，模型再生成带引用的回答。研究模式支持1至3轮、多分支状态化检索。"
-        },
-        "搜索能力":  {
-            "en": [
-                "Self-hosted SearXNG",
-                "Dogpile and Naver search channels",
-                "GitHub, MediaWiki, and Crossref",
-                "Restricted Bing fallback",
-                "Optional Tavily"
-            ],
-            "zh": [
-                "自托管SearXNG",
-                "Dogpile与Naver检索通道",
-                "GitHub、MediaWiki和Crossref",
-                "Bing受限回退",
-                "可选Tavily"
-            ]
-        },
-        "已知限制":  {
-            "en": [
-                "Beta release",
-                "The HTTP service has no built-in authentication or rate limiting",
-                "Public-web answer quality has not reached the project's own release threshold"
-            ],
-            "zh": [
-                "Beta版本",
-                "HTTP服务没有内置身份认证和限流",
-                "公开网页回答质量尚未达到项目自己的发布门槛"
-            ]
-        },
-        "信息来源":  {
-            "en": [
-                "GitHub repository metadata",
-                "Project README",
-                "HTTP 301 redirect verification"
-            ],
-            "zh": [
-                "GitHub仓库元数据",
-                "项目README",
-                "HTTP 301跳转核验"
-            ]
-        },
-        "分类结论":  {
-            "en": "Strict Agent",
-            "zh": "严格Agent"
-        },
-        "分类依据":  {
-            "en": "The model can select tools, receive retrieval and evidence results, and continue acting across multiple research rounds.",
-            "zh": "模型能够选择工具，接收检索与证据结果，并在多轮研究模式中继续行动。"
-        }
-    },
-    {
         "创建用户名": "rwkv-rs",
         "账号类型": {"en": "GitHub organization", "zh": "GitHub组织"},
         "作者备注": {"en": "BrowseComp-Plus evaluation package with vendored vLLM-RWKV", "zh": "含vLLM-RWKV快照的BrowseComp-Plus评测包"},
@@ -538,7 +556,9 @@
         "最后更新时间": "2026-07-21T10:37:13Z",
         "主要语言": "Python",
         "许可证": null,
-        "Stars": 0,
+        "Stars": 1,
+        "Watch": 0,
+        "Fork": 0,
         "项目类型": {"en": "RWKV browsing-Agent evaluation package", "zh": "RWKV浏览Agent评测包"},
         "介绍": {
             "en": "A reproducible BrowseComp-Plus package covering the official 830 questions. Its evaluation Agent calls search, get_document, and final_answer in a bounded loop, aggregates parallel candidates, stores results in PostgreSQL, and exports the official judge format.",
@@ -559,7 +579,9 @@
         "最后更新时间": "2026-07-18T05:41:29Z",
         "主要语言": "Python",
         "许可证": null,
-        "Stars": 2,
+        "Stars": 3,
+        "Watch": 0,
+        "Fork": 2,
         "项目类型": {"en": "Primitive Agent and tool-use benchmark", "zh": "基础Agent与工具使用评测"},
         "介绍": {
             "en": "A dependency-light benchmark for models between text prediction and full Agent behavior. It provides task-scoped tools, emulated environments, bounded multi-turn execution, exact submission scoring, open probes, isolation tests, JSON reports, and HTML traces.",
@@ -580,7 +602,9 @@
         "最后更新时间": "2026-07-14T11:36:58Z",
         "主要语言": "JavaScript",
         "许可证": "MIT（README声明）",
-        "Stars": 0,
+        "Stars": 1,
+        "Watch": 0,
+        "Fork": 0,
         "项目类型": {"en": "Conditional web-search agent workflow", "zh": "条件联网搜索Agent工作流"},
         "介绍": {
             "en": "An HTTP API workflow in which a small model decides SEARCH or NO_SEARCH, optionally rewrites the query and calls Exa, and a larger model answers from the retrieved material.",
@@ -603,7 +627,9 @@
         "最后更新时间": "2026-07-07T00:59:46Z",
         "主要语言": "TypeScript",
         "许可证": null,
-        "Stars": 1,
+        "Stars": 2,
+        "Watch": 0,
+        "Fork": 0,
         "项目类型": {
             "en": "RWKV agent harness with persistent state and tool use",
             "zh": "支持持久状态与工具调用的RWKV Agent Harness"
@@ -674,7 +700,9 @@
         "最后更新时间":  "2026-03-26T03:33:30Z",
         "主要语言":  "Python",
         "许可证":  "MIT",
-        "Stars":  0,
+        "Stars":  1,
+        "Watch":  0,
+        "Fork":  0,
         "项目类型":  {
             "en": "Lightweight MVP for validating RWKV agent capabilities",
             "zh": "轻量RWKV Agent能力验证MVP"
@@ -725,7 +753,9 @@
         "最后更新时间":  "2025-09-09T02:49:57Z",
         "主要语言":  "Rust",
         "许可证":  "MIT OR Apache-2.0",
-        "Stars":  15,
+        "Stars":  16,
+        "Watch":  0,
+        "Fork":  0,
         "项目类型":  {
             "en": "RWKV-based agent development toolkit",
             "zh": "基于RWKV的智能体开发工具包"
