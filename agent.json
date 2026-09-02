@@ -1,5 +1,30 @@
 ﻿[
     {
+        "创建用户名": "RWKV-Vibe",
+        "账号类型": {"en": "GitHub organization", "zh": "GitHub组织"},
+        "作者备注": {"en": "RWKV adaptation of marty1885/primitive-bench", "zh": "marty1885/primitive-bench的RWKV适配版"},
+        "用户头像": "https://avatars.githubusercontent.com/u/172354835?v=4",
+        "GitHub地址": "https://github.com/RWKV-Vibe/rwkv-Primitive-Bench",
+        "项目名称": "rwkv-Primitive-Bench",
+        "创建时间": "2026-07-27T07:28:30Z",
+        "最后更新时间": "2026-09-02T07:08:15Z",
+        "主要语言": "Python",
+        "许可证": null,
+        "Stars": 3,
+        "Watch": 0,
+        "Fork": 1,
+        "项目类型": {"en": "RWKV tool-use and Agent capability benchmark", "zh": "RWKV工具调用与Agent能力评测"},
+        "介绍": {
+            "en": "An RWKV-oriented fork of Primitive Bench that evaluates tool selection, file operations, multi-turn tool feedback, truthful reporting, prompt-injection resistance, and final submission across structured and raw-completion protocols.",
+            "zh": "面向RWKV的Primitive Bench分支，评测结构化与原始补全协议下的工具选择、文件操作、多轮工具反馈、诚实报告、提示注入抵抗和最终提交。"
+        },
+        "Agent循环判断": {"en": "The runner executes a bounded tool loop for evaluation, but the repository is a benchmark rather than a general Agent product.", "zh": "Runner会为评测执行有界工具循环，但仓库定位是评测框架而非通用Agent产品。"},
+        "关联项目": ["https://github.com/marty1885/primitive-bench", "https://github.com/RWKV-Vibe/rwkv_lightning"],
+        "信息来源": {"en": ["GitHub metadata", "README", "Benchmark runner and cases"], "zh": ["GitHub元数据", "README", "评测Runner与案例"]},
+        "分类结论": {"en": "Agent benchmark", "zh": "Agent评测"},
+        "分类依据": {"en": "Directly evaluates RWKV models inside tool-using Agent loops.", "zh": "直接在工具型Agent循环中评测RWKV模型。"}
+    },
+    {
         "创建用户名":  "rwkv-rs",
         "账号类型":  {
             "en": "GitHub organization",
@@ -519,31 +544,6 @@
             "en": "It directly develops semantic representations and a deployed task classifier for Agent model routing, but it is a research and upstream-capability repository rather than a standalone Agent runtime.",
             "zh": "项目直接研发Agent模型路由所需的语义表示及已部署任务分类器，但定位是研究与上游能力仓库，而非独立Agent运行时。"
         }
-    },
-    {
-        "创建用户名": "RWKV-Vibe",
-        "账号类型": {"en": "GitHub organization", "zh": "GitHub组织"},
-        "作者备注": {"en": "RWKV adaptation of marty1885/primitive-bench", "zh": "marty1885/primitive-bench的RWKV适配版"},
-        "用户头像": "https://avatars.githubusercontent.com/u/172354835?v=4",
-        "GitHub地址": "https://github.com/RWKV-Vibe/rwkv-Primitive-Bench",
-        "项目名称": "rwkv-Primitive-Bench",
-        "创建时间": "2026-07-27T07:28:30Z",
-        "最后更新时间": "2026-08-12T10:26:05Z",
-        "主要语言": "Python",
-        "许可证": null,
-        "Stars": 3,
-        "Watch": 0,
-        "Fork": 1,
-        "项目类型": {"en": "RWKV tool-use and Agent capability benchmark", "zh": "RWKV工具调用与Agent能力评测"},
-        "介绍": {
-            "en": "An RWKV-oriented fork of Primitive Bench that evaluates tool selection, file operations, multi-turn tool feedback, truthful reporting, prompt-injection resistance, and final submission across structured and raw-completion protocols.",
-            "zh": "面向RWKV的Primitive Bench分支，评测结构化与原始补全协议下的工具选择、文件操作、多轮工具反馈、诚实报告、提示注入抵抗和最终提交。"
-        },
-        "Agent循环判断": {"en": "The runner executes a bounded tool loop for evaluation, but the repository is a benchmark rather than a general Agent product.", "zh": "Runner会为评测执行有界工具循环，但仓库定位是评测框架而非通用Agent产品。"},
-        "关联项目": ["https://github.com/marty1885/primitive-bench", "https://github.com/RWKV-Vibe/rwkv_lightning"],
-        "信息来源": {"en": ["GitHub metadata", "README", "Benchmark runner and cases"], "zh": ["GitHub元数据", "README", "评测Runner与案例"]},
-        "分类结论": {"en": "Agent benchmark", "zh": "Agent评测"},
-        "分类依据": {"en": "Directly evaluates RWKV models inside tool-using Agent loops.", "zh": "直接在工具型Agent循环中评测RWKV模型。"}
     },
     {
         "创建用户名": "rwkv-rs",

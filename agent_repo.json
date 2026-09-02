@@ -1,5 +1,13 @@
 [
   {
+    "projectName": "rwkv-Primitive-Bench",
+    "repositoryUrl": "https://github.com/RWKV-Vibe/rwkv-Primitive-Bench",
+    "lastUpdated": "2026-09-02T07:08:15Z",
+    "stars": 3,
+    "forks": 1,
+    "watchers": 0
+  },
+  {
     "projectName": "RWKV-LH",
     "repositoryUrl": "https://github.com/rwkv-rs/RWKV-LH",
     "lastUpdated": "2026-09-01T19:02:42Z",
@@ -60,14 +68,6 @@
     "repositoryUrl": "https://github.com/cgisky1980/rwkv7-state-embedding",
     "lastUpdated": "2026-08-21T09:51:25Z",
     "stars": 4,
-    "forks": 1,
-    "watchers": 0
-  },
-  {
-    "projectName": "rwkv-Primitive-Bench",
-    "repositoryUrl": "https://github.com/RWKV-Vibe/rwkv-Primitive-Bench",
-    "lastUpdated": "2026-08-12T10:26:05Z",
-    "stars": 3,
     "forks": 1,
     "watchers": 0
   },
