@@ -197,9 +197,9 @@
         "最后更新时间":  "2026-08-30T02:30:05Z",
         "主要语言":  "Python",
         "许可证":  "MIT",
-        "Stars":  8,
-        "Watch":  0,
-        "Fork":  2,
+        "Stars":  9,
+        "Watch":  1,
+        "Fork":  3,
         "项目类型":  {
             "en": "Local-first RWKV agent and web research system",
             "zh": "本地优先的RWKV Agent与网络研究系统"
