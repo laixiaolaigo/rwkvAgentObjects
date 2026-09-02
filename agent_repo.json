@@ -1,27 +1,35 @@
 [
   {
+    "projectName": "RWKV-LH",
+    "repositoryUrl": "https://github.com/rwkv-rs/RWKV-LH",
+    "lastUpdated": "2026-09-01T19:02:42Z",
+    "stars": 1,
+    "forks": 0,
+    "watchers": 0
+  },
+  {
+    "projectName": "RWKV-Agent",
+    "repositoryUrl": "https://github.com/No-22-Github/RWKV-Agent",
+    "lastUpdated": "2026-09-01T11:27:59Z",
+    "stars": 1,
+    "forks": 0,
+    "watchers": 0
+  },
+  {
+    "projectName": "rwkv-agent",
+    "repositoryUrl": "https://github.com/123123213weqw/rwkv-agent",
+    "lastUpdated": "2026-08-30T02:30:05Z",
+    "stars": 8,
+    "forks": 2,
+    "watchers": 0
+  },
+  {
     "projectName": "rwkv-toolcaller-bench",
     "repositoryUrl": "https://codeberg.org/scarletwolf_ai/rwkv-toolcaller-bench",
     "lastUpdated": "2026-08-27T20:20:37+02:00",
     "stars": 0,
     "forks": 0,
     "watchers": 1
-  },
-  {
-    "projectName": "rwkv-agent",
-    "repositoryUrl": "https://github.com/123123213weqw/rwkv-agent",
-    "lastUpdated": "2026-08-27T16:53:37Z",
-    "stars": 8,
-    "forks": 2,
-    "watchers": 0
-  },
-  {
-    "projectName": "RWKV-Agent",
-    "repositoryUrl": "https://github.com/No-22-Github/RWKV-Agent",
-    "lastUpdated": "2026-08-26T11:05:14Z",
-    "stars": 1,
-    "forks": 0,
-    "watchers": 0
   },
   {
     "projectName": "ai00-x-client",
@@ -35,7 +43,7 @@
     "projectName": "noesis",
     "repositoryUrl": "https://github.com/Vaniell0/noesis",
     "lastUpdated": "2026-08-25T04:55:36Z",
-    "stars": 3,
+    "stars": 4,
     "forks": 1,
     "watchers": 0
   },
@@ -53,14 +61,6 @@
     "lastUpdated": "2026-08-21T09:51:25Z",
     "stars": 4,
     "forks": 1,
-    "watchers": 0
-  },
-  {
-    "projectName": "RWKV-LH",
-    "repositoryUrl": "https://github.com/rwkv-rs/RWKV-LH",
-    "lastUpdated": "2026-08-20T08:43:36Z",
-    "stars": 1,
-    "forks": 0,
     "watchers": 0
   },
   {
@@ -118,5 +118,4 @@
     "stars": 16,
     "forks": 0,
     "watchers": 0
-  }
-]
+  }]

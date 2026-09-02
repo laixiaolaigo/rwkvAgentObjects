@@ -6,9 +6,11 @@ on:
       - main
       - master
   workflow_dispatch:
+  schedule:
+    - cron: "17 3 * * *"
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -28,6 +30,23 @@ jobs:
         with:
           node-version: 22
           cache: npm
+
+      - name: Update repository metadata
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npm run update:metadata
+
+      - name: Commit updated metadata
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet -- agent.json agent_repo.json; then
+            echo "No metadata changes to commit"
+          else
+            git add agent.json agent_repo.json
+            git commit -m "chore: update repository metadata"
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          fi
 
       - name: Setup Pages
         id: pages
