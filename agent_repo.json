@@ -1,5 +1,21 @@
 [
   {
+    "projectName": "noesis",
+    "repositoryUrl": "https://github.com/Vaniell0/noesis",
+    "lastUpdated": "2026-09-02T17:47:00Z",
+    "stars": 4,
+    "forks": 1,
+    "watchers": 0
+  },
+  {
+    "projectName": "rwkv-agent",
+    "repositoryUrl": "https://github.com/123123213weqw/rwkv-agent",
+    "lastUpdated": "2026-09-02T14:52:57Z",
+    "stars": 9,
+    "forks": 3,
+    "watchers": 1
+  },
+  {
     "projectName": "rwkv-Primitive-Bench",
     "repositoryUrl": "https://github.com/RWKV-Vibe/rwkv-Primitive-Bench",
     "lastUpdated": "2026-09-02T07:08:15Z",
@@ -24,14 +40,6 @@
     "watchers": 0
   },
   {
-    "projectName": "rwkv-agent",
-    "repositoryUrl": "https://github.com/123123213weqw/rwkv-agent",
-    "lastUpdated": "2026-08-30T02:30:05Z",
-    "stars": 9,
-    "forks": 3,
-    "watchers": 1
-  },
-  {
     "projectName": "rwkv-toolcaller-bench",
     "repositoryUrl": "https://codeberg.org/scarletwolf_ai/rwkv-toolcaller-bench",
     "lastUpdated": "2026-08-27T20:20:37+02:00",
@@ -44,14 +52,6 @@
     "repositoryUrl": "https://github.com/cgisky1980/ai00-x-client",
     "lastUpdated": "2026-08-26T03:27:13Z",
     "stars": 2,
-    "forks": 1,
-    "watchers": 0
-  },
-  {
-    "projectName": "noesis",
-    "repositoryUrl": "https://github.com/Vaniell0/noesis",
-    "lastUpdated": "2026-08-25T04:55:36Z",
-    "stars": 4,
     "forks": 1,
     "watchers": 0
   },
