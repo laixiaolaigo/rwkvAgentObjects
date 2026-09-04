@@ -1,5 +1,98 @@
 ﻿[
     {
+        "创建用户名":  "rwkv-rs",
+        "账号类型":  {
+            "en": "GitHub organization",
+            "zh": "GitHub组织"
+        },
+        "作者备注":  {
+            "en": "Primary contributor: w1c2j3 (Chase Jay)",
+            "zh": "主要贡献者：w1c2j3（Chase Jay）"
+        },
+        "用户头像":  "https://avatars.githubusercontent.com/u/186930499?v=4",
+        "GitHub地址":  "https://github.com/rwkv-rs/RWKV-LH",
+        "项目名称":  "RWKV-LH",
+        "创建时间":  "2026-08-09T03:51:27Z",
+        "最后更新时间":  "2026-09-04T07:38:15Z",
+        "主要语言":  "Python",
+        "许可证":  "MIT",
+        "Stars":  2,
+        "Watch":  0,
+        "Fork":  0,
+        "项目类型":  {
+            "en": "Persistent and verifiable RWKV long-horizon agent runtime",
+            "zh": "持久化、可验证的RWKV长程Agent运行时"
+        },
+        "介绍":  {
+            "en": "A Python runtime for persistent, verifiable long-horizon execution with RWKV. It stores immutable goals, task graphs, attempts, evidence, validation results, checkpoints, events, and per-request sampling decisions in SQLite. The runtime combines RWKV planning and action selection with a scoped file, command, and evidence harness, deterministic postcondition checks, bounded working memory, retry and replan handling, and resumable execution after interruption.",
+            "zh": "面向RWKV的Python持久化、可验证长程执行运行时。它使用SQLite保存不可变目标、任务图、执行尝试、证据、验证结果、检查点、事件以及每次模型请求的采样决策；将RWKV规划与动作选择、受限的文件/命令/证据工具、确定性后置条件验证、有界工作记忆、重试与重规划以及中断后的恢复执行组合为完整运行时。"
+        },
+        "Agent循环判断":  {
+            "en": "Implements a complete long-horizon agent loop. RWKV parses the goal and plans a task graph; the controller selects a ready task and builds bounded context; RWKV selects a scoped action; the harness executes it and returns artifacts and observations; deterministic validators and optional model cross-checks evaluate the result. Failures trigger RWKV failure analysis, action reselection, retry, or replan, while verified completion leads to a model-written final answer. State, attempts, and checkpoints are persisted so interrupted runs can resume.",
+            "zh": "实现了完整的长程Agent闭环：RWKV解析目标并规划任务图；Controller选择就绪任务并构建有界上下文；RWKV选择受限动作；Harness执行动作并返回产物与观察结果；确定性验证器及可选模型交叉检查负责验收。失败后由RWKV进行失败分析、重新选择动作、重试或重规划，全部必需任务验证通过后再由模型生成最终回答。状态、尝试和检查点均持久化，可在中断后恢复。"
+        },
+        "主要能力":  {
+            "en": [
+                "Persistent goals, task graphs, attempts, events, and checkpoints in SQLite",
+                "Scoped file, command, JSON, artifact, and evidence actions",
+                "Deterministic postcondition validation with optional RWKV cross-checking",
+                "RWKV goal parsing, planning, action selection, failure analysis, replanning, and final writing",
+                "Bounded working memory and auditable request-level temperature and seed decisions",
+                "Crash recovery, idempotency metadata, revision CAS, and controller leases"
+            ],
+            "zh": [
+                "使用SQLite持久化目标、任务图、尝试、事件和检查点",
+                "受工作区约束的文件、命令、JSON、产物和证据动作",
+                "确定性后置条件验证与可选RWKV交叉检查",
+                "RWKV目标解析、规划、动作选择、失败分析、重规划和最终写作",
+                "有界工作记忆及可审计的请求级温度与seed决策",
+                "崩溃恢复、幂等性元数据、revision CAS与Controller lease"
+            ]
+        },
+        "已知限制":  {
+            "en": [
+                "The project is an early local experimental release and is not production-ready",
+                "Initial real-RWKV E2E validation achieved 0/8 strict passes and 4/8 hidden artifact acceptances",
+                "Semantic cross-validation false negatives and replan-generated task cycles can reject valid work or interrupt runs",
+                "An external OpenAI-compatible RWKV endpoint is required, and endpoint outages can interrupt unfinished runs"
+            ],
+            "zh": [
+                "项目仍是本地实验初版，尚未达到生产可用状态",
+                "初版真实RWKV E2E验证为0/8严格通过、4/8隐藏产物验收通过",
+                "语义交叉验证误拒和重规划生成任务环可能拒绝有效结果或中断运行",
+                "依赖外部OpenAI兼容RWKV endpoint，服务不可用会中断未完成任务"
+            ]
+        },
+        "支持平台":  {
+            "en": "Python 3.10+ with uv; the core local runtime is designed to be platform-neutral, while isolated real E2E validation requires Linux with bubblewrap",
+            "zh": "使用uv管理的Python 3.10+；本地核心运行时按跨平台设计，隔离的真实E2E验证需要Linux与bubblewrap"
+        },
+        "信息来源":  {
+            "en": [
+                "GitHub repository metadata",
+                "Project README and architecture documentation",
+                "Controller, harness, validation, memory, and persistence implementation",
+                "Initial RWKV E2E validation report",
+                "pyproject.toml"
+            ],
+            "zh": [
+                "GitHub仓库元数据",
+                "项目README与架构文档",
+                "Controller、Harness、验证、记忆与持久化实现",
+                "初版RWKV E2E验证报告",
+                "pyproject.toml"
+            ]
+        },
+        "分类结论":  {
+            "en": "Strict Agent",
+            "zh": "严格Agent"
+        },
+        "分类依据":  {
+            "en": "RWKV participates in goal parsing, planning, action selection, failure analysis, replanning, and final response generation. Tool observations and validation results feed back into a persistent multi-step execution loop that can retry, revise its plan, and resume after interruption.",
+            "zh": "RWKV参与目标解析、规划、动作选择、失败分析、重规划和最终回答生成；工具观察与验证结果会回流到持久化的多步执行循环中，使其能够重试、修订计划并在中断后恢复。"
+        }
+    },
+    {
         "创建用户名": "Vaniell0",
         "用户头像": "https://avatars.githubusercontent.com/u/144351173?v=4",
         "GitHub地址": "https://github.com/Vaniell0/noesis",
@@ -125,99 +218,6 @@
         "信息来源": {"en": ["GitHub metadata", "README", "Benchmark runner and cases"], "zh": ["GitHub元数据", "README", "评测Runner与案例"]},
         "分类结论": {"en": "Agent benchmark", "zh": "Agent评测"},
         "分类依据": {"en": "Directly evaluates RWKV models inside tool-using Agent loops.", "zh": "直接在工具型Agent循环中评测RWKV模型。"}
-    },
-    {
-        "创建用户名":  "rwkv-rs",
-        "账号类型":  {
-            "en": "GitHub organization",
-            "zh": "GitHub组织"
-        },
-        "作者备注":  {
-            "en": "Primary contributor: w1c2j3 (Chase Jay)",
-            "zh": "主要贡献者：w1c2j3（Chase Jay）"
-        },
-        "用户头像":  "https://avatars.githubusercontent.com/u/186930499?v=4",
-        "GitHub地址":  "https://github.com/rwkv-rs/RWKV-LH",
-        "项目名称":  "RWKV-LH",
-        "创建时间":  "2026-08-09T03:51:27Z",
-        "最后更新时间":  "2026-09-01T19:02:42Z",
-        "主要语言":  "Python",
-        "许可证":  "MIT",
-        "Stars":  2,
-        "Watch":  0,
-        "Fork":  0,
-        "项目类型":  {
-            "en": "Persistent and verifiable RWKV long-horizon agent runtime",
-            "zh": "持久化、可验证的RWKV长程Agent运行时"
-        },
-        "介绍":  {
-            "en": "A Python runtime for persistent, verifiable long-horizon execution with RWKV. It stores immutable goals, task graphs, attempts, evidence, validation results, checkpoints, events, and per-request sampling decisions in SQLite. The runtime combines RWKV planning and action selection with a scoped file, command, and evidence harness, deterministic postcondition checks, bounded working memory, retry and replan handling, and resumable execution after interruption.",
-            "zh": "面向RWKV的Python持久化、可验证长程执行运行时。它使用SQLite保存不可变目标、任务图、执行尝试、证据、验证结果、检查点、事件以及每次模型请求的采样决策；将RWKV规划与动作选择、受限的文件/命令/证据工具、确定性后置条件验证、有界工作记忆、重试与重规划以及中断后的恢复执行组合为完整运行时。"
-        },
-        "Agent循环判断":  {
-            "en": "Implements a complete long-horizon agent loop. RWKV parses the goal and plans a task graph; the controller selects a ready task and builds bounded context; RWKV selects a scoped action; the harness executes it and returns artifacts and observations; deterministic validators and optional model cross-checks evaluate the result. Failures trigger RWKV failure analysis, action reselection, retry, or replan, while verified completion leads to a model-written final answer. State, attempts, and checkpoints are persisted so interrupted runs can resume.",
-            "zh": "实现了完整的长程Agent闭环：RWKV解析目标并规划任务图；Controller选择就绪任务并构建有界上下文；RWKV选择受限动作；Harness执行动作并返回产物与观察结果；确定性验证器及可选模型交叉检查负责验收。失败后由RWKV进行失败分析、重新选择动作、重试或重规划，全部必需任务验证通过后再由模型生成最终回答。状态、尝试和检查点均持久化，可在中断后恢复。"
-        },
-        "主要能力":  {
-            "en": [
-                "Persistent goals, task graphs, attempts, events, and checkpoints in SQLite",
-                "Scoped file, command, JSON, artifact, and evidence actions",
-                "Deterministic postcondition validation with optional RWKV cross-checking",
-                "RWKV goal parsing, planning, action selection, failure analysis, replanning, and final writing",
-                "Bounded working memory and auditable request-level temperature and seed decisions",
-                "Crash recovery, idempotency metadata, revision CAS, and controller leases"
-            ],
-            "zh": [
-                "使用SQLite持久化目标、任务图、尝试、事件和检查点",
-                "受工作区约束的文件、命令、JSON、产物和证据动作",
-                "确定性后置条件验证与可选RWKV交叉检查",
-                "RWKV目标解析、规划、动作选择、失败分析、重规划和最终写作",
-                "有界工作记忆及可审计的请求级温度与seed决策",
-                "崩溃恢复、幂等性元数据、revision CAS与Controller lease"
-            ]
-        },
-        "已知限制":  {
-            "en": [
-                "The project is an early local experimental release and is not production-ready",
-                "Initial real-RWKV E2E validation achieved 0/8 strict passes and 4/8 hidden artifact acceptances",
-                "Semantic cross-validation false negatives and replan-generated task cycles can reject valid work or interrupt runs",
-                "An external OpenAI-compatible RWKV endpoint is required, and endpoint outages can interrupt unfinished runs"
-            ],
-            "zh": [
-                "项目仍是本地实验初版，尚未达到生产可用状态",
-                "初版真实RWKV E2E验证为0/8严格通过、4/8隐藏产物验收通过",
-                "语义交叉验证误拒和重规划生成任务环可能拒绝有效结果或中断运行",
-                "依赖外部OpenAI兼容RWKV endpoint，服务不可用会中断未完成任务"
-            ]
-        },
-        "支持平台":  {
-            "en": "Python 3.10+ with uv; the core local runtime is designed to be platform-neutral, while isolated real E2E validation requires Linux with bubblewrap",
-            "zh": "使用uv管理的Python 3.10+；本地核心运行时按跨平台设计，隔离的真实E2E验证需要Linux与bubblewrap"
-        },
-        "信息来源":  {
-            "en": [
-                "GitHub repository metadata",
-                "Project README and architecture documentation",
-                "Controller, harness, validation, memory, and persistence implementation",
-                "Initial RWKV E2E validation report",
-                "pyproject.toml"
-            ],
-            "zh": [
-                "GitHub仓库元数据",
-                "项目README与架构文档",
-                "Controller、Harness、验证、记忆与持久化实现",
-                "初版RWKV E2E验证报告",
-                "pyproject.toml"
-            ]
-        },
-        "分类结论":  {
-            "en": "Strict Agent",
-            "zh": "严格Agent"
-        },
-        "分类依据":  {
-            "en": "RWKV participates in goal parsing, planning, action selection, failure analysis, replanning, and final response generation. Tool observations and validation results feed back into a persistent multi-step execution loop that can retry, revise its plan, and resume after interruption.",
-            "zh": "RWKV参与目标解析、规划、动作选择、失败分析、重规划和最终回答生成；工具观察与验证结果会回流到持久化的多步执行循环中，使其能够重试、修订计划并在中断后恢复。"
-        }
     },
     {
         "创建用户名":  "No-22-Github",

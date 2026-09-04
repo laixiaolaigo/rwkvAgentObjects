@@ -1,5 +1,13 @@
 [
   {
+    "projectName": "RWKV-LH",
+    "repositoryUrl": "https://github.com/rwkv-rs/RWKV-LH",
+    "lastUpdated": "2026-09-04T07:38:15Z",
+    "stars": 2,
+    "forks": 0,
+    "watchers": 0
+  },
+  {
     "projectName": "noesis",
     "repositoryUrl": "https://github.com/Vaniell0/noesis",
     "lastUpdated": "2026-09-02T17:47:00Z",
@@ -21,14 +29,6 @@
     "lastUpdated": "2026-09-02T07:08:15Z",
     "stars": 3,
     "forks": 1,
-    "watchers": 0
-  },
-  {
-    "projectName": "RWKV-LH",
-    "repositoryUrl": "https://github.com/rwkv-rs/RWKV-LH",
-    "lastUpdated": "2026-09-01T19:02:42Z",
-    "stars": 2,
-    "forks": 0,
     "watchers": 0
   },
   {
