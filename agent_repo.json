@@ -1,5 +1,21 @@
 [
   {
+    "projectName": "RWKV-LH",
+    "repositoryUrl": "https://github.com/rwkv-rs/RWKV-LH",
+    "lastUpdated": "2026-09-07T06:30:54Z",
+    "stars": 2,
+    "forks": 0,
+    "watchers": 0
+  },
+  {
+    "projectName": "RWKV-Agent",
+    "repositoryUrl": "https://github.com/No-22-Github/RWKV-Agent",
+    "lastUpdated": "2026-09-07T05:24:45Z",
+    "stars": 2,
+    "forks": 0,
+    "watchers": 0
+  },
+  {
     "projectName": "ai00-x-client",
     "repositoryUrl": "https://github.com/cgisky1980/ai00-x-client",
     "lastUpdated": "2026-09-05T06:57:45Z",
@@ -24,14 +40,6 @@
     "watchers": 0
   },
   {
-    "projectName": "RWKV-LH",
-    "repositoryUrl": "https://github.com/rwkv-rs/RWKV-LH",
-    "lastUpdated": "2026-09-04T11:24:07Z",
-    "stars": 2,
-    "forks": 0,
-    "watchers": 0
-  },
-  {
     "projectName": "rwkv-agent",
     "repositoryUrl": "https://github.com/123123213weqw/rwkv-agent",
     "lastUpdated": "2026-09-02T14:52:57Z",
@@ -45,14 +53,6 @@
     "lastUpdated": "2026-09-02T07:08:15Z",
     "stars": 3,
     "forks": 1,
-    "watchers": 0
-  },
-  {
-    "projectName": "RWKV-Agent",
-    "repositoryUrl": "https://github.com/No-22-Github/RWKV-Agent",
-    "lastUpdated": "2026-09-01T11:27:59Z",
-    "stars": 2,
-    "forks": 0,
     "watchers": 0
   },
   {
