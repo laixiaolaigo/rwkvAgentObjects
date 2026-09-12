@@ -1,5 +1,44 @@
 ﻿[
     {
+        "创建用户名": "w1c2j3",
+        "作者备注": {
+            "en": "RWKV ecosystem developer",
+            "zh": "RWKV生态开发者"
+        },
+        "用户头像": "https://avatars.githubusercontent.com/u/184242919?v=4",
+        "GitHub地址": "https://github.com/w1c2j3/RWKV-SearchReader",
+        "项目名称": "RWKV-SearchReader",
+        "创建时间": "2026-09-03T03:18:54Z",
+        "最后更新时间": "2026-09-03T03:19:01Z",
+        "主要语言": "Python",
+        "许可证": "MIT",
+        "Stars": 2,
+        "项目类型": {
+            "en": "RWKV-powered web and document research assistant",
+            "zh": "基于RWKV的网页与文档研究助手"
+        },
+        "介绍": {
+            "en": "A parallel web and document research assistant powered by RWKV.",
+            "zh": "一个由RWKV驱动的并行网页与文档研究助手。"
+        },
+        "Agent循环判断": {
+            "en": "The assistant coordinates research tasks across web and document sources and uses model-guided processing to produce research results.",
+            "zh": "该助手协调网页与文档来源的研究任务，并通过模型引导的处理流程生成研究结果。"
+        },
+        "信息来源": {
+            "en": ["GitHub repository metadata", "Project description"],
+            "zh": ["GitHub仓库元数据", "项目描述"]
+        },
+        "分类结论": {
+            "en": "Agent-related research assistant",
+            "zh": "Agent相关研究助手"
+        },
+        "分类依据": {
+            "en": "The repository explicitly describes a RWKV-powered assistant for parallel web and document research.",
+            "zh": "仓库明确定位为由RWKV驱动的并行网页与文档研究助手。"
+        }
+    },
+    {
         "创建用户名": "rwkv-rs",
         "账号类型": {
             "en": "GitHub organization",

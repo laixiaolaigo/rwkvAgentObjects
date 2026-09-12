@@ -1,5 +1,13 @@
 [
   {
+    "projectName": "RWKV-SearchReader",
+    "repositoryUrl": "https://github.com/w1c2j3/RWKV-SearchReader",
+    "lastUpdated": "2026-09-03T03:19:01Z",
+    "stars": 2,
+    "forks": 1,
+    "watchers": 0
+  },
+  {
     "projectName": "RWKV-Scout",
     "repositoryUrl": "https://github.com/rwkv-rs/RWKV-Scout",
     "lastUpdated": "2026-08-21T15:18:08Z",
