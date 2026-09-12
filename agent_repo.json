@@ -1,5 +1,61 @@
 [
   {
+    "projectName": "RWKV-LH",
+    "repositoryUrl": "https://github.com/rwkv-rs/RWKV-LH",
+    "lastUpdated": "2026-09-11T06:37:14Z",
+    "stars": 2,
+    "forks": 0,
+    "watchers": 0
+  },
+  {
+    "projectName": "RWKV-Agent",
+    "repositoryUrl": "https://github.com/No-22-Github/RWKV-Agent",
+    "lastUpdated": "2026-09-10T12:05:31Z",
+    "stars": 2,
+    "forks": 0,
+    "watchers": 0
+  },
+  {
+    "projectName": "noesis",
+    "repositoryUrl": "https://github.com/Vaniell0/noesis",
+    "lastUpdated": "2026-09-10T09:54:29Z",
+    "stars": 4,
+    "forks": 1,
+    "watchers": 0
+  },
+  {
+    "projectName": "ai00-x-client",
+    "repositoryUrl": "https://github.com/cgisky1980/ai00-x-client",
+    "lastUpdated": "2026-09-10T07:20:33Z",
+    "stars": 2,
+    "forks": 2,
+    "watchers": 0
+  },
+  {
+    "projectName": "rwkv7-state-embedding",
+    "repositoryUrl": "https://github.com/cgisky1980/rwkv7-state-embedding",
+    "lastUpdated": "2026-09-09T03:17:21Z",
+    "stars": 4,
+    "forks": 2,
+    "watchers": 0
+  },
+  {
+    "projectName": "rwkv-Primitive-Bench",
+    "repositoryUrl": "https://github.com/RWKV-Vibe/rwkv-Primitive-Bench",
+    "lastUpdated": "2026-09-08T08:57:40Z",
+    "stars": 3,
+    "forks": 1,
+    "watchers": 0
+  },
+  {
+    "projectName": "rwkv-toolcaller-bench",
+    "repositoryUrl": "https://codeberg.org/scarletwolf_ai/rwkv-toolcaller-bench",
+    "lastUpdated": "2026-09-04T22:10:56+02:00",
+    "stars": 0,
+    "forks": 0,
+    "watchers": 1
+  },
+  {
     "projectName": "RWKV-SearchReader",
     "repositoryUrl": "https://github.com/w1c2j3/RWKV-SearchReader",
     "lastUpdated": "2026-09-03T03:19:01Z",
@@ -8,75 +64,19 @@
     "watchers": 0
   },
   {
+    "projectName": "rwkv-agent",
+    "repositoryUrl": "https://github.com/123123213weqw/rwkv-agent",
+    "lastUpdated": "2026-09-02T14:52:57Z",
+    "stars": 9,
+    "forks": 3,
+    "watchers": 1
+  },
+  {
     "projectName": "RWKV-Scout",
     "repositoryUrl": "https://github.com/rwkv-rs/RWKV-Scout",
     "lastUpdated": "2026-08-21T15:18:08Z",
     "stars": 2,
     "forks": 0,
-    "watchers": 0
-  },
-  {
-    "projectName": "noesis",
-    "repositoryUrl": "https://github.com/Vaniell0/noesis",
-    "lastUpdated": "2026-08-21T14:37:33Z",
-    "stars": 3,
-    "forks": 1,
-    "watchers": 0
-  },
-  {
-    "projectName": "ai00-x-client",
-    "repositoryUrl": "https://github.com/cgisky1980/ai00-x-client",
-    "lastUpdated": "2026-08-21T12:47:21Z",
-    "stars": 2,
-    "forks": 1,
-    "watchers": 0
-  },
-  {
-    "projectName": "rwkv7-state-embedding",
-    "repositoryUrl": "https://github.com/cgisky1980/rwkv7-state-embedding",
-    "lastUpdated": "2026-08-21T09:51:25Z",
-    "stars": 2,
-    "forks": 0,
-    "watchers": 0
-  },
-  {
-    "projectName": "RWKV-Agent",
-    "repositoryUrl": "https://github.com/No-22-Github/RWKV-Agent",
-    "lastUpdated": "2026-08-20T12:54:06Z",
-    "stars": 1,
-    "forks": 0,
-    "watchers": 0
-  },
-  {
-    "projectName": "RWKV-LH",
-    "repositoryUrl": "https://github.com/rwkv-rs/RWKV-LH",
-    "lastUpdated": "2026-08-20T08:43:36Z",
-    "stars": 1,
-    "forks": 0,
-    "watchers": 0
-  },
-  {
-    "projectName": "rwkv-toolcaller-bench",
-    "repositoryUrl": "https://codeberg.org/scarletwolf_ai/rwkv-toolcaller-bench",
-    "lastUpdated": "2026-08-14T15:42:17+02:00",
-    "stars": 0,
-    "forks": 0,
-    "watchers": 0
-  },
-  {
-    "projectName": "rwkv-Primitive-Bench",
-    "repositoryUrl": "https://github.com/RWKV-Vibe/rwkv-Primitive-Bench",
-    "lastUpdated": "2026-08-12T10:26:05Z",
-    "stars": 3,
-    "forks": 1,
-    "watchers": 0
-  },
-  {
-    "projectName": "rwkv-agent",
-    "repositoryUrl": "https://github.com/123123213weqw/rwkv-agent",
-    "lastUpdated": "2026-08-10T06:45:55Z",
-    "stars": 7,
-    "forks": 1,
     "watchers": 0
   },
   {
@@ -126,5 +126,4 @@
     "stars": 16,
     "forks": 0,
     "watchers": 0
-  }
-]
+  }]
