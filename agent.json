@@ -1,5 +1,76 @@
 ﻿[
     {
+        "创建用户名": "cgisky1980",
+        "作者备注": {
+            "en": "Ai00-X ecosystem maintainer",
+            "zh": "Ai00-X生态维护者"
+        },
+        "用户头像": "https://avatars.githubusercontent.com/u/82481660?v=4",
+        "GitHub地址": "https://github.com/cgisky1980/ai00-x-client",
+        "项目名称": "ai00-x-client",
+        "创建时间": "2026-08-12T06:11:04Z",
+        "最后更新时间": "2026-09-11T16:29:07Z",
+        "主要语言": "Rust",
+        "许可证": "MIT",
+        "Stars": 2,
+        "Watch": 0,
+        "Fork": 2,
+        "项目类型": {
+            "en": "Cross-platform RWKV AI assistant and Agent desktop client",
+            "zh": "跨平台RWKV AI助理与Agent桌面客户端"
+        },
+        "介绍": {
+            "en": "A Tauri 2 desktop client built with Rust and TypeScript. It combines local RWKV inference with remote AI APIs and provides a personal assistant, coding agent, knowledge-work agent, and Markdown-defined custom agents. The application also integrates long-term memory, tool-enabled workflows, Skills, MCP, and remote access through phone browsers and messaging platforms.",
+            "zh": "使用Rust和TypeScript构建的Tauri 2桌面客户端。它将本地RWKV推理与远程AI API结合，提供个人助理、Coding Agent、知识工作Agent和通过Markdown定义的自定义Agent；同时集成长时记忆、工具工作流、Skills、MCP，并支持手机浏览器及消息平台远程访问。"
+        },
+        "Agent循环判断": {
+            "en": "Defines several executable Agent modes. The Code Agent can autonomously read, edit, run, verify, debug, and review; the personal assistant orchestrates Code, Cowork, and custom Agents; and the system supports tool calls, memory, Skills, MCP, and remote commands. Local RWKV inference is used first, with routing to remote models for tasks that need stronger capabilities.",
+            "zh": "定义了多种可执行的Agent模式。Code Agent能够自主读取、编辑、运行、验证、调试和审查；个人助理可按需编排Code、Cowork及自定义Agent；系统还支持工具调用、记忆、Skills、MCP和远程命令。默认优先使用本地RWKV推理，复杂任务再路由到更强的远程模型。"
+        },
+        "主要能力": {
+            "en": [
+                "Personal assistant with long-term memory",
+                "Autonomous coding Agent with read/edit/run/verify workflows",
+                "Knowledge-work Agent for PDF, DOCX, XLSX, and PPTX",
+                "Custom Agents defined with Markdown",
+                "RWKV local inference with remote-model fallback",
+                "Skills, MCP, desktop companion, and remote access"
+            ],
+            "zh": [
+                "带长时记忆的个人助理",
+                "支持读取/编辑/运行/验证工作流的自主Coding Agent",
+                "处理PDF、DOCX、XLSX和PPTX的知识工作Agent",
+                "通过Markdown定义自定义Agent",
+                "RWKV本地推理与远程模型回退",
+                "Skills、MCP、桌面伴侣和远程访问"
+            ]
+        },
+        "支持平台": {
+            "en": "Windows, macOS, and Linux; local RWKV support is optimized for available platform backends",
+            "zh": "Windows、macOS和Linux；本地RWKV支持根据平台后端进行适配"
+        },
+        "信息来源": {
+            "en": [
+                "GitHub repository metadata",
+                "Project README",
+                "Repository Agent and runtime architecture"
+            ],
+            "zh": [
+                "GitHub仓库元数据",
+                "项目README",
+                "仓库中的Agent与运行时架构"
+            ]
+        },
+        "分类结论": {
+            "en": "Strict Agent",
+            "zh": "严格Agent"
+        },
+        "分类依据": {
+            "en": "The repository provides runnable Agent roles with explicit tool-use and autonomous execution workflows, rather than only exposing an RWKV inference engine.",
+            "zh": "仓库提供可运行的多种Agent角色，并实现明确的工具使用和自主执行工作流，不只是提供RWKV推理引擎。"
+        }
+    },
+    {
         "创建用户名":  "rwkv-rs",
         "账号类型":  {
             "en": "GitHub organization",
@@ -13,7 +84,7 @@
         "GitHub地址":  "https://github.com/rwkv-rs/RWKV-LH",
         "项目名称":  "RWKV-LH",
         "创建时间":  "2026-08-09T03:51:27Z",
-        "最后更新时间":  "2026-09-11T06:37:14Z",
+        "最后更新时间":  "2026-09-11T09:17:04Z",
         "主要语言":  "Python",
         "许可证":  "MIT",
         "Stars":  2,
@@ -181,77 +252,6 @@
     {
         "创建用户名": "cgisky1980",
         "作者备注": {
-            "en": "Ai00-X ecosystem maintainer",
-            "zh": "Ai00-X生态维护者"
-        },
-        "用户头像": "https://avatars.githubusercontent.com/u/82481660?v=4",
-        "GitHub地址": "https://github.com/cgisky1980/ai00-x-client",
-        "项目名称": "ai00-x-client",
-        "创建时间": "2026-08-12T06:11:04Z",
-        "最后更新时间": "2026-09-10T07:20:33Z",
-        "主要语言": "Rust",
-        "许可证": "MIT",
-        "Stars": 2,
-        "Watch": 0,
-        "Fork": 2,
-        "项目类型": {
-            "en": "Cross-platform RWKV AI assistant and Agent desktop client",
-            "zh": "跨平台RWKV AI助理与Agent桌面客户端"
-        },
-        "介绍": {
-            "en": "A Tauri 2 desktop client built with Rust and TypeScript. It combines local RWKV inference with remote AI APIs and provides a personal assistant, coding agent, knowledge-work agent, and Markdown-defined custom agents. The application also integrates long-term memory, tool-enabled workflows, Skills, MCP, and remote access through phone browsers and messaging platforms.",
-            "zh": "使用Rust和TypeScript构建的Tauri 2桌面客户端。它将本地RWKV推理与远程AI API结合，提供个人助理、Coding Agent、知识工作Agent和通过Markdown定义的自定义Agent；同时集成长时记忆、工具工作流、Skills、MCP，并支持手机浏览器及消息平台远程访问。"
-        },
-        "Agent循环判断": {
-            "en": "Defines several executable Agent modes. The Code Agent can autonomously read, edit, run, verify, debug, and review; the personal assistant orchestrates Code, Cowork, and custom Agents; and the system supports tool calls, memory, Skills, MCP, and remote commands. Local RWKV inference is used first, with routing to remote models for tasks that need stronger capabilities.",
-            "zh": "定义了多种可执行的Agent模式。Code Agent能够自主读取、编辑、运行、验证、调试和审查；个人助理可按需编排Code、Cowork及自定义Agent；系统还支持工具调用、记忆、Skills、MCP和远程命令。默认优先使用本地RWKV推理，复杂任务再路由到更强的远程模型。"
-        },
-        "主要能力": {
-            "en": [
-                "Personal assistant with long-term memory",
-                "Autonomous coding Agent with read/edit/run/verify workflows",
-                "Knowledge-work Agent for PDF, DOCX, XLSX, and PPTX",
-                "Custom Agents defined with Markdown",
-                "RWKV local inference with remote-model fallback",
-                "Skills, MCP, desktop companion, and remote access"
-            ],
-            "zh": [
-                "带长时记忆的个人助理",
-                "支持读取/编辑/运行/验证工作流的自主Coding Agent",
-                "处理PDF、DOCX、XLSX和PPTX的知识工作Agent",
-                "通过Markdown定义自定义Agent",
-                "RWKV本地推理与远程模型回退",
-                "Skills、MCP、桌面伴侣和远程访问"
-            ]
-        },
-        "支持平台": {
-            "en": "Windows, macOS, and Linux; local RWKV support is optimized for available platform backends",
-            "zh": "Windows、macOS和Linux；本地RWKV支持根据平台后端进行适配"
-        },
-        "信息来源": {
-            "en": [
-                "GitHub repository metadata",
-                "Project README",
-                "Repository Agent and runtime architecture"
-            ],
-            "zh": [
-                "GitHub仓库元数据",
-                "项目README",
-                "仓库中的Agent与运行时架构"
-            ]
-        },
-        "分类结论": {
-            "en": "Strict Agent",
-            "zh": "严格Agent"
-        },
-        "分类依据": {
-            "en": "The repository provides runnable Agent roles with explicit tool-use and autonomous execution workflows, rather than only exposing an RWKV inference engine.",
-            "zh": "仓库提供可运行的多种Agent角色，并实现明确的工具使用和自主执行工作流，不只是提供RWKV推理引擎。"
-        }
-    },
-    {
-        "创建用户名": "cgisky1980",
-        "作者备注": {
             "en": "Ai00-X ecosystem maintainer; RWKV-7 state-embedding research",
             "zh": "Ai00-X生态维护者；RWKV-7状态嵌入研究"
         },
@@ -379,6 +379,47 @@
         "信息来源": {"en": ["Codeberg metadata", "README", "Evaluation, judge, probe, and training files"], "zh": ["Codeberg元数据", "README", "评测、judge、探针与训练文件"]},
         "分类结论": {"en": "Agent benchmark and training upstream", "zh": "Agent评测与训练上游"},
         "分类依据": {"en": "Directly develops and measures RWKV tool-calling capabilities used by Agents.", "zh": "直接开发并衡量Agent所需的RWKV工具调用能力。"}
+    },
+    {
+        "创建用户名": "w1c2j3",
+        "作者备注": {
+            "en": "RWKV ecosystem developer",
+            "zh": "RWKV生态开发者"
+        },
+        "用户头像": "https://avatars.githubusercontent.com/u/184242919?v=4",
+        "GitHub地址": "https://github.com/w1c2j3/RWKV-SearchReader",
+        "项目名称": "RWKV-SearchReader",
+        "创建时间": "2026-09-03T03:18:54Z",
+        "最后更新时间": "2026-09-03T03:19:01Z",
+        "主要语言": "Python",
+        "许可证": "MIT",
+        "Stars": 2,
+        "Watch": 0,
+        "Fork": 1,
+        "项目类型": {
+            "en": "RWKV-powered web and document research assistant",
+            "zh": "基于RWKV的网页与文档研究助手"
+        },
+        "介绍": {
+            "en": "A parallel web and document research assistant powered by RWKV.",
+            "zh": "一个由RWKV驱动的并行网页与文档研究助手。"
+        },
+        "Agent循环判断": {
+            "en": "The assistant coordinates research tasks across web and document sources and uses model-guided processing to produce research results.",
+            "zh": "该助手协调网页与文档来源的研究任务，并通过模型引导的处理流程生成研究结果。"
+        },
+        "信息来源": {
+            "en": ["GitHub repository metadata", "Project description"],
+            "zh": ["GitHub仓库元数据", "项目描述"]
+        },
+        "分类结论": {
+            "en": "Agent-related research assistant",
+            "zh": "Agent相关研究助手"
+        },
+        "分类依据": {
+            "en": "The repository explicitly describes a RWKV-powered assistant for parallel web and document research.",
+            "zh": "仓库明确定位为由RWKV驱动的并行网页与文档研究助手。"
+        }
     },
     {
         "创建用户名":  "123123213weqw",
