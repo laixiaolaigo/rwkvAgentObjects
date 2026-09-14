@@ -1,5 +1,90 @@
 ﻿[
     {
+        "创建用户名": "SU-180",
+        "作者备注": {
+            "en": "Experimental extension of Ai00-X/rwkv-agent-kit",
+            "zh": "基于Ai00-X/rwkv-agent-kit的实验性扩展"
+        },
+        "用户头像": "https://avatars.githubusercontent.com/u/186557502?v=4",
+        "GitHub地址": "https://github.com/SU-180/rwkv7-agent-kit",
+        "项目名称": "rwkv7-agent-kit",
+        "创建时间": "2026-09-14T08:18:06Z",
+        "最后更新时间": "2026-09-14T09:05:57Z",
+        "主要语言": "Rust",
+        "许可证": "MIT OR Apache-2.0（README声明）",
+        "Stars": 1,
+        "Watch": 0,
+        "Fork": 0,
+        "项目类型": {
+            "en": "Local RWKV7 Agent runtime and tool-calling experiment",
+            "zh": "本地RWKV7 Agent运行时与工具调用实验"
+        },
+        "介绍": {
+            "en": "An experimental extension of rwkv-agent-kit that runs RWKV7-G1j-13.3B locally through ai00-core and web-rwkv. It combines local inference, multi-turn conversation, SQLite memory, tool registration, and a minimal runnable ReAct-style Agent loop.",
+            "zh": "基于rwkv-agent-kit的实验性扩展，通过ai00-core与web-rwkv在本地运行RWKV7-G1j-13.3B，集成本地推理、多轮对话、SQLite记忆、工具注册以及最小可运行的ReAct式Agent循环。"
+        },
+        "Agent循环判断": {
+            "en": "Implements a concrete Agent loop in examples/tool_agent_demo.rs. RWKV7 chooses between a tool action and a final response; Rust executes calculator or current-time tools through ToolRegistry; the observation is fed back to RWKV7, which reasons again and produces the final answer.",
+            "zh": "在examples/tool_agent_demo.rs中实现了明确的Agent循环：RWKV7判断调用工具还是直接回答；Rust通过ToolRegistry执行计算器或当前时间工具；Observation回灌RWKV7后，模型再次推理并生成最终回答。"
+        },
+        "主要能力": {
+            "en": [
+                "Local RWKV7-G1j-13.3B inference with ai00-core and web-rwkv",
+                "JSON tool decisions with real Rust tool execution",
+                "Observation feedback and iterative tool-or-final reasoning",
+                "Multi-turn conversations and SQLite-backed memory",
+                "Calculator and current-time demonstration tools"
+            ],
+            "zh": [
+                "通过ai00-core与web-rwkv进行本地RWKV7-G1j-13.3B推理",
+                "JSON工具决策与真实Rust工具执行",
+                "Observation反馈及迭代式工具或最终回答推理",
+                "多轮对话与SQLite记忆",
+                "计算器与当前时间演示工具"
+            ]
+        },
+        "已知限制": {
+            "en": [
+                "The project is an experimental proof of concept rather than a production release",
+                "The current Agent demonstration exposes only calculator and current-time tools",
+                "The verified setup requires Linux, Vulkan, an NVIDIA RTX 3090, and local model files"
+            ],
+            "zh": [
+                "项目属于实验性概念验证，尚非生产版本",
+                "当前Agent演示仅提供计算器与当前时间工具",
+                "已验证环境需要Linux、Vulkan、NVIDIA RTX 3090及本地模型文件"
+            ]
+        },
+        "支持平台": {
+            "en": "Currently verified on Linux with an NVIDIA RTX 3090 and Vulkan; Rust 1.70+ and local RWKV7 model files are required",
+            "zh": "当前已在配备NVIDIA RTX 3090与Vulkan的Linux环境验证；需要Rust 1.70+及本地RWKV7模型文件"
+        },
+        "关联项目": [
+            "https://github.com/Ai00-X/rwkv-agent-kit",
+            "https://github.com/BlinkDL/RWKV-LM"
+        ],
+        "信息来源": {
+            "en": [
+                "GitHub repository metadata",
+                "Chinese and English README files",
+                "Tool Agent demonstration and repository structure"
+            ],
+            "zh": [
+                "GitHub仓库元数据",
+                "中英文README",
+                "Tool Agent演示与仓库结构"
+            ]
+        },
+        "分类结论": {
+            "en": "Strict Agent",
+            "zh": "严格Agent"
+        },
+        "分类依据": {
+            "en": "RWKV7 selects executable tool actions, receives real tool observations, and continues reasoning until it emits a final answer, forming a complete model-tool-feedback loop.",
+            "zh": "RWKV7会选择可执行工具动作、接收真实工具Observation并继续推理，直到输出最终回答，形成完整的模型—工具—反馈闭环。"
+        }
+    },
+    {
         "创建用户名":  "rwkv-rs",
         "账号类型":  {
             "en": "GitHub organization",

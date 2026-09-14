@@ -1,5 +1,13 @@
 [
   {
+    "projectName": "rwkv7-agent-kit",
+    "repositoryUrl": "https://github.com/SU-180/rwkv7-agent-kit",
+    "lastUpdated": "2026-09-14T09:05:57Z",
+    "stars": 1,
+    "forks": 0,
+    "watchers": 0
+  },
+  {
     "projectName": "RWKV-LH",
     "repositoryUrl": "https://github.com/rwkv-rs/RWKV-LH",
     "lastUpdated": "2026-09-14T08:42:18Z",
