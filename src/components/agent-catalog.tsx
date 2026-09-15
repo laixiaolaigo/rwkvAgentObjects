@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import {
   ArrowUpRight,
   Bot,
@@ -19,7 +19,10 @@ import {
   Star,
 } from "lucide-react";
 
-import type { AgentProject } from "@/lib/agent-projects";
+import {
+  normalizeAgentProjects,
+  type AgentProject,
+} from "@/lib/agent-project-normalizer";
 import {
   intlLocale,
   type DataLoadError,
@@ -280,13 +283,39 @@ function ProjectDetails({
 export function AgentCatalog({
   locale,
   dictionary,
-  projects,
+  projects: initialProjects,
   loadError,
 }: AgentCatalogProps) {
+  const [projects, setProjects] = useState(initialProjects);
+  const [projectLoadError, setProjectLoadError] = useState(loadError);
   const [query, setQuery] = useState("");
   const [language, setLanguage] = useState("all");
   const [sortMode, setSortMode] = useState<SortMode>("updated");
   const [selectedProject, setSelectedProject] = useState<AgentProject | null>(null);
+
+  useEffect(() => {
+    let cancelled = false;
+
+    async function refreshProjects() {
+      const basePath = window.location.pathname.replace(/\/(?:en|zh)\/?$/, "");
+      const response = await fetch(`${basePath}/agent-data.json?v=${Date.now()}`, {
+        cache: "no-store",
+      });
+      if (!response.ok) throw new Error(`agent-data.json returned HTTP ${response.status}`);
+
+      const latestProjects = normalizeAgentProjects(await response.json(), locale);
+      if (!cancelled) {
+        setProjects(latestProjects);
+        setProjectLoadError(undefined);
+      }
+    }
+
+    refreshProjects().catch(() => {});
+    return () => {
+      cancelled = true;
+    };
+  }, [locale]);
+
   const targetLocale = locale === "en" ? "zh" : "en";
   const sortLabels: Record<SortMode, string> = {
     updated: dictionary.projects.sortUpdated,
@@ -471,12 +500,12 @@ export function AgentCatalog({
             </div>
           </div>
 
-          {loadError ? (
+          {projectLoadError ? (
             <Card className="border-destructive/30 bg-destructive/5 py-14 text-center shadow-none">
               <CardContent className="mx-auto max-w-lg space-y-3">
                 <CircleAlert className="mx-auto size-7 text-destructive" />
                 <h3 className="font-medium">
-                  {loadError.kind === "missing"
+                  {projectLoadError.kind === "missing"
                     ? dictionary.projects.missingFile
                     : dictionary.projects.invalidFile}
                 </h3>

@@ -1,5 +1,3 @@
-import "server-only";
-
 import type { Locale } from "@/lib/i18n";
 
 export type UnknownRecord = Record<string, unknown>;
