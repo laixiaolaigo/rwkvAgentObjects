@@ -1,5 +1,13 @@
 [
   {
+    "projectName": "ai00-x-client",
+    "repositoryUrl": "https://github.com/cgisky1980/ai00-x-client",
+    "lastUpdated": "2026-09-15T07:48:28Z",
+    "stars": 3,
+    "forks": 2,
+    "watchers": 0
+  },
+  {
     "projectName": "rwkv-router",
     "repositoryUrl": "https://github.com/cgisky1980/rwkv-router",
     "lastUpdated": "2026-09-15T07:15:23Z",
@@ -29,14 +37,6 @@
     "lastUpdated": "2026-09-12T08:18:55Z",
     "stars": 2,
     "forks": 0,
-    "watchers": 0
-  },
-  {
-    "projectName": "ai00-x-client",
-    "repositoryUrl": "https://github.com/cgisky1980/ai00-x-client",
-    "lastUpdated": "2026-09-12T07:11:44Z",
-    "stars": 3,
-    "forks": 2,
     "watchers": 0
   },
   {
