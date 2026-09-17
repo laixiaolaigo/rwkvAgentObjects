@@ -1,34 +1,12 @@
 ﻿[
     {
-        "创建用户名": "Vaniell0",
-        "用户头像": "https://avatars.githubusercontent.com/u/144351173?v=4",
-        "GitHub地址": "https://github.com/Vaniell0/noesis",
-        "项目名称": "noesis",
-        "创建时间": "2026-07-21T22:04:25Z",
-        "最后更新时间": "2026-09-16T07:23:51Z",
-        "主要语言": "Python",
-        "许可证": "Apache-2.0",
-        "Stars": 4,
-        "Watch": 0,
-        "Fork": 1,
-        "项目类型": {"en": "Persistent RWKV cognitive-runtime research", "zh": "持续运行的RWKV认知运行时研究"},
-        "介绍": {
-            "en": "A research project for an always-running RWKV cognitive runtime that ingests system events, organizes persistent memory, routes tools, and acts on the local environment through extensions. The repository includes runtime, memory, policy, DSL, training, and deployment foundations.",
-            "zh": "面向持续运行RWKV认知运行时的研究项目，计划吸收系统事件、组织持久记忆、路由工具，并通过扩展作用于本地环境；仓库已包含运行时、记忆、策略、DSL、训练和部署基础。"
-        },
-        "Agent循环判断": {"en": "The intended architecture is an Agent, but key pieces such as the composer, tool-call dispatcher, and extension surface remain incomplete or roadmap items.", "zh": "目标架构属于Agent，但composer、工具调用dispatcher和extension surface等关键部分仍未完成或处于路线图阶段。"},
-        "信息来源": {"en": ["GitHub metadata", "README", "ROADMAP", "Runtime, memory, and training sources"], "zh": ["GitHub元数据", "README", "ROADMAP", "运行时、记忆与训练源码"]},
-        "分类结论": {"en": "Agent boundary project", "zh": "Agent边界项目"},
-        "分类依据": {"en": "Explicitly designed as an RWKV Agent runtime and therefore included under the broader Agent-related criterion despite incomplete execution loops.", "zh": "明确以RWKV Agent运行时为目标；虽然执行闭环尚不完整，但按广义Agent相关标准收录。"}
-    },
-    {
         "创建用户名":  "No-22-Github",
         "作者备注":  null,
         "用户头像":  "https://avatars.githubusercontent.com/u/132265925?v=4",
         "GitHub地址":  "https://github.com/No-22-Github/RWKV-Agent",
         "项目名称":  "RWKV-Agent",
         "创建时间":  "2026-07-27T13:41:03Z",
-        "最后更新时间":  "2026-09-15T11:20:31Z",
+        "最后更新时间":  "2026-09-17T07:10:10Z",
         "主要语言":  "Go",
         "许可证":  null,
         "Stars":  2,
@@ -84,6 +62,28 @@
             "en": "The project explicitly centers on an agent protocol, tool calling, and a continuous execution loop. Existing problems with tool feedback, directory correction, and loop implementation are implementation defects and do not change its status as an agent project.",
             "zh": "项目明确以Agent协议、工具调用和持续执行循环为核心；现有工具反馈、目录纠错和循环实现问题属于实现缺陷，不改变其Agent项目属性。"
         }
+    },
+    {
+        "创建用户名": "Vaniell0",
+        "用户头像": "https://avatars.githubusercontent.com/u/144351173?v=4",
+        "GitHub地址": "https://github.com/Vaniell0/noesis",
+        "项目名称": "noesis",
+        "创建时间": "2026-07-21T22:04:25Z",
+        "最后更新时间": "2026-09-16T15:06:41Z",
+        "主要语言": "Python",
+        "许可证": "Apache-2.0",
+        "Stars": 4,
+        "Watch": 0,
+        "Fork": 1,
+        "项目类型": {"en": "Persistent RWKV cognitive-runtime research", "zh": "持续运行的RWKV认知运行时研究"},
+        "介绍": {
+            "en": "A research project for an always-running RWKV cognitive runtime that ingests system events, organizes persistent memory, routes tools, and acts on the local environment through extensions. The repository includes runtime, memory, policy, DSL, training, and deployment foundations.",
+            "zh": "面向持续运行RWKV认知运行时的研究项目，计划吸收系统事件、组织持久记忆、路由工具，并通过扩展作用于本地环境；仓库已包含运行时、记忆、策略、DSL、训练和部署基础。"
+        },
+        "Agent循环判断": {"en": "The intended architecture is an Agent, but key pieces such as the composer, tool-call dispatcher, and extension surface remain incomplete or roadmap items.", "zh": "目标架构属于Agent，但composer、工具调用dispatcher和extension surface等关键部分仍未完成或处于路线图阶段。"},
+        "信息来源": {"en": ["GitHub metadata", "README", "ROADMAP", "Runtime, memory, and training sources"], "zh": ["GitHub元数据", "README", "ROADMAP", "运行时、记忆与训练源码"]},
+        "分类结论": {"en": "Agent boundary project", "zh": "Agent边界项目"},
+        "分类依据": {"en": "Explicitly designed as an RWKV Agent runtime and therefore included under the broader Agent-related criterion despite incomplete execution loops.", "zh": "明确以RWKV Agent运行时为目标；虽然执行闭环尚不完整，但按广义Agent相关标准收录。"}
     },
     {
         "创建用户名": "cgisky1980",
