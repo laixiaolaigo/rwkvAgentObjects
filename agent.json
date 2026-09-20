@@ -1,5 +1,91 @@
 ﻿[
     {
+        "创建用户名":  "No-22-Github",
+        "作者备注":  null,
+        "用户头像":  "https://avatars.githubusercontent.com/u/132265925?v=4",
+        "GitHub地址":  "https://github.com/No-22-Github/RWKV-Agent",
+        "项目名称":  "RWKV-Agent",
+        "创建时间":  "2026-07-27T13:41:03Z",
+        "最后更新时间":  "2026-09-17T08:47:00Z",
+        "主要语言":  "Go",
+        "许可证":  null,
+        "Stars":  2,
+        "Watch":  0,
+        "Fork":  0,
+        "项目类型":  {
+            "en": "Local RWKV CLI and agent runtime",
+            "zh": "本地RWKV CLI与Agent运行时"
+        },
+        "介绍":  {
+            "en": "A local RWKV command-line application for Apple Silicon macOS. The Go layer handles conversation transactions, session persistence, and terminal interaction, while a separate dynamic library handles tokenization, sampling, and MLX inference. The runtime does not depend on Python, PyTorch, an HTTP service, or external processes.",
+            "zh": "面向Apple Silicon macOS的本地RWKV命令行程序。Go层负责对话事务、Session持久化和终端交互，独立动态库负责tokenizer、采样和MLX推理；运行时不依赖Python、PyTorch、HTTP服务或外部进程。"
+        },
+        "Agent循环判断":  {
+            "en": "The repository includes an Agent Harness, Continuation, and Agent Protocol, implementing an agent runtime intended to let the model call tools, read observations, and continue execution. The current loop has defects, but the project still qualifies as an agent.",
+            "zh": "仓库包含Agent Harness、Continuation和Agent Protocol，并以模型调用工具、读取观察结果和继续执行为目标实现Agent运行时。当前闭环存在缺陷，但项目性质仍属于Agent。"
+        },
+        "用户反馈":  {
+            "en": [
+                "Tool-call information remains in the output",
+                "It continues using a directory after guessing the wrong path",
+                "The agent loop is not correctly understood or implemented"
+            ],
+            "zh": [
+                "调用信息仍然残留",
+                "猜错目录后仍继续调用该目录",
+                "没有正确理解或实现Agent循环"
+            ]
+        },
+        "支持平台":  {
+            "en": "The currently usable entry point supports Apple Silicon on macOS 15+; Windows and Linux remain target platforms",
+            "zh": "当前实际可用入口为Apple Silicon macOS 15+；Windows和Linux仍是目标平台"
+        },
+        "信息来源":  {
+            "en": [
+                "GitHub repository metadata",
+                "Project README",
+                "User-provided issue description",
+                "User-provided classification correction"
+            ],
+            "zh": [
+                "GitHub仓库元数据",
+                "项目README",
+                "用户提供的问题说明",
+                "用户提供的分类纠正"
+            ]
+        },
+        "分类结论":  {
+            "en": "Strict Agent",
+            "zh": "严格Agent"
+        },
+        "分类依据":  {
+            "en": "The project explicitly centers on an agent protocol, tool calling, and a continuous execution loop. Existing problems with tool feedback, directory correction, and loop implementation are implementation defects and do not change its status as an agent project.",
+            "zh": "项目明确以Agent协议、工具调用和持续执行循环为核心；现有工具反馈、目录纠错和循环实现问题属于实现缺陷，不改变其Agent项目属性。"
+        }
+    },
+    {
+        "创建用户名": "Vaniell0",
+        "用户头像": "https://avatars.githubusercontent.com/u/144351173?v=4",
+        "GitHub地址": "https://github.com/Vaniell0/noesis",
+        "项目名称": "noesis",
+        "创建时间": "2026-07-21T22:04:25Z",
+        "最后更新时间": "2026-09-16T15:06:41Z",
+        "主要语言": "Python",
+        "许可证": "Apache-2.0",
+        "Stars": 4,
+        "Watch": 0,
+        "Fork": 1,
+        "项目类型": {"en": "Persistent RWKV cognitive-runtime research", "zh": "持续运行的RWKV认知运行时研究"},
+        "介绍": {
+            "en": "A research project for an always-running RWKV cognitive runtime that ingests system events, organizes persistent memory, routes tools, and acts on the local environment through extensions. The repository includes runtime, memory, policy, DSL, training, and deployment foundations.",
+            "zh": "面向持续运行RWKV认知运行时的研究项目，计划吸收系统事件、组织持久记忆、路由工具，并通过扩展作用于本地环境；仓库已包含运行时、记忆、策略、DSL、训练和部署基础。"
+        },
+        "Agent循环判断": {"en": "The intended architecture is an Agent, but key pieces such as the composer, tool-call dispatcher, and extension surface remain incomplete or roadmap items.", "zh": "目标架构属于Agent，但composer、工具调用dispatcher和extension surface等关键部分仍未完成或处于路线图阶段。"},
+        "信息来源": {"en": ["GitHub metadata", "README", "ROADMAP", "Runtime, memory, and training sources"], "zh": ["GitHub元数据", "README", "ROADMAP", "运行时、记忆与训练源码"]},
+        "分类结论": {"en": "Agent boundary project", "zh": "Agent边界项目"},
+        "分类依据": {"en": "Explicitly designed as an RWKV Agent runtime and therefore included under the broader Agent-related criterion despite incomplete execution loops.", "zh": "明确以RWKV Agent运行时为目标；虽然执行闭环尚不完整，但按广义Agent相关标准收录。"}
+    },
+    {
         "创建用户名": "cgisky1980",
         "作者备注": {
             "en": "Ai00-X ecosystem maintainer",
@@ -12,7 +98,7 @@
         "最后更新时间": "2026-09-15T07:48:28Z",
         "主要语言": "Rust",
         "许可证": "MIT",
-        "Stars": 3,
+        "Stars": 4,
         "Watch": 0,
         "Fork": 2,
         "项目类型": {
@@ -337,92 +423,6 @@
             "en": "RWKV participates in goal parsing, planning, action selection, failure analysis, replanning, and final response generation. Tool observations and validation results feed back into a persistent multi-step execution loop that can retry, revise its plan, and resume after interruption.",
             "zh": "RWKV参与目标解析、规划、动作选择、失败分析、重规划和最终回答生成；工具观察与验证结果会回流到持久化的多步执行循环中，使其能够重试、修订计划并在中断后恢复。"
         }
-    },
-    {
-        "创建用户名":  "No-22-Github",
-        "作者备注":  null,
-        "用户头像":  "https://avatars.githubusercontent.com/u/132265925?v=4",
-        "GitHub地址":  "https://github.com/No-22-Github/RWKV-Agent",
-        "项目名称":  "RWKV-Agent",
-        "创建时间":  "2026-07-27T13:41:03Z",
-        "最后更新时间":  "2026-09-12T08:18:55Z",
-        "主要语言":  "Go",
-        "许可证":  null,
-        "Stars":  2,
-        "Watch":  0,
-        "Fork":  0,
-        "项目类型":  {
-            "en": "Local RWKV CLI and agent runtime",
-            "zh": "本地RWKV CLI与Agent运行时"
-        },
-        "介绍":  {
-            "en": "A local RWKV command-line application for Apple Silicon macOS. The Go layer handles conversation transactions, session persistence, and terminal interaction, while a separate dynamic library handles tokenization, sampling, and MLX inference. The runtime does not depend on Python, PyTorch, an HTTP service, or external processes.",
-            "zh": "面向Apple Silicon macOS的本地RWKV命令行程序。Go层负责对话事务、Session持久化和终端交互，独立动态库负责tokenizer、采样和MLX推理；运行时不依赖Python、PyTorch、HTTP服务或外部进程。"
-        },
-        "Agent循环判断":  {
-            "en": "The repository includes an Agent Harness, Continuation, and Agent Protocol, implementing an agent runtime intended to let the model call tools, read observations, and continue execution. The current loop has defects, but the project still qualifies as an agent.",
-            "zh": "仓库包含Agent Harness、Continuation和Agent Protocol，并以模型调用工具、读取观察结果和继续执行为目标实现Agent运行时。当前闭环存在缺陷，但项目性质仍属于Agent。"
-        },
-        "用户反馈":  {
-            "en": [
-                "Tool-call information remains in the output",
-                "It continues using a directory after guessing the wrong path",
-                "The agent loop is not correctly understood or implemented"
-            ],
-            "zh": [
-                "调用信息仍然残留",
-                "猜错目录后仍继续调用该目录",
-                "没有正确理解或实现Agent循环"
-            ]
-        },
-        "支持平台":  {
-            "en": "The currently usable entry point supports Apple Silicon on macOS 15+; Windows and Linux remain target platforms",
-            "zh": "当前实际可用入口为Apple Silicon macOS 15+；Windows和Linux仍是目标平台"
-        },
-        "信息来源":  {
-            "en": [
-                "GitHub repository metadata",
-                "Project README",
-                "User-provided issue description",
-                "User-provided classification correction"
-            ],
-            "zh": [
-                "GitHub仓库元数据",
-                "项目README",
-                "用户提供的问题说明",
-                "用户提供的分类纠正"
-            ]
-        },
-        "分类结论":  {
-            "en": "Strict Agent",
-            "zh": "严格Agent"
-        },
-        "分类依据":  {
-            "en": "The project explicitly centers on an agent protocol, tool calling, and a continuous execution loop. Existing problems with tool feedback, directory correction, and loop implementation are implementation defects and do not change its status as an agent project.",
-            "zh": "项目明确以Agent协议、工具调用和持续执行循环为核心；现有工具反馈、目录纠错和循环实现问题属于实现缺陷，不改变其Agent项目属性。"
-        }
-    },
-    {
-        "创建用户名": "Vaniell0",
-        "用户头像": "https://avatars.githubusercontent.com/u/144351173?v=4",
-        "GitHub地址": "https://github.com/Vaniell0/noesis",
-        "项目名称": "noesis",
-        "创建时间": "2026-07-21T22:04:25Z",
-        "最后更新时间": "2026-09-10T09:54:29Z",
-        "主要语言": "Python",
-        "许可证": "Apache-2.0",
-        "Stars": 4,
-        "Watch": 0,
-        "Fork": 1,
-        "项目类型": {"en": "Persistent RWKV cognitive-runtime research", "zh": "持续运行的RWKV认知运行时研究"},
-        "介绍": {
-            "en": "A research project for an always-running RWKV cognitive runtime that ingests system events, organizes persistent memory, routes tools, and acts on the local environment through extensions. The repository includes runtime, memory, policy, DSL, training, and deployment foundations.",
-            "zh": "面向持续运行RWKV认知运行时的研究项目，计划吸收系统事件、组织持久记忆、路由工具，并通过扩展作用于本地环境；仓库已包含运行时、记忆、策略、DSL、训练和部署基础。"
-        },
-        "Agent循环判断": {"en": "The intended architecture is an Agent, but key pieces such as the composer, tool-call dispatcher, and extension surface remain incomplete or roadmap items.", "zh": "目标架构属于Agent，但composer、工具调用dispatcher和extension surface等关键部分仍未完成或处于路线图阶段。"},
-        "信息来源": {"en": ["GitHub metadata", "README", "ROADMAP", "Runtime, memory, and training sources"], "zh": ["GitHub元数据", "README", "ROADMAP", "运行时、记忆与训练源码"]},
-        "分类结论": {"en": "Agent boundary project", "zh": "Agent边界项目"},
-        "分类依据": {"en": "Explicitly designed as an RWKV Agent runtime and therefore included under the broader Agent-related criterion despite incomplete execution loops.", "zh": "明确以RWKV Agent运行时为目标；虽然执行闭环尚不完整，但按广义Agent相关标准收录。"}
     },
     {
         "创建用户名": "cgisky1980",
@@ -969,7 +969,7 @@
         "最后更新时间":  "2025-09-09T02:49:57Z",
         "主要语言":  "Rust",
         "许可证":  "MIT OR Apache-2.0",
-        "Stars":  19,
+        "Stars":  20,
         "Watch":  0,
         "Fork":  1,
         "项目类型":  {
