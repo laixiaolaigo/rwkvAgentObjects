@@ -377,18 +377,24 @@ export function AgentCatalog({
           <div className="flex items-center gap-3">
             <span className="font-mono text-2xl font-medium tracking-tight">RWKV</span>
             <Separator orientation="vertical" className="h-5" />
-            <span className="text-sm text-muted-foreground">{dictionary.nav.section}</span>
+            <span className="hidden text-sm text-muted-foreground sm:inline">{dictionary.nav.section}</span>
           </div>
           <div className="flex items-center gap-1.5">
             <Button
+              variant="secondary"
+              size="sm"
+              className="hidden sm:inline-flex"
+            >
+              {dictionary.nav.agents}
+            </Button>
+            <Button
               variant="ghost"
               size="sm"
-              className="hidden gap-2 sm:inline-flex"
+              className="hidden sm:inline-flex"
               nativeButton={false}
-              render={<a href="#catalog" />}
+              render={<Link href={`/${locale}/resources`} />}
             >
-              {dictionary.nav.directory}
-              <ArrowUpRight />
+              {dictionary.nav.resources}
             </Button>
             <Button
               variant="outline"

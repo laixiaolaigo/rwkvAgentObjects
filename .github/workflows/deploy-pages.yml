@@ -43,13 +43,25 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          if git diff --quiet -- agent.json agent_repo.json; then
+          if git diff --quiet -- agent.json agent_repo.json rwkv_projects.json; then
             echo "No metadata changes to commit"
           else
-            git add agent.json agent_repo.json
+            git add agent.json agent_repo.json rwkv_projects.json
             git commit -m "chore: update repository metadata"
             git push origin "HEAD:${GITHUB_REF_NAME}"
           fi
+
+      - name: Scan GitHub for RWKV repositories
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npm run discover:rwkv
+
+      - name: Upload RWKV review candidates
+        uses: actions/upload-artifact@v4
+        with:
+          name: rwkv-search-candidates
+          path: rwkv_search_candidates.json
+          retention-days: 14
 
       - name: Setup Pages
         id: pages

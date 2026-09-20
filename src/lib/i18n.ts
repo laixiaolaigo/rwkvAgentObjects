@@ -19,7 +19,8 @@ export type UiDictionary = {
   nav: {
     mainAria: string;
     section: string;
-    directory: string;
+    agents: string;
+    resources: string;
     switchLanguage: string;
     switchLanguageLabel: string;
   };
@@ -70,6 +71,37 @@ export type UiDictionary = {
     githubAriaSuffix: string;
     noResults: string;
     adjustFilters: string;
+  };
+  ecosystem: {
+    metadataTitle: string;
+    metadataDescription: string;
+    badge: string;
+    title: string;
+    description: string;
+    reviewedSource: string;
+    reviewedPages: string;
+    reviewedSummary: string;
+    totalProjects: string;
+    packages: string;
+    inference: string;
+    training: string;
+    searchPlaceholder: string;
+    searchLabel: string;
+    allCategories: string;
+    sortUpdated: string;
+    sortStars: string;
+    sortName: string;
+    updatedPrefix: string;
+    watchers: string;
+    forks: string;
+    openGitHub: string;
+    paginationLabel: string;
+    previousPage: string;
+    nextPage: string;
+    pageStatus: string;
+    noResults: string;
+    adjustFilters: string;
+    loadError: string;
   };
 };
 

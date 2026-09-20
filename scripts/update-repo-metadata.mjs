@@ -2,6 +2,7 @@ import { readFile, writeFile } from "node:fs/promises";
 
 const metadataFile = "agent_repo.json";
 const catalogFile = "agent.json";
+const ecosystemFile = "rwkv_projects.json";
 const githubToken = process.env.GITHUB_TOKEN || process.env.GH_TOKEN;
 
 function escapeRegExp(value) {
@@ -161,13 +162,18 @@ async function fetchRepositoryMetadata(repositoryUrl) {
 async function main() {
   const metadataSource = await readFile(metadataFile, "utf8");
   const catalogSource = await readFile(catalogFile, "utf8");
+  const ecosystemSource = await readFile(ecosystemFile, "utf8");
   const metadataParsed = extractArrayObjects(metadataSource);
   const catalogParsed = extractArrayObjects(catalogSource.replace(/^\uFEFF/, ""));
+  const ecosystemParsed = extractArrayObjects(ecosystemSource);
   const metadataByUrl = new Map();
+  const repositoryUrls = new Set([
+    ...metadataParsed.objects.map((item) => item.data.repositoryUrl),
+    ...ecosystemParsed.objects.map((item) => item.data.repositoryUrl),
+  ]);
 
-  for (const item of metadataParsed.objects) {
-    const repositoryUrl = item.data.repositoryUrl;
-    if (!repositoryUrl) throw new Error("agent_repo.json contains an entry without repositoryUrl");
+  for (const repositoryUrl of repositoryUrls) {
+    if (!repositoryUrl) throw new Error("A metadata file contains an entry without repositoryUrl");
     metadataByUrl.set(repositoryUrl, await fetchRepositoryMetadata(repositoryUrl));
   }
 
@@ -181,6 +187,11 @@ async function main() {
     if (!update) throw new Error(`No metadata found for ${repositoryUrl}`);
     return updateObjectText(item.text, update, true);
   });
+  const updatedEcosystemObjects = ecosystemParsed.objects.map((item) => {
+    const update = metadataByUrl.get(item.data.repositoryUrl);
+    if (!update) throw new Error(`No metadata found for ${item.data.repositoryUrl}`);
+    return updateObjectText(item.text, update, false);
+  });
 
   const updatedMetadataSource = rebuildArray(metadataSource, {
     ...metadataParsed,
@@ -190,13 +201,26 @@ async function main() {
     ...catalogParsed,
     objects: updatedCatalogObjects,
   });
+  const updatedEcosystemSource = rebuildArray(ecosystemSource, {
+    ...ecosystemParsed,
+    objects: updatedEcosystemObjects,
+  });
   const catalogWithBom = catalogSource.startsWith("\uFEFF")
     ? `\uFEFF${updatedCatalogSource}`
     : updatedCatalogSource;
 
   if (updatedMetadataSource !== metadataSource) await writeFile(metadataFile, updatedMetadataSource);
   if (catalogWithBom !== catalogSource) await writeFile(catalogFile, catalogWithBom);
-  console.log(updatedMetadataSource === metadataSource && catalogWithBom === catalogSource ? "No metadata changes" : "Metadata updated");
+  if (updatedEcosystemSource !== ecosystemSource) {
+    await writeFile(ecosystemFile, updatedEcosystemSource);
+  }
+  console.log(
+    updatedMetadataSource === metadataSource &&
+      catalogWithBom === catalogSource &&
+      updatedEcosystemSource === ecosystemSource
+      ? "No metadata changes"
+      : "Metadata updated"
+  );
 }
 
 await main();

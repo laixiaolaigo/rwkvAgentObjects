@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "lint": "eslint",
+    "discover:rwkv": "node scripts/discover-rwkv-repositories.mjs",
     "update:metadata": "node scripts/update-repo-metadata.mjs"
   },
   "dependencies": {

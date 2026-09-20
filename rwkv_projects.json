@@ -1,0 +1,3181 @@
+[
+  {
+    "repositoryUrl": "https://github.com/rwkv-rs/any2rwkv",
+    "owner": "rwkv-rs",
+    "name": "any2rwkv",
+    "category": "training",
+    "summary": {
+      "en": "Research tools for converting attention-based architectures to RWKV through layerwise distillation.",
+      "zh": "通过逐层蒸馏将注意力架构转换为 RWKV 的研究与训练工具。"
+    },
+    "lastUpdated": "2026-09-20T03:58:33Z",
+    "stars": 3,
+    "watchers": 0,
+    "forks": 0,
+    "language": "Python",
+    "license": null,
+    "sourcePage": 1
+  },
+  {
+    "repositoryUrl": "https://github.com/RWKV-Vibe/rwkv-vibe-code",
+    "owner": "RWKV-Vibe",
+    "name": "rwkv-vibe-code",
+    "category": "package",
+    "summary": {
+      "en": "Web frontend for high-concurrency RWKV inference.",
+      "zh": "用于 RWKV 高并发网页推理的前端。"
+    },
+    "lastUpdated": "2026-09-20T03:31:11Z",
+    "stars": 4,
+    "watchers": 0,
+    "forks": 0,
+    "language": "TypeScript",
+    "license": null,
+    "sourcePage": 1
+  },
+  {
+    "repositoryUrl": "https://github.com/Alic-Li/rwkv_lightning_cuda",
+    "owner": "Alic-Li",
+    "name": "rwkv_lightning_cuda",
+    "category": "inference",
+    "summary": {
+      "en": "The fastest pure C++ GPU runtime for RWKV — zero PyTorch, one-command deployment, CUDA/ROCm inference, quantization, state tuning & serving.🕊",
+      "zh": "rwkv_lightning_cuda 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2026-09-19T04:57:02Z",
+    "stars": 7,
+    "watchers": 0,
+    "forks": 3,
+    "language": "C++",
+    "license": null,
+    "sourcePage": 1
+  },
+  {
+    "repositoryUrl": "https://github.com/youzow3/onnx_rwkv",
+    "owner": "youzow3",
+    "name": "onnx_rwkv",
+    "category": "inference",
+    "summary": {
+      "en": "onnx_rwkv provides RWKV inference, deployment, runtime, or serving support.",
+      "zh": "onnx_rwkv 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2026-09-18T05:17:21Z",
+    "stars": 3,
+    "watchers": 1,
+    "forks": 0,
+    "language": "Python",
+    "license": "MIT",
+    "sourcePage": 1
+  },
+  {
+    "repositoryUrl": "https://github.com/RWKV-APP/RWKV_APP",
+    "owner": "RWKV-APP",
+    "name": "RWKV_APP",
+    "category": "package",
+    "summary": {
+      "en": "Cross-platform, local-first RWKV chat application for Android, iOS, Windows, macOS, and Linux.",
+      "zh": "面向 Android、iOS、Windows、macOS 与 Linux 的跨平台、本地优先 RWKV 聊天应用。"
+    },
+    "lastUpdated": "2026-09-18T04:59:05Z",
+    "stars": 125,
+    "watchers": 4,
+    "forks": 15,
+    "language": "Dart",
+    "license": "Apache-2.0",
+    "sourcePage": 1
+  },
+  {
+    "repositoryUrl": "https://github.com/btlqql/vllm-rwkv7",
+    "owner": "btlqql",
+    "name": "vllm-rwkv7",
+    "category": "inference",
+    "summary": {
+      "en": "Native RWKV-7 integration for vLLM, implemented clean-room against the Hugging Face contract.",
+      "zh": "vllm-rwkv7 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2026-09-18T01:24:07Z",
+    "stars": 0,
+    "watchers": 0,
+    "forks": 0,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "sourcePage": 2
+  },
+  {
+    "repositoryUrl": "https://github.com/RafaelUI/rwkv-quant",
+    "owner": "RafaelUI",
+    "name": "rwkv-quant",
+    "category": "inference",
+    "summary": {
+      "en": "pip install rwkv-quant",
+      "zh": "rwkv-quant 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2026-09-17T15:55:54Z",
+    "stars": 1,
+    "watchers": 0,
+    "forks": 0,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "sourcePage": 1
+  },
+  {
+    "repositoryUrl": "https://github.com/RafaelUI/rwkv-metal",
+    "owner": "RafaelUI",
+    "name": "rwkv-metal",
+    "category": "inference",
+    "summary": {
+      "en": "pip install rwkv-metal",
+      "zh": "rwkv-metal 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2026-09-17T15:55:38Z",
+    "stars": 5,
+    "watchers": 0,
+    "forks": 1,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "sourcePage": 1
+  },
+  {
+    "repositoryUrl": "https://github.com/datawhalechina/llms-from-scratch-cn",
+    "owner": "datawhalechina",
+    "name": "llms-from-scratch-cn",
+    "category": "training",
+    "summary": {
+      "en": "Chinese hands-on course for building GLM4, Llama 3, and RWKV-6 language models from scratch.",
+      "zh": "从零构建 GLM4、Llama 3 与 RWKV-6 的中文实践课程。"
+    },
+    "lastUpdated": "2026-09-17T03:01:54Z",
+    "stars": 4370,
+    "watchers": 37,
+    "forks": 598,
+    "language": "Jupyter Notebook",
+    "license": "NOASSERTION",
+    "sourcePage": 1
+  },
+  {
+    "repositoryUrl": "https://github.com/DaxYang-03/RWKV-Vela",
+    "owner": "DaxYang-03",
+    "name": "RWKV-Vela",
+    "category": "package",
+    "summary": {
+      "en": "RWKV Vela for Mac — local RWKV chat, model dashboard and signed app updates",
+      "zh": "RWKV-Vela 是面向 RWKV 用户的易用应用或开箱即用工具。"
+    },
+    "lastUpdated": "2026-09-16T07:15:10Z",
+    "stars": 4,
+    "watchers": 0,
+    "forks": 1,
+    "language": "Dart",
+    "license": "Apache-2.0",
+    "sourcePage": 1
+  },
+  {
+    "repositoryUrl": "https://github.com/SU-180/rwkv7-sft",
+    "owner": "SU-180",
+    "name": "rwkv7-sft",
+    "category": "training",
+    "summary": {
+      "en": "QLoRA fine-tuning framework for RWKV7-G1j models with custom datasets and training scripts.",
+      "zh": "rwkv7-sft 提供 RWKV 模型训练、微调或架构实验工具。"
+    },
+    "lastUpdated": "2026-09-14T10:14:08Z",
+    "stars": 0,
+    "watchers": 0,
+    "forks": 0,
+    "language": "Python",
+    "license": null,
+    "sourcePage": 1
+  },
+  {
+    "repositoryUrl": "https://github.com/No-22-Github/Preen",
+    "owner": "No-22-Github",
+    "name": "Preen",
+    "category": "training",
+    "summary": {
+      "en": "RWKV-7 state tuning for Mac (Apple Silicon / MLX) — train mountable init states.",
+      "zh": "Preen 提供 RWKV 模型训练、微调或架构实验工具。"
+    },
+    "lastUpdated": "2026-09-14T05:06:07Z",
+    "stars": 6,
+    "watchers": 0,
+    "forks": 0,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "sourcePage": 1
+  },
+  {
+    "repositoryUrl": "https://github.com/btlqql/sglang-rwkv7",
+    "owner": "btlqql",
+    "name": "sglang-rwkv7",
+    "category": "inference",
+    "summary": {
+      "en": "Independent SGLang distribution focused on production-grade RWKV-7 serving, recurrent state caching, speculative decoding, quantization, and broad GPU support.",
+      "zh": "sglang-rwkv7 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2026-09-14T04:17:54Z",
+    "stars": 0,
+    "watchers": 0,
+    "forks": 0,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "sourcePage": 2
+  },
+  {
+    "repositoryUrl": "https://github.com/KronosDP/rwkv-research",
+    "owner": "KronosDP",
+    "name": "rwkv-research",
+    "category": "training",
+    "summary": {
+      "en": "Research on the RWKV recurrent LLM architecture: a custom fused CUDA WKV kernel, architecture refactors (SwiGLU -> linear projection), and training experiments on synthetic regular-language tasks.",
+      "zh": "rwkv-research 提供 RWKV 模型训练、微调或架构实验工具。"
+    },
+    "lastUpdated": "2026-09-13T14:37:01Z",
+    "stars": 1,
+    "watchers": 0,
+    "forks": 0,
+    "language": "Python",
+    "license": "MIT",
+    "sourcePage": 1
+  },
+  {
+    "repositoryUrl": "https://github.com/BlinkDL/Albatross",
+    "owner": "BlinkDL",
+    "name": "Albatross",
+    "category": "inference",
+    "summary": {
+      "en": "RWKV-7 7.2B fp16 15000+ tps decoding @ single 5090",
+      "zh": "Albatross 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2026-09-10T07:53:33Z",
+    "stars": 131,
+    "watchers": 1,
+    "forks": 29,
+    "language": "Cuda",
+    "license": "Apache-2.0",
+    "sourcePage": 1
+  },
+  {
+    "repositoryUrl": "https://github.com/xiaol/wkvm",
+    "owner": "xiaol",
+    "name": "wkvm",
+    "category": "inference",
+    "summary": {
+      "en": "Inference for hybrid LLMs: Gemma, RWKV, and all kinds of hybrids.",
+      "zh": "wkvm 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2026-09-10T03:18:12Z",
+    "stars": 361,
+    "watchers": 10,
+    "forks": 15,
+    "language": "Python",
+    "license": null,
+    "sourcePage": 1
+  },
+  {
+    "repositoryUrl": "https://github.com/rwkv-rs/hf-adapter",
+    "owner": "rwkv-rs",
+    "name": "hf-adapter",
+    "category": "inference",
+    "summary": {
+      "en": "RWKV-7 HuggingFace / Transformers adapter",
+      "zh": "hf-adapter 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2026-09-07T23:31:27Z",
+    "stars": 8,
+    "watchers": 0,
+    "forks": 4,
+    "language": "Python",
+    "license": "MIT",
+    "sourcePage": 1
+  },
+  {
+    "repositoryUrl": "https://github.com/Pangu-Immortal/MagicWX",
+    "owner": "Pangu-Immortal",
+    "name": "MagicWX",
+    "category": "package",
+    "summary": {
+      "en": "Android 17 local LLM prototype with Jetpack Compose and ONNX Runtime for offline AI inference experiments.",
+      "zh": "MagicWX 是面向 RWKV 用户的易用应用或开箱即用工具。"
+    },
+    "lastUpdated": "2026-09-06T07:21:39Z",
+    "stars": 857,
+    "watchers": 24,
+    "forks": 362,
+    "language": "Kotlin",
+    "license": "MIT",
+    "sourcePage": 1
+  },
+  {
+    "repositoryUrl": "https://github.com/MollySophia/rwkv-mobile",
+    "owner": "MollySophia",
+    "name": "rwkv-mobile",
+    "category": "inference",
+    "summary": {
+      "en": "Inference RWKV with multiple supported backends.",
+      "zh": "rwkv-mobile 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2026-09-04T15:07:39Z",
+    "stars": 98,
+    "watchers": 2,
+    "forks": 10,
+    "language": "C++",
+    "license": null,
+    "sourcePage": 1
+  },
+  {
+    "repositoryUrl": "https://github.com/josStorer/RWKV-Runner",
+    "owner": "josStorer",
+    "name": "RWKV-Runner",
+    "category": "package",
+    "summary": {
+      "en": "Automated RWKV management and startup tool with a desktop interface and an OpenAI-compatible API.",
+      "zh": "带桌面界面和 OpenAI 兼容 API 的 RWKV 自动化管理与启动工具。"
+    },
+    "lastUpdated": "2026-09-04T13:37:10Z",
+    "stars": 6479,
+    "watchers": 48,
+    "forks": 601,
+    "language": "TypeScript",
+    "license": "MIT",
+    "sourcePage": 1
+  },
+  {
+    "repositoryUrl": "https://github.com/BlinkDL/RWKV-LM",
+    "owner": "BlinkDL",
+    "name": "RWKV-LM",
+    "category": "training",
+    "summary": {
+      "en": "The primary RWKV language-model repository, including architecture, training code, CUDA kernels, and examples.",
+      "zh": "RWKV 语言模型主仓库，包含模型架构、训练代码、CUDA 内核与示例。"
+    },
+    "lastUpdated": "2026-09-03T03:29:42Z",
+    "stars": 14711,
+    "watchers": 137,
+    "forks": 1020,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "sourcePage": 1
+  },
+  {
+    "repositoryUrl": "https://github.com/xiaol/WuNeng",
+    "owner": "xiaol",
+    "name": "WuNeng",
+    "category": "training",
+    "summary": {
+      "en": "RNN state tuning for RWKV kinds",
+      "zh": "WuNeng 提供 RWKV 模型训练、微调或架构实验工具。"
+    },
+    "lastUpdated": "2026-09-02T23:50:06Z",
+    "stars": 0,
+    "watchers": 0,
+    "forks": 0,
+    "language": "Python",
+    "license": null,
+    "sourcePage": 1
+  },
+  {
+    "repositoryUrl": "https://github.com/Log-Dog012/rwkv-openvino",
+    "owner": "Log-Dog012",
+    "name": "rwkv-openvino",
+    "category": "inference",
+    "summary": {
+      "en": "RWKV-7 -> OpenVINO IR inference",
+      "zh": "rwkv-openvino 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2026-08-30T16:48:50Z",
+    "stars": 1,
+    "watchers": 0,
+    "forks": 0,
+    "language": "Python",
+    "license": null,
+    "sourcePage": 1
+  },
+  {
+    "repositoryUrl": "https://github.com/123123213weqw/vllm-rwkv",
+    "owner": "123123213weqw",
+    "name": "vllm-rwkv",
+    "category": "inference",
+    "summary": {
+      "en": "Native RWKV-7 serving on vLLM with a hard Albatross TPS floor.",
+      "zh": "vllm-rwkv 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2026-08-30T07:10:58Z",
+    "stars": 0,
+    "watchers": 0,
+    "forks": 0,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "sourcePage": 1
+  },
+  {
+    "repositoryUrl": "https://github.com/cgisky1980/rwkv-rsv",
+    "owner": "cgisky1980",
+    "name": "rwkv-rsv",
+    "category": "inference",
+    "summary": {
+      "en": "RWKV-7 inference engine in Rust (Vulkan compute shaders) with fp16/any4/int8 quantization paths",
+      "zh": "rwkv-rsv 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2026-08-24T18:11:08Z",
+    "stars": 4,
+    "watchers": 0,
+    "forks": 0,
+    "language": "Rust",
+    "license": "MIT",
+    "sourcePage": 1
+  },
+  {
+    "repositoryUrl": "https://github.com/Hakureirm/rwkv-sglang",
+    "owner": "Hakureirm",
+    "name": "rwkv-sglang",
+    "category": "inference",
+    "summary": {
+      "en": "Production-grade RWKV-7 (Goose) inference for sglang — exact correctness, int8, dynamic-batch serving, multi-GPU, FLA-free. Bounty submission (sglang track).",
+      "zh": "rwkv-sglang 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2026-08-20T08:14:14Z",
+    "stars": 3,
+    "watchers": 0,
+    "forks": 1,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "sourcePage": 2
+  },
+  {
+    "repositoryUrl": "https://github.com/aabbdev/rwkv7-kernels",
+    "owner": "aabbdev",
+    "name": "rwkv7-kernels",
+    "category": "inference",
+    "summary": {
+      "en": "Optimized kernels for RWKV-7, designed for Hugging Face Transformers with numerically verified PyTorch fallbacks",
+      "zh": "rwkv7-kernels 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2026-08-16T08:16:06Z",
+    "stars": 0,
+    "watchers": 0,
+    "forks": 0,
+    "language": null,
+    "license": "MIT",
+    "sourcePage": 2
+  },
+  {
+    "repositoryUrl": "https://github.com/cryscan/rosalia",
+    "owner": "cryscan",
+    "name": "rosalia",
+    "category": "inference",
+    "summary": {
+      "en": "A high-performance RWKV model inference engine implemented in Rust with Vulkan compute shaders.",
+      "zh": "rosalia 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2026-08-08T05:44:43Z",
+    "stars": 8,
+    "watchers": 0,
+    "forks": 0,
+    "language": "Rust",
+    "license": "NOASSERTION",
+    "sourcePage": 2
+  },
+  {
+    "repositoryUrl": "https://github.com/AUXStar/rwkv7-quantization",
+    "owner": "AUXStar",
+    "name": "rwkv7-quantization",
+    "category": "inference",
+    "summary": {
+      "en": "RWKV-7 FP8 quantized inference - 6.4x decode speedup on Blackwell GPUs with <0.3% accuracy loss. Full FP8 E4M3 weight quantization with fused Triton kernels.",
+      "zh": "rwkv7-quantization 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2026-08-06T05:34:43Z",
+    "stars": 3,
+    "watchers": 0,
+    "forks": 0,
+    "language": "Cuda",
+    "license": "MIT",
+    "sourcePage": 2
+  },
+  {
+    "repositoryUrl": "https://github.com/KakaruHayate/RWKV-MUSA",
+    "owner": "KakaruHayate",
+    "name": "RWKV-MUSA",
+    "category": "inference",
+    "summary": {
+      "en": "MUSA kernels supporting RWKV inference and training.",
+      "zh": "支持 RWKV 推理与训练的 MUSA 内核实现。"
+    },
+    "lastUpdated": "2026-08-04T09:00:42Z",
+    "stars": 2,
+    "watchers": 0,
+    "forks": 1,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "sourcePage": 2
+  },
+  {
+    "repositoryUrl": "https://github.com/Hakureirm/rwkv7-hub",
+    "owner": "Hakureirm",
+    "name": "rwkv7-hub",
+    "category": "inference",
+    "summary": {
+      "en": "RWKV-7 for released transformers via Hub remote code: bit-identical checkpoint conversions + the in-tree implementation, CPU/MPS/CUDA",
+      "zh": "rwkv7-hub 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2026-08-02T12:24:41Z",
+    "stars": 0,
+    "watchers": 0,
+    "forks": 0,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "sourcePage": 2
+  },
+  {
+    "repositoryUrl": "https://github.com/Hakureirm/rwkv-hf-kernels",
+    "owner": "Hakureirm",
+    "name": "rwkv-hf-kernels",
+    "category": "inference",
+    "summary": {
+      "en": "Optional fused CUDA kernels for the HuggingFace RWKV-7 model",
+      "zh": "rwkv-hf-kernels 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2026-08-02T12:24:36Z",
+    "stars": 3,
+    "watchers": 0,
+    "forks": 0,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "sourcePage": 2
+  },
+  {
+    "repositoryUrl": "https://github.com/MollySophia/rwkv-qualcomm",
+    "owner": "MollySophia",
+    "name": "rwkv-qualcomm",
+    "category": "inference",
+    "summary": {
+      "en": "Inference RWKV v5, v6 and v7 with Qualcomm AI Engine Direct SDK",
+      "zh": "rwkv-qualcomm 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2026-07-27T16:03:50Z",
+    "stars": 99,
+    "watchers": 3,
+    "forks": 5,
+    "language": "Python",
+    "license": null,
+    "sourcePage": 2
+  },
+  {
+    "repositoryUrl": "https://github.com/RWKV-Vibe/rwkv_lightning",
+    "owner": "RWKV-Vibe",
+    "name": "rwkv_lightning",
+    "category": "inference",
+    "summary": {
+      "en": "RWKV Batch infer backend ⚡Base on albatross https://github.com/BlinkDL/Albatross 🕊️",
+      "zh": "rwkv_lightning 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2026-07-27T09:02:47Z",
+    "stars": 37,
+    "watchers": 1,
+    "forks": 8,
+    "language": "Python",
+    "license": null,
+    "sourcePage": 2
+  },
+  {
+    "repositoryUrl": "https://github.com/miyako/ai00",
+    "owner": "miyako",
+    "name": "ai00",
+    "category": "inference",
+    "summary": {
+      "en": "Local inference engine",
+      "zh": "ai00 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2026-07-25T04:18:32Z",
+    "stars": 0,
+    "watchers": 0,
+    "forks": 0,
+    "language": "Ruby",
+    "license": "MIT",
+    "sourcePage": 2
+  },
+  {
+    "repositoryUrl": "https://github.com/rwkv-rs/rwkv7-ascend-npu",
+    "owner": "rwkv-rs",
+    "name": "rwkv7-ascend-npu",
+    "category": "inference",
+    "summary": {
+      "en": "RWKV-7 inference + serving on Ascend 910B3 NPU — consolidated NPU work (serving framework + sglang port + AscendC optimization). torch.npu.NPUGraph decode → B=1 latency at A100 parity.",
+      "zh": "rwkv7-ascend-npu 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2026-07-24T12:43:05Z",
+    "stars": 1,
+    "watchers": 0,
+    "forks": 0,
+    "language": "Python",
+    "license": null,
+    "sourcePage": 2
+  },
+  {
+    "repositoryUrl": "https://github.com/RWKV-APP/RWKV-Mobile-Chat",
+    "owner": "RWKV-APP",
+    "name": "RWKV-Mobile-Chat",
+    "category": "package",
+    "summary": {
+      "en": "RWKV-Mobile-Chat is an easy-to-use RWKV application or end-user tool.",
+      "zh": "RWKV-Mobile-Chat 是面向 RWKV 用户的易用应用或开箱即用工具。"
+    },
+    "lastUpdated": "2026-07-23T07:06:25Z",
+    "stars": 5,
+    "watchers": 2,
+    "forks": 0,
+    "language": "Dart",
+    "license": null,
+    "sourcePage": 2
+  },
+  {
+    "repositoryUrl": "https://github.com/BlinkDL/ChatRWKV",
+    "owner": "BlinkDL",
+    "name": "ChatRWKV",
+    "category": "inference",
+    "summary": {
+      "en": "Reference chat and inference implementation for running RWKV language models locally.",
+      "zh": "用于本地运行 RWKV 语言模型的参考聊天与推理实现。"
+    },
+    "lastUpdated": "2026-07-19T19:09:29Z",
+    "stars": 9495,
+    "watchers": 96,
+    "forks": 685,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "sourcePage": 1
+  },
+  {
+    "repositoryUrl": "https://github.com/RWKV-APP/flutter_roleplay",
+    "owner": "RWKV-APP",
+    "name": "flutter_roleplay",
+    "category": "package",
+    "summary": {
+      "en": "rwkv role play ",
+      "zh": "flutter_roleplay 是面向 RWKV 用户的易用应用或开箱即用工具。"
+    },
+    "lastUpdated": "2026-07-06T09:36:47Z",
+    "stars": 1,
+    "watchers": 0,
+    "forks": 1,
+    "language": "Dart",
+    "license": "MIT",
+    "sourcePage": 2
+  },
+  {
+    "repositoryUrl": "https://github.com/TimeMobius/RWKV-Megatron",
+    "owner": "TimeMobius",
+    "name": "RWKV-Megatron",
+    "category": "training",
+    "summary": {
+      "en": "Distributed RWKV-6/7 training framework built on NVIDIA Megatron-Core.",
+      "zh": "基于 NVIDIA Megatron-Core 的 RWKV-6/7 分布式训练框架。"
+    },
+    "lastUpdated": "2026-07-06T09:12:16Z",
+    "stars": 2,
+    "watchers": 0,
+    "forks": 0,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "sourcePage": 2
+  },
+  {
+    "repositoryUrl": "https://github.com/szxysdt/VKWR",
+    "owner": "szxysdt",
+    "name": "VKWR",
+    "category": "inference",
+    "summary": {
+      "en": "VKWR, a high-performance inference engine for the RWKV linear language model.",
+      "zh": "VKWR 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2026-07-05T12:07:56Z",
+    "stars": 6,
+    "watchers": 0,
+    "forks": 0,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "sourcePage": 2
+  },
+  {
+    "repositoryUrl": "https://github.com/dfytensor/transformers-rwkv7",
+    "owner": "dfytensor",
+    "name": "transformers-rwkv7",
+    "category": "inference",
+    "summary": {
+      "en": "transformers-rwkv7 provides RWKV inference, deployment, runtime, or serving support.",
+      "zh": "transformers-rwkv7 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2026-07-01T17:06:41Z",
+    "stars": 0,
+    "watchers": 0,
+    "forks": 0,
+    "language": "Python",
+    "license": "MIT",
+    "sourcePage": 2
+  },
+  {
+    "repositoryUrl": "https://github.com/WHYKEYSAY/serve-rwkv-6-7b",
+    "owner": "WHYKEYSAY",
+    "name": "serve-rwkv-6-7b",
+    "category": "inference",
+    "summary": {
+      "en": "serve-rwkv-6-7b provides RWKV inference, deployment, runtime, or serving support.",
+      "zh": "serve-rwkv-6-7b 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2026-06-29T02:10:02Z",
+    "stars": 0,
+    "watchers": 0,
+    "forks": 0,
+    "language": "Python",
+    "license": null,
+    "sourcePage": 2
+  },
+  {
+    "repositoryUrl": "https://github.com/cgisky1980/dspark-rwkv",
+    "owner": "cgisky1980",
+    "name": "dspark-rwkv",
+    "category": "inference",
+    "summary": {
+      "en": "Speculative decoding for RWKV-7 using DSpark, targeting higher concurrent inference throughput.",
+      "zh": "面向 RWKV-7 的 DSpark 推测解码与并发推理加速项目。"
+    },
+    "lastUpdated": "2026-06-28T12:32:54Z",
+    "stars": 0,
+    "watchers": 0,
+    "forks": 0,
+    "language": "Python",
+    "license": "MIT",
+    "sourcePage": 2
+  },
+  {
+    "repositoryUrl": "https://github.com/AUXStar/RWKV-API",
+    "owner": "AUXStar",
+    "name": "RWKV-API",
+    "category": "inference",
+    "summary": {
+      "en": "RWKV-API provides RWKV inference, deployment, runtime, or serving support.",
+      "zh": "RWKV-API 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2026-06-20T17:24:17Z",
+    "stars": 0,
+    "watchers": 0,
+    "forks": 0,
+    "language": "Python",
+    "license": "MIT",
+    "sourcePage": 3
+  },
+  {
+    "repositoryUrl": "https://github.com/szxysdt/VKWR-edge",
+    "owner": "szxysdt",
+    "name": "VKWR-edge",
+    "category": "inference",
+    "summary": {
+      "en": "🚧 Work in progress: Optimized RWKV Inference on NVIDIA Jetson Edge Devices",
+      "zh": "VKWR-edge 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2026-06-20T09:59:19Z",
+    "stars": 0,
+    "watchers": 0,
+    "forks": 0,
+    "language": null,
+    "license": "Apache-2.0",
+    "sourcePage": 3
+  },
+  {
+    "repositoryUrl": "https://github.com/AUXStar/RWKV-Server",
+    "owner": "AUXStar",
+    "name": "RWKV-Server",
+    "category": "inference",
+    "summary": {
+      "en": "RWKV-7 serving framework with batched inference, dynamic capacity, CUDA optimization, and an OpenAI-compatible API.",
+      "zh": "支持批量推理、动态扩缩容、CUDA 优化和 OpenAI 兼容 API 的 RWKV-7 服务框架。"
+    },
+    "lastUpdated": "2026-06-18T17:11:56Z",
+    "stars": 10,
+    "watchers": 0,
+    "forks": 0,
+    "language": "Python",
+    "license": null,
+    "sourcePage": 3
+  },
+  {
+    "repositoryUrl": "https://github.com/cqj19840229/RWKV-infctx-trainer_new",
+    "owner": "cqj19840229",
+    "name": "RWKV-infctx-trainer_new",
+    "category": "training",
+    "summary": {
+      "en": "new",
+      "zh": "RWKV-infctx-trainer_new 提供 RWKV 模型训练、微调或架构实验工具。"
+    },
+    "lastUpdated": "2026-06-11T02:19:11Z",
+    "stars": 0,
+    "watchers": 0,
+    "forks": 0,
+    "language": "Jupyter Notebook",
+    "license": "Apache-2.0",
+    "sourcePage": 3
+  },
+  {
+    "repositoryUrl": "https://github.com/rwkv-rs/rwkv-rs",
+    "owner": "rwkv-rs",
+    "name": "rwkv-rs",
+    "category": "inference",
+    "summary": {
+      "en": "rwkv-rs provides RWKV inference, deployment, runtime, or serving support.",
+      "zh": "rwkv-rs 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2026-06-10T11:16:21Z",
+    "stars": 8,
+    "watchers": 1,
+    "forks": 3,
+    "language": "Rust",
+    "license": "Apache-2.0",
+    "sourcePage": 3
+  },
+  {
+    "repositoryUrl": "https://github.com/Ai00-X/ai00_server",
+    "owner": "Ai00-X",
+    "name": "ai00_server",
+    "category": "package",
+    "summary": {
+      "en": "All-in-one RWKV runtime server with embedding, RAG, agent integrations, and an easy deployment workflow.",
+      "zh": "集成嵌入、RAG、Agent 能力和便捷部署流程的一体化 RWKV 运行服务。"
+    },
+    "lastUpdated": "2026-06-09T06:16:58Z",
+    "stars": 620,
+    "watchers": 19,
+    "forks": 74,
+    "language": "Rust",
+    "license": "MIT",
+    "sourcePage": 1
+  },
+  {
+    "repositoryUrl": "https://github.com/RWKV-APP/offline_reader",
+    "owner": "RWKV-APP",
+    "name": "offline_reader",
+    "category": "package",
+    "summary": {
+      "en": "A Chrome extension that translates webpages with the local model server exposed by RWKV Chat.",
+      "zh": "offline_reader 是面向 RWKV 用户的易用应用或开箱即用工具。"
+    },
+    "lastUpdated": "2026-06-08T15:01:39Z",
+    "stars": 2,
+    "watchers": 0,
+    "forks": 1,
+    "language": "TypeScript",
+    "license": "MIT",
+    "sourcePage": 3
+  },
+  {
+    "repositoryUrl": "https://github.com/nkypy/rwkv.zig",
+    "owner": "nkypy",
+    "name": "rwkv.zig",
+    "category": "inference",
+    "summary": {
+      "en": "High-performance RWKV-7 inference implementation in Zig with SIMD vectorization.",
+      "zh": "使用 Zig 和 SIMD 向量化实现的高性能 RWKV-7 推理项目。"
+    },
+    "lastUpdated": "2026-06-04T09:08:21Z",
+    "stars": 1,
+    "watchers": 0,
+    "forks": 0,
+    "language": "Zig",
+    "license": "Apache-2.0",
+    "sourcePage": 5
+  },
+  {
+    "repositoryUrl": "https://github.com/cryscan/web-rwkv",
+    "owner": "cryscan",
+    "name": "web-rwkv",
+    "category": "inference",
+    "summary": {
+      "en": "Implementation of the RWKV language model in pure WebGPU/Rust.",
+      "zh": "web-rwkv 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2026-06-01T06:59:20Z",
+    "stars": 360,
+    "watchers": 6,
+    "forks": 36,
+    "language": "Rust",
+    "license": "NOASSERTION",
+    "sourcePage": 3
+  },
+  {
+    "repositoryUrl": "https://github.com/hafizradzi8901/bitnet-rwkv-lm",
+    "owner": "hafizradzi8901",
+    "name": "bitnet-rwkv-lm",
+    "category": "training",
+    "summary": {
+      "en": "From-scratch 0.15B BitNet 1.58-bit (ternary) RWKV-7 LLM trained on an 8GB GPU — QAT, 2-bit packing, RFT, local chat app.",
+      "zh": "bitnet-rwkv-lm 提供 RWKV 模型训练、微调或架构实验工具。"
+    },
+    "lastUpdated": "2026-05-30T11:46:12Z",
+    "stars": 10,
+    "watchers": 0,
+    "forks": 0,
+    "language": "Python",
+    "license": "MIT",
+    "sourcePage": 3
+  },
+  {
+    "repositoryUrl": "https://github.com/ConsciousNode/HTMLNLM",
+    "owner": "ConsciousNode",
+    "name": "HTMLNLM",
+    "category": "training",
+    "summary": {
+      "en": "Complete RWKV-v7 LLM training and inference in a single browser file. Zero dependencies.",
+      "zh": "HTMLNLM 提供 RWKV 模型训练、微调或架构实验工具。"
+    },
+    "lastUpdated": "2026-05-26T01:10:55Z",
+    "stars": 1,
+    "watchers": 0,
+    "forks": 0,
+    "language": "HTML",
+    "license": "MIT",
+    "sourcePage": 3
+  },
+  {
+    "repositoryUrl": "https://github.com/Alic-Li/rwkv_lightning_hip",
+    "owner": "Alic-Li",
+    "name": "rwkv_lightning_hip",
+    "category": "inference",
+    "summary": {
+      "en": "ROCm RWKV Is All You Need !  🔥🕊️ Pure ROCm HIP RWKV7 model Inference Engine ! 😎",
+      "zh": "rwkv_lightning_hip 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2026-05-17T04:32:03Z",
+    "stars": 1,
+    "watchers": 0,
+    "forks": 0,
+    "language": "HIP",
+    "license": null,
+    "sourcePage": 3
+  },
+  {
+    "repositoryUrl": "https://github.com/marty1885/llm.cmake",
+    "owner": "marty1885",
+    "name": "llm.cmake",
+    "category": "inference",
+    "summary": {
+      "en": "Run RWKV in pure CMake",
+      "zh": "llm.cmake 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2026-05-13T06:53:45Z",
+    "stars": 1,
+    "watchers": 0,
+    "forks": 0,
+    "language": "Python",
+    "license": null,
+    "sourcePage": 3
+  },
+  {
+    "repositoryUrl": "https://github.com/RWKV-Vibe/RWKV-LM-V7",
+    "owner": "RWKV-Vibe",
+    "name": "RWKV-LM-V7",
+    "category": "training",
+    "summary": {
+      "en": "RWKV-LM-V7(https://github.com/BlinkDL/RWKV-LM) Under Lightning Framework",
+      "zh": "RWKV-LM-V7 提供 RWKV 模型训练、微调或架构实验工具。"
+    },
+    "lastUpdated": "2026-05-13T05:58:21Z",
+    "stars": 64,
+    "watchers": 0,
+    "forks": 14,
+    "language": "HIP",
+    "license": "Apache-2.0",
+    "sourcePage": 3
+  },
+  {
+    "repositoryUrl": "https://github.com/LuckySongXiao/RWKV_document-term-translator",
+    "owner": "LuckySongXiao",
+    "name": "RWKV_document-term-translator",
+    "category": "package",
+    "summary": {
+      "en": "Document and terminology translation application powered by RWKV-7 Translate.",
+      "zh": "基于 RWKV-7 Translate 的术语与文档翻译应用。"
+    },
+    "lastUpdated": "2026-05-05T14:20:42Z",
+    "stars": 5,
+    "watchers": 0,
+    "forks": 1,
+    "language": "C#",
+    "license": "Apache-2.0",
+    "sourcePage": 3
+  },
+  {
+    "repositoryUrl": "https://github.com/RWKV-APP/rwkv_studio",
+    "owner": "RWKV-APP",
+    "name": "rwkv_studio",
+    "category": "package",
+    "summary": {
+      "en": "Offline-first AI Studio for RWKV & LLMs",
+      "zh": "rwkv_studio 是面向 RWKV 用户的易用应用或开箱即用工具。"
+    },
+    "lastUpdated": "2026-04-29T06:50:53Z",
+    "stars": 1,
+    "watchers": 0,
+    "forks": 0,
+    "language": "Dart",
+    "license": null,
+    "sourcePage": 3
+  },
+  {
+    "repositoryUrl": "https://github.com/EliwiiKeeya/RWKV7_Pytorch",
+    "owner": "EliwiiKeeya",
+    "name": "RWKV7_Pytorch",
+    "category": "training",
+    "summary": {
+      "en": "A PyTorch implementation of RWKV-7 for learning, experimentation, and training workflows.",
+      "zh": "用于学习、实验与训练流程的 RWKV-7 PyTorch 实现。"
+    },
+    "lastUpdated": "2026-04-23T13:27:24Z",
+    "stars": 1,
+    "watchers": 1,
+    "forks": 2,
+    "language": "Python",
+    "license": "GPL-3.0",
+    "sourcePage": 4
+  },
+  {
+    "repositoryUrl": "https://github.com/RWKV-APP/rwkv_mobile_flutter",
+    "owner": "RWKV-APP",
+    "name": "rwkv_mobile_flutter",
+    "category": "inference",
+    "summary": {
+      "en": "Flutter FFI bridge and runtime layer for on-device RWKV inference across mobile and desktop platforms.",
+      "zh": "面向移动端与桌面端设备内 RWKV 推理的 Flutter FFI 桥接和运行时层。"
+    },
+    "lastUpdated": "2026-04-13T06:40:13Z",
+    "stars": 20,
+    "watchers": 3,
+    "forks": 5,
+    "language": "Dart",
+    "license": "Apache-2.0",
+    "sourcePage": 3
+  },
+  {
+    "repositoryUrl": "https://github.com/ABW-Gossamer/RwkvDemo",
+    "owner": "ABW-Gossamer",
+    "name": "RwkvDemo",
+    "category": "package",
+    "summary": {
+      "en": "RWKV inference demonstration for .NET 10.",
+      "zh": "面向 .NET 10 的 RWKV 推理演示。"
+    },
+    "lastUpdated": "2026-04-04T14:23:58Z",
+    "stars": 0,
+    "watchers": 0,
+    "forks": 0,
+    "language": "C#",
+    "license": "MIT",
+    "sourcePage": 3
+  },
+  {
+    "repositoryUrl": "https://github.com/Alic-Li/rwkv_lightning_libtorch",
+    "owner": "Alic-Li",
+    "name": "rwkv_lightning_libtorch",
+    "category": "inference",
+    "summary": {
+      "en": "RWKV Batch infer backend ⚡Base on albatross https://github.com/BlinkDL/Albatross  🕊️ Use LibTorch with Pure C++ implementation",
+      "zh": "rwkv_lightning_libtorch 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2026-04-02T11:58:38Z",
+    "stars": 5,
+    "watchers": 1,
+    "forks": 1,
+    "language": "C++",
+    "license": "Apache-2.0",
+    "sourcePage": 3
+  },
+  {
+    "repositoryUrl": "https://github.com/howard-hou/RWKV-X",
+    "owner": "howard-hou",
+    "name": "RWKV-X",
+    "category": "training",
+    "summary": {
+      "en": "RWKV-X is a Linear Complexity Hybrid Language Model based on the RWKV architecture, integrating Sparse Attention to improve the model's long sequence processing capabilities.",
+      "zh": "RWKV-X 提供 RWKV 模型训练、微调或架构实验工具。"
+    },
+    "lastUpdated": "2026-03-31T13:48:07Z",
+    "stars": 60,
+    "watchers": 1,
+    "forks": 3,
+    "language": "Python",
+    "license": "MIT",
+    "sourcePage": 3
+  },
+  {
+    "repositoryUrl": "https://github.com/sablin39/rwkv-infer",
+    "owner": "sablin39",
+    "name": "rwkv-infer",
+    "category": "inference",
+    "summary": {
+      "en": "SGLang patch for RWKV and ModRWKV. ",
+      "zh": "rwkv-infer 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2026-03-28T14:19:06Z",
+    "stars": 0,
+    "watchers": 0,
+    "forks": 0,
+    "language": "Python",
+    "license": null,
+    "sourcePage": 3
+  },
+  {
+    "repositoryUrl": "https://github.com/Dappit-io/birdsnest",
+    "owner": "Dappit-io",
+    "name": "birdsnest",
+    "category": "package",
+    "summary": {
+      "en": "🪹 Bird's Nest — Non-Transformer AI Hub for Mac. Local AI chat, image generation, and tools. No cloud, no API keys.",
+      "zh": "birdsnest 是面向 RWKV 用户的易用应用或开箱即用工具。"
+    },
+    "lastUpdated": "2026-03-06T22:53:02Z",
+    "stars": 25,
+    "watchers": 3,
+    "forks": 3,
+    "language": "Python",
+    "license": "MIT",
+    "sourcePage": 4
+  },
+  {
+    "repositoryUrl": "https://github.com/leonsama/chirrup",
+    "owner": "leonsama",
+    "name": "chirrup",
+    "category": "inference",
+    "summary": {
+      "en": "🐦RWKV-7 inference | Like a chirping bird — lightweight, fast, and always responsive.",
+      "zh": "chirrup 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2026-03-05T12:34:42Z",
+    "stars": 6,
+    "watchers": 0,
+    "forks": 1,
+    "language": "HTML",
+    "license": null,
+    "sourcePage": 4
+  },
+  {
+    "repositoryUrl": "https://github.com/daman-ovo-0404/rwkv6-runpod-serverless",
+    "owner": "daman-ovo-0404",
+    "name": "rwkv6-runpod-serverless",
+    "category": "inference",
+    "summary": {
+      "en": "Deploy RWKV6-7B on RunPod Serverless with OpenAI-compatible API for SillyTavern",
+      "zh": "rwkv6-runpod-serverless 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2026-03-03T13:09:40Z",
+    "stars": 0,
+    "watchers": 0,
+    "forks": 0,
+    "language": "Python",
+    "license": null,
+    "sourcePage": 4
+  },
+  {
+    "repositoryUrl": "https://github.com/aierwiki/rwkvserve",
+    "owner": "aierwiki",
+    "name": "rwkvserve",
+    "category": "inference",
+    "summary": {
+      "en": "High-performance RWKV serving framework with continuous batching and an OpenAI-compatible API.",
+      "zh": "支持连续批处理与 OpenAI 兼容 API 的高性能 RWKV 推理服务框架。"
+    },
+    "lastUpdated": "2026-02-27T02:53:30Z",
+    "stars": 1,
+    "watchers": 0,
+    "forks": 0,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "sourcePage": 5
+  },
+  {
+    "repositoryUrl": "https://github.com/johanwind/wind_rwkv",
+    "owner": "johanwind",
+    "name": "wind_rwkv",
+    "category": "inference",
+    "summary": {
+      "en": "wind_rwkv provides RWKV inference, deployment, runtime, or serving support.",
+      "zh": "wind_rwkv 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2026-02-26T14:50:48Z",
+    "stars": 28,
+    "watchers": 1,
+    "forks": 6,
+    "language": "Cuda",
+    "license": "MIT",
+    "sourcePage": 4
+  },
+  {
+    "repositoryUrl": "https://github.com/AlexSabaka/RWKV-MLX",
+    "owner": "AlexSabaka",
+    "name": "RWKV-MLX",
+    "category": "inference",
+    "summary": {
+      "en": "RWKV model implementation for Apple's MLX backend on Apple silicon.",
+      "zh": "面向 Apple 芯片 MLX 后端的 RWKV 模型实现。"
+    },
+    "lastUpdated": "2026-02-22T10:15:35Z",
+    "stars": 0,
+    "watchers": 0,
+    "forks": 0,
+    "language": "Python",
+    "license": null,
+    "sourcePage": 5
+  },
+  {
+    "repositoryUrl": "https://github.com/aierwiki/rwkvtune",
+    "owner": "aierwiki",
+    "name": "rwkvtune",
+    "category": "training",
+    "summary": {
+      "en": "Training and fine-tuning utilities for adapting RWKV models.",
+      "zh": "用于适配 RWKV 模型的训练与微调工具。"
+    },
+    "lastUpdated": "2026-02-22T03:50:33Z",
+    "stars": 1,
+    "watchers": 0,
+    "forks": 0,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "sourcePage": 4
+  },
+  {
+    "repositoryUrl": "https://github.com/Nintorac/hip-rwkv",
+    "owner": "Nintorac",
+    "name": "hip-rwkv",
+    "category": "inference",
+    "summary": {
+      "en": "High throughput implementation of RWKV7 model for AMD accelerators",
+      "zh": "hip-rwkv 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2026-02-17T02:38:00Z",
+    "stars": 0,
+    "watchers": 0,
+    "forks": 0,
+    "language": "Rust",
+    "license": "NOASSERTION",
+    "sourcePage": 4
+  },
+  {
+    "repositoryUrl": "https://github.com/stukenov/nano-rwkv",
+    "owner": "stukenov",
+    "name": "nano-rwkv",
+    "category": "training",
+    "summary": {
+      "en": "Minimal educational RWKV implementation inspired by nanoGPT, with trainable examples and CUDA support.",
+      "zh": "受 nanoGPT 启发的极简教学型 RWKV 实现，包含可训练示例与 CUDA 支持。"
+    },
+    "lastUpdated": "2026-02-16T18:04:15Z",
+    "stars": 0,
+    "watchers": 0,
+    "forks": 0,
+    "language": "Python",
+    "license": "MIT",
+    "sourcePage": 5
+  },
+  {
+    "repositoryUrl": "https://github.com/DeepJH/state_tuning_tutorial_for_RWKV",
+    "owner": "DeepJH",
+    "name": "state_tuning_tutorial_for_RWKV",
+    "category": "training",
+    "summary": {
+      "en": "Tutorial materials and examples for RWKV state tuning.",
+      "zh": "RWKV State Tuning 的教程材料与示例。"
+    },
+    "lastUpdated": "2026-02-06T08:00:30Z",
+    "stars": 0,
+    "watchers": 0,
+    "forks": 0,
+    "language": "Jupyter Notebook",
+    "license": null,
+    "sourcePage": 4
+  },
+  {
+    "repositoryUrl": "https://github.com/guinmoon/LLMFarm",
+    "owner": "guinmoon",
+    "name": "LLMFarm",
+    "category": "package",
+    "summary": {
+      "en": "Offline iOS and macOS application for running RWKV and other local language models.",
+      "zh": "可在 iOS 与 macOS 离线运行 RWKV 等本地语言模型的应用。"
+    },
+    "lastUpdated": "2026-01-30T20:52:36Z",
+    "stars": 2068,
+    "watchers": 26,
+    "forks": 182,
+    "language": "C",
+    "license": "MIT",
+    "sourcePage": 1
+  },
+  {
+    "repositoryUrl": "https://github.com/Alic-Li/Mini_RWKV_7",
+    "owner": "Alic-Li",
+    "name": "Mini_RWKV_7",
+    "category": "training",
+    "summary": {
+      "en": "Mini_RWKV_V7_LM Only 34.2M params (also have RWKV7s architecture [deep embedding]/[deep embedding attention) with Full Training code & datasets & inference",
+      "zh": "Mini_RWKV_7 提供 RWKV 模型训练、微调或架构实验工具。"
+    },
+    "lastUpdated": "2026-01-26T05:27:16Z",
+    "stars": 95,
+    "watchers": 1,
+    "forks": 11,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "sourcePage": 4
+  },
+  {
+    "repositoryUrl": "https://github.com/Eternalyze0/improved_nanoRWKV",
+    "owner": "Eternalyze0",
+    "name": "improved_nanoRWKV",
+    "category": "training",
+    "summary": {
+      "en": "We use the 4ab+c trick and remove sigmoid to significantly improve performance.",
+      "zh": "improved_nanoRWKV 提供 RWKV 模型训练、微调或架构实验工具。"
+    },
+    "lastUpdated": "2026-01-24T04:42:06Z",
+    "stars": 0,
+    "watchers": 0,
+    "forks": 0,
+    "language": "Python",
+    "license": "MIT",
+    "sourcePage": 4
+  },
+  {
+    "repositoryUrl": "https://github.com/nkypy/candle-rwkv",
+    "owner": "nkypy",
+    "name": "candle-rwkv",
+    "category": "inference",
+    "summary": {
+      "en": "RWKV models and inference examples implemented with the Rust Candle framework.",
+      "zh": "基于 Rust Candle 框架实现的 RWKV 模型与推理示例。"
+    },
+    "lastUpdated": "2026-01-19T02:24:43Z",
+    "stars": 22,
+    "watchers": 4,
+    "forks": 1,
+    "language": "Rust",
+    "license": null,
+    "sourcePage": 2
+  },
+  {
+    "repositoryUrl": "https://github.com/howard-hou/VisualRWKV",
+    "owner": "howard-hou",
+    "name": "VisualRWKV",
+    "category": "training",
+    "summary": {
+      "en": "Visual extension of RWKV with model code, training recipes, and evaluation for multimodal tasks.",
+      "zh": "面向多模态任务的 RWKV 视觉扩展，包含模型代码、训练方案与评测。"
+    },
+    "lastUpdated": "2026-01-13T08:13:18Z",
+    "stars": 247,
+    "watchers": 6,
+    "forks": 19,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "sourcePage": 1
+  },
+  {
+    "repositoryUrl": "https://github.com/Joluck/RWKV-PEFT",
+    "owner": "Joluck",
+    "name": "RWKV-PEFT",
+    "category": "training",
+    "summary": {
+      "en": "RWKV-PEFT provides RWKV training, fine-tuning, or architecture experimentation tools.",
+      "zh": "RWKV-PEFT 提供 RWKV 模型训练、微调或架构实验工具。"
+    },
+    "lastUpdated": "2026-01-13T04:48:46Z",
+    "stars": 186,
+    "watchers": 6,
+    "forks": 46,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "sourcePage": 4
+  },
+  {
+    "repositoryUrl": "https://github.com/FlameF0X/open-i3",
+    "owner": "FlameF0X",
+    "name": "open-i3",
+    "category": "training",
+    "summary": {
+      "en": "A novel hybrid language model combining RWKV time-mixing and standard Multi-Head Attention for efficient training on consumer hardware.",
+      "zh": "open-i3 提供 RWKV 模型训练、微调或架构实验工具。"
+    },
+    "lastUpdated": "2025-12-30T20:27:52Z",
+    "stars": 4,
+    "watchers": 0,
+    "forks": 1,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "sourcePage": 4
+  },
+  {
+    "repositoryUrl": "https://github.com/ssg-qwq/RWKV-Text-Pretrain-Light",
+    "owner": "ssg-qwq",
+    "name": "RWKV-Text-Pretrain-Light",
+    "category": "training",
+    "summary": {
+      "en": "Self-used RWKV pre-training code",
+      "zh": "RWKV-Text-Pretrain-Light 提供 RWKV 模型训练、微调或架构实验工具。"
+    },
+    "lastUpdated": "2025-12-27T13:41:30Z",
+    "stars": 3,
+    "watchers": 0,
+    "forks": 0,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "sourcePage": 4
+  },
+  {
+    "repositoryUrl": "https://github.com/ZDP-Q/RWKV-Factory",
+    "owner": "ZDP-Q",
+    "name": "RWKV-Factory",
+    "category": "training",
+    "summary": {
+      "en": "A Web UI project for RWKV PEFT",
+      "zh": "RWKV-Factory 提供 RWKV 模型训练、微调或架构实验工具。"
+    },
+    "lastUpdated": "2025-12-26T08:48:10Z",
+    "stars": 0,
+    "watchers": 0,
+    "forks": 0,
+    "language": null,
+    "license": null,
+    "sourcePage": 4
+  },
+  {
+    "repositoryUrl": "https://github.com/cryscan/mia",
+    "owner": "cryscan",
+    "name": "mia",
+    "category": "inference",
+    "summary": {
+      "en": "A Lightweight, Cross-Platform Inference Framework. (WIP)",
+      "zh": "mia 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2025-11-12T09:23:28Z",
+    "stars": 10,
+    "watchers": 1,
+    "forks": 2,
+    "language": "Rust",
+    "license": null,
+    "sourcePage": 5
+  },
+  {
+    "repositoryUrl": "https://github.com/OpenMOSE/RWKV-Infer",
+    "owner": "OpenMOSE",
+    "name": "RWKV-Infer",
+    "category": "inference",
+    "summary": {
+      "en": "A large-scale RWKV v7(World, PRWKV, Hybrid-RWKV) inference. Capable of inference by combining multiple states(Pseudo MoE). Easy to deploy on docker. Supports true multi-batch generation and dynamic State switching. CUDA and Rocm Supported :) ",
+      "zh": "RWKV-Infer 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2025-10-21T16:09:21Z",
+    "stars": 52,
+    "watchers": 2,
+    "forks": 2,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "sourcePage": 5
+  },
+  {
+    "repositoryUrl": "https://github.com/pass-lin/RWKV7-Keras",
+    "owner": "pass-lin",
+    "name": "RWKV7-Keras",
+    "category": "training",
+    "summary": {
+      "en": "RWKV7-Keras provides RWKV training, fine-tuning, or architecture experimentation tools.",
+      "zh": "RWKV7-Keras 提供 RWKV 模型训练、微调或架构实验工具。"
+    },
+    "lastUpdated": "2025-10-07T15:11:19Z",
+    "stars": 2,
+    "watchers": 1,
+    "forks": 0,
+    "language": "Python",
+    "license": null,
+    "sourcePage": 5
+  },
+  {
+    "repositoryUrl": "https://github.com/No-22-Github/ComfyUI_RWKV_Studio",
+    "owner": "No-22-Github",
+    "name": "ComfyUI_RWKV_Studio",
+    "category": "package",
+    "summary": {
+      "en": "A suite of ComfyUI custom nodes based on the RWKV series of models, offering various functions like translation and dialogue.",
+      "zh": "ComfyUI_RWKV_Studio 是面向 RWKV 用户的易用应用或开箱即用工具。"
+    },
+    "lastUpdated": "2025-09-26T13:42:27Z",
+    "stars": 0,
+    "watchers": 0,
+    "forks": 2,
+    "language": "Python",
+    "license": "MIT",
+    "sourcePage": 5
+  },
+  {
+    "repositoryUrl": "https://github.com/OpenMOSE/RWKV-LM-RLHF",
+    "owner": "OpenMOSE",
+    "name": "RWKV-LM-RLHF",
+    "category": "training",
+    "summary": {
+      "en": "Reinforcement Learning Toolkit for RWKV.(v6,v7,ARWKV) Distillation,SFT,RLHF(DPO,ORPO), infinite context training, Aligning. Exploring the possibilities for deeper fine-tuning of RWKV.",
+      "zh": "RWKV-LM-RLHF 提供 RWKV 模型训练、微调或架构实验工具。"
+    },
+    "lastUpdated": "2025-09-19T19:58:51Z",
+    "stars": 63,
+    "watchers": 2,
+    "forks": 6,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "sourcePage": 5
+  },
+  {
+    "repositoryUrl": "https://github.com/turtle261/candle_rwkv7",
+    "owner": "turtle261",
+    "name": "candle_rwkv7",
+    "category": "inference",
+    "summary": {
+      "en": "RWKV7 LLM Implementation for Candle (https://www.rwkv.com/)",
+      "zh": "candle_rwkv7 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2025-09-18T01:08:35Z",
+    "stars": 0,
+    "watchers": 0,
+    "forks": 0,
+    "language": "Rust",
+    "license": "Apache-2.0",
+    "sourcePage": 5
+  },
+  {
+    "repositoryUrl": "https://github.com/rwkv-rs/rwkv-peft-simple",
+    "owner": "rwkv-rs",
+    "name": "rwkv-peft-simple",
+    "category": "training",
+    "summary": {
+      "en": "rwkv-peft-simple provides RWKV training, fine-tuning, or architecture experimentation tools.",
+      "zh": "rwkv-peft-simple 提供 RWKV 模型训练、微调或架构实验工具。"
+    },
+    "lastUpdated": "2025-08-30T15:49:53Z",
+    "stars": 4,
+    "watchers": 0,
+    "forks": 0,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "sourcePage": 5
+  },
+  {
+    "repositoryUrl": "https://github.com/Alic-Li/RWKV_7_on_AMD_Radeon-Instinct",
+    "owner": "Alic-Li",
+    "name": "RWKV_7_on_AMD_Radeon-Instinct",
+    "category": "inference",
+    "summary": {
+      "en": "RWKV_7_on_AMD_Radeon&Instinct",
+      "zh": "RWKV_7_on_AMD_Radeon-Instinct 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2025-08-26T07:10:27Z",
+    "stars": 1,
+    "watchers": 0,
+    "forks": 0,
+    "language": null,
+    "license": null,
+    "sourcePage": 5
+  },
+  {
+    "repositoryUrl": "https://github.com/cttailearn/RWKV-PEFT-GUI",
+    "owner": "cttailearn",
+    "name": "RWKV-PEFT-GUI",
+    "category": "training",
+    "summary": {
+      "en": "Web interface for RWKV-PEFT data preparation and fine-tuning.",
+      "zh": "用于 RWKV-PEFT 数据处理和微调的 Web 界面。"
+    },
+    "lastUpdated": "2025-08-19T02:13:16Z",
+    "stars": 1,
+    "watchers": 0,
+    "forks": 0,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "sourcePage": 5
+  },
+  {
+    "repositoryUrl": "https://github.com/KevlarKanou/rwkv7.c",
+    "owner": "KevlarKanou",
+    "name": "rwkv7.c",
+    "category": "inference",
+    "summary": {
+      "en": "Pure C implementation for RWKV-7 inference.",
+      "zh": "使用纯 C 实现的 RWKV-7 推理项目。"
+    },
+    "lastUpdated": "2025-07-25T07:49:53Z",
+    "stars": 36,
+    "watchers": 3,
+    "forks": 3,
+    "language": "C",
+    "license": "MIT",
+    "sourcePage": 2
+  },
+  {
+    "repositoryUrl": "https://github.com/RWKV-Vibe/rwkv_Ascend",
+    "owner": "RWKV-Vibe",
+    "name": "rwkv_Ascend",
+    "category": "inference",
+    "summary": {
+      "en": "Ascend&RWKV community consturction project",
+      "zh": "rwkv_Ascend 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2025-07-23T10:24:46Z",
+    "stars": 11,
+    "watchers": 0,
+    "forks": 4,
+    "language": "Python",
+    "license": null,
+    "sourcePage": 5
+  },
+  {
+    "repositoryUrl": "https://github.com/RWKV/RWKV-block",
+    "owner": "RWKV",
+    "name": "RWKV-block",
+    "category": "training",
+    "summary": {
+      "en": "PyTorch implementation of RWKV blocks",
+      "zh": "RWKV-block 提供 RWKV 模型训练、微调或架构实验工具。"
+    },
+    "lastUpdated": "2025-07-22T23:40:09Z",
+    "stars": 31,
+    "watchers": 4,
+    "forks": 1,
+    "language": "Python",
+    "license": null,
+    "sourcePage": 5
+  },
+  {
+    "repositoryUrl": "https://github.com/Alic-Li/RWKV-LM-V7-AMD-ROCm",
+    "owner": "Alic-Li",
+    "name": "RWKV-LM-V7-AMD-ROCm",
+    "category": "inference",
+    "summary": {
+      "en": "RWKV-LM-V7 For AMD ROCm, Forked From (https://github.com/RWKV-Vibe/RWKV-LM-V7)",
+      "zh": "RWKV-LM-V7-AMD-ROCm 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2025-06-18T07:23:24Z",
+    "stars": 4,
+    "watchers": 0,
+    "forks": 0,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "sourcePage": 5
+  },
+  {
+    "repositoryUrl": "https://github.com/dymat/rwkv-burn",
+    "owner": "dymat",
+    "name": "rwkv-burn",
+    "category": "training",
+    "summary": {
+      "en": "A port of the RWKV v7 language model, implemented with the Burn deep learning framework",
+      "zh": "rwkv-burn 提供 RWKV 模型训练、微调或架构实验工具。"
+    },
+    "lastUpdated": "2025-06-09T12:55:44Z",
+    "stars": 14,
+    "watchers": 1,
+    "forks": 4,
+    "language": "Rust",
+    "license": "Apache-2.0",
+    "sourcePage": 5
+  },
+  {
+    "repositoryUrl": "https://github.com/Seikaijyu/RWKV-PEFT-Simple",
+    "owner": "Seikaijyu",
+    "name": "RWKV-PEFT-Simple",
+    "category": "training",
+    "summary": {
+      "en": "Convenience scripts and instructions for simpler RWKV parameter-efficient fine-tuning.",
+      "zh": "提供便捷脚本与说明的简化 RWKV 参数高效微调工具。"
+    },
+    "lastUpdated": "2025-05-30T10:09:53Z",
+    "stars": 36,
+    "watchers": 2,
+    "forks": 1,
+    "language": "Shell",
+    "license": null,
+    "sourcePage": 6
+  },
+  {
+    "repositoryUrl": "https://github.com/BlinkDL/AI-Writer",
+    "owner": "BlinkDL",
+    "name": "AI-Writer",
+    "category": "package",
+    "summary": {
+      "en": "Chinese novel-writing application powered by an RWKV pretrained generation model.",
+      "zh": "使用 RWKV 中文预训练生成模型的小说写作应用。"
+    },
+    "lastUpdated": "2025-05-15T10:31:45Z",
+    "stars": 3893,
+    "watchers": 51,
+    "forks": 571,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "sourcePage": 6
+  },
+  {
+    "repositoryUrl": "https://github.com/00ffcc/conRWKV",
+    "owner": "00ffcc",
+    "name": "conRWKV",
+    "category": "inference",
+    "summary": {
+      "en": "RWKV7 with continuous batching",
+      "zh": "conRWKV 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2025-04-30T13:38:57Z",
+    "stars": 9,
+    "watchers": 1,
+    "forks": 3,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "sourcePage": 6
+  },
+  {
+    "repositoryUrl": "https://github.com/fabiomatricardi/RWKV-7_localGPT",
+    "owner": "fabiomatricardi",
+    "name": "RWKV-7_localGPT",
+    "category": "package",
+    "summary": {
+      "en": "Local Gradio Chatbot with documents and RWKV-7 ",
+      "zh": "RWKV-7_localGPT 是面向 RWKV 用户的易用应用或开箱即用工具。"
+    },
+    "lastUpdated": "2025-04-12T11:31:55Z",
+    "stars": 0,
+    "watchers": 1,
+    "forks": 0,
+    "language": "Python",
+    "license": null,
+    "sourcePage": 6
+  },
+  {
+    "repositoryUrl": "https://github.com/howard-hou/RWKV-SFT",
+    "owner": "howard-hou",
+    "name": "RWKV-SFT",
+    "category": "training",
+    "summary": {
+      "en": "simple RWKV SFT code",
+      "zh": "RWKV-SFT 提供 RWKV 模型训练、微调或架构实验工具。"
+    },
+    "lastUpdated": "2025-04-09T08:26:38Z",
+    "stars": 4,
+    "watchers": 1,
+    "forks": 0,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "sourcePage": 6
+  },
+  {
+    "repositoryUrl": "https://github.com/ZTMIDGO/Android-RWKV-V7-World",
+    "owner": "ZTMIDGO",
+    "name": "Android-RWKV-V7-World",
+    "category": "package",
+    "summary": {
+      "en": "Android application for local RWKV-7 World 1.5B INT4 inference.",
+      "zh": "在 Android 上本地运行 RWKV-7 World 1.5B INT4 的应用。"
+    },
+    "lastUpdated": "2025-04-03T16:03:58Z",
+    "stars": 0,
+    "watchers": 1,
+    "forks": 0,
+    "language": "Java",
+    "license": null,
+    "sourcePage": 6
+  },
+  {
+    "repositoryUrl": "https://github.com/computer-whisperer/RWKV-burn",
+    "owner": "computer-whisperer",
+    "name": "RWKV-burn",
+    "category": "inference",
+    "summary": {
+      "en": "RWKV-burn provides RWKV inference, deployment, runtime, or serving support.",
+      "zh": "RWKV-burn 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2025-04-02T05:41:15Z",
+    "stars": 4,
+    "watchers": 1,
+    "forks": 0,
+    "language": "Rust",
+    "license": null,
+    "sourcePage": 6
+  },
+  {
+    "repositoryUrl": "https://github.com/SmerkyG/RWKV_Explained",
+    "owner": "SmerkyG",
+    "name": "RWKV_Explained",
+    "category": "training",
+    "summary": {
+      "en": "RWKV, in easy to read code",
+      "zh": "RWKV_Explained 提供 RWKV 模型训练、微调或架构实验工具。"
+    },
+    "lastUpdated": "2025-03-25T23:34:09Z",
+    "stars": 74,
+    "watchers": 5,
+    "forks": 5,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "sourcePage": 6
+  },
+  {
+    "repositoryUrl": "https://github.com/RWKV/rwkv.cpp",
+    "owner": "RWKV",
+    "name": "rwkv.cpp",
+    "category": "inference",
+    "summary": {
+      "en": "Quantized CPU inference runtime for RWKV with INT4, INT5, INT8, and FP16 support.",
+      "zh": "支持 INT4、INT5、INT8 与 FP16 的 RWKV 量化 CPU 推理运行时。"
+    },
+    "lastUpdated": "2025-03-23T05:04:42Z",
+    "stars": 1584,
+    "watchers": 23,
+    "forks": 129,
+    "language": "C++",
+    "license": "MIT",
+    "sourcePage": 1
+  },
+  {
+    "repositoryUrl": "https://github.com/harrisonvanderbyl/rwkv.cuh",
+    "owner": "harrisonvanderbyl",
+    "name": "rwkv.cuh",
+    "category": "inference",
+    "summary": {
+      "en": "rwkv.cuh provides RWKV inference, deployment, runtime, or serving support.",
+      "zh": "rwkv.cuh 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2025-03-17T07:24:55Z",
+    "stars": 5,
+    "watchers": 1,
+    "forks": 0,
+    "language": "C++",
+    "license": null,
+    "sourcePage": 6
+  },
+  {
+    "repositoryUrl": "https://github.com/wozeparrot/tinyrwkv",
+    "owner": "wozeparrot",
+    "name": "tinyrwkv",
+    "category": "inference",
+    "summary": {
+      "en": "tinygrad port of the RWKV large language model.",
+      "zh": "tinyrwkv 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2025-03-09T00:44:09Z",
+    "stars": 45,
+    "watchers": 3,
+    "forks": 3,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "sourcePage": 6
+  },
+  {
+    "repositoryUrl": "https://github.com/shengxia/RWKV_Role_Playing",
+    "owner": "shengxia",
+    "name": "RWKV_Role_Playing",
+    "category": "package",
+    "summary": {
+      "en": "Gradio-based role-playing web interface for RWKV.",
+      "zh": "基于 Gradio 的 RWKV 角色扮演 Web 界面。"
+    },
+    "lastUpdated": "2025-03-05T08:27:48Z",
+    "stars": 250,
+    "watchers": 7,
+    "forks": 27,
+    "language": "Python",
+    "license": "GPL-3.0",
+    "sourcePage": 6
+  },
+  {
+    "repositoryUrl": "https://github.com/imxcstar/RWKVSharp",
+    "owner": "imxcstar",
+    "name": "RWKVSharp",
+    "category": "inference",
+    "summary": {
+      "en": "C# bindings and runtime for RWKV v4 through v7 using rwkv.cpp on CPU or GPU.",
+      "zh": "通过 rwkv.cpp 在 CPU 或 GPU 上运行 RWKV v4 至 v7 的 C# 绑定与运行时。"
+    },
+    "lastUpdated": "2025-02-21T07:34:36Z",
+    "stars": 36,
+    "watchers": 5,
+    "forks": 5,
+    "language": "C#",
+    "license": "MIT",
+    "sourcePage": 2
+  },
+  {
+    "repositoryUrl": "https://github.com/bilibini/Meow-AI",
+    "owner": "bilibini",
+    "name": "Meow-AI",
+    "category": "package",
+    "summary": {
+      "en": "Lightweight local RWKV chat application with optional integrations such as WeChat auto-reply.",
+      "zh": "轻量级本地 RWKV 聊天应用，可扩展微信自动回复等插件。"
+    },
+    "lastUpdated": "2025-02-20T15:15:20Z",
+    "stars": 48,
+    "watchers": 1,
+    "forks": 8,
+    "language": "Python",
+    "license": "MIT",
+    "sourcePage": 6
+  },
+  {
+    "repositoryUrl": "https://github.com/Jellyfish042/RWKV-StateTuning",
+    "owner": "Jellyfish042",
+    "name": "RWKV-StateTuning",
+    "category": "training",
+    "summary": {
+      "en": "State tuning tunes the state",
+      "zh": "RWKV-StateTuning 提供 RWKV 模型训练、微调或架构实验工具。"
+    },
+    "lastUpdated": "2025-02-12T18:40:53Z",
+    "stars": 34,
+    "watchers": 1,
+    "forks": 1,
+    "language": "Python",
+    "license": "MIT",
+    "sourcePage": 6
+  },
+  {
+    "repositoryUrl": "https://github.com/l15y/R-translator",
+    "owner": "l15y",
+    "name": "R-translator",
+    "category": "package",
+    "summary": {
+      "en": "An artificial intelligence translation tool based on the rwkv model and using ai00 for inference",
+      "zh": "R-translator 是面向 RWKV 用户的易用应用或开箱即用工具。"
+    },
+    "lastUpdated": "2025-02-01T09:23:00Z",
+    "stars": 2,
+    "watchers": 1,
+    "forks": 0,
+    "language": "CSS",
+    "license": "Apache-2.0",
+    "sourcePage": 6
+  },
+  {
+    "repositoryUrl": "https://github.com/cryscan/web-rwkv-py",
+    "owner": "cryscan",
+    "name": "web-rwkv-py",
+    "category": "inference",
+    "summary": {
+      "en": "web-rwkv-py provides RWKV inference, deployment, runtime, or serving support.",
+      "zh": "web-rwkv-py 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2025-01-26T06:39:02Z",
+    "stars": 10,
+    "watchers": 1,
+    "forks": 8,
+    "language": "Rust",
+    "license": null,
+    "sourcePage": 6
+  },
+  {
+    "repositoryUrl": "https://github.com/wenda-LLM/wenda",
+    "owner": "wenda-LLM",
+    "name": "wenda",
+    "category": "package",
+    "summary": {
+      "en": "Local-first LLM application platform with knowledge bases, multiple model backends, and private deployment support.",
+      "zh": "支持知识库、多模型后端与私有化部署的本地优先大模型应用平台。"
+    },
+    "lastUpdated": "2025-01-23T12:55:35Z",
+    "stars": 6151,
+    "watchers": 78,
+    "forks": 784,
+    "language": "JavaScript",
+    "license": "AGPL-3.0",
+    "sourcePage": 6
+  },
+  {
+    "repositoryUrl": "https://github.com/cryscan/web-rwkv-realweb",
+    "owner": "cryscan",
+    "name": "web-rwkv-realweb",
+    "category": "inference",
+    "summary": {
+      "en": "web-rwkv-realweb provides RWKV inference, deployment, runtime, or serving support.",
+      "zh": "web-rwkv-realweb 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2025-01-12T12:20:07Z",
+    "stars": 30,
+    "watchers": 2,
+    "forks": 7,
+    "language": "Rust",
+    "license": "NOASSERTION",
+    "sourcePage": 6
+  },
+  {
+    "repositoryUrl": "https://github.com/RWKV-Vibe/rwkv-kit",
+    "owner": "RWKV-Vibe",
+    "name": "rwkv-kit",
+    "category": "training",
+    "summary": {
+      "en": "rwkv-kit provides RWKV training, fine-tuning, or architecture experimentation tools.",
+      "zh": "rwkv-kit 提供 RWKV 模型训练、微调或架构实验工具。"
+    },
+    "lastUpdated": "2024-12-28T03:20:55Z",
+    "stars": 24,
+    "watchers": 0,
+    "forks": 1,
+    "language": "Python",
+    "license": "GPL-3.0",
+    "sourcePage": 6
+  },
+  {
+    "repositoryUrl": "https://github.com/MollySophia/rwkv-ryzenai",
+    "owner": "MollySophia",
+    "name": "rwkv-ryzenai",
+    "category": "inference",
+    "summary": {
+      "en": "rwkv-ryzenai provides RWKV inference, deployment, runtime, or serving support.",
+      "zh": "rwkv-ryzenai 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2024-12-19T02:23:05Z",
+    "stars": 2,
+    "watchers": 1,
+    "forks": 0,
+    "language": "Python",
+    "license": null,
+    "sourcePage": 6
+  },
+  {
+    "repositoryUrl": "https://github.com/LeoLin4258/Infofusion",
+    "owner": "LeoLin4258",
+    "name": "Infofusion",
+    "category": "package",
+    "summary": {
+      "en": "A 100% locally run AI web tool for generating WeChat replies using the RWKV runner",
+      "zh": "Infofusion 是面向 RWKV 用户的易用应用或开箱即用工具。"
+    },
+    "lastUpdated": "2024-10-29T11:34:44Z",
+    "stars": 10,
+    "watchers": 2,
+    "forks": 2,
+    "language": "TypeScript",
+    "license": "MIT",
+    "sourcePage": 7
+  },
+  {
+    "repositoryUrl": "https://github.com/AnshulRanjan2004/MicroRWKV",
+    "owner": "AnshulRanjan2004",
+    "name": "MicroRWKV",
+    "category": "training",
+    "summary": {
+      "en": "Implementation of a custom architecture on nanoRWKV: A nanoGPT-style adaptation of the RWKV Language Model, which combines the simplicity of RNNs with GPT-level performance for large language models (LLMs).",
+      "zh": "MicroRWKV 提供 RWKV 模型训练、微调或架构实验工具。"
+    },
+    "lastUpdated": "2024-09-29T07:19:19Z",
+    "stars": 3,
+    "watchers": 2,
+    "forks": 1,
+    "language": "Python",
+    "license": "GPL-3.0",
+    "sourcePage": 7
+  },
+  {
+    "repositoryUrl": "https://github.com/MollySophia/rwkv-ncnn",
+    "owner": "MollySophia",
+    "name": "rwkv-ncnn",
+    "category": "inference",
+    "summary": {
+      "en": "Infere RWKV on NCNN",
+      "zh": "rwkv-ncnn 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2024-09-03T06:42:37Z",
+    "stars": 49,
+    "watchers": 1,
+    "forks": 5,
+    "language": "Python",
+    "license": null,
+    "sourcePage": 7
+  },
+  {
+    "repositoryUrl": "https://github.com/Ronsor/rwkv-simple",
+    "owner": "Ronsor",
+    "name": "rwkv-simple",
+    "category": "training",
+    "summary": {
+      "en": "RWKV x060 implementation",
+      "zh": "rwkv-simple 提供 RWKV 模型训练、微调或架构实验工具。"
+    },
+    "lastUpdated": "2024-08-14T21:24:46Z",
+    "stars": 3,
+    "watchers": 1,
+    "forks": 0,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "sourcePage": 7
+  },
+  {
+    "repositoryUrl": "https://github.com/RWKV/RWKV-infctx-trainer",
+    "owner": "RWKV",
+    "name": "RWKV-infctx-trainer",
+    "category": "training",
+    "summary": {
+      "en": "RWKV infctx trainer, for training arbitary context sizes, to 10k and beyond!",
+      "zh": "RWKV-infctx-trainer 提供 RWKV 模型训练、微调或架构实验工具。"
+    },
+    "lastUpdated": "2024-08-13T03:37:23Z",
+    "stars": 149,
+    "watchers": 5,
+    "forks": 30,
+    "language": "Jupyter Notebook",
+    "license": "Apache-2.0",
+    "sourcePage": 7
+  },
+  {
+    "repositoryUrl": "https://github.com/OpenMOSE/RWKV-LM-State-4bit-Orpo",
+    "owner": "OpenMOSE",
+    "name": "RWKV-LM-State-4bit-Orpo",
+    "category": "training",
+    "summary": {
+      "en": "State tuning with Orpo of RWKV v6 can be performed with 4-bit quantization. Every model can be trained with Orpo on Single 24GB GPU!",
+      "zh": "RWKV-LM-State-4bit-Orpo 提供 RWKV 模型训练、微调或架构实验工具。"
+    },
+    "lastUpdated": "2024-07-31T16:10:39Z",
+    "stars": 7,
+    "watchers": 1,
+    "forks": 1,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "sourcePage": 7
+  },
+  {
+    "repositoryUrl": "https://github.com/No-22-Github/Easy_RWKV_webui",
+    "owner": "No-22-Github",
+    "name": "Easy_RWKV_webui",
+    "category": "package",
+    "summary": {
+      "en": "PyWebIO chat interface for interacting with RWKV models.",
+      "zh": "用于与 RWKV 模型交互的 PyWebIO 聊天界面。"
+    },
+    "lastUpdated": "2024-07-31T15:26:03Z",
+    "stars": 7,
+    "watchers": 1,
+    "forks": 0,
+    "language": "Python",
+    "license": "MIT",
+    "sourcePage": 7
+  },
+  {
+    "repositoryUrl": "https://github.com/pass-lin/RWKV6-Keras",
+    "owner": "pass-lin",
+    "name": "RWKV6-Keras",
+    "category": "training",
+    "summary": {
+      "en": "RWKV6-Keras provides RWKV training, fine-tuning, or architecture experimentation tools.",
+      "zh": "RWKV6-Keras 提供 RWKV 模型训练、微调或架构实验工具。"
+    },
+    "lastUpdated": "2024-07-30T09:08:53Z",
+    "stars": 4,
+    "watchers": 1,
+    "forks": 1,
+    "language": "Python",
+    "license": null,
+    "sourcePage": 7
+  },
+  {
+    "repositoryUrl": "https://github.com/saran-gangster/rwkv-jax",
+    "owner": "saran-gangster",
+    "name": "rwkv-jax",
+    "category": "training",
+    "summary": {
+      "en": "RWKV in JAX",
+      "zh": "rwkv-jax 提供 RWKV 模型训练、微调或架构实验工具。"
+    },
+    "lastUpdated": "2024-07-08T07:16:57Z",
+    "stars": 6,
+    "watchers": 1,
+    "forks": 0,
+    "language": "Python",
+    "license": "NOASSERTION",
+    "sourcePage": 7
+  },
+  {
+    "repositoryUrl": "https://github.com/shengxia/RWKV_Role_Playing_UI",
+    "owner": "shengxia",
+    "name": "RWKV_Role_Playing_UI",
+    "category": "package",
+    "summary": {
+      "en": "Vue.js frontend for RWKV_Role_Playing_API.",
+      "zh": "面向 RWKV_Role_Playing_API 的 Vue.js 前端。"
+    },
+    "lastUpdated": "2024-06-26T09:39:54Z",
+    "stars": 4,
+    "watchers": 1,
+    "forks": 0,
+    "language": "Vue",
+    "license": null,
+    "sourcePage": 7
+  },
+  {
+    "repositoryUrl": "https://github.com/latestissue/AltaeraAI",
+    "owner": "latestissue",
+    "name": "AltaeraAI",
+    "category": "package",
+    "summary": {
+      "en": "A set of bash scripts to automate deployment of GGML/GGUF models [default: RWKV] with the use of KoboldCpp on Android - Termux",
+      "zh": "AltaeraAI 是面向 RWKV 用户的易用应用或开箱即用工具。"
+    },
+    "lastUpdated": "2024-06-21T11:52:04Z",
+    "stars": 44,
+    "watchers": 3,
+    "forks": 2,
+    "language": "Shell",
+    "license": "AGPL-3.0",
+    "sourcePage": 7
+  },
+  {
+    "repositoryUrl": "https://github.com/Ronsor/nanoRWKV-bitnet",
+    "owner": "Ronsor",
+    "name": "nanoRWKV-bitnet",
+    "category": "training",
+    "summary": {
+      "en": "nanoRWKV + BitNet b1.58 (WIP)",
+      "zh": "nanoRWKV-bitnet 提供 RWKV 模型训练、微调或架构实验工具。"
+    },
+    "lastUpdated": "2024-06-08T17:22:45Z",
+    "stars": 4,
+    "watchers": 1,
+    "forks": 0,
+    "language": "Python",
+    "license": "MIT",
+    "sourcePage": 7
+  },
+  {
+    "repositoryUrl": "https://github.com/iantbutler01/rwkv-raven-qlora-4bit-instruct",
+    "owner": "iantbutler01",
+    "name": "rwkv-raven-qlora-4bit-instruct",
+    "category": "training",
+    "summary": {
+      "en": "A finetuning pipeline for instruct tuning Raven 14bn using QLORA 4bit and the Ditty finetuning library",
+      "zh": "rwkv-raven-qlora-4bit-instruct 提供 RWKV 模型训练、微调或架构实验工具。"
+    },
+    "lastUpdated": "2024-06-05T20:30:19Z",
+    "stars": 27,
+    "watchers": 3,
+    "forks": 2,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "sourcePage": 7
+  },
+  {
+    "repositoryUrl": "https://github.com/OpenMOSE/RWKV-infctx-trainer-LoRA",
+    "owner": "OpenMOSE",
+    "name": "RWKV-infctx-trainer-LoRA",
+    "category": "training",
+    "summary": {
+      "en": "RWKV v5, v6 infctx LoRA trainer with 4bit quantization,Cuda and Rocm supported, for training arbitary context sizes, to 10k and beyond!",
+      "zh": "RWKV-infctx-trainer-LoRA 提供 RWKV 模型训练、微调或架构实验工具。"
+    },
+    "lastUpdated": "2024-05-27T20:20:50Z",
+    "stars": 8,
+    "watchers": 1,
+    "forks": 2,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "sourcePage": 7
+  },
+  {
+    "repositoryUrl": "https://github.com/BBuf/flash-rwkv",
+    "owner": "BBuf",
+    "name": "flash-rwkv",
+    "category": "inference",
+    "summary": {
+      "en": "flash-rwkv provides RWKV inference, deployment, runtime, or serving support.",
+      "zh": "flash-rwkv 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2024-05-26T05:58:10Z",
+    "stars": 32,
+    "watchers": 1,
+    "forks": 2,
+    "language": "Python",
+    "license": null,
+    "sourcePage": 7
+  },
+  {
+    "repositoryUrl": "https://github.com/neromous/RWKV-Ouroboros",
+    "owner": "neromous",
+    "name": "RWKV-Ouroboros",
+    "category": "training",
+    "summary": {
+      "en": "This project is established for real-time training of the RWKV model.",
+      "zh": "RWKV-Ouroboros 提供 RWKV 模型训练、微调或架构实验工具。"
+    },
+    "lastUpdated": "2024-05-17T23:27:03Z",
+    "stars": 48,
+    "watchers": 2,
+    "forks": 3,
+    "language": "Python",
+    "license": null,
+    "sourcePage": 7
+  },
+  {
+    "repositoryUrl": "https://github.com/cryscan/web-rwkv-converter",
+    "owner": "cryscan",
+    "name": "web-rwkv-converter",
+    "category": "inference",
+    "summary": {
+      "en": "Converts an RWKV PTH model to SafeTensors.",
+      "zh": "web-rwkv-converter 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2024-05-15T16:01:31Z",
+    "stars": 5,
+    "watchers": 1,
+    "forks": 0,
+    "language": "Rust",
+    "license": "NOASSERTION",
+    "sourcePage": 7
+  },
+  {
+    "repositoryUrl": "https://github.com/vaccovecrana/rwkv.jni",
+    "owner": "vaccovecrana",
+    "name": "rwkv.jni",
+    "category": "inference",
+    "summary": {
+      "en": "JNI wrapper for  rwkv.cpp",
+      "zh": "rwkv.jni 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2024-04-28T15:58:56Z",
+    "stars": 2,
+    "watchers": 1,
+    "forks": 0,
+    "language": "Java",
+    "license": "NOASSERTION",
+    "sourcePage": 8
+  },
+  {
+    "repositoryUrl": "https://github.com/ssbuild/rwkv_finetuning",
+    "owner": "ssbuild",
+    "name": "rwkv_finetuning",
+    "category": "training",
+    "summary": {
+      "en": "Scripts and examples for fine-tuning RWKV models.",
+      "zh": "用于微调 RWKV 模型的脚本和示例。"
+    },
+    "lastUpdated": "2024-04-22T01:31:38Z",
+    "stars": 36,
+    "watchers": 1,
+    "forks": 1,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "sourcePage": 2
+  },
+  {
+    "repositoryUrl": "https://github.com/szxysdt/rwkv_tokenizer_cpp",
+    "owner": "szxysdt",
+    "name": "rwkv_tokenizer_cpp",
+    "category": "inference",
+    "summary": {
+      "en": "RWKV tokenizer based on cpp (prepared for edge computing device BM1684X)",
+      "zh": "rwkv_tokenizer_cpp 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2024-04-13T07:43:36Z",
+    "stars": 0,
+    "watchers": 1,
+    "forks": 0,
+    "language": "C++",
+    "license": null,
+    "sourcePage": 8
+  },
+  {
+    "repositoryUrl": "https://github.com/v3ucn/RWKV_Role_Playing_with_GPT-SoVITS",
+    "owner": "v3ucn",
+    "name": "RWKV_Role_Playing_with_GPT-SoVITS",
+    "category": "package",
+    "summary": {
+      "en": "RWKV role-playing application with GPT-SoVITS voice conversations.",
+      "zh": "集成 GPT-SoVITS 语音对话的 RWKV 角色扮演应用。"
+    },
+    "lastUpdated": "2024-04-08T11:21:58Z",
+    "stars": 30,
+    "watchers": 1,
+    "forks": 2,
+    "language": "Python",
+    "license": "GPL-3.0",
+    "sourcePage": 8
+  },
+  {
+    "repositoryUrl": "https://github.com/v3ucn/RWKV_3B_7B_Webui_GPT-SoVITS",
+    "owner": "v3ucn",
+    "name": "RWKV_3B_7B_Webui_GPT-SoVITS",
+    "category": "package",
+    "summary": {
+      "en": "Local RWKV writing web interface with GPT-SoVITS speech output.",
+      "zh": "集成 GPT-SoVITS 朗读的本地 RWKV 写作 Web 界面。"
+    },
+    "lastUpdated": "2024-04-04T07:30:25Z",
+    "stars": 58,
+    "watchers": 2,
+    "forks": 8,
+    "language": "Python",
+    "license": "MIT",
+    "sourcePage": 8
+  },
+  {
+    "repositoryUrl": "https://github.com/OpenMOSE/RWKV5-LM-LoRA",
+    "owner": "OpenMOSE",
+    "name": "RWKV5-LM-LoRA",
+    "category": "training",
+    "summary": {
+      "en": "RWKV v5,v6 LoRA Trainer on Cuda and Rocm Platform. RWKV is a RNN with transformer-level LLM performance. It can be directly trained like a GPT (parallelizable). So it's combining the best of RNN and transformer - great performance, fast inference, saves VRAM, fast training, \"infinite\" ctx_len, and free sentence embedding.",
+      "zh": "RWKV5-LM-LoRA 提供 RWKV 模型训练、微调或架构实验工具。"
+    },
+    "lastUpdated": "2024-03-24T18:04:11Z",
+    "stars": 13,
+    "watchers": 2,
+    "forks": 5,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "sourcePage": 8
+  },
+  {
+    "repositoryUrl": "https://github.com/donomii/go-rwkv.cpp",
+    "owner": "donomii",
+    "name": "go-rwkv.cpp",
+    "category": "inference",
+    "summary": {
+      "en": "Go wrapper around the rwkv.cpp inference library.",
+      "zh": "rwkv.cpp 推理库的 Go 语言封装。"
+    },
+    "lastUpdated": "2024-03-04T09:32:10Z",
+    "stars": 20,
+    "watchers": 3,
+    "forks": 5,
+    "language": "Go",
+    "license": "MIT",
+    "sourcePage": 2
+  },
+  {
+    "repositoryUrl": "https://github.com/BrutalCoding/shady.ai",
+    "owner": "BrutalCoding",
+    "name": "shady.ai",
+    "category": "package",
+    "summary": {
+      "en": "Making offline AI models accessible to all types of edge devices.",
+      "zh": "shady.ai 是面向 RWKV 用户的易用应用或开箱即用工具。"
+    },
+    "lastUpdated": "2024-02-12T21:28:29Z",
+    "stars": 146,
+    "watchers": 12,
+    "forks": 16,
+    "language": "Dart",
+    "license": "AGPL-3.0",
+    "sourcePage": 8
+  },
+  {
+    "repositoryUrl": "https://github.com/harrisonvanderbyl/rwkv-cpp-accelerated",
+    "owner": "harrisonvanderbyl",
+    "name": "rwkv-cpp-accelerated",
+    "category": "inference",
+    "summary": {
+      "en": "A torchless, c++ rwkv implementation using 8bit quantization, written in cuda/hip/vulkan for maximum compatibility and minimum dependencies",
+      "zh": "rwkv-cpp-accelerated 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2024-01-31T05:43:31Z",
+    "stars": 313,
+    "watchers": 11,
+    "forks": 20,
+    "language": "C++",
+    "license": "MIT",
+    "sourcePage": 8
+  },
+  {
+    "repositoryUrl": "https://github.com/RWKV/rwkv-onnx",
+    "owner": "RWKV",
+    "name": "rwkv-onnx",
+    "category": "inference",
+    "summary": {
+      "en": "A converter and basic tester for rwkv onnx",
+      "zh": "rwkv-onnx 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2024-01-29T21:31:19Z",
+    "stars": 44,
+    "watchers": 3,
+    "forks": 3,
+    "language": "Python",
+    "license": null,
+    "sourcePage": 8
+  },
+  {
+    "repositoryUrl": "https://github.com/SingingRivulet/InnerDNN",
+    "owner": "SingingRivulet",
+    "name": "InnerDNN",
+    "category": "inference",
+    "summary": {
+      "en": "OpenGL compute-shader inference runtime supporting RWKV-4 and Llama 2.",
+      "zh": "基于 OpenGL 计算着色器、支持 RWKV-4 与 Llama 2 的推理运行时。"
+    },
+    "lastUpdated": "2024-01-07T17:01:51Z",
+    "stars": 0,
+    "watchers": 1,
+    "forks": 0,
+    "language": "C",
+    "license": "MIT",
+    "sourcePage": 8
+  },
+  {
+    "repositoryUrl": "https://github.com/harrisonvanderbyl/rwkv.hpp",
+    "owner": "harrisonvanderbyl",
+    "name": "rwkv.hpp",
+    "category": "inference",
+    "summary": {
+      "en": "rwkv.hpp provides RWKV inference, deployment, runtime, or serving support.",
+      "zh": "rwkv.hpp 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2024-01-01T06:26:30Z",
+    "stars": 9,
+    "watchers": 2,
+    "forks": 1,
+    "language": "C++",
+    "license": null,
+    "sourcePage": 8
+  },
+  {
+    "repositoryUrl": "https://github.com/kong13661/rwkv.c",
+    "owner": "kong13661",
+    "name": "rwkv.c",
+    "category": "inference",
+    "summary": {
+      "en": "Inference a RWKV model in pure C.",
+      "zh": "rwkv.c 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2023-12-31T19:42:39Z",
+    "stars": 10,
+    "watchers": 2,
+    "forks": 0,
+    "language": "C",
+    "license": "MIT",
+    "sourcePage": 8
+  },
+  {
+    "repositoryUrl": "https://github.com/seasonjs/rwkv",
+    "owner": "seasonjs",
+    "name": "rwkv",
+    "category": "inference",
+    "summary": {
+      "en": "pure go for rwkv",
+      "zh": "rwkv 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2023-12-31T05:15:03Z",
+    "stars": 18,
+    "watchers": 2,
+    "forks": 3,
+    "language": "Go",
+    "license": "MIT",
+    "sourcePage": 8
+  },
+  {
+    "repositoryUrl": "https://github.com/daquexian/faster-rwkv",
+    "owner": "daquexian",
+    "name": "faster-rwkv",
+    "category": "inference",
+    "summary": {
+      "en": "faster-rwkv provides RWKV inference, deployment, runtime, or serving support.",
+      "zh": "faster-rwkv 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2023-12-15T07:39:44Z",
+    "stars": 126,
+    "watchers": 4,
+    "forks": 12,
+    "language": "C++",
+    "license": null,
+    "sourcePage": 8
+  },
+  {
+    "repositoryUrl": "https://github.com/Hannibal046/nanoRWKV",
+    "owner": "Hannibal046",
+    "name": "nanoRWKV",
+    "category": "training",
+    "summary": {
+      "en": "The nanoGPT-style implementation of RWKV Language Model - an RNN with GPT-level LLM performance.",
+      "zh": "nanoRWKV 提供 RWKV 模型训练、微调或架构实验工具。"
+    },
+    "lastUpdated": "2023-11-09T07:32:20Z",
+    "stars": 200,
+    "watchers": 6,
+    "forks": 13,
+    "language": "Python",
+    "license": "MIT",
+    "sourcePage": 8
+  },
+  {
+    "repositoryUrl": "https://github.com/jackd/keras-rwkv",
+    "owner": "jackd",
+    "name": "keras-rwkv",
+    "category": "training",
+    "summary": {
+      "en": "RWKV language model for keras",
+      "zh": "keras-rwkv 提供 RWKV 模型训练、微调或架构实验工具。"
+    },
+    "lastUpdated": "2023-11-01T00:21:50Z",
+    "stars": 7,
+    "watchers": 1,
+    "forks": 0,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "sourcePage": 8
+  },
+  {
+    "repositoryUrl": "https://github.com/ssg-qwq/RWKV-Light-API",
+    "owner": "ssg-qwq",
+    "name": "RWKV-Light-API",
+    "category": "inference",
+    "summary": {
+      "en": "A Lightweight and Extensible RWKV API for Inference",
+      "zh": "RWKV-Light-API 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2023-09-30T18:43:36Z",
+    "stars": 4,
+    "watchers": 1,
+    "forks": 1,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "sourcePage": 8
+  },
+  {
+    "repositoryUrl": "https://github.com/nlpodyssey/rwkv.f90",
+    "owner": "nlpodyssey",
+    "name": "rwkv.f90",
+    "category": "inference",
+    "summary": {
+      "en": "Port of the RWKV-LM model in Fortran (Back to the Future!)",
+      "zh": "rwkv.f90 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2023-09-29T12:49:41Z",
+    "stars": 49,
+    "watchers": 3,
+    "forks": 2,
+    "language": "Fortran",
+    "license": "MIT",
+    "sourcePage": 8
+  },
+  {
+    "repositoryUrl": "https://github.com/tensorpro/tpu_rwkv",
+    "owner": "tensorpro",
+    "name": "tpu_rwkv",
+    "category": "training",
+    "summary": {
+      "en": "JAX implementations of RWKV",
+      "zh": "tpu_rwkv 提供 RWKV 模型训练、微调或架构实验工具。"
+    },
+    "lastUpdated": "2023-09-26T03:02:10Z",
+    "stars": 18,
+    "watchers": 2,
+    "forks": 1,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "sourcePage": 8
+  },
+  {
+    "repositoryUrl": "https://github.com/Dan-wanna-M/rwkv-tensorrt",
+    "owner": "Dan-wanna-M",
+    "name": "rwkv-tensorrt",
+    "category": "inference",
+    "summary": {
+      "en": "rwkv-tensorrt provides RWKV inference, deployment, runtime, or serving support.",
+      "zh": "rwkv-tensorrt 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2023-09-17T16:30:46Z",
+    "stars": 5,
+    "watchers": 1,
+    "forks": 1,
+    "language": "Python",
+    "license": "MIT",
+    "sourcePage": 8
+  },
+  {
+    "repositoryUrl": "https://github.com/123mbcz123/RWKV5-Tensorflow2.0",
+    "owner": "123mbcz123",
+    "name": "RWKV5-Tensorflow2.0",
+    "category": "training",
+    "summary": {
+      "en": "TensorFlow 2 implementation of RWKV-5 with multi-GPU training support.",
+      "zh": "支持多 GPU 训练的 RWKV-5 TensorFlow 2 实现。"
+    },
+    "lastUpdated": "2023-09-17T05:45:52Z",
+    "stars": 7,
+    "watchers": 1,
+    "forks": 0,
+    "language": "Python",
+    "license": null,
+    "sourcePage": 8
+  },
+  {
+    "repositoryUrl": "https://github.com/123mbcz123/RWKV-Tensorflow2.0",
+    "owner": "123mbcz123",
+    "name": "RWKV-Tensorflow2.0",
+    "category": "training",
+    "summary": {
+      "en": " A RWKV written in TensorFlow 2.0,only tested under FP32 precision in the World model.",
+      "zh": "RWKV-Tensorflow2.0 提供 RWKV 模型训练、微调或架构实验工具。"
+    },
+    "lastUpdated": "2023-09-16T08:10:34Z",
+    "stars": 4,
+    "watchers": 1,
+    "forks": 0,
+    "language": "Python",
+    "license": null,
+    "sourcePage": 8
+  },
+  {
+    "repositoryUrl": "https://github.com/KerfuffleV2/smolrsrwkv",
+    "owner": "KerfuffleV2",
+    "name": "smolrsrwkv",
+    "category": "inference",
+    "summary": {
+      "en": "Compact Rust RWKV inference implementation supporting 32-bit, 8-bit, and 4-bit evaluation.",
+      "zh": "支持 32 位、8 位和 4 位计算的紧凑 Rust RWKV 推理实现。"
+    },
+    "lastUpdated": "2023-09-02T19:19:37Z",
+    "stars": 94,
+    "watchers": 7,
+    "forks": 4,
+    "language": "Rust",
+    "license": "MIT",
+    "sourcePage": 2
+  },
+  {
+    "repositoryUrl": "https://github.com/harrisonvanderbyl/rwkvstic",
+    "owner": "harrisonvanderbyl",
+    "name": "rwkvstic",
+    "category": "inference",
+    "summary": {
+      "en": "Framework agnostic python runtime for RWKV models",
+      "zh": "rwkvstic 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2023-08-24T07:27:46Z",
+    "stars": 147,
+    "watchers": 4,
+    "forks": 16,
+    "language": "Python",
+    "license": "MIT",
+    "sourcePage": 9
+  },
+  {
+    "repositoryUrl": "https://github.com/h-a-s-k/RWKV-Notebooks",
+    "owner": "h-a-s-k",
+    "name": "RWKV-Notebooks",
+    "category": "training",
+    "summary": {
+      "en": "Jupyter notebooks for learning, experimenting with, and training RWKV models.",
+      "zh": "用于学习、实验和训练 RWKV 模型的 Jupyter Notebooks。"
+    },
+    "lastUpdated": "2023-08-09T19:24:57Z",
+    "stars": 1,
+    "watchers": 1,
+    "forks": 0,
+    "language": "Jupyter Notebook",
+    "license": null,
+    "sourcePage": 5
+  },
+  {
+    "repositoryUrl": "https://github.com/RWKV/RWKV-cpp-node",
+    "owner": "RWKV",
+    "name": "RWKV-cpp-node",
+    "category": "inference",
+    "summary": {
+      "en": "Node.js implementation binding for the RWKV.cpp module",
+      "zh": "RWKV-cpp-node 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2023-08-02T03:37:29Z",
+    "stars": 22,
+    "watchers": 2,
+    "forks": 5,
+    "language": "JavaScript",
+    "license": "MIT",
+    "sourcePage": 9
+  },
+  {
+    "repositoryUrl": "https://github.com/seung7361/RWKV-Pytorch",
+    "owner": "seung7361",
+    "name": "RWKV-Pytorch",
+    "category": "training",
+    "summary": {
+      "en": "RWKV-Pytorch provides RWKV training, fine-tuning, or architecture experimentation tools.",
+      "zh": "RWKV-Pytorch 提供 RWKV 模型训练、微调或架构实验工具。"
+    },
+    "lastUpdated": "2023-08-01T15:37:12Z",
+    "stars": 17,
+    "watchers": 2,
+    "forks": 0,
+    "language": "Python",
+    "license": null,
+    "sourcePage": 9
+  },
+  {
+    "repositoryUrl": "https://github.com/ZTMIDGO/Android-RWKV-MIDI",
+    "owner": "ZTMIDGO",
+    "name": "Android-RWKV-MIDI",
+    "category": "package",
+    "summary": {
+      "en": "Android application for generating MIDI music with RWKV-Music.",
+      "zh": "使用 RWKV-Music 生成 MIDI 音乐的 Android 应用。"
+    },
+    "lastUpdated": "2023-08-01T04:17:55Z",
+    "stars": 13,
+    "watchers": 2,
+    "forks": 1,
+    "language": "Java",
+    "license": null,
+    "sourcePage": 9
+  },
+  {
+    "repositoryUrl": "https://github.com/ZTMIDGO/RWKV-Android",
+    "owner": "ZTMIDGO",
+    "name": "RWKV-Android",
+    "category": "package",
+    "summary": {
+      "en": "Android CPU runtime for RWKV-4 ONNX models.",
+      "zh": "在 Android CPU 上运行 RWKV-4 ONNX 模型的应用。"
+    },
+    "lastUpdated": "2023-08-01T04:00:57Z",
+    "stars": 69,
+    "watchers": 2,
+    "forks": 12,
+    "language": "Java",
+    "license": null,
+    "sourcePage": 9
+  },
+  {
+    "repositoryUrl": "https://github.com/toughdata/fine-tune-rwkv",
+    "owner": "toughdata",
+    "name": "fine-tune-rwkv",
+    "category": "training",
+    "summary": {
+      "en": "Fine-tune RWKV with HuggingFace Transformers library",
+      "zh": "fine-tune-rwkv 提供 RWKV 模型训练、微调或架构实验工具。"
+    },
+    "lastUpdated": "2023-07-24T08:09:00Z",
+    "stars": 1,
+    "watchers": 1,
+    "forks": 1,
+    "language": "Python",
+    "license": null,
+    "sourcePage": 9
+  },
+  {
+    "repositoryUrl": "https://github.com/Ritanlisa/RWKV-MIDI-WebUI",
+    "owner": "Ritanlisa",
+    "name": "RWKV-MIDI-WebUI",
+    "category": "package",
+    "summary": {
+      "en": "A webUI based on Gradio for RWKV midi version",
+      "zh": "RWKV-MIDI-WebUI 是面向 RWKV 用户的易用应用或开箱即用工具。"
+    },
+    "lastUpdated": "2023-07-23T01:30:41Z",
+    "stars": 6,
+    "watchers": 1,
+    "forks": 2,
+    "language": "Python",
+    "license": "MIT",
+    "sourcePage": 9
+  },
+  {
+    "repositoryUrl": "https://github.com/StarRing2022/HF-For-RWKVWorld-LoraAlpaca",
+    "owner": "StarRing2022",
+    "name": "HF-For-RWKVWorld-LoraAlpaca",
+    "category": "training",
+    "summary": {
+      "en": "Hugging Face conversion plus LoRA and Alpaca fine-tuning for RWKV World models.",
+      "zh": "面向 RWKV World 模型的 Hugging Face 转换、LoRA 与 Alpaca 微调流程。"
+    },
+    "lastUpdated": "2023-07-17T07:15:25Z",
+    "stars": 4,
+    "watchers": 2,
+    "forks": 2,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "sourcePage": 9
+  },
+  {
+    "repositoryUrl": "https://github.com/StarRing2022/RingRWKV",
+    "owner": "StarRing2022",
+    "name": "RingRWKV",
+    "category": "training",
+    "summary": {
+      "en": "Transformers-compatible deployment and fine-tuning library for RWKV model families.",
+      "zh": "为 RWKV 各系列模型提供 Transformers 风格部署与微调支持的库。"
+    },
+    "lastUpdated": "2023-07-17T06:39:49Z",
+    "stars": 9,
+    "watchers": 2,
+    "forks": 3,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "sourcePage": 9
+  },
+  {
+    "repositoryUrl": "https://github.com/TkskKurumi/rwkv_webapi",
+    "owner": "TkskKurumi",
+    "name": "rwkv_webapi",
+    "category": "inference",
+    "summary": {
+      "en": "rwkv_webapi provides RWKV inference, deployment, runtime, or serving support.",
+      "zh": "rwkv_webapi 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2023-06-15T23:49:34Z",
+    "stars": 2,
+    "watchers": 1,
+    "forks": 1,
+    "language": "Python",
+    "license": null,
+    "sourcePage": 9
+  },
+  {
+    "repositoryUrl": "https://github.com/Triang-jyed-driung/RWKV-World-Finetune",
+    "owner": "Triang-jyed-driung",
+    "name": "RWKV-World-Finetune",
+    "category": "training",
+    "summary": {
+      "en": "Fine-tuning RWKV-World model",
+      "zh": "RWKV-World-Finetune 提供 RWKV 模型训练、微调或架构实验工具。"
+    },
+    "lastUpdated": "2023-06-06T11:56:38Z",
+    "stars": 26,
+    "watchers": 1,
+    "forks": 4,
+    "language": "Jupyter Notebook",
+    "license": "Apache-2.0",
+    "sourcePage": 9
+  },
+  {
+    "repositoryUrl": "https://github.com/ArEnSc/Production-RWKV",
+    "owner": "ArEnSc",
+    "name": "Production-RWKV",
+    "category": "inference",
+    "summary": {
+      "en": "This project aims to make RWKV Accessible to everyone using a Hugging Face like interface, while keeping it close to the R and D RWKV branch of code.",
+      "zh": "Production-RWKV 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2023-05-14T05:34:53Z",
+    "stars": 64,
+    "watchers": 1,
+    "forks": 6,
+    "language": "Python",
+    "license": "MIT",
+    "sourcePage": 9
+  },
+  {
+    "repositoryUrl": "https://github.com/ZeldaHuang/rwkv-cpp-server",
+    "owner": "ZeldaHuang",
+    "name": "rwkv-cpp-server",
+    "category": "inference",
+    "summary": {
+      "en": "Easily deploy your rwkv model",
+      "zh": "rwkv-cpp-server 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2023-05-05T10:56:57Z",
+    "stars": 19,
+    "watchers": 3,
+    "forks": 0,
+    "language": "C++",
+    "license": null,
+    "sourcePage": 9
+  },
+  {
+    "repositoryUrl": "https://github.com/nenkoru/serverless-rwkv",
+    "owner": "nenkoru",
+    "name": "serverless-rwkv",
+    "category": "inference",
+    "summary": {
+      "en": "A repository to deploy RWKV model to serverless APIs such as Runpod.io",
+      "zh": "serverless-rwkv 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2023-05-02T17:41:43Z",
+    "stars": 6,
+    "watchers": 2,
+    "forks": 0,
+    "language": "Python",
+    "license": "MIT",
+    "sourcePage": 9
+  },
+  {
+    "repositoryUrl": "https://github.com/RWKV/rwkv-tensorflow",
+    "owner": "RWKV",
+    "name": "rwkv-tensorflow",
+    "category": "training",
+    "summary": {
+      "en": "RWKV ported to tensorflow",
+      "zh": "rwkv-tensorflow 提供 RWKV 模型训练、微调或架构实验工具。"
+    },
+    "lastUpdated": "2023-05-02T01:37:32Z",
+    "stars": 11,
+    "watchers": 2,
+    "forks": 1,
+    "language": "Python",
+    "license": null,
+    "sourcePage": 9
+  },
+  {
+    "repositoryUrl": "https://github.com/HighCWu/rwkv-paddle",
+    "owner": "HighCWu",
+    "name": "rwkv-paddle",
+    "category": "training",
+    "summary": {
+      "en": "rwkv-paddle provides RWKV training, fine-tuning, or architecture experimentation tools.",
+      "zh": "rwkv-paddle 提供 RWKV 模型训练、微调或架构实验工具。"
+    },
+    "lastUpdated": "2023-04-16T13:14:42Z",
+    "stars": 11,
+    "watchers": 2,
+    "forks": 2,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "sourcePage": 9
+  },
+  {
+    "repositoryUrl": "https://github.com/Durham/RWKV-finetune-script",
+    "owner": "Durham",
+    "name": "RWKV-finetune-script",
+    "category": "training",
+    "summary": {
+      "en": "Script and instruction  how to fine-tune large RWKV model on your data for Alpaca dataset",
+      "zh": "RWKV-finetune-script 提供 RWKV 模型训练、微调或架构实验工具。"
+    },
+    "lastUpdated": "2023-04-02T12:29:03Z",
+    "stars": 31,
+    "watchers": 3,
+    "forks": 5,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "sourcePage": 10
+  },
+  {
+    "repositoryUrl": "https://github.com/mrsteyk/rwkvk-rs",
+    "owner": "mrsteyk",
+    "name": "rwkvk-rs",
+    "category": "inference",
+    "summary": {
+      "en": "rwkvk-rs provides RWKV inference, deployment, runtime, or serving support.",
+      "zh": "rwkvk-rs 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2023-03-30T15:23:36Z",
+    "stars": 32,
+    "watchers": 1,
+    "forks": 4,
+    "language": "Rust",
+    "license": "AGPL-3.0",
+    "sourcePage": 10
+  },
+  {
+    "repositoryUrl": "https://github.com/mrsteyk/RWKV-LM-deepspeed",
+    "owner": "mrsteyk",
+    "name": "RWKV-LM-deepspeed",
+    "category": "training",
+    "summary": {
+      "en": "RWKV-LM-deepspeed provides RWKV training, fine-tuning, or architecture experimentation tools.",
+      "zh": "RWKV-LM-deepspeed 提供 RWKV 模型训练、微调或架构实验工具。"
+    },
+    "lastUpdated": "2023-03-29T20:23:35Z",
+    "stars": 43,
+    "watchers": 2,
+    "forks": 3,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "sourcePage": 10
+  },
+  {
+    "repositoryUrl": "https://github.com/harrisonvanderbyl/rwkv-cpp",
+    "owner": "harrisonvanderbyl",
+    "name": "rwkv-cpp",
+    "category": "inference",
+    "summary": {
+      "en": "rwkv-cpp provides RWKV inference, deployment, runtime, or serving support.",
+      "zh": "rwkv-cpp 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2023-03-28T04:25:33Z",
+    "stars": 6,
+    "watchers": 1,
+    "forks": 0,
+    "language": "C++",
+    "license": null,
+    "sourcePage": 10
+  },
+  {
+    "repositoryUrl": "https://github.com/AXKuhta/rwkv-onnx-dml",
+    "owner": "AXKuhta",
+    "name": "rwkv-onnx-dml",
+    "category": "inference",
+    "summary": {
+      "en": "Run ONNX RWKV-v4 models with GPU acceleration using DirectML [Windows], or just on CPU [Windows AND Linux]; Limited to 430M model at this time because of .onnx 2GB file size limitation ",
+      "zh": "rwkv-onnx-dml 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2023-03-16T13:53:00Z",
+    "stars": 22,
+    "watchers": 3,
+    "forks": 3,
+    "language": "C++",
+    "license": null,
+    "sourcePage": 10
+  },
+  {
+    "repositoryUrl": "https://github.com/josephrocca/rwkv-v4-web",
+    "owner": "josephrocca",
+    "name": "rwkv-v4-web",
+    "category": "inference",
+    "summary": {
+      "en": "BlinkDL's RWKV-v4 running in the browser",
+      "zh": "rwkv-v4-web 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2023-03-02T10:53:29Z",
+    "stars": 48,
+    "watchers": 5,
+    "forks": 13,
+    "language": "Jupyter Notebook",
+    "license": "MIT",
+    "sourcePage": 10
+  },
+  {
+    "repositoryUrl": "https://github.com/mrsteyk/RWKV-LM-jax",
+    "owner": "mrsteyk",
+    "name": "RWKV-LM-jax",
+    "category": "training",
+    "summary": {
+      "en": "RWKV-LM-jax provides RWKV training, fine-tuning, or architecture experimentation tools.",
+      "zh": "RWKV-LM-jax 提供 RWKV 模型训练、微调或架构实验工具。"
+    },
+    "lastUpdated": "2023-02-23T15:20:59Z",
+    "stars": 9,
+    "watchers": 2,
+    "forks": 1,
+    "language": "Jupyter Notebook",
+    "license": null,
+    "sourcePage": 10
+  },
+  {
+    "repositoryUrl": "https://github.com/gururise/rwkv_gradio",
+    "owner": "gururise",
+    "name": "rwkv_gradio",
+    "category": "package",
+    "summary": {
+      "en": "Gradio UI for RWKV LLM",
+      "zh": "rwkv_gradio 是面向 RWKV 用户的易用应用或开箱即用工具。"
+    },
+    "lastUpdated": "2023-02-21T06:18:15Z",
+    "stars": 27,
+    "watchers": 3,
+    "forks": 6,
+    "language": "Python",
+    "license": "GPL-3.0",
+    "sourcePage": 10
+  },
+  {
+    "repositoryUrl": "https://github.com/nlpodyssey/rwkv",
+    "owner": "nlpodyssey",
+    "name": "rwkv",
+    "category": "inference",
+    "summary": {
+      "en": "RWKV (Receptance Weighted Key Value) is a RNN with Transformer-level performance",
+      "zh": "rwkv 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2023-02-12T20:39:27Z",
+    "stars": 40,
+    "watchers": 1,
+    "forks": 4,
+    "language": "Go",
+    "license": "BSD-2-Clause",
+    "sourcePage": 10
+  }
+]

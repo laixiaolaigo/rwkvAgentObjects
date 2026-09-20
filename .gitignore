@@ -146,3 +146,4 @@ vite.config.ts.timestamp-*
 /.codex/
 /.impeccable/
 /不确定agent.json
+/rwkv_search_candidates.json
