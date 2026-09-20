@@ -2,7 +2,7 @@
   {
     "projectName": "RWKV-Agent",
     "repositoryUrl": "https://github.com/No-22-Github/RWKV-Agent",
-    "lastUpdated": "2026-09-17T08:47:00Z",
+    "lastUpdated": "2026-09-19T09:50:58Z",
     "stars": 2,
     "forks": 0,
     "watchers": 0
@@ -51,7 +51,7 @@
     "projectName": "rwkv7-state-embedding",
     "repositoryUrl": "https://github.com/cgisky1980/rwkv7-state-embedding",
     "lastUpdated": "2026-09-09T03:17:21Z",
-    "stars": 4,
+    "stars": 5,
     "forks": 2,
     "watchers": 0
   },
