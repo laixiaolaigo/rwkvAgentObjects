@@ -15,6 +15,7 @@ export type EcosystemProject = {
   owner: string;
   name: string;
   category: RepositoryCategory;
+  projectType: string;
   summary: string;
   lastUpdated: string;
   stars: number;
@@ -71,6 +72,10 @@ export async function readEcosystemProjects(
       owner: requiredString(item.owner, "owner"),
       name: requiredString(item.name, "name"),
       category: asCategory(item.category),
+      projectType: requiredString(
+        localizedString(item.projectType, locale, "projectType"),
+        "projectType"
+      ),
       summary: requiredString(
         localizedString(item.summary, locale, "summary"),
         "summary"

@@ -60,7 +60,7 @@ type AgentCatalogProps = {
 };
 
 function formatDate(value: string | undefined, locale: Locale) {
-  if (!value) return "—";
+  if (!value) return "";
   const date = new Date(value);
   return Number.isNaN(date.getTime())
     ? value
@@ -165,13 +165,13 @@ function ProjectDetails({
         <div className="space-y-7 px-5 py-6 sm:px-7">
           <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
             {[
-              [dictionary.projects.primaryLanguage, project.primaryLanguage ?? "—"],
-              [dictionary.projects.license, project.license ?? "—"],
+              project.primaryLanguage ? [dictionary.projects.primaryLanguage, project.primaryLanguage] : null,
+              project.license ? [dictionary.projects.license, project.license] : null,
               [dictionary.projects.stars, project.stars.toLocaleString(intlLocale(locale))],
-              [dictionary.projects.createdAt, formatDate(project.createdAt, locale)],
-              [dictionary.projects.updatedAt, formatDate(project.updatedAt, locale)],
-              [dictionary.projects.accountType, project.accountType ?? "—"],
-            ].map(([label, value]) => (
+              project.createdAt ? [dictionary.projects.createdAt, formatDate(project.createdAt, locale)] : null,
+              project.updatedAt ? [dictionary.projects.updatedAt, formatDate(project.updatedAt, locale)] : null,
+              project.accountType ? [dictionary.projects.accountType, project.accountType] : null,
+            ].filter((item): item is [string, string] => item !== null).map(([label, value]) => (
               <div key={label} className="rounded-xl border bg-muted/20 p-3">
                 <p className="text-xs text-muted-foreground">{label}</p>
                 <p className="mt-1.5 text-sm font-medium">{value}</p>
@@ -561,20 +561,30 @@ export function AgentCatalog({
                   </CardHeader>
                   <CardContent className="pointer-events-none relative z-1 space-y-4 px-5 pb-5 sm:px-6">
                     <div className="flex flex-wrap gap-2">
-                      <Badge variant="secondary" className="gap-1.5 border border-border/60 bg-muted/70 font-normal"><Code2 />{project.primaryLanguage ?? "—"}</Badge>
+                      {project.primaryLanguage ? (
+                        <Badge variant="secondary" className="gap-1.5 border border-border/60 bg-muted/70 font-normal"><Code2 />{project.primaryLanguage}</Badge>
+                      ) : null}
                       <Badge variant="secondary" className="gap-1.5 border border-border/60 bg-muted/70 font-normal"><Star />{project.stars}</Badge>
-                      <Badge variant="secondary" className="border border-border/60 bg-muted/70 font-normal">{project.license ?? "—"}</Badge>
+                      {project.license ? (
+                        <Badge variant="secondary" className="border border-border/60 bg-muted/70 font-normal">{project.license}</Badge>
+                      ) : null}
                     </div>
-                    <p className="text-sm font-medium leading-6 text-foreground/90">{project.projectType ?? "—"}</p>
-                    <p className="line-clamp-3 min-h-[4.5rem] text-sm leading-6 text-muted-foreground">
-                      {project.introduction ?? "—"}
-                    </p>
-                    <div className="flex items-center gap-2 text-xs text-muted-foreground">
-                      <CalendarDays className="size-3.5" />
-                      <span>
-                        {dictionary.projects.updatedPrefix} {formatDate(project.updatedAt, locale)}
-                      </span>
-                    </div>
+                    {project.projectType ? (
+                      <p className="text-sm font-medium leading-6 text-foreground/90">{project.projectType}</p>
+                    ) : null}
+                    {project.introduction ? (
+                      <p className="line-clamp-3 min-h-[4.5rem] text-sm leading-6 text-muted-foreground">
+                        {project.introduction}
+                      </p>
+                    ) : null}
+                    {project.updatedAt ? (
+                      <div className="flex items-center gap-2 text-xs text-muted-foreground">
+                        <CalendarDays className="size-3.5" />
+                        <span>
+                          {dictionary.projects.updatedPrefix} {formatDate(project.updatedAt, locale)}
+                        </span>
+                      </div>
+                    ) : null}
                   </CardContent>
                   <CardFooter className="pointer-events-none relative z-1 flex min-h-14 justify-between border-t border-border/70 bg-gradient-to-r from-muted/20 to-primary/5 px-5 py-3 sm:px-6">
                     <span className="flex items-center gap-2 text-xs font-medium text-muted-foreground transition-colors group-hover/card:text-foreground">

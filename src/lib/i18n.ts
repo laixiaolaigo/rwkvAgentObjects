@@ -99,6 +99,12 @@ export type UiDictionary = {
     previousPage: string;
     nextPage: string;
     pageStatus: string;
+    repositoryHint: string;
+    viewDetails: string;
+    primaryLanguage: string;
+    license: string;
+    stars: string;
+    descriptionLabel: string;
     noResults: string;
     adjustFilters: string;
     loadError: string;

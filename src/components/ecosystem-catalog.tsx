@@ -11,6 +11,7 @@ import {
   ChevronLeft,
   ChevronRight,
   CircleAlert,
+  Code2,
   ExternalLink,
   Eye,
   GitFork,
@@ -21,6 +22,7 @@ import {
 } from "lucide-react";
 
 import { Badge } from "@/components/ui/badge";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -32,6 +34,8 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Separator } from "@/components/ui/separator";
+import { ScrollArea } from "@/components/ui/scroll-area";
+import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle } from "@/components/ui/sheet";
 import type {
   EcosystemProject,
   RepositoryCategory,
@@ -74,6 +78,85 @@ function formatDate(value: string, locale: Locale) {
       }).format(date);
 }
 
+function EcosystemProjectDetails({
+  project,
+  locale,
+  labels,
+}: {
+  project: EcosystemProject;
+  locale: Locale;
+  labels: UiDictionary["ecosystem"];
+}) {
+  const CategoryIcon = categoryIcons[project.category];
+  const categoryLabels: Record<RepositoryCategory, string> = {
+    package: labels.packages,
+    inference: labels.inference,
+    training: labels.training,
+  };
+
+  return (
+    <>
+      <SheetHeader className="border-b px-5 py-5 pr-14 sm:px-7">
+        <div className="flex items-start gap-4">
+          <Avatar className="size-12 bg-muted" size="lg">
+            <AvatarImage src={`https://github.com/${project.owner}.png?size=96`} alt="" />
+            <AvatarFallback>
+              <CategoryIcon className="size-5 text-primary" />
+            </AvatarFallback>
+          </Avatar>
+          <div className="min-w-0 flex-1">
+            <SheetTitle className="truncate text-xl">{project.name}</SheetTitle>
+            <SheetDescription className="mt-1 flex flex-wrap items-center gap-x-2 gap-y-1">
+              <span>{project.owner}</span>
+              <Badge variant="outline">{categoryLabels[project.category]}</Badge>
+            </SheetDescription>
+          </div>
+        </div>
+      </SheetHeader>
+
+      <ScrollArea className="min-h-0 flex-1">
+        <div className="space-y-7 px-5 py-6 sm:px-7">
+          <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
+            {[
+              project.language ? [labels.primaryLanguage, project.language] : null,
+              project.license ? [labels.license, project.license] : null,
+              [labels.stars, project.stars.toLocaleString(intlLocale(locale))],
+              [labels.forks, project.forks.toLocaleString(intlLocale(locale))],
+              [labels.watchers, project.watchers.toLocaleString(intlLocale(locale))],
+              [labels.updatedPrefix, formatDate(project.lastUpdated, locale)],
+            ].filter((item): item is [string, string] => item !== null).map(([label, value]) => (
+              <div key={label} className="rounded-xl border bg-muted/20 p-3">
+                <p className="text-xs text-muted-foreground">{label}</p>
+                <p className="mt-1.5 text-sm font-medium">{value}</p>
+              </div>
+            ))}
+          </div>
+
+          <section className="space-y-3">
+            <div className="flex items-center gap-2 text-sm font-medium text-foreground">
+              <Bot className="size-4 text-primary" />
+              <h3>{labels.descriptionLabel}</h3>
+            </div>
+            <p className="text-sm leading-7 text-muted-foreground">{project.summary}</p>
+          </section>
+        </div>
+      </ScrollArea>
+
+      <div className="border-t p-4 sm:px-7">
+        <Button
+          className="w-full gap-2"
+          nativeButton={false}
+          render={<a href={project.repositoryUrl} target="_blank" rel="noopener noreferrer" />}
+        >
+          <GitFork />
+          {labels.openGitHub}
+          <ArrowUpRight />
+        </Button>
+      </div>
+    </>
+  );
+}
+
 export function EcosystemCatalog({
   locale,
   dictionary,
@@ -85,6 +168,7 @@ export function EcosystemCatalog({
   const [category, setCategory] = useState<CategoryFilter>("all");
   const [sortMode, setSortMode] = useState<SortMode>("updated");
   const [currentPage, setCurrentPage] = useState(1);
+  const [selectedProject, setSelectedProject] = useState<EcosystemProject | null>(null);
   const targetLocale = locale === "en" ? "zh" : "en";
   const labels = dictionary.ecosystem;
 
@@ -317,47 +401,102 @@ export function EcosystemCatalog({
                 {visibleProjects.map((project) => {
                   const CategoryIcon = categoryIcons[project.category];
                   return (
-                    <Card key={project.repositoryUrl} className="gap-0 overflow-hidden py-0 shadow-none">
-                    <CardHeader className="flex flex-row items-start gap-4 px-5 pb-4 pt-5 sm:px-6 sm:pt-6">
-                      <div className="flex size-11 shrink-0 items-center justify-center rounded-xl border bg-primary/8 text-primary">
-                        <CategoryIcon className="size-5" />
-                      </div>
-                      <div className="min-w-0 flex-1">
-                        <div className="flex flex-wrap items-center gap-2">
-                          <h2 className="truncate text-lg font-semibold tracking-tight">{project.name}</h2>
-                          <Badge variant="outline" className="border-primary/20 bg-primary/5 text-primary">
-                            {categoryLabels[project.category]}
+                    <Card
+                      key={project.repositoryUrl}
+                      className="project-card relative isolate gap-0 overflow-hidden py-0 shadow-none has-[.project-card-trigger:focus-visible]:border-primary/70 has-[.project-card-trigger:focus-visible]:ring-3 has-[.project-card-trigger:focus-visible]:ring-ring/25"
+                    >
+                      <button
+                        type="button"
+                        className="project-card-trigger absolute inset-0 z-0 cursor-pointer rounded-xl outline-none"
+                        aria-label={`${labels.viewDetails}: ${project.name}`}
+                        onClick={() => setSelectedProject(project)}
+                      />
+                      <CardHeader className="pointer-events-none relative z-1 flex flex-row items-start gap-4 px-5 pb-4 pt-5 sm:px-6 sm:pt-6">
+                        <Avatar className="size-12 bg-muted ring-4 ring-background/70" size="lg">
+                          <AvatarImage
+                            src={`https://github.com/${project.owner}.png?size=96`}
+                            alt=""
+                            loading="lazy"
+                          />
+                          <AvatarFallback>
+                            <CategoryIcon className="size-5 text-primary" />
+                          </AvatarFallback>
+                        </Avatar>
+                        <div className="min-w-0 flex-1">
+                          <div className="flex min-w-0 items-center gap-2">
+                            <h2 className="truncate text-lg font-semibold tracking-tight transition-colors group-hover/card:text-primary">
+                              {project.name}
+                            </h2>
+                            <ArrowUpRight className="size-4 shrink-0 text-muted-foreground/50 transition-all group-hover/card:-translate-y-0.5 group-hover/card:translate-x-0.5 group-hover/card:text-primary" />
+                          </div>
+                          <div className="mt-1.5 flex min-w-0 items-center gap-2">
+                            <p className="truncate text-sm text-muted-foreground">{project.owner}</p>
+                            <Badge
+                              variant="outline"
+                              className="max-w-40 truncate border-primary/20 bg-primary/5 text-[0.68rem] text-primary/90"
+                            >
+                              {categoryLabels[project.category]}
+                            </Badge>
+                          </div>
+                        </div>
+                      </CardHeader>
+                      <CardContent className="pointer-events-none relative z-1 space-y-4 px-5 pb-5 sm:px-6">
+                        <div className="flex flex-wrap gap-2">
+                          {project.language ? (
+                            <Badge variant="secondary" className="gap-1.5 border border-border/60 bg-muted/70 font-normal">
+                              <Code2 />
+                              {project.language}
+                            </Badge>
+                          ) : null}
+                          <Badge variant="secondary" className="gap-1.5 border border-border/60 bg-muted/70 font-normal">
+                            <Star />
+                            {project.stars}
+                          </Badge>
+                          {project.license ? (
+                            <Badge variant="secondary" className="border border-border/60 bg-muted/70 font-normal">
+                              {project.license}
+                            </Badge>
+                          ) : null}
+                          <Badge variant="secondary" className="gap-1.5 border border-border/60 bg-muted/70 font-normal">
+                            <GitFork />
+                            {project.forks}
+                          </Badge>
+                          <Badge variant="secondary" className="gap-1.5 border border-border/60 bg-muted/70 font-normal">
+                            <Eye />
+                            {project.watchers}
                           </Badge>
                         </div>
-                        <p className="mt-1 text-sm text-muted-foreground">{project.owner}</p>
-                      </div>
-                    </CardHeader>
-                    <CardContent className="space-y-4 px-5 pb-5 sm:px-6">
-                      <p className="min-h-12 text-sm leading-6 text-muted-foreground">{project.summary}</p>
-                      <div className="flex flex-wrap gap-2">
-                        <Badge variant="secondary">{project.language ?? "—"}</Badge>
-                        <Badge variant="secondary">{project.license ?? "—"}</Badge>
-                        <Badge variant="secondary" className="gap-1.5"><Star />{project.stars}</Badge>
-                        <Badge variant="secondary" className="gap-1.5"><GitFork />{project.forks}</Badge>
-                        <Badge variant="secondary" className="gap-1.5"><Eye />{project.watchers}</Badge>
-                      </div>
-                    </CardContent>
-                    <CardFooter className="flex min-h-14 justify-between gap-4 border-t bg-muted/20 px-5 py-3 sm:px-6">
-                      <span className="flex items-center gap-2 text-xs text-muted-foreground">
-                        <CalendarDays className="size-3.5" />
-                        {labels.updatedPrefix} {formatDate(project.lastUpdated, locale)}
-                      </span>
-                      <Button
-                        variant="outline"
-                        size="sm"
-                        nativeButton={false}
-                        className="gap-2"
-                        render={<a href={project.repositoryUrl} target="_blank" rel="noopener noreferrer" />}
-                      >
-                        {labels.openGitHub}
-                        <ArrowUpRight />
-                      </Button>
-                    </CardFooter>
+                        <p className="text-sm font-medium leading-6 text-foreground/90">
+                          {project.projectType}
+                        </p>
+                        <p className="line-clamp-3 min-h-[4.5rem] text-sm leading-6 text-muted-foreground">
+                          {project.summary}
+                        </p>
+                        <div className="flex items-center gap-2 text-xs text-muted-foreground">
+                          <CalendarDays className="size-3.5" />
+                          <span>
+                            {labels.updatedPrefix} {formatDate(project.lastUpdated, locale)}
+                          </span>
+                        </div>
+                      </CardContent>
+                      <CardFooter className="pointer-events-none relative z-1 flex min-h-14 justify-between border-t border-border/70 bg-gradient-to-r from-muted/20 to-primary/5 px-5 py-3 sm:px-6">
+                        <span className="flex items-center gap-2 text-xs font-medium text-muted-foreground transition-colors group-hover/card:text-foreground">
+                          <span className="size-1.5 rounded-full bg-primary/70 shadow-[0_0_10px_var(--primary)]" />
+                          {labels.viewDetails}
+                        </span>
+                        <Button
+                          variant="outline"
+                          size="sm"
+                          nativeButton={false}
+                          className="pointer-events-auto relative z-10 gap-2 border-border/80 bg-background/70 text-foreground shadow-sm backdrop-blur-sm hover:border-primary/50 hover:bg-primary/10 hover:text-primary"
+                          aria-label={`${labels.openGitHub}: ${project.owner}/${project.name}`}
+                          render={<a href={project.repositoryUrl} target="_blank" rel="noopener noreferrer" />}
+                        >
+                          <GitFork />
+                          GitHub
+                          <ExternalLink className="size-3! opacity-60" />
+                        </Button>
+                      </CardFooter>
                     </Card>
                   );
                 })}
@@ -409,6 +548,21 @@ export function EcosystemCatalog({
           )}
         </section>
       </div>
+
+      <Sheet open={Boolean(selectedProject)} onOpenChange={(open) => { if (!open) setSelectedProject(null); }}>
+        <SheetContent
+          closeLabel={dictionary.common.close}
+          className="w-full! gap-0 border-border/80 bg-popover p-0 sm:max-w-xl!"
+        >
+          {selectedProject ? (
+            <EcosystemProjectDetails
+              project={selectedProject}
+              locale={locale}
+              labels={labels}
+            />
+          ) : null}
+        </SheetContent>
+      </Sheet>
     </main>
   );
 }

@@ -14,7 +14,11 @@
     "forks": 0,
     "language": "Python",
     "license": null,
-    "sourcePage": 1
+    "sourcePage": 1,
+    "projectType": {
+      "en": "Training and fine-tuning",
+      "zh": "训练与微调"
+    }
   },
   {
     "repositoryUrl": "https://github.com/RWKV-Vibe/rwkv-vibe-code",
@@ -31,7 +35,11 @@
     "forks": 0,
     "language": "TypeScript",
     "license": null,
-    "sourcePage": 1
+    "sourcePage": 1,
+    "projectType": {
+      "en": "End-user application",
+      "zh": "终端应用"
+    }
   },
   {
     "repositoryUrl": "https://github.com/Alic-Li/rwkv_lightning_cuda",
@@ -48,7 +56,11 @@
     "forks": 3,
     "language": "C++",
     "license": null,
-    "sourcePage": 1
+    "sourcePage": 1,
+    "projectType": {
+      "en": "Inference service",
+      "zh": "推理服务"
+    }
   },
   {
     "repositoryUrl": "https://github.com/youzow3/onnx_rwkv",
@@ -65,7 +77,11 @@
     "forks": 0,
     "language": "Python",
     "license": "MIT",
-    "sourcePage": 1
+    "sourcePage": 1,
+    "projectType": {
+      "en": "Inference service",
+      "zh": "推理服务"
+    }
   },
   {
     "repositoryUrl": "https://github.com/RWKV-APP/RWKV_APP",
@@ -82,7 +98,11 @@
     "forks": 15,
     "language": "Dart",
     "license": "Apache-2.0",
-    "sourcePage": 1
+    "sourcePage": 1,
+    "projectType": {
+      "en": "End-user application",
+      "zh": "终端应用"
+    }
   },
   {
     "repositoryUrl": "https://github.com/btlqql/vllm-rwkv7",
@@ -99,7 +119,11 @@
     "forks": 0,
     "language": "Python",
     "license": "Apache-2.0",
-    "sourcePage": 2
+    "sourcePage": 2,
+    "projectType": {
+      "en": "Inference backend",
+      "zh": "推理后端"
+    }
   },
   {
     "repositoryUrl": "https://github.com/RafaelUI/rwkv-quant",
@@ -116,7 +140,11 @@
     "forks": 0,
     "language": "Python",
     "license": "Apache-2.0",
-    "sourcePage": 1
+    "sourcePage": 1,
+    "projectType": {
+      "en": "Quantization and compression",
+      "zh": "量化与压缩"
+    }
   },
   {
     "repositoryUrl": "https://github.com/RafaelUI/rwkv-metal",
@@ -133,7 +161,11 @@
     "forks": 1,
     "language": "Python",
     "license": "Apache-2.0",
-    "sourcePage": 1
+    "sourcePage": 1,
+    "projectType": {
+      "en": "Inference backend",
+      "zh": "推理后端"
+    }
   },
   {
     "repositoryUrl": "https://github.com/datawhalechina/llms-from-scratch-cn",
@@ -150,7 +182,11 @@
     "forks": 598,
     "language": "Jupyter Notebook",
     "license": "NOASSERTION",
-    "sourcePage": 1
+    "sourcePage": 1,
+    "projectType": {
+      "en": "RWKV research implementation",
+      "zh": "RWKV 研究实现"
+    }
   },
   {
     "repositoryUrl": "https://github.com/DaxYang-03/RWKV-Vela",
@@ -167,7 +203,11 @@
     "forks": 1,
     "language": "Dart",
     "license": "Apache-2.0",
-    "sourcePage": 1
+    "sourcePage": 1,
+    "projectType": {
+      "en": "End-user application",
+      "zh": "终端应用"
+    }
   },
   {
     "repositoryUrl": "https://github.com/SU-180/rwkv7-sft",
@@ -184,7 +224,11 @@
     "forks": 0,
     "language": "Python",
     "license": null,
-    "sourcePage": 1
+    "sourcePage": 1,
+    "projectType": {
+      "en": "Training and fine-tuning",
+      "zh": "训练与微调"
+    }
   },
   {
     "repositoryUrl": "https://github.com/No-22-Github/Preen",
@@ -201,7 +245,11 @@
     "forks": 0,
     "language": "Python",
     "license": "Apache-2.0",
-    "sourcePage": 1
+    "sourcePage": 1,
+    "projectType": {
+      "en": "Training and fine-tuning",
+      "zh": "训练与微调"
+    }
   },
   {
     "repositoryUrl": "https://github.com/btlqql/sglang-rwkv7",
@@ -218,7 +266,11 @@
     "forks": 0,
     "language": "Python",
     "license": "Apache-2.0",
-    "sourcePage": 2
+    "sourcePage": 2,
+    "projectType": {
+      "en": "Inference service",
+      "zh": "推理服务"
+    }
   },
   {
     "repositoryUrl": "https://github.com/KronosDP/rwkv-research",
@@ -235,7 +287,11 @@
     "forks": 0,
     "language": "Python",
     "license": "MIT",
-    "sourcePage": 1
+    "sourcePage": 1,
+    "projectType": {
+      "en": "Training and fine-tuning",
+      "zh": "训练与微调"
+    }
   },
   {
     "repositoryUrl": "https://github.com/BlinkDL/Albatross",
@@ -252,7 +308,11 @@
     "forks": 29,
     "language": "Cuda",
     "license": "Apache-2.0",
-    "sourcePage": 1
+    "sourcePage": 1,
+    "projectType": {
+      "en": "Inference runtime",
+      "zh": "推理运行时"
+    }
   },
   {
     "repositoryUrl": "https://github.com/xiaol/wkvm",
@@ -269,7 +329,11 @@
     "forks": 15,
     "language": "Python",
     "license": null,
-    "sourcePage": 1
+    "sourcePage": 1,
+    "projectType": {
+      "en": "Inference runtime",
+      "zh": "推理运行时"
+    }
   },
   {
     "repositoryUrl": "https://github.com/rwkv-rs/hf-adapter",
@@ -286,7 +350,11 @@
     "forks": 4,
     "language": "Python",
     "license": "MIT",
-    "sourcePage": 1
+    "sourcePage": 1,
+    "projectType": {
+      "en": "Runtime adapter",
+      "zh": "运行时适配器"
+    }
   },
   {
     "repositoryUrl": "https://github.com/Pangu-Immortal/MagicWX",
@@ -303,7 +371,11 @@
     "forks": 362,
     "language": "Kotlin",
     "license": "MIT",
-    "sourcePage": 1
+    "sourcePage": 1,
+    "projectType": {
+      "en": "End-user application",
+      "zh": "终端应用"
+    }
   },
   {
     "repositoryUrl": "https://github.com/MollySophia/rwkv-mobile",
@@ -320,7 +392,11 @@
     "forks": 10,
     "language": "C++",
     "license": null,
-    "sourcePage": 1
+    "sourcePage": 1,
+    "projectType": {
+      "en": "End-user application",
+      "zh": "终端应用"
+    }
   },
   {
     "repositoryUrl": "https://github.com/josStorer/RWKV-Runner",
@@ -337,7 +413,11 @@
     "forks": 601,
     "language": "TypeScript",
     "license": "MIT",
-    "sourcePage": 1
+    "sourcePage": 1,
+    "projectType": {
+      "en": "End-user application",
+      "zh": "终端应用"
+    }
   },
   {
     "repositoryUrl": "https://github.com/BlinkDL/RWKV-LM",
@@ -354,7 +434,11 @@
     "forks": 1020,
     "language": "Python",
     "license": "Apache-2.0",
-    "sourcePage": 1
+    "sourcePage": 1,
+    "projectType": {
+      "en": "Training and fine-tuning",
+      "zh": "训练与微调"
+    }
   },
   {
     "repositoryUrl": "https://github.com/xiaol/WuNeng",
@@ -371,7 +455,11 @@
     "forks": 0,
     "language": "Python",
     "license": null,
-    "sourcePage": 1
+    "sourcePage": 1,
+    "projectType": {
+      "en": "Training and fine-tuning",
+      "zh": "训练与微调"
+    }
   },
   {
     "repositoryUrl": "https://github.com/Log-Dog012/rwkv-openvino",
@@ -388,7 +476,11 @@
     "forks": 0,
     "language": "Python",
     "license": null,
-    "sourcePage": 1
+    "sourcePage": 1,
+    "projectType": {
+      "en": "Inference backend",
+      "zh": "推理后端"
+    }
   },
   {
     "repositoryUrl": "https://github.com/123123213weqw/vllm-rwkv",
@@ -405,7 +497,11 @@
     "forks": 0,
     "language": "Python",
     "license": "Apache-2.0",
-    "sourcePage": 1
+    "sourcePage": 1,
+    "projectType": {
+      "en": "Inference service",
+      "zh": "推理服务"
+    }
   },
   {
     "repositoryUrl": "https://github.com/cgisky1980/rwkv-rsv",
@@ -422,7 +518,11 @@
     "forks": 0,
     "language": "Rust",
     "license": "MIT",
-    "sourcePage": 1
+    "sourcePage": 1,
+    "projectType": {
+      "en": "Quantization and compression",
+      "zh": "量化与压缩"
+    }
   },
   {
     "repositoryUrl": "https://github.com/Hakureirm/rwkv-sglang",
@@ -439,7 +539,11 @@
     "forks": 1,
     "language": "Python",
     "license": "Apache-2.0",
-    "sourcePage": 2
+    "sourcePage": 2,
+    "projectType": {
+      "en": "Inference service",
+      "zh": "推理服务"
+    }
   },
   {
     "repositoryUrl": "https://github.com/aabbdev/rwkv7-kernels",
@@ -456,7 +560,11 @@
     "forks": 0,
     "language": null,
     "license": "MIT",
-    "sourcePage": 2
+    "sourcePage": 2,
+    "projectType": {
+      "en": "Runtime adapter",
+      "zh": "运行时适配器"
+    }
   },
   {
     "repositoryUrl": "https://github.com/cryscan/rosalia",
@@ -473,7 +581,11 @@
     "forks": 0,
     "language": "Rust",
     "license": "NOASSERTION",
-    "sourcePage": 2
+    "sourcePage": 2,
+    "projectType": {
+      "en": "Inference runtime",
+      "zh": "推理运行时"
+    }
   },
   {
     "repositoryUrl": "https://github.com/AUXStar/rwkv7-quantization",
@@ -490,7 +602,11 @@
     "forks": 0,
     "language": "Cuda",
     "license": "MIT",
-    "sourcePage": 2
+    "sourcePage": 2,
+    "projectType": {
+      "en": "Quantization and compression",
+      "zh": "量化与压缩"
+    }
   },
   {
     "repositoryUrl": "https://github.com/KakaruHayate/RWKV-MUSA",
@@ -507,7 +623,11 @@
     "forks": 1,
     "language": "Python",
     "license": "Apache-2.0",
-    "sourcePage": 2
+    "sourcePage": 2,
+    "projectType": {
+      "en": "Training and fine-tuning",
+      "zh": "训练与微调"
+    }
   },
   {
     "repositoryUrl": "https://github.com/Hakureirm/rwkv7-hub",
@@ -524,7 +644,11 @@
     "forks": 0,
     "language": "Python",
     "license": "Apache-2.0",
-    "sourcePage": 2
+    "sourcePage": 2,
+    "projectType": {
+      "en": "Runtime adapter",
+      "zh": "运行时适配器"
+    }
   },
   {
     "repositoryUrl": "https://github.com/Hakureirm/rwkv-hf-kernels",
@@ -541,7 +665,11 @@
     "forks": 0,
     "language": "Python",
     "license": "Apache-2.0",
-    "sourcePage": 2
+    "sourcePage": 2,
+    "projectType": {
+      "en": "Inference backend",
+      "zh": "推理后端"
+    }
   },
   {
     "repositoryUrl": "https://github.com/MollySophia/rwkv-qualcomm",
@@ -558,7 +686,11 @@
     "forks": 5,
     "language": "Python",
     "license": null,
-    "sourcePage": 2
+    "sourcePage": 2,
+    "projectType": {
+      "en": "Inference runtime",
+      "zh": "推理运行时"
+    }
   },
   {
     "repositoryUrl": "https://github.com/RWKV-Vibe/rwkv_lightning",
@@ -575,7 +707,11 @@
     "forks": 8,
     "language": "Python",
     "license": null,
-    "sourcePage": 2
+    "sourcePage": 2,
+    "projectType": {
+      "en": "Inference runtime",
+      "zh": "推理运行时"
+    }
   },
   {
     "repositoryUrl": "https://github.com/miyako/ai00",
@@ -592,7 +728,11 @@
     "forks": 0,
     "language": "Ruby",
     "license": "MIT",
-    "sourcePage": 2
+    "sourcePage": 2,
+    "projectType": {
+      "en": "Inference runtime",
+      "zh": "推理运行时"
+    }
   },
   {
     "repositoryUrl": "https://github.com/rwkv-rs/rwkv7-ascend-npu",
@@ -609,7 +749,11 @@
     "forks": 0,
     "language": "Python",
     "license": null,
-    "sourcePage": 2
+    "sourcePage": 2,
+    "projectType": {
+      "en": "Inference service",
+      "zh": "推理服务"
+    }
   },
   {
     "repositoryUrl": "https://github.com/RWKV-APP/RWKV-Mobile-Chat",
@@ -626,7 +770,11 @@
     "forks": 0,
     "language": "Dart",
     "license": null,
-    "sourcePage": 2
+    "sourcePage": 2,
+    "projectType": {
+      "en": "End-user application",
+      "zh": "终端应用"
+    }
   },
   {
     "repositoryUrl": "https://github.com/BlinkDL/ChatRWKV",
@@ -643,7 +791,11 @@
     "forks": 685,
     "language": "Python",
     "license": "Apache-2.0",
-    "sourcePage": 1
+    "sourcePage": 1,
+    "projectType": {
+      "en": "End-user application",
+      "zh": "终端应用"
+    }
   },
   {
     "repositoryUrl": "https://github.com/RWKV-APP/flutter_roleplay",
@@ -660,7 +812,11 @@
     "forks": 1,
     "language": "Dart",
     "license": "MIT",
-    "sourcePage": 2
+    "sourcePage": 2,
+    "projectType": {
+      "en": "End-user application",
+      "zh": "终端应用"
+    }
   },
   {
     "repositoryUrl": "https://github.com/TimeMobius/RWKV-Megatron",
@@ -677,7 +833,11 @@
     "forks": 0,
     "language": "Python",
     "license": "Apache-2.0",
-    "sourcePage": 2
+    "sourcePage": 2,
+    "projectType": {
+      "en": "Training and fine-tuning",
+      "zh": "训练与微调"
+    }
   },
   {
     "repositoryUrl": "https://github.com/szxysdt/VKWR",
@@ -694,7 +854,11 @@
     "forks": 0,
     "language": "Python",
     "license": "Apache-2.0",
-    "sourcePage": 2
+    "sourcePage": 2,
+    "projectType": {
+      "en": "Inference runtime",
+      "zh": "推理运行时"
+    }
   },
   {
     "repositoryUrl": "https://github.com/dfytensor/transformers-rwkv7",
@@ -711,7 +875,11 @@
     "forks": 0,
     "language": "Python",
     "license": "MIT",
-    "sourcePage": 2
+    "sourcePage": 2,
+    "projectType": {
+      "en": "Inference service",
+      "zh": "推理服务"
+    }
   },
   {
     "repositoryUrl": "https://github.com/WHYKEYSAY/serve-rwkv-6-7b",
@@ -728,7 +896,11 @@
     "forks": 0,
     "language": "Python",
     "license": null,
-    "sourcePage": 2
+    "sourcePage": 2,
+    "projectType": {
+      "en": "Inference service",
+      "zh": "推理服务"
+    }
   },
   {
     "repositoryUrl": "https://github.com/cgisky1980/dspark-rwkv",
@@ -745,7 +917,11 @@
     "forks": 0,
     "language": "Python",
     "license": "MIT",
-    "sourcePage": 2
+    "sourcePage": 2,
+    "projectType": {
+      "en": "Inference runtime",
+      "zh": "推理运行时"
+    }
   },
   {
     "repositoryUrl": "https://github.com/AUXStar/RWKV-API",
@@ -762,7 +938,11 @@
     "forks": 0,
     "language": "Python",
     "license": "MIT",
-    "sourcePage": 3
+    "sourcePage": 3,
+    "projectType": {
+      "en": "Inference service",
+      "zh": "推理服务"
+    }
   },
   {
     "repositoryUrl": "https://github.com/szxysdt/VKWR-edge",
@@ -779,7 +959,11 @@
     "forks": 0,
     "language": null,
     "license": "Apache-2.0",
-    "sourcePage": 3
+    "sourcePage": 3,
+    "projectType": {
+      "en": "Inference runtime",
+      "zh": "推理运行时"
+    }
   },
   {
     "repositoryUrl": "https://github.com/AUXStar/RWKV-Server",
@@ -796,7 +980,11 @@
     "forks": 0,
     "language": "Python",
     "license": null,
-    "sourcePage": 3
+    "sourcePage": 3,
+    "projectType": {
+      "en": "Inference service",
+      "zh": "推理服务"
+    }
   },
   {
     "repositoryUrl": "https://github.com/cqj19840229/RWKV-infctx-trainer_new",
@@ -813,7 +1001,11 @@
     "forks": 0,
     "language": "Jupyter Notebook",
     "license": "Apache-2.0",
-    "sourcePage": 3
+    "sourcePage": 3,
+    "projectType": {
+      "en": "Training and fine-tuning",
+      "zh": "训练与微调"
+    }
   },
   {
     "repositoryUrl": "https://github.com/rwkv-rs/rwkv-rs",
@@ -830,7 +1022,11 @@
     "forks": 3,
     "language": "Rust",
     "license": "Apache-2.0",
-    "sourcePage": 3
+    "sourcePage": 3,
+    "projectType": {
+      "en": "Inference service",
+      "zh": "推理服务"
+    }
   },
   {
     "repositoryUrl": "https://github.com/Ai00-X/ai00_server",
@@ -847,7 +1043,11 @@
     "forks": 74,
     "language": "Rust",
     "license": "MIT",
-    "sourcePage": 1
+    "sourcePage": 1,
+    "projectType": {
+      "en": "Inference service",
+      "zh": "推理服务"
+    }
   },
   {
     "repositoryUrl": "https://github.com/RWKV-APP/offline_reader",
@@ -864,7 +1064,11 @@
     "forks": 1,
     "language": "TypeScript",
     "license": "MIT",
-    "sourcePage": 3
+    "sourcePage": 3,
+    "projectType": {
+      "en": "End-user application",
+      "zh": "终端应用"
+    }
   },
   {
     "repositoryUrl": "https://github.com/nkypy/rwkv.zig",
@@ -881,7 +1085,11 @@
     "forks": 0,
     "language": "Zig",
     "license": "Apache-2.0",
-    "sourcePage": 5
+    "sourcePage": 5,
+    "projectType": {
+      "en": "Inference runtime",
+      "zh": "推理运行时"
+    }
   },
   {
     "repositoryUrl": "https://github.com/cryscan/web-rwkv",
@@ -898,7 +1106,11 @@
     "forks": 36,
     "language": "Rust",
     "license": "NOASSERTION",
-    "sourcePage": 3
+    "sourcePage": 3,
+    "projectType": {
+      "en": "Inference backend",
+      "zh": "推理后端"
+    }
   },
   {
     "repositoryUrl": "https://github.com/hafizradzi8901/bitnet-rwkv-lm",
@@ -915,7 +1127,11 @@
     "forks": 0,
     "language": "Python",
     "license": "MIT",
-    "sourcePage": 3
+    "sourcePage": 3,
+    "projectType": {
+      "en": "End-user application",
+      "zh": "终端应用"
+    }
   },
   {
     "repositoryUrl": "https://github.com/ConsciousNode/HTMLNLM",
@@ -932,7 +1148,11 @@
     "forks": 0,
     "language": "HTML",
     "license": "MIT",
-    "sourcePage": 3
+    "sourcePage": 3,
+    "projectType": {
+      "en": "Training and fine-tuning",
+      "zh": "训练与微调"
+    }
   },
   {
     "repositoryUrl": "https://github.com/Alic-Li/rwkv_lightning_hip",
@@ -949,7 +1169,11 @@
     "forks": 0,
     "language": "HIP",
     "license": null,
-    "sourcePage": 3
+    "sourcePage": 3,
+    "projectType": {
+      "en": "Inference backend",
+      "zh": "推理后端"
+    }
   },
   {
     "repositoryUrl": "https://github.com/marty1885/llm.cmake",
@@ -966,7 +1190,11 @@
     "forks": 0,
     "language": "Python",
     "license": null,
-    "sourcePage": 3
+    "sourcePage": 3,
+    "projectType": {
+      "en": "Inference runtime",
+      "zh": "推理运行时"
+    }
   },
   {
     "repositoryUrl": "https://github.com/RWKV-Vibe/RWKV-LM-V7",
@@ -983,7 +1211,11 @@
     "forks": 14,
     "language": "HIP",
     "license": "Apache-2.0",
-    "sourcePage": 3
+    "sourcePage": 3,
+    "projectType": {
+      "en": "RWKV research implementation",
+      "zh": "RWKV 研究实现"
+    }
   },
   {
     "repositoryUrl": "https://github.com/LuckySongXiao/RWKV_document-term-translator",
@@ -1000,7 +1232,11 @@
     "forks": 1,
     "language": "C#",
     "license": "Apache-2.0",
-    "sourcePage": 3
+    "sourcePage": 3,
+    "projectType": {
+      "en": "End-user application",
+      "zh": "终端应用"
+    }
   },
   {
     "repositoryUrl": "https://github.com/RWKV-APP/rwkv_studio",
@@ -1017,7 +1253,11 @@
     "forks": 0,
     "language": "Dart",
     "license": null,
-    "sourcePage": 3
+    "sourcePage": 3,
+    "projectType": {
+      "en": "End-user application",
+      "zh": "终端应用"
+    }
   },
   {
     "repositoryUrl": "https://github.com/EliwiiKeeya/RWKV7_Pytorch",
@@ -1034,7 +1274,11 @@
     "forks": 2,
     "language": "Python",
     "license": "GPL-3.0",
-    "sourcePage": 4
+    "sourcePage": 4,
+    "projectType": {
+      "en": "Training and fine-tuning",
+      "zh": "训练与微调"
+    }
   },
   {
     "repositoryUrl": "https://github.com/RWKV-APP/rwkv_mobile_flutter",
@@ -1051,7 +1295,11 @@
     "forks": 5,
     "language": "Dart",
     "license": "Apache-2.0",
-    "sourcePage": 3
+    "sourcePage": 3,
+    "projectType": {
+      "en": "End-user application",
+      "zh": "终端应用"
+    }
   },
   {
     "repositoryUrl": "https://github.com/ABW-Gossamer/RwkvDemo",
@@ -1068,7 +1316,11 @@
     "forks": 0,
     "language": "C#",
     "license": "MIT",
-    "sourcePage": 3
+    "sourcePage": 3,
+    "projectType": {
+      "en": "RWKV utility",
+      "zh": "RWKV 工具"
+    }
   },
   {
     "repositoryUrl": "https://github.com/Alic-Li/rwkv_lightning_libtorch",
@@ -1085,7 +1337,11 @@
     "forks": 1,
     "language": "C++",
     "license": "Apache-2.0",
-    "sourcePage": 3
+    "sourcePage": 3,
+    "projectType": {
+      "en": "Inference runtime",
+      "zh": "推理运行时"
+    }
   },
   {
     "repositoryUrl": "https://github.com/howard-hou/RWKV-X",
@@ -1102,7 +1358,11 @@
     "forks": 3,
     "language": "Python",
     "license": "MIT",
-    "sourcePage": 3
+    "sourcePage": 3,
+    "projectType": {
+      "en": "RWKV research implementation",
+      "zh": "RWKV 研究实现"
+    }
   },
   {
     "repositoryUrl": "https://github.com/sablin39/rwkv-infer",
@@ -1119,7 +1379,11 @@
     "forks": 0,
     "language": "Python",
     "license": null,
-    "sourcePage": 3
+    "sourcePage": 3,
+    "projectType": {
+      "en": "Inference backend",
+      "zh": "推理后端"
+    }
   },
   {
     "repositoryUrl": "https://github.com/Dappit-io/birdsnest",
@@ -1136,7 +1400,11 @@
     "forks": 3,
     "language": "Python",
     "license": "MIT",
-    "sourcePage": 4
+    "sourcePage": 4,
+    "projectType": {
+      "en": "End-user application",
+      "zh": "终端应用"
+    }
   },
   {
     "repositoryUrl": "https://github.com/leonsama/chirrup",
@@ -1153,7 +1421,11 @@
     "forks": 1,
     "language": "HTML",
     "license": null,
-    "sourcePage": 4
+    "sourcePage": 4,
+    "projectType": {
+      "en": "Inference runtime",
+      "zh": "推理运行时"
+    }
   },
   {
     "repositoryUrl": "https://github.com/daman-ovo-0404/rwkv6-runpod-serverless",
@@ -1170,7 +1442,11 @@
     "forks": 0,
     "language": "Python",
     "license": null,
-    "sourcePage": 4
+    "sourcePage": 4,
+    "projectType": {
+      "en": "Inference service",
+      "zh": "推理服务"
+    }
   },
   {
     "repositoryUrl": "https://github.com/aierwiki/rwkvserve",
@@ -1187,7 +1463,11 @@
     "forks": 0,
     "language": "Python",
     "license": "Apache-2.0",
-    "sourcePage": 5
+    "sourcePage": 5,
+    "projectType": {
+      "en": "Inference service",
+      "zh": "推理服务"
+    }
   },
   {
     "repositoryUrl": "https://github.com/johanwind/wind_rwkv",
@@ -1204,7 +1484,11 @@
     "forks": 6,
     "language": "Cuda",
     "license": "MIT",
-    "sourcePage": 4
+    "sourcePage": 4,
+    "projectType": {
+      "en": "Inference service",
+      "zh": "推理服务"
+    }
   },
   {
     "repositoryUrl": "https://github.com/AlexSabaka/RWKV-MLX",
@@ -1221,7 +1505,11 @@
     "forks": 0,
     "language": "Python",
     "license": null,
-    "sourcePage": 5
+    "sourcePage": 5,
+    "projectType": {
+      "en": "Inference backend",
+      "zh": "推理后端"
+    }
   },
   {
     "repositoryUrl": "https://github.com/aierwiki/rwkvtune",
@@ -1238,7 +1526,11 @@
     "forks": 0,
     "language": "Python",
     "license": "Apache-2.0",
-    "sourcePage": 4
+    "sourcePage": 4,
+    "projectType": {
+      "en": "Training and fine-tuning",
+      "zh": "训练与微调"
+    }
   },
   {
     "repositoryUrl": "https://github.com/Nintorac/hip-rwkv",
@@ -1255,7 +1547,11 @@
     "forks": 0,
     "language": "Rust",
     "license": "NOASSERTION",
-    "sourcePage": 4
+    "sourcePage": 4,
+    "projectType": {
+      "en": "Inference backend",
+      "zh": "推理后端"
+    }
   },
   {
     "repositoryUrl": "https://github.com/stukenov/nano-rwkv",
@@ -1272,7 +1568,11 @@
     "forks": 0,
     "language": "Python",
     "license": "MIT",
-    "sourcePage": 5
+    "sourcePage": 5,
+    "projectType": {
+      "en": "Training and fine-tuning",
+      "zh": "训练与微调"
+    }
   },
   {
     "repositoryUrl": "https://github.com/DeepJH/state_tuning_tutorial_for_RWKV",
@@ -1289,7 +1589,11 @@
     "forks": 0,
     "language": "Jupyter Notebook",
     "license": null,
-    "sourcePage": 4
+    "sourcePage": 4,
+    "projectType": {
+      "en": "Training and fine-tuning",
+      "zh": "训练与微调"
+    }
   },
   {
     "repositoryUrl": "https://github.com/guinmoon/LLMFarm",
@@ -1306,7 +1610,11 @@
     "forks": 182,
     "language": "C",
     "license": "MIT",
-    "sourcePage": 1
+    "sourcePage": 1,
+    "projectType": {
+      "en": "RWKV utility",
+      "zh": "RWKV 工具"
+    }
   },
   {
     "repositoryUrl": "https://github.com/Alic-Li/Mini_RWKV_7",
@@ -1323,7 +1631,11 @@
     "forks": 11,
     "language": "Python",
     "license": "Apache-2.0",
-    "sourcePage": 4
+    "sourcePage": 4,
+    "projectType": {
+      "en": "Training and fine-tuning",
+      "zh": "训练与微调"
+    }
   },
   {
     "repositoryUrl": "https://github.com/Eternalyze0/improved_nanoRWKV",
@@ -1340,7 +1652,11 @@
     "forks": 0,
     "language": "Python",
     "license": "MIT",
-    "sourcePage": 4
+    "sourcePage": 4,
+    "projectType": {
+      "en": "RWKV research implementation",
+      "zh": "RWKV 研究实现"
+    }
   },
   {
     "repositoryUrl": "https://github.com/nkypy/candle-rwkv",
@@ -1357,7 +1673,11 @@
     "forks": 1,
     "language": "Rust",
     "license": null,
-    "sourcePage": 2
+    "sourcePage": 2,
+    "projectType": {
+      "en": "Inference backend",
+      "zh": "推理后端"
+    }
   },
   {
     "repositoryUrl": "https://github.com/howard-hou/VisualRWKV",
@@ -1374,7 +1694,11 @@
     "forks": 19,
     "language": "Python",
     "license": "Apache-2.0",
-    "sourcePage": 1
+    "sourcePage": 1,
+    "projectType": {
+      "en": "Training and fine-tuning",
+      "zh": "训练与微调"
+    }
   },
   {
     "repositoryUrl": "https://github.com/Joluck/RWKV-PEFT",
@@ -1391,7 +1715,11 @@
     "forks": 46,
     "language": "Python",
     "license": "Apache-2.0",
-    "sourcePage": 4
+    "sourcePage": 4,
+    "projectType": {
+      "en": "Training and fine-tuning",
+      "zh": "训练与微调"
+    }
   },
   {
     "repositoryUrl": "https://github.com/FlameF0X/open-i3",
@@ -1408,7 +1736,11 @@
     "forks": 1,
     "language": "Python",
     "license": "Apache-2.0",
-    "sourcePage": 4
+    "sourcePage": 4,
+    "projectType": {
+      "en": "Training and fine-tuning",
+      "zh": "训练与微调"
+    }
   },
   {
     "repositoryUrl": "https://github.com/ssg-qwq/RWKV-Text-Pretrain-Light",
@@ -1425,7 +1757,11 @@
     "forks": 0,
     "language": "Python",
     "license": "Apache-2.0",
-    "sourcePage": 4
+    "sourcePage": 4,
+    "projectType": {
+      "en": "Training and fine-tuning",
+      "zh": "训练与微调"
+    }
   },
   {
     "repositoryUrl": "https://github.com/ZDP-Q/RWKV-Factory",
@@ -1442,7 +1778,11 @@
     "forks": 0,
     "language": null,
     "license": null,
-    "sourcePage": 4
+    "sourcePage": 4,
+    "projectType": {
+      "en": "End-user application",
+      "zh": "终端应用"
+    }
   },
   {
     "repositoryUrl": "https://github.com/cryscan/mia",
@@ -1459,7 +1799,11 @@
     "forks": 2,
     "language": "Rust",
     "license": null,
-    "sourcePage": 5
+    "sourcePage": 5,
+    "projectType": {
+      "en": "Inference runtime",
+      "zh": "推理运行时"
+    }
   },
   {
     "repositoryUrl": "https://github.com/OpenMOSE/RWKV-Infer",
@@ -1476,7 +1820,11 @@
     "forks": 2,
     "language": "Python",
     "license": "Apache-2.0",
-    "sourcePage": 5
+    "sourcePage": 5,
+    "projectType": {
+      "en": "Inference backend",
+      "zh": "推理后端"
+    }
   },
   {
     "repositoryUrl": "https://github.com/pass-lin/RWKV7-Keras",
@@ -1493,7 +1841,11 @@
     "forks": 0,
     "language": "Python",
     "license": null,
-    "sourcePage": 5
+    "sourcePage": 5,
+    "projectType": {
+      "en": "Training and fine-tuning",
+      "zh": "训练与微调"
+    }
   },
   {
     "repositoryUrl": "https://github.com/No-22-Github/ComfyUI_RWKV_Studio",
@@ -1510,7 +1862,11 @@
     "forks": 2,
     "language": "Python",
     "license": "MIT",
-    "sourcePage": 5
+    "sourcePage": 5,
+    "projectType": {
+      "en": "RWKV utility",
+      "zh": "RWKV 工具"
+    }
   },
   {
     "repositoryUrl": "https://github.com/OpenMOSE/RWKV-LM-RLHF",
@@ -1527,7 +1883,11 @@
     "forks": 6,
     "language": "Python",
     "license": "Apache-2.0",
-    "sourcePage": 5
+    "sourcePage": 5,
+    "projectType": {
+      "en": "Training and fine-tuning",
+      "zh": "训练与微调"
+    }
   },
   {
     "repositoryUrl": "https://github.com/turtle261/candle_rwkv7",
@@ -1544,7 +1904,11 @@
     "forks": 0,
     "language": "Rust",
     "license": "Apache-2.0",
-    "sourcePage": 5
+    "sourcePage": 5,
+    "projectType": {
+      "en": "Inference backend",
+      "zh": "推理后端"
+    }
   },
   {
     "repositoryUrl": "https://github.com/rwkv-rs/rwkv-peft-simple",
@@ -1561,7 +1925,11 @@
     "forks": 0,
     "language": "Python",
     "license": "Apache-2.0",
-    "sourcePage": 5
+    "sourcePage": 5,
+    "projectType": {
+      "en": "Training and fine-tuning",
+      "zh": "训练与微调"
+    }
   },
   {
     "repositoryUrl": "https://github.com/Alic-Li/RWKV_7_on_AMD_Radeon-Instinct",
@@ -1578,7 +1946,11 @@
     "forks": 0,
     "language": null,
     "license": null,
-    "sourcePage": 5
+    "sourcePage": 5,
+    "projectType": {
+      "en": "Inference runtime",
+      "zh": "推理运行时"
+    }
   },
   {
     "repositoryUrl": "https://github.com/cttailearn/RWKV-PEFT-GUI",
@@ -1595,7 +1967,11 @@
     "forks": 0,
     "language": "Python",
     "license": "Apache-2.0",
-    "sourcePage": 5
+    "sourcePage": 5,
+    "projectType": {
+      "en": "Training and fine-tuning",
+      "zh": "训练与微调"
+    }
   },
   {
     "repositoryUrl": "https://github.com/KevlarKanou/rwkv7.c",
@@ -1612,7 +1988,11 @@
     "forks": 3,
     "language": "C",
     "license": "MIT",
-    "sourcePage": 2
+    "sourcePage": 2,
+    "projectType": {
+      "en": "Inference runtime",
+      "zh": "推理运行时"
+    }
   },
   {
     "repositoryUrl": "https://github.com/RWKV-Vibe/rwkv_Ascend",
@@ -1629,7 +2009,11 @@
     "forks": 4,
     "language": "Python",
     "license": null,
-    "sourcePage": 5
+    "sourcePage": 5,
+    "projectType": {
+      "en": "Inference backend",
+      "zh": "推理后端"
+    }
   },
   {
     "repositoryUrl": "https://github.com/RWKV/RWKV-block",
@@ -1646,7 +2030,11 @@
     "forks": 1,
     "language": "Python",
     "license": null,
-    "sourcePage": 5
+    "sourcePage": 5,
+    "projectType": {
+      "en": "RWKV research implementation",
+      "zh": "RWKV 研究实现"
+    }
   },
   {
     "repositoryUrl": "https://github.com/Alic-Li/RWKV-LM-V7-AMD-ROCm",
@@ -1663,7 +2051,11 @@
     "forks": 0,
     "language": "Python",
     "license": "Apache-2.0",
-    "sourcePage": 5
+    "sourcePage": 5,
+    "projectType": {
+      "en": "Inference backend",
+      "zh": "推理后端"
+    }
   },
   {
     "repositoryUrl": "https://github.com/dymat/rwkv-burn",
@@ -1680,7 +2072,11 @@
     "forks": 4,
     "language": "Rust",
     "license": "Apache-2.0",
-    "sourcePage": 5
+    "sourcePage": 5,
+    "projectType": {
+      "en": "RWKV research implementation",
+      "zh": "RWKV 研究实现"
+    }
   },
   {
     "repositoryUrl": "https://github.com/Seikaijyu/RWKV-PEFT-Simple",
@@ -1697,7 +2093,11 @@
     "forks": 1,
     "language": "Shell",
     "license": null,
-    "sourcePage": 6
+    "sourcePage": 6,
+    "projectType": {
+      "en": "Training and fine-tuning",
+      "zh": "训练与微调"
+    }
   },
   {
     "repositoryUrl": "https://github.com/BlinkDL/AI-Writer",
@@ -1714,7 +2114,11 @@
     "forks": 571,
     "language": "Python",
     "license": "Apache-2.0",
-    "sourcePage": 6
+    "sourcePage": 6,
+    "projectType": {
+      "en": "End-user application",
+      "zh": "终端应用"
+    }
   },
   {
     "repositoryUrl": "https://github.com/00ffcc/conRWKV",
@@ -1731,7 +2135,11 @@
     "forks": 3,
     "language": "Python",
     "license": "Apache-2.0",
-    "sourcePage": 6
+    "sourcePage": 6,
+    "projectType": {
+      "en": "Inference runtime",
+      "zh": "推理运行时"
+    }
   },
   {
     "repositoryUrl": "https://github.com/fabiomatricardi/RWKV-7_localGPT",
@@ -1748,7 +2156,11 @@
     "forks": 0,
     "language": "Python",
     "license": null,
-    "sourcePage": 6
+    "sourcePage": 6,
+    "projectType": {
+      "en": "RWKV utility",
+      "zh": "RWKV 工具"
+    }
   },
   {
     "repositoryUrl": "https://github.com/howard-hou/RWKV-SFT",
@@ -1765,7 +2177,11 @@
     "forks": 0,
     "language": "Python",
     "license": "Apache-2.0",
-    "sourcePage": 6
+    "sourcePage": 6,
+    "projectType": {
+      "en": "Training and fine-tuning",
+      "zh": "训练与微调"
+    }
   },
   {
     "repositoryUrl": "https://github.com/ZTMIDGO/Android-RWKV-V7-World",
@@ -1782,7 +2198,11 @@
     "forks": 0,
     "language": "Java",
     "license": null,
-    "sourcePage": 6
+    "sourcePage": 6,
+    "projectType": {
+      "en": "End-user application",
+      "zh": "终端应用"
+    }
   },
   {
     "repositoryUrl": "https://github.com/computer-whisperer/RWKV-burn",
@@ -1799,7 +2219,11 @@
     "forks": 0,
     "language": "Rust",
     "license": null,
-    "sourcePage": 6
+    "sourcePage": 6,
+    "projectType": {
+      "en": "Inference service",
+      "zh": "推理服务"
+    }
   },
   {
     "repositoryUrl": "https://github.com/SmerkyG/RWKV_Explained",
@@ -1816,7 +2240,11 @@
     "forks": 5,
     "language": "Python",
     "license": "Apache-2.0",
-    "sourcePage": 6
+    "sourcePage": 6,
+    "projectType": {
+      "en": "RWKV research implementation",
+      "zh": "RWKV 研究实现"
+    }
   },
   {
     "repositoryUrl": "https://github.com/RWKV/rwkv.cpp",
@@ -1833,7 +2261,11 @@
     "forks": 129,
     "language": "C++",
     "license": "MIT",
-    "sourcePage": 1
+    "sourcePage": 1,
+    "projectType": {
+      "en": "Quantization and compression",
+      "zh": "量化与压缩"
+    }
   },
   {
     "repositoryUrl": "https://github.com/harrisonvanderbyl/rwkv.cuh",
@@ -1850,7 +2282,11 @@
     "forks": 0,
     "language": "C++",
     "license": null,
-    "sourcePage": 6
+    "sourcePage": 6,
+    "projectType": {
+      "en": "Inference service",
+      "zh": "推理服务"
+    }
   },
   {
     "repositoryUrl": "https://github.com/wozeparrot/tinyrwkv",
@@ -1867,7 +2303,11 @@
     "forks": 3,
     "language": "Python",
     "license": "Apache-2.0",
-    "sourcePage": 6
+    "sourcePage": 6,
+    "projectType": {
+      "en": "Inference runtime",
+      "zh": "推理运行时"
+    }
   },
   {
     "repositoryUrl": "https://github.com/shengxia/RWKV_Role_Playing",
@@ -1884,7 +2324,11 @@
     "forks": 27,
     "language": "Python",
     "license": "GPL-3.0",
-    "sourcePage": 6
+    "sourcePage": 6,
+    "projectType": {
+      "en": "End-user application",
+      "zh": "终端应用"
+    }
   },
   {
     "repositoryUrl": "https://github.com/imxcstar/RWKVSharp",
@@ -1901,7 +2345,11 @@
     "forks": 5,
     "language": "C#",
     "license": "MIT",
-    "sourcePage": 2
+    "sourcePage": 2,
+    "projectType": {
+      "en": "Runtime adapter",
+      "zh": "运行时适配器"
+    }
   },
   {
     "repositoryUrl": "https://github.com/bilibini/Meow-AI",
@@ -1918,7 +2366,11 @@
     "forks": 8,
     "language": "Python",
     "license": "MIT",
-    "sourcePage": 6
+    "sourcePage": 6,
+    "projectType": {
+      "en": "End-user application",
+      "zh": "终端应用"
+    }
   },
   {
     "repositoryUrl": "https://github.com/Jellyfish042/RWKV-StateTuning",
@@ -1935,7 +2387,11 @@
     "forks": 1,
     "language": "Python",
     "license": "MIT",
-    "sourcePage": 6
+    "sourcePage": 6,
+    "projectType": {
+      "en": "Training and fine-tuning",
+      "zh": "训练与微调"
+    }
   },
   {
     "repositoryUrl": "https://github.com/l15y/R-translator",
@@ -1952,7 +2408,11 @@
     "forks": 0,
     "language": "CSS",
     "license": "Apache-2.0",
-    "sourcePage": 6
+    "sourcePage": 6,
+    "projectType": {
+      "en": "End-user application",
+      "zh": "终端应用"
+    }
   },
   {
     "repositoryUrl": "https://github.com/cryscan/web-rwkv-py",
@@ -1969,7 +2429,11 @@
     "forks": 8,
     "language": "Rust",
     "license": null,
-    "sourcePage": 6
+    "sourcePage": 6,
+    "projectType": {
+      "en": "Inference service",
+      "zh": "推理服务"
+    }
   },
   {
     "repositoryUrl": "https://github.com/wenda-LLM/wenda",
@@ -1986,7 +2450,11 @@
     "forks": 784,
     "language": "JavaScript",
     "license": "AGPL-3.0",
-    "sourcePage": 6
+    "sourcePage": 6,
+    "projectType": {
+      "en": "RWKV utility",
+      "zh": "RWKV 工具"
+    }
   },
   {
     "repositoryUrl": "https://github.com/cryscan/web-rwkv-realweb",
@@ -2003,7 +2471,11 @@
     "forks": 7,
     "language": "Rust",
     "license": "NOASSERTION",
-    "sourcePage": 6
+    "sourcePage": 6,
+    "projectType": {
+      "en": "Inference service",
+      "zh": "推理服务"
+    }
   },
   {
     "repositoryUrl": "https://github.com/RWKV-Vibe/rwkv-kit",
@@ -2020,7 +2492,11 @@
     "forks": 1,
     "language": "Python",
     "license": "GPL-3.0",
-    "sourcePage": 6
+    "sourcePage": 6,
+    "projectType": {
+      "en": "Training and fine-tuning",
+      "zh": "训练与微调"
+    }
   },
   {
     "repositoryUrl": "https://github.com/MollySophia/rwkv-ryzenai",
@@ -2037,7 +2513,11 @@
     "forks": 0,
     "language": "Python",
     "license": null,
-    "sourcePage": 6
+    "sourcePage": 6,
+    "projectType": {
+      "en": "Inference service",
+      "zh": "推理服务"
+    }
   },
   {
     "repositoryUrl": "https://github.com/LeoLin4258/Infofusion",
@@ -2054,7 +2534,11 @@
     "forks": 2,
     "language": "TypeScript",
     "license": "MIT",
-    "sourcePage": 7
+    "sourcePage": 7,
+    "projectType": {
+      "en": "End-user application",
+      "zh": "终端应用"
+    }
   },
   {
     "repositoryUrl": "https://github.com/AnshulRanjan2004/MicroRWKV",
@@ -2071,7 +2555,11 @@
     "forks": 1,
     "language": "Python",
     "license": "GPL-3.0",
-    "sourcePage": 7
+    "sourcePage": 7,
+    "projectType": {
+      "en": "RWKV research implementation",
+      "zh": "RWKV 研究实现"
+    }
   },
   {
     "repositoryUrl": "https://github.com/MollySophia/rwkv-ncnn",
@@ -2088,7 +2576,11 @@
     "forks": 5,
     "language": "Python",
     "license": null,
-    "sourcePage": 7
+    "sourcePage": 7,
+    "projectType": {
+      "en": "Inference backend",
+      "zh": "推理后端"
+    }
   },
   {
     "repositoryUrl": "https://github.com/Ronsor/rwkv-simple",
@@ -2105,7 +2597,11 @@
     "forks": 0,
     "language": "Python",
     "license": "Apache-2.0",
-    "sourcePage": 7
+    "sourcePage": 7,
+    "projectType": {
+      "en": "RWKV research implementation",
+      "zh": "RWKV 研究实现"
+    }
   },
   {
     "repositoryUrl": "https://github.com/RWKV/RWKV-infctx-trainer",
@@ -2122,7 +2618,11 @@
     "forks": 30,
     "language": "Jupyter Notebook",
     "license": "Apache-2.0",
-    "sourcePage": 7
+    "sourcePage": 7,
+    "projectType": {
+      "en": "Training and fine-tuning",
+      "zh": "训练与微调"
+    }
   },
   {
     "repositoryUrl": "https://github.com/OpenMOSE/RWKV-LM-State-4bit-Orpo",
@@ -2139,7 +2639,11 @@
     "forks": 1,
     "language": "Python",
     "license": "Apache-2.0",
-    "sourcePage": 7
+    "sourcePage": 7,
+    "projectType": {
+      "en": "Quantization and compression",
+      "zh": "量化与压缩"
+    }
   },
   {
     "repositoryUrl": "https://github.com/No-22-Github/Easy_RWKV_webui",
@@ -2156,7 +2660,11 @@
     "forks": 0,
     "language": "Python",
     "license": "MIT",
-    "sourcePage": 7
+    "sourcePage": 7,
+    "projectType": {
+      "en": "End-user application",
+      "zh": "终端应用"
+    }
   },
   {
     "repositoryUrl": "https://github.com/pass-lin/RWKV6-Keras",
@@ -2173,7 +2681,11 @@
     "forks": 1,
     "language": "Python",
     "license": null,
-    "sourcePage": 7
+    "sourcePage": 7,
+    "projectType": {
+      "en": "Training and fine-tuning",
+      "zh": "训练与微调"
+    }
   },
   {
     "repositoryUrl": "https://github.com/saran-gangster/rwkv-jax",
@@ -2190,7 +2702,11 @@
     "forks": 0,
     "language": "Python",
     "license": "NOASSERTION",
-    "sourcePage": 7
+    "sourcePage": 7,
+    "projectType": {
+      "en": "RWKV research implementation",
+      "zh": "RWKV 研究实现"
+    }
   },
   {
     "repositoryUrl": "https://github.com/shengxia/RWKV_Role_Playing_UI",
@@ -2207,7 +2723,11 @@
     "forks": 0,
     "language": "Vue",
     "license": null,
-    "sourcePage": 7
+    "sourcePage": 7,
+    "projectType": {
+      "en": "End-user application",
+      "zh": "终端应用"
+    }
   },
   {
     "repositoryUrl": "https://github.com/latestissue/AltaeraAI",
@@ -2224,7 +2744,11 @@
     "forks": 2,
     "language": "Shell",
     "license": "AGPL-3.0",
-    "sourcePage": 7
+    "sourcePage": 7,
+    "projectType": {
+      "en": "End-user application",
+      "zh": "终端应用"
+    }
   },
   {
     "repositoryUrl": "https://github.com/Ronsor/nanoRWKV-bitnet",
@@ -2241,7 +2765,11 @@
     "forks": 0,
     "language": "Python",
     "license": "MIT",
-    "sourcePage": 7
+    "sourcePage": 7,
+    "projectType": {
+      "en": "Quantization and compression",
+      "zh": "量化与压缩"
+    }
   },
   {
     "repositoryUrl": "https://github.com/iantbutler01/rwkv-raven-qlora-4bit-instruct",
@@ -2258,7 +2786,11 @@
     "forks": 2,
     "language": "Python",
     "license": "Apache-2.0",
-    "sourcePage": 7
+    "sourcePage": 7,
+    "projectType": {
+      "en": "Training and fine-tuning",
+      "zh": "训练与微调"
+    }
   },
   {
     "repositoryUrl": "https://github.com/OpenMOSE/RWKV-infctx-trainer-LoRA",
@@ -2275,7 +2807,11 @@
     "forks": 2,
     "language": "Python",
     "license": "Apache-2.0",
-    "sourcePage": 7
+    "sourcePage": 7,
+    "projectType": {
+      "en": "Quantization and compression",
+      "zh": "量化与压缩"
+    }
   },
   {
     "repositoryUrl": "https://github.com/BBuf/flash-rwkv",
@@ -2292,7 +2828,11 @@
     "forks": 2,
     "language": "Python",
     "license": null,
-    "sourcePage": 7
+    "sourcePage": 7,
+    "projectType": {
+      "en": "Inference service",
+      "zh": "推理服务"
+    }
   },
   {
     "repositoryUrl": "https://github.com/neromous/RWKV-Ouroboros",
@@ -2309,7 +2849,11 @@
     "forks": 3,
     "language": "Python",
     "license": null,
-    "sourcePage": 7
+    "sourcePage": 7,
+    "projectType": {
+      "en": "Training and fine-tuning",
+      "zh": "训练与微调"
+    }
   },
   {
     "repositoryUrl": "https://github.com/cryscan/web-rwkv-converter",
@@ -2326,7 +2870,11 @@
     "forks": 0,
     "language": "Rust",
     "license": "NOASSERTION",
-    "sourcePage": 7
+    "sourcePage": 7,
+    "projectType": {
+      "en": "Runtime adapter",
+      "zh": "运行时适配器"
+    }
   },
   {
     "repositoryUrl": "https://github.com/vaccovecrana/rwkv.jni",
@@ -2343,7 +2891,11 @@
     "forks": 0,
     "language": "Java",
     "license": "NOASSERTION",
-    "sourcePage": 8
+    "sourcePage": 8,
+    "projectType": {
+      "en": "Runtime adapter",
+      "zh": "运行时适配器"
+    }
   },
   {
     "repositoryUrl": "https://github.com/ssbuild/rwkv_finetuning",
@@ -2360,7 +2912,11 @@
     "forks": 1,
     "language": "Python",
     "license": "Apache-2.0",
-    "sourcePage": 2
+    "sourcePage": 2,
+    "projectType": {
+      "en": "Training and fine-tuning",
+      "zh": "训练与微调"
+    }
   },
   {
     "repositoryUrl": "https://github.com/szxysdt/rwkv_tokenizer_cpp",
@@ -2377,7 +2933,11 @@
     "forks": 0,
     "language": "C++",
     "license": null,
-    "sourcePage": 8
+    "sourcePage": 8,
+    "projectType": {
+      "en": "Tokenizer",
+      "zh": "分词器"
+    }
   },
   {
     "repositoryUrl": "https://github.com/v3ucn/RWKV_Role_Playing_with_GPT-SoVITS",
@@ -2394,7 +2954,11 @@
     "forks": 2,
     "language": "Python",
     "license": "GPL-3.0",
-    "sourcePage": 8
+    "sourcePage": 8,
+    "projectType": {
+      "en": "End-user application",
+      "zh": "终端应用"
+    }
   },
   {
     "repositoryUrl": "https://github.com/v3ucn/RWKV_3B_7B_Webui_GPT-SoVITS",
@@ -2411,7 +2975,11 @@
     "forks": 8,
     "language": "Python",
     "license": "MIT",
-    "sourcePage": 8
+    "sourcePage": 8,
+    "projectType": {
+      "en": "RWKV utility",
+      "zh": "RWKV 工具"
+    }
   },
   {
     "repositoryUrl": "https://github.com/OpenMOSE/RWKV5-LM-LoRA",
@@ -2428,7 +2996,11 @@
     "forks": 5,
     "language": "Python",
     "license": "Apache-2.0",
-    "sourcePage": 8
+    "sourcePage": 8,
+    "projectType": {
+      "en": "Training and fine-tuning",
+      "zh": "训练与微调"
+    }
   },
   {
     "repositoryUrl": "https://github.com/donomii/go-rwkv.cpp",
@@ -2445,7 +3017,11 @@
     "forks": 5,
     "language": "Go",
     "license": "MIT",
-    "sourcePage": 2
+    "sourcePage": 2,
+    "projectType": {
+      "en": "Runtime adapter",
+      "zh": "运行时适配器"
+    }
   },
   {
     "repositoryUrl": "https://github.com/BrutalCoding/shady.ai",
@@ -2462,7 +3038,11 @@
     "forks": 16,
     "language": "Dart",
     "license": "AGPL-3.0",
-    "sourcePage": 8
+    "sourcePage": 8,
+    "projectType": {
+      "en": "RWKV utility",
+      "zh": "RWKV 工具"
+    }
   },
   {
     "repositoryUrl": "https://github.com/harrisonvanderbyl/rwkv-cpp-accelerated",
@@ -2479,7 +3059,11 @@
     "forks": 20,
     "language": "C++",
     "license": "MIT",
-    "sourcePage": 8
+    "sourcePage": 8,
+    "projectType": {
+      "en": "Quantization and compression",
+      "zh": "量化与压缩"
+    }
   },
   {
     "repositoryUrl": "https://github.com/RWKV/rwkv-onnx",
@@ -2496,7 +3080,11 @@
     "forks": 3,
     "language": "Python",
     "license": null,
-    "sourcePage": 8
+    "sourcePage": 8,
+    "projectType": {
+      "en": "Runtime adapter",
+      "zh": "运行时适配器"
+    }
   },
   {
     "repositoryUrl": "https://github.com/SingingRivulet/InnerDNN",
@@ -2513,7 +3101,11 @@
     "forks": 0,
     "language": "C",
     "license": "MIT",
-    "sourcePage": 8
+    "sourcePage": 8,
+    "projectType": {
+      "en": "Inference runtime",
+      "zh": "推理运行时"
+    }
   },
   {
     "repositoryUrl": "https://github.com/harrisonvanderbyl/rwkv.hpp",
@@ -2530,7 +3122,11 @@
     "forks": 1,
     "language": "C++",
     "license": null,
-    "sourcePage": 8
+    "sourcePage": 8,
+    "projectType": {
+      "en": "Inference service",
+      "zh": "推理服务"
+    }
   },
   {
     "repositoryUrl": "https://github.com/kong13661/rwkv.c",
@@ -2547,7 +3143,11 @@
     "forks": 0,
     "language": "C",
     "license": "MIT",
-    "sourcePage": 8
+    "sourcePage": 8,
+    "projectType": {
+      "en": "Inference runtime",
+      "zh": "推理运行时"
+    }
   },
   {
     "repositoryUrl": "https://github.com/seasonjs/rwkv",
@@ -2564,7 +3164,11 @@
     "forks": 3,
     "language": "Go",
     "license": "MIT",
-    "sourcePage": 8
+    "sourcePage": 8,
+    "projectType": {
+      "en": "Inference runtime",
+      "zh": "推理运行时"
+    }
   },
   {
     "repositoryUrl": "https://github.com/daquexian/faster-rwkv",
@@ -2581,7 +3185,11 @@
     "forks": 12,
     "language": "C++",
     "license": null,
-    "sourcePage": 8
+    "sourcePage": 8,
+    "projectType": {
+      "en": "Inference service",
+      "zh": "推理服务"
+    }
   },
   {
     "repositoryUrl": "https://github.com/Hannibal046/nanoRWKV",
@@ -2598,7 +3206,11 @@
     "forks": 13,
     "language": "Python",
     "license": "MIT",
-    "sourcePage": 8
+    "sourcePage": 8,
+    "projectType": {
+      "en": "RWKV research implementation",
+      "zh": "RWKV 研究实现"
+    }
   },
   {
     "repositoryUrl": "https://github.com/jackd/keras-rwkv",
@@ -2615,7 +3227,11 @@
     "forks": 0,
     "language": "Python",
     "license": "Apache-2.0",
-    "sourcePage": 8
+    "sourcePage": 8,
+    "projectType": {
+      "en": "RWKV research implementation",
+      "zh": "RWKV 研究实现"
+    }
   },
   {
     "repositoryUrl": "https://github.com/ssg-qwq/RWKV-Light-API",
@@ -2632,7 +3248,11 @@
     "forks": 1,
     "language": "Python",
     "license": "Apache-2.0",
-    "sourcePage": 8
+    "sourcePage": 8,
+    "projectType": {
+      "en": "Inference service",
+      "zh": "推理服务"
+    }
   },
   {
     "repositoryUrl": "https://github.com/nlpodyssey/rwkv.f90",
@@ -2649,7 +3269,11 @@
     "forks": 2,
     "language": "Fortran",
     "license": "MIT",
-    "sourcePage": 8
+    "sourcePage": 8,
+    "projectType": {
+      "en": "Inference runtime",
+      "zh": "推理运行时"
+    }
   },
   {
     "repositoryUrl": "https://github.com/tensorpro/tpu_rwkv",
@@ -2666,7 +3290,11 @@
     "forks": 1,
     "language": "Python",
     "license": "Apache-2.0",
-    "sourcePage": 8
+    "sourcePage": 8,
+    "projectType": {
+      "en": "RWKV research implementation",
+      "zh": "RWKV 研究实现"
+    }
   },
   {
     "repositoryUrl": "https://github.com/Dan-wanna-M/rwkv-tensorrt",
@@ -2683,7 +3311,11 @@
     "forks": 1,
     "language": "Python",
     "license": "MIT",
-    "sourcePage": 8
+    "sourcePage": 8,
+    "projectType": {
+      "en": "Inference service",
+      "zh": "推理服务"
+    }
   },
   {
     "repositoryUrl": "https://github.com/123mbcz123/RWKV5-Tensorflow2.0",
@@ -2700,7 +3332,11 @@
     "forks": 0,
     "language": "Python",
     "license": null,
-    "sourcePage": 8
+    "sourcePage": 8,
+    "projectType": {
+      "en": "Training and fine-tuning",
+      "zh": "训练与微调"
+    }
   },
   {
     "repositoryUrl": "https://github.com/123mbcz123/RWKV-Tensorflow2.0",
@@ -2717,7 +3353,11 @@
     "forks": 0,
     "language": "Python",
     "license": null,
-    "sourcePage": 8
+    "sourcePage": 8,
+    "projectType": {
+      "en": "RWKV research implementation",
+      "zh": "RWKV 研究实现"
+    }
   },
   {
     "repositoryUrl": "https://github.com/KerfuffleV2/smolrsrwkv",
@@ -2734,7 +3374,11 @@
     "forks": 4,
     "language": "Rust",
     "license": "MIT",
-    "sourcePage": 2
+    "sourcePage": 2,
+    "projectType": {
+      "en": "Inference runtime",
+      "zh": "推理运行时"
+    }
   },
   {
     "repositoryUrl": "https://github.com/harrisonvanderbyl/rwkvstic",
@@ -2751,7 +3395,11 @@
     "forks": 16,
     "language": "Python",
     "license": "MIT",
-    "sourcePage": 9
+    "sourcePage": 9,
+    "projectType": {
+      "en": "Inference runtime",
+      "zh": "推理运行时"
+    }
   },
   {
     "repositoryUrl": "https://github.com/h-a-s-k/RWKV-Notebooks",
@@ -2768,7 +3416,11 @@
     "forks": 0,
     "language": "Jupyter Notebook",
     "license": null,
-    "sourcePage": 5
+    "sourcePage": 5,
+    "projectType": {
+      "en": "Training and fine-tuning",
+      "zh": "训练与微调"
+    }
   },
   {
     "repositoryUrl": "https://github.com/RWKV/RWKV-cpp-node",
@@ -2785,7 +3437,11 @@
     "forks": 5,
     "language": "JavaScript",
     "license": "MIT",
-    "sourcePage": 9
+    "sourcePage": 9,
+    "projectType": {
+      "en": "Runtime adapter",
+      "zh": "运行时适配器"
+    }
   },
   {
     "repositoryUrl": "https://github.com/seung7361/RWKV-Pytorch",
@@ -2802,7 +3458,11 @@
     "forks": 0,
     "language": "Python",
     "license": null,
-    "sourcePage": 9
+    "sourcePage": 9,
+    "projectType": {
+      "en": "Training and fine-tuning",
+      "zh": "训练与微调"
+    }
   },
   {
     "repositoryUrl": "https://github.com/ZTMIDGO/Android-RWKV-MIDI",
@@ -2819,7 +3479,11 @@
     "forks": 1,
     "language": "Java",
     "license": null,
-    "sourcePage": 9
+    "sourcePage": 9,
+    "projectType": {
+      "en": "End-user application",
+      "zh": "终端应用"
+    }
   },
   {
     "repositoryUrl": "https://github.com/ZTMIDGO/RWKV-Android",
@@ -2836,7 +3500,11 @@
     "forks": 12,
     "language": "Java",
     "license": null,
-    "sourcePage": 9
+    "sourcePage": 9,
+    "projectType": {
+      "en": "End-user application",
+      "zh": "终端应用"
+    }
   },
   {
     "repositoryUrl": "https://github.com/toughdata/fine-tune-rwkv",
@@ -2853,7 +3521,11 @@
     "forks": 1,
     "language": "Python",
     "license": null,
-    "sourcePage": 9
+    "sourcePage": 9,
+    "projectType": {
+      "en": "Training and fine-tuning",
+      "zh": "训练与微调"
+    }
   },
   {
     "repositoryUrl": "https://github.com/Ritanlisa/RWKV-MIDI-WebUI",
@@ -2870,7 +3542,11 @@
     "forks": 2,
     "language": "Python",
     "license": "MIT",
-    "sourcePage": 9
+    "sourcePage": 9,
+    "projectType": {
+      "en": "End-user application",
+      "zh": "终端应用"
+    }
   },
   {
     "repositoryUrl": "https://github.com/StarRing2022/HF-For-RWKVWorld-LoraAlpaca",
@@ -2887,7 +3563,11 @@
     "forks": 2,
     "language": "Python",
     "license": "Apache-2.0",
-    "sourcePage": 9
+    "sourcePage": 9,
+    "projectType": {
+      "en": "Training and fine-tuning",
+      "zh": "训练与微调"
+    }
   },
   {
     "repositoryUrl": "https://github.com/StarRing2022/RingRWKV",
@@ -2904,7 +3584,11 @@
     "forks": 3,
     "language": "Python",
     "license": "Apache-2.0",
-    "sourcePage": 9
+    "sourcePage": 9,
+    "projectType": {
+      "en": "Training and fine-tuning",
+      "zh": "训练与微调"
+    }
   },
   {
     "repositoryUrl": "https://github.com/TkskKurumi/rwkv_webapi",
@@ -2921,7 +3605,11 @@
     "forks": 1,
     "language": "Python",
     "license": null,
-    "sourcePage": 9
+    "sourcePage": 9,
+    "projectType": {
+      "en": "Inference service",
+      "zh": "推理服务"
+    }
   },
   {
     "repositoryUrl": "https://github.com/Triang-jyed-driung/RWKV-World-Finetune",
@@ -2938,7 +3626,11 @@
     "forks": 4,
     "language": "Jupyter Notebook",
     "license": "Apache-2.0",
-    "sourcePage": 9
+    "sourcePage": 9,
+    "projectType": {
+      "en": "Training and fine-tuning",
+      "zh": "训练与微调"
+    }
   },
   {
     "repositoryUrl": "https://github.com/ArEnSc/Production-RWKV",
@@ -2955,7 +3647,11 @@
     "forks": 6,
     "language": "Python",
     "license": "MIT",
-    "sourcePage": 9
+    "sourcePage": 9,
+    "projectType": {
+      "en": "Inference runtime",
+      "zh": "推理运行时"
+    }
   },
   {
     "repositoryUrl": "https://github.com/ZeldaHuang/rwkv-cpp-server",
@@ -2972,7 +3668,11 @@
     "forks": 0,
     "language": "C++",
     "license": null,
-    "sourcePage": 9
+    "sourcePage": 9,
+    "projectType": {
+      "en": "Inference service",
+      "zh": "推理服务"
+    }
   },
   {
     "repositoryUrl": "https://github.com/nenkoru/serverless-rwkv",
@@ -2989,7 +3689,11 @@
     "forks": 0,
     "language": "Python",
     "license": "MIT",
-    "sourcePage": 9
+    "sourcePage": 9,
+    "projectType": {
+      "en": "Inference service",
+      "zh": "推理服务"
+    }
   },
   {
     "repositoryUrl": "https://github.com/RWKV/rwkv-tensorflow",
@@ -3006,7 +3710,11 @@
     "forks": 1,
     "language": "Python",
     "license": null,
-    "sourcePage": 9
+    "sourcePage": 9,
+    "projectType": {
+      "en": "RWKV research implementation",
+      "zh": "RWKV 研究实现"
+    }
   },
   {
     "repositoryUrl": "https://github.com/HighCWu/rwkv-paddle",
@@ -3023,7 +3731,11 @@
     "forks": 2,
     "language": "Python",
     "license": "Apache-2.0",
-    "sourcePage": 9
+    "sourcePage": 9,
+    "projectType": {
+      "en": "Training and fine-tuning",
+      "zh": "训练与微调"
+    }
   },
   {
     "repositoryUrl": "https://github.com/Durham/RWKV-finetune-script",
@@ -3040,7 +3752,11 @@
     "forks": 5,
     "language": "Python",
     "license": "Apache-2.0",
-    "sourcePage": 10
+    "sourcePage": 10,
+    "projectType": {
+      "en": "Training and fine-tuning",
+      "zh": "训练与微调"
+    }
   },
   {
     "repositoryUrl": "https://github.com/mrsteyk/rwkvk-rs",
@@ -3057,7 +3773,11 @@
     "forks": 4,
     "language": "Rust",
     "license": "AGPL-3.0",
-    "sourcePage": 10
+    "sourcePage": 10,
+    "projectType": {
+      "en": "Inference service",
+      "zh": "推理服务"
+    }
   },
   {
     "repositoryUrl": "https://github.com/mrsteyk/RWKV-LM-deepspeed",
@@ -3074,7 +3794,11 @@
     "forks": 3,
     "language": "Python",
     "license": "Apache-2.0",
-    "sourcePage": 10
+    "sourcePage": 10,
+    "projectType": {
+      "en": "Training and fine-tuning",
+      "zh": "训练与微调"
+    }
   },
   {
     "repositoryUrl": "https://github.com/harrisonvanderbyl/rwkv-cpp",
@@ -3091,7 +3815,11 @@
     "forks": 0,
     "language": "C++",
     "license": null,
-    "sourcePage": 10
+    "sourcePage": 10,
+    "projectType": {
+      "en": "Inference service",
+      "zh": "推理服务"
+    }
   },
   {
     "repositoryUrl": "https://github.com/AXKuhta/rwkv-onnx-dml",
@@ -3108,7 +3836,11 @@
     "forks": 3,
     "language": "C++",
     "license": null,
-    "sourcePage": 10
+    "sourcePage": 10,
+    "projectType": {
+      "en": "Inference backend",
+      "zh": "推理后端"
+    }
   },
   {
     "repositoryUrl": "https://github.com/josephrocca/rwkv-v4-web",
@@ -3125,7 +3857,11 @@
     "forks": 13,
     "language": "Jupyter Notebook",
     "license": "MIT",
-    "sourcePage": 10
+    "sourcePage": 10,
+    "projectType": {
+      "en": "Inference runtime",
+      "zh": "推理运行时"
+    }
   },
   {
     "repositoryUrl": "https://github.com/mrsteyk/RWKV-LM-jax",
@@ -3142,7 +3878,11 @@
     "forks": 1,
     "language": "Jupyter Notebook",
     "license": null,
-    "sourcePage": 10
+    "sourcePage": 10,
+    "projectType": {
+      "en": "Training and fine-tuning",
+      "zh": "训练与微调"
+    }
   },
   {
     "repositoryUrl": "https://github.com/gururise/rwkv_gradio",
@@ -3159,7 +3899,11 @@
     "forks": 6,
     "language": "Python",
     "license": "GPL-3.0",
-    "sourcePage": 10
+    "sourcePage": 10,
+    "projectType": {
+      "en": "RWKV utility",
+      "zh": "RWKV 工具"
+    }
   },
   {
     "repositoryUrl": "https://github.com/nlpodyssey/rwkv",
@@ -3176,6 +3920,10 @@
     "forks": 4,
     "language": "Go",
     "license": "BSD-2-Clause",
-    "sourcePage": 10
+    "sourcePage": 10,
+    "projectType": {
+      "en": "Inference runtime",
+      "zh": "推理运行时"
+    }
   }
 ]
