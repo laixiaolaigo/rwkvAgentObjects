@@ -1,5 +1,47 @@
 [
   {
+    "repositoryUrl": "https://github.com/RWKV-APP/rwkv_mobile_flutter",
+    "owner": "RWKV-APP",
+    "name": "rwkv_mobile_flutter",
+    "category": "inference",
+    "summary": {
+      "en": "Flutter FFI bridge and runtime layer for on-device RWKV inference across mobile and desktop platforms.",
+      "zh": "面向移动端与桌面端设备内 RWKV 推理的 Flutter FFI 桥接和运行时层。"
+    },
+    "lastUpdated": "2026-09-21T06:18:41Z",
+    "stars": 20,
+    "watchers": 3,
+    "forks": 5,
+    "language": "Dart",
+    "license": "Apache-2.0",
+    "sourcePage": 3,
+    "projectType": {
+      "en": "End-user application",
+      "zh": "终端应用"
+    }
+  },
+  {
+    "repositoryUrl": "https://github.com/btlqql/sglang-rwkv7",
+    "owner": "btlqql",
+    "name": "sglang-rwkv7",
+    "category": "inference",
+    "summary": {
+      "en": "Independent SGLang distribution focused on production-grade RWKV-7 serving, recurrent state caching, speculative decoding, quantization, and broad GPU support.",
+      "zh": "sglang-rwkv7 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2026-09-21T04:17:55Z",
+    "stars": 0,
+    "watchers": 0,
+    "forks": 0,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "sourcePage": 2,
+    "projectType": {
+      "en": "Inference service",
+      "zh": "推理服务"
+    }
+  },
+  {
     "repositoryUrl": "https://github.com/rwkv-rs/any2rwkv",
     "owner": "rwkv-rs",
     "name": "any2rwkv",
@@ -93,7 +135,7 @@
       "zh": "面向 Android、iOS、Windows、macOS 与 Linux 的跨平台、本地优先 RWKV 聊天应用。"
     },
     "lastUpdated": "2026-09-18T04:59:05Z",
-    "stars": 125,
+    "stars": 126,
     "watchers": 4,
     "forks": 15,
     "language": "Dart",
@@ -252,27 +294,6 @@
     }
   },
   {
-    "repositoryUrl": "https://github.com/btlqql/sglang-rwkv7",
-    "owner": "btlqql",
-    "name": "sglang-rwkv7",
-    "category": "inference",
-    "summary": {
-      "en": "Independent SGLang distribution focused on production-grade RWKV-7 serving, recurrent state caching, speculative decoding, quantization, and broad GPU support.",
-      "zh": "sglang-rwkv7 提供 RWKV 模型推理、部署、运行时或服务支持。"
-    },
-    "lastUpdated": "2026-09-14T04:17:54Z",
-    "stars": 0,
-    "watchers": 0,
-    "forks": 0,
-    "language": "Python",
-    "license": "Apache-2.0",
-    "sourcePage": 2,
-    "projectType": {
-      "en": "Inference service",
-      "zh": "推理服务"
-    }
-  },
-  {
     "repositoryUrl": "https://github.com/KronosDP/rwkv-research",
     "owner": "KronosDP",
     "name": "rwkv-research",
@@ -357,27 +378,6 @@
     }
   },
   {
-    "repositoryUrl": "https://github.com/RWKV-APP/rwkv_mobile_flutter",
-    "owner": "RWKV-APP",
-    "name": "rwkv_mobile_flutter",
-    "category": "inference",
-    "summary": {
-      "en": "Flutter FFI bridge and runtime layer for on-device RWKV inference across mobile and desktop platforms.",
-      "zh": "面向移动端与桌面端设备内 RWKV 推理的 Flutter FFI 桥接和运行时层。"
-    },
-    "lastUpdated": "2026-09-06T22:09:44Z",
-    "stars": 20,
-    "watchers": 3,
-    "forks": 5,
-    "language": "Dart",
-    "license": "Apache-2.0",
-    "sourcePage": 3,
-    "projectType": {
-      "en": "End-user application",
-      "zh": "终端应用"
-    }
-  },
-  {
     "repositoryUrl": "https://github.com/Pangu-Immortal/MagicWX",
     "owner": "Pangu-Immortal",
     "name": "MagicWX",
@@ -429,7 +429,7 @@
       "zh": "带桌面界面和 OpenAI 兼容 API 的 RWKV 自动化管理与启动工具。"
     },
     "lastUpdated": "2026-09-04T13:37:10Z",
-    "stars": 6482,
+    "stars": 6483,
     "watchers": 48,
     "forks": 601,
     "language": "TypeScript",
@@ -450,7 +450,7 @@
       "zh": "RWKV 语言模型主仓库，包含模型架构、训练代码、CUDA 内核与示例。"
     },
     "lastUpdated": "2026-09-03T03:29:42Z",
-    "stars": 14711,
+    "stars": 14713,
     "watchers": 137,
     "forks": 1020,
     "language": "Python",
@@ -828,7 +828,7 @@
       "zh": "用于本地运行 RWKV 语言模型的参考聊天与推理实现。"
     },
     "lastUpdated": "2026-07-19T19:09:29Z",
-    "stars": 9497,
+    "stars": 9498,
     "watchers": 96,
     "forks": 685,
     "language": "Python",
@@ -870,7 +870,7 @@
       "zh": "基于 NVIDIA Megatron-Core 的 RWKV-6/7 分布式训练框架。"
     },
     "lastUpdated": "2026-07-06T09:12:16Z",
-    "stars": 2,
+    "stars": 7,
     "watchers": 0,
     "forks": 0,
     "language": "Python",
@@ -2109,7 +2109,7 @@
       "zh": "使用 RWKV 中文预训练生成模型的小说写作应用。"
     },
     "lastUpdated": "2025-05-15T10:31:45Z",
-    "stars": 3896,
+    "stars": 3897,
     "watchers": 51,
     "forks": 571,
     "language": "Python",
