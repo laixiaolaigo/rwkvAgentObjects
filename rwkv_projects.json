@@ -8,7 +8,7 @@
       "en": "Research tools for converting attention-based architectures to RWKV through layerwise distillation.",
       "zh": "通过逐层蒸馏将注意力架构转换为 RWKV 的研究与训练工具。"
     },
-    "lastUpdated": "2026-09-20T03:58:33Z",
+    "lastUpdated": "2026-09-20T15:54:03Z",
     "stars": 3,
     "watchers": 0,
     "forks": 0,
@@ -450,7 +450,7 @@
       "zh": "RWKV 语言模型主仓库，包含模型架构、训练代码、CUDA 内核与示例。"
     },
     "lastUpdated": "2026-09-03T03:29:42Z",
-    "stars": 14712,
+    "stars": 14711,
     "watchers": 137,
     "forks": 1020,
     "language": "Python",
@@ -1689,7 +1689,7 @@
       "zh": "面向多模态任务的 RWKV 视觉扩展，包含模型代码、训练方案与评测。"
     },
     "lastUpdated": "2026-01-13T08:13:18Z",
-    "stars": 247,
+    "stars": 246,
     "watchers": 6,
     "forks": 19,
     "language": "Python",
@@ -1899,7 +1899,7 @@
       "zh": "RWKV-LM-RLHF 提供 RWKV 模型训练、微调或架构实验工具。"
     },
     "lastUpdated": "2025-09-19T19:58:51Z",
-    "stars": 63,
+    "stars": 64,
     "watchers": 2,
     "forks": 6,
     "language": "Python",
@@ -2109,7 +2109,7 @@
       "zh": "使用 RWKV 中文预训练生成模型的小说写作应用。"
     },
     "lastUpdated": "2025-05-15T10:31:45Z",
-    "stars": 3893,
+    "stars": 3896,
     "watchers": 51,
     "forks": 571,
     "language": "Python",
