@@ -1,5 +1,167 @@
 ﻿[
     {
+        "创建用户名": "Nice0o0",
+        "用户头像": "https://avatars.githubusercontent.com/u/70088382?v=4",
+        "GitHub地址": "https://github.com/Nice0o0/stateswap",
+        "项目名称": "stateswap",
+        "创建时间": "2026-08-30T15:28:20Z",
+        "最后更新时间": "2026-09-21T02:56:31Z",
+        "主要语言": "Python",
+        "许可证": "MIT",
+        "Stars": 1,
+        "Watch": 0,
+        "Fork": 0,
+        "项目类型": {
+            "en": "RWKV persona-state training and hot-swap runtime",
+            "zh": "RWKV人格状态训练与热切换运行时"
+        },
+        "介绍": {
+            "en": "An RWKV-7 initial-state tuning and serving project. It freezes the base-model weights, trains compact S0 states for personas or task modes, and hot-swaps them per session through an OpenAI-compatible API and WebUI. It also provides state mixing, low-rank and int8 compression, O(1) recurrent multi-turn sessions, evaluation tools, and reproducible state-behavior research.",
+            "zh": "面向RWKV-7的初始状态微调与服务项目。它冻结基座模型权重，为人格或任务模式训练紧凑的S0状态，并通过OpenAI兼容API与WebUI按Session热切换；同时提供状态混合、低秩与int8压缩、O(1)循环多轮会话、评测工具及可复现的状态行为研究。"
+        },
+        "Agent循环判断": {
+            "en": "The repository does not implement an autonomous plan-act-observe tool loop. Its session state, persona registry, hot-swap API, and task-mode states can serve as identity and recurrent-memory infrastructure inside an agent system, but external orchestration is required for tool selection and execution.",
+            "zh": "仓库没有实现自主的“规划、行动、观察”工具循环。其Session状态、人格注册表、热切换API与任务模式状态可作为Agent系统中的身份和循环记忆基础设施，但工具选择与执行仍需要外部编排。"
+        },
+        "主要能力": {
+            "en": [
+                "S0 state tuning for personas, styles, and task modes with frozen model weights",
+                "Millisecond persona hot-swap and per-session O(1) recurrent conversation state",
+                "OpenAI-compatible API, streaming chat WebUI, persona mixer, and training interface",
+                "Int8 and low-rank state compression plus state arithmetic and editing",
+                "Reproducible evaluation and research artifacts for RWKV initial-state behavior"
+            ],
+            "zh": [
+                "冻结模型权重的人格、风格与任务模式S0状态微调",
+                "毫秒级人格热切换与每Session O(1)循环会话状态",
+                "OpenAI兼容API、流式聊天WebUI、人格混合器与训练界面",
+                "int8与低秩状态压缩，以及状态算术和编辑",
+                "可复现的RWKV初始状态行为评测与研究产物"
+            ]
+        },
+        "已知限制": {
+            "en": [
+                "Not a complete autonomous agent and does not provide a tool-execution loop",
+                "S0 tuning changes behavior and task priors but cannot add new factual knowledge",
+                "The documented reproduction stack targets Windows or Linux with an NVIDIA GPU and Python 3.12+",
+                "Conversation quality remains bounded by the frozen base model"
+            ],
+            "zh": [
+                "不是完整自主Agent，也不提供工具执行循环",
+                "S0微调可改变行为与任务先验，但不能注入新的事实知识",
+                "文档中的复现环境主要面向Windows或Linux、NVIDIA GPU与Python 3.12+",
+                "会话质量仍受冻结基座模型能力上限约束"
+            ]
+        },
+        "支持平台": {
+            "en": "Documented for Windows and Linux with NVIDIA CUDA GPUs; exposes local Python, HTTP API, and browser WebUI interfaces",
+            "zh": "文档主要支持Windows与Linux上的NVIDIA CUDA GPU，并提供本地Python、HTTP API和浏览器WebUI接口"
+        },
+        "信息来源": {
+            "en": [
+                "GitHub repository metadata",
+                "Project README and architecture documentation",
+                "Published benchmark and research reports in the repository"
+            ],
+            "zh": [
+                "GitHub仓库元数据",
+                "项目README与架构文档",
+                "仓库内发布的基准与研究报告"
+            ]
+        },
+        "分类结论": {
+            "en": "Agent persona and state infrastructure",
+            "zh": "Agent人格与状态基础设施"
+        },
+        "分类依据": {
+            "en": "The project provides reusable persona, task-mode, and recurrent-session state infrastructure that can materially shape an RWKV agent, but it does not independently choose tools or run an autonomous agent loop.",
+            "zh": "项目提供可复用的人格、任务模式与循环Session状态基础设施，能够实质性支撑RWKV Agent，但自身不负责工具选择，也不运行自主Agent循环。"
+        }
+    },
+    {
+        "创建用户名": "1cyberlangke1",
+        "作者备注": {
+            "en": "The README states that the project code was written with AI assistance.",
+            "zh": "README注明项目代码由AI编写。"
+        },
+        "用户头像": "https://avatars.githubusercontent.com/u/145818885?v=4",
+        "GitHub地址": "https://github.com/1cyberlangke1/rwkv-jev-like",
+        "项目名称": "rwkv-jev-like",
+        "创建时间": "2026-09-20T10:22:34Z",
+        "最后更新时间": "2026-09-20T10:35:09Z",
+        "主要语言": "Python",
+        "许可证": "MIT",
+        "Stars": 1,
+        "Watch": 0,
+        "Fork": 0,
+        "项目类型": {
+            "en": "Zero-generation structured decision runtime for RWKV-7",
+            "zh": "RWKV-7零生成结构化决策运行时"
+        },
+        "介绍": {
+            "en": "A TypeSafe Jev-compatible structured decision runtime for RWKV-7. Instead of autoregressive text generation, it scores a fixed candidate set at decision slots and returns normalized probabilities for Choice, Score, and Noul primitives. It includes a Python SDK, FastAPI service, WebUI, model downloader, evaluation cases, and CPU/CUDA execution strategies without requiring fine-tuning or distillation.",
+            "zh": "面向RWKV-7、兼容TypeSafe Jev契约的结构化决策运行时。它不进行自回归文本生成，而是在决策槽位对固定候选集打分，并为Choice、Score与Noul原语返回归一化概率；同时提供Python SDK、FastAPI服务、WebUI、模型下载器、评测用例及CPU/CUDA执行策略，无需微调或蒸馏。"
+        },
+        "Agent循环判断": {
+            "en": "The repository implements a bounded decision primitive rather than an autonomous agent loop. It does not plan, execute tools, ingest observations, and iterate by itself; an external agent can call it as a deterministic router, classifier, scorer, or policy decision component.",
+            "zh": "仓库实现的是受约束决策原语，而非自主Agent循环。它自身不会完成规划、工具执行、观察读取和持续迭代；外部Agent可将其作为确定性的路由、分类、评分或策略决策组件调用。"
+        },
+        "主要能力": {
+            "en": [
+                "Choice decisions constrained to a predefined candidate set with normalized probabilities",
+                "Discrete Score evaluation and Noul boolean-probability decisions",
+                "Prefix-tree disambiguation for candidates sharing token prefixes",
+                "Independent context slices for multiple questions in one request",
+                "Local Python SDK, OpenAI-style HTTP endpoint, bilingual WebUI, and reproducible evaluations"
+            ],
+            "zh": [
+                "严格限制在预定义候选集内、返回归一化概率的Choice决策",
+                "离散Score评分与Noul布尔概率判断",
+                "针对共享Token前缀候选项的前缀树消歧",
+                "单次请求内多问题的独立上下文切片",
+                "本地Python SDK、OpenAI风格HTTP接口、双语WebUI与可复现评测"
+            ]
+        },
+        "已知限制": {
+            "en": [
+                "Not a complete agent and does not execute tools or maintain an autonomous loop",
+                "Output is intentionally restricted to predefined choices rather than free-form generation",
+                "Accuracy on counterintuitive logic and compound multi-question cases is limited by the small base models",
+                "Model-size improvements are not monotonic across every evaluated task"
+            ],
+            "zh": [
+                "不是完整Agent，不执行工具，也不维护自主循环",
+                "输出有意限制在预定义候选项中，不支持自由文本生成",
+                "反常识逻辑与复合多问场景的准确率受轻量基座模型限制",
+                "不同模型规模在各评测任务上的提升并非单调"
+            ]
+        },
+        "支持平台": {
+            "en": "Local Python runtime with CUDA FP16 or CPU FP32 execution; includes an HTTP service and browser WebUI",
+            "zh": "本地Python运行时，支持CUDA FP16或CPU FP32执行，并包含HTTP服务与浏览器WebUI"
+        },
+        "信息来源": {
+            "en": [
+                "GitHub repository metadata",
+                "Project README",
+                "Published usability and performance evaluation descriptions"
+            ],
+            "zh": [
+                "GitHub仓库元数据",
+                "项目README",
+                "已发布的可用性与性能评测说明"
+            ]
+        },
+        "分类结论": {
+            "en": "Agent decision infrastructure",
+            "zh": "Agent决策基础设施"
+        },
+        "分类依据": {
+            "en": "Its constrained Choice, Score, and Noul contracts are directly reusable for agent routing and policy decisions, while the absence of planning, tool execution, observation feedback, and iteration means it should not be labeled a strict agent.",
+            "zh": "其受约束的Choice、Score与Noul契约可直接用于Agent路由和策略决策；但由于缺少规划、工具执行、观察反馈与迭代，因此不应标为严格Agent。"
+        }
+    },
+    {
         "创建用户名":  "No-22-Github",
         "作者备注":  null,
         "用户头像":  "https://avatars.githubusercontent.com/u/132265925?v=4",
