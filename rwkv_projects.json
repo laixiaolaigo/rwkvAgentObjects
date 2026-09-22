@@ -1,5 +1,68 @@
 [
   {
+    "repositoryUrl": "https://github.com/Alic-Li/rwkv_lightning_cuda",
+    "owner": "Alic-Li",
+    "name": "rwkv_lightning_cuda",
+    "category": "inference",
+    "summary": {
+      "en": "The fastest pure C++ GPU runtime for RWKV — zero PyTorch, one-command deployment, CUDA/ROCm inference, quantization, state tuning & serving.🕊",
+      "zh": "rwkv_lightning_cuda 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2026-09-22T07:37:54Z",
+    "stars": 7,
+    "watchers": 0,
+    "forks": 3,
+    "language": "C++",
+    "license": null,
+    "sourcePage": 1,
+    "projectType": {
+      "en": "Inference service",
+      "zh": "推理服务"
+    }
+  },
+  {
+    "repositoryUrl": "https://github.com/cgisky1980/rwkv-rsv",
+    "owner": "cgisky1980",
+    "name": "rwkv-rsv",
+    "category": "inference",
+    "summary": {
+      "en": "RWKV-7 inference engine in Rust (Vulkan compute shaders) with fp16/any4/int8 quantization paths",
+      "zh": "rwkv-rsv 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2026-09-22T02:07:11Z",
+    "stars": 4,
+    "watchers": 0,
+    "forks": 0,
+    "language": "Rust",
+    "license": "MIT",
+    "sourcePage": 1,
+    "projectType": {
+      "en": "Quantization and compression",
+      "zh": "量化与压缩"
+    }
+  },
+  {
+    "repositoryUrl": "https://github.com/BlinkDL/RWKV-LM",
+    "owner": "BlinkDL",
+    "name": "RWKV-LM",
+    "category": "training",
+    "summary": {
+      "en": "The primary RWKV language-model repository, including architecture, training code, CUDA kernels, and examples.",
+      "zh": "RWKV 语言模型主仓库，包含模型架构、训练代码、CUDA 内核与示例。"
+    },
+    "lastUpdated": "2026-09-21T13:31:47Z",
+    "stars": 14713,
+    "watchers": 137,
+    "forks": 1020,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "sourcePage": 1,
+    "projectType": {
+      "en": "Training and fine-tuning",
+      "zh": "训练与微调"
+    }
+  },
+  {
     "repositoryUrl": "https://github.com/RWKV-APP/rwkv_mobile_flutter",
     "owner": "RWKV-APP",
     "name": "rwkv_mobile_flutter",
@@ -81,27 +144,6 @@
     "projectType": {
       "en": "End-user application",
       "zh": "终端应用"
-    }
-  },
-  {
-    "repositoryUrl": "https://github.com/Alic-Li/rwkv_lightning_cuda",
-    "owner": "Alic-Li",
-    "name": "rwkv_lightning_cuda",
-    "category": "inference",
-    "summary": {
-      "en": "The fastest pure C++ GPU runtime for RWKV — zero PyTorch, one-command deployment, CUDA/ROCm inference, quantization, state tuning & serving.🕊",
-      "zh": "rwkv_lightning_cuda 提供 RWKV 模型推理、部署、运行时或服务支持。"
-    },
-    "lastUpdated": "2026-09-19T04:57:02Z",
-    "stars": 7,
-    "watchers": 0,
-    "forks": 3,
-    "language": "C++",
-    "license": null,
-    "sourcePage": 1,
-    "projectType": {
-      "en": "Inference service",
-      "zh": "推理服务"
     }
   },
   {
@@ -219,9 +261,9 @@
       "zh": "从零构建 GLM4、Llama 3 与 RWKV-6 的中文实践课程。"
     },
     "lastUpdated": "2026-09-17T03:01:54Z",
-    "stars": 4370,
+    "stars": 4372,
     "watchers": 37,
-    "forks": 598,
+    "forks": 599,
     "language": "Jupyter Notebook",
     "license": "NOASSERTION",
     "sourcePage": 1,
@@ -441,27 +483,6 @@
     }
   },
   {
-    "repositoryUrl": "https://github.com/BlinkDL/RWKV-LM",
-    "owner": "BlinkDL",
-    "name": "RWKV-LM",
-    "category": "training",
-    "summary": {
-      "en": "The primary RWKV language-model repository, including architecture, training code, CUDA kernels, and examples.",
-      "zh": "RWKV 语言模型主仓库，包含模型架构、训练代码、CUDA 内核与示例。"
-    },
-    "lastUpdated": "2026-09-03T03:29:42Z",
-    "stars": 14713,
-    "watchers": 137,
-    "forks": 1020,
-    "language": "Python",
-    "license": "Apache-2.0",
-    "sourcePage": 1,
-    "projectType": {
-      "en": "Training and fine-tuning",
-      "zh": "训练与微调"
-    }
-  },
-  {
     "repositoryUrl": "https://github.com/xiaol/WuNeng",
     "owner": "xiaol",
     "name": "WuNeng",
@@ -522,27 +543,6 @@
     "projectType": {
       "en": "Inference service",
       "zh": "推理服务"
-    }
-  },
-  {
-    "repositoryUrl": "https://github.com/cgisky1980/rwkv-rsv",
-    "owner": "cgisky1980",
-    "name": "rwkv-rsv",
-    "category": "inference",
-    "summary": {
-      "en": "RWKV-7 inference engine in Rust (Vulkan compute shaders) with fp16/any4/int8 quantization paths",
-      "zh": "rwkv-rsv 提供 RWKV 模型推理、部署、运行时或服务支持。"
-    },
-    "lastUpdated": "2026-08-24T18:11:08Z",
-    "stars": 4,
-    "watchers": 0,
-    "forks": 0,
-    "language": "Rust",
-    "license": "MIT",
-    "sourcePage": 1,
-    "projectType": {
-      "en": "Quantization and compression",
-      "zh": "量化与压缩"
     }
   },
   {
@@ -870,7 +870,7 @@
       "zh": "基于 NVIDIA Megatron-Core 的 RWKV-6/7 分布式训练框架。"
     },
     "lastUpdated": "2026-07-06T09:12:16Z",
-    "stars": 7,
+    "stars": 18,
     "watchers": 0,
     "forks": 0,
     "language": "Python",
@@ -1607,7 +1607,7 @@
     "lastUpdated": "2026-01-30T20:52:36Z",
     "stars": 2071,
     "watchers": 26,
-    "forks": 182,
+    "forks": 183,
     "language": "C",
     "license": "MIT",
     "sourcePage": 1,
@@ -2109,7 +2109,7 @@
       "zh": "使用 RWKV 中文预训练生成模型的小说写作应用。"
     },
     "lastUpdated": "2025-05-15T10:31:45Z",
-    "stars": 3897,
+    "stars": 3898,
     "watchers": 51,
     "forks": 571,
     "language": "Python",
@@ -2256,7 +2256,7 @@
       "zh": "支持 INT4、INT5、INT8 与 FP16 的 RWKV 量化 CPU 推理运行时。"
     },
     "lastUpdated": "2025-03-23T05:04:42Z",
-    "stars": 1584,
+    "stars": 1585,
     "watchers": 23,
     "forks": 130,
     "language": "C++",
@@ -2445,7 +2445,7 @@
       "zh": "支持知识库、多模型后端与私有化部署的本地优先大模型应用平台。"
     },
     "lastUpdated": "2025-01-23T12:55:35Z",
-    "stars": 6151,
+    "stars": 6150,
     "watchers": 78,
     "forks": 784,
     "language": "JavaScript",
