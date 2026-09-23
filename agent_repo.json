@@ -1,5 +1,13 @@
 [
   {
+    "projectName": "RWKV-Agent",
+    "repositoryUrl": "https://github.com/No-22-Github/RWKV-Agent",
+    "lastUpdated": "2026-09-23T07:32:49Z",
+    "stars": 2,
+    "forks": 1,
+    "watchers": 0
+  },
+  {
     "projectName": "stateswap",
     "repositoryUrl": "https://github.com/Nice0o0/stateswap",
     "lastUpdated": "2026-09-21T16:03:02Z",
@@ -11,14 +19,6 @@
     "projectName": "RWKV-LH",
     "repositoryUrl": "https://github.com/rwkv-rs/RWKV-LH",
     "lastUpdated": "2026-09-21T06:40:20Z",
-    "stars": 2,
-    "forks": 0,
-    "watchers": 0
-  },
-  {
-    "projectName": "RWKV-Agent",
-    "repositoryUrl": "https://github.com/No-22-Github/RWKV-Agent",
-    "lastUpdated": "2026-09-21T06:14:40Z",
     "stars": 2,
     "forks": 0,
     "watchers": 0
