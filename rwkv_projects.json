@@ -51,7 +51,7 @@
       "zh": "RWKV 语言模型主仓库，包含模型架构、训练代码、CUDA 内核与示例。"
     },
     "lastUpdated": "2026-09-21T13:31:47Z",
-    "stars": 14717,
+    "stars": 14718,
     "watchers": 137,
     "forks": 1021,
     "language": "Python",
@@ -261,7 +261,7 @@
       "zh": "从零构建 GLM4、Llama 3 与 RWKV-6 的中文实践课程。"
     },
     "lastUpdated": "2026-09-17T03:01:54Z",
-    "stars": 4377,
+    "stars": 4376,
     "watchers": 37,
     "forks": 599,
     "language": "Jupyter Notebook",

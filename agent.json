@@ -9,7 +9,7 @@
         "GitHub地址": "https://github.com/xiaol/Gut-RWKV-Jev-laya",
         "项目名称": "Gut-RWKV-Jev-laya",
         "创建时间": "2026-09-22T00:46:28Z",
-        "最后更新时间": "2026-09-24T08:23:47Z",
+        "最后更新时间": "2026-09-24T09:47:05Z",
         "主要语言": "Python",
         "许可证": null,
         "Stars": 1,
@@ -79,7 +79,8 @@
             "en": "Its constrained typed decisions are reusable by an Agent for routing and policy control, but it does not implement the autonomous tool loop itself.",
             "zh": "其受约束类型化决策可被Agent用于路由和策略控制，但项目自身没有实现自主工具循环。"
         }
-    },    {
+    },
+    {
         "创建用户名": "cgisky1980",
         "作者备注": {
             "en": "Ai00-X ecosystem maintainer",
