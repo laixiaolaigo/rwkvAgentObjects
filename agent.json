@@ -1,5 +1,85 @@
 ﻿[
     {
+        "创建用户名": "xiaol",
+        "作者备注": {
+            "en": "Experimental Jev-style RWKV decision model.",
+            "zh": "实验性Jev式RWKV决策模型。"
+        },
+        "用户头像": "https://avatars.githubusercontent.com/u/1669515?v=4",
+        "GitHub地址": "https://github.com/xiaol/Gut-RWKV-Jev-laya",
+        "项目名称": "Gut-RWKV-Jev-laya",
+        "创建时间": "2026-09-22T00:46:28Z",
+        "最后更新时间": "2026-09-24T08:23:47Z",
+        "主要语言": "Python",
+        "许可证": null,
+        "Stars": 1,
+        "Watch": 0,
+        "Fork": 0,
+        "项目类型": {
+            "en": "Typed RWKV decision infrastructure",
+            "zh": "类型化RWKV决策基础设施"
+        },
+        "介绍": {
+            "en": "An experimental Jev-style decision model built on RWKV-7 G1k 3B. It handles typed Choice, Noul, and Score questions and returns constrained probability distributions without generating answer tokens. It includes state tuning, recurrent branching, a local SDK, HTTP service, WebUI, and reproducible evaluations.",
+            "zh": "基于RWKV-7 G1k 3B的实验性Jev式决策模型。支持类型化Choice、Noul和Score问题，在不生成答案Token的情况下返回受约束概率分布，并提供状态微调、循环分支、本地SDK、HTTP服务、WebUI和可复现评测。"
+        },
+        "Agent循环判断": {
+            "en": "This is a typed decision component rather than a complete autonomous Agent. It does not plan tasks or execute tools, but an external Agent can use its outputs for routing, policy, and structured decisions.",
+            "zh": "这是类型化决策组件而非完整自主Agent。它不负责任务规划或工具执行，但外部Agent可以使用其输出进行路由、策略和结构化决策。"
+        },
+        "主要能力": {
+            "en": [
+                "Typed Choice, Noul, and Score decisions",
+                "RWKV recurrent branching with shared context prefill",
+                "Initial-state tuning with frozen base weights",
+                "Local SDK, HTTP endpoint, browser demo, and evaluation tools"
+            ],
+            "zh": [
+                "类型化Choice、Noul与Score决策",
+                "共享上下文预填充的RWKV循环分支",
+                "冻结基座权重的初始状态微调",
+                "本地SDK、HTTP接口、浏览器演示与评测工具"
+            ]
+        },
+        "已知限制": {
+            "en": [
+                "Research prototype, not a general-purpose Agent",
+                "No built-in planning, tool execution, or observation loop",
+                "Accuracy depends on the frozen RWKV base model",
+                "CUDA reproduction requires a compatible NVIDIA toolchain"
+            ],
+            "zh": [
+                "研究原型，不是通用自主Agent",
+                "没有内置规划、工具执行或观察循环",
+                "准确率受冻结RWKV基座影响",
+                "CUDA复现需要兼容的NVIDIA工具链"
+            ]
+        },
+        "支持平台": {
+            "en": "Local Python runtime with CUDA and CPU reference paths, plus HTTP and browser interfaces",
+            "zh": "支持CUDA和CPU参考路径的本地Python运行时，并提供HTTP与浏览器接口"
+        },
+        "信息来源": {
+            "en": [
+                "GitHub metadata",
+                "Project README",
+                "Published experiment documents"
+            ],
+            "zh": [
+                "GitHub元数据",
+                "项目README",
+                "项目内实验文档"
+            ]
+        },
+        "分类结论": {
+            "en": "Agent decision infrastructure",
+            "zh": "Agent决策基础设施"
+        },
+        "分类依据": {
+            "en": "Its constrained typed decisions are reusable by an Agent for routing and policy control, but it does not implement the autonomous tool loop itself.",
+            "zh": "其受约束类型化决策可被Agent用于路由和策略控制，但项目自身没有实现自主工具循环。"
+        }
+    },    {
         "创建用户名": "cgisky1980",
         "作者备注": {
             "en": "Ai00-X ecosystem maintainer",
@@ -132,6 +212,168 @@
         "分类依据":  {
             "en": "The project explicitly centers on an agent protocol, tool calling, and a continuous execution loop. Existing problems with tool feedback, directory correction, and loop implementation are implementation defects and do not change its status as an agent project.",
             "zh": "项目明确以Agent协议、工具调用和持续执行循环为核心；现有工具反馈、目录纠错和循环实现问题属于实现缺陷，不改变其Agent项目属性。"
+        }
+    },
+    {
+        "创建用户名": "wangkeyu-u",
+        "用户头像": "https://avatars.githubusercontent.com/u/189725962?v=4",
+        "GitHub地址": "https://github.com/wangkeyu-u/rwkv-statetrace-agent",
+        "项目名称": "rwkv-statetrace-agent",
+        "创建时间": "2026-08-12T03:05:06Z",
+        "最后更新时间": "2026-09-23T02:42:57Z",
+        "主要语言": "Python",
+        "许可证": "MIT",
+        "Stars": 0,
+        "Watch": 0,
+        "Fork": 0,
+        "项目类型": {
+            "en": "Auditable RWKV code-diagnosis Agent runtime",
+            "zh": "可审计的RWKV代码诊断Agent运行时"
+        },
+        "介绍": {
+            "en": "A code-diagnosis Agent runtime with replayable traces, evidence validation, structured tool actions, and verified task checkpoints. It supports direct RWKV adapters, OpenAI-compatible RWKV APIs, and deterministic replay.",
+            "zh": "带可重放轨迹、证据校验、结构化工具动作和任务检查点验证的代码诊断Agent运行时。支持直接RWKV适配器、OpenAI兼容RWKV API和确定性Replay。"
+        },
+        "Agent循环判断": {
+            "en": "It implements a bounded model-tool-observation loop: the model selects structured actions, the controller validates and executes tools, records evidence, feeds observations back, and validates the final report.",
+            "zh": "实现有界的模型—工具—观察循环：模型选择结构化动作，控制器校验并执行工具、记录证据、反馈观察结果，并校验最终报告。"
+        },
+        "主要能力": {
+            "en": [
+                "Structured tool selection with bounded execution",
+                "Replayable traces and evidence IDs",
+                "Checkpoint integrity and task recovery",
+                "Deterministic final-report validation",
+                "Direct RWKV, API, and replay modes"
+            ],
+            "zh": [
+                "带有界执行的结构化工具选择",
+                "可重放轨迹与证据ID",
+                "检查点完整性与任务恢复",
+                "最终报告确定性校验",
+                "直接RWKV、API和Replay模式"
+            ]
+        },
+        "已知限制": {
+            "en": [
+                "Engineering demonstration, not a production security sandbox",
+                "Replay is recorded behavior, not live inference",
+                "The standard text API does not expose native RWKV tensors",
+                "Native checkpoint claims require a compatible direct adapter"
+            ],
+            "zh": [
+                "工程演示，不是生产级安全沙箱",
+                "Replay是录制行为，不是实时推理",
+                "标准文本API不会暴露原生RWKV张量",
+                "原生检查点结论需要兼容的直接适配器"
+            ]
+        },
+        "支持平台": {
+            "en": "Python runtime with local adapters, OpenAI-compatible API mode, and deterministic replay",
+            "zh": "支持本地适配器、OpenAI兼容API模式和确定性Replay的Python运行时"
+        },
+        "信息来源": {
+            "en": [
+                "GitHub metadata",
+                "Project README",
+                "Agent loop and experiment documents"
+            ],
+            "zh": [
+                "GitHub元数据",
+                "项目README",
+                "Agent循环与实验文档"
+            ]
+        },
+        "分类结论": {
+            "en": "Strict Agent",
+            "zh": "严格Agent"
+        },
+        "分类依据": {
+            "en": "The repository implements an action, tool execution, evidence feedback, and report-validation loop with recoverable task state.",
+            "zh": "仓库实现了动作选择、工具执行、证据反馈和报告校验闭环，并支持可恢复任务状态。"
+        }
+    },
+    {
+        "创建用户名": "XingQiPan",
+        "作者备注": {
+            "en": "Jev-style RWKV-7 decision engine with a TypeSafe-compatible interface.",
+            "zh": "采用TypeSafe兼容接口的Jev式RWKV-7决策引擎。"
+        },
+        "用户头像": "https://avatars.githubusercontent.com/u/96061103?v=4",
+        "GitHub地址": "https://github.com/XingQiPan/rwkv-jev",
+        "项目名称": "rwkv-jev",
+        "创建时间": "2026-09-22T10:28:28Z",
+        "最后更新时间": "2026-09-22T10:32:18Z",
+        "主要语言": "Python",
+        "许可证": "MIT",
+        "Stars": 1,
+        "Watch": 0,
+        "Fork": 0,
+        "项目类型": {
+            "en": "RWKV structured decision engine",
+            "zh": "RWKV结构化决策引擎"
+        },
+        "介绍": {
+            "en": "A Jev-class RWKV-7 decision model compatible with TypeSafe's /v1/systemone contract. It reads typed Choice, Noul, and Score decisions from a constrained softmax over an exact label set and provides local CUDA and CPU backends.",
+            "zh": "兼容TypeSafe /v1/systemone契约的Jev类RWKV-7决策模型。在精确标签集上通过受约束softmax读取Choice、Noul和Score决策，并提供本地CUDA与CPU后端。"
+        },
+        "Agent循环判断": {
+            "en": "This is a decision engine, not a standalone autonomous Agent. It does not perform planning or tool execution, but can serve as an external Agent's classifier, router, scorer, or policy component.",
+            "zh": "这是决策引擎而非独立自主Agent。不执行规划或工具调用，但可作为外部Agent的分类器、路由器、评分器或策略组件。"
+        },
+        "主要能力": {
+            "en": [
+                "TypeSafe-compatible /v1/systemone contract",
+                "Choice, Noul, and Score primitives",
+                "Constrained softmax over exact labels",
+                "RWKV-7 CUDA and reference CPU backends",
+                "JevBench public-set evaluation"
+            ],
+            "zh": [
+                "兼容TypeSafe的/v1/systemone契约",
+                "Choice、Noul与Score原语",
+                "精确候选标签集上的受约束softmax",
+                "RWKV-7 CUDA与CPU参考后端",
+                "JevBench公开集评测"
+            ]
+        },
+        "已知限制": {
+            "en": [
+                "Not a complete Agent and has no tool-execution loop",
+                "Primary backend requires NVIDIA GPU and CUDA",
+                "Weights must be downloaded separately",
+                "Accuracy is a self-measured public-set result"
+            ],
+            "zh": [
+                "不是完整Agent且没有工具执行循环",
+                "主后端需要NVIDIA GPU与CUDA",
+                "模型权重需单独下载",
+                "准确率是公开集自测结果"
+            ]
+        },
+        "支持平台": {
+            "en": "Python 3.10+ with PyTorch; CUDA FP16 primary backend and slower CPU reference backend",
+            "zh": "基于Python 3.10+与PyTorch，主路径为CUDA FP16并提供较慢CPU参考后端"
+        },
+        "信息来源": {
+            "en": [
+                "GitHub metadata",
+                "Project README",
+                "JevBench self-measurement documentation"
+            ],
+            "zh": [
+                "GitHub元数据",
+                "项目README",
+                "JevBench自测文档"
+            ]
+        },
+        "分类结论": {
+            "en": "Agent decision infrastructure",
+            "zh": "Agent决策基础设施"
+        },
+        "分类依据": {
+            "en": "Its typed constrained decisions are useful as an Agent policy and routing component, but it does not implement autonomous planning, tool calls, or observation feedback.",
+            "zh": "其类型化受约束决策适合作为Agent策略和路由组件，但没有实现自主规划、工具调用或观察反馈。"
         }
     },
     {

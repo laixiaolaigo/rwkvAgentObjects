@@ -1,5 +1,13 @@
 [
   {
+    "projectName": "Gut-RWKV-Jev-laya",
+    "repositoryUrl": "https://github.com/xiaol/Gut-RWKV-Jev-laya",
+    "lastUpdated": "2026-09-24T08:23:47Z",
+    "stars": 1,
+    "forks": 0,
+    "watchers": 0
+  },
+  {
     "projectName": "ai00-x-client",
     "repositoryUrl": "https://github.com/cgisky1980/ai00-x-client",
     "lastUpdated": "2026-09-24T07:38:12Z",
@@ -13,6 +21,22 @@
     "lastUpdated": "2026-09-24T05:59:54Z",
     "stars": 2,
     "forks": 1,
+    "watchers": 0
+  },
+  {
+    "projectName": "rwkv-statetrace-agent",
+    "repositoryUrl": "https://github.com/wangkeyu-u/rwkv-statetrace-agent",
+    "lastUpdated": "2026-09-23T02:42:57Z",
+    "stars": 0,
+    "forks": 0,
+    "watchers": 0
+  },
+  {
+    "projectName": "rwkv-jev",
+    "repositoryUrl": "https://github.com/XingQiPan/rwkv-jev",
+    "lastUpdated": "2026-09-22T10:32:18Z",
+    "stars": 1,
+    "forks": 0,
     "watchers": 0
   },
   {
@@ -158,4 +182,5 @@
     "stars": 20,
     "forks": 1,
     "watchers": 0
-  }]
+  }
+]
