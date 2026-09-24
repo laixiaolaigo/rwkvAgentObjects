@@ -8,7 +8,7 @@
       "en": "The fastest pure C++ GPU runtime for RWKV — zero PyTorch, one-command deployment, CUDA/ROCm inference, quantization, state tuning & serving.🕊",
       "zh": "rwkv_lightning_cuda 提供 RWKV 模型推理、部署、运行时或服务支持。"
     },
-    "lastUpdated": "2026-09-22T07:37:54Z",
+    "lastUpdated": "2026-09-23T16:59:35Z",
     "stars": 7,
     "watchers": 0,
     "forks": 3,
@@ -51,7 +51,7 @@
       "zh": "RWKV 语言模型主仓库，包含模型架构、训练代码、CUDA 内核与示例。"
     },
     "lastUpdated": "2026-09-21T13:31:47Z",
-    "stars": 14715,
+    "stars": 14717,
     "watchers": 137,
     "forks": 1021,
     "language": "Python",
@@ -177,7 +177,7 @@
       "zh": "面向 Android、iOS、Windows、macOS 与 Linux 的跨平台、本地优先 RWKV 聊天应用。"
     },
     "lastUpdated": "2026-09-18T04:59:05Z",
-    "stars": 126,
+    "stars": 127,
     "watchers": 4,
     "forks": 15,
     "language": "Dart",
@@ -261,7 +261,7 @@
       "zh": "从零构建 GLM4、Llama 3 与 RWKV-6 的中文实践课程。"
     },
     "lastUpdated": "2026-09-17T03:01:54Z",
-    "stars": 4374,
+    "stars": 4377,
     "watchers": 37,
     "forks": 599,
     "language": "Jupyter Notebook",
@@ -473,7 +473,7 @@
     "lastUpdated": "2026-09-04T13:37:10Z",
     "stars": 6485,
     "watchers": 48,
-    "forks": 601,
+    "forks": 599,
     "language": "TypeScript",
     "license": "MIT",
     "sourcePage": 1,
@@ -870,7 +870,7 @@
       "zh": "基于 NVIDIA Megatron-Core 的 RWKV-6/7 分布式训练框架。"
     },
     "lastUpdated": "2026-07-06T09:12:16Z",
-    "stars": 25,
+    "stars": 27,
     "watchers": 0,
     "forks": 0,
     "language": "Python",
@@ -1605,7 +1605,7 @@
       "zh": "可在 iOS 与 macOS 离线运行 RWKV 等本地语言模型的应用。"
     },
     "lastUpdated": "2026-01-30T20:52:36Z",
-    "stars": 2071,
+    "stars": 2072,
     "watchers": 26,
     "forks": 183,
     "language": "C",
@@ -2109,9 +2109,9 @@
       "zh": "使用 RWKV 中文预训练生成模型的小说写作应用。"
     },
     "lastUpdated": "2025-05-15T10:31:45Z",
-    "stars": 3898,
+    "stars": 3900,
     "watchers": 51,
-    "forks": 571,
+    "forks": 570,
     "language": "Python",
     "license": "Apache-2.0",
     "sourcePage": 6,
