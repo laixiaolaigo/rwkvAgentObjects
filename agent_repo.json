@@ -1,8 +1,16 @@
 [
   {
+    "projectName": "RWKV-Agent",
+    "repositoryUrl": "https://github.com/No-22-Github/RWKV-Agent",
+    "lastUpdated": "2026-09-25T08:51:46Z",
+    "stars": 2,
+    "forks": 1,
+    "watchers": 0
+  },
+  {
     "projectName": "Gut-RWKV-Jev-laya",
     "repositoryUrl": "https://github.com/xiaol/Gut-RWKV-Jev-laya",
-    "lastUpdated": "2026-09-24T09:47:05Z",
+    "lastUpdated": "2026-09-24T16:26:51Z",
     "stars": 1,
     "forks": 0,
     "watchers": 0
@@ -11,16 +19,8 @@
     "projectName": "ai00-x-client",
     "repositoryUrl": "https://github.com/cgisky1980/ai00-x-client",
     "lastUpdated": "2026-09-24T07:38:12Z",
-    "stars": 4,
+    "stars": 5,
     "forks": 2,
-    "watchers": 0
-  },
-  {
-    "projectName": "RWKV-Agent",
-    "repositoryUrl": "https://github.com/No-22-Github/RWKV-Agent",
-    "lastUpdated": "2026-09-24T05:59:54Z",
-    "stars": 2,
-    "forks": 1,
     "watchers": 0
   },
   {
@@ -91,7 +91,7 @@
     "projectName": "rwkv7-state-embedding",
     "repositoryUrl": "https://github.com/cgisky1980/rwkv7-state-embedding",
     "lastUpdated": "2026-09-09T03:17:21Z",
-    "stars": 5,
+    "stars": 6,
     "forks": 2,
     "watchers": 0
   },
