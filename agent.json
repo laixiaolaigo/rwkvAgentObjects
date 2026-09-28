@@ -6,7 +6,7 @@
         "GitHub地址":  "https://github.com/No-22-Github/RWKV-Agent",
         "项目名称":  "RWKV-Agent",
         "创建时间":  "2026-07-27T13:41:03Z",
-        "最后更新时间":  "2026-09-27T15:31:28Z",
+        "最后更新时间":  "2026-09-28T08:49:44Z",
         "主要语言":  "Go",
         "许可证":  null,
         "Stars":  2,
@@ -64,47 +64,6 @@
         }
     },
     {
-        "创建用户名": "w1c2j3",
-        "作者备注": {
-            "en": "RWKV ecosystem developer",
-            "zh": "RWKV生态开发者"
-        },
-        "用户头像": "https://avatars.githubusercontent.com/u/184242919?v=4",
-        "GitHub地址": "https://github.com/w1c2j3/RWKV-SearchReader",
-        "项目名称": "RWKV-SearchReader",
-        "创建时间": "2026-09-03T03:18:54Z",
-        "最后更新时间": "2026-09-26T11:47:30Z",
-        "主要语言": "Python",
-        "许可证": "MIT",
-        "Stars": 2,
-        "Watch": 0,
-        "Fork": 1,
-        "项目类型": {
-            "en": "RWKV-powered web and document research assistant",
-            "zh": "基于RWKV的网页与文档研究助手"
-        },
-        "介绍": {
-            "en": "A parallel web and document research assistant powered by RWKV.",
-            "zh": "一个由RWKV驱动的并行网页与文档研究助手。"
-        },
-        "Agent循环判断": {
-            "en": "The assistant coordinates research tasks across web and document sources and uses model-guided processing to produce research results.",
-            "zh": "该助手协调网页与文档来源的研究任务，并通过模型引导的处理流程生成研究结果。"
-        },
-        "信息来源": {
-            "en": ["GitHub repository metadata", "Project description"],
-            "zh": ["GitHub仓库元数据", "项目描述"]
-        },
-        "分类结论": {
-            "en": "Agent-related research assistant",
-            "zh": "Agent相关研究助手"
-        },
-        "分类依据": {
-            "en": "The repository explicitly describes a RWKV-powered assistant for parallel web and document research.",
-            "zh": "仓库明确定位为由RWKV驱动的并行网页与文档研究助手。"
-        }
-    },
-    {
         "创建用户名": "xiaol",
         "作者备注": {
             "en": "Experimental Jev-style RWKV decision model.",
@@ -114,7 +73,7 @@
         "GitHub地址": "https://github.com/xiaol/Gut-RWKV-Jev-laya",
         "项目名称": "Gut-RWKV-Jev-laya",
         "创建时间": "2026-09-22T00:46:28Z",
-        "最后更新时间": "2026-09-24T16:26:51Z",
+        "最后更新时间": "2026-09-28T07:56:58Z",
         "主要语言": "Python",
         "许可证": null,
         "Stars": 1,
@@ -183,6 +142,47 @@
         "分类依据": {
             "en": "Its constrained typed decisions are reusable by an Agent for routing and policy control, but it does not implement the autonomous tool loop itself.",
             "zh": "其受约束类型化决策可被Agent用于路由和策略控制，但项目自身没有实现自主工具循环。"
+        }
+    },
+    {
+        "创建用户名": "w1c2j3",
+        "作者备注": {
+            "en": "RWKV ecosystem developer",
+            "zh": "RWKV生态开发者"
+        },
+        "用户头像": "https://avatars.githubusercontent.com/u/184242919?v=4",
+        "GitHub地址": "https://github.com/w1c2j3/RWKV-SearchReader",
+        "项目名称": "RWKV-SearchReader",
+        "创建时间": "2026-09-03T03:18:54Z",
+        "最后更新时间": "2026-09-26T11:47:30Z",
+        "主要语言": "Python",
+        "许可证": "MIT",
+        "Stars": 2,
+        "Watch": 0,
+        "Fork": 1,
+        "项目类型": {
+            "en": "RWKV-powered web and document research assistant",
+            "zh": "基于RWKV的网页与文档研究助手"
+        },
+        "介绍": {
+            "en": "A parallel web and document research assistant powered by RWKV.",
+            "zh": "一个由RWKV驱动的并行网页与文档研究助手。"
+        },
+        "Agent循环判断": {
+            "en": "The assistant coordinates research tasks across web and document sources and uses model-guided processing to produce research results.",
+            "zh": "该助手协调网页与文档来源的研究任务，并通过模型引导的处理流程生成研究结果。"
+        },
+        "信息来源": {
+            "en": ["GitHub repository metadata", "Project description"],
+            "zh": ["GitHub仓库元数据", "项目描述"]
+        },
+        "分类结论": {
+            "en": "Agent-related research assistant",
+            "zh": "Agent相关研究助手"
+        },
+        "分类依据": {
+            "en": "The repository explicitly describes a RWKV-powered assistant for parallel web and document research.",
+            "zh": "仓库明确定位为由RWKV驱动的并行网页与文档研究助手。"
         }
     },
     {
