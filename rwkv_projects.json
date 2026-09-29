@@ -1,26 +1,5 @@
 [
   {
-    "repositoryUrl": "https://github.com/btlqql/sglang-rwkv7",
-    "owner": "btlqql",
-    "name": "sglang-rwkv7",
-    "category": "inference",
-    "summary": {
-      "en": "Independent SGLang distribution focused on production-grade RWKV-7 serving, recurrent state caching, speculative decoding, quantization, and broad GPU support.",
-      "zh": "sglang-rwkv7 提供 RWKV 模型推理、部署、运行时或服务支持。"
-    },
-    "lastUpdated": "2026-09-28T04:43:28Z",
-    "stars": 0,
-    "watchers": 0,
-    "forks": 0,
-    "language": "Python",
-    "license": "Apache-2.0",
-    "sourcePage": 2,
-    "projectType": {
-      "en": "Inference service",
-      "zh": "推理服务"
-    }
-  },
-  {
     "repositoryUrl": "https://github.com/RWKV-APP/RWKV_APP",
     "owner": "RWKV-APP",
     "name": "RWKV_APP",
@@ -29,7 +8,7 @@
       "en": "Cross-platform, local-first RWKV chat application for Android, iOS, Windows, macOS, and Linux.",
       "zh": "面向 Android、iOS、Windows、macOS 与 Linux 的跨平台、本地优先 RWKV 聊天应用。"
     },
-    "lastUpdated": "2026-09-27T19:46:56Z",
+    "lastUpdated": "2026-09-29T08:01:03Z",
     "stars": 129,
     "watchers": 4,
     "forks": 15,
@@ -50,7 +29,7 @@
       "en": "Flutter FFI bridge and runtime layer for on-device RWKV inference across mobile and desktop platforms.",
       "zh": "面向移动端与桌面端设备内 RWKV 推理的 Flutter FFI 桥接和运行时层。"
     },
-    "lastUpdated": "2026-09-27T19:45:14Z",
+    "lastUpdated": "2026-09-29T08:00:14Z",
     "stars": 20,
     "watchers": 3,
     "forks": 5,
@@ -60,6 +39,48 @@
     "projectType": {
       "en": "End-user application",
       "zh": "终端应用"
+    }
+  },
+  {
+    "repositoryUrl": "https://github.com/BlinkDL/RWKV-LM",
+    "owner": "BlinkDL",
+    "name": "RWKV-LM",
+    "category": "training",
+    "summary": {
+      "en": "The primary RWKV language-model repository, including architecture, training code, CUDA kernels, and examples.",
+      "zh": "RWKV 语言模型主仓库，包含模型架构、训练代码、CUDA 内核与示例。"
+    },
+    "lastUpdated": "2026-09-28T18:01:27Z",
+    "stars": 14730,
+    "watchers": 137,
+    "forks": 1022,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "sourcePage": 1,
+    "projectType": {
+      "en": "Training and fine-tuning",
+      "zh": "训练与微调"
+    }
+  },
+  {
+    "repositoryUrl": "https://github.com/btlqql/sglang-rwkv7",
+    "owner": "btlqql",
+    "name": "sglang-rwkv7",
+    "category": "inference",
+    "summary": {
+      "en": "Independent SGLang distribution focused on production-grade RWKV-7 serving, recurrent state caching, speculative decoding, quantization, and broad GPU support.",
+      "zh": "sglang-rwkv7 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2026-09-28T04:43:28Z",
+    "stars": 0,
+    "watchers": 0,
+    "forks": 0,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "sourcePage": 2,
+    "projectType": {
+      "en": "Inference service",
+      "zh": "推理服务"
     }
   },
   {
@@ -168,27 +189,6 @@
     }
   },
   {
-    "repositoryUrl": "https://github.com/BlinkDL/RWKV-LM",
-    "owner": "BlinkDL",
-    "name": "RWKV-LM",
-    "category": "training",
-    "summary": {
-      "en": "The primary RWKV language-model repository, including architecture, training code, CUDA kernels, and examples.",
-      "zh": "RWKV 语言模型主仓库，包含模型架构、训练代码、CUDA 内核与示例。"
-    },
-    "lastUpdated": "2026-09-21T13:31:47Z",
-    "stars": 14729,
-    "watchers": 137,
-    "forks": 1020,
-    "language": "Python",
-    "license": "Apache-2.0",
-    "sourcePage": 1,
-    "projectType": {
-      "en": "Training and fine-tuning",
-      "zh": "训练与微调"
-    }
-  },
-  {
     "repositoryUrl": "https://github.com/rwkv-rs/any2rwkv",
     "owner": "rwkv-rs",
     "name": "any2rwkv",
@@ -282,7 +282,7 @@
       "zh": "从零构建 GLM4、Llama 3 与 RWKV-6 的中文实践课程。"
     },
     "lastUpdated": "2026-09-17T03:01:54Z",
-    "stars": 4379,
+    "stars": 4382,
     "watchers": 37,
     "forks": 600,
     "language": "Jupyter Notebook",
@@ -492,7 +492,7 @@
       "zh": "带桌面界面和 OpenAI 兼容 API 的 RWKV 自动化管理与启动工具。"
     },
     "lastUpdated": "2026-09-04T13:37:10Z",
-    "stars": 6486,
+    "stars": 6485,
     "watchers": 48,
     "forks": 600,
     "language": "TypeScript",
@@ -639,7 +639,7 @@
       "zh": "rwkv7-quantization 提供 RWKV 模型推理、部署、运行时或服务支持。"
     },
     "lastUpdated": "2026-08-06T05:34:43Z",
-    "stars": 3,
+    "stars": 4,
     "watchers": 0,
     "forks": 0,
     "language": "Cuda",
@@ -849,7 +849,7 @@
       "zh": "用于本地运行 RWKV 语言模型的参考聊天与推理实现。"
     },
     "lastUpdated": "2026-07-19T19:09:29Z",
-    "stars": 9496,
+    "stars": 9497,
     "watchers": 96,
     "forks": 685,
     "language": "Python",
@@ -870,7 +870,7 @@
       "zh": "基于 NVIDIA Megatron-Core 的 RWKV-6/7 分布式训练框架。"
     },
     "lastUpdated": "2026-07-06T09:12:16Z",
-    "stars": 43,
+    "stars": 47,
     "watchers": 0,
     "forks": 0,
     "language": "Python",
@@ -2319,7 +2319,7 @@
       "zh": "基于 Gradio 的 RWKV 角色扮演 Web 界面。"
     },
     "lastUpdated": "2025-03-05T08:27:48Z",
-    "stars": 250,
+    "stars": 249,
     "watchers": 7,
     "forks": 27,
     "language": "Python",
