@@ -51,9 +51,9 @@
       "zh": "RWKV 语言模型主仓库，包含模型架构、训练代码、CUDA 内核与示例。"
     },
     "lastUpdated": "2026-09-28T18:01:27Z",
-    "stars": 14730,
+    "stars": 14731,
     "watchers": 137,
-    "forks": 1022,
+    "forks": 1021,
     "language": "Python",
     "license": "Apache-2.0",
     "sourcePage": 1,
@@ -282,7 +282,7 @@
       "zh": "从零构建 GLM4、Llama 3 与 RWKV-6 的中文实践课程。"
     },
     "lastUpdated": "2026-09-17T03:01:54Z",
-    "stars": 4382,
+    "stars": 4385,
     "watchers": 37,
     "forks": 600,
     "language": "Jupyter Notebook",
@@ -492,7 +492,7 @@
       "zh": "带桌面界面和 OpenAI 兼容 API 的 RWKV 自动化管理与启动工具。"
     },
     "lastUpdated": "2026-09-04T13:37:10Z",
-    "stars": 6485,
+    "stars": 6482,
     "watchers": 48,
     "forks": 600,
     "language": "TypeScript",
@@ -870,7 +870,7 @@
       "zh": "基于 NVIDIA Megatron-Core 的 RWKV-6/7 分布式训练框架。"
     },
     "lastUpdated": "2026-07-06T09:12:16Z",
-    "stars": 47,
+    "stars": 51,
     "watchers": 0,
     "forks": 0,
     "language": "Python",
@@ -1607,7 +1607,7 @@
     "lastUpdated": "2026-01-30T20:52:36Z",
     "stars": 2074,
     "watchers": 26,
-    "forks": 185,
+    "forks": 186,
     "language": "C",
     "license": "MIT",
     "sourcePage": 1,
@@ -2109,7 +2109,7 @@
       "zh": "使用 RWKV 中文预训练生成模型的小说写作应用。"
     },
     "lastUpdated": "2025-05-15T10:31:45Z",
-    "stars": 3905,
+    "stars": 3907,
     "watchers": 51,
     "forks": 572,
     "language": "Python",
@@ -2445,7 +2445,7 @@
       "zh": "支持知识库、多模型后端与私有化部署的本地优先大模型应用平台。"
     },
     "lastUpdated": "2025-01-23T12:55:35Z",
-    "stars": 6149,
+    "stars": 6148,
     "watchers": 78,
     "forks": 783,
     "language": "JavaScript",
