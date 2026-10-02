@@ -1,18 +1,26 @@
 [
   {
-    "projectName": "RWKV-LH",
-    "repositoryUrl": "https://github.com/rwkv-rs/RWKV-LH",
-    "lastUpdated": "2026-09-30T18:08:54Z",
-    "stars": 2,
+    "projectName": "rwkv-statetrace-agent",
+    "repositoryUrl": "https://github.com/wangkeyu-u/rwkv-statetrace-agent",
+    "lastUpdated": "2026-10-01T16:10:12Z",
+    "stars": 0,
     "forks": 0,
     "watchers": 0
   },
   {
     "projectName": "RWKV-Agent",
     "repositoryUrl": "https://github.com/No-22-Github/RWKV-Agent",
-    "lastUpdated": "2026-09-29T16:58:15Z",
+    "lastUpdated": "2026-10-01T16:04:47Z",
     "stars": 2,
     "forks": 1,
+    "watchers": 0
+  },
+  {
+    "projectName": "RWKV-LH",
+    "repositoryUrl": "https://github.com/rwkv-rs/RWKV-LH",
+    "lastUpdated": "2026-09-30T18:08:54Z",
+    "stars": 2,
+    "forks": 0,
     "watchers": 0
   },
   {
@@ -37,14 +45,6 @@
     "lastUpdated": "2026-09-24T07:38:12Z",
     "stars": 5,
     "forks": 2,
-    "watchers": 0
-  },
-  {
-    "projectName": "rwkv-statetrace-agent",
-    "repositoryUrl": "https://github.com/wangkeyu-u/rwkv-statetrace-agent",
-    "lastUpdated": "2026-09-23T02:42:57Z",
-    "stars": 0,
-    "forks": 0,
     "watchers": 0
   },
   {

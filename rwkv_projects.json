@@ -1,5 +1,26 @@
 [
   {
+    "repositoryUrl": "https://github.com/btlqql/vllm-rwkv7",
+    "owner": "btlqql",
+    "name": "vllm-rwkv7",
+    "category": "inference",
+    "summary": {
+      "en": "Native RWKV-7 integration for vLLM, implemented clean-room against the Hugging Face contract.",
+      "zh": "vllm-rwkv7 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2026-10-02T02:04:58Z",
+    "stars": 0,
+    "watchers": 0,
+    "forks": 0,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "sourcePage": 2,
+    "projectType": {
+      "en": "Inference backend",
+      "zh": "推理后端"
+    }
+  },
+  {
     "repositoryUrl": "https://github.com/RWKV-APP/RWKV_APP",
     "owner": "RWKV-APP",
     "name": "RWKV_APP",
@@ -9,7 +30,7 @@
       "zh": "面向 Android、iOS、Windows、macOS 与 Linux 的跨平台、本地优先 RWKV 聊天应用。"
     },
     "lastUpdated": "2026-10-01T06:24:20Z",
-    "stars": 130,
+    "stars": 131,
     "watchers": 4,
     "forks": 15,
     "language": "Dart",
@@ -144,27 +165,6 @@
     "projectType": {
       "en": "Inference service",
       "zh": "推理服务"
-    }
-  },
-  {
-    "repositoryUrl": "https://github.com/btlqql/vllm-rwkv7",
-    "owner": "btlqql",
-    "name": "vllm-rwkv7",
-    "category": "inference",
-    "summary": {
-      "en": "Native RWKV-7 integration for vLLM, implemented clean-room against the Hugging Face contract.",
-      "zh": "vllm-rwkv7 提供 RWKV 模型推理、部署、运行时或服务支持。"
-    },
-    "lastUpdated": "2026-09-25T02:12:30Z",
-    "stars": 0,
-    "watchers": 0,
-    "forks": 0,
-    "language": "Python",
-    "license": "Apache-2.0",
-    "sourcePage": 2,
-    "projectType": {
-      "en": "Inference backend",
-      "zh": "推理后端"
     }
   },
   {
@@ -450,7 +450,7 @@
       "zh": "MagicWX 是面向 RWKV 用户的易用应用或开箱即用工具。"
     },
     "lastUpdated": "2026-09-06T07:21:39Z",
-    "stars": 857,
+    "stars": 856,
     "watchers": 24,
     "forks": 362,
     "language": "Kotlin",
@@ -492,7 +492,7 @@
       "zh": "带桌面界面和 OpenAI 兼容 API 的 RWKV 自动化管理与启动工具。"
     },
     "lastUpdated": "2026-09-04T13:37:10Z",
-    "stars": 6483,
+    "stars": 6484,
     "watchers": 48,
     "forks": 600,
     "language": "TypeScript",
@@ -2109,7 +2109,7 @@
       "zh": "使用 RWKV 中文预训练生成模型的小说写作应用。"
     },
     "lastUpdated": "2025-05-15T10:31:45Z",
-    "stars": 3908,
+    "stars": 3910,
     "watchers": 51,
     "forks": 572,
     "language": "Python",
