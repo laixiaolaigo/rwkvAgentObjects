@@ -93,9 +93,9 @@
       "zh": "RWKV 语言模型主仓库，包含模型架构、训练代码、CUDA 内核与示例。"
     },
     "lastUpdated": "2026-09-28T18:01:27Z",
-    "stars": 14733,
+    "stars": 14739,
     "watchers": 137,
-    "forks": 1021,
+    "forks": 1022,
     "language": "Python",
     "license": "Apache-2.0",
     "sourcePage": 1,
@@ -282,7 +282,7 @@
       "zh": "从零构建 GLM4、Llama 3 与 RWKV-6 的中文实践课程。"
     },
     "lastUpdated": "2026-09-17T03:01:54Z",
-    "stars": 4387,
+    "stars": 4388,
     "watchers": 37,
     "forks": 600,
     "language": "Jupyter Notebook",
@@ -450,9 +450,9 @@
       "zh": "MagicWX 是面向 RWKV 用户的易用应用或开箱即用工具。"
     },
     "lastUpdated": "2026-09-06T07:21:39Z",
-    "stars": 856,
+    "stars": 855,
     "watchers": 24,
-    "forks": 362,
+    "forks": 361,
     "language": "Kotlin",
     "license": "MIT",
     "sourcePage": 1,
@@ -492,7 +492,7 @@
       "zh": "带桌面界面和 OpenAI 兼容 API 的 RWKV 自动化管理与启动工具。"
     },
     "lastUpdated": "2026-09-04T13:37:10Z",
-    "stars": 6484,
+    "stars": 6483,
     "watchers": 48,
     "forks": 600,
     "language": "TypeScript",
@@ -849,7 +849,7 @@
       "zh": "用于本地运行 RWKV 语言模型的参考聊天与推理实现。"
     },
     "lastUpdated": "2026-07-19T19:09:29Z",
-    "stars": 9497,
+    "stars": 9495,
     "watchers": 96,
     "forks": 685,
     "language": "Python",
@@ -1605,7 +1605,7 @@
       "zh": "可在 iOS 与 macOS 离线运行 RWKV 等本地语言模型的应用。"
     },
     "lastUpdated": "2026-01-30T20:52:36Z",
-    "stars": 2074,
+    "stars": 2075,
     "watchers": 26,
     "forks": 186,
     "language": "C",
@@ -2109,9 +2109,9 @@
       "zh": "使用 RWKV 中文预训练生成模型的小说写作应用。"
     },
     "lastUpdated": "2025-05-15T10:31:45Z",
-    "stars": 3910,
+    "stars": 3909,
     "watchers": 51,
-    "forks": 572,
+    "forks": 573,
     "language": "Python",
     "license": "Apache-2.0",
     "sourcePage": 6,
