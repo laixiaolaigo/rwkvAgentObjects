@@ -1,5 +1,26 @@
 [
   {
+    "repositoryUrl": "https://github.com/cgisky1980/rwkv-rsv",
+    "owner": "cgisky1980",
+    "name": "rwkv-rsv",
+    "category": "inference",
+    "summary": {
+      "en": "RWKV-7 inference engine in Rust (Vulkan compute shaders) with fp16/any4/int8 quantization paths",
+      "zh": "rwkv-rsv 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2026-10-04T02:52:23Z",
+    "stars": 4,
+    "watchers": 0,
+    "forks": 0,
+    "language": "Rust",
+    "license": "MIT",
+    "sourcePage": 1,
+    "projectType": {
+      "en": "Quantization and compression",
+      "zh": "量化与压缩"
+    }
+  },
+  {
     "repositoryUrl": "https://github.com/btlqql/vllm-rwkv7",
     "owner": "btlqql",
     "name": "vllm-rwkv7",
@@ -95,7 +116,7 @@
     "lastUpdated": "2026-09-28T18:01:27Z",
     "stars": 14739,
     "watchers": 137,
-    "forks": 1022,
+    "forks": 1023,
     "language": "Python",
     "license": "Apache-2.0",
     "sourcePage": 1,
@@ -168,27 +189,6 @@
     }
   },
   {
-    "repositoryUrl": "https://github.com/cgisky1980/rwkv-rsv",
-    "owner": "cgisky1980",
-    "name": "rwkv-rsv",
-    "category": "inference",
-    "summary": {
-      "en": "RWKV-7 inference engine in Rust (Vulkan compute shaders) with fp16/any4/int8 quantization paths",
-      "zh": "rwkv-rsv 提供 RWKV 模型推理、部署、运行时或服务支持。"
-    },
-    "lastUpdated": "2026-09-22T02:07:11Z",
-    "stars": 4,
-    "watchers": 0,
-    "forks": 0,
-    "language": "Rust",
-    "license": "MIT",
-    "sourcePage": 1,
-    "projectType": {
-      "en": "Quantization and compression",
-      "zh": "量化与压缩"
-    }
-  },
-  {
     "repositoryUrl": "https://github.com/rwkv-rs/any2rwkv",
     "owner": "rwkv-rs",
     "name": "any2rwkv",
@@ -198,7 +198,7 @@
       "zh": "通过逐层蒸馏将注意力架构转换为 RWKV 的研究与训练工具。"
     },
     "lastUpdated": "2026-09-20T15:54:03Z",
-    "stars": 3,
+    "stars": 4,
     "watchers": 0,
     "forks": 0,
     "language": "Python",
@@ -282,9 +282,9 @@
       "zh": "从零构建 GLM4、Llama 3 与 RWKV-6 的中文实践课程。"
     },
     "lastUpdated": "2026-09-17T03:01:54Z",
-    "stars": 4388,
+    "stars": 4389,
     "watchers": 37,
-    "forks": 600,
+    "forks": 601,
     "language": "Jupyter Notebook",
     "license": "NOASSERTION",
     "sourcePage": 1,
@@ -492,9 +492,9 @@
       "zh": "带桌面界面和 OpenAI 兼容 API 的 RWKV 自动化管理与启动工具。"
     },
     "lastUpdated": "2026-09-04T13:37:10Z",
-    "stars": 6483,
+    "stars": 6482,
     "watchers": 48,
-    "forks": 600,
+    "forks": 599,
     "language": "TypeScript",
     "license": "MIT",
     "sourcePage": 1,
@@ -851,7 +851,7 @@
     "lastUpdated": "2026-07-19T19:09:29Z",
     "stars": 9495,
     "watchers": 96,
-    "forks": 685,
+    "forks": 686,
     "language": "Python",
     "license": "Apache-2.0",
     "sourcePage": 1,
@@ -1080,7 +1080,7 @@
       "zh": "集成嵌入、RAG、Agent 能力和便捷部署流程的一体化 RWKV 运行服务。"
     },
     "lastUpdated": "2026-06-09T06:16:58Z",
-    "stars": 621,
+    "stars": 622,
     "watchers": 19,
     "forks": 75,
     "language": "Rust",
@@ -2109,9 +2109,9 @@
       "zh": "使用 RWKV 中文预训练生成模型的小说写作应用。"
     },
     "lastUpdated": "2025-05-15T10:31:45Z",
-    "stars": 3909,
+    "stars": 3910,
     "watchers": 51,
-    "forks": 573,
+    "forks": 572,
     "language": "Python",
     "license": "Apache-2.0",
     "sourcePage": 6,
