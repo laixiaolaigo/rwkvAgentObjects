@@ -1,5 +1,47 @@
 [
   {
+    "repositoryUrl": "https://github.com/Alic-Li/rwkv_lightning_cuda",
+    "owner": "Alic-Li",
+    "name": "rwkv_lightning_cuda",
+    "category": "inference",
+    "summary": {
+      "en": "The fastest pure C++ GPU runtime for RWKV — zero PyTorch, one-command deployment, CUDA/ROCm inference, quantization, state tuning & serving.🕊",
+      "zh": "rwkv_lightning_cuda 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2026-10-05T06:57:07Z",
+    "stars": 8,
+    "watchers": 0,
+    "forks": 2,
+    "language": "C++",
+    "license": null,
+    "sourcePage": 1,
+    "projectType": {
+      "en": "Inference service",
+      "zh": "推理服务"
+    }
+  },
+  {
+    "repositoryUrl": "https://github.com/btlqql/sglang-rwkv7",
+    "owner": "btlqql",
+    "name": "sglang-rwkv7",
+    "category": "inference",
+    "summary": {
+      "en": "Independent SGLang distribution focused on production-grade RWKV-7 serving, recurrent state caching, speculative decoding, quantization, and broad GPU support.",
+      "zh": "sglang-rwkv7 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2026-10-05T04:58:16Z",
+    "stars": 0,
+    "watchers": 0,
+    "forks": 0,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "sourcePage": 2,
+    "projectType": {
+      "en": "Inference service",
+      "zh": "推理服务"
+    }
+  },
+  {
     "repositoryUrl": "https://github.com/cgisky1980/rwkv-rsv",
     "owner": "cgisky1980",
     "name": "rwkv-rsv",
@@ -84,27 +126,6 @@
     }
   },
   {
-    "repositoryUrl": "https://github.com/Alic-Li/rwkv_lightning_cuda",
-    "owner": "Alic-Li",
-    "name": "rwkv_lightning_cuda",
-    "category": "inference",
-    "summary": {
-      "en": "The fastest pure C++ GPU runtime for RWKV — zero PyTorch, one-command deployment, CUDA/ROCm inference, quantization, state tuning & serving.🕊",
-      "zh": "rwkv_lightning_cuda 提供 RWKV 模型推理、部署、运行时或服务支持。"
-    },
-    "lastUpdated": "2026-09-30T15:04:37Z",
-    "stars": 8,
-    "watchers": 0,
-    "forks": 2,
-    "language": "C++",
-    "license": null,
-    "sourcePage": 1,
-    "projectType": {
-      "en": "Inference service",
-      "zh": "推理服务"
-    }
-  },
-  {
     "repositoryUrl": "https://github.com/BlinkDL/RWKV-LM",
     "owner": "BlinkDL",
     "name": "RWKV-LM",
@@ -123,27 +144,6 @@
     "projectType": {
       "en": "Training and fine-tuning",
       "zh": "训练与微调"
-    }
-  },
-  {
-    "repositoryUrl": "https://github.com/btlqql/sglang-rwkv7",
-    "owner": "btlqql",
-    "name": "sglang-rwkv7",
-    "category": "inference",
-    "summary": {
-      "en": "Independent SGLang distribution focused on production-grade RWKV-7 serving, recurrent state caching, speculative decoding, quantization, and broad GPU support.",
-      "zh": "sglang-rwkv7 提供 RWKV 模型推理、部署、运行时或服务支持。"
-    },
-    "lastUpdated": "2026-09-28T04:43:28Z",
-    "stars": 0,
-    "watchers": 0,
-    "forks": 0,
-    "language": "Python",
-    "license": "Apache-2.0",
-    "sourcePage": 2,
-    "projectType": {
-      "en": "Inference service",
-      "zh": "推理服务"
     }
   },
   {
@@ -200,7 +200,7 @@
     "lastUpdated": "2026-09-20T15:54:03Z",
     "stars": 4,
     "watchers": 0,
-    "forks": 0,
+    "forks": 1,
     "language": "Python",
     "license": null,
     "sourcePage": 1,
@@ -492,9 +492,9 @@
       "zh": "带桌面界面和 OpenAI 兼容 API 的 RWKV 自动化管理与启动工具。"
     },
     "lastUpdated": "2026-09-04T13:37:10Z",
-    "stars": 6482,
+    "stars": 6481,
     "watchers": 48,
-    "forks": 599,
+    "forks": 598,
     "language": "TypeScript",
     "license": "MIT",
     "sourcePage": 1,
@@ -1899,7 +1899,7 @@
       "zh": "RWKV-LM-RLHF 提供 RWKV 模型训练、微调或架构实验工具。"
     },
     "lastUpdated": "2025-09-19T19:58:51Z",
-    "stars": 64,
+    "stars": 65,
     "watchers": 2,
     "forks": 6,
     "language": "Python",
@@ -2109,7 +2109,7 @@
       "zh": "使用 RWKV 中文预训练生成模型的小说写作应用。"
     },
     "lastUpdated": "2025-05-15T10:31:45Z",
-    "stars": 3910,
+    "stars": 3909,
     "watchers": 51,
     "forks": 572,
     "language": "Python",
@@ -2256,7 +2256,7 @@
       "zh": "支持 INT4、INT5、INT8 与 FP16 的 RWKV 量化 CPU 推理运行时。"
     },
     "lastUpdated": "2025-03-23T05:04:42Z",
-    "stars": 1583,
+    "stars": 1585,
     "watchers": 23,
     "forks": 130,
     "language": "C++",
@@ -3201,7 +3201,7 @@
       "zh": "nanoRWKV 提供 RWKV 模型训练、微调或架构实验工具。"
     },
     "lastUpdated": "2023-11-09T07:32:20Z",
-    "stars": 200,
+    "stars": 201,
     "watchers": 6,
     "forks": 13,
     "language": "Python",
