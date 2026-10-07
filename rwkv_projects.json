@@ -1,5 +1,26 @@
 [
   {
+    "repositoryUrl": "https://github.com/RafaelUI/rwkv-quant",
+    "owner": "RafaelUI",
+    "name": "rwkv-quant",
+    "category": "inference",
+    "summary": {
+      "en": "pip install rwkv-quant",
+      "zh": "rwkv-quant 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2026-10-06T20:32:55Z",
+    "stars": 1,
+    "watchers": 0,
+    "forks": 0,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "sourcePage": 1,
+    "projectType": {
+      "en": "Quantization and compression",
+      "zh": "量化与压缩"
+    }
+  },
+  {
     "repositoryUrl": "https://github.com/Alic-Li/rwkv_lightning_cuda",
     "owner": "Alic-Li",
     "name": "rwkv_lightning_cuda",
@@ -135,7 +156,7 @@
       "zh": "RWKV 语言模型主仓库，包含模型架构、训练代码、CUDA 内核与示例。"
     },
     "lastUpdated": "2026-09-28T18:01:27Z",
-    "stars": 14741,
+    "stars": 14742,
     "watchers": 137,
     "forks": 1022,
     "language": "Python",
@@ -231,27 +252,6 @@
     }
   },
   {
-    "repositoryUrl": "https://github.com/RafaelUI/rwkv-quant",
-    "owner": "RafaelUI",
-    "name": "rwkv-quant",
-    "category": "inference",
-    "summary": {
-      "en": "pip install rwkv-quant",
-      "zh": "rwkv-quant 提供 RWKV 模型推理、部署、运行时或服务支持。"
-    },
-    "lastUpdated": "2026-09-17T15:55:54Z",
-    "stars": 1,
-    "watchers": 0,
-    "forks": 0,
-    "language": "Python",
-    "license": "Apache-2.0",
-    "sourcePage": 1,
-    "projectType": {
-      "en": "Quantization and compression",
-      "zh": "量化与压缩"
-    }
-  },
-  {
     "repositoryUrl": "https://github.com/RafaelUI/rwkv-metal",
     "owner": "RafaelUI",
     "name": "rwkv-metal",
@@ -282,7 +282,7 @@
       "zh": "从零构建 GLM4、Llama 3 与 RWKV-6 的中文实践课程。"
     },
     "lastUpdated": "2026-09-17T03:01:54Z",
-    "stars": 4392,
+    "stars": 4393,
     "watchers": 37,
     "forks": 602,
     "language": "Jupyter Notebook",
@@ -492,7 +492,7 @@
       "zh": "带桌面界面和 OpenAI 兼容 API 的 RWKV 自动化管理与启动工具。"
     },
     "lastUpdated": "2026-09-04T13:37:10Z",
-    "stars": 6481,
+    "stars": 6480,
     "watchers": 48,
     "forks": 597,
     "language": "TypeScript",
@@ -1605,7 +1605,7 @@
       "zh": "可在 iOS 与 macOS 离线运行 RWKV 等本地语言模型的应用。"
     },
     "lastUpdated": "2026-01-30T20:52:36Z",
-    "stars": 2075,
+    "stars": 2076,
     "watchers": 26,
     "forks": 186,
     "language": "C",
@@ -2109,7 +2109,7 @@
       "zh": "使用 RWKV 中文预训练生成模型的小说写作应用。"
     },
     "lastUpdated": "2025-05-15T10:31:45Z",
-    "stars": 3912,
+    "stars": 3914,
     "watchers": 51,
     "forks": 571,
     "language": "Python",

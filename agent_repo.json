@@ -1,16 +1,8 @@
 [
   {
-    "projectName": "ai00-x-client",
-    "repositoryUrl": "https://github.com/cgisky1980/ai00-x-client",
-    "lastUpdated": "2026-10-06T09:02:31Z",
-    "stars": 5,
-    "forks": 2,
-    "watchers": 0
-  },
-  {
     "projectName": "RWKV-Agent",
     "repositoryUrl": "https://github.com/No-22-Github/RWKV-Agent",
-    "lastUpdated": "2026-10-03T17:50:50Z",
+    "lastUpdated": "2026-10-07T08:47:53Z",
     "stars": 2,
     "forks": 1,
     "watchers": 0
@@ -18,7 +10,7 @@
   {
     "projectName": "rwkv-statetrace-agent",
     "repositoryUrl": "https://github.com/wangkeyu-u/rwkv-statetrace-agent",
-    "lastUpdated": "2026-10-01T16:10:12Z",
+    "lastUpdated": "2026-10-07T06:50:16Z",
     "stars": 0,
     "forks": 0,
     "watchers": 0
@@ -26,9 +18,25 @@
   {
     "projectName": "RWKV-LH",
     "repositoryUrl": "https://github.com/rwkv-rs/RWKV-LH",
-    "lastUpdated": "2026-09-30T18:08:54Z",
+    "lastUpdated": "2026-10-07T04:02:31Z",
     "stars": 2,
     "forks": 0,
+    "watchers": 0
+  },
+  {
+    "projectName": "noesis",
+    "repositoryUrl": "https://github.com/Vaniell0/noesis",
+    "lastUpdated": "2026-10-06T16:17:55Z",
+    "stars": 4,
+    "forks": 1,
+    "watchers": 0
+  },
+  {
+    "projectName": "ai00-x-client",
+    "repositoryUrl": "https://github.com/cgisky1980/ai00-x-client",
+    "lastUpdated": "2026-10-06T09:02:31Z",
+    "stars": 5,
+    "forks": 2,
     "watchers": 0
   },
   {
@@ -69,14 +77,6 @@
     "lastUpdated": "2026-09-20T10:35:09Z",
     "stars": 3,
     "forks": 0,
-    "watchers": 0
-  },
-  {
-    "projectName": "noesis",
-    "repositoryUrl": "https://github.com/Vaniell0/noesis",
-    "lastUpdated": "2026-09-16T15:06:41Z",
-    "stars": 4,
-    "forks": 1,
     "watchers": 0
   },
   {
