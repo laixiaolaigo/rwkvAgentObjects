@@ -1,148 +1,5 @@
 ﻿[
     {
-        "创建用户名":  "No-22-Github",
-        "作者备注":  null,
-        "用户头像":  "https://avatars.githubusercontent.com/u/132265925?v=4",
-        "GitHub地址":  "https://github.com/No-22-Github/RWKV-Agent",
-        "项目名称":  "RWKV-Agent",
-        "创建时间":  "2026-07-27T13:41:03Z",
-        "最后更新时间":  "2026-10-07T08:47:53Z",
-        "主要语言":  "Go",
-        "许可证":  null,
-        "Stars":  2,
-        "Watch":  0,
-        "Fork":  1,
-        "项目类型":  {
-            "en": "Local RWKV CLI and agent runtime",
-            "zh": "本地RWKV CLI与Agent运行时"
-        },
-        "介绍":  {
-            "en": "A local RWKV command-line application for Apple Silicon macOS. The Go layer handles conversation transactions, session persistence, and terminal interaction, while a separate dynamic library handles tokenization, sampling, and MLX inference. The runtime does not depend on Python, PyTorch, an HTTP service, or external processes.",
-            "zh": "面向Apple Silicon macOS的本地RWKV命令行程序。Go层负责对话事务、Session持久化和终端交互，独立动态库负责tokenizer、采样和MLX推理；运行时不依赖Python、PyTorch、HTTP服务或外部进程。"
-        },
-        "Agent循环判断":  {
-            "en": "The repository includes an Agent Harness, Continuation, and Agent Protocol, implementing an agent runtime intended to let the model call tools, read observations, and continue execution. The current loop has defects, but the project still qualifies as an agent.",
-            "zh": "仓库包含Agent Harness、Continuation和Agent Protocol，并以模型调用工具、读取观察结果和继续执行为目标实现Agent运行时。当前闭环存在缺陷，但项目性质仍属于Agent。"
-        },
-        "用户反馈":  {
-            "en": [
-                "Tool-call information remains in the output",
-                "It continues using a directory after guessing the wrong path",
-                "The agent loop is not correctly understood or implemented"
-            ],
-            "zh": [
-                "调用信息仍然残留",
-                "猜错目录后仍继续调用该目录",
-                "没有正确理解或实现Agent循环"
-            ]
-        },
-        "支持平台":  {
-            "en": "The currently usable entry point supports Apple Silicon on macOS 15+; Windows and Linux remain target platforms",
-            "zh": "当前实际可用入口为Apple Silicon macOS 15+；Windows和Linux仍是目标平台"
-        },
-        "信息来源":  {
-            "en": [
-                "GitHub repository metadata",
-                "Project README",
-                "User-provided issue description",
-                "User-provided classification correction"
-            ],
-            "zh": [
-                "GitHub仓库元数据",
-                "项目README",
-                "用户提供的问题说明",
-                "用户提供的分类纠正"
-            ]
-        },
-        "分类结论":  {
-            "en": "Strict Agent",
-            "zh": "严格Agent"
-        },
-        "分类依据":  {
-            "en": "The project explicitly centers on an agent protocol, tool calling, and a continuous execution loop. Existing problems with tool feedback, directory correction, and loop implementation are implementation defects and do not change its status as an agent project.",
-            "zh": "项目明确以Agent协议、工具调用和持续执行循环为核心；现有工具反馈、目录纠错和循环实现问题属于实现缺陷，不改变其Agent项目属性。"
-        }
-    },
-    {
-        "创建用户名": "wangkeyu-u",
-        "用户头像": "https://avatars.githubusercontent.com/u/189725962?v=4",
-        "GitHub地址": "https://github.com/wangkeyu-u/rwkv-statetrace-agent",
-        "项目名称": "rwkv-statetrace-agent",
-        "创建时间": "2026-08-12T03:05:06Z",
-        "最后更新时间": "2026-10-07T06:50:16Z",
-        "主要语言": "Python",
-        "许可证": "MIT",
-        "Stars": 0,
-        "Watch": 0,
-        "Fork": 0,
-        "项目类型": {
-            "en": "Auditable RWKV code-diagnosis Agent runtime",
-            "zh": "可审计的RWKV代码诊断Agent运行时"
-        },
-        "介绍": {
-            "en": "A code-diagnosis Agent runtime with replayable traces, evidence validation, structured tool actions, and verified task checkpoints. It supports direct RWKV adapters, OpenAI-compatible RWKV APIs, and deterministic replay.",
-            "zh": "带可重放轨迹、证据校验、结构化工具动作和任务检查点验证的代码诊断Agent运行时。支持直接RWKV适配器、OpenAI兼容RWKV API和确定性Replay。"
-        },
-        "Agent循环判断": {
-            "en": "It implements a bounded model-tool-observation loop: the model selects structured actions, the controller validates and executes tools, records evidence, feeds observations back, and validates the final report.",
-            "zh": "实现有界的模型—工具—观察循环：模型选择结构化动作，控制器校验并执行工具、记录证据、反馈观察结果，并校验最终报告。"
-        },
-        "主要能力": {
-            "en": [
-                "Structured tool selection with bounded execution",
-                "Replayable traces and evidence IDs",
-                "Checkpoint integrity and task recovery",
-                "Deterministic final-report validation",
-                "Direct RWKV, API, and replay modes"
-            ],
-            "zh": [
-                "带有界执行的结构化工具选择",
-                "可重放轨迹与证据ID",
-                "检查点完整性与任务恢复",
-                "最终报告确定性校验",
-                "直接RWKV、API和Replay模式"
-            ]
-        },
-        "已知限制": {
-            "en": [
-                "Engineering demonstration, not a production security sandbox",
-                "Replay is recorded behavior, not live inference",
-                "The standard text API does not expose native RWKV tensors",
-                "Native checkpoint claims require a compatible direct adapter"
-            ],
-            "zh": [
-                "工程演示，不是生产级安全沙箱",
-                "Replay是录制行为，不是实时推理",
-                "标准文本API不会暴露原生RWKV张量",
-                "原生检查点结论需要兼容的直接适配器"
-            ]
-        },
-        "支持平台": {
-            "en": "Python runtime with local adapters, OpenAI-compatible API mode, and deterministic replay",
-            "zh": "支持本地适配器、OpenAI兼容API模式和确定性Replay的Python运行时"
-        },
-        "信息来源": {
-            "en": [
-                "GitHub metadata",
-                "Project README",
-                "Agent loop and experiment documents"
-            ],
-            "zh": [
-                "GitHub元数据",
-                "项目README",
-                "Agent循环与实验文档"
-            ]
-        },
-        "分类结论": {
-            "en": "Strict Agent",
-            "zh": "严格Agent"
-        },
-        "分类依据": {
-            "en": "The repository implements an action, tool execution, evidence feedback, and report-validation loop with recoverable task state.",
-            "zh": "仓库实现了动作选择、工具执行、证据反馈和报告校验闭环，并支持可恢复任务状态。"
-        }
-    },
-    {
         "创建用户名":  "rwkv-rs",
         "账号类型":  {
             "en": "GitHub organization",
@@ -156,7 +13,7 @@
         "GitHub地址":  "https://github.com/rwkv-rs/RWKV-LH",
         "项目名称":  "RWKV-LH",
         "创建时间":  "2026-08-09T03:51:27Z",
-        "最后更新时间":  "2026-10-07T04:02:31Z",
+        "最后更新时间":  "2026-10-08T08:53:47Z",
         "主要语言":  "Python",
         "许可证":  "MIT",
         "Stars":  2,
@@ -236,12 +93,76 @@
         }
     },
     {
+        "创建用户名":  "No-22-Github",
+        "作者备注":  null,
+        "用户头像":  "https://avatars.githubusercontent.com/u/132265925?v=4",
+        "GitHub地址":  "https://github.com/No-22-Github/RWKV-Agent",
+        "项目名称":  "RWKV-Agent",
+        "创建时间":  "2026-07-27T13:41:03Z",
+        "最后更新时间":  "2026-10-08T02:46:04Z",
+        "主要语言":  "Go",
+        "许可证":  null,
+        "Stars":  2,
+        "Watch":  0,
+        "Fork":  1,
+        "项目类型":  {
+            "en": "Local RWKV CLI and agent runtime",
+            "zh": "本地RWKV CLI与Agent运行时"
+        },
+        "介绍":  {
+            "en": "A local RWKV command-line application for Apple Silicon macOS. The Go layer handles conversation transactions, session persistence, and terminal interaction, while a separate dynamic library handles tokenization, sampling, and MLX inference. The runtime does not depend on Python, PyTorch, an HTTP service, or external processes.",
+            "zh": "面向Apple Silicon macOS的本地RWKV命令行程序。Go层负责对话事务、Session持久化和终端交互，独立动态库负责tokenizer、采样和MLX推理；运行时不依赖Python、PyTorch、HTTP服务或外部进程。"
+        },
+        "Agent循环判断":  {
+            "en": "The repository includes an Agent Harness, Continuation, and Agent Protocol, implementing an agent runtime intended to let the model call tools, read observations, and continue execution. The current loop has defects, but the project still qualifies as an agent.",
+            "zh": "仓库包含Agent Harness、Continuation和Agent Protocol，并以模型调用工具、读取观察结果和继续执行为目标实现Agent运行时。当前闭环存在缺陷，但项目性质仍属于Agent。"
+        },
+        "用户反馈":  {
+            "en": [
+                "Tool-call information remains in the output",
+                "It continues using a directory after guessing the wrong path",
+                "The agent loop is not correctly understood or implemented"
+            ],
+            "zh": [
+                "调用信息仍然残留",
+                "猜错目录后仍继续调用该目录",
+                "没有正确理解或实现Agent循环"
+            ]
+        },
+        "支持平台":  {
+            "en": "The currently usable entry point supports Apple Silicon on macOS 15+; Windows and Linux remain target platforms",
+            "zh": "当前实际可用入口为Apple Silicon macOS 15+；Windows和Linux仍是目标平台"
+        },
+        "信息来源":  {
+            "en": [
+                "GitHub repository metadata",
+                "Project README",
+                "User-provided issue description",
+                "User-provided classification correction"
+            ],
+            "zh": [
+                "GitHub仓库元数据",
+                "项目README",
+                "用户提供的问题说明",
+                "用户提供的分类纠正"
+            ]
+        },
+        "分类结论":  {
+            "en": "Strict Agent",
+            "zh": "严格Agent"
+        },
+        "分类依据":  {
+            "en": "The project explicitly centers on an agent protocol, tool calling, and a continuous execution loop. Existing problems with tool feedback, directory correction, and loop implementation are implementation defects and do not change its status as an agent project.",
+            "zh": "项目明确以Agent协议、工具调用和持续执行循环为核心；现有工具反馈、目录纠错和循环实现问题属于实现缺陷，不改变其Agent项目属性。"
+        }
+    },
+    {
         "创建用户名": "Vaniell0",
         "用户头像": "https://avatars.githubusercontent.com/u/144351173?v=4",
         "GitHub地址": "https://github.com/Vaniell0/noesis",
         "项目名称": "noesis",
         "创建时间": "2026-07-21T22:04:25Z",
-        "最后更新时间": "2026-10-06T16:17:55Z",
+        "最后更新时间": "2026-10-07T18:23:03Z",
         "主要语言": "Python",
         "许可证": "Apache-2.0",
         "Stars": 4,
@@ -256,6 +177,85 @@
         "信息来源": {"en": ["GitHub metadata", "README", "ROADMAP", "Runtime, memory, and training sources"], "zh": ["GitHub元数据", "README", "ROADMAP", "运行时、记忆与训练源码"]},
         "分类结论": {"en": "Agent boundary project", "zh": "Agent边界项目"},
         "分类依据": {"en": "Explicitly designed as an RWKV Agent runtime and therefore included under the broader Agent-related criterion despite incomplete execution loops.", "zh": "明确以RWKV Agent运行时为目标；虽然执行闭环尚不完整，但按广义Agent相关标准收录。"}
+    },
+    {
+        "创建用户名": "wangkeyu-u",
+        "用户头像": "https://avatars.githubusercontent.com/u/189725962?v=4",
+        "GitHub地址": "https://github.com/wangkeyu-u/rwkv-statetrace-agent",
+        "项目名称": "rwkv-statetrace-agent",
+        "创建时间": "2026-08-12T03:05:06Z",
+        "最后更新时间": "2026-10-07T06:50:16Z",
+        "主要语言": "Python",
+        "许可证": "MIT",
+        "Stars": 0,
+        "Watch": 0,
+        "Fork": 0,
+        "项目类型": {
+            "en": "Auditable RWKV code-diagnosis Agent runtime",
+            "zh": "可审计的RWKV代码诊断Agent运行时"
+        },
+        "介绍": {
+            "en": "A code-diagnosis Agent runtime with replayable traces, evidence validation, structured tool actions, and verified task checkpoints. It supports direct RWKV adapters, OpenAI-compatible RWKV APIs, and deterministic replay.",
+            "zh": "带可重放轨迹、证据校验、结构化工具动作和任务检查点验证的代码诊断Agent运行时。支持直接RWKV适配器、OpenAI兼容RWKV API和确定性Replay。"
+        },
+        "Agent循环判断": {
+            "en": "It implements a bounded model-tool-observation loop: the model selects structured actions, the controller validates and executes tools, records evidence, feeds observations back, and validates the final report.",
+            "zh": "实现有界的模型—工具—观察循环：模型选择结构化动作，控制器校验并执行工具、记录证据、反馈观察结果，并校验最终报告。"
+        },
+        "主要能力": {
+            "en": [
+                "Structured tool selection with bounded execution",
+                "Replayable traces and evidence IDs",
+                "Checkpoint integrity and task recovery",
+                "Deterministic final-report validation",
+                "Direct RWKV, API, and replay modes"
+            ],
+            "zh": [
+                "带有界执行的结构化工具选择",
+                "可重放轨迹与证据ID",
+                "检查点完整性与任务恢复",
+                "最终报告确定性校验",
+                "直接RWKV、API和Replay模式"
+            ]
+        },
+        "已知限制": {
+            "en": [
+                "Engineering demonstration, not a production security sandbox",
+                "Replay is recorded behavior, not live inference",
+                "The standard text API does not expose native RWKV tensors",
+                "Native checkpoint claims require a compatible direct adapter"
+            ],
+            "zh": [
+                "工程演示，不是生产级安全沙箱",
+                "Replay是录制行为，不是实时推理",
+                "标准文本API不会暴露原生RWKV张量",
+                "原生检查点结论需要兼容的直接适配器"
+            ]
+        },
+        "支持平台": {
+            "en": "Python runtime with local adapters, OpenAI-compatible API mode, and deterministic replay",
+            "zh": "支持本地适配器、OpenAI兼容API模式和确定性Replay的Python运行时"
+        },
+        "信息来源": {
+            "en": [
+                "GitHub metadata",
+                "Project README",
+                "Agent loop and experiment documents"
+            ],
+            "zh": [
+                "GitHub元数据",
+                "项目README",
+                "Agent循环与实验文档"
+            ]
+        },
+        "分类结论": {
+            "en": "Strict Agent",
+            "zh": "严格Agent"
+        },
+        "分类依据": {
+            "en": "The repository implements an action, tool execution, evidence feedback, and report-validation loop with recoverable task state.",
+            "zh": "仓库实现了动作选择、工具执行、证据反馈和报告校验闭环，并支持可恢复任务状态。"
+        }
     },
     {
         "创建用户名": "cgisky1980",
