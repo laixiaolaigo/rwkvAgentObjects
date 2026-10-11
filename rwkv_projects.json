@@ -1,5 +1,68 @@
 [
   {
+    "repositoryUrl": "https://github.com/ConsciousNode/HTMLNLM",
+    "owner": "ConsciousNode",
+    "name": "HTMLNLM",
+    "category": "training",
+    "summary": {
+      "en": "Complete RWKV-v7 LLM training and inference in a single browser file. Zero dependencies.",
+      "zh": "HTMLNLM 提供 RWKV 模型训练、微调或架构实验工具。"
+    },
+    "lastUpdated": "2026-10-11T07:51:52Z",
+    "stars": 1,
+    "watchers": 0,
+    "forks": 0,
+    "language": "HTML",
+    "license": "MIT",
+    "sourcePage": 3,
+    "projectType": {
+      "en": "Training and fine-tuning",
+      "zh": "训练与微调"
+    }
+  },
+  {
+    "repositoryUrl": "https://github.com/RafaelUI/rwkv-metal",
+    "owner": "RafaelUI",
+    "name": "rwkv-metal",
+    "category": "inference",
+    "summary": {
+      "en": "pip install rwkv-metal",
+      "zh": "rwkv-metal 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2026-10-10T21:32:49Z",
+    "stars": 5,
+    "watchers": 0,
+    "forks": 1,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "sourcePage": 1,
+    "projectType": {
+      "en": "Inference backend",
+      "zh": "推理后端"
+    }
+  },
+  {
+    "repositoryUrl": "https://github.com/RWKV-APP/RWKV_APP",
+    "owner": "RWKV-APP",
+    "name": "RWKV_APP",
+    "category": "package",
+    "summary": {
+      "en": "Cross-platform, local-first RWKV chat application for Android, iOS, Windows, macOS, and Linux.",
+      "zh": "面向 Android、iOS、Windows、macOS 与 Linux 的跨平台、本地优先 RWKV 聊天应用。"
+    },
+    "lastUpdated": "2026-10-10T11:49:09Z",
+    "stars": 131,
+    "watchers": 4,
+    "forks": 15,
+    "language": "Dart",
+    "license": "Apache-2.0",
+    "sourcePage": 1,
+    "projectType": {
+      "en": "End-user application",
+      "zh": "终端应用"
+    }
+  },
+  {
     "repositoryUrl": "https://github.com/RafaelUI/rwkv-quant",
     "owner": "RafaelUI",
     "name": "rwkv-quant",
@@ -18,27 +81,6 @@
     "projectType": {
       "en": "Quantization and compression",
       "zh": "量化与压缩"
-    }
-  },
-  {
-    "repositoryUrl": "https://github.com/RWKV-APP/RWKV_APP",
-    "owner": "RWKV-APP",
-    "name": "RWKV_APP",
-    "category": "package",
-    "summary": {
-      "en": "Cross-platform, local-first RWKV chat application for Android, iOS, Windows, macOS, and Linux.",
-      "zh": "面向 Android、iOS、Windows、macOS 与 Linux 的跨平台、本地优先 RWKV 聊天应用。"
-    },
-    "lastUpdated": "2026-10-10T07:22:06Z",
-    "stars": 131,
-    "watchers": 4,
-    "forks": 15,
-    "language": "Dart",
-    "license": "Apache-2.0",
-    "sourcePage": 1,
-    "projectType": {
-      "en": "End-user application",
-      "zh": "终端应用"
     }
   },
   {
@@ -126,27 +168,6 @@
     }
   },
   {
-    "repositoryUrl": "https://github.com/RafaelUI/rwkv-metal",
-    "owner": "RafaelUI",
-    "name": "rwkv-metal",
-    "category": "inference",
-    "summary": {
-      "en": "pip install rwkv-metal",
-      "zh": "rwkv-metal 提供 RWKV 模型推理、部署、运行时或服务支持。"
-    },
-    "lastUpdated": "2026-10-08T11:12:29Z",
-    "stars": 5,
-    "watchers": 0,
-    "forks": 1,
-    "language": "Python",
-    "license": "Apache-2.0",
-    "sourcePage": 1,
-    "projectType": {
-      "en": "Inference backend",
-      "zh": "推理后端"
-    }
-  },
-  {
     "repositoryUrl": "https://github.com/btlqql/sglang-rwkv7",
     "owner": "btlqql",
     "name": "sglang-rwkv7",
@@ -221,7 +242,7 @@
     "lastUpdated": "2026-09-28T18:01:27Z",
     "stars": 14745,
     "watchers": 137,
-    "forks": 1022,
+    "forks": 1021,
     "language": "Python",
     "license": "Apache-2.0",
     "sourcePage": 1,
@@ -303,9 +324,9 @@
       "zh": "从零构建 GLM4、Llama 3 与 RWKV-6 的中文实践课程。"
     },
     "lastUpdated": "2026-09-17T03:01:54Z",
-    "stars": 4399,
+    "stars": 4400,
     "watchers": 37,
-    "forks": 604,
+    "forks": 605,
     "language": "Jupyter Notebook",
     "license": "NOASSERTION",
     "sourcePage": 1,
@@ -387,7 +408,7 @@
       "zh": "Albatross 提供 RWKV 模型推理、部署、运行时或服务支持。"
     },
     "lastUpdated": "2026-09-10T07:53:33Z",
-    "stars": 132,
+    "stars": 133,
     "watchers": 1,
     "forks": 29,
     "language": "Cuda",
@@ -492,9 +513,9 @@
       "zh": "带桌面界面和 OpenAI 兼容 API 的 RWKV 自动化管理与启动工具。"
     },
     "lastUpdated": "2026-09-04T13:37:10Z",
-    "stars": 6481,
+    "stars": 6482,
     "watchers": 48,
-    "forks": 597,
+    "forks": 596,
     "language": "TypeScript",
     "license": "MIT",
     "sourcePage": 1,
@@ -851,7 +872,7 @@
     "lastUpdated": "2026-07-19T19:09:29Z",
     "stars": 9494,
     "watchers": 96,
-    "forks": 685,
+    "forks": 684,
     "language": "Python",
     "license": "Apache-2.0",
     "sourcePage": 1,
@@ -1082,7 +1103,7 @@
     "lastUpdated": "2026-06-09T06:16:58Z",
     "stars": 622,
     "watchers": 19,
-    "forks": 75,
+    "forks": 74,
     "language": "Rust",
     "license": "MIT",
     "sourcePage": 1,
@@ -1194,27 +1215,6 @@
     "projectType": {
       "en": "End-user application",
       "zh": "终端应用"
-    }
-  },
-  {
-    "repositoryUrl": "https://github.com/ConsciousNode/HTMLNLM",
-    "owner": "ConsciousNode",
-    "name": "HTMLNLM",
-    "category": "training",
-    "summary": {
-      "en": "Complete RWKV-v7 LLM training and inference in a single browser file. Zero dependencies.",
-      "zh": "HTMLNLM 提供 RWKV 模型训练、微调或架构实验工具。"
-    },
-    "lastUpdated": "2026-05-26T01:10:55Z",
-    "stars": 1,
-    "watchers": 0,
-    "forks": 0,
-    "language": "HTML",
-    "license": "MIT",
-    "sourcePage": 3,
-    "projectType": {
-      "en": "Training and fine-tuning",
-      "zh": "训练与微调"
     }
   },
   {
@@ -1605,7 +1605,7 @@
       "zh": "可在 iOS 与 macOS 离线运行 RWKV 等本地语言模型的应用。"
     },
     "lastUpdated": "2026-01-30T20:52:36Z",
-    "stars": 2080,
+    "stars": 2081,
     "watchers": 26,
     "forks": 186,
     "language": "C",
@@ -2109,7 +2109,7 @@
       "zh": "使用 RWKV 中文预训练生成模型的小说写作应用。"
     },
     "lastUpdated": "2025-05-15T10:31:45Z",
-    "stars": 3922,
+    "stars": 3923,
     "watchers": 51,
     "forks": 570,
     "language": "Python",
@@ -3035,7 +3035,7 @@
     "lastUpdated": "2024-02-12T21:28:29Z",
     "stars": 146,
     "watchers": 12,
-    "forks": 16,
+    "forks": 15,
     "language": "Dart",
     "license": "AGPL-3.0",
     "sourcePage": 8,
