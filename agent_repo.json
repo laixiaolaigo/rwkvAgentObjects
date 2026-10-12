@@ -1,17 +1,33 @@
 [
   {
+    "projectName": "rwkv-router",
+    "repositoryUrl": "https://github.com/cgisky1980/rwkv-router",
+    "lastUpdated": "2026-10-12T09:54:54Z",
+    "stars": 3,
+    "forks": 0,
+    "watchers": 0
+  },
+  {
     "projectName": "RWKV-Agent",
     "repositoryUrl": "https://github.com/No-22-Github/RWKV-Agent",
-    "lastUpdated": "2026-10-10T09:07:26Z",
+    "lastUpdated": "2026-10-12T09:49:30Z",
     "stars": 2,
     "forks": 1,
+    "watchers": 0
+  },
+  {
+    "projectName": "stateswap",
+    "repositoryUrl": "https://github.com/Nice0o0/stateswap",
+    "lastUpdated": "2026-10-12T08:23:19Z",
+    "stars": 1,
+    "forks": 0,
     "watchers": 0
   },
   {
     "projectName": "RWKV-LH",
     "repositoryUrl": "https://github.com/rwkv-rs/RWKV-LH",
     "lastUpdated": "2026-10-09T03:20:21Z",
-    "stars": 2,
+    "stars": 3,
     "forks": 0,
     "watchers": 0
   },
@@ -44,7 +60,7 @@
     "repositoryUrl": "https://github.com/xiaol/Gut-RWKV-Jev-laya",
     "lastUpdated": "2026-09-28T07:56:58Z",
     "stars": 1,
-    "forks": 0,
+    "forks": 1,
     "watchers": 0
   },
   {
@@ -64,25 +80,9 @@
     "watchers": 0
   },
   {
-    "projectName": "stateswap",
-    "repositoryUrl": "https://github.com/Nice0o0/stateswap",
-    "lastUpdated": "2026-09-21T16:03:02Z",
-    "stars": 1,
-    "forks": 0,
-    "watchers": 0
-  },
-  {
     "projectName": "rwkv-jev-like",
     "repositoryUrl": "https://github.com/1cyberlangke1/rwkv-jev-like",
     "lastUpdated": "2026-09-20T10:35:09Z",
-    "stars": 3,
-    "forks": 0,
-    "watchers": 0
-  },
-  {
-    "projectName": "rwkv-router",
-    "repositoryUrl": "https://github.com/cgisky1980/rwkv-router",
-    "lastUpdated": "2026-09-15T07:15:23Z",
     "stars": 3,
     "forks": 0,
     "watchers": 0

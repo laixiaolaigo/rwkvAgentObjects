@@ -1,12 +1,102 @@
 ﻿[
     {
+        "创建用户名": "cgisky1980",
+        "作者备注": {
+            "en": "Ai00-X ecosystem maintainer; productionization of RWKV-7 state-embedding research",
+            "zh": "Ai00-X生态维护者；RWKV-7状态嵌入研究的工程化实现"
+        },
+        "用户头像": "https://avatars.githubusercontent.com/u/82481660?v=4",
+        "GitHub地址": "https://github.com/cgisky1980/rwkv-router",
+        "项目名称": "rwkv-router",
+        "创建时间": "2026-09-15T04:56:55Z",
+        "最后更新时间": "2026-10-12T09:54:54Z",
+        "主要语言": "Rust",
+        "许可证": "MIT",
+        "Stars": 3,
+        "Watch": 0,
+        "Fork": 0,
+        "项目类型": {
+            "en": "Self-evolving local-first RWKV model router and Agent gateway",
+            "zh": "自进化、本地优先的RWKV模型路由器与Agent网关"
+        },
+        "介绍": {
+            "en": "A production-oriented smart-routing component that classifies LLM requests into R0-R3 tiers using rules and a resident RWKV 0.1B classifier, then routes them to local RWKV models or cloud APIs. It ships as a Rust library, C ABI library, Python and Node packages, and a standalone OpenAI/Anthropic-compatible HTTP and MCP gateway.",
+            "zh": "面向生产的智能路由组件，通过规则栈与常驻RWKV 0.1B分类器把LLM请求划分为R0至R3层级，再路由到本地RWKV模型或云端API。提供Rust库、C ABI动态库、Python与Node包，以及兼容OpenAI、Anthropic和MCP的独立网关。"
+        },
+        "Agent循环判断": {
+            "en": "It is Agent infrastructure rather than a standalone task-execution Agent. Each Agent request is classified and forwarded through a model-routing loop. Its separate self-evolution loop captures real routing traffic, accepts labels, fine-tunes the MLP head with pure-Rust AdamW, evaluates the candidate against an independent pack, and hot-deploys it only when accuracy does not regress.",
+            "zh": "属于Agent基础设施，而非独立执行任务的Agent。每个Agent请求都会经过分类与模型分流；其独立自进化闭环会采集真实路由流量、接收标注、使用纯Rust AdamW微调MLP头、通过独立评测包验证候选模型，并仅在准确率不退化时热部署。"
+        },
+        "主要能力": {
+            "en": [
+                "R0-R3 routing with rules and a resident RWKV 0.1B classifier",
+                "Local RWKV generation and cloud API passthrough",
+                "OpenAI- and Anthropic-compatible HTTP gateway with SSE passthrough",
+                "MCP tools for routing, labeling, statistics, and evolution",
+                "Non-regressing self-evolution through capture, labeling, fine-tuning, evaluation, and hot reload",
+                "Rust, C ABI, Python, Node.js, CLI, and sidecar distributions"
+            ],
+            "zh": [
+                "规则栈与常驻RWKV 0.1B分类器驱动的R0至R3路由",
+                "本地RWKV生成与云端API透传",
+                "兼容OpenAI和Anthropic并支持SSE透传的HTTP网关",
+                "用于路由、标注、统计和进化的MCP工具",
+                "通过采集、标注、微调、评测和热更新实现不可致劣的自进化",
+                "Rust、C ABI、Python、Node.js、CLI与Sidecar多种发行形态"
+            ]
+        },
+        "已知限制": {
+            "en": [
+                "The shipped pretrained head is reported at approximately 77-80% standard-evaluation accuracy before self-evolution",
+                "Cloud upstreams require user-supplied API configuration and credentials",
+                "The gateway binds only to localhost by default and requires additional authentication if exposed externally",
+                "Large local generation tiers require optional model downloads and suitable Vulkan or CUDA hardware"
+            ],
+            "zh": [
+                "项目报告预训练头在自进化前的标准评测准确率约为77%至80%",
+                "云端上游需要用户自行配置API及凭据",
+                "网关默认仅监听本机，对外暴露时需要另行添加身份认证",
+                "较大的本地生成层级需要额外下载模型，并配备合适的Vulkan或CUDA硬件"
+            ]
+        },
+        "支持平台": {
+            "en": "Rust core with Vulkan and CUDA inference backends; also distributed through C ABI, Python, Node.js, CLI, and a standalone sidecar gateway",
+            "zh": "Rust核心支持Vulkan与CUDA推理后端；同时提供C ABI、Python、Node.js、CLI和独立Sidecar网关"
+        },
+        "关联项目": [
+            "https://github.com/cgisky1980/rwkv7-state-embedding",
+            "https://github.com/cgisky1980/ai00-x-client",
+            "https://github.com/HazyResearch/intelligence-per-watt"
+        ],
+        "信息来源": {
+            "en": [
+                "GitHub repository metadata",
+                "Chinese and English README files",
+                "Gateway, self-evolution, binding, and training architecture"
+            ],
+            "zh": [
+                "GitHub仓库元数据",
+                "中英文README",
+                "网关、自进化、语言绑定与训练架构"
+            ]
+        },
+        "分类结论": {
+            "en": "Agent routing infrastructure",
+            "zh": "Agent路由基础设施"
+        },
+        "分类依据": {
+            "en": "The project directly serves Agents through compatible HTTP and MCP interfaces and implements adaptive model selection plus a complete self-evolution feedback loop, but it does not independently plan and execute arbitrary user tasks.",
+            "zh": "项目通过兼容HTTP与MCP接口直接服务Agent，实现自适应模型选择及完整自进化反馈闭环，但不会独立规划和执行任意用户任务。"
+        }
+    },
+    {
         "创建用户名":  "No-22-Github",
         "作者备注":  null,
         "用户头像":  "https://avatars.githubusercontent.com/u/132265925?v=4",
         "GitHub地址":  "https://github.com/No-22-Github/RWKV-Agent",
         "项目名称":  "RWKV-Agent",
         "创建时间":  "2026-07-27T13:41:03Z",
-        "最后更新时间":  "2026-10-10T09:07:26Z",
+        "最后更新时间":  "2026-10-12T09:49:30Z",
         "主要语言":  "Go",
         "许可证":  null,
         "Stars":  2,
@@ -64,6 +154,85 @@
         }
     },
     {
+        "创建用户名": "Nice0o0",
+        "用户头像": "https://avatars.githubusercontent.com/u/70088382?v=4",
+        "GitHub地址": "https://github.com/Nice0o0/stateswap",
+        "项目名称": "stateswap",
+        "创建时间": "2026-08-30T15:28:20Z",
+        "最后更新时间": "2026-10-12T08:23:19Z",
+        "主要语言": "Python",
+        "许可证": "MIT",
+        "Stars": 1,
+        "Watch": 0,
+        "Fork": 0,
+        "项目类型": {
+            "en": "RWKV persona-state training and hot-swap runtime",
+            "zh": "RWKV人格状态训练与热切换运行时"
+        },
+        "介绍": {
+            "en": "An RWKV-7 initial-state tuning and serving project. It freezes the base-model weights, trains compact S0 states for personas or task modes, and hot-swaps them per session through an OpenAI-compatible API and WebUI. It also provides state mixing, low-rank and int8 compression, O(1) recurrent multi-turn sessions, evaluation tools, and reproducible state-behavior research.",
+            "zh": "面向RWKV-7的初始状态微调与服务项目。它冻结基座模型权重，为人格或任务模式训练紧凑的S0状态，并通过OpenAI兼容API与WebUI按Session热切换；同时提供状态混合、低秩与int8压缩、O(1)循环多轮会话、评测工具及可复现的状态行为研究。"
+        },
+        "Agent循环判断": {
+            "en": "The repository does not implement an autonomous plan-act-observe tool loop. Its session state, persona registry, hot-swap API, and task-mode states can serve as identity and recurrent-memory infrastructure inside an agent system, but external orchestration is required for tool selection and execution.",
+            "zh": "仓库没有实现自主的“规划、行动、观察”工具循环。其Session状态、人格注册表、热切换API与任务模式状态可作为Agent系统中的身份和循环记忆基础设施，但工具选择与执行仍需要外部编排。"
+        },
+        "主要能力": {
+            "en": [
+                "S0 state tuning for personas, styles, and task modes with frozen model weights",
+                "Millisecond persona hot-swap and per-session O(1) recurrent conversation state",
+                "OpenAI-compatible API, streaming chat WebUI, persona mixer, and training interface",
+                "Int8 and low-rank state compression plus state arithmetic and editing",
+                "Reproducible evaluation and research artifacts for RWKV initial-state behavior"
+            ],
+            "zh": [
+                "冻结模型权重的人格、风格与任务模式S0状态微调",
+                "毫秒级人格热切换与每Session O(1)循环会话状态",
+                "OpenAI兼容API、流式聊天WebUI、人格混合器与训练界面",
+                "int8与低秩状态压缩，以及状态算术和编辑",
+                "可复现的RWKV初始状态行为评测与研究产物"
+            ]
+        },
+        "已知限制": {
+            "en": [
+                "Not a complete autonomous agent and does not provide a tool-execution loop",
+                "S0 tuning changes behavior and task priors but cannot add new factual knowledge",
+                "The documented reproduction stack targets Windows or Linux with an NVIDIA GPU and Python 3.12+",
+                "Conversation quality remains bounded by the frozen base model"
+            ],
+            "zh": [
+                "不是完整自主Agent，也不提供工具执行循环",
+                "S0微调可改变行为与任务先验，但不能注入新的事实知识",
+                "文档中的复现环境主要面向Windows或Linux、NVIDIA GPU与Python 3.12+",
+                "会话质量仍受冻结基座模型能力上限约束"
+            ]
+        },
+        "支持平台": {
+            "en": "Documented for Windows and Linux with NVIDIA CUDA GPUs; exposes local Python, HTTP API, and browser WebUI interfaces",
+            "zh": "文档主要支持Windows与Linux上的NVIDIA CUDA GPU，并提供本地Python、HTTP API和浏览器WebUI接口"
+        },
+        "信息来源": {
+            "en": [
+                "GitHub repository metadata",
+                "Project README and architecture documentation",
+                "Published benchmark and research reports in the repository"
+            ],
+            "zh": [
+                "GitHub仓库元数据",
+                "项目README与架构文档",
+                "仓库内发布的基准与研究报告"
+            ]
+        },
+        "分类结论": {
+            "en": "Agent persona and state infrastructure",
+            "zh": "Agent人格与状态基础设施"
+        },
+        "分类依据": {
+            "en": "The project provides reusable persona, task-mode, and recurrent-session state infrastructure that can materially shape an RWKV agent, but it does not independently choose tools or run an autonomous agent loop.",
+            "zh": "项目提供可复用的人格、任务模式与循环Session状态基础设施，能够实质性支撑RWKV Agent，但自身不负责工具选择，也不运行自主Agent循环。"
+        }
+    },
+    {
         "创建用户名":  "rwkv-rs",
         "账号类型":  {
             "en": "GitHub organization",
@@ -80,7 +249,7 @@
         "最后更新时间":  "2026-10-09T03:20:21Z",
         "主要语言":  "Python",
         "许可证":  "MIT",
-        "Stars":  2,
+        "Stars":  3,
         "Watch":  0,
         "Fork":  0,
         "项目类型":  {
@@ -343,7 +512,7 @@
         "许可证": null,
         "Stars": 1,
         "Watch": 0,
-        "Fork": 0,
+        "Fork": 1,
         "项目类型": {
             "en": "Typed RWKV decision infrastructure",
             "zh": "类型化RWKV决策基础设施"
@@ -534,85 +703,6 @@
         }
     },
     {
-        "创建用户名": "Nice0o0",
-        "用户头像": "https://avatars.githubusercontent.com/u/70088382?v=4",
-        "GitHub地址": "https://github.com/Nice0o0/stateswap",
-        "项目名称": "stateswap",
-        "创建时间": "2026-08-30T15:28:20Z",
-        "最后更新时间": "2026-09-21T16:03:02Z",
-        "主要语言": "Python",
-        "许可证": "MIT",
-        "Stars": 1,
-        "Watch": 0,
-        "Fork": 0,
-        "项目类型": {
-            "en": "RWKV persona-state training and hot-swap runtime",
-            "zh": "RWKV人格状态训练与热切换运行时"
-        },
-        "介绍": {
-            "en": "An RWKV-7 initial-state tuning and serving project. It freezes the base-model weights, trains compact S0 states for personas or task modes, and hot-swaps them per session through an OpenAI-compatible API and WebUI. It also provides state mixing, low-rank and int8 compression, O(1) recurrent multi-turn sessions, evaluation tools, and reproducible state-behavior research.",
-            "zh": "面向RWKV-7的初始状态微调与服务项目。它冻结基座模型权重，为人格或任务模式训练紧凑的S0状态，并通过OpenAI兼容API与WebUI按Session热切换；同时提供状态混合、低秩与int8压缩、O(1)循环多轮会话、评测工具及可复现的状态行为研究。"
-        },
-        "Agent循环判断": {
-            "en": "The repository does not implement an autonomous plan-act-observe tool loop. Its session state, persona registry, hot-swap API, and task-mode states can serve as identity and recurrent-memory infrastructure inside an agent system, but external orchestration is required for tool selection and execution.",
-            "zh": "仓库没有实现自主的“规划、行动、观察”工具循环。其Session状态、人格注册表、热切换API与任务模式状态可作为Agent系统中的身份和循环记忆基础设施，但工具选择与执行仍需要外部编排。"
-        },
-        "主要能力": {
-            "en": [
-                "S0 state tuning for personas, styles, and task modes with frozen model weights",
-                "Millisecond persona hot-swap and per-session O(1) recurrent conversation state",
-                "OpenAI-compatible API, streaming chat WebUI, persona mixer, and training interface",
-                "Int8 and low-rank state compression plus state arithmetic and editing",
-                "Reproducible evaluation and research artifacts for RWKV initial-state behavior"
-            ],
-            "zh": [
-                "冻结模型权重的人格、风格与任务模式S0状态微调",
-                "毫秒级人格热切换与每Session O(1)循环会话状态",
-                "OpenAI兼容API、流式聊天WebUI、人格混合器与训练界面",
-                "int8与低秩状态压缩，以及状态算术和编辑",
-                "可复现的RWKV初始状态行为评测与研究产物"
-            ]
-        },
-        "已知限制": {
-            "en": [
-                "Not a complete autonomous agent and does not provide a tool-execution loop",
-                "S0 tuning changes behavior and task priors but cannot add new factual knowledge",
-                "The documented reproduction stack targets Windows or Linux with an NVIDIA GPU and Python 3.12+",
-                "Conversation quality remains bounded by the frozen base model"
-            ],
-            "zh": [
-                "不是完整自主Agent，也不提供工具执行循环",
-                "S0微调可改变行为与任务先验，但不能注入新的事实知识",
-                "文档中的复现环境主要面向Windows或Linux、NVIDIA GPU与Python 3.12+",
-                "会话质量仍受冻结基座模型能力上限约束"
-            ]
-        },
-        "支持平台": {
-            "en": "Documented for Windows and Linux with NVIDIA CUDA GPUs; exposes local Python, HTTP API, and browser WebUI interfaces",
-            "zh": "文档主要支持Windows与Linux上的NVIDIA CUDA GPU，并提供本地Python、HTTP API和浏览器WebUI接口"
-        },
-        "信息来源": {
-            "en": [
-                "GitHub repository metadata",
-                "Project README and architecture documentation",
-                "Published benchmark and research reports in the repository"
-            ],
-            "zh": [
-                "GitHub仓库元数据",
-                "项目README与架构文档",
-                "仓库内发布的基准与研究报告"
-            ]
-        },
-        "分类结论": {
-            "en": "Agent persona and state infrastructure",
-            "zh": "Agent人格与状态基础设施"
-        },
-        "分类依据": {
-            "en": "The project provides reusable persona, task-mode, and recurrent-session state infrastructure that can materially shape an RWKV agent, but it does not independently choose tools or run an autonomous agent loop.",
-            "zh": "项目提供可复用的人格、任务模式与循环Session状态基础设施，能够实质性支撑RWKV Agent，但自身不负责工具选择，也不运行自主Agent循环。"
-        }
-    },
-    {
         "创建用户名": "1cyberlangke1",
         "作者备注": {
             "en": "The README states that the project code was written with AI assistance.",
@@ -693,96 +783,6 @@
         "分类依据": {
             "en": "Its constrained Choice, Score, and Noul contracts are directly reusable for agent routing and policy decisions, while the absence of planning, tool execution, observation feedback, and iteration means it should not be labeled a strict agent.",
             "zh": "其受约束的Choice、Score与Noul契约可直接用于Agent路由和策略决策；但由于缺少规划、工具执行、观察反馈与迭代，因此不应标为严格Agent。"
-        }
-    },
-    {
-        "创建用户名": "cgisky1980",
-        "作者备注": {
-            "en": "Ai00-X ecosystem maintainer; productionization of RWKV-7 state-embedding research",
-            "zh": "Ai00-X生态维护者；RWKV-7状态嵌入研究的工程化实现"
-        },
-        "用户头像": "https://avatars.githubusercontent.com/u/82481660?v=4",
-        "GitHub地址": "https://github.com/cgisky1980/rwkv-router",
-        "项目名称": "rwkv-router",
-        "创建时间": "2026-09-15T04:56:55Z",
-        "最后更新时间": "2026-09-15T07:15:23Z",
-        "主要语言": "Rust",
-        "许可证": "MIT",
-        "Stars": 3,
-        "Watch": 0,
-        "Fork": 0,
-        "项目类型": {
-            "en": "Self-evolving local-first RWKV model router and Agent gateway",
-            "zh": "自进化、本地优先的RWKV模型路由器与Agent网关"
-        },
-        "介绍": {
-            "en": "A production-oriented smart-routing component that classifies LLM requests into R0-R3 tiers using rules and a resident RWKV 0.1B classifier, then routes them to local RWKV models or cloud APIs. It ships as a Rust library, C ABI library, Python and Node packages, and a standalone OpenAI/Anthropic-compatible HTTP and MCP gateway.",
-            "zh": "面向生产的智能路由组件，通过规则栈与常驻RWKV 0.1B分类器把LLM请求划分为R0至R3层级，再路由到本地RWKV模型或云端API。提供Rust库、C ABI动态库、Python与Node包，以及兼容OpenAI、Anthropic和MCP的独立网关。"
-        },
-        "Agent循环判断": {
-            "en": "It is Agent infrastructure rather than a standalone task-execution Agent. Each Agent request is classified and forwarded through a model-routing loop. Its separate self-evolution loop captures real routing traffic, accepts labels, fine-tunes the MLP head with pure-Rust AdamW, evaluates the candidate against an independent pack, and hot-deploys it only when accuracy does not regress.",
-            "zh": "属于Agent基础设施，而非独立执行任务的Agent。每个Agent请求都会经过分类与模型分流；其独立自进化闭环会采集真实路由流量、接收标注、使用纯Rust AdamW微调MLP头、通过独立评测包验证候选模型，并仅在准确率不退化时热部署。"
-        },
-        "主要能力": {
-            "en": [
-                "R0-R3 routing with rules and a resident RWKV 0.1B classifier",
-                "Local RWKV generation and cloud API passthrough",
-                "OpenAI- and Anthropic-compatible HTTP gateway with SSE passthrough",
-                "MCP tools for routing, labeling, statistics, and evolution",
-                "Non-regressing self-evolution through capture, labeling, fine-tuning, evaluation, and hot reload",
-                "Rust, C ABI, Python, Node.js, CLI, and sidecar distributions"
-            ],
-            "zh": [
-                "规则栈与常驻RWKV 0.1B分类器驱动的R0至R3路由",
-                "本地RWKV生成与云端API透传",
-                "兼容OpenAI和Anthropic并支持SSE透传的HTTP网关",
-                "用于路由、标注、统计和进化的MCP工具",
-                "通过采集、标注、微调、评测和热更新实现不可致劣的自进化",
-                "Rust、C ABI、Python、Node.js、CLI与Sidecar多种发行形态"
-            ]
-        },
-        "已知限制": {
-            "en": [
-                "The shipped pretrained head is reported at approximately 77-80% standard-evaluation accuracy before self-evolution",
-                "Cloud upstreams require user-supplied API configuration and credentials",
-                "The gateway binds only to localhost by default and requires additional authentication if exposed externally",
-                "Large local generation tiers require optional model downloads and suitable Vulkan or CUDA hardware"
-            ],
-            "zh": [
-                "项目报告预训练头在自进化前的标准评测准确率约为77%至80%",
-                "云端上游需要用户自行配置API及凭据",
-                "网关默认仅监听本机，对外暴露时需要另行添加身份认证",
-                "较大的本地生成层级需要额外下载模型，并配备合适的Vulkan或CUDA硬件"
-            ]
-        },
-        "支持平台": {
-            "en": "Rust core with Vulkan and CUDA inference backends; also distributed through C ABI, Python, Node.js, CLI, and a standalone sidecar gateway",
-            "zh": "Rust核心支持Vulkan与CUDA推理后端；同时提供C ABI、Python、Node.js、CLI和独立Sidecar网关"
-        },
-        "关联项目": [
-            "https://github.com/cgisky1980/rwkv7-state-embedding",
-            "https://github.com/cgisky1980/ai00-x-client",
-            "https://github.com/HazyResearch/intelligence-per-watt"
-        ],
-        "信息来源": {
-            "en": [
-                "GitHub repository metadata",
-                "Chinese and English README files",
-                "Gateway, self-evolution, binding, and training architecture"
-            ],
-            "zh": [
-                "GitHub仓库元数据",
-                "中英文README",
-                "网关、自进化、语言绑定与训练架构"
-            ]
-        },
-        "分类结论": {
-            "en": "Agent routing infrastructure",
-            "zh": "Agent路由基础设施"
-        },
-        "分类依据": {
-            "en": "The project directly serves Agents through compatible HTTP and MCP interfaces and implements adaptive model selection plus a complete self-evolution feedback loop, but it does not independently plan and execute arbitrary user tasks.",
-            "zh": "项目通过兼容HTTP与MCP接口直接服务Agent，实现自适应模型选择及完整自进化反馈闭环，但不会独立规划和执行任意用户任务。"
         }
     },
     {
