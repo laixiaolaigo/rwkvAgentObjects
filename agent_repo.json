@@ -1,18 +1,18 @@
 [
   {
+    "projectName": "RWKV-Agent",
+    "repositoryUrl": "https://github.com/No-22-Github/RWKV-Agent",
+    "lastUpdated": "2026-10-14T04:02:55Z",
+    "stars": 2,
+    "forks": 1,
+    "watchers": 0
+  },
+  {
     "projectName": "rwkv-router",
     "repositoryUrl": "https://github.com/cgisky1980/rwkv-router",
     "lastUpdated": "2026-10-12T09:54:54Z",
     "stars": 3,
     "forks": 0,
-    "watchers": 0
-  },
-  {
-    "projectName": "RWKV-Agent",
-    "repositoryUrl": "https://github.com/No-22-Github/RWKV-Agent",
-    "lastUpdated": "2026-10-12T09:49:30Z",
-    "stars": 2,
-    "forks": 1,
     "watchers": 0
   },
   {
