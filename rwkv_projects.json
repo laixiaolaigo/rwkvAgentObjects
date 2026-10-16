@@ -1,5 +1,26 @@
 [
   {
+    "repositoryUrl": "https://github.com/btlqql/vllm-rwkv7",
+    "owner": "btlqql",
+    "name": "vllm-rwkv7",
+    "category": "inference",
+    "summary": {
+      "en": "Native RWKV-7 integration for vLLM, implemented clean-room against the Hugging Face contract.",
+      "zh": "vllm-rwkv7 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2026-10-16T02:04:45Z",
+    "stars": 0,
+    "watchers": 0,
+    "forks": 0,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "sourcePage": 2,
+    "projectType": {
+      "en": "Inference backend",
+      "zh": "推理后端"
+    }
+  },
+  {
     "repositoryUrl": "https://github.com/Alic-Li/rwkv_lightning_cuda",
     "owner": "Alic-Li",
     "name": "rwkv_lightning_cuda",
@@ -8,7 +29,7 @@
       "en": "The fastest pure C++ GPU runtime for RWKV — zero PyTorch, one-command deployment, CUDA/ROCm inference, quantization, state tuning & serving.🕊",
       "zh": "rwkv_lightning_cuda 提供 RWKV 模型推理、部署、运行时或服务支持。"
     },
-    "lastUpdated": "2026-10-15T08:19:01Z",
+    "lastUpdated": "2026-10-15T11:37:15Z",
     "stars": 10,
     "watchers": 0,
     "forks": 2,
@@ -294,27 +315,6 @@
     }
   },
   {
-    "repositoryUrl": "https://github.com/btlqql/vllm-rwkv7",
-    "owner": "btlqql",
-    "name": "vllm-rwkv7",
-    "category": "inference",
-    "summary": {
-      "en": "Native RWKV-7 integration for vLLM, implemented clean-room against the Hugging Face contract.",
-      "zh": "vllm-rwkv7 提供 RWKV 模型推理、部署、运行时或服务支持。"
-    },
-    "lastUpdated": "2026-10-09T02:02:10Z",
-    "stars": 0,
-    "watchers": 0,
-    "forks": 0,
-    "language": "Python",
-    "license": "Apache-2.0",
-    "sourcePage": 2,
-    "projectType": {
-      "en": "Inference backend",
-      "zh": "推理后端"
-    }
-  },
-  {
     "repositoryUrl": "https://github.com/BlinkDL/RWKV-LM",
     "owner": "BlinkDL",
     "name": "RWKV-LM",
@@ -324,9 +324,9 @@
       "zh": "RWKV 语言模型主仓库，包含模型架构、训练代码、CUDA 内核与示例。"
     },
     "lastUpdated": "2026-09-28T18:01:27Z",
-    "stars": 14750,
+    "stars": 14751,
     "watchers": 137,
-    "forks": 1023,
+    "forks": 1024,
     "language": "Python",
     "license": "Apache-2.0",
     "sourcePage": 1,
@@ -366,9 +366,9 @@
       "zh": "从零构建 GLM4、Llama 3 与 RWKV-6 的中文实践课程。"
     },
     "lastUpdated": "2026-09-17T03:01:54Z",
-    "stars": 4412,
+    "stars": 4413,
     "watchers": 37,
-    "forks": 607,
+    "forks": 608,
     "language": "Jupyter Notebook",
     "license": "NOASSERTION",
     "sourcePage": 1,
@@ -912,7 +912,7 @@
       "zh": "用于本地运行 RWKV 语言模型的参考聊天与推理实现。"
     },
     "lastUpdated": "2026-07-19T19:09:29Z",
-    "stars": 9496,
+    "stars": 9495,
     "watchers": 96,
     "forks": 684,
     "language": "Python",
@@ -1122,7 +1122,7 @@
       "zh": "集成嵌入、RAG、Agent 能力和便捷部署流程的一体化 RWKV 运行服务。"
     },
     "lastUpdated": "2026-06-09T06:16:58Z",
-    "stars": 622,
+    "stars": 621,
     "watchers": 19,
     "forks": 74,
     "language": "Rust",
@@ -2109,7 +2109,7 @@
       "zh": "使用 RWKV 中文预训练生成模型的小说写作应用。"
     },
     "lastUpdated": "2025-05-15T10:31:45Z",
-    "stars": 3929,
+    "stars": 3931,
     "watchers": 51,
     "forks": 570,
     "language": "Python",
@@ -2256,9 +2256,9 @@
       "zh": "支持 INT4、INT5、INT8 与 FP16 的 RWKV 量化 CPU 推理运行时。"
     },
     "lastUpdated": "2025-03-23T05:04:42Z",
-    "stars": 1585,
+    "stars": 1587,
     "watchers": 23,
-    "forks": 130,
+    "forks": 131,
     "language": "C++",
     "license": "MIT",
     "sourcePage": 1,
