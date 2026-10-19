@@ -1,5 +1,26 @@
 [
   {
+    "repositoryUrl": "https://github.com/btlqql/sglang-rwkv7",
+    "owner": "btlqql",
+    "name": "sglang-rwkv7",
+    "category": "inference",
+    "summary": {
+      "en": "Independent SGLang distribution focused on production-grade RWKV-7 serving, recurrent state caching, speculative decoding, quantization, and broad GPU support.",
+      "zh": "sglang-rwkv7 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2026-10-19T04:04:09Z",
+    "stars": 0,
+    "watchers": 0,
+    "forks": 0,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "sourcePage": 2,
+    "projectType": {
+      "en": "Inference service",
+      "zh": "推理服务"
+    }
+  },
+  {
     "repositoryUrl": "https://github.com/RafaelUI/rwkv-quant",
     "owner": "RafaelUI",
     "name": "rwkv-quant",
@@ -231,27 +252,6 @@
     }
   },
   {
-    "repositoryUrl": "https://github.com/btlqql/sglang-rwkv7",
-    "owner": "btlqql",
-    "name": "sglang-rwkv7",
-    "category": "inference",
-    "summary": {
-      "en": "Independent SGLang distribution focused on production-grade RWKV-7 serving, recurrent state caching, speculative decoding, quantization, and broad GPU support.",
-      "zh": "sglang-rwkv7 提供 RWKV 模型推理、部署、运行时或服务支持。"
-    },
-    "lastUpdated": "2026-10-12T05:19:18Z",
-    "stars": 0,
-    "watchers": 0,
-    "forks": 0,
-    "language": "Python",
-    "license": "Apache-2.0",
-    "sourcePage": 2,
-    "projectType": {
-      "en": "Inference service",
-      "zh": "推理服务"
-    }
-  },
-  {
     "repositoryUrl": "https://github.com/ConsciousNode/HTMLNLM",
     "owner": "ConsciousNode",
     "name": "HTMLNLM",
@@ -324,7 +324,7 @@
       "zh": "RWKV 语言模型主仓库，包含模型架构、训练代码、CUDA 内核与示例。"
     },
     "lastUpdated": "2026-09-28T18:01:27Z",
-    "stars": 14749,
+    "stars": 14751,
     "watchers": 137,
     "forks": 1024,
     "language": "Python",
@@ -366,7 +366,7 @@
       "zh": "从零构建 GLM4、Llama 3 与 RWKV-6 的中文实践课程。"
     },
     "lastUpdated": "2026-09-17T03:01:54Z",
-    "stars": 4415,
+    "stars": 4414,
     "watchers": 37,
     "forks": 608,
     "language": "Jupyter Notebook",
@@ -515,7 +515,7 @@
     "lastUpdated": "2026-09-06T07:21:39Z",
     "stars": 857,
     "watchers": 24,
-    "forks": 365,
+    "forks": 367,
     "language": "Kotlin",
     "license": "MIT",
     "sourcePage": 1,
@@ -556,8 +556,8 @@
     },
     "lastUpdated": "2026-09-04T13:37:10Z",
     "stars": 6487,
-    "watchers": 48,
-    "forks": 595,
+    "watchers": 47,
+    "forks": 594,
     "language": "TypeScript",
     "license": "MIT",
     "sourcePage": 1,
@@ -912,7 +912,7 @@
       "zh": "用于本地运行 RWKV 语言模型的参考聊天与推理实现。"
     },
     "lastUpdated": "2026-07-19T19:09:29Z",
-    "stars": 9494,
+    "stars": 9493,
     "watchers": 96,
     "forks": 684,
     "language": "Python",
@@ -2970,7 +2970,7 @@
       "zh": "集成 GPT-SoVITS 朗读的本地 RWKV 写作 Web 界面。"
     },
     "lastUpdated": "2024-04-04T07:30:25Z",
-    "stars": 59,
+    "stars": 60,
     "watchers": 2,
     "forks": 8,
     "language": "Python",
