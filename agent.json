@@ -1,5 +1,107 @@
 ﻿[
     {
+        "创建用户名":  "123123213weqw",
+        "作者备注":  {
+            "en": "Community developer",
+            "zh": "社区开发者"
+        },
+        "用户头像":  "https://avatars.githubusercontent.com/u/300659282?v=4",
+        "GitHub地址":  "https://github.com/123123213weqw/rwkv-agent",
+        "曾用名或别名地址":  [
+                        "https://github.com/123123213weqw/rwkv-search"
+                    ],
+        "项目名称":  "rwkv-agent",
+        "创建时间":  "2026-07-19T12:11:52Z",
+        "最后更新时间":  "2026-10-20T02:02:21Z",
+        "主要语言":  "Python",
+        "许可证":  "MIT",
+        "Stars":  9,
+        "Watch":  1,
+        "Fork":  3,
+        "项目类型":  {
+            "en": "Local-first RWKV agent and web research system",
+            "zh": "本地优先的RWKV Agent与网络研究系统"
+        },
+        "介绍":  {
+            "en": "Provides multi-turn RWKV conversations, tool calling, web search, knowledge-base search, long-form question answering, evidence selection, citation generation, and reproducible evaluation. Its main interfaces are a Rust terminal client and an RWKV Agent HTTP backend. RWKV Search is its internal retrieval subsystem; the former rwkv-search repository now redirects to this repository with HTTP 301.",
+            "zh": "提供多轮RWKV对话、工具调用、网页搜索、知识库搜索、长文本问答、证据筛选、引用生成和可复现评测。主要界面是Rust终端客户端和RWKV Agent HTTP后端。RWKV Search是其内部检索子系统；旧仓库地址 rwkv-search 现已301跳转到本仓库。"
+        },
+        "Agent循环判断":  {
+            "en": "Implements a clearly defined tool loop. A Semantic Search Gate first decides between ordinary conversation and tool use. Retrieval, fetching, and evidence-selection results are returned to the model, which then produces an answer with citations. Research mode supports one to three rounds of stateful, multi-branch retrieval.",
+            "zh": "实现了较明确的工具循环。模型先由Semantic Search Gate决定普通对话或调用工具；工具执行结果经过检索、抓取、证据选择后返回模型，模型再生成带引用的回答。研究模式支持1至3轮、多分支状态化检索。"
+        },
+        "搜索能力":  {
+            "en": [
+                "Self-hosted SearXNG",
+                "Dogpile and Naver search channels",
+                "GitHub, MediaWiki, and Crossref",
+                "Restricted Bing fallback",
+                "Optional Tavily"
+            ],
+            "zh": [
+                "自托管SearXNG",
+                "Dogpile与Naver检索通道",
+                "GitHub、MediaWiki和Crossref",
+                "Bing受限回退",
+                "可选Tavily"
+            ]
+        },
+        "已知限制":  {
+            "en": [
+                "Beta release",
+                "The HTTP service has no built-in authentication or rate limiting",
+                "Public-web answer quality has not reached the project's own release threshold"
+            ],
+            "zh": [
+                "Beta版本",
+                "HTTP服务没有内置身份认证和限流",
+                "公开网页回答质量尚未达到项目自己的发布门槛"
+            ]
+        },
+        "信息来源":  {
+            "en": [
+                "GitHub repository metadata",
+                "Project README",
+                "HTTP 301 redirect verification"
+            ],
+            "zh": [
+                "GitHub仓库元数据",
+                "项目README",
+                "HTTP 301跳转核验"
+            ]
+        },
+        "分类结论":  {
+            "en": "Strict Agent",
+            "zh": "严格Agent"
+        },
+        "分类依据":  {
+            "en": "The model can select tools, receive retrieval and evidence results, and continue acting across multiple research rounds.",
+            "zh": "模型能够选择工具，接收检索与证据结果，并在多轮研究模式中继续行动。"
+        }
+    },
+    {
+        "创建用户名": "scarletwolf_ai",
+        "账号平台": "Codeberg",
+        "GitHub地址": "https://codeberg.org/scarletwolf_ai/rwkv-toolcaller-bench",
+        "项目名称": "rwkv-toolcaller-bench",
+        "创建时间": "2026-07-22T00:33:47+02:00",
+        "最后更新时间": "2026-10-19T20:59:32+02:00",
+        "主要语言": "Python",
+        "许可证": "Apache-2.0",
+        "Stars": 0,
+        "Watch": 1,
+        "Fork": 0,
+        "项目类型": {"en": "RWKV tool-calling benchmark and training research", "zh": "RWKV工具调用评测与训练研究"},
+        "介绍": {
+            "en": "A reproducible research repository for RWKV tool selection, argument filling, abstention, and multi-step capability. It includes an 82-case judge, raw generations, scoring code, state-tuning and LoRA artifacts, GRPO experiments, checkpoint surveys, probes, schemas, and training recipes.",
+            "zh": "研究RWKV工具选择、参数填写、拒绝调用与多步能力的可复现仓库。包含82题judge、原始生成、评分代码、State Tuning与LoRA产物、GRPO实验、检查点调查、探针、schema和训练配方。"
+        },
+        "Agent循环判断": {"en": "Primarily evaluates and trains tool-calling behavior. The published judge is largely single-turn and its two multi-step cases currently score zero, so it is not an Agent runtime, but it is directly Agent-related.", "zh": "主要评测和训练工具调用行为。公开judge以单轮为主，两个多步案例当前得分为0，因此不是Agent运行时，但与Agent能力直接相关。"},
+        "信息来源": {"en": ["Codeberg metadata", "README", "Evaluation, judge, probe, and training files"], "zh": ["Codeberg元数据", "README", "评测、judge、探针与训练文件"]},
+        "分类结论": {"en": "Agent benchmark and training upstream", "zh": "Agent评测与训练上游"},
+        "分类依据": {"en": "Directly develops and measures RWKV tool-calling capabilities used by Agents.", "zh": "直接开发并衡量Agent所需的RWKV工具调用能力。"}
+    },
+    {
         "创建用户名": "w1c2j3",
         "作者备注": {
             "en": "RWKV ecosystem developer",
@@ -102,86 +204,6 @@
         "分类依据":  {
             "en": "The project explicitly centers on an agent protocol, tool calling, and a continuous execution loop. Existing problems with tool feedback, directory correction, and loop implementation are implementation defects and do not change its status as an agent project.",
             "zh": "项目明确以Agent协议、工具调用和持续执行循环为核心；现有工具反馈、目录纠错和循环实现问题属于实现缺陷，不改变其Agent项目属性。"
-        }
-    },
-    {
-        "创建用户名":  "123123213weqw",
-        "作者备注":  {
-            "en": "Community developer",
-            "zh": "社区开发者"
-        },
-        "用户头像":  "https://avatars.githubusercontent.com/u/300659282?v=4",
-        "GitHub地址":  "https://github.com/123123213weqw/rwkv-agent",
-        "曾用名或别名地址":  [
-                        "https://github.com/123123213weqw/rwkv-search"
-                    ],
-        "项目名称":  "rwkv-agent",
-        "创建时间":  "2026-07-19T12:11:52Z",
-        "最后更新时间":  "2026-10-19T02:47:59Z",
-        "主要语言":  "Python",
-        "许可证":  "MIT",
-        "Stars":  9,
-        "Watch":  1,
-        "Fork":  3,
-        "项目类型":  {
-            "en": "Local-first RWKV agent and web research system",
-            "zh": "本地优先的RWKV Agent与网络研究系统"
-        },
-        "介绍":  {
-            "en": "Provides multi-turn RWKV conversations, tool calling, web search, knowledge-base search, long-form question answering, evidence selection, citation generation, and reproducible evaluation. Its main interfaces are a Rust terminal client and an RWKV Agent HTTP backend. RWKV Search is its internal retrieval subsystem; the former rwkv-search repository now redirects to this repository with HTTP 301.",
-            "zh": "提供多轮RWKV对话、工具调用、网页搜索、知识库搜索、长文本问答、证据筛选、引用生成和可复现评测。主要界面是Rust终端客户端和RWKV Agent HTTP后端。RWKV Search是其内部检索子系统；旧仓库地址 rwkv-search 现已301跳转到本仓库。"
-        },
-        "Agent循环判断":  {
-            "en": "Implements a clearly defined tool loop. A Semantic Search Gate first decides between ordinary conversation and tool use. Retrieval, fetching, and evidence-selection results are returned to the model, which then produces an answer with citations. Research mode supports one to three rounds of stateful, multi-branch retrieval.",
-            "zh": "实现了较明确的工具循环。模型先由Semantic Search Gate决定普通对话或调用工具；工具执行结果经过检索、抓取、证据选择后返回模型，模型再生成带引用的回答。研究模式支持1至3轮、多分支状态化检索。"
-        },
-        "搜索能力":  {
-            "en": [
-                "Self-hosted SearXNG",
-                "Dogpile and Naver search channels",
-                "GitHub, MediaWiki, and Crossref",
-                "Restricted Bing fallback",
-                "Optional Tavily"
-            ],
-            "zh": [
-                "自托管SearXNG",
-                "Dogpile与Naver检索通道",
-                "GitHub、MediaWiki和Crossref",
-                "Bing受限回退",
-                "可选Tavily"
-            ]
-        },
-        "已知限制":  {
-            "en": [
-                "Beta release",
-                "The HTTP service has no built-in authentication or rate limiting",
-                "Public-web answer quality has not reached the project's own release threshold"
-            ],
-            "zh": [
-                "Beta版本",
-                "HTTP服务没有内置身份认证和限流",
-                "公开网页回答质量尚未达到项目自己的发布门槛"
-            ]
-        },
-        "信息来源":  {
-            "en": [
-                "GitHub repository metadata",
-                "Project README",
-                "HTTP 301 redirect verification"
-            ],
-            "zh": [
-                "GitHub仓库元数据",
-                "项目README",
-                "HTTP 301跳转核验"
-            ]
-        },
-        "分类结论":  {
-            "en": "Strict Agent",
-            "zh": "严格Agent"
-        },
-        "分类依据":  {
-            "en": "The model can select tools, receive retrieval and evidence results, and continue acting across multiple research rounds.",
-            "zh": "模型能够选择工具，接收检索与证据结果，并在多轮研究模式中继续行动。"
         }
     },
     {
@@ -1058,28 +1080,6 @@
         "信息来源": {"en": ["GitHub metadata", "README", "Benchmark runner and cases"], "zh": ["GitHub元数据", "README", "评测Runner与案例"]},
         "分类结论": {"en": "Agent benchmark", "zh": "Agent评测"},
         "分类依据": {"en": "Directly evaluates RWKV models inside tool-using Agent loops.", "zh": "直接在工具型Agent循环中评测RWKV模型。"}
-    },
-    {
-        "创建用户名": "scarletwolf_ai",
-        "账号平台": "Codeberg",
-        "GitHub地址": "https://codeberg.org/scarletwolf_ai/rwkv-toolcaller-bench",
-        "项目名称": "rwkv-toolcaller-bench",
-        "创建时间": "2026-07-22T00:33:47+02:00",
-        "最后更新时间": "2026-09-04T22:10:56+02:00",
-        "主要语言": "Python",
-        "许可证": "Apache-2.0",
-        "Stars": 0,
-        "Watch": 1,
-        "Fork": 0,
-        "项目类型": {"en": "RWKV tool-calling benchmark and training research", "zh": "RWKV工具调用评测与训练研究"},
-        "介绍": {
-            "en": "A reproducible research repository for RWKV tool selection, argument filling, abstention, and multi-step capability. It includes an 82-case judge, raw generations, scoring code, state-tuning and LoRA artifacts, GRPO experiments, checkpoint surveys, probes, schemas, and training recipes.",
-            "zh": "研究RWKV工具选择、参数填写、拒绝调用与多步能力的可复现仓库。包含82题judge、原始生成、评分代码、State Tuning与LoRA产物、GRPO实验、检查点调查、探针、schema和训练配方。"
-        },
-        "Agent循环判断": {"en": "Primarily evaluates and trains tool-calling behavior. The published judge is largely single-turn and its two multi-step cases currently score zero, so it is not an Agent runtime, but it is directly Agent-related.", "zh": "主要评测和训练工具调用行为。公开judge以单轮为主，两个多步案例当前得分为0，因此不是Agent运行时，但与Agent能力直接相关。"},
-        "信息来源": {"en": ["Codeberg metadata", "README", "Evaluation, judge, probe, and training files"], "zh": ["Codeberg元数据", "README", "评测、judge、探针与训练文件"]},
-        "分类结论": {"en": "Agent benchmark and training upstream", "zh": "Agent评测与训练上游"},
-        "分类依据": {"en": "Directly develops and measures RWKV tool-calling capabilities used by Agents.", "zh": "直接开发并衡量Agent所需的RWKV工具调用能力。"}
     },
     {
         "创建用户名": "rwkv-rs",

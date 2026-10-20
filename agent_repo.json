@@ -1,5 +1,21 @@
 [
   {
+    "projectName": "rwkv-agent",
+    "repositoryUrl": "https://github.com/123123213weqw/rwkv-agent",
+    "lastUpdated": "2026-10-20T02:02:21Z",
+    "stars": 9,
+    "forks": 3,
+    "watchers": 1
+  },
+  {
+    "projectName": "rwkv-toolcaller-bench",
+    "repositoryUrl": "https://codeberg.org/scarletwolf_ai/rwkv-toolcaller-bench",
+    "lastUpdated": "2026-10-19T20:59:32+02:00",
+    "stars": 0,
+    "forks": 0,
+    "watchers": 1
+  },
+  {
     "projectName": "RWKV-SearchReader",
     "repositoryUrl": "https://github.com/w1c2j3/RWKV-SearchReader",
     "lastUpdated": "2026-10-19T08:49:31Z",
@@ -14,14 +30,6 @@
     "stars": 2,
     "forks": 1,
     "watchers": 0
-  },
-  {
-    "projectName": "rwkv-agent",
-    "repositoryUrl": "https://github.com/123123213weqw/rwkv-agent",
-    "lastUpdated": "2026-10-19T02:47:59Z",
-    "stars": 9,
-    "forks": 3,
-    "watchers": 1
   },
   {
     "projectName": "ai00-x-client",
@@ -118,14 +126,6 @@
     "stars": 3,
     "forks": 1,
     "watchers": 0
-  },
-  {
-    "projectName": "rwkv-toolcaller-bench",
-    "repositoryUrl": "https://codeberg.org/scarletwolf_ai/rwkv-toolcaller-bench",
-    "lastUpdated": "2026-09-04T22:10:56+02:00",
-    "stars": 0,
-    "forks": 0,
-    "watchers": 1
   },
   {
     "projectName": "RWKV-Scout",
