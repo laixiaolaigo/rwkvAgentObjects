@@ -8,7 +8,7 @@
       "en": "RWKV-7 HuggingFace / Transformers adapter",
       "zh": "hf-adapter 提供 RWKV 模型推理、部署、运行时或服务支持。"
     },
-    "lastUpdated": "2026-10-20T08:16:00Z",
+    "lastUpdated": "2026-10-21T03:46:27Z",
     "stars": 8,
     "watchers": 0,
     "forks": 4,
@@ -18,6 +18,27 @@
     "projectType": {
       "en": "Runtime adapter",
       "zh": "运行时适配器"
+    }
+  },
+  {
+    "repositoryUrl": "https://github.com/TimeMobius/RWKV-Megatron",
+    "owner": "TimeMobius",
+    "name": "RWKV-Megatron",
+    "category": "training",
+    "summary": {
+      "en": "Distributed RWKV-6/7 training framework built on NVIDIA Megatron-Core.",
+      "zh": "基于 NVIDIA Megatron-Core 的 RWKV-6/7 分布式训练框架。"
+    },
+    "lastUpdated": "2026-10-21T02:29:50Z",
+    "stars": 52,
+    "watchers": 0,
+    "forks": 0,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "sourcePage": 2,
+    "projectType": {
+      "en": "Training and fine-tuning",
+      "zh": "训练与微调"
     }
   },
   {
@@ -165,27 +186,6 @@
     "projectType": {
       "en": "Inference backend",
       "zh": "推理后端"
-    }
-  },
-  {
-    "repositoryUrl": "https://github.com/TimeMobius/RWKV-Megatron",
-    "owner": "TimeMobius",
-    "name": "RWKV-Megatron",
-    "category": "training",
-    "summary": {
-      "en": "Distributed RWKV-6/7 training framework built on NVIDIA Megatron-Core.",
-      "zh": "基于 NVIDIA Megatron-Core 的 RWKV-6/7 分布式训练框架。"
-    },
-    "lastUpdated": "2026-10-15T07:00:22Z",
-    "stars": 52,
-    "watchers": 0,
-    "forks": 0,
-    "language": "Python",
-    "license": "Apache-2.0",
-    "sourcePage": 2,
-    "projectType": {
-      "en": "Training and fine-tuning",
-      "zh": "训练与微调"
     }
   },
   {
@@ -345,9 +345,9 @@
       "zh": "RWKV 语言模型主仓库，包含模型架构、训练代码、CUDA 内核与示例。"
     },
     "lastUpdated": "2026-09-28T18:01:27Z",
-    "stars": 14754,
+    "stars": 14756,
     "watchers": 137,
-    "forks": 1024,
+    "forks": 1025,
     "language": "Python",
     "license": "Apache-2.0",
     "sourcePage": 1,
@@ -387,9 +387,9 @@
       "zh": "从零构建 GLM4、Llama 3 与 RWKV-6 的中文实践课程。"
     },
     "lastUpdated": "2026-09-17T03:01:54Z",
-    "stars": 4418,
+    "stars": 4419,
     "watchers": 37,
-    "forks": 608,
+    "forks": 609,
     "language": "Jupyter Notebook",
     "license": "NOASSERTION",
     "sourcePage": 1,
@@ -515,7 +515,7 @@
     "lastUpdated": "2026-09-06T07:21:39Z",
     "stars": 857,
     "watchers": 24,
-    "forks": 371,
+    "forks": 364,
     "language": "Kotlin",
     "license": "MIT",
     "sourcePage": 1,
@@ -1332,7 +1332,7 @@
       "zh": "rwkv_studio 是面向 RWKV 用户的易用应用或开箱即用工具。"
     },
     "lastUpdated": "2026-04-29T06:50:53Z",
-    "stars": 1,
+    "stars": 2,
     "watchers": 0,
     "forks": 0,
     "language": "Dart",
@@ -1605,9 +1605,9 @@
       "zh": "可在 iOS 与 macOS 离线运行 RWKV 等本地语言模型的应用。"
     },
     "lastUpdated": "2026-01-30T20:52:36Z",
-    "stars": 2081,
+    "stars": 2082,
     "watchers": 26,
-    "forks": 186,
+    "forks": 185,
     "language": "C",
     "license": "MIT",
     "sourcePage": 1,
@@ -2111,7 +2111,7 @@
     "lastUpdated": "2025-05-15T10:31:45Z",
     "stars": 3930,
     "watchers": 51,
-    "forks": 570,
+    "forks": 569,
     "language": "Python",
     "license": "Apache-2.0",
     "sourcePage": 6,
@@ -2445,7 +2445,7 @@
       "zh": "支持知识库、多模型后端与私有化部署的本地优先大模型应用平台。"
     },
     "lastUpdated": "2025-01-23T12:55:35Z",
-    "stars": 6145,
+    "stars": 6146,
     "watchers": 78,
     "forks": 782,
     "language": "JavaScript",
