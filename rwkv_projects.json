@@ -1,5 +1,47 @@
 [
   {
+    "repositoryUrl": "https://github.com/TimeMobius/RWKV-Megatron",
+    "owner": "TimeMobius",
+    "name": "RWKV-Megatron",
+    "category": "training",
+    "summary": {
+      "en": "Distributed RWKV-6/7 training framework built on NVIDIA Megatron-Core.",
+      "zh": "基于 NVIDIA Megatron-Core 的 RWKV-6/7 分布式训练框架。"
+    },
+    "lastUpdated": "2026-10-22T08:27:03Z",
+    "stars": 52,
+    "watchers": 0,
+    "forks": 0,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "sourcePage": 2,
+    "projectType": {
+      "en": "Training and fine-tuning",
+      "zh": "训练与微调"
+    }
+  },
+  {
+    "repositoryUrl": "https://github.com/Joluck/RWKV-PEFT",
+    "owner": "Joluck",
+    "name": "RWKV-PEFT",
+    "category": "training",
+    "summary": {
+      "en": "RWKV-PEFT provides RWKV training, fine-tuning, or architecture experimentation tools.",
+      "zh": "RWKV-PEFT 提供 RWKV 模型训练、微调或架构实验工具。"
+    },
+    "lastUpdated": "2026-10-21T16:36:56Z",
+    "stars": 186,
+    "watchers": 6,
+    "forks": 46,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "sourcePage": 4,
+    "projectType": {
+      "en": "Training and fine-tuning",
+      "zh": "训练与微调"
+    }
+  },
+  {
     "repositoryUrl": "https://github.com/rwkv-rs/hf-adapter",
     "owner": "rwkv-rs",
     "name": "hf-adapter",
@@ -18,27 +60,6 @@
     "projectType": {
       "en": "Runtime adapter",
       "zh": "运行时适配器"
-    }
-  },
-  {
-    "repositoryUrl": "https://github.com/TimeMobius/RWKV-Megatron",
-    "owner": "TimeMobius",
-    "name": "RWKV-Megatron",
-    "category": "training",
-    "summary": {
-      "en": "Distributed RWKV-6/7 training framework built on NVIDIA Megatron-Core.",
-      "zh": "基于 NVIDIA Megatron-Core 的 RWKV-6/7 分布式训练框架。"
-    },
-    "lastUpdated": "2026-10-21T02:29:50Z",
-    "stars": 52,
-    "watchers": 0,
-    "forks": 0,
-    "language": "Python",
-    "license": "Apache-2.0",
-    "sourcePage": 2,
-    "projectType": {
-      "en": "Training and fine-tuning",
-      "zh": "训练与微调"
     }
   },
   {
@@ -72,7 +93,7 @@
       "zh": "面向 Android、iOS、Windows、macOS 与 Linux 的跨平台、本地优先 RWKV 聊天应用。"
     },
     "lastUpdated": "2026-10-20T02:58:44Z",
-    "stars": 131,
+    "stars": 132,
     "watchers": 4,
     "forks": 15,
     "language": "Dart",
@@ -93,7 +114,7 @@
       "zh": "sglang-rwkv7 提供 RWKV 模型推理、部署、运行时或服务支持。"
     },
     "lastUpdated": "2026-10-19T04:04:09Z",
-    "stars": 0,
+    "stars": 1,
     "watchers": 0,
     "forks": 0,
     "language": "Python",
@@ -177,7 +198,7 @@
       "zh": "vllm-rwkv7 提供 RWKV 模型推理、部署、运行时或服务支持。"
     },
     "lastUpdated": "2026-10-16T02:04:45Z",
-    "stars": 0,
+    "stars": 1,
     "watchers": 0,
     "forks": 0,
     "language": "Python",
@@ -345,7 +366,7 @@
       "zh": "RWKV 语言模型主仓库，包含模型架构、训练代码、CUDA 内核与示例。"
     },
     "lastUpdated": "2026-09-28T18:01:27Z",
-    "stars": 14756,
+    "stars": 14758,
     "watchers": 137,
     "forks": 1025,
     "language": "Python",
@@ -387,7 +408,7 @@
       "zh": "从零构建 GLM4、Llama 3 与 RWKV-6 的中文实践课程。"
     },
     "lastUpdated": "2026-09-17T03:01:54Z",
-    "stars": 4419,
+    "stars": 4424,
     "watchers": 37,
     "forks": 609,
     "language": "Jupyter Notebook",
@@ -492,8 +513,8 @@
       "zh": "wkvm 提供 RWKV 模型推理、部署、运行时或服务支持。"
     },
     "lastUpdated": "2026-09-10T03:18:12Z",
-    "stars": 360,
-    "watchers": 10,
+    "stars": 359,
+    "watchers": 9,
     "forks": 15,
     "language": "Python",
     "license": null,
@@ -515,7 +536,7 @@
     "lastUpdated": "2026-09-06T07:21:39Z",
     "stars": 857,
     "watchers": 24,
-    "forks": 364,
+    "forks": 363,
     "language": "Kotlin",
     "license": "MIT",
     "sourcePage": 1,
@@ -555,7 +576,7 @@
       "zh": "带桌面界面和 OpenAI 兼容 API 的 RWKV 自动化管理与启动工具。"
     },
     "lastUpdated": "2026-09-04T13:37:10Z",
-    "stars": 6487,
+    "stars": 6488,
     "watchers": 47,
     "forks": 594,
     "language": "TypeScript",
@@ -1334,7 +1355,7 @@
     "lastUpdated": "2026-04-29T06:50:53Z",
     "stars": 2,
     "watchers": 0,
-    "forks": 0,
+    "forks": 1,
     "language": "Dart",
     "license": null,
     "sourcePage": 3,
@@ -1695,27 +1716,6 @@
     "language": "Python",
     "license": "Apache-2.0",
     "sourcePage": 1,
-    "projectType": {
-      "en": "Training and fine-tuning",
-      "zh": "训练与微调"
-    }
-  },
-  {
-    "repositoryUrl": "https://github.com/Joluck/RWKV-PEFT",
-    "owner": "Joluck",
-    "name": "RWKV-PEFT",
-    "category": "training",
-    "summary": {
-      "en": "RWKV-PEFT provides RWKV training, fine-tuning, or architecture experimentation tools.",
-      "zh": "RWKV-PEFT 提供 RWKV 模型训练、微调或架构实验工具。"
-    },
-    "lastUpdated": "2026-01-13T04:48:46Z",
-    "stars": 186,
-    "watchers": 6,
-    "forks": 46,
-    "language": "Python",
-    "license": "Apache-2.0",
-    "sourcePage": 4,
     "projectType": {
       "en": "Training and fine-tuning",
       "zh": "训练与微调"
@@ -3033,7 +3033,7 @@
       "zh": "shady.ai 是面向 RWKV 用户的易用应用或开箱即用工具。"
     },
     "lastUpdated": "2024-02-12T21:28:29Z",
-    "stars": 146,
+    "stars": 145,
     "watchers": 12,
     "forks": 15,
     "language": "Dart",

@@ -1,8 +1,16 @@
 [
   {
+    "projectName": "RWKV-Agent",
+    "repositoryUrl": "https://github.com/No-22-Github/RWKV-Agent",
+    "lastUpdated": "2026-10-22T02:34:40Z",
+    "stars": 2,
+    "forks": 1,
+    "watchers": 0
+  },
+  {
     "projectName": "rwkv-agent",
     "repositoryUrl": "https://github.com/123123213weqw/rwkv-agent",
-    "lastUpdated": "2026-10-21T06:10:02Z",
+    "lastUpdated": "2026-10-21T14:55:56Z",
     "stars": 9,
     "forks": 3,
     "watchers": 1
@@ -19,14 +27,6 @@
     "projectName": "RWKV-SearchReader",
     "repositoryUrl": "https://github.com/w1c2j3/RWKV-SearchReader",
     "lastUpdated": "2026-10-19T08:49:31Z",
-    "stars": 2,
-    "forks": 1,
-    "watchers": 0
-  },
-  {
-    "projectName": "RWKV-Agent",
-    "repositoryUrl": "https://github.com/No-22-Github/RWKV-Agent",
-    "lastUpdated": "2026-10-19T03:43:32Z",
     "stars": 2,
     "forks": 1,
     "watchers": 0
