@@ -1,5 +1,89 @@
 [
   {
+    "repositoryUrl": "https://github.com/ConsciousNode/HTMLNLM",
+    "owner": "ConsciousNode",
+    "name": "HTMLNLM",
+    "category": "training",
+    "summary": {
+      "en": "Complete RWKV-v7 LLM training and inference in a single browser file. Zero dependencies.",
+      "zh": "HTMLNLM 提供 RWKV 模型训练、微调或架构实验工具。"
+    },
+    "lastUpdated": "2026-10-23T03:33:47Z",
+    "stars": 1,
+    "watchers": 0,
+    "forks": 0,
+    "language": "HTML",
+    "license": "MIT",
+    "sourcePage": 3,
+    "projectType": {
+      "en": "Training and fine-tuning",
+      "zh": "训练与微调"
+    }
+  },
+  {
+    "repositoryUrl": "https://github.com/btlqql/vllm-rwkv7",
+    "owner": "btlqql",
+    "name": "vllm-rwkv7",
+    "category": "inference",
+    "summary": {
+      "en": "Native RWKV-7 integration for vLLM, implemented clean-room against the Hugging Face contract.",
+      "zh": "vllm-rwkv7 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2026-10-23T02:16:42Z",
+    "stars": 1,
+    "watchers": 0,
+    "forks": 0,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "sourcePage": 2,
+    "projectType": {
+      "en": "Inference backend",
+      "zh": "推理后端"
+    }
+  },
+  {
+    "repositoryUrl": "https://github.com/Alic-Li/rwkv_lightning_cuda",
+    "owner": "Alic-Li",
+    "name": "rwkv_lightning_cuda",
+    "category": "inference",
+    "summary": {
+      "en": "The fastest pure C++ GPU runtime for RWKV — zero PyTorch, one-command deployment, CUDA/ROCm inference, quantization, state tuning & serving.🕊",
+      "zh": "rwkv_lightning_cuda 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2026-10-23T00:44:58Z",
+    "stars": 10,
+    "watchers": 0,
+    "forks": 2,
+    "language": "C++",
+    "license": null,
+    "sourcePage": 1,
+    "projectType": {
+      "en": "Inference service",
+      "zh": "推理服务"
+    }
+  },
+  {
+    "repositoryUrl": "https://github.com/Joluck/RWKV-PEFT",
+    "owner": "Joluck",
+    "name": "RWKV-PEFT",
+    "category": "training",
+    "summary": {
+      "en": "RWKV-PEFT provides RWKV training, fine-tuning, or architecture experimentation tools.",
+      "zh": "RWKV-PEFT 提供 RWKV 模型训练、微调或架构实验工具。"
+    },
+    "lastUpdated": "2026-10-22T11:24:01Z",
+    "stars": 187,
+    "watchers": 6,
+    "forks": 46,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "sourcePage": 4,
+    "projectType": {
+      "en": "Training and fine-tuning",
+      "zh": "训练与微调"
+    }
+  },
+  {
     "repositoryUrl": "https://github.com/TimeMobius/RWKV-Megatron",
     "owner": "TimeMobius",
     "name": "RWKV-Megatron",
@@ -15,27 +99,6 @@
     "language": "Python",
     "license": "Apache-2.0",
     "sourcePage": 2,
-    "projectType": {
-      "en": "Training and fine-tuning",
-      "zh": "训练与微调"
-    }
-  },
-  {
-    "repositoryUrl": "https://github.com/Joluck/RWKV-PEFT",
-    "owner": "Joluck",
-    "name": "RWKV-PEFT",
-    "category": "training",
-    "summary": {
-      "en": "RWKV-PEFT provides RWKV training, fine-tuning, or architecture experimentation tools.",
-      "zh": "RWKV-PEFT 提供 RWKV 模型训练、微调或架构实验工具。"
-    },
-    "lastUpdated": "2026-10-21T16:36:56Z",
-    "stars": 186,
-    "watchers": 6,
-    "forks": 46,
-    "language": "Python",
-    "license": "Apache-2.0",
-    "sourcePage": 4,
     "projectType": {
       "en": "Training and fine-tuning",
       "zh": "训练与微调"
@@ -168,48 +231,6 @@
     }
   },
   {
-    "repositoryUrl": "https://github.com/Alic-Li/rwkv_lightning_cuda",
-    "owner": "Alic-Li",
-    "name": "rwkv_lightning_cuda",
-    "category": "inference",
-    "summary": {
-      "en": "The fastest pure C++ GPU runtime for RWKV — zero PyTorch, one-command deployment, CUDA/ROCm inference, quantization, state tuning & serving.🕊",
-      "zh": "rwkv_lightning_cuda 提供 RWKV 模型推理、部署、运行时或服务支持。"
-    },
-    "lastUpdated": "2026-10-16T13:48:26Z",
-    "stars": 10,
-    "watchers": 0,
-    "forks": 2,
-    "language": "C++",
-    "license": null,
-    "sourcePage": 1,
-    "projectType": {
-      "en": "Inference service",
-      "zh": "推理服务"
-    }
-  },
-  {
-    "repositoryUrl": "https://github.com/btlqql/vllm-rwkv7",
-    "owner": "btlqql",
-    "name": "vllm-rwkv7",
-    "category": "inference",
-    "summary": {
-      "en": "Native RWKV-7 integration for vLLM, implemented clean-room against the Hugging Face contract.",
-      "zh": "vllm-rwkv7 提供 RWKV 模型推理、部署、运行时或服务支持。"
-    },
-    "lastUpdated": "2026-10-16T02:04:45Z",
-    "stars": 1,
-    "watchers": 0,
-    "forks": 0,
-    "language": "Python",
-    "license": "Apache-2.0",
-    "sourcePage": 2,
-    "projectType": {
-      "en": "Inference backend",
-      "zh": "推理后端"
-    }
-  },
-  {
     "repositoryUrl": "https://github.com/RWKV-Vibe/rwkv-vibe-code",
     "owner": "RWKV-Vibe",
     "name": "rwkv-vibe-code",
@@ -291,27 +312,6 @@
     "projectType": {
       "en": "Quantization and compression",
       "zh": "量化与压缩"
-    }
-  },
-  {
-    "repositoryUrl": "https://github.com/ConsciousNode/HTMLNLM",
-    "owner": "ConsciousNode",
-    "name": "HTMLNLM",
-    "category": "training",
-    "summary": {
-      "en": "Complete RWKV-v7 LLM training and inference in a single browser file. Zero dependencies.",
-      "zh": "HTMLNLM 提供 RWKV 模型训练、微调或架构实验工具。"
-    },
-    "lastUpdated": "2026-10-11T14:30:55Z",
-    "stars": 1,
-    "watchers": 0,
-    "forks": 0,
-    "language": "HTML",
-    "license": "MIT",
-    "sourcePage": 3,
-    "projectType": {
-      "en": "Training and fine-tuning",
-      "zh": "训练与微调"
     }
   },
   {
@@ -408,7 +408,7 @@
       "zh": "从零构建 GLM4、Llama 3 与 RWKV-6 的中文实践课程。"
     },
     "lastUpdated": "2026-09-17T03:01:54Z",
-    "stars": 4424,
+    "stars": 4426,
     "watchers": 37,
     "forks": 609,
     "language": "Jupyter Notebook",
@@ -933,7 +933,7 @@
       "zh": "用于本地运行 RWKV 语言模型的参考聊天与推理实现。"
     },
     "lastUpdated": "2026-07-19T19:09:29Z",
-    "stars": 9495,
+    "stars": 9496,
     "watchers": 96,
     "forks": 683,
     "language": "Python",
@@ -1017,7 +1017,7 @@
       "zh": "面向 RWKV-7 的 DSpark 推测解码与并发推理加速项目。"
     },
     "lastUpdated": "2026-06-28T12:32:54Z",
-    "stars": 0,
+    "stars": 1,
     "watchers": 0,
     "forks": 0,
     "language": "Python",
@@ -1458,7 +1458,7 @@
       "zh": "birdsnest 是面向 RWKV 用户的易用应用或开箱即用工具。"
     },
     "lastUpdated": "2026-03-06T22:53:02Z",
-    "stars": 25,
+    "stars": 24,
     "watchers": 3,
     "forks": 3,
     "language": "Python",
@@ -2109,9 +2109,9 @@
       "zh": "使用 RWKV 中文预训练生成模型的小说写作应用。"
     },
     "lastUpdated": "2025-05-15T10:31:45Z",
-    "stars": 3930,
+    "stars": 3933,
     "watchers": 51,
-    "forks": 569,
+    "forks": 568,
     "language": "Python",
     "license": "Apache-2.0",
     "sourcePage": 6,

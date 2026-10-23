@@ -1,5 +1,106 @@
 ﻿[
     {
+        "创建用户名": "Vaniell0",
+        "用户头像": "https://avatars.githubusercontent.com/u/144351173?v=4",
+        "GitHub地址": "https://github.com/Vaniell0/noesis",
+        "项目名称": "noesis",
+        "创建时间": "2026-07-21T22:04:25Z",
+        "最后更新时间": "2026-10-22T14:00:05Z",
+        "主要语言": "Python",
+        "许可证": "Apache-2.0",
+        "Stars": 4,
+        "Watch": 0,
+        "Fork": 1,
+        "项目类型": {"en": "Persistent RWKV cognitive-runtime research", "zh": "持续运行的RWKV认知运行时研究"},
+        "介绍": {
+            "en": "A research project for an always-running RWKV cognitive runtime that ingests system events, organizes persistent memory, routes tools, and acts on the local environment through extensions. The repository includes runtime, memory, policy, DSL, training, and deployment foundations.",
+            "zh": "面向持续运行RWKV认知运行时的研究项目，计划吸收系统事件、组织持久记忆、路由工具，并通过扩展作用于本地环境；仓库已包含运行时、记忆、策略、DSL、训练和部署基础。"
+        },
+        "Agent循环判断": {"en": "The intended architecture is an Agent, but key pieces such as the composer, tool-call dispatcher, and extension surface remain incomplete or roadmap items.", "zh": "目标架构属于Agent，但composer、工具调用dispatcher和extension surface等关键部分仍未完成或处于路线图阶段。"},
+        "信息来源": {"en": ["GitHub metadata", "README", "ROADMAP", "Runtime, memory, and training sources"], "zh": ["GitHub元数据", "README", "ROADMAP", "运行时、记忆与训练源码"]},
+        "分类结论": {"en": "Agent boundary project", "zh": "Agent边界项目"},
+        "分类依据": {"en": "Explicitly designed as an RWKV Agent runtime and therefore included under the broader Agent-related criterion despite incomplete execution loops.", "zh": "明确以RWKV Agent运行时为目标；虽然执行闭环尚不完整，但按广义Agent相关标准收录。"}
+    },
+    {
+        "创建用户名": "Nice0o0",
+        "用户头像": "https://avatars.githubusercontent.com/u/70088382?v=4",
+        "GitHub地址": "https://github.com/Nice0o0/stateswap",
+        "项目名称": "stateswap",
+        "创建时间": "2026-08-30T15:28:20Z",
+        "最后更新时间": "2026-10-22T09:47:21Z",
+        "主要语言": "Python",
+        "许可证": "MIT",
+        "Stars": 1,
+        "Watch": 1,
+        "Fork": 0,
+        "项目类型": {
+            "en": "RWKV persona-state training and hot-swap runtime",
+            "zh": "RWKV人格状态训练与热切换运行时"
+        },
+        "介绍": {
+            "en": "An RWKV-7 initial-state tuning and serving project. It freezes the base-model weights, trains compact S0 states for personas or task modes, and hot-swaps them per session through an OpenAI-compatible API and WebUI. It also provides state mixing, low-rank and int8 compression, O(1) recurrent multi-turn sessions, evaluation tools, and reproducible state-behavior research.",
+            "zh": "面向RWKV-7的初始状态微调与服务项目。它冻结基座模型权重，为人格或任务模式训练紧凑的S0状态，并通过OpenAI兼容API与WebUI按Session热切换；同时提供状态混合、低秩与int8压缩、O(1)循环多轮会话、评测工具及可复现的状态行为研究。"
+        },
+        "Agent循环判断": {
+            "en": "The repository does not implement an autonomous plan-act-observe tool loop. Its session state, persona registry, hot-swap API, and task-mode states can serve as identity and recurrent-memory infrastructure inside an agent system, but external orchestration is required for tool selection and execution.",
+            "zh": "仓库没有实现自主的“规划、行动、观察”工具循环。其Session状态、人格注册表、热切换API与任务模式状态可作为Agent系统中的身份和循环记忆基础设施，但工具选择与执行仍需要外部编排。"
+        },
+        "主要能力": {
+            "en": [
+                "S0 state tuning for personas, styles, and task modes with frozen model weights",
+                "Millisecond persona hot-swap and per-session O(1) recurrent conversation state",
+                "OpenAI-compatible API, streaming chat WebUI, persona mixer, and training interface",
+                "Int8 and low-rank state compression plus state arithmetic and editing",
+                "Reproducible evaluation and research artifacts for RWKV initial-state behavior"
+            ],
+            "zh": [
+                "冻结模型权重的人格、风格与任务模式S0状态微调",
+                "毫秒级人格热切换与每Session O(1)循环会话状态",
+                "OpenAI兼容API、流式聊天WebUI、人格混合器与训练界面",
+                "int8与低秩状态压缩，以及状态算术和编辑",
+                "可复现的RWKV初始状态行为评测与研究产物"
+            ]
+        },
+        "已知限制": {
+            "en": [
+                "Not a complete autonomous agent and does not provide a tool-execution loop",
+                "S0 tuning changes behavior and task priors but cannot add new factual knowledge",
+                "The documented reproduction stack targets Windows or Linux with an NVIDIA GPU and Python 3.12+",
+                "Conversation quality remains bounded by the frozen base model"
+            ],
+            "zh": [
+                "不是完整自主Agent，也不提供工具执行循环",
+                "S0微调可改变行为与任务先验，但不能注入新的事实知识",
+                "文档中的复现环境主要面向Windows或Linux、NVIDIA GPU与Python 3.12+",
+                "会话质量仍受冻结基座模型能力上限约束"
+            ]
+        },
+        "支持平台": {
+            "en": "Documented for Windows and Linux with NVIDIA CUDA GPUs; exposes local Python, HTTP API, and browser WebUI interfaces",
+            "zh": "文档主要支持Windows与Linux上的NVIDIA CUDA GPU，并提供本地Python、HTTP API和浏览器WebUI接口"
+        },
+        "信息来源": {
+            "en": [
+                "GitHub repository metadata",
+                "Project README and architecture documentation",
+                "Published benchmark and research reports in the repository"
+            ],
+            "zh": [
+                "GitHub仓库元数据",
+                "项目README与架构文档",
+                "仓库内发布的基准与研究报告"
+            ]
+        },
+        "分类结论": {
+            "en": "Agent persona and state infrastructure",
+            "zh": "Agent人格与状态基础设施"
+        },
+        "分类依据": {
+            "en": "The project provides reusable persona, task-mode, and recurrent-session state infrastructure that can materially shape an RWKV agent, but it does not independently choose tools or run an autonomous agent loop.",
+            "zh": "项目提供可复用的人格、任务模式与循环Session状态基础设施，能够实质性支撑RWKV Agent，但自身不负责工具选择，也不运行自主Agent循环。"
+        }
+    },
+    {
         "创建用户名":  "No-22-Github",
         "作者备注":  null,
         "用户头像":  "https://avatars.githubusercontent.com/u/132265925?v=4",
@@ -368,85 +469,6 @@
         }
     },
     {
-        "创建用户名": "Nice0o0",
-        "用户头像": "https://avatars.githubusercontent.com/u/70088382?v=4",
-        "GitHub地址": "https://github.com/Nice0o0/stateswap",
-        "项目名称": "stateswap",
-        "创建时间": "2026-08-30T15:28:20Z",
-        "最后更新时间": "2026-10-12T08:23:19Z",
-        "主要语言": "Python",
-        "许可证": "MIT",
-        "Stars": 1,
-        "Watch": 0,
-        "Fork": 0,
-        "项目类型": {
-            "en": "RWKV persona-state training and hot-swap runtime",
-            "zh": "RWKV人格状态训练与热切换运行时"
-        },
-        "介绍": {
-            "en": "An RWKV-7 initial-state tuning and serving project. It freezes the base-model weights, trains compact S0 states for personas or task modes, and hot-swaps them per session through an OpenAI-compatible API and WebUI. It also provides state mixing, low-rank and int8 compression, O(1) recurrent multi-turn sessions, evaluation tools, and reproducible state-behavior research.",
-            "zh": "面向RWKV-7的初始状态微调与服务项目。它冻结基座模型权重，为人格或任务模式训练紧凑的S0状态，并通过OpenAI兼容API与WebUI按Session热切换；同时提供状态混合、低秩与int8压缩、O(1)循环多轮会话、评测工具及可复现的状态行为研究。"
-        },
-        "Agent循环判断": {
-            "en": "The repository does not implement an autonomous plan-act-observe tool loop. Its session state, persona registry, hot-swap API, and task-mode states can serve as identity and recurrent-memory infrastructure inside an agent system, but external orchestration is required for tool selection and execution.",
-            "zh": "仓库没有实现自主的“规划、行动、观察”工具循环。其Session状态、人格注册表、热切换API与任务模式状态可作为Agent系统中的身份和循环记忆基础设施，但工具选择与执行仍需要外部编排。"
-        },
-        "主要能力": {
-            "en": [
-                "S0 state tuning for personas, styles, and task modes with frozen model weights",
-                "Millisecond persona hot-swap and per-session O(1) recurrent conversation state",
-                "OpenAI-compatible API, streaming chat WebUI, persona mixer, and training interface",
-                "Int8 and low-rank state compression plus state arithmetic and editing",
-                "Reproducible evaluation and research artifacts for RWKV initial-state behavior"
-            ],
-            "zh": [
-                "冻结模型权重的人格、风格与任务模式S0状态微调",
-                "毫秒级人格热切换与每Session O(1)循环会话状态",
-                "OpenAI兼容API、流式聊天WebUI、人格混合器与训练界面",
-                "int8与低秩状态压缩，以及状态算术和编辑",
-                "可复现的RWKV初始状态行为评测与研究产物"
-            ]
-        },
-        "已知限制": {
-            "en": [
-                "Not a complete autonomous agent and does not provide a tool-execution loop",
-                "S0 tuning changes behavior and task priors but cannot add new factual knowledge",
-                "The documented reproduction stack targets Windows or Linux with an NVIDIA GPU and Python 3.12+",
-                "Conversation quality remains bounded by the frozen base model"
-            ],
-            "zh": [
-                "不是完整自主Agent，也不提供工具执行循环",
-                "S0微调可改变行为与任务先验，但不能注入新的事实知识",
-                "文档中的复现环境主要面向Windows或Linux、NVIDIA GPU与Python 3.12+",
-                "会话质量仍受冻结基座模型能力上限约束"
-            ]
-        },
-        "支持平台": {
-            "en": "Documented for Windows and Linux with NVIDIA CUDA GPUs; exposes local Python, HTTP API, and browser WebUI interfaces",
-            "zh": "文档主要支持Windows与Linux上的NVIDIA CUDA GPU，并提供本地Python、HTTP API和浏览器WebUI接口"
-        },
-        "信息来源": {
-            "en": [
-                "GitHub repository metadata",
-                "Project README and architecture documentation",
-                "Published benchmark and research reports in the repository"
-            ],
-            "zh": [
-                "GitHub仓库元数据",
-                "项目README与架构文档",
-                "仓库内发布的基准与研究报告"
-            ]
-        },
-        "分类结论": {
-            "en": "Agent persona and state infrastructure",
-            "zh": "Agent人格与状态基础设施"
-        },
-        "分类依据": {
-            "en": "The project provides reusable persona, task-mode, and recurrent-session state infrastructure that can materially shape an RWKV agent, but it does not independently choose tools or run an autonomous agent loop.",
-            "zh": "项目提供可复用的人格、任务模式与循环Session状态基础设施，能够实质性支撑RWKV Agent，但自身不负责工具选择，也不运行自主Agent循环。"
-        }
-    },
-    {
         "创建用户名":  "rwkv-rs",
         "账号类型":  {
             "en": "GitHub organization",
@@ -538,28 +560,6 @@
             "en": "RWKV participates in goal parsing, planning, action selection, failure analysis, replanning, and final response generation. Tool observations and validation results feed back into a persistent multi-step execution loop that can retry, revise its plan, and resume after interruption.",
             "zh": "RWKV参与目标解析、规划、动作选择、失败分析、重规划和最终回答生成；工具观察与验证结果会回流到持久化的多步执行循环中，使其能够重试、修订计划并在中断后恢复。"
         }
-    },
-    {
-        "创建用户名": "Vaniell0",
-        "用户头像": "https://avatars.githubusercontent.com/u/144351173?v=4",
-        "GitHub地址": "https://github.com/Vaniell0/noesis",
-        "项目名称": "noesis",
-        "创建时间": "2026-07-21T22:04:25Z",
-        "最后更新时间": "2026-10-07T18:23:03Z",
-        "主要语言": "Python",
-        "许可证": "Apache-2.0",
-        "Stars": 4,
-        "Watch": 0,
-        "Fork": 1,
-        "项目类型": {"en": "Persistent RWKV cognitive-runtime research", "zh": "持续运行的RWKV认知运行时研究"},
-        "介绍": {
-            "en": "A research project for an always-running RWKV cognitive runtime that ingests system events, organizes persistent memory, routes tools, and acts on the local environment through extensions. The repository includes runtime, memory, policy, DSL, training, and deployment foundations.",
-            "zh": "面向持续运行RWKV认知运行时的研究项目，计划吸收系统事件、组织持久记忆、路由工具，并通过扩展作用于本地环境；仓库已包含运行时、记忆、策略、DSL、训练和部署基础。"
-        },
-        "Agent循环判断": {"en": "The intended architecture is an Agent, but key pieces such as the composer, tool-call dispatcher, and extension surface remain incomplete or roadmap items.", "zh": "目标架构属于Agent，但composer、工具调用dispatcher和extension surface等关键部分仍未完成或处于路线图阶段。"},
-        "信息来源": {"en": ["GitHub metadata", "README", "ROADMAP", "Runtime, memory, and training sources"], "zh": ["GitHub元数据", "README", "ROADMAP", "运行时、记忆与训练源码"]},
-        "分类结论": {"en": "Agent boundary project", "zh": "Agent边界项目"},
-        "分类依据": {"en": "Explicitly designed as an RWKV Agent runtime and therefore included under the broader Agent-related criterion despite incomplete execution loops.", "zh": "明确以RWKV Agent运行时为目标；虽然执行闭环尚不完整，但按广义Agent相关标准收录。"}
     },
     {
         "创建用户名": "wangkeyu-u",
@@ -817,7 +817,7 @@
         "最后更新时间": "2026-09-20T10:35:09Z",
         "主要语言": "Python",
         "许可证": "MIT",
-        "Stars": 3,
+        "Stars": 4,
         "Watch": 0,
         "Fork": 0,
         "项目类型": {
