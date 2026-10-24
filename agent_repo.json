@@ -1,5 +1,21 @@
 [
   {
+    "projectName": "RWKV-LH",
+    "repositoryUrl": "https://github.com/rwkv-rs/RWKV-LH",
+    "lastUpdated": "2026-10-23T11:10:45Z",
+    "stars": 3,
+    "forks": 0,
+    "watchers": 0
+  },
+  {
+    "projectName": "RWKV-Agent",
+    "repositoryUrl": "https://github.com/No-22-Github/RWKV-Agent",
+    "lastUpdated": "2026-10-23T09:43:31Z",
+    "stars": 2,
+    "forks": 1,
+    "watchers": 0
+  },
+  {
     "projectName": "noesis",
     "repositoryUrl": "https://github.com/Vaniell0/noesis",
     "lastUpdated": "2026-10-22T14:00:05Z",
@@ -14,14 +30,6 @@
     "stars": 1,
     "forks": 0,
     "watchers": 1
-  },
-  {
-    "projectName": "RWKV-Agent",
-    "repositoryUrl": "https://github.com/No-22-Github/RWKV-Agent",
-    "lastUpdated": "2026-10-22T02:34:40Z",
-    "stars": 2,
-    "forks": 1,
-    "watchers": 0
   },
   {
     "projectName": "rwkv-agent",
@@ -59,14 +67,6 @@
     "projectName": "rwkv-router",
     "repositoryUrl": "https://github.com/cgisky1980/rwkv-router",
     "lastUpdated": "2026-10-12T09:54:54Z",
-    "stars": 3,
-    "forks": 0,
-    "watchers": 0
-  },
-  {
-    "projectName": "RWKV-LH",
-    "repositoryUrl": "https://github.com/rwkv-rs/RWKV-LH",
-    "lastUpdated": "2026-10-09T03:20:21Z",
     "stars": 3,
     "forks": 0,
     "watchers": 0

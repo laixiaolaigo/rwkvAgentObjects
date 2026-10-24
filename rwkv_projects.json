@@ -1,5 +1,26 @@
 [
   {
+    "repositoryUrl": "https://github.com/Alic-Li/rwkv_lightning_cuda",
+    "owner": "Alic-Li",
+    "name": "rwkv_lightning_cuda",
+    "category": "inference",
+    "summary": {
+      "en": "The fastest pure C++ GPU runtime for RWKV — zero PyTorch, one-command deployment, CUDA/ROCm inference, quantization, state tuning & serving.🕊",
+      "zh": "rwkv_lightning_cuda 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2026-10-24T06:55:37Z",
+    "stars": 10,
+    "watchers": 0,
+    "forks": 2,
+    "language": "C++",
+    "license": null,
+    "sourcePage": 1,
+    "projectType": {
+      "en": "Inference service",
+      "zh": "推理服务"
+    }
+  },
+  {
     "repositoryUrl": "https://github.com/ConsciousNode/HTMLNLM",
     "owner": "ConsciousNode",
     "name": "HTMLNLM",
@@ -8,7 +29,7 @@
       "en": "Complete RWKV-v7 LLM training and inference in a single browser file. Zero dependencies.",
       "zh": "HTMLNLM 提供 RWKV 模型训练、微调或架构实验工具。"
     },
-    "lastUpdated": "2026-10-23T03:33:47Z",
+    "lastUpdated": "2026-10-24T03:55:21Z",
     "stars": 1,
     "watchers": 0,
     "forks": 0,
@@ -18,6 +39,48 @@
     "projectType": {
       "en": "Training and fine-tuning",
       "zh": "训练与微调"
+    }
+  },
+  {
+    "repositoryUrl": "https://github.com/RWKV-APP/RWKV_APP",
+    "owner": "RWKV-APP",
+    "name": "RWKV_APP",
+    "category": "package",
+    "summary": {
+      "en": "Cross-platform, local-first RWKV chat application for Android, iOS, Windows, macOS, and Linux.",
+      "zh": "面向 Android、iOS、Windows、macOS 与 Linux 的跨平台、本地优先 RWKV 聊天应用。"
+    },
+    "lastUpdated": "2026-10-23T15:27:44Z",
+    "stars": 132,
+    "watchers": 4,
+    "forks": 15,
+    "language": "Dart",
+    "license": "Apache-2.0",
+    "sourcePage": 1,
+    "projectType": {
+      "en": "End-user application",
+      "zh": "终端应用"
+    }
+  },
+  {
+    "repositoryUrl": "https://github.com/RWKV-APP/rwkv_mobile_flutter",
+    "owner": "RWKV-APP",
+    "name": "rwkv_mobile_flutter",
+    "category": "inference",
+    "summary": {
+      "en": "Flutter FFI bridge and runtime layer for on-device RWKV inference across mobile and desktop platforms.",
+      "zh": "面向移动端与桌面端设备内 RWKV 推理的 Flutter FFI 桥接和运行时层。"
+    },
+    "lastUpdated": "2026-10-23T15:27:39Z",
+    "stars": 20,
+    "watchers": 3,
+    "forks": 5,
+    "language": "Dart",
+    "license": "Apache-2.0",
+    "sourcePage": 3,
+    "projectType": {
+      "en": "End-user application",
+      "zh": "终端应用"
     }
   },
   {
@@ -39,27 +102,6 @@
     "projectType": {
       "en": "Inference backend",
       "zh": "推理后端"
-    }
-  },
-  {
-    "repositoryUrl": "https://github.com/Alic-Li/rwkv_lightning_cuda",
-    "owner": "Alic-Li",
-    "name": "rwkv_lightning_cuda",
-    "category": "inference",
-    "summary": {
-      "en": "The fastest pure C++ GPU runtime for RWKV — zero PyTorch, one-command deployment, CUDA/ROCm inference, quantization, state tuning & serving.🕊",
-      "zh": "rwkv_lightning_cuda 提供 RWKV 模型推理、部署、运行时或服务支持。"
-    },
-    "lastUpdated": "2026-10-23T00:44:58Z",
-    "stars": 10,
-    "watchers": 0,
-    "forks": 2,
-    "language": "C++",
-    "license": null,
-    "sourcePage": 1,
-    "projectType": {
-      "en": "Inference service",
-      "zh": "推理服务"
     }
   },
   {
@@ -123,48 +165,6 @@
     "projectType": {
       "en": "Runtime adapter",
       "zh": "运行时适配器"
-    }
-  },
-  {
-    "repositoryUrl": "https://github.com/RWKV-APP/rwkv_mobile_flutter",
-    "owner": "RWKV-APP",
-    "name": "rwkv_mobile_flutter",
-    "category": "inference",
-    "summary": {
-      "en": "Flutter FFI bridge and runtime layer for on-device RWKV inference across mobile and desktop platforms.",
-      "zh": "面向移动端与桌面端设备内 RWKV 推理的 Flutter FFI 桥接和运行时层。"
-    },
-    "lastUpdated": "2026-10-20T02:58:51Z",
-    "stars": 20,
-    "watchers": 3,
-    "forks": 5,
-    "language": "Dart",
-    "license": "Apache-2.0",
-    "sourcePage": 3,
-    "projectType": {
-      "en": "End-user application",
-      "zh": "终端应用"
-    }
-  },
-  {
-    "repositoryUrl": "https://github.com/RWKV-APP/RWKV_APP",
-    "owner": "RWKV-APP",
-    "name": "RWKV_APP",
-    "category": "package",
-    "summary": {
-      "en": "Cross-platform, local-first RWKV chat application for Android, iOS, Windows, macOS, and Linux.",
-      "zh": "面向 Android、iOS、Windows、macOS 与 Linux 的跨平台、本地优先 RWKV 聊天应用。"
-    },
-    "lastUpdated": "2026-10-20T02:58:44Z",
-    "stars": 132,
-    "watchers": 4,
-    "forks": 15,
-    "language": "Dart",
-    "license": "Apache-2.0",
-    "sourcePage": 1,
-    "projectType": {
-      "en": "End-user application",
-      "zh": "终端应用"
     }
   },
   {
@@ -366,9 +366,9 @@
       "zh": "RWKV 语言模型主仓库，包含模型架构、训练代码、CUDA 内核与示例。"
     },
     "lastUpdated": "2026-09-28T18:01:27Z",
-    "stars": 14758,
+    "stars": 14760,
     "watchers": 137,
-    "forks": 1025,
+    "forks": 1026,
     "language": "Python",
     "license": "Apache-2.0",
     "sourcePage": 1,
@@ -408,9 +408,9 @@
       "zh": "从零构建 GLM4、Llama 3 与 RWKV-6 的中文实践课程。"
     },
     "lastUpdated": "2026-09-17T03:01:54Z",
-    "stars": 4426,
+    "stars": 4427,
     "watchers": 37,
-    "forks": 609,
+    "forks": 610,
     "language": "Jupyter Notebook",
     "license": "NOASSERTION",
     "sourcePage": 1,
@@ -534,7 +534,7 @@
       "zh": "MagicWX 是面向 RWKV 用户的易用应用或开箱即用工具。"
     },
     "lastUpdated": "2026-09-06T07:21:39Z",
-    "stars": 857,
+    "stars": 858,
     "watchers": 24,
     "forks": 363,
     "language": "Kotlin",
@@ -576,9 +576,9 @@
       "zh": "带桌面界面和 OpenAI 兼容 API 的 RWKV 自动化管理与启动工具。"
     },
     "lastUpdated": "2026-09-04T13:37:10Z",
-    "stars": 6488,
+    "stars": 6489,
     "watchers": 47,
-    "forks": 594,
+    "forks": 595,
     "language": "TypeScript",
     "license": "MIT",
     "sourcePage": 1,
@@ -933,9 +933,9 @@
       "zh": "用于本地运行 RWKV 语言模型的参考聊天与推理实现。"
     },
     "lastUpdated": "2026-07-19T19:09:29Z",
-    "stars": 9496,
+    "stars": 9497,
     "watchers": 96,
-    "forks": 683,
+    "forks": 684,
     "language": "Python",
     "license": "Apache-2.0",
     "sourcePage": 1,
@@ -1626,7 +1626,7 @@
       "zh": "可在 iOS 与 macOS 离线运行 RWKV 等本地语言模型的应用。"
     },
     "lastUpdated": "2026-01-30T20:52:36Z",
-    "stars": 2082,
+    "stars": 2083,
     "watchers": 26,
     "forks": 185,
     "language": "C",
@@ -1689,7 +1689,7 @@
       "zh": "基于 Rust Candle 框架实现的 RWKV 模型与推理示例。"
     },
     "lastUpdated": "2026-01-19T02:24:43Z",
-    "stars": 24,
+    "stars": 25,
     "watchers": 4,
     "forks": 1,
     "language": "Rust",
@@ -2109,9 +2109,9 @@
       "zh": "使用 RWKV 中文预训练生成模型的小说写作应用。"
     },
     "lastUpdated": "2025-05-15T10:31:45Z",
-    "stars": 3933,
+    "stars": 3934,
     "watchers": 51,
-    "forks": 568,
+    "forks": 569,
     "language": "Python",
     "license": "Apache-2.0",
     "sourcePage": 6,
@@ -2256,7 +2256,7 @@
       "zh": "支持 INT4、INT5、INT8 与 FP16 的 RWKV 量化 CPU 推理运行时。"
     },
     "lastUpdated": "2025-03-23T05:04:42Z",
-    "stars": 1588,
+    "stars": 1589,
     "watchers": 23,
     "forks": 131,
     "language": "C++",
@@ -2319,9 +2319,9 @@
       "zh": "基于 Gradio 的 RWKV 角色扮演 Web 界面。"
     },
     "lastUpdated": "2025-03-05T08:27:48Z",
-    "stars": 249,
+    "stars": 250,
     "watchers": 7,
-    "forks": 26,
+    "forks": 27,
     "language": "Python",
     "license": "GPL-3.0",
     "sourcePage": 6,
@@ -2445,7 +2445,7 @@
       "zh": "支持知识库、多模型后端与私有化部署的本地优先大模型应用平台。"
     },
     "lastUpdated": "2025-01-23T12:55:35Z",
-    "stars": 6146,
+    "stars": 6147,
     "watchers": 78,
     "forks": 782,
     "language": "JavaScript",
