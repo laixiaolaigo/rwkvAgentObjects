@@ -576,7 +576,7 @@
       "zh": "带桌面界面和 OpenAI 兼容 API 的 RWKV 自动化管理与启动工具。"
     },
     "lastUpdated": "2026-09-04T13:37:10Z",
-    "stars": 6490,
+    "stars": 6491,
     "watchers": 47,
     "forks": 595,
     "language": "TypeScript",
@@ -2445,7 +2445,7 @@
       "zh": "支持知识库、多模型后端与私有化部署的本地优先大模型应用平台。"
     },
     "lastUpdated": "2025-01-23T12:55:35Z",
-    "stars": 6148,
+    "stars": 6149,
     "watchers": 78,
     "forks": 782,
     "language": "JavaScript",
