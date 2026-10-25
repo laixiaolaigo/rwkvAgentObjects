@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import {
   ArrowUpRight,
+  BookOpen,
   Bot,
   CalendarDays,
   CircleAlert,
@@ -419,10 +420,6 @@ export function AgentCatalog({
         <section className="hero-surface overflow-hidden rounded-2xl border p-6 sm:p-8">
           <div className="flex flex-col justify-between gap-8 lg:flex-row lg:items-end">
             <div className="max-w-2xl">
-              <Badge variant="outline" className="mb-5 gap-2 border-primary/30 bg-primary/10 text-primary">
-                <span className="size-1.5 rounded-full bg-primary" />
-                {dictionary.hero.badge}
-              </Badge>
               <h1 className="text-3xl font-semibold tracking-tight sm:text-5xl">
                 {dictionary.hero.title}
               </h1>
@@ -443,18 +440,40 @@ export function AgentCatalog({
               ))}
             </div>
           </div>
+          <section
+            aria-labelledby="g1l-analysis-title"
+            className="mt-7 flex flex-col gap-5 rounded-xl border border-primary/40 bg-primary/10 p-5 sm:p-6 xl:flex-row xl:items-center xl:justify-between"
+          >
+            <div className="flex min-w-0 items-start gap-4">
+              <BookOpen aria-hidden="true" className="mt-1 hidden size-6 shrink-0 text-primary sm:block" />
+              <div>
+                <div className="mb-2 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs">
+                  <span className="font-medium text-primary">{dictionary.hero.analysisLabel}</span>
+                  <time dateTime="2026-10-24" className="text-muted-foreground">2026-10-24</time>
+                </div>
+                <h2 id="g1l-analysis-title" className="max-w-3xl text-base font-semibold leading-relaxed sm:text-lg">
+                  {dictionary.hero.analysisTitle}
+                </h2>
+              </div>
+            </div>
+            <a
+              href={`https://github.com/No-22-Github/RWKV-Agent/blob/main/docs/evaluations/g1l-prompt-format-20261024/${locale === "zh" ? "基于G1l预览版-RWKV-Agent提示词工具格式与采样分析.md" : "Based-on-G1l-Preview-RWKV-Agent-Prompt-Tool-Format-and-Sampling-Analysis.md"}`}
+              hrefLang={locale === "zh" ? "zh-CN" : "en"}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex min-h-10 shrink-0 items-center justify-center gap-2 self-start rounded-lg border border-primary/40 bg-background/50 px-4 py-2 text-sm font-medium text-foreground transition-colors hover:border-primary hover:bg-primary/20 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ring xl:self-center"
+            >
+              {dictionary.hero.readAnalysis}
+              <ArrowUpRight aria-hidden="true" className="size-4 text-primary" />
+            </a>
+          </section>
         </section>
 
         <section id="catalog" className="scroll-mt-20 pt-8">
           <div className="mb-5 flex items-end justify-between gap-4">
-            <div>
-              <p className="text-xs font-medium uppercase tracking-[0.22em] text-primary">
-                {dictionary.projects.eyebrow}
-              </p>
-              <h2 className="mt-2 text-2xl font-semibold tracking-tight">
-                {dictionary.projects.title}
-              </h2>
-            </div>
+            <h2 className="text-2xl font-semibold tracking-tight">
+              {dictionary.projects.title}
+            </h2>
             <span className="text-sm text-muted-foreground">{filteredProjects.length} / {projects.length}</span>
           </div>
 

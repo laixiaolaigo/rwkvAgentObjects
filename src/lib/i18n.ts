@@ -25,15 +25,16 @@ export type UiDictionary = {
     switchLanguageLabel: string;
   };
   hero: {
-    badge: string;
     title: string;
     description: string;
+    analysisLabel: string;
+    analysisTitle: string;
+    readAnalysis: string;
     projects: string;
     languages: string;
     stars: string;
   };
   projects: {
-    eyebrow: string;
     title: string;
     searchPlaceholder: string;
     searchLabel: string;
