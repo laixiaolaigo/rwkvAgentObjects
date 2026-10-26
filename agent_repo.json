@@ -1,11 +1,27 @@
 [
   {
+    "projectName": "memopet",
+    "repositoryUrl": "https://github.com/Nice0o0/memopet",
+    "lastUpdated": "2026-10-25T13:51:05Z",
+    "stars": 0,
+    "forks": 0,
+    "watchers": 0
+  },
+  {
     "projectName": "rwkv-agent",
     "repositoryUrl": "https://github.com/123123213weqw/rwkv-agent",
     "lastUpdated": "2026-10-24T19:24:29Z",
     "stars": 9,
     "forks": 3,
     "watchers": 1
+  },
+  {
+    "projectName": "HTMLNLM",
+    "repositoryUrl": "https://github.com/ConsciousNode/HTMLNLM",
+    "lastUpdated": "2026-10-24T19:07:12Z",
+    "stars": 1,
+    "forks": 0,
+    "watchers": 0
   },
   {
     "projectName": "RWKV-Agent",
@@ -29,6 +45,14 @@
     "lastUpdated": "2026-10-22T14:00:05Z",
     "stars": 4,
     "forks": 1,
+    "watchers": 0
+  },
+  {
+    "projectName": "rwkv-prompt-format",
+    "repositoryUrl": "https://github.com/Ai00-X/rwkv-prompt-format",
+    "lastUpdated": "2026-10-22T10:13:09Z",
+    "stars": 3,
+    "forks": 0,
     "watchers": 0
   },
   {
@@ -72,6 +96,14 @@
     "watchers": 0
   },
   {
+    "projectName": "RWKV-ECRA",
+    "repositoryUrl": "https://github.com/ehooon/RWKV-ECRA",
+    "lastUpdated": "2026-10-10T07:12:41Z",
+    "stars": 6,
+    "forks": 0,
+    "watchers": 0
+  },
+  {
     "projectName": "rwkv-statetrace-agent",
     "repositoryUrl": "https://github.com/wangkeyu-u/rwkv-statetrace-agent",
     "lastUpdated": "2026-10-07T06:50:16Z",
@@ -85,6 +117,14 @@
     "lastUpdated": "2026-09-28T07:56:58Z",
     "stars": 1,
     "forks": 1,
+    "watchers": 0
+  },
+  {
+    "projectName": "Long-RWKV",
+    "repositoryUrl": "https://github.com/Joshua-Zhang-Jiaquan/Long-RWKV",
+    "lastUpdated": "2026-09-23T09:11:00Z",
+    "stars": 2,
+    "forks": 0,
     "watchers": 0
   },
   {
@@ -104,10 +144,26 @@
     "watchers": 0
   },
   {
+    "projectName": "RWKV-WM",
+    "repositoryUrl": "https://github.com/JingyuWang-128/RWKV-WM",
+    "lastUpdated": "2026-09-16T03:41:19Z",
+    "stars": 0,
+    "forks": 0,
+    "watchers": 0
+  },
+  {
     "projectName": "rwkv7-agent-kit",
     "repositoryUrl": "https://github.com/SU-180/rwkv7-agent-kit",
     "lastUpdated": "2026-09-14T09:05:57Z",
     "stars": 1,
+    "forks": 0,
+    "watchers": 0
+  },
+  {
+    "projectName": "godel-rwkv",
+    "repositoryUrl": "https://github.com/hamzaplojovic/godel-rwkv",
+    "lastUpdated": "2026-09-09T18:56:22Z",
+    "stars": 0,
     "forks": 0,
     "watchers": 0
   },
@@ -128,10 +184,74 @@
     "watchers": 0
   },
   {
+    "projectName": "rwkv-dreamer",
+    "repositoryUrl": "https://github.com/xmustu/rwkv-dreamer",
+    "lastUpdated": "2026-09-06T12:53:04Z",
+    "stars": 0,
+    "forks": 0,
+    "watchers": 0
+  },
+  {
+    "projectName": "long_long_agent",
+    "repositoryUrl": "https://github.com/yynil/long_long_agent",
+    "lastUpdated": "2026-09-05T15:40:09Z",
+    "stars": 0,
+    "forks": 0,
+    "watchers": 0
+  },
+  {
+    "projectName": "rwkv-dsh",
+    "repositoryUrl": "https://github.com/RWKV-Vibe/rwkv-dsh",
+    "lastUpdated": "2026-08-28T05:41:36Z",
+    "stars": 0,
+    "forks": 1,
+    "watchers": 0
+  },
+  {
+    "projectName": "LACES",
+    "repositoryUrl": "https://github.com/Joshua-Zhang-Jiaquan/LACES",
+    "lastUpdated": "2026-08-27T02:36:34Z",
+    "stars": 3,
+    "forks": 0,
+    "watchers": 0
+  },
+  {
+    "projectName": "state-model-interface",
+    "repositoryUrl": "https://github.com/aabbdev/state-model-interface",
+    "lastUpdated": "2026-08-22T03:14:42Z",
+    "stars": 1,
+    "forks": 0,
+    "watchers": 0
+  },
+  {
     "projectName": "RWKV-Scout",
     "repositoryUrl": "https://github.com/rwkv-rs/RWKV-Scout",
     "lastUpdated": "2026-08-21T15:18:08Z",
     "stars": 2,
+    "forks": 0,
+    "watchers": 0
+  },
+  {
+    "projectName": "PetRWKV",
+    "repositoryUrl": "https://github.com/rainrainrainbow/PetRWKV",
+    "lastUpdated": "2026-08-16T01:57:10Z",
+    "stars": 0,
+    "forks": 0,
+    "watchers": 0
+  },
+  {
+    "projectName": "rwkv-skills",
+    "repositoryUrl": "https://github.com/rwkv-rs/rwkv-skills",
+    "lastUpdated": "2026-08-09T04:39:41Z",
+    "stars": 8,
+    "forks": 3,
+    "watchers": 0
+  },
+  {
+    "projectName": "rwkv-agent-demo",
+    "repositoryUrl": "https://github.com/123123213weqw/rwkv-agent-demo",
+    "lastUpdated": "2026-07-24T04:53:06Z",
+    "stars": 3,
     "forks": 0,
     "watchers": 0
   },
@@ -168,10 +288,82 @@
     "watchers": 0
   },
   {
+    "projectName": "engrammics",
+    "repositoryUrl": "https://github.com/JacquesGariepy/engrammics",
+    "lastUpdated": "2026-06-27T21:57:25Z",
+    "stars": 1,
+    "forks": 0,
+    "watchers": 0
+  },
+  {
+    "projectName": "halluguard",
+    "repositoryUrl": "https://github.com/youssefm12/halluguard",
+    "lastUpdated": "2026-05-24T14:28:30Z",
+    "stars": 0,
+    "forks": 0,
+    "watchers": 0
+  },
+  {
+    "projectName": "rwkv_studio",
+    "repositoryUrl": "https://github.com/RWKV-APP/rwkv_studio",
+    "lastUpdated": "2026-04-29T06:50:53Z",
+    "stars": 2,
+    "forks": 1,
+    "watchers": 0
+  },
+  {
+    "projectName": "rwkv_dart",
+    "repositoryUrl": "https://github.com/dengzii/rwkv_dart",
+    "lastUpdated": "2026-04-24T10:48:51Z",
+    "stars": 2,
+    "forks": 0,
+    "watchers": 0
+  },
+  {
+    "projectName": "RepoScout",
+    "repositoryUrl": "https://github.com/No-22-Github/RepoScout",
+    "lastUpdated": "2026-03-30T15:40:57Z",
+    "stars": 1,
+    "forks": 0,
+    "watchers": 0
+  },
+  {
     "projectName": "RWKV_Agent_Lite",
     "repositoryUrl": "https://github.com/No-22-Github/RWKV_Agent_Lite",
     "lastUpdated": "2026-03-26T03:33:30Z",
     "stars": 1,
     "forks": 0,
     "watchers": 0
+  },
+  {
+    "projectName": "Flint",
+    "repositoryUrl": "https://github.com/Tornedahl/Flint",
+    "lastUpdated": "2026-03-15T14:27:23Z",
+    "stars": 0,
+    "forks": 0,
+    "watchers": 0
+  },
+  {
+    "projectName": "birdsnest",
+    "repositoryUrl": "https://github.com/Dappit-io/birdsnest",
+    "lastUpdated": "2026-03-06T22:53:02Z",
+    "stars": 23,
+    "forks": 3,
+    "watchers": 3
+  },
+  {
+    "projectName": "psa3",
+    "repositoryUrl": "https://github.com/keshav-yanamandra/psa3",
+    "lastUpdated": "2025-12-07T02:30:13Z",
+    "stars": 0,
+    "forks": 0,
+    "watchers": 0
+  },
+  {
+    "projectName": "Rusty-R2",
+    "repositoryUrl": "https://github.com/bonzupii/Rusty-R2",
+    "lastUpdated": "2025-11-11T11:54:36Z",
+    "stars": 11,
+    "forks": 1,
+    "watchers": 1
   }]
