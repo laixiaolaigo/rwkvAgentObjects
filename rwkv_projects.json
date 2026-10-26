@@ -8,7 +8,7 @@
       "en": "Cross-platform, local-first RWKV chat application for Android, iOS, Windows, macOS, and Linux.",
       "zh": "面向 Android、iOS、Windows、macOS 与 Linux 的跨平台、本地优先 RWKV 聊天应用。"
     },
-    "lastUpdated": "2026-10-26T06:33:14Z",
+    "lastUpdated": "2026-10-26T08:22:42Z",
     "stars": 132,
     "watchers": 4,
     "forks": 15,
@@ -18,6 +18,48 @@
     "projectType": {
       "en": "End-user application",
       "zh": "终端应用"
+    }
+  },
+  {
+    "repositoryUrl": "https://github.com/RWKV-APP/rwkv_mobile_flutter",
+    "owner": "RWKV-APP",
+    "name": "rwkv_mobile_flutter",
+    "category": "inference",
+    "summary": {
+      "en": "Flutter FFI bridge and runtime layer for on-device RWKV inference across mobile and desktop platforms.",
+      "zh": "面向移动端与桌面端设备内 RWKV 推理的 Flutter FFI 桥接和运行时层。"
+    },
+    "lastUpdated": "2026-10-26T08:19:19Z",
+    "stars": 20,
+    "watchers": 3,
+    "forks": 5,
+    "language": "Dart",
+    "license": "Apache-2.0",
+    "sourcePage": 3,
+    "projectType": {
+      "en": "End-user application",
+      "zh": "终端应用"
+    }
+  },
+  {
+    "repositoryUrl": "https://github.com/TimeMobius/RWKV-Megatron",
+    "owner": "TimeMobius",
+    "name": "RWKV-Megatron",
+    "category": "training",
+    "summary": {
+      "en": "Distributed RWKV-6/7 training framework built on NVIDIA Megatron-Core.",
+      "zh": "基于 NVIDIA Megatron-Core 的 RWKV-6/7 分布式训练框架。"
+    },
+    "lastUpdated": "2026-10-26T08:08:29Z",
+    "stars": 52,
+    "watchers": 0,
+    "forks": 0,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "sourcePage": 2,
+    "projectType": {
+      "en": "Training and fine-tuning",
+      "zh": "训练与微调"
     }
   },
   {
@@ -105,27 +147,6 @@
     }
   },
   {
-    "repositoryUrl": "https://github.com/RWKV-APP/rwkv_mobile_flutter",
-    "owner": "RWKV-APP",
-    "name": "rwkv_mobile_flutter",
-    "category": "inference",
-    "summary": {
-      "en": "Flutter FFI bridge and runtime layer for on-device RWKV inference across mobile and desktop platforms.",
-      "zh": "面向移动端与桌面端设备内 RWKV 推理的 Flutter FFI 桥接和运行时层。"
-    },
-    "lastUpdated": "2026-10-25T05:53:45Z",
-    "stars": 20,
-    "watchers": 3,
-    "forks": 5,
-    "language": "Dart",
-    "license": "Apache-2.0",
-    "sourcePage": 3,
-    "projectType": {
-      "en": "End-user application",
-      "zh": "终端应用"
-    }
-  },
-  {
     "repositoryUrl": "https://github.com/rwkv-rs/hf-adapter",
     "owner": "rwkv-rs",
     "name": "hf-adapter",
@@ -204,27 +225,6 @@
     "language": "Python",
     "license": "Apache-2.0",
     "sourcePage": 4,
-    "projectType": {
-      "en": "Training and fine-tuning",
-      "zh": "训练与微调"
-    }
-  },
-  {
-    "repositoryUrl": "https://github.com/TimeMobius/RWKV-Megatron",
-    "owner": "TimeMobius",
-    "name": "RWKV-Megatron",
-    "category": "training",
-    "summary": {
-      "en": "Distributed RWKV-6/7 training framework built on NVIDIA Megatron-Core.",
-      "zh": "基于 NVIDIA Megatron-Core 的 RWKV-6/7 分布式训练框架。"
-    },
-    "lastUpdated": "2026-10-22T08:27:03Z",
-    "stars": 52,
-    "watchers": 0,
-    "forks": 0,
-    "language": "Python",
-    "license": "Apache-2.0",
-    "sourcePage": 2,
     "projectType": {
       "en": "Training and fine-tuning",
       "zh": "训练与微调"
@@ -366,7 +366,7 @@
       "zh": "RWKV 语言模型主仓库，包含模型架构、训练代码、CUDA 内核与示例。"
     },
     "lastUpdated": "2026-09-28T18:01:27Z",
-    "stars": 14763,
+    "stars": 14764,
     "watchers": 135,
     "forks": 1026,
     "language": "Python",
@@ -408,7 +408,7 @@
       "zh": "从零构建 GLM4、Llama 3 与 RWKV-6 的中文实践课程。"
     },
     "lastUpdated": "2026-09-17T03:01:54Z",
-    "stars": 4427,
+    "stars": 4428,
     "watchers": 37,
     "forks": 611,
     "language": "Jupyter Notebook",
