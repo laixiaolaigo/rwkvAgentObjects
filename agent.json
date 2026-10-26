@@ -1,5 +1,69 @@
 ﻿[
     {
+        "创建用户名":  "No-22-Github",
+        "作者备注":  null,
+        "用户头像":  "https://avatars.githubusercontent.com/u/132265925?v=4",
+        "GitHub地址":  "https://github.com/No-22-Github/RWKV-Agent",
+        "项目名称":  "RWKV-Agent",
+        "创建时间":  "2026-07-27T13:41:03Z",
+        "最后更新时间":  "2026-10-26T01:46:15Z",
+        "主要语言":  "Go",
+        "许可证":  null,
+        "Stars":  4,
+        "Watch":  0,
+        "Fork":  1,
+        "项目类型":  {
+            "en": "Local RWKV CLI and agent runtime",
+            "zh": "本地RWKV CLI与Agent运行时"
+        },
+        "介绍":  {
+            "en": "A local RWKV command-line application for Apple Silicon macOS. The Go layer handles conversation transactions, session persistence, and terminal interaction, while a separate dynamic library handles tokenization, sampling, and MLX inference. The runtime does not depend on Python, PyTorch, an HTTP service, or external processes.",
+            "zh": "面向Apple Silicon macOS的本地RWKV命令行程序。Go层负责对话事务、Session持久化和终端交互，独立动态库负责tokenizer、采样和MLX推理；运行时不依赖Python、PyTorch、HTTP服务或外部进程。"
+        },
+        "Agent循环判断":  {
+            "en": "The repository includes an Agent Harness, Continuation, and Agent Protocol, implementing an agent runtime intended to let the model call tools, read observations, and continue execution. The current loop has defects, but the project still qualifies as an agent.",
+            "zh": "仓库包含Agent Harness、Continuation和Agent Protocol，并以模型调用工具、读取观察结果和继续执行为目标实现Agent运行时。当前闭环存在缺陷，但项目性质仍属于Agent。"
+        },
+        "用户反馈":  {
+            "en": [
+                "Tool-call information remains in the output",
+                "It continues using a directory after guessing the wrong path",
+                "The agent loop is not correctly understood or implemented"
+            ],
+            "zh": [
+                "调用信息仍然残留",
+                "猜错目录后仍继续调用该目录",
+                "没有正确理解或实现Agent循环"
+            ]
+        },
+        "支持平台":  {
+            "en": "The currently usable entry point supports Apple Silicon on macOS 15+; Windows and Linux remain target platforms",
+            "zh": "当前实际可用入口为Apple Silicon macOS 15+；Windows和Linux仍是目标平台"
+        },
+        "信息来源":  {
+            "en": [
+                "GitHub repository metadata",
+                "Project README",
+                "User-provided issue description",
+                "User-provided classification correction"
+            ],
+            "zh": [
+                "GitHub仓库元数据",
+                "项目README",
+                "用户提供的问题说明",
+                "用户提供的分类纠正"
+            ]
+        },
+        "分类结论":  {
+            "en": "Strict Agent",
+            "zh": "严格Agent"
+        },
+        "分类依据":  {
+            "en": "The project explicitly centers on an agent protocol, tool calling, and a continuous execution loop. Existing problems with tool feedback, directory correction, and loop implementation are implementation defects and do not change its status as an agent project.",
+            "zh": "项目明确以Agent协议、工具调用和持续执行循环为核心；现有工具反馈、目录纠错和循环实现问题属于实现缺陷，不改变其Agent项目属性。"
+        }
+    },
+    {
         "创建用户名": "Nice0o0",
         "用户头像": "https://avatars.githubusercontent.com/u/70088382?v=4",
         "GitHub地址": "https://github.com/Nice0o0/memopet",
@@ -71,6 +135,85 @@
         }
     },
     {
+        "创建用户名": "Nice0o0",
+        "用户头像": "https://avatars.githubusercontent.com/u/70088382?v=4",
+        "GitHub地址": "https://github.com/Nice0o0/stateswap",
+        "项目名称": "stateswap",
+        "创建时间": "2026-08-30T15:28:20Z",
+        "最后更新时间": "2026-10-25T13:51:01Z",
+        "主要语言": "Python",
+        "许可证": "MIT",
+        "Stars": 1,
+        "Watch": 1,
+        "Fork": 0,
+        "项目类型": {
+            "en": "RWKV persona-state training and hot-swap runtime",
+            "zh": "RWKV人格状态训练与热切换运行时"
+        },
+        "介绍": {
+            "en": "An RWKV-7 initial-state tuning and serving project. It freezes the base-model weights, trains compact S0 states for personas or task modes, and hot-swaps them per session through an OpenAI-compatible API and WebUI. It also provides state mixing, low-rank and int8 compression, O(1) recurrent multi-turn sessions, evaluation tools, and reproducible state-behavior research.",
+            "zh": "面向RWKV-7的初始状态微调与服务项目。它冻结基座模型权重，为人格或任务模式训练紧凑的S0状态，并通过OpenAI兼容API与WebUI按Session热切换；同时提供状态混合、低秩与int8压缩、O(1)循环多轮会话、评测工具及可复现的状态行为研究。"
+        },
+        "Agent循环判断": {
+            "en": "The repository does not implement an autonomous plan-act-observe tool loop. Its session state, persona registry, hot-swap API, and task-mode states can serve as identity and recurrent-memory infrastructure inside an agent system, but external orchestration is required for tool selection and execution.",
+            "zh": "仓库没有实现自主的“规划、行动、观察”工具循环。其Session状态、人格注册表、热切换API与任务模式状态可作为Agent系统中的身份和循环记忆基础设施，但工具选择与执行仍需要外部编排。"
+        },
+        "主要能力": {
+            "en": [
+                "S0 state tuning for personas, styles, and task modes with frozen model weights",
+                "Millisecond persona hot-swap and per-session O(1) recurrent conversation state",
+                "OpenAI-compatible API, streaming chat WebUI, persona mixer, and training interface",
+                "Int8 and low-rank state compression plus state arithmetic and editing",
+                "Reproducible evaluation and research artifacts for RWKV initial-state behavior"
+            ],
+            "zh": [
+                "冻结模型权重的人格、风格与任务模式S0状态微调",
+                "毫秒级人格热切换与每Session O(1)循环会话状态",
+                "OpenAI兼容API、流式聊天WebUI、人格混合器与训练界面",
+                "int8与低秩状态压缩，以及状态算术和编辑",
+                "可复现的RWKV初始状态行为评测与研究产物"
+            ]
+        },
+        "已知限制": {
+            "en": [
+                "Not a complete autonomous agent and does not provide a tool-execution loop",
+                "S0 tuning changes behavior and task priors but cannot add new factual knowledge",
+                "The documented reproduction stack targets Windows or Linux with an NVIDIA GPU and Python 3.12+",
+                "Conversation quality remains bounded by the frozen base model"
+            ],
+            "zh": [
+                "不是完整自主Agent，也不提供工具执行循环",
+                "S0微调可改变行为与任务先验，但不能注入新的事实知识",
+                "文档中的复现环境主要面向Windows或Linux、NVIDIA GPU与Python 3.12+",
+                "会话质量仍受冻结基座模型能力上限约束"
+            ]
+        },
+        "支持平台": {
+            "en": "Documented for Windows and Linux with NVIDIA CUDA GPUs; exposes local Python, HTTP API, and browser WebUI interfaces",
+            "zh": "文档主要支持Windows与Linux上的NVIDIA CUDA GPU，并提供本地Python、HTTP API和浏览器WebUI接口"
+        },
+        "信息来源": {
+            "en": [
+                "GitHub repository metadata",
+                "Project README and architecture documentation",
+                "Published benchmark and research reports in the repository"
+            ],
+            "zh": [
+                "GitHub仓库元数据",
+                "项目README与架构文档",
+                "仓库内发布的基准与研究报告"
+            ]
+        },
+        "分类结论": {
+            "en": "Agent persona and state infrastructure",
+            "zh": "Agent人格与状态基础设施"
+        },
+        "分类依据": {
+            "en": "The project provides reusable persona, task-mode, and recurrent-session state infrastructure that can materially shape an RWKV agent, but it does not independently choose tools or run an autonomous agent loop.",
+            "zh": "项目提供可复用的人格、任务模式与循环Session状态基础设施，能够实质性支撑RWKV Agent，但自身不负责工具选择，也不运行自主Agent循环。"
+        }
+    },
+    {
         "创建用户名":  "123123213weqw",
         "作者备注":  {
             "en": "Community developer",
@@ -83,7 +226,7 @@
                     ],
         "项目名称":  "rwkv-agent",
         "创建时间":  "2026-07-19T12:11:52Z",
-        "最后更新时间":  "2026-10-24T19:24:29Z",
+        "最后更新时间":  "2026-10-25T12:59:29Z",
         "主要语言":  "Python",
         "许可证":  "MIT",
         "Stars":  9,
@@ -217,70 +360,6 @@
         "分类依据": {
             "en": "Documents autonomous companion activities and recurrent memory experiments. These should be distinguished from a general-purpose planning and external-tool Agent loop.",
             "zh": "已在资源页；README 新增角色、内心独白和自主反思等实验，不能仅据此标成通用工具 Agent。"
-        }
-    },
-    {
-        "创建用户名":  "No-22-Github",
-        "作者备注":  null,
-        "用户头像":  "https://avatars.githubusercontent.com/u/132265925?v=4",
-        "GitHub地址":  "https://github.com/No-22-Github/RWKV-Agent",
-        "项目名称":  "RWKV-Agent",
-        "创建时间":  "2026-07-27T13:41:03Z",
-        "最后更新时间":  "2026-10-24T13:54:53Z",
-        "主要语言":  "Go",
-        "许可证":  null,
-        "Stars":  4,
-        "Watch":  0,
-        "Fork":  1,
-        "项目类型":  {
-            "en": "Local RWKV CLI and agent runtime",
-            "zh": "本地RWKV CLI与Agent运行时"
-        },
-        "介绍":  {
-            "en": "A local RWKV command-line application for Apple Silicon macOS. The Go layer handles conversation transactions, session persistence, and terminal interaction, while a separate dynamic library handles tokenization, sampling, and MLX inference. The runtime does not depend on Python, PyTorch, an HTTP service, or external processes.",
-            "zh": "面向Apple Silicon macOS的本地RWKV命令行程序。Go层负责对话事务、Session持久化和终端交互，独立动态库负责tokenizer、采样和MLX推理；运行时不依赖Python、PyTorch、HTTP服务或外部进程。"
-        },
-        "Agent循环判断":  {
-            "en": "The repository includes an Agent Harness, Continuation, and Agent Protocol, implementing an agent runtime intended to let the model call tools, read observations, and continue execution. The current loop has defects, but the project still qualifies as an agent.",
-            "zh": "仓库包含Agent Harness、Continuation和Agent Protocol，并以模型调用工具、读取观察结果和继续执行为目标实现Agent运行时。当前闭环存在缺陷，但项目性质仍属于Agent。"
-        },
-        "用户反馈":  {
-            "en": [
-                "Tool-call information remains in the output",
-                "It continues using a directory after guessing the wrong path",
-                "The agent loop is not correctly understood or implemented"
-            ],
-            "zh": [
-                "调用信息仍然残留",
-                "猜错目录后仍继续调用该目录",
-                "没有正确理解或实现Agent循环"
-            ]
-        },
-        "支持平台":  {
-            "en": "The currently usable entry point supports Apple Silicon on macOS 15+; Windows and Linux remain target platforms",
-            "zh": "当前实际可用入口为Apple Silicon macOS 15+；Windows和Linux仍是目标平台"
-        },
-        "信息来源":  {
-            "en": [
-                "GitHub repository metadata",
-                "Project README",
-                "User-provided issue description",
-                "User-provided classification correction"
-            ],
-            "zh": [
-                "GitHub仓库元数据",
-                "项目README",
-                "用户提供的问题说明",
-                "用户提供的分类纠正"
-            ]
-        },
-        "分类结论":  {
-            "en": "Strict Agent",
-            "zh": "严格Agent"
-        },
-        "分类依据":  {
-            "en": "The project explicitly centers on an agent protocol, tool calling, and a continuous execution loop. Existing problems with tool feedback, directory correction, and loop implementation are implementation defects and do not change its status as an agent project.",
-            "zh": "项目明确以Agent协议、工具调用和持续执行循环为核心；现有工具反馈、目录纠错和循环实现问题属于实现缺陷，不改变其Agent项目属性。"
         }
     },
     {
@@ -465,85 +544,6 @@
         "分类依据": {
             "en": "An external Agent can call its MCP tools or skill to inspect and repair prompts. The project itself does not load a model or orchestrate autonomous tasks.",
             "zh": "提供提示词格式校验、自动修复、MCP、Skill、CLI、C ABI 和 WASM；本身不加载模型或执行自主任务。"
-        }
-    },
-    {
-        "创建用户名": "Nice0o0",
-        "用户头像": "https://avatars.githubusercontent.com/u/70088382?v=4",
-        "GitHub地址": "https://github.com/Nice0o0/stateswap",
-        "项目名称": "stateswap",
-        "创建时间": "2026-08-30T15:28:20Z",
-        "最后更新时间": "2026-10-22T09:47:21Z",
-        "主要语言": "Python",
-        "许可证": "MIT",
-        "Stars": 1,
-        "Watch": 1,
-        "Fork": 0,
-        "项目类型": {
-            "en": "RWKV persona-state training and hot-swap runtime",
-            "zh": "RWKV人格状态训练与热切换运行时"
-        },
-        "介绍": {
-            "en": "An RWKV-7 initial-state tuning and serving project. It freezes the base-model weights, trains compact S0 states for personas or task modes, and hot-swaps them per session through an OpenAI-compatible API and WebUI. It also provides state mixing, low-rank and int8 compression, O(1) recurrent multi-turn sessions, evaluation tools, and reproducible state-behavior research.",
-            "zh": "面向RWKV-7的初始状态微调与服务项目。它冻结基座模型权重，为人格或任务模式训练紧凑的S0状态，并通过OpenAI兼容API与WebUI按Session热切换；同时提供状态混合、低秩与int8压缩、O(1)循环多轮会话、评测工具及可复现的状态行为研究。"
-        },
-        "Agent循环判断": {
-            "en": "The repository does not implement an autonomous plan-act-observe tool loop. Its session state, persona registry, hot-swap API, and task-mode states can serve as identity and recurrent-memory infrastructure inside an agent system, but external orchestration is required for tool selection and execution.",
-            "zh": "仓库没有实现自主的“规划、行动、观察”工具循环。其Session状态、人格注册表、热切换API与任务模式状态可作为Agent系统中的身份和循环记忆基础设施，但工具选择与执行仍需要外部编排。"
-        },
-        "主要能力": {
-            "en": [
-                "S0 state tuning for personas, styles, and task modes with frozen model weights",
-                "Millisecond persona hot-swap and per-session O(1) recurrent conversation state",
-                "OpenAI-compatible API, streaming chat WebUI, persona mixer, and training interface",
-                "Int8 and low-rank state compression plus state arithmetic and editing",
-                "Reproducible evaluation and research artifacts for RWKV initial-state behavior"
-            ],
-            "zh": [
-                "冻结模型权重的人格、风格与任务模式S0状态微调",
-                "毫秒级人格热切换与每Session O(1)循环会话状态",
-                "OpenAI兼容API、流式聊天WebUI、人格混合器与训练界面",
-                "int8与低秩状态压缩，以及状态算术和编辑",
-                "可复现的RWKV初始状态行为评测与研究产物"
-            ]
-        },
-        "已知限制": {
-            "en": [
-                "Not a complete autonomous agent and does not provide a tool-execution loop",
-                "S0 tuning changes behavior and task priors but cannot add new factual knowledge",
-                "The documented reproduction stack targets Windows or Linux with an NVIDIA GPU and Python 3.12+",
-                "Conversation quality remains bounded by the frozen base model"
-            ],
-            "zh": [
-                "不是完整自主Agent，也不提供工具执行循环",
-                "S0微调可改变行为与任务先验，但不能注入新的事实知识",
-                "文档中的复现环境主要面向Windows或Linux、NVIDIA GPU与Python 3.12+",
-                "会话质量仍受冻结基座模型能力上限约束"
-            ]
-        },
-        "支持平台": {
-            "en": "Documented for Windows and Linux with NVIDIA CUDA GPUs; exposes local Python, HTTP API, and browser WebUI interfaces",
-            "zh": "文档主要支持Windows与Linux上的NVIDIA CUDA GPU，并提供本地Python、HTTP API和浏览器WebUI接口"
-        },
-        "信息来源": {
-            "en": [
-                "GitHub repository metadata",
-                "Project README and architecture documentation",
-                "Published benchmark and research reports in the repository"
-            ],
-            "zh": [
-                "GitHub仓库元数据",
-                "项目README与架构文档",
-                "仓库内发布的基准与研究报告"
-            ]
-        },
-        "分类结论": {
-            "en": "Agent persona and state infrastructure",
-            "zh": "Agent人格与状态基础设施"
-        },
-        "分类依据": {
-            "en": "The project provides reusable persona, task-mode, and recurrent-session state infrastructure that can materially shape an RWKV agent, but it does not independently choose tools or run an autonomous agent loop.",
-            "zh": "项目提供可复用的人格、任务模式与循环Session状态基础设施，能够实质性支撑RWKV Agent，但自身不负责工具选择，也不运行自主Agent循环。"
         }
     },
     {

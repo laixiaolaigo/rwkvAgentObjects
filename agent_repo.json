@@ -1,5 +1,13 @@
 [
   {
+    "projectName": "RWKV-Agent",
+    "repositoryUrl": "https://github.com/No-22-Github/RWKV-Agent",
+    "lastUpdated": "2026-10-26T01:46:15Z",
+    "stars": 4,
+    "forks": 1,
+    "watchers": 0
+  },
+  {
     "projectName": "memopet",
     "repositoryUrl": "https://github.com/Nice0o0/memopet",
     "lastUpdated": "2026-10-25T13:51:05Z",
@@ -8,9 +16,17 @@
     "watchers": 0
   },
   {
+    "projectName": "stateswap",
+    "repositoryUrl": "https://github.com/Nice0o0/stateswap",
+    "lastUpdated": "2026-10-25T13:51:01Z",
+    "stars": 1,
+    "forks": 0,
+    "watchers": 1
+  },
+  {
     "projectName": "rwkv-agent",
     "repositoryUrl": "https://github.com/123123213weqw/rwkv-agent",
-    "lastUpdated": "2026-10-24T19:24:29Z",
+    "lastUpdated": "2026-10-25T12:59:29Z",
     "stars": 9,
     "forks": 3,
     "watchers": 1
@@ -21,14 +37,6 @@
     "lastUpdated": "2026-10-24T19:07:12Z",
     "stars": 1,
     "forks": 0,
-    "watchers": 0
-  },
-  {
-    "projectName": "RWKV-Agent",
-    "repositoryUrl": "https://github.com/No-22-Github/RWKV-Agent",
-    "lastUpdated": "2026-10-24T13:54:53Z",
-    "stars": 4,
-    "forks": 1,
     "watchers": 0
   },
   {
@@ -54,14 +62,6 @@
     "stars": 3,
     "forks": 0,
     "watchers": 0
-  },
-  {
-    "projectName": "stateswap",
-    "repositoryUrl": "https://github.com/Nice0o0/stateswap",
-    "lastUpdated": "2026-10-22T09:47:21Z",
-    "stars": 1,
-    "forks": 0,
-    "watchers": 1
   },
   {
     "projectName": "rwkv-toolcaller-bench",

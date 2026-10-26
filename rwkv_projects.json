@@ -8,7 +8,7 @@
       "en": "Cross-platform, local-first RWKV chat application for Android, iOS, Windows, macOS, and Linux.",
       "zh": "面向 Android、iOS、Windows、macOS 与 Linux 的跨平台、本地优先 RWKV 聊天应用。"
     },
-    "lastUpdated": "2026-10-25T05:54:52Z",
+    "lastUpdated": "2026-10-26T06:33:14Z",
     "stars": 132,
     "watchers": 4,
     "forks": 15,
@@ -18,6 +18,90 @@
     "projectType": {
       "en": "End-user application",
       "zh": "终端应用"
+    }
+  },
+  {
+    "repositoryUrl": "https://github.com/btlqql/sglang-rwkv7",
+    "owner": "btlqql",
+    "name": "sglang-rwkv7",
+    "category": "inference",
+    "summary": {
+      "en": "Independent SGLang distribution focused on production-grade RWKV-7 serving, recurrent state caching, speculative decoding, quantization, and broad GPU support.",
+      "zh": "sglang-rwkv7 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2026-10-26T04:07:32Z",
+    "stars": 1,
+    "watchers": 0,
+    "forks": 0,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "sourcePage": 2,
+    "projectType": {
+      "en": "Inference service",
+      "zh": "推理服务"
+    }
+  },
+  {
+    "repositoryUrl": "https://github.com/Alic-Li/rwkv_lightning_cuda",
+    "owner": "Alic-Li",
+    "name": "rwkv_lightning_cuda",
+    "category": "inference",
+    "summary": {
+      "en": "The fastest pure C++ GPU runtime for RWKV — zero PyTorch, one-command deployment, CUDA/ROCm inference, quantization, state tuning & serving.🕊",
+      "zh": "rwkv_lightning_cuda 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2026-10-26T02:25:44Z",
+    "stars": 10,
+    "watchers": 0,
+    "forks": 2,
+    "language": "C++",
+    "license": null,
+    "sourcePage": 1,
+    "projectType": {
+      "en": "Inference service",
+      "zh": "推理服务"
+    }
+  },
+  {
+    "repositoryUrl": "https://github.com/RafaelUI/rwkv-metal",
+    "owner": "RafaelUI",
+    "name": "rwkv-metal",
+    "category": "inference",
+    "summary": {
+      "en": "pip install rwkv-metal",
+      "zh": "rwkv-metal 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2026-10-25T17:18:18Z",
+    "stars": 5,
+    "watchers": 0,
+    "forks": 1,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "sourcePage": 1,
+    "projectType": {
+      "en": "Inference backend",
+      "zh": "推理后端"
+    }
+  },
+  {
+    "repositoryUrl": "https://github.com/RafaelUI/rwkv-quant",
+    "owner": "RafaelUI",
+    "name": "rwkv-quant",
+    "category": "inference",
+    "summary": {
+      "en": "pip install rwkv-quant",
+      "zh": "rwkv-quant 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2026-10-25T17:18:16Z",
+    "stars": 1,
+    "watchers": 0,
+    "forks": 0,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "sourcePage": 1,
+    "projectType": {
+      "en": "Quantization and compression",
+      "zh": "量化与压缩"
     }
   },
   {
@@ -84,27 +168,6 @@
     }
   },
   {
-    "repositoryUrl": "https://github.com/Alic-Li/rwkv_lightning_cuda",
-    "owner": "Alic-Li",
-    "name": "rwkv_lightning_cuda",
-    "category": "inference",
-    "summary": {
-      "en": "The fastest pure C++ GPU runtime for RWKV — zero PyTorch, one-command deployment, CUDA/ROCm inference, quantization, state tuning & serving.🕊",
-      "zh": "rwkv_lightning_cuda 提供 RWKV 模型推理、部署、运行时或服务支持。"
-    },
-    "lastUpdated": "2026-10-24T06:55:37Z",
-    "stars": 10,
-    "watchers": 0,
-    "forks": 2,
-    "language": "C++",
-    "license": null,
-    "sourcePage": 1,
-    "projectType": {
-      "en": "Inference service",
-      "zh": "推理服务"
-    }
-  },
-  {
     "repositoryUrl": "https://github.com/btlqql/vllm-rwkv7",
     "owner": "btlqql",
     "name": "vllm-rwkv7",
@@ -165,69 +228,6 @@
     "projectType": {
       "en": "Training and fine-tuning",
       "zh": "训练与微调"
-    }
-  },
-  {
-    "repositoryUrl": "https://github.com/btlqql/sglang-rwkv7",
-    "owner": "btlqql",
-    "name": "sglang-rwkv7",
-    "category": "inference",
-    "summary": {
-      "en": "Independent SGLang distribution focused on production-grade RWKV-7 serving, recurrent state caching, speculative decoding, quantization, and broad GPU support.",
-      "zh": "sglang-rwkv7 提供 RWKV 模型推理、部署、运行时或服务支持。"
-    },
-    "lastUpdated": "2026-10-19T04:04:09Z",
-    "stars": 1,
-    "watchers": 0,
-    "forks": 0,
-    "language": "Python",
-    "license": "Apache-2.0",
-    "sourcePage": 2,
-    "projectType": {
-      "en": "Inference service",
-      "zh": "推理服务"
-    }
-  },
-  {
-    "repositoryUrl": "https://github.com/RafaelUI/rwkv-quant",
-    "owner": "RafaelUI",
-    "name": "rwkv-quant",
-    "category": "inference",
-    "summary": {
-      "en": "pip install rwkv-quant",
-      "zh": "rwkv-quant 提供 RWKV 模型推理、部署、运行时或服务支持。"
-    },
-    "lastUpdated": "2026-10-18T07:22:36Z",
-    "stars": 1,
-    "watchers": 0,
-    "forks": 0,
-    "language": "Python",
-    "license": "Apache-2.0",
-    "sourcePage": 1,
-    "projectType": {
-      "en": "Quantization and compression",
-      "zh": "量化与压缩"
-    }
-  },
-  {
-    "repositoryUrl": "https://github.com/RafaelUI/rwkv-metal",
-    "owner": "RafaelUI",
-    "name": "rwkv-metal",
-    "category": "inference",
-    "summary": {
-      "en": "pip install rwkv-metal",
-      "zh": "rwkv-metal 提供 RWKV 模型推理、部署、运行时或服务支持。"
-    },
-    "lastUpdated": "2026-10-18T07:22:34Z",
-    "stars": 5,
-    "watchers": 0,
-    "forks": 1,
-    "language": "Python",
-    "license": "Apache-2.0",
-    "sourcePage": 1,
-    "projectType": {
-      "en": "Inference backend",
-      "zh": "推理后端"
     }
   },
   {
@@ -366,7 +366,7 @@
       "zh": "RWKV 语言模型主仓库，包含模型架构、训练代码、CUDA 内核与示例。"
     },
     "lastUpdated": "2026-09-28T18:01:27Z",
-    "stars": 14761,
+    "stars": 14763,
     "watchers": 135,
     "forks": 1026,
     "language": "Python",
@@ -410,7 +410,7 @@
     "lastUpdated": "2026-09-17T03:01:54Z",
     "stars": 4427,
     "watchers": 37,
-    "forks": 610,
+    "forks": 611,
     "language": "Jupyter Notebook",
     "license": "NOASSERTION",
     "sourcePage": 1,
@@ -515,7 +515,7 @@
     "lastUpdated": "2026-09-10T03:18:12Z",
     "stars": 359,
     "watchers": 9,
-    "forks": 15,
+    "forks": 14,
     "language": "Python",
     "license": null,
     "sourcePage": 1,
@@ -536,7 +536,7 @@
     "lastUpdated": "2026-09-06T07:21:39Z",
     "stars": 859,
     "watchers": 24,
-    "forks": 363,
+    "forks": 362,
     "language": "Kotlin",
     "license": "MIT",
     "sourcePage": 1,
@@ -578,7 +578,7 @@
     "lastUpdated": "2026-09-04T13:37:10Z",
     "stars": 6491,
     "watchers": 47,
-    "forks": 595,
+    "forks": 594,
     "language": "TypeScript",
     "license": "MIT",
     "sourcePage": 1,
@@ -1143,7 +1143,7 @@
       "zh": "集成嵌入、RAG、Agent 能力和便捷部署流程的一体化 RWKV 运行服务。"
     },
     "lastUpdated": "2026-06-09T06:16:58Z",
-    "stars": 621,
+    "stars": 622,
     "watchers": 19,
     "forks": 74,
     "language": "Rust",
@@ -2109,7 +2109,7 @@
       "zh": "使用 RWKV 中文预训练生成模型的小说写作应用。"
     },
     "lastUpdated": "2025-05-15T10:31:45Z",
-    "stars": 3934,
+    "stars": 3933,
     "watchers": 51,
     "forks": 569,
     "language": "Python",
@@ -2361,7 +2361,7 @@
       "zh": "轻量级本地 RWKV 聊天应用，可扩展微信自动回复等插件。"
     },
     "lastUpdated": "2025-02-20T15:15:20Z",
-    "stars": 47,
+    "stars": 48,
     "watchers": 1,
     "forks": 8,
     "language": "Python",
@@ -2447,7 +2447,7 @@
     "lastUpdated": "2025-01-23T12:55:35Z",
     "stars": 6149,
     "watchers": 78,
-    "forks": 782,
+    "forks": 783,
     "language": "JavaScript",
     "license": "AGPL-3.0",
     "sourcePage": 6,
