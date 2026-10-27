@@ -8,7 +8,7 @@
       "en": "Cross-platform, local-first RWKV chat application for Android, iOS, Windows, macOS, and Linux.",
       "zh": "面向 Android、iOS、Windows、macOS 与 Linux 的跨平台、本地优先 RWKV 聊天应用。"
     },
-    "lastUpdated": "2026-10-26T08:22:42Z",
+    "lastUpdated": "2026-10-26T20:34:50Z",
     "stars": 132,
     "watchers": 4,
     "forks": 15,
@@ -21,6 +21,27 @@
     }
   },
   {
+    "repositoryUrl": "https://github.com/Alic-Li/rwkv_lightning_cuda",
+    "owner": "Alic-Li",
+    "name": "rwkv_lightning_cuda",
+    "category": "inference",
+    "summary": {
+      "en": "The fastest pure C++ GPU runtime for RWKV — zero PyTorch, one-command deployment, CUDA/ROCm inference, quantization, state tuning & serving.🕊",
+      "zh": "rwkv_lightning_cuda 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2026-10-26T11:29:36Z",
+    "stars": 10,
+    "watchers": 0,
+    "forks": 2,
+    "language": "C++",
+    "license": null,
+    "sourcePage": 1,
+    "projectType": {
+      "en": "Inference service",
+      "zh": "推理服务"
+    }
+  },
+  {
     "repositoryUrl": "https://github.com/RWKV-APP/rwkv_mobile_flutter",
     "owner": "RWKV-APP",
     "name": "rwkv_mobile_flutter",
@@ -29,7 +50,7 @@
       "en": "Flutter FFI bridge and runtime layer for on-device RWKV inference across mobile and desktop platforms.",
       "zh": "面向移动端与桌面端设备内 RWKV 推理的 Flutter FFI 桥接和运行时层。"
     },
-    "lastUpdated": "2026-10-26T08:19:19Z",
+    "lastUpdated": "2026-10-26T10:41:14Z",
     "stars": 20,
     "watchers": 3,
     "forks": 5,
@@ -78,27 +99,6 @@
     "language": "Python",
     "license": "Apache-2.0",
     "sourcePage": 2,
-    "projectType": {
-      "en": "Inference service",
-      "zh": "推理服务"
-    }
-  },
-  {
-    "repositoryUrl": "https://github.com/Alic-Li/rwkv_lightning_cuda",
-    "owner": "Alic-Li",
-    "name": "rwkv_lightning_cuda",
-    "category": "inference",
-    "summary": {
-      "en": "The fastest pure C++ GPU runtime for RWKV — zero PyTorch, one-command deployment, CUDA/ROCm inference, quantization, state tuning & serving.🕊",
-      "zh": "rwkv_lightning_cuda 提供 RWKV 模型推理、部署、运行时或服务支持。"
-    },
-    "lastUpdated": "2026-10-26T02:25:44Z",
-    "stars": 10,
-    "watchers": 0,
-    "forks": 2,
-    "language": "C++",
-    "license": null,
-    "sourcePage": 1,
     "projectType": {
       "en": "Inference service",
       "zh": "推理服务"
@@ -408,7 +408,7 @@
       "zh": "从零构建 GLM4、Llama 3 与 RWKV-6 的中文实践课程。"
     },
     "lastUpdated": "2026-09-17T03:01:54Z",
-    "stars": 4428,
+    "stars": 4430,
     "watchers": 37,
     "forks": 611,
     "language": "Jupyter Notebook",
@@ -576,7 +576,7 @@
       "zh": "带桌面界面和 OpenAI 兼容 API 的 RWKV 自动化管理与启动工具。"
     },
     "lastUpdated": "2026-09-04T13:37:10Z",
-    "stars": 6491,
+    "stars": 6492,
     "watchers": 47,
     "forks": 594,
     "language": "TypeScript",
@@ -933,7 +933,7 @@
       "zh": "用于本地运行 RWKV 语言模型的参考聊天与推理实现。"
     },
     "lastUpdated": "2026-07-19T19:09:29Z",
-    "stars": 9499,
+    "stars": 9498,
     "watchers": 91,
     "forks": 683,
     "language": "Python",
@@ -1185,7 +1185,7 @@
       "zh": "web-rwkv 提供 RWKV 模型推理、部署、运行时或服务支持。"
     },
     "lastUpdated": "2026-06-01T06:59:20Z",
-    "stars": 360,
+    "stars": 361,
     "watchers": 6,
     "forks": 36,
     "language": "Rust",
@@ -2109,7 +2109,7 @@
       "zh": "使用 RWKV 中文预训练生成模型的小说写作应用。"
     },
     "lastUpdated": "2025-05-15T10:31:45Z",
-    "stars": 3933,
+    "stars": 3934,
     "watchers": 51,
     "forks": 569,
     "language": "Python",
