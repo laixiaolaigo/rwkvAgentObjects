@@ -1,5 +1,74 @@
 ﻿[
     {
+        "创建用户名": "ConsciousNode",
+        "用户头像": "https://avatars.githubusercontent.com/u/253178376?v=4",
+        "GitHub地址": "https://github.com/ConsciousNode/HTMLNLM",
+        "项目名称": "HTMLNLM",
+        "创建时间": "2026-03-27T01:28:38Z",
+        "最后更新时间": "2026-10-28T08:28:17Z",
+        "主要语言": "HTML",
+        "许可证": "MIT",
+        "Stars": 1,
+        "Watch": 0,
+        "Fork": 0,
+        "项目类型": {
+            "en": "Browser RWKV companion and autonomous-loop experiments",
+            "zh": "浏览器RWKV陪伴与自主循环实验"
+        },
+        "介绍": {
+            "en": "A browser-native RWKV-v7 training and inference project. Its documented companion experiments include persona prompts, a journal, inner thoughts, dreams, reflection, and goals.",
+            "zh": "浏览器原生RWKV-v7训练与推理项目，文档中的陪伴实验包含人格提示词、日志、内心独白、梦、反思和目标。"
+        },
+        "Agent循环判断": {
+            "en": "Documents autonomous companion activities and recurrent memory experiments. These should be distinguished from a general-purpose planning and external-tool Agent loop.",
+            "zh": "记录自主陪伴活动和循环记忆实验，应与通用规划及外部工具Agent循环区分。"
+        },
+        "主要能力": {
+            "en": [
+                "Browser-native RWKV training and inference",
+                "Companion persona and journal experiments",
+                "Dream, reflection, and goal-related loops"
+            ],
+            "zh": [
+                "浏览器原生RWKV训练与推理",
+                "陪伴人格与日志实验",
+                "梦、反思与目标相关循环"
+            ]
+        },
+        "已知限制": {
+            "en": [
+                "Experimental companion features vary by project version",
+                "Browser and model constraints limit applicable workloads"
+            ],
+            "zh": [
+                "实验性陪伴功能随项目版本而异",
+                "浏览器与模型条件限制了适用任务"
+            ]
+        },
+        "支持平台": {
+            "en": "Browser-based HTML and JavaScript runtime",
+            "zh": "基于HTML与JavaScript的浏览器运行时"
+        },
+        "信息来源": {
+            "en": [
+                "GitHub repository metadata and public counters",
+                "Project README"
+            ],
+            "zh": [
+                "GitHub仓库元数据与公开计数",
+                "项目README"
+            ]
+        },
+        "分类结论": {
+            "en": "Agent companion research",
+            "zh": "Agent陪伴研究"
+        },
+        "分类依据": {
+            "en": "Documents autonomous companion activities and recurrent memory experiments. These should be distinguished from a general-purpose planning and external-tool Agent loop.",
+            "zh": "已在资源页；README 新增角色、内心独白和自主反思等实验，不能仅据此标成通用工具 Agent。"
+        }
+    },
+    {
         "创建用户名":  "No-22-Github",
         "作者备注":  null,
         "用户头像":  "https://avatars.githubusercontent.com/u/132265925?v=4",
@@ -291,75 +360,6 @@
         "分类依据":  {
             "en": "The model can select tools, receive retrieval and evidence results, and continue acting across multiple research rounds.",
             "zh": "模型能够选择工具，接收检索与证据结果，并在多轮研究模式中继续行动。"
-        }
-    },
-    {
-        "创建用户名": "ConsciousNode",
-        "用户头像": "https://avatars.githubusercontent.com/u/253178376?v=4",
-        "GitHub地址": "https://github.com/ConsciousNode/HTMLNLM",
-        "项目名称": "HTMLNLM",
-        "创建时间": "2026-03-27T01:28:38Z",
-        "最后更新时间": "2026-10-24T19:07:12Z",
-        "主要语言": "HTML",
-        "许可证": "MIT",
-        "Stars": 1,
-        "Watch": 0,
-        "Fork": 0,
-        "项目类型": {
-            "en": "Browser RWKV companion and autonomous-loop experiments",
-            "zh": "浏览器RWKV陪伴与自主循环实验"
-        },
-        "介绍": {
-            "en": "A browser-native RWKV-v7 training and inference project. Its documented companion experiments include persona prompts, a journal, inner thoughts, dreams, reflection, and goals.",
-            "zh": "浏览器原生RWKV-v7训练与推理项目，文档中的陪伴实验包含人格提示词、日志、内心独白、梦、反思和目标。"
-        },
-        "Agent循环判断": {
-            "en": "Documents autonomous companion activities and recurrent memory experiments. These should be distinguished from a general-purpose planning and external-tool Agent loop.",
-            "zh": "记录自主陪伴活动和循环记忆实验，应与通用规划及外部工具Agent循环区分。"
-        },
-        "主要能力": {
-            "en": [
-                "Browser-native RWKV training and inference",
-                "Companion persona and journal experiments",
-                "Dream, reflection, and goal-related loops"
-            ],
-            "zh": [
-                "浏览器原生RWKV训练与推理",
-                "陪伴人格与日志实验",
-                "梦、反思与目标相关循环"
-            ]
-        },
-        "已知限制": {
-            "en": [
-                "Experimental companion features vary by project version",
-                "Browser and model constraints limit applicable workloads"
-            ],
-            "zh": [
-                "实验性陪伴功能随项目版本而异",
-                "浏览器与模型条件限制了适用任务"
-            ]
-        },
-        "支持平台": {
-            "en": "Browser-based HTML and JavaScript runtime",
-            "zh": "基于HTML与JavaScript的浏览器运行时"
-        },
-        "信息来源": {
-            "en": [
-                "GitHub repository metadata and public counters",
-                "Project README"
-            ],
-            "zh": [
-                "GitHub仓库元数据与公开计数",
-                "项目README"
-            ]
-        },
-        "分类结论": {
-            "en": "Agent companion research",
-            "zh": "Agent陪伴研究"
-        },
-        "分类依据": {
-            "en": "Documents autonomous companion activities and recurrent memory experiments. These should be distinguished from a general-purpose planning and external-tool Agent loop.",
-            "zh": "已在资源页；README 新增角色、内心独白和自主反思等实验，不能仅据此标成通用工具 Agent。"
         }
     },
     {
@@ -1476,7 +1476,7 @@
         "最后更新时间": "2026-09-09T03:17:21Z",
         "主要语言": "Python",
         "许可证": "MIT",
-        "Stars": 6,
+        "Stars": 7,
         "Watch": 0,
         "Fork": 2,
         "项目类型": {

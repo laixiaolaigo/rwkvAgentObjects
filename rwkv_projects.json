@@ -1,5 +1,68 @@
 [
   {
+    "repositoryUrl": "https://github.com/ConsciousNode/HTMLNLM",
+    "owner": "ConsciousNode",
+    "name": "HTMLNLM",
+    "category": "training",
+    "summary": {
+      "en": "Complete RWKV-v7 LLM training and inference in a single browser file. Zero dependencies.",
+      "zh": "HTMLNLM 提供 RWKV 模型训练、微调或架构实验工具。"
+    },
+    "lastUpdated": "2026-10-28T08:28:17Z",
+    "stars": 1,
+    "watchers": 0,
+    "forks": 0,
+    "language": "HTML",
+    "license": "MIT",
+    "sourcePage": 3,
+    "projectType": {
+      "en": "Training and fine-tuning",
+      "zh": "训练与微调"
+    }
+  },
+  {
+    "repositoryUrl": "https://github.com/BlinkDL/RWKV-LM",
+    "owner": "BlinkDL",
+    "name": "RWKV-LM",
+    "category": "training",
+    "summary": {
+      "en": "The primary RWKV language-model repository, including architecture, training code, CUDA kernels, and examples.",
+      "zh": "RWKV 语言模型主仓库，包含模型架构、训练代码、CUDA 内核与示例。"
+    },
+    "lastUpdated": "2026-10-27T18:36:57Z",
+    "stars": 14765,
+    "watchers": 135,
+    "forks": 1026,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "sourcePage": 1,
+    "projectType": {
+      "en": "Training and fine-tuning",
+      "zh": "训练与微调"
+    }
+  },
+  {
+    "repositoryUrl": "https://github.com/TimeMobius/RWKV-Megatron",
+    "owner": "TimeMobius",
+    "name": "RWKV-Megatron",
+    "category": "training",
+    "summary": {
+      "en": "Distributed RWKV-6/7 training framework built on NVIDIA Megatron-Core.",
+      "zh": "基于 NVIDIA Megatron-Core 的 RWKV-6/7 分布式训练框架。"
+    },
+    "lastUpdated": "2026-10-27T09:06:20Z",
+    "stars": 52,
+    "watchers": 0,
+    "forks": 0,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "sourcePage": 2,
+    "projectType": {
+      "en": "Training and fine-tuning",
+      "zh": "训练与微调"
+    }
+  },
+  {
     "repositoryUrl": "https://github.com/RWKV-APP/RWKV_APP",
     "owner": "RWKV-APP",
     "name": "RWKV_APP",
@@ -60,27 +123,6 @@
     "projectType": {
       "en": "End-user application",
       "zh": "终端应用"
-    }
-  },
-  {
-    "repositoryUrl": "https://github.com/TimeMobius/RWKV-Megatron",
-    "owner": "TimeMobius",
-    "name": "RWKV-Megatron",
-    "category": "training",
-    "summary": {
-      "en": "Distributed RWKV-6/7 training framework built on NVIDIA Megatron-Core.",
-      "zh": "基于 NVIDIA Megatron-Core 的 RWKV-6/7 分布式训练框架。"
-    },
-    "lastUpdated": "2026-10-26T08:08:29Z",
-    "stars": 52,
-    "watchers": 0,
-    "forks": 0,
-    "language": "Python",
-    "license": "Apache-2.0",
-    "sourcePage": 2,
-    "projectType": {
-      "en": "Training and fine-tuning",
-      "zh": "训练与微调"
     }
   },
   {
@@ -165,27 +207,6 @@
     "projectType": {
       "en": "Runtime adapter",
       "zh": "运行时适配器"
-    }
-  },
-  {
-    "repositoryUrl": "https://github.com/ConsciousNode/HTMLNLM",
-    "owner": "ConsciousNode",
-    "name": "HTMLNLM",
-    "category": "training",
-    "summary": {
-      "en": "Complete RWKV-v7 LLM training and inference in a single browser file. Zero dependencies.",
-      "zh": "HTMLNLM 提供 RWKV 模型训练、微调或架构实验工具。"
-    },
-    "lastUpdated": "2026-10-24T19:07:12Z",
-    "stars": 1,
-    "watchers": 0,
-    "forks": 0,
-    "language": "HTML",
-    "license": "MIT",
-    "sourcePage": 3,
-    "projectType": {
-      "en": "Training and fine-tuning",
-      "zh": "训练与微调"
     }
   },
   {
@@ -357,27 +378,6 @@
     }
   },
   {
-    "repositoryUrl": "https://github.com/BlinkDL/RWKV-LM",
-    "owner": "BlinkDL",
-    "name": "RWKV-LM",
-    "category": "training",
-    "summary": {
-      "en": "The primary RWKV language-model repository, including architecture, training code, CUDA kernels, and examples.",
-      "zh": "RWKV 语言模型主仓库，包含模型架构、训练代码、CUDA 内核与示例。"
-    },
-    "lastUpdated": "2026-09-28T18:01:27Z",
-    "stars": 14764,
-    "watchers": 135,
-    "forks": 1026,
-    "language": "Python",
-    "license": "Apache-2.0",
-    "sourcePage": 1,
-    "projectType": {
-      "en": "Training and fine-tuning",
-      "zh": "训练与微调"
-    }
-  },
-  {
     "repositoryUrl": "https://github.com/youzow3/onnx_rwkv",
     "owner": "youzow3",
     "name": "onnx_rwkv",
@@ -408,7 +408,7 @@
       "zh": "从零构建 GLM4、Llama 3 与 RWKV-6 的中文实践课程。"
     },
     "lastUpdated": "2026-09-17T03:01:54Z",
-    "stars": 4430,
+    "stars": 4431,
     "watchers": 37,
     "forks": 611,
     "language": "Jupyter Notebook",
@@ -576,7 +576,7 @@
       "zh": "带桌面界面和 OpenAI 兼容 API 的 RWKV 自动化管理与启动工具。"
     },
     "lastUpdated": "2026-09-04T13:37:10Z",
-    "stars": 6492,
+    "stars": 6494,
     "watchers": 47,
     "forks": 594,
     "language": "TypeScript",
@@ -1628,7 +1628,7 @@
     "lastUpdated": "2026-01-30T20:52:36Z",
     "stars": 2081,
     "watchers": 26,
-    "forks": 185,
+    "forks": 186,
     "language": "C",
     "license": "MIT",
     "sourcePage": 1,
@@ -2109,7 +2109,7 @@
       "zh": "使用 RWKV 中文预训练生成模型的小说写作应用。"
     },
     "lastUpdated": "2025-05-15T10:31:45Z",
-    "stars": 3934,
+    "stars": 3935,
     "watchers": 51,
     "forks": 569,
     "language": "Python",

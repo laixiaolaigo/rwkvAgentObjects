@@ -1,5 +1,13 @@
 [
   {
+    "projectName": "HTMLNLM",
+    "repositoryUrl": "https://github.com/ConsciousNode/HTMLNLM",
+    "lastUpdated": "2026-10-28T08:28:17Z",
+    "stars": 1,
+    "forks": 0,
+    "watchers": 0
+  },
+  {
     "projectName": "RWKV-Agent",
     "repositoryUrl": "https://github.com/No-22-Github/RWKV-Agent",
     "lastUpdated": "2026-10-26T01:46:15Z",
@@ -30,14 +38,6 @@
     "stars": 9,
     "forks": 3,
     "watchers": 1
-  },
-  {
-    "projectName": "HTMLNLM",
-    "repositoryUrl": "https://github.com/ConsciousNode/HTMLNLM",
-    "lastUpdated": "2026-10-24T19:07:12Z",
-    "stars": 1,
-    "forks": 0,
-    "watchers": 0
   },
   {
     "projectName": "RWKV-LH",
@@ -171,7 +171,7 @@
     "projectName": "rwkv7-state-embedding",
     "repositoryUrl": "https://github.com/cgisky1980/rwkv7-state-embedding",
     "lastUpdated": "2026-09-09T03:17:21Z",
-    "stars": 6,
+    "stars": 7,
     "forks": 2,
     "watchers": 0
   },
