@@ -1,9 +1,25 @@
 [
   {
+    "projectName": "ai00-x-client",
+    "repositoryUrl": "https://github.com/cgisky1980/ai00-x-client",
+    "lastUpdated": "2026-10-29T08:34:41Z",
+    "stars": 5,
+    "forks": 2,
+    "watchers": 0
+  },
+  {
     "projectName": "HTMLNLM",
     "repositoryUrl": "https://github.com/ConsciousNode/HTMLNLM",
-    "lastUpdated": "2026-10-28T08:28:17Z",
+    "lastUpdated": "2026-10-29T05:15:21Z",
     "stars": 1,
+    "forks": 0,
+    "watchers": 0
+  },
+  {
+    "projectName": "RWKV-LH",
+    "repositoryUrl": "https://github.com/rwkv-rs/RWKV-LH",
+    "lastUpdated": "2026-10-28T10:39:37Z",
+    "stars": 3,
     "forks": 0,
     "watchers": 0
   },
@@ -40,14 +56,6 @@
     "watchers": 1
   },
   {
-    "projectName": "RWKV-LH",
-    "repositoryUrl": "https://github.com/rwkv-rs/RWKV-LH",
-    "lastUpdated": "2026-10-23T11:10:45Z",
-    "stars": 3,
-    "forks": 0,
-    "watchers": 0
-  },
-  {
     "projectName": "noesis",
     "repositoryUrl": "https://github.com/Vaniell0/noesis",
     "lastUpdated": "2026-10-22T14:00:05Z",
@@ -77,14 +85,6 @@
     "lastUpdated": "2026-10-19T08:49:31Z",
     "stars": 2,
     "forks": 1,
-    "watchers": 0
-  },
-  {
-    "projectName": "ai00-x-client",
-    "repositoryUrl": "https://github.com/cgisky1980/ai00-x-client",
-    "lastUpdated": "2026-10-16T07:14:35Z",
-    "stars": 5,
-    "forks": 2,
     "watchers": 0
   },
   {
