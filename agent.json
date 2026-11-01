@@ -12,7 +12,7 @@
                     ],
         "项目名称":  "rwkv-agent",
         "创建时间":  "2026-07-19T12:11:52Z",
-        "最后更新时间":  "2026-10-31T08:27:06Z",
+        "最后更新时间":  "2026-11-01T09:58:10Z",
         "主要语言":  "Python",
         "许可证":  "MIT",
         "Stars":  9,
@@ -80,13 +80,84 @@
         }
     },
     {
+        "创建用户名": "Nice0o0",
+        "用户头像": "https://avatars.githubusercontent.com/u/70088382?v=4",
+        "GitHub地址": "https://github.com/Nice0o0/memopet",
+        "项目名称": "memopet",
+        "创建时间": "2026-09-29T11:34:53Z",
+        "最后更新时间": "2026-11-01T06:17:17Z",
+        "主要语言": "Python",
+        "许可证": "MIT",
+        "Stars": 0,
+        "Watch": 0,
+        "Fork": 0,
+        "项目类型": {
+            "en": "RWKV persistent-state virtual companion",
+            "zh": "RWKV持久状态电子宠物"
+        },
+        "介绍": {
+            "en": "A virtual pet whose memory is an RWKV-7 recurrent-state tensor. Experiences shape its state, which can be saved, restored, exported, and forked into independently evolving companions.",
+            "zh": "以RWKV-7循环状态张量作为记忆的电子宠物。交互经历塑造状态，可保存、恢复、导出，或分身为独立成长的伙伴。"
+        },
+        "Agent循环判断": {
+            "en": "Updates persistent recurrent state through interactions and idle-triggered dreams. It is a stateful companion application rather than a general-purpose tool-execution Agent.",
+            "zh": "通过交互和空闲触发的梦机制更新持久循环状态，属于有状态陪伴应用，而非通用工具执行Agent。"
+        },
+        "主要能力": {
+            "en": [
+                "Persistent RWKV memory and streaming conversations",
+                "Dream generation and persona states",
+                "State saves, restoration, export, and forking"
+            ],
+            "zh": [
+                "持久RWKV记忆与流式对话",
+                "梦机制与人格状态",
+                "状态存档、恢复、导出与分身"
+            ]
+        },
+        "已知限制": {
+            "en": [
+                "Requires stateswap, compatible model weights, and a supported local runtime",
+                "Small-model factual recall is limited"
+            ],
+            "zh": [
+                "需要stateswap、兼容模型权重及本地运行时",
+                "小模型对事实的记忆能力有限"
+            ]
+        },
+        "支持平台": {
+            "en": "Python 3.12 and local NVIDIA GPU inference with a web interface",
+            "zh": "Python 3.12、本地NVIDIA GPU推理与网页界面"
+        },
+        "信息来源": {
+            "en": [
+                "GitHub repository metadata and public counters",
+                "Project README",
+                "Source review: memopet/pet.py"
+            ],
+            "zh": [
+                "GitHub仓库元数据与公开计数",
+                "项目README",
+                "源码核验：memopet/pet.py"
+            ]
+        },
+        "分类结论": {
+            "en": "Agent companion application",
+            "zh": "Agent陪伴应用"
+        },
+        "分类依据": {
+            "en": "Updates persistent recurrent state through interactions and idle-triggered dreams. It is a stateful companion application rather than a general-purpose tool-execution Agent.",
+            "zh": "提供跨重启持久状态、交互、梦机制、分身和存档，依赖 stateswap 及本地 RWKV 权重；适合交互应用分类。"
+        }
+    },
+    {
         "创建用户名":  "No-22-Github",
         "作者备注":  null,
         "用户头像":  "https://avatars.githubusercontent.com/u/132265925?v=4",
         "GitHub地址":  "https://github.com/No-22-Github/RWKV-Agent",
         "项目名称":  "RWKV-Agent",
         "创建时间":  "2026-07-27T13:41:03Z",
-        "最后更新时间":  "2026-10-31T05:08:36Z",
+        "最后更新时间":  "2026-10-31T13:49:58Z",
         "主要语言":  "Go",
         "许可证":  null,
         "Stars":  4,
@@ -374,77 +445,6 @@
         "分类依据": {
             "en": "Documents autonomous companion activities and recurrent memory experiments. These should be distinguished from a general-purpose planning and external-tool Agent loop.",
             "zh": "已在资源页；README 新增角色、内心独白和自主反思等实验，不能仅据此标成通用工具 Agent。"
-        }
-    },
-    {
-        "创建用户名": "Nice0o0",
-        "用户头像": "https://avatars.githubusercontent.com/u/70088382?v=4",
-        "GitHub地址": "https://github.com/Nice0o0/memopet",
-        "项目名称": "memopet",
-        "创建时间": "2026-09-29T11:34:53Z",
-        "最后更新时间": "2026-10-25T13:51:05Z",
-        "主要语言": "Python",
-        "许可证": "MIT",
-        "Stars": 0,
-        "Watch": 0,
-        "Fork": 0,
-        "项目类型": {
-            "en": "RWKV persistent-state virtual companion",
-            "zh": "RWKV持久状态电子宠物"
-        },
-        "介绍": {
-            "en": "A virtual pet whose memory is an RWKV-7 recurrent-state tensor. Experiences shape its state, which can be saved, restored, exported, and forked into independently evolving companions.",
-            "zh": "以RWKV-7循环状态张量作为记忆的电子宠物。交互经历塑造状态，可保存、恢复、导出，或分身为独立成长的伙伴。"
-        },
-        "Agent循环判断": {
-            "en": "Updates persistent recurrent state through interactions and idle-triggered dreams. It is a stateful companion application rather than a general-purpose tool-execution Agent.",
-            "zh": "通过交互和空闲触发的梦机制更新持久循环状态，属于有状态陪伴应用，而非通用工具执行Agent。"
-        },
-        "主要能力": {
-            "en": [
-                "Persistent RWKV memory and streaming conversations",
-                "Dream generation and persona states",
-                "State saves, restoration, export, and forking"
-            ],
-            "zh": [
-                "持久RWKV记忆与流式对话",
-                "梦机制与人格状态",
-                "状态存档、恢复、导出与分身"
-            ]
-        },
-        "已知限制": {
-            "en": [
-                "Requires stateswap, compatible model weights, and a supported local runtime",
-                "Small-model factual recall is limited"
-            ],
-            "zh": [
-                "需要stateswap、兼容模型权重及本地运行时",
-                "小模型对事实的记忆能力有限"
-            ]
-        },
-        "支持平台": {
-            "en": "Python 3.12 and local NVIDIA GPU inference with a web interface",
-            "zh": "Python 3.12、本地NVIDIA GPU推理与网页界面"
-        },
-        "信息来源": {
-            "en": [
-                "GitHub repository metadata and public counters",
-                "Project README",
-                "Source review: memopet/pet.py"
-            ],
-            "zh": [
-                "GitHub仓库元数据与公开计数",
-                "项目README",
-                "源码核验：memopet/pet.py"
-            ]
-        },
-        "分类结论": {
-            "en": "Agent companion application",
-            "zh": "Agent陪伴应用"
-        },
-        "分类依据": {
-            "en": "Updates persistent recurrent state through interactions and idle-triggered dreams. It is a stateful companion application rather than a general-purpose tool-execution Agent.",
-            "zh": "提供跨重启持久状态、交互、梦机制、分身和存档，依赖 stateswap 及本地 RWKV 权重；适合交互应用分类。"
         }
     },
     {

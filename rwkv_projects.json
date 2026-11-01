@@ -1,5 +1,47 @@
 [
   {
+    "repositoryUrl": "https://github.com/rwkv-rs/any2rwkv",
+    "owner": "rwkv-rs",
+    "name": "any2rwkv",
+    "category": "training",
+    "summary": {
+      "en": "Research tools for converting attention-based architectures to RWKV through layerwise distillation.",
+      "zh": "通过逐层蒸馏将注意力架构转换为 RWKV 的研究与训练工具。"
+    },
+    "lastUpdated": "2026-10-31T10:49:07Z",
+    "stars": 5,
+    "watchers": 0,
+    "forks": 1,
+    "language": "Python",
+    "license": null,
+    "sourcePage": 1,
+    "projectType": {
+      "en": "Training and fine-tuning",
+      "zh": "训练与微调"
+    }
+  },
+  {
+    "repositoryUrl": "https://github.com/BlinkDL/RWKV-LM",
+    "owner": "BlinkDL",
+    "name": "RWKV-LM",
+    "category": "training",
+    "summary": {
+      "en": "The primary RWKV language-model repository, including architecture, training code, CUDA kernels, and examples.",
+      "zh": "RWKV 语言模型主仓库，包含模型架构、训练代码、CUDA 内核与示例。"
+    },
+    "lastUpdated": "2026-10-31T10:39:47Z",
+    "stars": 14769,
+    "watchers": 136,
+    "forks": 1025,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "sourcePage": 1,
+    "projectType": {
+      "en": "Training and fine-tuning",
+      "zh": "训练与微调"
+    }
+  },
+  {
     "repositoryUrl": "https://github.com/Alic-Li/rwkv_lightning_cuda",
     "owner": "Alic-Li",
     "name": "rwkv_lightning_cuda",
@@ -9,7 +51,7 @@
       "zh": "rwkv_lightning_cuda 提供 RWKV 模型推理、部署、运行时或服务支持。"
     },
     "lastUpdated": "2026-10-31T02:05:38Z",
-    "stars": 10,
+    "stars": 11,
     "watchers": 0,
     "forks": 2,
     "language": "C++",
@@ -126,27 +168,6 @@
     }
   },
   {
-    "repositoryUrl": "https://github.com/BlinkDL/RWKV-LM",
-    "owner": "BlinkDL",
-    "name": "RWKV-LM",
-    "category": "training",
-    "summary": {
-      "en": "The primary RWKV language-model repository, including architecture, training code, CUDA kernels, and examples.",
-      "zh": "RWKV 语言模型主仓库，包含模型架构、训练代码、CUDA 内核与示例。"
-    },
-    "lastUpdated": "2026-10-27T18:36:57Z",
-    "stars": 14768,
-    "watchers": 136,
-    "forks": 1025,
-    "language": "Python",
-    "license": "Apache-2.0",
-    "sourcePage": 1,
-    "projectType": {
-      "en": "Training and fine-tuning",
-      "zh": "训练与微调"
-    }
-  },
-  {
     "repositoryUrl": "https://github.com/RWKV-APP/rwkv_mobile_flutter",
     "owner": "RWKV-APP",
     "name": "rwkv_mobile_flutter",
@@ -219,7 +240,7 @@
       "zh": "rwkv-quant 提供 RWKV 模型推理、部署、运行时或服务支持。"
     },
     "lastUpdated": "2026-10-25T17:18:16Z",
-    "stars": 1,
+    "stars": 2,
     "watchers": 0,
     "forks": 0,
     "language": "Python",
@@ -378,27 +399,6 @@
     }
   },
   {
-    "repositoryUrl": "https://github.com/rwkv-rs/any2rwkv",
-    "owner": "rwkv-rs",
-    "name": "any2rwkv",
-    "category": "training",
-    "summary": {
-      "en": "Research tools for converting attention-based architectures to RWKV through layerwise distillation.",
-      "zh": "通过逐层蒸馏将注意力架构转换为 RWKV 的研究与训练工具。"
-    },
-    "lastUpdated": "2026-10-10T03:49:03Z",
-    "stars": 5,
-    "watchers": 0,
-    "forks": 1,
-    "language": "Python",
-    "license": null,
-    "sourcePage": 1,
-    "projectType": {
-      "en": "Training and fine-tuning",
-      "zh": "训练与微调"
-    }
-  },
-  {
     "repositoryUrl": "https://github.com/No-22-Github/Preen",
     "owner": "No-22-Github",
     "name": "Preen",
@@ -429,7 +429,7 @@
       "zh": "从零构建 GLM4、Llama 3 与 RWKV-6 的中文实践课程。"
     },
     "lastUpdated": "2026-09-17T03:01:54Z",
-    "stars": 4437,
+    "stars": 4439,
     "watchers": 37,
     "forks": 611,
     "language": "Jupyter Notebook",
@@ -597,7 +597,7 @@
       "zh": "带桌面界面和 OpenAI 兼容 API 的 RWKV 自动化管理与启动工具。"
     },
     "lastUpdated": "2026-09-04T13:37:10Z",
-    "stars": 6497,
+    "stars": 6498,
     "watchers": 47,
     "forks": 594,
     "language": "TypeScript",
@@ -744,7 +744,7 @@
       "zh": "rwkv7-quantization 提供 RWKV 模型推理、部署、运行时或服务支持。"
     },
     "lastUpdated": "2026-08-06T05:34:43Z",
-    "stars": 4,
+    "stars": 5,
     "watchers": 0,
     "forks": 0,
     "language": "Cuda",
@@ -870,7 +870,7 @@
       "zh": "rwkv_lightning 提供 RWKV 模型推理、部署、运行时或服务支持。"
     },
     "lastUpdated": "2026-07-27T09:02:47Z",
-    "stars": 37,
+    "stars": 36,
     "watchers": 1,
     "forks": 8,
     "language": "Python",
@@ -954,7 +954,7 @@
       "zh": "用于本地运行 RWKV 语言模型的参考聊天与推理实现。"
     },
     "lastUpdated": "2026-07-19T19:09:29Z",
-    "stars": 9496,
+    "stars": 9493,
     "watchers": 91,
     "forks": 684,
     "language": "Python",
@@ -2109,7 +2109,7 @@
       "zh": "使用 RWKV 中文预训练生成模型的小说写作应用。"
     },
     "lastUpdated": "2025-05-15T10:31:45Z",
-    "stars": 3935,
+    "stars": 3934,
     "watchers": 51,
     "forks": 569,
     "language": "Python",
