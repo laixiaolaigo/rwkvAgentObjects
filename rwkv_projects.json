@@ -1,5 +1,68 @@
 [
   {
+    "repositoryUrl": "https://github.com/miyako/ai00",
+    "owner": "miyako",
+    "name": "ai00",
+    "category": "inference",
+    "summary": {
+      "en": "Local inference engine",
+      "zh": "ai00 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2026-11-02T08:24:33Z",
+    "stars": 0,
+    "watchers": 0,
+    "forks": 0,
+    "language": "Ruby",
+    "license": "MIT",
+    "sourcePage": 2,
+    "projectType": {
+      "en": "Inference runtime",
+      "zh": "推理运行时"
+    }
+  },
+  {
+    "repositoryUrl": "https://github.com/btlqql/sglang-rwkv7",
+    "owner": "btlqql",
+    "name": "sglang-rwkv7",
+    "category": "inference",
+    "summary": {
+      "en": "Independent SGLang distribution focused on production-grade RWKV-7 serving, recurrent state caching, speculative decoding, quantization, and broad GPU support.",
+      "zh": "sglang-rwkv7 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2026-11-02T05:21:52Z",
+    "stars": 1,
+    "watchers": 0,
+    "forks": 0,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "sourcePage": 2,
+    "projectType": {
+      "en": "Inference service",
+      "zh": "推理服务"
+    }
+  },
+  {
+    "repositoryUrl": "https://github.com/Alic-Li/rwkv_lightning_cuda",
+    "owner": "Alic-Li",
+    "name": "rwkv_lightning_cuda",
+    "category": "inference",
+    "summary": {
+      "en": "The fastest pure C++ GPU runtime for RWKV — zero PyTorch, one-command deployment, CUDA/ROCm inference, quantization, state tuning & serving.🕊",
+      "zh": "rwkv_lightning_cuda 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2026-11-01T13:16:21Z",
+    "stars": 11,
+    "watchers": 0,
+    "forks": 2,
+    "language": "C++",
+    "license": null,
+    "sourcePage": 1,
+    "projectType": {
+      "en": "Inference service",
+      "zh": "推理服务"
+    }
+  },
+  {
     "repositoryUrl": "https://github.com/rwkv-rs/any2rwkv",
     "owner": "rwkv-rs",
     "name": "any2rwkv",
@@ -30,7 +93,7 @@
       "zh": "RWKV 语言模型主仓库，包含模型架构、训练代码、CUDA 内核与示例。"
     },
     "lastUpdated": "2026-10-31T10:39:47Z",
-    "stars": 14769,
+    "stars": 14770,
     "watchers": 136,
     "forks": 1025,
     "language": "Python",
@@ -39,27 +102,6 @@
     "projectType": {
       "en": "Training and fine-tuning",
       "zh": "训练与微调"
-    }
-  },
-  {
-    "repositoryUrl": "https://github.com/Alic-Li/rwkv_lightning_cuda",
-    "owner": "Alic-Li",
-    "name": "rwkv_lightning_cuda",
-    "category": "inference",
-    "summary": {
-      "en": "The fastest pure C++ GPU runtime for RWKV — zero PyTorch, one-command deployment, CUDA/ROCm inference, quantization, state tuning & serving.🕊",
-      "zh": "rwkv_lightning_cuda 提供 RWKV 模型推理、部署、运行时或服务支持。"
-    },
-    "lastUpdated": "2026-10-31T02:05:38Z",
-    "stars": 11,
-    "watchers": 0,
-    "forks": 2,
-    "language": "C++",
-    "license": null,
-    "sourcePage": 1,
-    "projectType": {
-      "en": "Inference service",
-      "zh": "推理服务"
     }
   },
   {
@@ -186,27 +228,6 @@
     "projectType": {
       "en": "End-user application",
       "zh": "终端应用"
-    }
-  },
-  {
-    "repositoryUrl": "https://github.com/btlqql/sglang-rwkv7",
-    "owner": "btlqql",
-    "name": "sglang-rwkv7",
-    "category": "inference",
-    "summary": {
-      "en": "Independent SGLang distribution focused on production-grade RWKV-7 serving, recurrent state caching, speculative decoding, quantization, and broad GPU support.",
-      "zh": "sglang-rwkv7 提供 RWKV 模型推理、部署、运行时或服务支持。"
-    },
-    "lastUpdated": "2026-10-26T04:07:32Z",
-    "stars": 1,
-    "watchers": 0,
-    "forks": 0,
-    "language": "Python",
-    "license": "Apache-2.0",
-    "sourcePage": 2,
-    "projectType": {
-      "en": "Inference service",
-      "zh": "推理服务"
     }
   },
   {
@@ -429,9 +450,9 @@
       "zh": "从零构建 GLM4、Llama 3 与 RWKV-6 的中文实践课程。"
     },
     "lastUpdated": "2026-09-17T03:01:54Z",
-    "stars": 4439,
+    "stars": 4440,
     "watchers": 37,
-    "forks": 611,
+    "forks": 613,
     "language": "Jupyter Notebook",
     "license": "NOASSERTION",
     "sourcePage": 1,
@@ -555,7 +576,7 @@
       "zh": "MagicWX 是面向 RWKV 用户的易用应用或开箱即用工具。"
     },
     "lastUpdated": "2026-09-06T07:21:39Z",
-    "stars": 860,
+    "stars": 861,
     "watchers": 24,
     "forks": 363,
     "language": "Kotlin",
@@ -597,7 +618,7 @@
       "zh": "带桌面界面和 OpenAI 兼容 API 的 RWKV 自动化管理与启动工具。"
     },
     "lastUpdated": "2026-09-04T13:37:10Z",
-    "stars": 6498,
+    "stars": 6499,
     "watchers": 47,
     "forks": 594,
     "language": "TypeScript",
@@ -872,30 +893,9 @@
     "lastUpdated": "2026-07-27T09:02:47Z",
     "stars": 36,
     "watchers": 1,
-    "forks": 8,
+    "forks": 9,
     "language": "Python",
     "license": null,
-    "sourcePage": 2,
-    "projectType": {
-      "en": "Inference runtime",
-      "zh": "推理运行时"
-    }
-  },
-  {
-    "repositoryUrl": "https://github.com/miyako/ai00",
-    "owner": "miyako",
-    "name": "ai00",
-    "category": "inference",
-    "summary": {
-      "en": "Local inference engine",
-      "zh": "ai00 提供 RWKV 模型推理、部署、运行时或服务支持。"
-    },
-    "lastUpdated": "2026-07-25T04:18:32Z",
-    "stars": 0,
-    "watchers": 0,
-    "forks": 0,
-    "language": "Ruby",
-    "license": "MIT",
     "sourcePage": 2,
     "projectType": {
       "en": "Inference runtime",
@@ -1626,7 +1626,7 @@
       "zh": "可在 iOS 与 macOS 离线运行 RWKV 等本地语言模型的应用。"
     },
     "lastUpdated": "2026-01-30T20:52:36Z",
-    "stars": 2080,
+    "stars": 2079,
     "watchers": 26,
     "forks": 186,
     "language": "C",
@@ -1689,7 +1689,7 @@
       "zh": "基于 Rust Candle 框架实现的 RWKV 模型与推理示例。"
     },
     "lastUpdated": "2026-01-19T02:24:43Z",
-    "stars": 25,
+    "stars": 24,
     "watchers": 4,
     "forks": 1,
     "language": "Rust",
@@ -2109,7 +2109,7 @@
       "zh": "使用 RWKV 中文预训练生成模型的小说写作应用。"
     },
     "lastUpdated": "2025-05-15T10:31:45Z",
-    "stars": 3934,
+    "stars": 3935,
     "watchers": 51,
     "forks": 569,
     "language": "Python",
@@ -2235,7 +2235,7 @@
       "zh": "RWKV_Explained 提供 RWKV 模型训练、微调或架构实验工具。"
     },
     "lastUpdated": "2025-03-25T23:34:09Z",
-    "stars": 74,
+    "stars": 75,
     "watchers": 5,
     "forks": 5,
     "language": "Python",
