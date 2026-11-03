@@ -1,5 +1,47 @@
 [
   {
+    "repositoryUrl": "https://github.com/MollySophia/rwkv-qualcomm",
+    "owner": "MollySophia",
+    "name": "rwkv-qualcomm",
+    "category": "inference",
+    "summary": {
+      "en": "Inference RWKV v5, v6 and v7 with Qualcomm AI Engine Direct SDK",
+      "zh": "rwkv-qualcomm 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2026-11-03T01:56:26Z",
+    "stars": 100,
+    "watchers": 3,
+    "forks": 7,
+    "language": "Python",
+    "license": null,
+    "sourcePage": 2,
+    "projectType": {
+      "en": "Inference runtime",
+      "zh": "推理运行时"
+    }
+  },
+  {
+    "repositoryUrl": "https://github.com/josStorer/RWKV-Runner",
+    "owner": "josStorer",
+    "name": "RWKV-Runner",
+    "category": "package",
+    "summary": {
+      "en": "Automated RWKV management and startup tool with a desktop interface and an OpenAI-compatible API.",
+      "zh": "带桌面界面和 OpenAI 兼容 API 的 RWKV 自动化管理与启动工具。"
+    },
+    "lastUpdated": "2026-11-02T15:42:56Z",
+    "stars": 6499,
+    "watchers": 47,
+    "forks": 594,
+    "language": "TypeScript",
+    "license": "MIT",
+    "sourcePage": 1,
+    "projectType": {
+      "en": "End-user application",
+      "zh": "终端应用"
+    }
+  },
+  {
     "repositoryUrl": "https://github.com/miyako/ai00",
     "owner": "miyako",
     "name": "ai00",
@@ -8,7 +50,7 @@
       "en": "Local inference engine",
       "zh": "ai00 提供 RWKV 模型推理、部署、运行时或服务支持。"
     },
-    "lastUpdated": "2026-11-02T08:24:33Z",
+    "lastUpdated": "2026-11-02T14:09:03Z",
     "stars": 0,
     "watchers": 0,
     "forks": 0,
@@ -51,7 +93,7 @@
       "zh": "rwkv_lightning_cuda 提供 RWKV 模型推理、部署、运行时或服务支持。"
     },
     "lastUpdated": "2026-11-01T13:16:21Z",
-    "stars": 11,
+    "stars": 12,
     "watchers": 0,
     "forks": 2,
     "language": "C++",
@@ -93,7 +135,7 @@
       "zh": "RWKV 语言模型主仓库，包含模型架构、训练代码、CUDA 内核与示例。"
     },
     "lastUpdated": "2026-10-31T10:39:47Z",
-    "stars": 14770,
+    "stars": 14771,
     "watchers": 136,
     "forks": 1025,
     "language": "Python",
@@ -156,7 +198,7 @@
       "zh": "HTMLNLM 提供 RWKV 模型训练、微调或架构实验工具。"
     },
     "lastUpdated": "2026-10-29T05:15:21Z",
-    "stars": 1,
+    "stars": 2,
     "watchers": 0,
     "forks": 0,
     "language": "HTML",
@@ -452,7 +494,7 @@
     "lastUpdated": "2026-09-17T03:01:54Z",
     "stars": 4440,
     "watchers": 37,
-    "forks": 613,
+    "forks": 614,
     "language": "Jupyter Notebook",
     "license": "NOASSERTION",
     "sourcePage": 1,
@@ -602,27 +644,6 @@
     "forks": 10,
     "language": "C++",
     "license": null,
-    "sourcePage": 1,
-    "projectType": {
-      "en": "End-user application",
-      "zh": "终端应用"
-    }
-  },
-  {
-    "repositoryUrl": "https://github.com/josStorer/RWKV-Runner",
-    "owner": "josStorer",
-    "name": "RWKV-Runner",
-    "category": "package",
-    "summary": {
-      "en": "Automated RWKV management and startup tool with a desktop interface and an OpenAI-compatible API.",
-      "zh": "带桌面界面和 OpenAI 兼容 API 的 RWKV 自动化管理与启动工具。"
-    },
-    "lastUpdated": "2026-09-04T13:37:10Z",
-    "stars": 6499,
-    "watchers": 47,
-    "forks": 594,
-    "language": "TypeScript",
-    "license": "MIT",
     "sourcePage": 1,
     "projectType": {
       "en": "End-user application",
@@ -861,27 +882,6 @@
     }
   },
   {
-    "repositoryUrl": "https://github.com/MollySophia/rwkv-qualcomm",
-    "owner": "MollySophia",
-    "name": "rwkv-qualcomm",
-    "category": "inference",
-    "summary": {
-      "en": "Inference RWKV v5, v6 and v7 with Qualcomm AI Engine Direct SDK",
-      "zh": "rwkv-qualcomm 提供 RWKV 模型推理、部署、运行时或服务支持。"
-    },
-    "lastUpdated": "2026-07-27T16:03:50Z",
-    "stars": 100,
-    "watchers": 3,
-    "forks": 6,
-    "language": "Python",
-    "license": null,
-    "sourcePage": 2,
-    "projectType": {
-      "en": "Inference runtime",
-      "zh": "推理运行时"
-    }
-  },
-  {
     "repositoryUrl": "https://github.com/RWKV-Vibe/rwkv_lightning",
     "owner": "RWKV-Vibe",
     "name": "rwkv_lightning",
@@ -954,7 +954,7 @@
       "zh": "用于本地运行 RWKV 语言模型的参考聊天与推理实现。"
     },
     "lastUpdated": "2026-07-19T19:09:29Z",
-    "stars": 9493,
+    "stars": 9494,
     "watchers": 91,
     "forks": 684,
     "language": "Python",
@@ -1164,7 +1164,7 @@
       "zh": "集成嵌入、RAG、Agent 能力和便捷部署流程的一体化 RWKV 运行服务。"
     },
     "lastUpdated": "2026-06-09T06:16:58Z",
-    "stars": 622,
+    "stars": 624,
     "watchers": 19,
     "forks": 74,
     "language": "Rust",
@@ -1628,7 +1628,7 @@
     "lastUpdated": "2026-01-30T20:52:36Z",
     "stars": 2079,
     "watchers": 26,
-    "forks": 186,
+    "forks": 187,
     "language": "C",
     "license": "MIT",
     "sourcePage": 1,
@@ -1710,7 +1710,7 @@
       "zh": "面向多模态任务的 RWKV 视觉扩展，包含模型代码、训练方案与评测。"
     },
     "lastUpdated": "2026-01-13T08:13:18Z",
-    "stars": 246,
+    "stars": 247,
     "watchers": 6,
     "forks": 19,
     "language": "Python",
@@ -2109,7 +2109,7 @@
       "zh": "使用 RWKV 中文预训练生成模型的小说写作应用。"
     },
     "lastUpdated": "2025-05-15T10:31:45Z",
-    "stars": 3935,
+    "stars": 3934,
     "watchers": 51,
     "forks": 569,
     "language": "Python",
