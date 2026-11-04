@@ -1,5 +1,26 @@
 [
   {
+    "repositoryUrl": "https://github.com/BlinkDL/RWKV-LM",
+    "owner": "BlinkDL",
+    "name": "RWKV-LM",
+    "category": "training",
+    "summary": {
+      "en": "The primary RWKV language-model repository, including architecture, training code, CUDA kernels, and examples.",
+      "zh": "RWKV 语言模型主仓库，包含模型架构、训练代码、CUDA 内核与示例。"
+    },
+    "lastUpdated": "2026-11-04T10:19:05Z",
+    "stars": 14772,
+    "watchers": 136,
+    "forks": 1026,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "sourcePage": 1,
+    "projectType": {
+      "en": "Training and fine-tuning",
+      "zh": "训练与微调"
+    }
+  },
+  {
     "repositoryUrl": "https://github.com/MollySophia/rwkv-qualcomm",
     "owner": "MollySophia",
     "name": "rwkv-qualcomm",
@@ -93,7 +114,7 @@
       "zh": "rwkv_lightning_cuda 提供 RWKV 模型推理、部署、运行时或服务支持。"
     },
     "lastUpdated": "2026-11-01T13:16:21Z",
-    "stars": 12,
+    "stars": 13,
     "watchers": 0,
     "forks": 2,
     "language": "C++",
@@ -116,30 +137,9 @@
     "lastUpdated": "2026-10-31T10:49:07Z",
     "stars": 5,
     "watchers": 0,
-    "forks": 1,
+    "forks": 2,
     "language": "Python",
     "license": null,
-    "sourcePage": 1,
-    "projectType": {
-      "en": "Training and fine-tuning",
-      "zh": "训练与微调"
-    }
-  },
-  {
-    "repositoryUrl": "https://github.com/BlinkDL/RWKV-LM",
-    "owner": "BlinkDL",
-    "name": "RWKV-LM",
-    "category": "training",
-    "summary": {
-      "en": "The primary RWKV language-model repository, including architecture, training code, CUDA kernels, and examples.",
-      "zh": "RWKV 语言模型主仓库，包含模型架构、训练代码、CUDA 内核与示例。"
-    },
-    "lastUpdated": "2026-10-31T10:39:47Z",
-    "stars": 14771,
-    "watchers": 136,
-    "forks": 1025,
-    "language": "Python",
-    "license": "Apache-2.0",
     "sourcePage": 1,
     "projectType": {
       "en": "Training and fine-tuning",
@@ -492,7 +492,7 @@
       "zh": "从零构建 GLM4、Llama 3 与 RWKV-6 的中文实践课程。"
     },
     "lastUpdated": "2026-09-17T03:01:54Z",
-    "stars": 4440,
+    "stars": 4445,
     "watchers": 37,
     "forks": 614,
     "language": "Jupyter Notebook",
@@ -618,7 +618,7 @@
       "zh": "MagicWX 是面向 RWKV 用户的易用应用或开箱即用工具。"
     },
     "lastUpdated": "2026-09-06T07:21:39Z",
-    "stars": 861,
+    "stars": 862,
     "watchers": 24,
     "forks": 363,
     "language": "Kotlin",
@@ -954,9 +954,9 @@
       "zh": "用于本地运行 RWKV 语言模型的参考聊天与推理实现。"
     },
     "lastUpdated": "2026-07-19T19:09:29Z",
-    "stars": 9494,
+    "stars": 9493,
     "watchers": 91,
-    "forks": 684,
+    "forks": 685,
     "language": "Python",
     "license": "Apache-2.0",
     "sourcePage": 1,
@@ -2025,7 +2025,7 @@
       "zh": "RWKV-block 提供 RWKV 模型训练、微调或架构实验工具。"
     },
     "lastUpdated": "2025-07-22T23:40:09Z",
-    "stars": 31,
+    "stars": 32,
     "watchers": 4,
     "forks": 1,
     "language": "Python",
@@ -2109,7 +2109,7 @@
       "zh": "使用 RWKV 中文预训练生成模型的小说写作应用。"
     },
     "lastUpdated": "2025-05-15T10:31:45Z",
-    "stars": 3934,
+    "stars": 3935,
     "watchers": 51,
     "forks": 569,
     "language": "Python",
@@ -2256,7 +2256,7 @@
       "zh": "支持 INT4、INT5、INT8 与 FP16 的 RWKV 量化 CPU 推理运行时。"
     },
     "lastUpdated": "2025-03-23T05:04:42Z",
-    "stars": 1590,
+    "stars": 1591,
     "watchers": 23,
     "forks": 131,
     "language": "C++",
@@ -2613,7 +2613,7 @@
       "zh": "RWKV-infctx-trainer 提供 RWKV 模型训练、微调或架构实验工具。"
     },
     "lastUpdated": "2024-08-13T03:37:23Z",
-    "stars": 150,
+    "stars": 151,
     "watchers": 5,
     "forks": 30,
     "language": "Jupyter Notebook",
