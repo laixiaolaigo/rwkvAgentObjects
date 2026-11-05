@@ -1,5 +1,26 @@
 [
   {
+    "repositoryUrl": "https://github.com/miyako/ai00",
+    "owner": "miyako",
+    "name": "ai00",
+    "category": "inference",
+    "summary": {
+      "en": "Local inference engine",
+      "zh": "ai00 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2026-11-04T22:39:27Z",
+    "stars": 0,
+    "watchers": 0,
+    "forks": 0,
+    "language": "Ruby",
+    "license": "MIT",
+    "sourcePage": 2,
+    "projectType": {
+      "en": "Inference runtime",
+      "zh": "推理运行时"
+    }
+  },
+  {
     "repositoryUrl": "https://github.com/BlinkDL/RWKV-LM",
     "owner": "BlinkDL",
     "name": "RWKV-LM",
@@ -9,7 +30,7 @@
       "zh": "RWKV 语言模型主仓库，包含模型架构、训练代码、CUDA 内核与示例。"
     },
     "lastUpdated": "2026-11-04T10:19:05Z",
-    "stars": 14772,
+    "stars": 14774,
     "watchers": 136,
     "forks": 1026,
     "language": "Python",
@@ -51,7 +72,7 @@
       "zh": "带桌面界面和 OpenAI 兼容 API 的 RWKV 自动化管理与启动工具。"
     },
     "lastUpdated": "2026-11-02T15:42:56Z",
-    "stars": 6499,
+    "stars": 6500,
     "watchers": 47,
     "forks": 594,
     "language": "TypeScript",
@@ -60,27 +81,6 @@
     "projectType": {
       "en": "End-user application",
       "zh": "终端应用"
-    }
-  },
-  {
-    "repositoryUrl": "https://github.com/miyako/ai00",
-    "owner": "miyako",
-    "name": "ai00",
-    "category": "inference",
-    "summary": {
-      "en": "Local inference engine",
-      "zh": "ai00 提供 RWKV 模型推理、部署、运行时或服务支持。"
-    },
-    "lastUpdated": "2026-11-02T14:09:03Z",
-    "stars": 0,
-    "watchers": 0,
-    "forks": 0,
-    "language": "Ruby",
-    "license": "MIT",
-    "sourcePage": 2,
-    "projectType": {
-      "en": "Inference runtime",
-      "zh": "推理运行时"
     }
   },
   {
@@ -492,9 +492,9 @@
       "zh": "从零构建 GLM4、Llama 3 与 RWKV-6 的中文实践课程。"
     },
     "lastUpdated": "2026-09-17T03:01:54Z",
-    "stars": 4445,
+    "stars": 4448,
     "watchers": 37,
-    "forks": 614,
+    "forks": 615,
     "language": "Jupyter Notebook",
     "license": "NOASSERTION",
     "sourcePage": 1,
@@ -618,7 +618,7 @@
       "zh": "MagicWX 是面向 RWKV 用户的易用应用或开箱即用工具。"
     },
     "lastUpdated": "2026-09-06T07:21:39Z",
-    "stars": 862,
+    "stars": 863,
     "watchers": 24,
     "forks": 363,
     "language": "Kotlin",
@@ -954,7 +954,7 @@
       "zh": "用于本地运行 RWKV 语言模型的参考聊天与推理实现。"
     },
     "lastUpdated": "2026-07-19T19:09:29Z",
-    "stars": 9493,
+    "stars": 9492,
     "watchers": 91,
     "forks": 685,
     "language": "Python",
@@ -2109,7 +2109,7 @@
       "zh": "使用 RWKV 中文预训练生成模型的小说写作应用。"
     },
     "lastUpdated": "2025-05-15T10:31:45Z",
-    "stars": 3935,
+    "stars": 3934,
     "watchers": 51,
     "forks": 569,
     "language": "Python",
@@ -2256,7 +2256,7 @@
       "zh": "支持 INT4、INT5、INT8 与 FP16 的 RWKV 量化 CPU 推理运行时。"
     },
     "lastUpdated": "2025-03-23T05:04:42Z",
-    "stars": 1591,
+    "stars": 1590,
     "watchers": 23,
     "forks": 131,
     "language": "C++",
@@ -2445,9 +2445,9 @@
       "zh": "支持知识库、多模型后端与私有化部署的本地优先大模型应用平台。"
     },
     "lastUpdated": "2025-01-23T12:55:35Z",
-    "stars": 6149,
+    "stars": 6147,
     "watchers": 77,
-    "forks": 783,
+    "forks": 782,
     "language": "JavaScript",
     "license": "AGPL-3.0",
     "sourcePage": 6,
