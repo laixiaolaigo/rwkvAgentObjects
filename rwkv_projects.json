@@ -1,5 +1,26 @@
 [
   {
+    "repositoryUrl": "https://github.com/Alic-Li/rwkv_lightning_cuda",
+    "owner": "Alic-Li",
+    "name": "rwkv_lightning_cuda",
+    "category": "inference",
+    "summary": {
+      "en": "The fastest pure C++ GPU runtime for RWKV — zero PyTorch, one-command deployment, CUDA/ROCm inference, quantization, state tuning & serving.🕊",
+      "zh": "rwkv_lightning_cuda 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2026-11-06T06:31:21Z",
+    "stars": 13,
+    "watchers": 0,
+    "forks": 2,
+    "language": "C++",
+    "license": null,
+    "sourcePage": 1,
+    "projectType": {
+      "en": "Inference service",
+      "zh": "推理服务"
+    }
+  },
+  {
     "repositoryUrl": "https://github.com/miyako/ai00",
     "owner": "miyako",
     "name": "ai00",
@@ -30,7 +51,7 @@
       "zh": "RWKV 语言模型主仓库，包含模型架构、训练代码、CUDA 内核与示例。"
     },
     "lastUpdated": "2026-11-04T10:19:05Z",
-    "stars": 14774,
+    "stars": 14773,
     "watchers": 136,
     "forks": 1026,
     "language": "Python",
@@ -72,7 +93,7 @@
       "zh": "带桌面界面和 OpenAI 兼容 API 的 RWKV 自动化管理与启动工具。"
     },
     "lastUpdated": "2026-11-02T15:42:56Z",
-    "stars": 6500,
+    "stars": 6501,
     "watchers": 47,
     "forks": 594,
     "language": "TypeScript",
@@ -99,27 +120,6 @@
     "language": "Python",
     "license": "Apache-2.0",
     "sourcePage": 2,
-    "projectType": {
-      "en": "Inference service",
-      "zh": "推理服务"
-    }
-  },
-  {
-    "repositoryUrl": "https://github.com/Alic-Li/rwkv_lightning_cuda",
-    "owner": "Alic-Li",
-    "name": "rwkv_lightning_cuda",
-    "category": "inference",
-    "summary": {
-      "en": "The fastest pure C++ GPU runtime for RWKV — zero PyTorch, one-command deployment, CUDA/ROCm inference, quantization, state tuning & serving.🕊",
-      "zh": "rwkv_lightning_cuda 提供 RWKV 模型推理、部署、运行时或服务支持。"
-    },
-    "lastUpdated": "2026-11-01T13:16:21Z",
-    "stars": 13,
-    "watchers": 0,
-    "forks": 2,
-    "language": "C++",
-    "license": null,
-    "sourcePage": 1,
     "projectType": {
       "en": "Inference service",
       "zh": "推理服务"
@@ -492,7 +492,7 @@
       "zh": "从零构建 GLM4、Llama 3 与 RWKV-6 的中文实践课程。"
     },
     "lastUpdated": "2026-09-17T03:01:54Z",
-    "stars": 4448,
+    "stars": 4449,
     "watchers": 37,
     "forks": 615,
     "language": "Jupyter Notebook",
@@ -954,7 +954,7 @@
       "zh": "用于本地运行 RWKV 语言模型的参考聊天与推理实现。"
     },
     "lastUpdated": "2026-07-19T19:09:29Z",
-    "stars": 9492,
+    "stars": 9491,
     "watchers": 91,
     "forks": 685,
     "language": "Python",
@@ -1206,7 +1206,7 @@
       "zh": "web-rwkv 提供 RWKV 模型推理、部署、运行时或服务支持。"
     },
     "lastUpdated": "2026-06-01T06:59:20Z",
-    "stars": 361,
+    "stars": 360,
     "watchers": 6,
     "forks": 36,
     "language": "Rust",
@@ -1458,7 +1458,7 @@
       "zh": "birdsnest 是面向 RWKV 用户的易用应用或开箱即用工具。"
     },
     "lastUpdated": "2026-03-06T22:53:02Z",
-    "stars": 23,
+    "stars": 22,
     "watchers": 3,
     "forks": 3,
     "language": "Python",
@@ -2319,7 +2319,7 @@
       "zh": "基于 Gradio 的 RWKV 角色扮演 Web 界面。"
     },
     "lastUpdated": "2025-03-05T08:27:48Z",
-    "stars": 250,
+    "stars": 249,
     "watchers": 7,
     "forks": 27,
     "language": "Python",
@@ -2445,7 +2445,7 @@
       "zh": "支持知识库、多模型后端与私有化部署的本地优先大模型应用平台。"
     },
     "lastUpdated": "2025-01-23T12:55:35Z",
-    "stars": 6147,
+    "stars": 6146,
     "watchers": 77,
     "forks": 782,
     "language": "JavaScript",
@@ -3033,7 +3033,7 @@
       "zh": "shady.ai 是面向 RWKV 用户的易用应用或开箱即用工具。"
     },
     "lastUpdated": "2024-02-12T21:28:29Z",
-    "stars": 145,
+    "stars": 146,
     "watchers": 12,
     "forks": 15,
     "language": "Dart",
