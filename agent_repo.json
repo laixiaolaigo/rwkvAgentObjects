@@ -1,5 +1,13 @@
 [
   {
+    "projectName": "noesis",
+    "repositoryUrl": "https://github.com/Vaniell0/noesis",
+    "lastUpdated": "2026-11-07T07:09:50Z",
+    "stars": 4,
+    "forks": 1,
+    "watchers": 0
+  },
+  {
     "projectName": "ai00-x-client",
     "repositoryUrl": "https://github.com/cgisky1980/ai00-x-client",
     "lastUpdated": "2026-11-05T09:33:18Z",
@@ -54,14 +62,6 @@
     "stars": 1,
     "forks": 0,
     "watchers": 1
-  },
-  {
-    "projectName": "noesis",
-    "repositoryUrl": "https://github.com/Vaniell0/noesis",
-    "lastUpdated": "2026-10-22T14:00:05Z",
-    "stars": 4,
-    "forks": 1,
-    "watchers": 0
   },
   {
     "projectName": "rwkv-prompt-format",
@@ -347,7 +347,7 @@
     "projectName": "birdsnest",
     "repositoryUrl": "https://github.com/Dappit-io/birdsnest",
     "lastUpdated": "2026-03-06T22:53:02Z",
-    "stars": 22,
+    "stars": 21,
     "forks": 3,
     "watchers": 3
   },

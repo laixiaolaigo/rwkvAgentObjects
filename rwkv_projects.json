@@ -51,7 +51,7 @@
       "zh": "RWKV 语言模型主仓库，包含模型架构、训练代码、CUDA 内核与示例。"
     },
     "lastUpdated": "2026-11-04T10:19:05Z",
-    "stars": 14773,
+    "stars": 14772,
     "watchers": 136,
     "forks": 1026,
     "language": "Python",
@@ -95,7 +95,7 @@
     "lastUpdated": "2026-11-02T15:42:56Z",
     "stars": 6501,
     "watchers": 47,
-    "forks": 594,
+    "forks": 593,
     "language": "TypeScript",
     "license": "MIT",
     "sourcePage": 1,
@@ -492,7 +492,7 @@
       "zh": "从零构建 GLM4、Llama 3 与 RWKV-6 的中文实践课程。"
     },
     "lastUpdated": "2026-09-17T03:01:54Z",
-    "stars": 4449,
+    "stars": 4450,
     "watchers": 37,
     "forks": 615,
     "language": "Jupyter Notebook",
@@ -954,7 +954,7 @@
       "zh": "用于本地运行 RWKV 语言模型的参考聊天与推理实现。"
     },
     "lastUpdated": "2026-07-19T19:09:29Z",
-    "stars": 9491,
+    "stars": 9487,
     "watchers": 91,
     "forks": 685,
     "language": "Python",
@@ -1458,7 +1458,7 @@
       "zh": "birdsnest 是面向 RWKV 用户的易用应用或开箱即用工具。"
     },
     "lastUpdated": "2026-03-06T22:53:02Z",
-    "stars": 22,
+    "stars": 21,
     "watchers": 3,
     "forks": 3,
     "language": "Python",
@@ -2445,7 +2445,7 @@
       "zh": "支持知识库、多模型后端与私有化部署的本地优先大模型应用平台。"
     },
     "lastUpdated": "2025-01-23T12:55:35Z",
-    "stars": 6146,
+    "stars": 6145,
     "watchers": 77,
     "forks": 782,
     "language": "JavaScript",
