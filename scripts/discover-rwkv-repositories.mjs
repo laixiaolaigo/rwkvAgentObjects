@@ -1,7 +1,8 @@
 import { appendFile, readFile, writeFile } from "node:fs/promises";
+import { pathToFileURL } from "node:url";
+import { hasRecentCodePush, sixMonthsAgo } from "./rwkv-project-activity.mjs";
 
 const outputFile = "rwkv_search_candidates.json";
-const searchQuery = "rwkv";
 const perPage = 100;
 const maxPages = Math.min(
   10,
@@ -17,7 +18,7 @@ function delay(milliseconds) {
   return new Promise((resolve) => setTimeout(resolve, milliseconds));
 }
 
-async function fetchSearchPage(page) {
+async function fetchSearchPage(page, searchQuery) {
   const url = new URL("https://api.github.com/search/repositories");
   url.searchParams.set("q", searchQuery);
   url.searchParams.set("sort", "updated");
@@ -71,7 +72,9 @@ function matchSignals(repository) {
   return signals;
 }
 
-async function main() {
+export async function main({ now = new Date() } = {}) {
+  const cutoff = sixMonthsAgo(now);
+  const searchQuery = `rwkv pushed:>=${cutoff.toISOString().slice(0, 10)}`;
   const [curatedProjects, agentRepositories, repositoryReview, agentReviews] = await Promise.all([
     readFile("rwkv_projects.json", "utf8").then(JSON.parse),
     readFile("agent_repo.json", "utf8").then(JSON.parse),
@@ -91,7 +94,7 @@ async function main() {
   let pagesScanned = 0;
 
   for (let page = 1; page <= maxPages; page += 1) {
-    const result = await fetchSearchPage(page);
+    const result = await fetchSearchPage(page, searchQuery);
     totalCount = result.total_count;
     pagesScanned = page;
     repositories.push(
@@ -103,6 +106,7 @@ async function main() {
 
   const candidates = repositories
     .filter(({ repository }) => !repository.fork && !repository.archived)
+    .filter(({ repository }) => hasRecentCodePush(repository.pushed_at, now))
     .filter(({ repository }) => !knownUrls.has(normalizeUrl(repository.html_url)))
     .filter(({ repository }) => {
       const previousReview = reviewByUrl.get(normalizeUrl(repository.html_url));
@@ -115,7 +119,7 @@ async function main() {
       owner: repository.owner.login,
       name: repository.name,
       description: repository.description,
-      lastUpdated: repository.pushed_at || repository.updated_at,
+      lastUpdated: repository.pushed_at,
       stars: repository.stargazers_count,
       forks: repository.forks_count,
       language: repository.language,
@@ -135,7 +139,8 @@ async function main() {
 
   const output = {
     generatedAt: new Date().toISOString(),
-    query: "https://github.com/search?o=desc&p=1&q=rwkv&s=updated&type=Repositories",
+    query: `https://github.com/search?o=desc&p=1&q=${encodeURIComponent(searchQuery)}&s=updated&type=Repositories`,
+    activityCutoff: cutoff.toISOString(),
     totalCount,
     scannedCount: repositories.length,
     pagesScanned,
@@ -154,6 +159,7 @@ async function main() {
         "## RWKV repository discovery",
         "",
         `Scanned ${repositories.length} repositories across ${pagesScanned} pages; found ${candidates.length} new or changed candidates.`,
+        `Only repositories with code pushed on or after ${cutoff.toISOString()} are eligible.`,
         "",
         "| Page | Repository | Updated | Stars |",
         "| ---: | --- | --- | ---: |",
@@ -170,4 +176,4 @@ async function main() {
   );
 }
 
-await main();
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) await main();

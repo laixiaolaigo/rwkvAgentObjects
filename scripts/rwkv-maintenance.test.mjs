@@ -5,6 +5,8 @@ import path from "node:path";
 import test from "node:test";
 import { discoveryDue } from "./rwkv-discovery-schedule.mjs";
 import { createEntries, main, validateReview } from "./review-rwkv-agents.mjs";
+import { main as discover } from "./discover-rwkv-repositories.mjs";
+import { hasRecentCodePush, sixMonthsAgo } from "./rwkv-project-activity.mjs";
 
 const text = { en: "An RWKV tool-using Agent", zh: "使用工具的RWKV Agent" };
 const code = "const action = await rwkv.chooseTool(observations); await execute(action);";
@@ -17,7 +19,7 @@ const review = () => structuredClone({
 });
 const repository = {
   name: "rwkv-agent", full_name: "sample/rwkv-agent", html_url: "https://github.com/sample/rwkv-agent",
-  default_branch: "main", created_at: "2026-10-01T00:00:00Z", pushed_at: "2026-11-09T01:00:00Z",
+  default_branch: "main", created_at: "2026-10-01T00:00:00Z", pushed_at: new Date().toISOString(),
   updated_at: "2026-11-09T02:00:00Z", language: "TypeScript", license: { spdx_id: "MIT" },
   owner: { login: "sample", avatar_url: "https://avatars.githubusercontent.com/u/1" },
   stargazers_count: 4, subscribers_count: 2, forks_count: 1,
@@ -31,6 +33,51 @@ test("five-day cadence survives month/year boundaries and scheduler delays", () 
   assert.equal(discoveryDue("2028-02-26T03:17:00Z", new Date("2028-03-02T03:17:00Z")), true);
   assert.equal(discoveryDue("2026-11-09T03:17:00Z", new Date("2026-11-08T03:17:00Z")), false);
   assert.throws(() => discoveryDue("invalid"));
+});
+
+test("six-month activity includes the boundary and clamps month ends and leap days", () => {
+  const now = new Date("2026-11-09T03:17:00Z");
+  assert.equal(sixMonthsAgo(now).toISOString(), "2026-05-09T03:17:00.000Z");
+  assert.equal(hasRecentCodePush("2026-05-09T03:17:00Z", now), true);
+  assert.equal(hasRecentCodePush("2026-05-09T03:16:59.999Z", now), false);
+  assert.equal(hasRecentCodePush(now.toISOString(), now), true);
+  assert.equal(hasRecentCodePush("2026-11-10T00:00:00Z", now), false);
+  for (const value of [null, undefined, "", "invalid"]) assert.equal(hasRecentCodePush(value, now), false);
+  assert.equal(sixMonthsAgo(new Date("2026-08-31T12:00:00Z")).toISOString(), "2026-02-28T12:00:00.000Z");
+  assert.equal(sixMonthsAgo(new Date("2028-08-31T12:00:00Z")).toISOString(), "2028-02-29T12:00:00.000Z");
+  assert.equal(sixMonthsAgo(new Date("2026-02-28T12:00:00Z")).toISOString(), "2025-08-28T12:00:00.000Z");
+});
+
+test("discovery narrows GitHub search and excludes stale code even when repository settings changed", async (t) => {
+  const directory = await mkdtemp(path.join(os.tmpdir(), "rwkv-discovery-test-"));
+  const previousDirectory = process.cwd();
+  const previousSummary = process.env.GITHUB_STEP_SUMMARY;
+  try {
+    process.chdir(directory);
+    delete process.env.GITHUB_STEP_SUMMARY;
+    await Promise.all([
+      writeFile("rwkv_projects.json", "[]"), writeFile("agent_repo.json", "[]"),
+      writeFile("agent_repository_review.json", "[]"),
+      writeFile("rwkv_repository_review.json", JSON.stringify({ repositories: [] })),
+    ]);
+    t.mock.method(globalThis, "fetch", async (url) => {
+      assert.equal(url.searchParams.get("q"), "rwkv pushed:>=2026-05-09");
+      const item = (name, pushed_at) => ({ ...repository, name, html_url: `https://github.com/sample/${name}`,
+        pushed_at, updated_at: "2026-11-09T03:17:00Z" });
+      return Response.json({ total_count: 3, items: [
+        item("active", "2026-05-09T03:17:00Z"), item("stale", "2026-05-09T03:16:59Z"), item("missing-push", null),
+      ] });
+    });
+    await discover({ now: new Date("2026-11-09T03:17:00Z") });
+    const output = JSON.parse(await readFile("rwkv_search_candidates.json", "utf8"));
+    assert.equal(output.activityCutoff, "2026-05-09T03:17:00.000Z");
+    assert.deepEqual(output.candidates.map((item) => item.name), ["active"]);
+  } finally {
+    process.chdir(previousDirectory);
+    if (previousSummary === undefined) delete process.env.GITHUB_STEP_SUMMARY;
+    else process.env.GITHUB_STEP_SUMMARY = previousSummary;
+    await rm(directory, { recursive: true, force: true });
+  }
 });
 
 test("reject invented evidence, README-only inclusion, low confidence and missing translations", () => {
@@ -76,6 +123,7 @@ test("review batch adds one entry, preserves BOM, prevents duplicates and never 
     const candidate = { repositoryUrl: repository.html_url, name: repository.name };
     await writeCandidates([candidate, candidate]);
     let providerCalls = 0;
+    let commitReads = 0;
     let failProvider = false;
     t.mock.method(globalThis, "fetch", async (url, options) => {
       const target = new URL(url);
@@ -99,11 +147,16 @@ test("review batch adds one entry, preserves BOM, prevents duplicates and never 
         assert.equal(options.headers.Authorization, "Bearer test-github-key");
         if (target.pathname.includes("/git/blobs/")) data = { encoding: "base64", content: Buffer.from(code).toString("base64") };
         else if (target.pathname.includes("/git/trees/")) data = { tree: [{ path: "src/agent.ts", type: "blob", sha: "blob-sha", size: code.length }] };
-        else if (target.pathname.includes("/commits/")) data = { sha: "pinned-commit" };
+        else if (target.pathname.includes("/commits/")) {
+          commitReads += 1;
+          data = { sha: "pinned-commit" };
+        }
         else {
           const repositoryPath = target.pathname.replace(/^\/repos\//, "");
           data = { ...repository, html_url: `https://github.com/${repositoryPath}`, full_name: repositoryPath,
             name: repositoryPath.split("/").at(-1) };
+          if (data.name === "stale-agent") data.pushed_at = "2020-01-01T00:00:00Z";
+          if (data.name === "missing-push-agent") data.pushed_at = null;
         }
       }
       return new Response(JSON.stringify(data), { status: 200, headers: { "Content-Type": "application/json" } });
@@ -116,6 +169,18 @@ test("review batch adds one entry, preserves BOM, prevents duplicates and never 
     assert.equal(providerCalls, 1);
     await main();
     assert.equal(providerCalls, 1);
+
+    const readsBeforeInactive = commitReads;
+    await writeCandidates(["stale-agent", "missing-push-agent"].map((name) => ({
+      repositoryUrl: `https://github.com/sample/${name}`, name, lastUpdated: new Date().toISOString(),
+    })));
+    await main();
+    assert.equal(providerCalls, 1);
+    assert.equal(commitReads, readsBeforeInactive);
+    const skipped = JSON.parse(await readFile("rwkv_agent_review_report.json", "utf8"));
+    assert.equal(skipped.addedCount, 0);
+    assert.equal(skipped.failures, 0);
+    assert.deepEqual(skipped.results.map((item) => item.reviewStatus), ["skipped", "skipped"]);
 
     const trackedFiles = ["agent.json", "agent_repo.json", "agent_repository_review.json"];
     const before = await Promise.all(trackedFiles.map((file) => readFile(file, "utf8")));

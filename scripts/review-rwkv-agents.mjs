@@ -1,5 +1,6 @@
 import { appendFile, readFile, writeFile } from "node:fs/promises";
 import { pathToFileURL } from "node:url";
+import { hasRecentCodePush, sixMonthsAgo } from "./rwkv-project-activity.mjs";
 
 const reportFile = "rwkv_agent_review_report.json";
 const localizedText = (value) => value && typeof value === "object" &&
@@ -85,13 +86,14 @@ async function requestJson(url, options = {}) {
   return response.json();
 }
 
-async function gatherEvidence(repositoryPath, github) {
+async function gatherEvidence(repositoryPath, github, now) {
   const repository = await github(`/repos/${repositoryPath}`);
   if (repository.fork || repository.archived || repository.disabled || repository.private) {
     const error = new Error("Repository is a fork, archived, disabled, or private");
     error.deferCandidate = true;
     throw error;
   }
+  if (!hasRecentCodePush(repository.pushed_at, now)) return { repository, inactive: true };
   const commit = await github(`/repos/${repositoryPath}/commits/${encodeURIComponent(repository.default_branch)}`);
   const tree = await github(`/repos/${repositoryPath}/git/trees/${commit.sha}?recursive=1`);
   const blobs = tree.tree.filter((item) => item.type === "blob" && item.size <= 100000 &&
@@ -127,6 +129,7 @@ function prependEntries(source, entries, indentation) {
 }
 
 export async function main() {
+  const now = new Date();
   const apiKey = process.env.AGENT_REVIEW_API_KEY;
   const model = process.env.AGENT_REVIEW_MODEL || "deepseek-flash";
   if (!apiKey) throw new Error("Configure AGENT_REVIEW_API_KEY to enable automatic Agent review");
@@ -163,7 +166,12 @@ export async function main() {
     try {
       const match = /^https:\/\/github\.com\/([\w.-]+\/[\w.-]+)\/?$/.exec(candidate.repositoryUrl);
       if (!match) throw new Error("Invalid candidate GitHub URL");
-      const evidence = await gatherEvidence(match[1], github);
+      const evidence = await gatherEvidence(match[1], github, now);
+      if (evidence.inactive) {
+        results.push({ repositoryUrl: evidence.repository.html_url, lastPushed: evidence.repository.pushed_at ?? null,
+          reviewStatus: "skipped", reason: "No code push within the past six calendar months" });
+        continue;
+      }
       // GitHub can redirect renamed or transferred repositories to an already listed URL.
       if (known.has(normalizeUrl(evidence.repository.html_url))) continue;
       const response = await requestJson(endpoint, {
@@ -210,7 +218,7 @@ export async function main() {
       break;
     }
   }
-  const report = { generatedAt: new Date().toISOString(), candidateCount: candidates.length,
+  const report = { generatedAt: new Date().toISOString(), activityCutoff: sixMonthsAgo(now).toISOString(), candidateCount: candidates.length,
     attemptedCount: results.length, addedCount: addedCatalog.length, failures, results };
   await writeFile(reportFile, `${JSON.stringify(report, null, 2)}\n`);
   if (process.env.GITHUB_STEP_SUMMARY) {
