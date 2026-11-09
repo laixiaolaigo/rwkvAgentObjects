@@ -7,6 +7,8 @@
     "build": "next build",
     "lint": "eslint",
     "discover:rwkv": "node scripts/discover-rwkv-repositories.mjs",
+    "review:agents": "node scripts/review-rwkv-agents.mjs",
+    "test:maintenance": "node --test scripts/*.test.mjs",
     "update:metadata": "node scripts/update-repo-metadata.mjs"
   },
   "dependencies": {

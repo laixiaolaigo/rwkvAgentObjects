@@ -72,17 +72,18 @@ function matchSignals(repository) {
 }
 
 async function main() {
-  const [curatedProjects, agentRepositories, repositoryReview] = await Promise.all([
+  const [curatedProjects, agentRepositories, repositoryReview, agentReviews] = await Promise.all([
     readFile("rwkv_projects.json", "utf8").then(JSON.parse),
     readFile("agent_repo.json", "utf8").then(JSON.parse),
     readFile("rwkv_repository_review.json", "utf8").then(JSON.parse),
+    readFile("agent_repository_review.json", "utf8").then(JSON.parse),
   ]);
   const knownUrls = new Set([
     ...curatedProjects.map((item) => normalizeUrl(item.repositoryUrl)),
     ...agentRepositories.map((item) => normalizeUrl(item.repositoryUrl)),
   ]);
   const reviewByUrl = new Map(
-    repositoryReview.repositories.map((item) => [normalizeUrl(item.repositoryUrl), item])
+    [...repositoryReview.repositories, ...agentReviews].map((item) => [normalizeUrl(item.repositoryUrl), item])
   );
 
   const repositories = [];
@@ -106,6 +107,7 @@ async function main() {
     .filter(({ repository }) => {
       const previousReview = reviewByUrl.get(normalizeUrl(repository.html_url));
       if (!previousReview) return true;
+      if (previousReview.reviewStatus === "deferred") return true;
       return Date.parse(repository.pushed_at) > Date.parse(previousReview.lastPushed);
     })
     .map(({ repository, searchPage }) => ({
@@ -126,6 +128,7 @@ async function main() {
             status: reviewByUrl.get(normalizeUrl(repository.html_url)).reviewStatus,
             reason: reviewByUrl.get(normalizeUrl(repository.html_url)).reason,
             lastPushed: reviewByUrl.get(normalizeUrl(repository.html_url)).lastPushed,
+            reviewedAt: reviewByUrl.get(normalizeUrl(repository.html_url)).reviewedAt,
           }
         : null,
     }));

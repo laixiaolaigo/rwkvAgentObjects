@@ -147,3 +147,4 @@ vite.config.ts.timestamp-*
 /.impeccable/
 /不确定agent.json
 /rwkv_search_candidates.json
+/rwkv_agent_review_report.json
