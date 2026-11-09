@@ -71,6 +71,93 @@
         }
     },
     {
+        "创建用户名": "No-22-Github",
+        "用户头像": "https://avatars.githubusercontent.com/u/132265925?v=4",
+        "GitHub地址": "https://github.com/No-22-Github/dsh-rwkv-plugin",
+        "项目名称": "dsh-rwkv-plugin",
+        "创建时间": "2026-11-03T11:41:16Z",
+        "最后更新时间": "2026-11-08T02:32:33Z",
+        "主要语言": "TypeScript",
+        "许可证": "MIT",
+        "Stars": 0,
+        "Watch": 0,
+        "Fork": 0,
+        "项目类型": {
+            "en": "RWKV Agent plugin for DeepSeek Harness",
+            "zh": "DeepSeek Harness的RWKV Agent插件"
+        },
+        "介绍": {
+            "en": "A DeepSeek Harness plugin that registers RWKV-7 G1 continuation models as an LLM provider. RWKV can act as the main Agent or as a subagent invoked by a DeepSeek main Agent. The plugin converts conversation history and tool definitions into text prompts, parses model-generated tool calls, and returns them to DeepSeek Harness for execution. It supports rwkv_lightning CUDA and iRWKV backends, model and initial-state management, and generation traces.",
+            "zh": "将RWKV-7 G1续写模型注册为LLM提供方的DeepSeek Harness插件。RWKV既可作为主Agent，也可作为DeepSeek主Agent调用的子Agent。插件将会话历史和工具定义转换为文本提示词，解析模型生成的工具调用并交给DeepSeek Harness执行；支持rwkv_lightning CUDA与iRWKV后端、模型及初始state管理和生成轨迹查看。"
+        },
+        "Agent循环判断": {
+            "en": "Implements an Agent loop together with DeepSeek Harness: RWKV selects one tool call or a final answer; the plugin parses and validates the output; DeepSeek Harness executes the tool and sends its result in the next request. The plugin rebuilds the prompt from that history so RWKV can continue the task, with protocol retries, duplicate-call and failure guards, and bounded forced closeout. Sessions, sandboxing, approvals, and tool execution are managed by DeepSeek Harness.",
+            "zh": "与DeepSeek Harness共同实现Agent闭环：RWKV选择一个工具调用或最终回答，插件解析并检查输出，DeepSeek Harness执行工具后将结果带入下一次请求；插件根据历史重新构建提示词，使RWKV继续任务，并提供协议重试、重复调用与失败拦截以及步数受限的强制收尾。会话、沙箱、审批和工具执行由DeepSeek Harness管理。"
+        },
+        "主要能力": {
+            "en": [
+                "RWKV as a main Agent or a subagent through the rwkv_agent tool",
+                "bash, read, write, edit, glob, grep, web_search, and web_fetch tools",
+                "rwkv_lightning CUDA and iRWKV continuation backends",
+                "Tool-call parsing and repair, protocol retries, failure guards, and forced closeout",
+                "Settings UI for models, initial states, sampling, and guard policies",
+                "Raw prompt and model-output traces in the RWKV conversation tab"
+            ],
+            "zh": [
+                "RWKV主Agent或通过rwkv_agent工具调用的子Agent",
+                "bash、read、write、edit、glob、grep、web_search和web_fetch工具",
+                "rwkv_lightning CUDA与iRWKV续写后端",
+                "工具调用解析与修复、协议重试、失败拦截和强制收尾",
+                "通过设置页管理模型、初始state、采样和兜底策略",
+                "在会话RWKV标签页查看提示词原文和模型原始输出"
+            ]
+        },
+        "已知限制": {
+            "en": [
+                "Requires DeepSeek Harness and a configured RWKV inference service",
+                "Only one tool call per step; parallel tool calls are not supported",
+                "No context compression; long conversations can exhaust the context window",
+                "Text-only input; images and file attachments become placeholders"
+            ],
+            "zh": [
+                "依赖DeepSeek Harness及已配置的RWKV推理服务",
+                "每步只调用一个工具，不支持并行工具调用",
+                "没有上下文压缩，长会话可能撑满上下文窗口",
+                "仅支持文字输入，图片和文件附件会转换为占位符"
+            ]
+        },
+        "支持平台": {
+            "en": "DeepSeek Harness desktop 0.2.1+ or its web profile; plugin development requires Node.js 24.9.0+",
+            "zh": "DeepSeek Harness桌面版0.2.1+或其Web配置；插件开发需要Node.js 24.9.0+"
+        },
+        "关联项目": [
+            "https://github.com/deepseek-ai/deepseek-harness",
+            "https://github.com/No-22-Github/RWKV-Agent"
+        ],
+        "信息来源": {
+            "en": [
+                "GitHub repository page and push activity",
+                "Project README and INSTALL.md",
+                "docs/how-it-works.md",
+                "src/index.ts, package.json, and LICENSE"
+            ],
+            "zh": [
+                "GitHub仓库页面与推送活动",
+                "项目README和INSTALL.md",
+                "docs/how-it-works.md工作原理文档",
+                "src/index.ts、package.json和LICENSE"
+            ]
+        },
+        "分类结论": {
+            "en": "Strict Agent",
+            "zh": "严格Agent"
+        },
+        "分类依据": {
+            "en": "RWKV selects actions from tool definitions and consumes tool observations in a repeated execution loop hosted by DeepSeek Harness. The plugin supplies the Agent protocol, output parsing, retries, and loop guards, enabling executable main-Agent and subagent workflows.",
+            "zh": "RWKV根据工具定义选择动作，并在DeepSeek Harness承载的持续执行循环中读取工具观察结果；插件提供Agent协议、输出解析、重试和循环保护，形成可执行的主Agent与子Agent工作流。"
+        }
+    },
+    {
         "创建用户名": "Vaniell0",
         "用户头像": "https://avatars.githubusercontent.com/u/144351173?v=4",
         "GitHub地址": "https://github.com/Vaniell0/noesis",
