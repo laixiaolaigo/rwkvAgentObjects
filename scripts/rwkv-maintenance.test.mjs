@@ -4,8 +4,9 @@ import os from "node:os";
 import path from "node:path";
 import test from "node:test";
 import { discoveryDue } from "./rwkv-discovery-schedule.mjs";
-import { createEntries, main, validateReview } from "./review-rwkv-agents.mjs";
+import { createEntries, main, reviewWithRetries, validateReview } from "./review-rwkv-agents.mjs";
 import { main as discover } from "./discover-rwkv-repositories.mjs";
+import { main as updateMetadata } from "./update-repo-metadata.mjs";
 import { hasRecentCodePush, sixMonthsAgo } from "./rwkv-project-activity.mjs";
 
 const text = { en: "An RWKV tool-using Agent", zh: "使用工具的RWKV Agent" };
@@ -33,6 +34,56 @@ test("five-day cadence survives month/year boundaries and scheduler delays", () 
   assert.equal(discoveryDue("2028-02-26T03:17:00Z", new Date("2028-03-02T03:17:00Z")), true);
   assert.equal(discoveryDue("2026-11-09T03:17:00Z", new Date("2026-11-08T03:17:00Z")), false);
   assert.throws(() => discoveryDue("invalid"));
+});
+
+test("metadata refresh preserves unavailable repositories, updates others and still fails on authentication errors", async (t) => {
+  const directory = await mkdtemp(path.join(os.tmpdir(), "rwkv-metadata-test-"));
+  const previousDirectory = process.cwd();
+  const previousSummary = process.env.GITHUB_STEP_SUMMARY;
+  try {
+    process.chdir(directory);
+    process.env.GITHUB_STEP_SUMMARY = path.join(directory, "summary.md");
+    const item = (name) => ({ repositoryUrl: `https://github.com/sample/${name}`,
+      lastUpdated: "2026-01-01T00:00:00Z", stars: 1, watchers: 1, forks: 1 });
+    const entries = [item("missing"), item("active")];
+    const catalogue = entries.map((entry) => ({ "GitHub地址": entry.repositoryUrl,
+      "最后更新时间": entry.lastUpdated, Stars: 1, Watch: 1, Fork: 1 }));
+    await Promise.all([
+      writeFile("agent_repo.json", JSON.stringify(entries, null, 2)),
+      writeFile("rwkv_projects.json", JSON.stringify(entries, null, 2)),
+      writeFile("agent.json", `\uFEFF${JSON.stringify(catalogue, null, 2)}`),
+    ]);
+    let failAuth = false;
+    t.mock.method(globalThis, "fetch", async (url) => {
+      if (failAuth) return new Response("Unauthorized", { status: 401 });
+      if (url.endsWith("/missing")) return new Response("Not Found", { status: 404 });
+      return Response.json({ pushed_at: "2026-11-11T00:00:00Z", stargazers_count: 10,
+        subscribers_count: 2, forks_count: 3 });
+    });
+    await updateMetadata();
+    for (const file of ["agent_repo.json", "rwkv_projects.json"]) {
+      const result = JSON.parse(await readFile(file, "utf8"));
+      assert.deepEqual(result.find((entry) => entry.repositoryUrl.endsWith("/missing")), entries[0]);
+      assert.equal(result[0].repositoryUrl, entries[1].repositoryUrl);
+      assert.equal(result[0].stars, 10);
+    }
+    const savedCatalogue = await readFile("agent.json", "utf8");
+    assert.ok(savedCatalogue.startsWith("\uFEFF"));
+    const result = JSON.parse(savedCatalogue.slice(1));
+    assert.deepEqual(result.find((entry) => entry["GitHub地址"].endsWith("/missing")), catalogue[0]);
+    assert.equal(result[0].Stars, 10);
+    assert.match(await readFile(process.env.GITHUB_STEP_SUMMARY, "utf8"), /HTTP 404/);
+    const trackedFiles = ["agent.json", "agent_repo.json", "rwkv_projects.json"];
+    const before = await Promise.all(trackedFiles.map((file) => readFile(file, "utf8")));
+    failAuth = true;
+    await assert.rejects(updateMetadata, /HTTP 401/);
+    assert.deepEqual(await Promise.all(trackedFiles.map((file) => readFile(file, "utf8"))), before);
+  } finally {
+    process.chdir(previousDirectory);
+    if (previousSummary === undefined) delete process.env.GITHUB_STEP_SUMMARY;
+    else process.env.GITHUB_STEP_SUMMARY = previousSummary;
+    await rm(directory, { recursive: true, force: true });
+  }
 });
 
 test("six-month activity includes the boundary and clamps month ends and leap days", () => {
@@ -107,6 +158,48 @@ test("catalogue metadata comes from GitHub and sources point to the reviewed com
   assert.equal(entries.catalog["信息来源"].en[0], `${repository.html_url}/blob/pinned-commit/src/agent.ts`);
 });
 
+test("invalid quotations are retried without weakening source evidence checks", async () => {
+  const evidence = { repository, files, commitSha: "pinned" };
+  const invalid = review();
+  invalid.evidence[0].quote = "Fabricated evidence that is not in the supplied source";
+  let calls = 0;
+  const result = await reviewWithRetries(evidence, async (request) => {
+    calls += 1;
+    if (calls === 2) {
+      assert.match(request.messages.at(-1).content, /quote the supplied files exactly/);
+      assert.equal(request.max_tokens, 8000);
+    }
+    return { choices: [{ message: { content: JSON.stringify(calls === 1 ? invalid : review()) } }] };
+  });
+  assert.equal(result.decision, "include");
+  assert.equal(calls, 2);
+
+  calls = 0;
+  await assert.rejects(() => reviewWithRetries(evidence, async () => {
+    calls += 1;
+    return { choices: [{ message: { content: JSON.stringify(invalid) } }] };
+  }), (error) => error.deferCandidate && error.invalidModelOutput && /3 attempts/.test(error.message));
+  assert.equal(calls, 3);
+});
+
+test("truncated and invalid JSON retry, while provider errors are not misclassified as model validation", async () => {
+  const evidence = { repository, files };
+  let calls = 0;
+  await reviewWithRetries(evidence, async () => {
+    calls += 1;
+    return calls === 1 ? { choices: [{ finish_reason: "length", message: { content: "{" } }] } :
+      calls === 2 ? { choices: [{ message: { content: "not JSON" } }] } :
+        { choices: [{ message: { content: JSON.stringify(review()) } }] };
+  });
+  assert.equal(calls, 3);
+  calls = 0;
+  await assert.rejects(() => reviewWithRetries(evidence, async () => {
+    calls += 1;
+    throw new Error("HTTP 401");
+  }), (error) => error.message === "HTTP 401" && !error.deferCandidate);
+  assert.equal(calls, 1);
+});
+
 test("review batch adds one entry, preserves BOM, prevents duplicates and never partially writes on API failure", async (t) => {
   const directory = await mkdtemp(path.join(os.tmpdir(), "rwkv-review-test-"));
   const previousDirectory = process.cwd();
@@ -141,7 +234,11 @@ test("review batch adds one entry, preserves BOM, prevents duplicates and never 
           assert.equal(body.thinking, undefined);
         }
         assert.match(body.messages[0].content, /UNTRUSTED DATA/);
-        data = { choices: [{ message: { content: JSON.stringify(review()) } }] };
+        const decision = review();
+        if (JSON.parse(body.messages[1].content).repository.name.endsWith("/invalid-agent")) {
+          decision.evidence[0].quote = "An invented quotation that cannot pass validation";
+        }
+        data = { choices: [{ message: { content: JSON.stringify(decision) } }] };
       } else {
         assert.equal(target.hostname, "api.github.com");
         assert.equal(options.headers.Authorization, "Bearer test-github-key");
@@ -197,6 +294,20 @@ test("review batch adds one entry, preserves BOM, prevents duplicates and never 
     delete process.env.AGENT_REVIEW_BASE_URL;
     await main();
     assert.equal(JSON.parse((await readFile("agent.json", "utf8")).slice(1)).length, 2);
+
+    const callsBeforeInvalid = providerCalls;
+    await writeCandidates(["invalid-agent", "next-valid-agent"].map((name) => ({
+      repositoryUrl: `https://github.com/sample/${name}`, name,
+    })));
+    await main();
+    assert.equal(providerCalls - callsBeforeInvalid, 4);
+    assert.equal(JSON.parse((await readFile("agent.json", "utf8")).slice(1)).length, 3);
+    const invalidReport = JSON.parse(await readFile("rwkv_agent_review_report.json", "utf8"));
+    assert.equal(invalidReport.failures, 0);
+    assert.equal(invalidReport.invalidModelOutputCount, 1);
+    assert.deepEqual(invalidReport.results.map((item) => item.reviewStatus), ["deferred", "included"]);
+    const savedReviews = JSON.parse(await readFile("agent_repository_review.json", "utf8"));
+    assert.equal(savedReviews.find((item) => item.repositoryUrl.endsWith("/invalid-agent")).reviewStatus, "deferred");
 
     delete process.env.AGENT_REVIEW_API_KEY;
     await assert.rejects(main, /AGENT_REVIEW_API_KEY/);

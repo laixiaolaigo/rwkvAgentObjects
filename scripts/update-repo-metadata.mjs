@@ -1,4 +1,5 @@
-import { readFile, writeFile } from "node:fs/promises";
+import { appendFile, readFile, writeFile } from "node:fs/promises";
+import { pathToFileURL } from "node:url";
 
 const metadataFile = "agent_repo.json";
 const catalogFile = "agent.json";
@@ -106,11 +107,13 @@ async function fetchJson(url, headers = {}) {
       });
       if (response.ok) return response.json();
       if (response.status >= 400 && response.status < 500 && response.status !== 429) {
-        throw new Error(`${url} returned HTTP ${response.status}`);
+        const error = new Error(`${url} returned HTTP ${response.status}`);
+        error.status = response.status;
+        throw error;
       }
       lastError = new Error(`${url} returned HTTP ${response.status}`);
     } catch (error) {
-      if (error instanceof Error && /^.* returned HTTP 4\d\d$/.test(error.message) && !error.message.endsWith("HTTP 429")) {
+      if (error.status >= 400 && error.status < 500 && error.status !== 429) {
         throw error;
       }
       lastError = error;
@@ -159,7 +162,7 @@ async function fetchRepositoryMetadata(repositoryUrl) {
   throw new Error(`Unsupported repository host: ${parsedUrl.hostname}`);
 }
 
-async function main() {
+export async function main() {
   const metadataSource = await readFile(metadataFile, "utf8");
   const catalogSource = await readFile(catalogFile, "utf8");
   const ecosystemSource = await readFile(ecosystemFile, "utf8");
@@ -167,6 +170,7 @@ async function main() {
   const catalogParsed = extractArrayObjects(catalogSource.replace(/^\uFEFF/, ""));
   const ecosystemParsed = extractArrayObjects(ecosystemSource);
   const metadataByUrl = new Map();
+  const unavailable = new Set();
   const repositoryUrls = new Set([
     ...metadataParsed.objects.map((item) => item.data.repositoryUrl),
     ...ecosystemParsed.objects.map((item) => item.data.repositoryUrl),
@@ -174,20 +178,29 @@ async function main() {
 
   for (const repositoryUrl of repositoryUrls) {
     if (!repositoryUrl) throw new Error("A metadata file contains an entry without repositoryUrl");
-    metadataByUrl.set(repositoryUrl, await fetchRepositoryMetadata(repositoryUrl));
+    try {
+      metadataByUrl.set(repositoryUrl, await fetchRepositoryMetadata(repositoryUrl));
+    } catch (error) {
+      if (error.status !== 404) throw error;
+      unavailable.add(repositoryUrl);
+      console.warn(`Repository unavailable (HTTP 404); preserving previous metadata: ${repositoryUrl}`);
+    }
   }
 
   const updatedMetadataObjects = metadataParsed.objects.map((item) => {
+    if (unavailable.has(item.data.repositoryUrl)) return item;
     const update = metadataByUrl.get(item.data.repositoryUrl);
     return updateObjectText(item.text, update, false);
   });
   const updatedCatalogObjects = catalogParsed.objects.map((item) => {
     const repositoryUrl = item.data["GitHub地址"];
+    if (unavailable.has(repositoryUrl)) return item;
     const update = metadataByUrl.get(repositoryUrl);
     if (!update) throw new Error(`No metadata found for ${repositoryUrl}`);
     return updateObjectText(item.text, update, true);
   });
   const updatedEcosystemObjects = ecosystemParsed.objects.map((item) => {
+    if (unavailable.has(item.data.repositoryUrl)) return item;
     const update = metadataByUrl.get(item.data.repositoryUrl);
     if (!update) throw new Error(`No metadata found for ${item.data.repositoryUrl}`);
     return updateObjectText(item.text, update, false);
@@ -214,6 +227,10 @@ async function main() {
   if (updatedEcosystemSource !== ecosystemSource) {
     await writeFile(ecosystemFile, updatedEcosystemSource);
   }
+  if (unavailable.size && process.env.GITHUB_STEP_SUMMARY) {
+    await appendFile(process.env.GITHUB_STEP_SUMMARY,
+      `\n## Repository metadata warnings\n\nThe following repositories returned HTTP 404; their previous metadata was preserved:\n\n${[...unavailable].map((url) => `- ${url}`).join("\n")}\n`);
+  }
   console.log(
     updatedMetadataSource === metadataSource &&
       catalogWithBom === catalogSource &&
@@ -223,4 +240,4 @@ async function main() {
   );
 }
 
-await main();
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) await main();

@@ -76,7 +76,18 @@ export function createEntries(repository, review, commitSha) {
 }
 
 async function requestJson(url, options = {}) {
-  const response = await fetch(url, { ...options, signal: AbortSignal.timeout(120000) });
+  let response;
+  for (let attempt = 0; attempt < 3; attempt += 1) {
+    response = undefined;
+    try {
+      response = await fetch(url, { ...options, signal: AbortSignal.timeout(120000) });
+    } catch {
+      if (attempt === 2) throw new Error(`Request to ${new URL(url).hostname} failed after 3 network attempts`);
+    }
+    if (response && ![429, 500, 502, 503, 504].includes(response.status)) break;
+    if (attempt === 2) break;
+    await new Promise((resolve) => setTimeout(resolve, 1000 * (attempt + 1)));
+  }
   // Never log response bodies: a provider could echo authorization headers or prompt contents.
   if (!response.ok) {
     const error = new Error(`Request to ${new URL(url).hostname} failed: HTTP ${response.status}`);
@@ -118,6 +129,44 @@ Include only implemented RWKV-related Agents: RWKV must participate in action/to
 Schema:
 {"decision":"include|exclude|defer","confidence":0.0,"reason":{"en":"...","zh":"..."},"evidence":[{"path":"exact supplied path","quote":"exact contiguous quote of at least 20 characters from that file"}],"project":{"type":{"en":"...","zh":"..."},"introduction":{"en":"...","zh":"..."},"agentLoop":{"en":"explain RWKV role, action execution, observation feedback and termination","zh":"..."},"capabilities":{"en":["..."],"zh":["..."]},"limitations":{"en":["..."],"zh":["..."]},"platforms":{"en":"...","zh":"..."},"classificationBasis":{"en":"...","zh":"..."}}}
 For exclude/defer omit project. For defer evidence may be empty. For include at least one quote must come from an implementation source file. Exclude only if supplied evidence clearly establishes the project is outside scope. Do not add external links to prose.`;
+
+export async function reviewWithRetries(evidence, complete) {
+  const messages = [
+    { role: "system", content: instructions },
+    { role: "user", content: JSON.stringify({ repository: {
+      name: evidence.repository.full_name, description: evidence.repository.description,
+    }, commitSha: evidence.commitSha, treeTruncated: evidence.treeTruncated, files: evidence.files }) },
+  ];
+  let reason;
+  for (let attempt = 0; attempt < 3; attempt += 1) {
+    // Transport/authentication errors propagate; only invalid model output is deferred.
+    const response = await complete({ messages, max_tokens: attempt === 0 ? 4000 : 8000 });
+    const choice = response.choices?.[0];
+    if (choice?.finish_reason === "length") {
+      reason = "Model review was truncated by the output token limit";
+    } else {
+      let review;
+      try {
+        review = JSON.parse(choice?.message?.content);
+      } catch {
+        reason = "Model review was not valid JSON";
+      }
+      if (review !== undefined) {
+        try {
+          return validateReview(review, evidence.files);
+        } catch (error) {
+          reason = error.message;
+        }
+      }
+    }
+    if (attempt < 2) messages.push({ role: "user", content:
+      `Your review failed validation: ${reason}. Generate a fresh complete JSON object. Copy each evidence quote verbatim from the supplied file, preserving whitespace and line breaks; do not paraphrase or use ellipses. If exact evidence is unavailable, return decision=defer with a bilingual reason and evidence=[].` });
+  }
+  const error = new Error(`Model output failed validation after 3 attempts: ${reason}`);
+  error.deferCandidate = true;
+  error.invalidModelOutput = true;
+  throw error;
+}
 
 function prependEntries(source, entries, indentation) {
   if (!entries.length) return source;
@@ -174,19 +223,13 @@ export async function main() {
       }
       // GitHub can redirect renamed or transferred repositories to an already listed URL.
       if (known.has(normalizeUrl(evidence.repository.html_url))) continue;
-      const response = await requestJson(endpoint, {
+      const review = await reviewWithRetries(evidence, (completion) => requestJson(endpoint, {
         method: "POST",
         headers: { Authorization: `Bearer ${apiKey}`, "Content-Type": "application/json" },
-        body: JSON.stringify({ model, max_tokens: 4000,
+        body: JSON.stringify({ model, ...completion,
           ...(baseUrl.hostname === "api.deepseek.com" ? { thinking: { type: "disabled" } } : {}),
-          messages: [
-          { role: "system", content: instructions },
-          { role: "user", content: JSON.stringify({ repository: {
-            name: evidence.repository.full_name, description: evidence.repository.description,
-          }, commitSha: evidence.commitSha, treeTruncated: evidence.treeTruncated, files: evidence.files }) },
-        ], response_format: { type: "json_object" } }),
-      });
-      const review = validateReview(JSON.parse(response.choices?.[0]?.message?.content), evidence.files);
+          response_format: { type: "json_object" } }),
+      }));
       const result = { repositoryUrl: evidence.repository.html_url,
         lastPushed: evidence.repository.pushed_at || evidence.repository.updated_at,
         reviewedAt: new Date().toISOString(), commitSha: evidence.commitSha,
@@ -203,9 +246,11 @@ export async function main() {
         known.add(normalizeUrl(evidence.repository.html_url));
       }
     } catch (error) {
+      console.error(`Agent review ${error.deferCandidate ? "deferred" : "failed"} for ${candidate.repositoryUrl}: ${error.message}`);
       if (error.deferCandidate) {
         const deferred = { repositoryUrl: candidate.repositoryUrl, lastPushed: candidate.lastUpdated,
-          reviewedAt: new Date().toISOString(), reviewStatus: "deferred", reason: error.message };
+          reviewedAt: new Date().toISOString(), reviewStatus: "deferred", reason: error.message,
+          ...(error.invalidModelOutput ? { invalidModelOutput: true } : {}) };
         results.push(deferred);
         const previous = reviews.findIndex((item) => normalizeUrl(item.repositoryUrl) === normalizeUrl(candidate.repositoryUrl));
         if (previous >= 0) reviews[previous] = deferred;
@@ -219,13 +264,14 @@ export async function main() {
     }
   }
   const report = { generatedAt: new Date().toISOString(), activityCutoff: sixMonthsAgo(now).toISOString(), candidateCount: candidates.length,
-    attemptedCount: results.length, addedCount: addedCatalog.length, failures, results };
+    attemptedCount: results.length, addedCount: addedCatalog.length,
+    invalidModelOutputCount: results.filter((result) => result.invalidModelOutput).length, failures, results };
   await writeFile(reportFile, `${JSON.stringify(report, null, 2)}\n`);
   if (process.env.GITHUB_STEP_SUMMARY) {
     await appendFile(process.env.GITHUB_STEP_SUMMARY,
-      `\n## RWKV Agent review\n\nReviewed ${results.length} candidates; accepted ${addedCatalog.length}; errors ${failures}.\n\nSee the review-report artifact for evidence and decisions.\n`);
+      `\n## RWKV Agent review\n\nReviewed ${results.length} candidates; accepted ${addedCatalog.length}; invalid model outputs deferred ${report.invalidModelOutputCount}; service errors ${failures}.\n\nSee the review-report artifact for evidence and decisions.\n`);
   }
-  if (failures) throw new Error("Agent review failed; candidate/report artifacts are retained and no catalogue changes were written");
+  if (failures) throw new Error(`Agent review failed: ${results.at(-1).repositoryUrl}: ${results.at(-1).reason}; candidate/report artifacts are retained and no catalogue changes were written`);
   await writeFile("agent.json", prependEntries(catalogSource, addedCatalog, 4));
   await writeFile("agent_repo.json", prependEntries(metadataSource, addedMetadata, 2));
   await writeFile("agent_repository_review.json", `${JSON.stringify(reviews, null, 2)}\n`);
