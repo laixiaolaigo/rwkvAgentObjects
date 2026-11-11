@@ -1,1 +1,474 @@
-[]
+[
+  {
+    "repositoryUrl": "https://github.com/laixiaolaigo/rwkvAgentObjects",
+    "lastPushed": "2026-11-11T06:26:48Z",
+    "reviewedAt": "2026-11-11T06:28:40.343Z",
+    "commitSha": "c28b2916b2ea161ccb6158cd485b0112011e2506",
+    "reviewStatus": "excluded",
+    "reason": "The supplied code shows this repository is a directory/catalogue site for RWKV Agent projects, not an implemented RWKV Agent. Files like scripts/review-rwkv-agents.mjs, scripts/discover-rwkv-repositories.mjs and src/components/agent-catalog.tsx implement GitHub discovery, review-model calling, JSON validation, and a catalog UI using DeepSeek-based review, with no RWKV model participating in action/tool selection or in an execution loop consuming tool results. The README describes curation and scanning, not an agent runtime. Therefore it is outside the inclusion scope.",
+    "reasonLocalized": {
+      "en": "The supplied code shows this repository is a directory/catalogue site for RWKV Agent projects, not an implemented RWKV Agent. Files like scripts/review-rwkv-agents.mjs, scripts/discover-rwkv-repositories.mjs and src/components/agent-catalog.tsx implement GitHub discovery, review-model calling, JSON validation, and a catalog UI using DeepSeek-based review, with no RWKV model participating in action/tool selection or in an execution loop consuming tool results. The README describes curation and scanning, not an agent runtime. Therefore it is outside the inclusion scope.",
+      "zh": "所提供的代码表明该仓库是 RWKV Agent 项目的目录/目录站点，而非已实现的 RWKV Agent。scripts/review-rwkv-agents.mjs、scripts/discover-rwkv-repositories.mjs 和 src/components/agent-catalog.tsx 等文件实现的是 GitHub 发现、审核模型调用、JSON 校验以及基于 DeepSeek 审核的目录界面，其中没有 RWKV 模型参与动作/工具选择，也没有消费工具结果的执行循环。README 描述的是收录与扫描流程，而不是 Agent 运行时。因此该项目不属于收录范围。"
+    },
+    "evidence": [
+      {
+        "path": "README.md",
+        "quote": "RWKV 社区 Agent 项目的双语只读目录。项目数据来自根目录的 `agent.json`，构建时生成英文与中文静态页面。"
+      },
+      {
+        "path": "src/components/agent-catalog.tsx",
+        "quote": "export function AgentCatalog({\n  locale,\n  dictionary,\n  projects: initialProjects,\n  loadError,\n}: AgentCatalogProps) {"
+      },
+      {
+        "path": "scripts/review-rwkv-agents.mjs",
+        "quote": "const instructions = `You curate a bilingual RWKV Agent directory."
+      }
+    ]
+  },
+  {
+    "repositoryUrl": "https://github.com/chenqi2013/RWKVBuddy",
+    "lastPushed": "2026-11-11T06:17:01Z",
+    "reviewedAt": "2026-11-11T06:28:45.688Z",
+    "commitSha": "c1cd99a8ea3e0b9ff106bb9d3f5ef16cb47c8e76",
+    "reviewStatus": "deferred",
+    "reason": "The repository contains only a README with a one-line description ('RWKV agent助手'). No implementation source code is supplied, so there is no direct evidence that RWKV participates in action/tool selection or consumes tool results in an execution loop. With evidence incomplete, the correct decision is defer rather than exclude.",
+    "reasonLocalized": {
+      "en": "The repository contains only a README with a one-line description ('RWKV agent助手'). No implementation source code is supplied, so there is no direct evidence that RWKV participates in action/tool selection or consumes tool results in an execution loop. With evidence incomplete, the correct decision is defer rather than exclude.",
+      "zh": "该仓库仅包含一个只有一行描述（'RWKV agent助手'）的 README，未提供任何实现源码，因此没有直接证据表明 RWKV 参与动作/工具选择或在执行循环中消费工具结果。证据不完整，应选择 defer 而非 exclude。"
+    },
+    "evidence": []
+  },
+  {
+    "repositoryUrl": "https://github.com/Fantasia-Infinity/RWKV-AgenticLearning",
+    "lastPushed": "2026-11-10T21:03:31Z",
+    "reviewedAt": "2026-11-11T06:28:51.201Z",
+    "commitSha": "07b98da735038fd44ba4d3de7a2b7267d0ed31aa",
+    "reviewStatus": "excluded",
+    "reason": "The repository is a research/audit and tooling project: it publishes an ecosystem audit, evaluation scripts, dataset builders, chat-template sync utilities, and quoted evidence from other projects (e.g. verl-rwkv). The only supplied files are audit docs, offline evaluation/data-prep scripts, and a vendored third-party config file. No supplied source implements an RWKV-driven agent loop that selects tools/actions, executes them, and consumes observations across turns. README/ROADMAP describe multi-turn agentic RL as a public gap and future roadmap (P0–P5 gates), i.e. unimplemented work, which is explicitly out of scope.",
+    "reasonLocalized": {
+      "en": "The repository is a research/audit and tooling project: it publishes an ecosystem audit, evaluation scripts, dataset builders, chat-template sync utilities, and quoted evidence from other projects (e.g. verl-rwkv). The only supplied files are audit docs, offline evaluation/data-prep scripts, and a vendored third-party config file. No supplied source implements an RWKV-driven agent loop that selects tools/actions, executes them, and consumes observations across turns. README/ROADMAP describe multi-turn agentic RL as a public gap and future roadmap (P0–P5 gates), i.e. unimplemented work, which is explicitly out of scope.",
+      "zh": "该仓库是研究/审计与工具类项目：发布生态审计、评测脚本、数据集构建脚本、聊天模板同步工具，以及引用其他项目（如 verl-rwkv）的证据文件。所提供文件仅为审计文档、离线评测/数据准备脚本和一个第三方配置文件的引用副本。没有任何提供的源代码实现了由 RWKV 驱动、能选择工具/动作、执行并跨轮消费观测的 Agent 执行循环。README/ROADMAP 将多轮 agentic RL 明确描述为公开空白和未来路线（P0–P5 门禁），属于未实现规划，按规则不纳入。"
+    },
+    "evidence": [
+      {
+        "path": "README.md",
+        "quote": "**Multi-turn agentic RL — tool-using episodes, per-token log-probs across turns, episode-level training — is still a public gap.** There is no public recipe, no public training result, and no state-native rollout layer connecting a state manager to an RL trainer."
+      },
+      {
+        "path": "tools/eval_toolcall.py",
+        "quote": "G3-style evaluation: tool-call parse rate / tool choice on held-out synthetic set."
+      },
+      {
+        "path": "tools/build_gsm8k_calc.py",
+        "quote": "Unlike SFT conversion, no target trajectory is written: RL rollouts are\nsampled by the policy itself against the calculator environment."
+      }
+    ]
+  },
+  {
+    "repositoryUrl": "https://github.com/rwkv-org/rwkv-agent-eval",
+    "lastPushed": "2026-11-08T02:41:48Z",
+    "reviewedAt": "2026-11-11T06:28:59.338Z",
+    "commitSha": "e32fc38e43b5337d8ba02041f83b25e7111909b9",
+    "reviewStatus": "excluded",
+    "reason": "This repository is an evaluation harness/benchmark for RWKV agent capability, not an RWKV agent itself. It runs RWKV models through an external agent framework (the dsh-rwkv-plugin) inside Harbor tasks and scores outcomes; the repository's own code is task conversion, judging, web-archive replay, result reporting, and a Harbor backend that launches the external DSH plugin. RWKV does not participate in action/tool selection or planning within this repository's implementation, and the tool loop belongs to the external plugin framework, so the project is outside the requested scope.",
+    "reasonLocalized": {
+      "en": "This repository is an evaluation harness/benchmark for RWKV agent capability, not an RWKV agent itself. It runs RWKV models through an external agent framework (the dsh-rwkv-plugin) inside Harbor tasks and scores outcomes; the repository's own code is task conversion, judging, web-archive replay, result reporting, and a Harbor backend that launches the external DSH plugin. RWKV does not participate in action/tool selection or planning within this repository's implementation, and the tool loop belongs to the external plugin framework, so the project is outside the requested scope.",
+      "zh": "本仓库是用于评测 RWKV 智能体能力的基准/评测框架，本身不是 RWKV 智能体。它把 RWKV 模型通过外部智能体框架（dsh-rwkv-plugin）接入 Harbor 任务并打分；本仓库自身代码是题库转换、判分、网页存档回放、结果报告，以及一个启动外部 DSH 插件的 Harbor 后端。RWKV 在本仓库实现中不参与动作/工具选择或规划，工具执行循环属于外部插件框架，因此项目不在请求范围内。"
+    },
+    "evidence": [
+      {
+        "path": "README.md",
+        "quote": "RWKV 模型 Agent 能力的考卷：给 RWKV 一个真实的任务和一套工具，看它能不能自己把事做完。"
+      },
+      {
+        "path": "README.md",
+        "quote": "模型要通过一个 Agent 框架（harness）才能用工具，所以分数衡量的是“模型 + 框架”这个组合。目前接入的框架是 [dsh-rwkv-plugin](https://github.com/No-22-Github/dsh-rwkv-plugin)，也就是以 RWKV 为模型的 DeepSeek Harness"
+      },
+      {
+        "path": "backends/dsh/harbor_agent.py",
+        "quote": "run()        the plugin's scripts/headless.ts --installed, once per user"
+      },
+      {
+        "path": "backends/dsh/web-replay.mjs",
+        "quote": "// DSH overlay plugin for evals: web_search / web_fetch answered from an"
+      }
+    ]
+  },
+  {
+    "repositoryUrl": "https://github.com/xun082/rwkv-vibe-code-desktop",
+    "lastPushed": "2026-11-11T06:14:29Z",
+    "reviewedAt": "2026-11-11T06:29:04.109Z",
+    "commitSha": "e18568d158e0f3164e624ad2ce49329f20195849",
+    "reviewStatus": "excluded",
+    "reason": "This is a single-shot HTML generation desktop app: the RWKV model produces HTML via one llama-server completion request, and the UI previews/edits the output. There is no agent loop where RWKV selects actions or tools, consumes tool results, or iterates toward a goal; the model is a text generator, not an agent controller. The supplied evidence clearly establishes the project is outside the required agentic scope.",
+    "reasonLocalized": {
+      "en": "This is a single-shot HTML generation desktop app: the RWKV model produces HTML via one llama-server completion request, and the UI previews/edits the output. There is no agent loop where RWKV selects actions or tools, consumes tool results, or iterates toward a goal; the model is a text generator, not an agent controller. The supplied evidence clearly establishes the project is outside the required agentic scope.",
+      "zh": "这是一个单次 HTML 生成桌面应用：RWKV 模型通过一次 llama-server 补全请求生成 HTML，界面负责预览和编辑输出。项目中不存在 RWKV 选择动作或工具、消费工具结果并迭代执行的智能体循环；模型是文本生成器，而非智能体控制器。所提供证据明确表明该项目不在所需智能体范围内。"
+    },
+    "evidence": [
+      {
+        "path": "README.md",
+        "quote": "用本地 RWKV7 G1l 1.5B Q6_K 模型生成单文件 HTML。默认同时生成四个方案，每张预览会随输出更新。"
+      },
+      {
+        "path": "README.md",
+        "quote": "一次生成由一个 llama-server `POST /completion` 请求提交完整的 `prompt` 数组，四槽引擎在同一条 SSE 流中按索引返回结果。"
+      },
+      {
+        "path": "src/App.tsx",
+        "quote": "const { results, loading, preparing, modelProgress, pauseModel, retryModel, error, generate, stop, edit, markPainted, isGenerating } = useGeneration();"
+      }
+    ]
+  },
+  {
+    "repositoryUrl": "https://github.com/JSchoreels/anki-rwkv",
+    "lastPushed": "2026-11-11T06:06:50Z",
+    "reviewedAt": "2026-11-11T06:29:09.660Z",
+    "commitSha": "76ae46d2e3f0e7723f127342302cf06cb1c811c4",
+    "reviewStatus": "excluded",
+    "reason": "The repository is RWKV training, GPU optimization, compression research, and benchmark analysis for Anki's spaced-repetition model. Its source files implement RWKV model layers, CUDA WKV kernels, RNN inference, and replay/analysis scripts that score recall; there is no agent that selects actions or tools, executes them, and consumes observations in an execution loop. Chat surfaces, inference servers, and training libraries do not qualify.",
+    "reasonLocalized": {
+      "en": "The repository is RWKV training, GPU optimization, compression research, and benchmark analysis for Anki's spaced-repetition model. Its source files implement RWKV model layers, CUDA WKV kernels, RNN inference, and replay/analysis scripts that score recall; there is no agent that selects actions or tools, executes them, and consumes observations in an execution loop. Chat surfaces, inference servers, and training libraries do not qualify.",
+      "zh": "该仓库是用于 Anki 间隔重复模型的 RWKV 训练、GPU 优化、压缩研究与基准分析。其源码实现 RWKV 模型层、CUDA WKV 核、RNN 推理以及评分回忆率的回放/分析脚本；没有任何代理来选择动作或工具、执行它们并在执行循环中消费观测结果。聊天界面、推理服务器和训练库均不符合条件。"
+    },
+    "evidence": [
+      {
+        "path": "README.md",
+        "quote": "Training and compression research for the RWKV spaced-repetition model used in Anki."
+      },
+      {
+        "path": "expertium/model/rwkv_rnn_model.py",
+        "quote": "# RWKV-7 formulated as an RNN for inference."
+      },
+      {
+        "path": "expertium/model/rwkv_ops.py",
+        "quote": "class RWKV7_WKV(torch.autograd.Function):"
+      }
+    ]
+  },
+  {
+    "repositoryUrl": "https://github.com/shoumenchougou/rwkv-discord-daily-brief",
+    "lastPushed": "2026-11-11T03:46:46Z",
+    "reviewedAt": "2026-11-11T06:29:14.693Z",
+    "commitSha": "9f3d50374abf42364c9c663b15f282d78a757c1f",
+    "reviewStatus": "excluded",
+    "reason": "This project is a daily-brief report generator for authorized RWKV Discord channels. It collects Discord messages, then summarizes them using a generic OpenAI-compatible LLM API (default gpt-5.6-luna / DeepSeek). RWKV here is only the subject matter of the text being summarized, not a model that participates in action/tool selection or planning. There is no RWKV Agent execution loop that consumes tool results. The code is a harvesting + LLM summarization pipeline, so it is outside the scope (a keyword mention of RWKV does not make it an RWKV Agent).",
+    "reasonLocalized": {
+      "en": "This project is a daily-brief report generator for authorized RWKV Discord channels. It collects Discord messages, then summarizes them using a generic OpenAI-compatible LLM API (default gpt-5.6-luna / DeepSeek). RWKV here is only the subject matter of the text being summarized, not a model that participates in action/tool selection or planning. There is no RWKV Agent execution loop that consumes tool results. The code is a harvesting + LLM summarization pipeline, so it is outside the scope (a keyword mention of RWKV does not make it an RWKV Agent).",
+      "zh": "该项目是一个针对授权 RWKV Discord 频道的日报生成器：抓取 Discord 消息后，调用通用 OpenAI 兼容 LLM 接口（默认 gpt-5.6-luna / DeepSeek）生成摘要。RWKV 在此仅是被总结文本的主题，并非参与动作/工具选择或规划的模型，也不存在消费工具结果的 RWKV Agent 执行循环。代码是采集 + LLM 摘要流水线，因此不在收录范围内（仅提及 RWKV 关键词不构成 RWKV Agent）。"
+    },
+    "evidence": [
+      {
+        "path": "README.md",
+        "quote": "使用 DeepSeek API 生成简报"
+      },
+      {
+        "path": "src/generate_daily_report.py",
+        "quote": "\"\"\"Generate a verifiable Chinese daily brief with an OpenAI-compatible API.\"\"\""
+      },
+      {
+        "path": "src/generate_daily_report.py",
+        "quote": "DEFAULT_MODEL = \"gpt-5.6-luna\""
+      },
+      {
+        "path": "src/build_fallback_report.py",
+        "quote": "TECH_TERMS = (\n    \"rwkv\","
+      }
+    ]
+  },
+  {
+    "repositoryUrl": "https://github.com/m8than/rwkv-tracker",
+    "lastPushed": "2026-11-11T02:58:03Z",
+    "reviewedAt": "2026-11-11T06:29:17.994Z",
+    "commitSha": "860b6d327b639a9d6aa66865ac0c1a0629d2212e",
+    "reviewStatus": "excluded",
+    "reason": "The repository is a data collection and reporting pipeline that tracks RWKV projects, models, papers, and commits. Its only code (update.py) fetches JSON feeds, GitHub/Hugging Face/arXiv listings, and writes summaries; no RWKV model participates in action/tool selection, planning, or an execution-observation loop. RWKV appears solely as tracked metadata, which is out of scope.",
+    "reasonLocalized": {
+      "en": "The repository is a data collection and reporting pipeline that tracks RWKV projects, models, papers, and commits. Its only code (update.py) fetches JSON feeds, GitHub/Hugging Face/arXiv listings, and writes summaries; no RWKV model participates in action/tool selection, planning, or an execution-observation loop. RWKV appears solely as tracked metadata, which is out of scope.",
+      "zh": "该仓库是一个数据采集与报告流水线，用于追踪 RWKV 项目、模型、论文和提交。其唯一的代码（update.py）抓取 JSON 数据源、GitHub/Hugging Face/arXiv 列表并生成摘要；没有任何 RWKV 模型参与动作/工具选择、规划或执行-观察循环。RWKV 仅作为被追踪的元数据出现，属于范围之外。"
+    },
+    "evidence": [
+      {
+        "path": "README.md",
+        "quote": "A daily summary of RWKV projects, model updates, agent projects, papers, and development activity."
+      },
+      {
+        "path": "update.py",
+        "quote": "\"\"\"Refresh the RWKV tracker using only the Python standard library.\"\"\""
+      }
+    ]
+  },
+  {
+    "repositoryUrl": "https://github.com/harrisonvanderbyl/rwkv_paper_tracker",
+    "lastPushed": "2026-11-11T02:44:09Z",
+    "reviewedAt": "2026-11-11T06:29:22.366Z",
+    "commitSha": "25c96f6f7bfc3f4824d368865c6809c3ba302351",
+    "reviewStatus": "excluded",
+    "reason": "This repository is a bibliographic paper-tracking web app (React + TypeScript) that curates a list of RWKV research papers with category browsing, search and a publication timeline. RWKV here is the subject matter of catalogued papers, not an agent runtime; there is no model inference, tool selection, action execution, or observation feedback loop in the source code. It is a chat/dashboard-style UI/data site and therefore outside the Agent scope.",
+    "reasonLocalized": {
+      "en": "This repository is a bibliographic paper-tracking web app (React + TypeScript) that curates a list of RWKV research papers with category browsing, search and a publication timeline. RWKV here is the subject matter of catalogued papers, not an agent runtime; there is no model inference, tool selection, action execution, or observation feedback loop in the source code. It is a chat/dashboard-style UI/data site and therefore outside the Agent scope.",
+      "zh": "该仓库是一个文献追踪网站（React + TypeScript），用于整理 RWKV 研究论文的分类浏览、搜索与发表时间线。此处的 RWKV 只是被收录论文的主题，而非智能体运行时；源码中没有模型推理、工具选择、动作执行或观测反馈循环。它属于仪表盘/数据展示类界面应用，不在智能体收录范围内。"
+    },
+    "evidence": [
+      {
+        "path": "README.md",
+        "quote": "The interactive site (category browser, paper details and publication timeline) is a React + TypeScript app"
+      },
+      {
+        "path": "src/App.tsx",
+        "quote": "const searched = useMemo(() => papers.filter((p) => matchesQuery(p, query.trim())), [query])"
+      }
+    ]
+  },
+  {
+    "repositoryUrl": "https://github.com/Pedrubik2000/anki-rwkv-forecast",
+    "lastPushed": "2026-11-11T02:36:57Z",
+    "reviewedAt": "2026-11-11T06:29:27.173Z",
+    "commitSha": "10eab07fe4d6c7a658702831881e17d1dc0f7f62",
+    "reviewStatus": "excluded",
+    "reason": "This is a read-only Anki add-on that projects RWKV recall values into the future by re-scoring existing review-card queries with shifted clocks; it does not select actions, call tools, plan, or consume tool results in an agent execution loop. RWKV here is an inference/scoring backend, not an action-selecting agent. It therefore falls outside the RWKV Agent scope (forecast/visualization add-on).",
+    "reasonLocalized": {
+      "en": "This is a read-only Anki add-on that projects RWKV recall values into the future by re-scoring existing review-card queries with shifted clocks; it does not select actions, call tools, plan, or consume tool results in an agent execution loop. RWKV here is an inference/scoring backend, not an action-selecting agent. It therefore falls outside the RWKV Agent scope (forecast/visualization add-on).",
+      "zh": "这是一个只读的 Anki 插件，通过平移时钟对已有的复习卡查询重新打分，把 RWKV 记忆保持率投射到未来；它不选择动作、不调用工具、不做规划，也没有在智能体执行循环中消费工具结果。此处的 RWKV 是推理/打分后端，而不是负责动作选择的智能体。因此它不属于 RWKV Agent 的范围（属于预测/可视化插件）。"
+    },
+    "evidence": [
+      {
+        "path": "README.md",
+        "quote": "The add-on takes the same queries the Browser's `is:rwkv:due` search uses and moves the\nclock forward (1 h, 3 h, the next rollover) without touching the model's state."
+      },
+      {
+        "path": "engine.py",
+        "quote": "A forecast is the same\nquery with the clock moved forward: the model's state is not touched, so every number means\n\"if you stop reviewing now\". Read-only: nothing here writes cards."
+      },
+      {
+        "path": "__init__.py",
+        "quote": "Deck list: due | near | safe and the count line under \"Studied … today\"."
+      }
+    ]
+  },
+  {
+    "repositoryUrl": "https://github.com/DavidCaastro/redukt",
+    "lastPushed": "2026-11-10T23:25:44Z",
+    "reviewedAt": "2026-11-11T06:29:32.135Z",
+    "commitSha": "b3be6947bc26bb820be1b8efdc89447cde8efa29",
+    "reviewStatus": "excluded",
+    "reason": "Redukt is a neural lossless compression engine, not an Agent. RWKV-7 (and Mamba) serve only as a per-token probability backbone that drives a context-mixing ensemble and arithmetic coder. There is no action/tool selection, planning, tool execution, or observation-feedback loop: the 'loop' is a token-by-token compression/decompression pipeline. This is outside the agent-directory scope.",
+    "reasonLocalized": {
+      "en": "Redukt is a neural lossless compression engine, not an Agent. RWKV-7 (and Mamba) serve only as a per-token probability backbone that drives a context-mixing ensemble and arithmetic coder. There is no action/tool selection, planning, tool execution, or observation-feedback loop: the 'loop' is a token-by-token compression/decompression pipeline. This is outside the agent-directory scope.",
+      "zh": "Redukt 是一个神经无损压缩引擎，不是 Agent。RWKV-7（以及 Mamba）仅作为逐 token 概率主干，驱动上下文混合集成与算术编码器。不存在动作/工具选择、规划、工具执行或观察反馈循环：所谓“循环”只是逐 token 的压缩/解压流水线。该项目超出 Agent 目录范围。"
+    },
+    "evidence": [
+      {
+        "path": "README.md",
+        "quote": "Neural lossless compression engine: a pretrained state-space backbone (Mamba-130M by default, RWKV-7 0.1B for\ngeneric binaries) feeds an online-adaptive context-mixing ensemble and an arithmetic coder."
+      },
+      {
+        "path": "src/application/benchmark.rs",
+        "quote": "//! Performs ACTUAL compression (not just cross-entropy estimation) and compares\n//! against gzip-9, brotli-11, zstd-19. All BPB values are measured identically:\n//! compressed_size * 8 / original_size."
+      }
+    ]
+  },
+  {
+    "repositoryUrl": "https://github.com/xiudeJude/-rwkv-transformers-LLM-",
+    "lastPushed": "2026-11-10T12:05:36Z",
+    "reviewedAt": "2026-11-11T06:29:40.429Z",
+    "commitSha": "aec8df94e4b6d89c190e781a2af689e8953d4626",
+    "reviewStatus": "excluded",
+    "reason": "The repository is an interactive LLM interpretability/visualization lab comparing Transformer, RWKV, and Mamba internals (attention heatmaps, WKV state waterfalls, state probes). The supplied code contains inference streaming, session management, attention/state export, and concept-lab endpoints, but no RWKV-driven agent loop: RWKV is used as a model whose recurrent state is observed, not to select actions/tools, execute them, and consume tool results. No planner, tool invocation, or observation-feedback loop is present in the evidence, so the project is outside the Agent directory scope.",
+    "reasonLocalized": {
+      "en": "The repository is an interactive LLM interpretability/visualization lab comparing Transformer, RWKV, and Mamba internals (attention heatmaps, WKV state waterfalls, state probes). The supplied code contains inference streaming, session management, attention/state export, and concept-lab endpoints, but no RWKV-driven agent loop: RWKV is used as a model whose recurrent state is observed, not to select actions/tools, execute them, and consume tool results. No planner, tool invocation, or observation-feedback loop is present in the evidence, so the project is outside the Agent directory scope.",
+      "zh": "该仓库是一个交互式 LLM 可解释性/可视化实验室，用于对比 Transformer、RWKV 与 Mamba 的内部机制（注意力热力图、WKV 状态瀑布图、状态探针）。所提供的代码仅包含推理流式传输、会话管理、注意力/状态导出与概念实验室端点，并不存在由 RWKV 驱动的智能体循环：RWKV 仅作为被观测递归状态的模型，而非参与动作/工具选择、执行动作并消费工具结果的规划器。证据中未出现规划器、工具调用或观察反馈循环，因此项目不属于智能体目录的收录范围。"
+    },
+    "evidence": [
+      {
+        "path": "README.md",
+        "quote": "面向“传智杯 Vibe Coding 挑战赛”，帮助大模型学习者、高校师生与可解释性研究者，直观解构并并排观测三类架构在文本逐 token 生成过程中的微观物理演化差异"
+      },
+      {
+        "path": "backend/app/api/routes.py",
+        "quote": "@router.post(\"/api/session/create\")\nasync def create_session(req: CreateSessionRequest):"
+      }
+    ]
+  },
+  {
+    "repositoryUrl": "https://github.com/uncoalesced/parentheses",
+    "lastPushed": "2026-11-09T17:29:10Z",
+    "reviewedAt": "2026-11-11T06:29:45.508Z",
+    "commitSha": "fee7f8b104d21578e422c7ea9820c2feb02c1fe2",
+    "reviewStatus": "excluded",
+    "reason": "The repository is a from-scratch recurrent language model (RWKV/Mamba-2-style SSM) with training scripts, a chat web UI, and orchestration tooling. No supplied source file implements an agent loop where RWKV selects/executes tools or plans and consumes observations; RWKV is only mentioned as an architectural family in prose and the model is used for text generation/chat. This is a language model/training project, not an RWKV Agent.",
+    "reasonLocalized": {
+      "en": "The repository is a from-scratch recurrent language model (RWKV/Mamba-2-style SSM) with training scripts, a chat web UI, and orchestration tooling. No supplied source file implements an agent loop where RWKV selects/executes tools or plans and consumes observations; RWKV is only mentioned as an architectural family in prose and the model is used for text generation/chat. This is a language model/training project, not an RWKV Agent.",
+      "zh": "该仓库是从零构建的循环语言模型（RWKV/Mamba-2 风格 SSM），包含训练脚本、聊天 Web UI 与编排工具。所提供的源码中没有实现由 RWKV 选择/执行工具或规划并消费观测结果的 Agent 循环；RWKV 仅在说明文字中作为架构家族被提及，模型仅用于文本生成/聊天。该项目是语言模型/训练项目，而非 RWKV Agent。"
+    },
+    "evidence": [
+      {
+        "path": "README.md",
+        "quote": "It isn't a transformer. It's a recurrent model from the State Space Duality family (the same family as Mamba-2 and RWKV)"
+      },
+      {
+        "path": "app.py",
+        "quote": "Parentheses 0.9-120M: Interactive Web UI & Zero-Dependency Streaming Server."
+      }
+    ]
+  },
+  {
+    "repositoryUrl": "https://github.com/tanjiarui/music-rwkv",
+    "lastPushed": "2026-11-09T08:16:34Z",
+    "reviewedAt": "2026-11-11T06:29:45.945Z",
+    "reviewStatus": "deferred",
+    "reason": "Request to api.github.com failed: HTTP 409"
+  },
+  {
+    "repositoryUrl": "https://github.com/xiaol/LiuBai-RWKV",
+    "lastPushed": "2026-11-08T17:04:07Z",
+    "reviewedAt": "2026-11-11T06:29:51.814Z",
+    "commitSha": "5b407fc227afffbde68a47f69d0dc98a183a9e49",
+    "reviewStatus": "excluded",
+    "reason": "This repository is an RWKV-7 song language model that autoregressively generates YuE2 semantic audio tokens from style captions and lyrics. The supplied files show token generation, sampling, training/evaluation diagnostics, a VAE NAR expert built on an RWKV-7 block, and corpus tooling, but no agent loop in which RWKV selects actions/tools and consumes tool results. It is therefore outside the Agent scope despite genuine RWKV use.",
+    "reasonLocalized": {
+      "en": "This repository is an RWKV-7 song language model that autoregressively generates YuE2 semantic audio tokens from style captions and lyrics. The supplied files show token generation, sampling, training/evaluation diagnostics, a VAE NAR expert built on an RWKV-7 block, and corpus tooling, but no agent loop in which RWKV selects actions/tools and consumes tool results. It is therefore outside the Agent scope despite genuine RWKV use.",
+      "zh": "该仓库是一个 RWKV-7 歌曲语言模型，根据风格描述和歌词自回归生成 YuE2 语义音频 token。所提供的文件展示了 token 生成、采样、训练/评估诊断、基于 RWKV-7 模块的 VAE NAR 专家以及语料工具，但没有 RWKV 选择动作/工具并消费工具结果的 Agent 循环。尽管确实使用了 RWKV，但超出 Agent 范围。"
+    },
+    "evidence": [
+      {
+        "path": "README.md",
+        "quote": "Text (style caption + lyrics) → full song with vocals, 48 kHz stereo. The autoregressive model is a **3 B-parameter RWKV-7**"
+      },
+      {
+        "path": "scripts/rwkv_generate.py",
+        "quote": "then sample codes (YUE2_BASE + c) until EOA or --max-frames. Sampling is restricted to the 32,768 codes + EOA."
+      },
+      {
+        "path": "vae/gated_rwkv7.py",
+        "quote": "LiuBai-H: the gated read-only NAR expert of vae/gated_nar.py on the official RWKV-7 x070 block"
+      }
+    ]
+  },
+  {
+    "repositoryUrl": "https://github.com/RafaelUI/rwkv-layer-probing_ARTICLE",
+    "lastPushed": "2026-11-08T08:06:53Z",
+    "reviewedAt": "2026-11-11T06:29:57.460Z",
+    "commitSha": "2935591d36c1daaa54037b041634dabc5eda01d3",
+    "reviewStatus": "excluded",
+    "reason": "This repository is an interpretability/probing research project: it trains small RWKV-7 and Transformer language models and fits linear ridge probes on hidden states to compare how properties are encoded across layers. No agent, tool-calling, planning, or execution loop exists; RWKV is used purely as a model under analysis, and the code is probe/analysis scripts (data loading, capture hooks, ridge accumulation, plotting). This is outside the RWKV Agent directory scope.",
+    "reasonLocalized": {
+      "en": "This repository is an interpretability/probing research project: it trains small RWKV-7 and Transformer language models and fits linear ridge probes on hidden states to compare how properties are encoded across layers. No agent, tool-calling, planning, or execution loop exists; RWKV is used purely as a model under analysis, and the code is probe/analysis scripts (data loading, capture hooks, ridge accumulation, plotting). This is outside the RWKV Agent directory scope.",
+      "zh": "该仓库是解释性/探测研究项目：训练小型 RWKV-7 与 Transformer 语言模型，并在隐藏状态上拟合线性岭回归探针，比较不同层对属性的编码方式。不存在 Agent、工具调用、规划或执行循环；RWKV 仅作为被分析的模型使用，代码均為探针/分析脚本（数据加载、激活捕获、岭回归统计、绘图）。这超出 RWKV Agent 目录范围。"
+    },
+    "evidence": [
+      {
+        "path": "README.md",
+        "quote": "I trained 12 small\nlanguage models that differ only in the architecture: RWKV-7, a Transformer with rotary position embeddings (RoPE) and a Transformer with\nno position encoding at all (NoPE)."
+      },
+      {
+        "path": "code/common.py",
+        "quote": "class RidgeAcc:\n    \"\"\"Накопитель достаточных статистик для ridge на стандартизованных признаках (float64, GPU)."
+      },
+      {
+        "path": "best_layers.py",
+        "quote": "Best layer (argmax over the 13 layers) and its value, per probe and architecture, at the FINAL checkpoint"
+      }
+    ]
+  },
+  {
+    "repositoryUrl": "https://github.com/OpenMOSE/RWKV-Infer-Next",
+    "lastPushed": "2026-11-08T05:34:34Z",
+    "reviewedAt": "2026-11-11T06:30:02.498Z",
+    "commitSha": "b287971f4472297dd705f023ab1d336cf2917493",
+    "reviewStatus": "excluded",
+    "reason": "The repository is an inference server for RWKV-7 text models (OpenAI-compatible API plus WebUI). Its 'tool calls' feature is only chat-template-driven parsing of model output (encoding tool_call blocks and streaming them), not an agent that selects/executes tools and feeds observations back. No execution loop or tool-result consumption exists in the supplied files; therefore it is outside the RWKV Agent scope.",
+    "reasonLocalized": {
+      "en": "The repository is an inference server for RWKV-7 text models (OpenAI-compatible API plus WebUI). Its 'tool calls' feature is only chat-template-driven parsing of model output (encoding tool_call blocks and streaming them), not an agent that selects/executes tools and feeds observations back. No execution loop or tool-result consumption exists in the supplied files; therefore it is outside the RWKV Agent scope.",
+      "zh": "该仓库是 RWKV-7 文本模型的推理服务器（OpenAI 兼容 API 与 WebUI）。其“tool calls”仅是聊天模板驱动的输出解析（把 tool_call 块编码并流式输出），并非选择/执行工具并回传观察的 Agent。所给文件中不存在执行循环或工具结果消费，因此不属于 RWKV Agent 范畴。"
+    },
+    "evidence": [
+      {
+        "path": "README.md",
+        "quote": "the template lists the tools and asks for a fenced ```` ```json {\"name\": ..., \"arguments\": {...}} ``` ```` block;\nthe parser also accepts `<tool_call>{...}</tool_call>` and a bare JSON object. Only functions that were offered become\n`tool_calls` (arguments as a JSON string, `finish_reason: \"tool_calls\"`); anything else stays content."
+      },
+      {
+        "path": "README.md",
+        "quote": "An inference server for RWKV-7 text models, built for multi-GPU throughput: tensor parallelism, continuous\nbatching on CUDA graphs, int6 weights and MTP speculative decoding, behind an OpenAI-compatible API with a WebUI."
+      }
+    ]
+  },
+  {
+    "repositoryUrl": "https://github.com/Karl1109/Compass",
+    "lastPushed": "2026-11-07T13:16:14Z",
+    "reviewedAt": "2026-11-11T06:30:06.831Z",
+    "commitSha": "3de76a4208503a6fefcc19cbcf8d9ccc44f39677",
+    "reviewStatus": "excluded",
+    "reason": "The repository is a semantic image segmentation research project (Compass: multimodal crack segmentation with a Needle RWKV-style backbone). RWKV appears only as a segmentation backbone component; there is no language-model-driven agent, no tool/action selection, and no execution loop consuming tool results. Supplied code covers training, datasets, and inference only, so the project is clearly outside the Agent directory scope.",
+    "reasonLocalized": {
+      "en": "The repository is a semantic image segmentation research project (Compass: multimodal crack segmentation with a Needle RWKV-style backbone). RWKV appears only as a segmentation backbone component; there is no language-model-driven agent, no tool/action selection, and no execution loop consuming tool results. Supplied code covers training, datasets, and inference only, so the project is clearly outside the Agent directory scope.",
+      "zh": "该仓库是语义图像分割研究项目（Compass：基于类 RWKV 骨干的多模态裂缝分割）。RWKV 仅作为分割骨干组件出现，不存在语言模型驱动的智能体、工具/动作选择或消费工具结果的执行循环。提供的代码仅涉及训练、数据集与推理，明显超出 Agent 目录范围。"
+    },
+    "evidence": [
+      {
+        "path": "README.md",
+        "quote": "As the lightweight backbone, Needle incorporates crack directional cues into the WKV key modulation through Geometry Conditioned Modulation"
+      },
+      {
+        "path": "main.py",
+        "quote": "model, criterion = build_model(args)\n    model.to(device)"
+      },
+      {
+        "path": "datasets/crack_dataset.py",
+        "quote": "returned_data['label'] = self.lab_transform(lab).unsqueeze(0)"
+      }
+    ]
+  },
+  {
+    "repositoryUrl": "https://github.com/HerRei/gpt2-piano-mps-12k",
+    "lastPushed": "2026-11-06T15:16:51Z",
+    "reviewedAt": "2026-11-11T06:30:11.953Z",
+    "commitSha": "77206eae94de6c43dd438b225845c52da807744c",
+    "reviewStatus": "excluded",
+    "reason": "This repository contains two generative music models (a GPT-2 and an RWKV-7) that continue or synthesize piano MIDI. RWKV is used as an autoregressive token predictor for notes, not to select actions, call tools, or consume tool results in any execution loop. There is no Agent orchestration, no tool-use or planning code, and external density/loudness values are model conditioning tokens, not tool observations. The project is outside the Agent-directory scope.",
+    "reasonLocalized": {
+      "en": "This repository contains two generative music models (a GPT-2 and an RWKV-7) that continue or synthesize piano MIDI. RWKV is used as an autoregressive token predictor for notes, not to select actions, call tools, or consume tool results in any execution loop. There is no Agent orchestration, no tool-use or planning code, and external density/loudness values are model conditioning tokens, not tool observations. The project is outside the Agent-directory scope.",
+      "zh": "该仓库包含两个生成式音乐模型（GPT-2 和 RWKV-7），用于续写或合成钢琴 MIDI。RWKV 在这里是音符的自回归 token 预测器，并不用于选择动作、调用工具或在执行循环中消费工具结果。仓库中没有 Agent 编排、工具调用或规划代码；外部传入的密度/响度数值只是模型的条件 token，不是工具观测结果。该项目不属于 Agent 目录的收录范围。"
+    },
+    "evidence": [
+      {
+        "path": "README.md",
+        "quote": "Two small language models that write piano music as MIDI. They work like a text model, except that the text is"
+      },
+      {
+        "path": "v2/rwkv7_step.py",
+        "quote": "* `forward` computes ONE token with every piece of state as an explicit,"
+      },
+      {
+        "path": "v1/generate.py",
+        "quote": "The prompt is tokenized with the same REMI settings as the training data and cut to its last --prompt_tokens"
+      }
+    ]
+  },
+  {
+    "repositoryUrl": "https://github.com/xiaoiecc/qkv-rosa-fast-exact-backward",
+    "lastPushed": "2026-11-06T13:53:29Z",
+    "reviewedAt": "2026-11-11T06:30:21.058Z",
+    "commitSha": "bb5b1ab7df37d887a52cc693c568e1bd32f11167",
+    "reviewStatus": "excluded",
+    "reason": "This repository is a training/backpropagation library for the RWKV-8 QKV-ROSA retrieval layer: it implements fast exact counterfactual credit computation for Q/K/V bit flips and integrates as a PyTorch autograd layer. It contains no agent, no action/tool selection, no planning, and no execution loop that consumes tool results; READMEs and sources describe gradient/credit engines, sampling, and route certificates only. RWKV participation is limited to the layer's architecture, which is training-library scope, not an Agent.",
+    "reasonLocalized": {
+      "en": "This repository is a training/backpropagation library for the RWKV-8 QKV-ROSA retrieval layer: it implements fast exact counterfactual credit computation for Q/K/V bit flips and integrates as a PyTorch autograd layer. It contains no agent, no action/tool selection, no planning, and no execution loop that consumes tool results; READMEs and sources describe gradient/credit engines, sampling, and route certificates only. RWKV participation is limited to the layer's architecture, which is training-library scope, not an Agent.",
+      "zh": "该仓库是 RWKV-8 QKV-ROSA 检索层的训练/反向传播库：实现 Q/K/V 比特翻转的快速精确反事实信用计算，并作为 PyTorch autograd 层接入。仓库中没有 Agent、没有动作/工具选择、没有规划，也没有消费工具结果的执行循环；README 与源码只涉及梯度/信用引擎、采样和路由证书。RWKV 仅作为该层架构存在，属于训练库范畴，不是 Agent。"
+    },
+    "evidence": [
+      {
+        "path": "README.md",
+        "quote": "QKV-ROSA is a hard retrieval mixer: each output takes the payload after one causal longest-suffix match. This repository trains it with the finite output change caused by each Q/K/V bit flip, projected on the incoming gradient."
+      },
+      {
+        "path": "README.md",
+        "quote": "The layer fits an ordinary PyTorch model and optimizer:"
+      },
+      {
+        "path": "README.md",
+        "quote": "This is a CPU implementation. CUDA tensors require transfers, and the reported environment is Linux/GCC."
+      }
+    ]
+  }
+]
