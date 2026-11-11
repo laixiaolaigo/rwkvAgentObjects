@@ -1,73 +1,152 @@
 ﻿[
     {
-        "创建用户名": "cgisky1980",
-        "作者备注": {
-            "en": "Ai00-X ecosystem maintainer",
-            "zh": "Ai00-X生态维护者"
-        },
-        "用户头像": "https://avatars.githubusercontent.com/u/82481660?v=4",
-        "GitHub地址": "https://github.com/cgisky1980/ai00-x-client",
-        "项目名称": "ai00-x-client",
-        "创建时间": "2026-08-12T06:11:04Z",
-        "最后更新时间": "2026-11-08T10:18:28Z",
-        "主要语言": "Rust",
+        "创建用户名": "Nice0o0",
+        "用户头像": "https://avatars.githubusercontent.com/u/70088382?v=4",
+        "GitHub地址": "https://github.com/Nice0o0/memopet",
+        "项目名称": "memopet",
+        "创建时间": "2026-09-29T11:34:53Z",
+        "最后更新时间": "2026-11-10T09:58:51Z",
+        "主要语言": "Python",
         "许可证": "MIT",
-        "Stars": 5,
+        "Stars": 0,
         "Watch": 0,
-        "Fork": 2,
+        "Fork": 0,
         "项目类型": {
-            "en": "Cross-platform RWKV AI assistant and Agent desktop client",
-            "zh": "跨平台RWKV AI助理与Agent桌面客户端"
+            "en": "RWKV persistent-state virtual companion",
+            "zh": "RWKV持久状态电子宠物"
         },
         "介绍": {
-            "en": "A Tauri 2 desktop client built with Rust and TypeScript. It combines local RWKV inference with remote AI APIs and provides a personal assistant, coding agent, knowledge-work agent, and Markdown-defined custom agents. The application also integrates long-term memory, tool-enabled workflows, Skills, MCP, and remote access through phone browsers and messaging platforms.",
-            "zh": "使用Rust和TypeScript构建的Tauri 2桌面客户端。它将本地RWKV推理与远程AI API结合，提供个人助理、Coding Agent、知识工作Agent和通过Markdown定义的自定义Agent；同时集成长时记忆、工具工作流、Skills、MCP，并支持手机浏览器及消息平台远程访问。"
+            "en": "A virtual pet whose memory is an RWKV-7 recurrent-state tensor. Experiences shape its state, which can be saved, restored, exported, and forked into independently evolving companions.",
+            "zh": "以RWKV-7循环状态张量作为记忆的电子宠物。交互经历塑造状态，可保存、恢复、导出，或分身为独立成长的伙伴。"
         },
         "Agent循环判断": {
-            "en": "Defines several executable Agent modes. The Code Agent can autonomously read, edit, run, verify, debug, and review; the personal assistant orchestrates Code, Cowork, and custom Agents; and the system supports tool calls, memory, Skills, MCP, and remote commands. Local RWKV inference is used first, with routing to remote models for tasks that need stronger capabilities.",
-            "zh": "定义了多种可执行的Agent模式。Code Agent能够自主读取、编辑、运行、验证、调试和审查；个人助理可按需编排Code、Cowork及自定义Agent；系统还支持工具调用、记忆、Skills、MCP和远程命令。默认优先使用本地RWKV推理，复杂任务再路由到更强的远程模型。"
+            "en": "Updates persistent recurrent state through interactions and idle-triggered dreams. It is a stateful companion application rather than a general-purpose tool-execution Agent.",
+            "zh": "通过交互和空闲触发的梦机制更新持久循环状态，属于有状态陪伴应用，而非通用工具执行Agent。"
         },
         "主要能力": {
             "en": [
-                "Personal assistant with long-term memory",
-                "Autonomous coding Agent with read/edit/run/verify workflows",
-                "Knowledge-work Agent for PDF, DOCX, XLSX, and PPTX",
-                "Custom Agents defined with Markdown",
-                "RWKV local inference with remote-model fallback",
-                "Skills, MCP, desktop companion, and remote access"
+                "Persistent RWKV memory and streaming conversations",
+                "Dream generation and persona states",
+                "State saves, restoration, export, and forking"
             ],
             "zh": [
-                "带长时记忆的个人助理",
-                "支持读取/编辑/运行/验证工作流的自主Coding Agent",
-                "处理PDF、DOCX、XLSX和PPTX的知识工作Agent",
-                "通过Markdown定义自定义Agent",
-                "RWKV本地推理与远程模型回退",
-                "Skills、MCP、桌面伴侣和远程访问"
+                "持久RWKV记忆与流式对话",
+                "梦机制与人格状态",
+                "状态存档、恢复、导出与分身"
+            ]
+        },
+        "已知限制": {
+            "en": [
+                "Requires stateswap, compatible model weights, and a supported local runtime",
+                "Small-model factual recall is limited"
+            ],
+            "zh": [
+                "需要stateswap、兼容模型权重及本地运行时",
+                "小模型对事实的记忆能力有限"
             ]
         },
         "支持平台": {
-            "en": "Windows, macOS, and Linux; local RWKV support is optimized for available platform backends",
-            "zh": "Windows、macOS和Linux；本地RWKV支持根据平台后端进行适配"
+            "en": "Python 3.12 and local NVIDIA GPU inference with a web interface",
+            "zh": "Python 3.12、本地NVIDIA GPU推理与网页界面"
+        },
+        "信息来源": {
+            "en": [
+                "GitHub repository metadata and public counters",
+                "Project README",
+                "Source review: memopet/pet.py"
+            ],
+            "zh": [
+                "GitHub仓库元数据与公开计数",
+                "项目README",
+                "源码核验：memopet/pet.py"
+            ]
+        },
+        "分类结论": {
+            "en": "Agent companion application",
+            "zh": "Agent陪伴应用"
+        },
+        "分类依据": {
+            "en": "Updates persistent recurrent state through interactions and idle-triggered dreams. It is a stateful companion application rather than a general-purpose tool-execution Agent.",
+            "zh": "提供跨重启持久状态、交互、梦机制、分身和存档，依赖 stateswap 及本地 RWKV 权重；适合交互应用分类。"
+        }
+    },
+    {
+        "创建用户名": "Nice0o0",
+        "用户头像": "https://avatars.githubusercontent.com/u/70088382?v=4",
+        "GitHub地址": "https://github.com/Nice0o0/stateswap",
+        "项目名称": "stateswap",
+        "创建时间": "2026-08-30T15:28:20Z",
+        "最后更新时间": "2026-11-10T09:58:48Z",
+        "主要语言": "Python",
+        "许可证": "MIT",
+        "Stars": 1,
+        "Watch": 1,
+        "Fork": 0,
+        "项目类型": {
+            "en": "RWKV persona-state training and hot-swap runtime",
+            "zh": "RWKV人格状态训练与热切换运行时"
+        },
+        "介绍": {
+            "en": "An RWKV-7 initial-state tuning and serving project. It freezes the base-model weights, trains compact S0 states for personas or task modes, and hot-swaps them per session through an OpenAI-compatible API and WebUI. It also provides state mixing, low-rank and int8 compression, O(1) recurrent multi-turn sessions, evaluation tools, and reproducible state-behavior research.",
+            "zh": "面向RWKV-7的初始状态微调与服务项目。它冻结基座模型权重，为人格或任务模式训练紧凑的S0状态，并通过OpenAI兼容API与WebUI按Session热切换；同时提供状态混合、低秩与int8压缩、O(1)循环多轮会话、评测工具及可复现的状态行为研究。"
+        },
+        "Agent循环判断": {
+            "en": "The repository does not implement an autonomous plan-act-observe tool loop. Its session state, persona registry, hot-swap API, and task-mode states can serve as identity and recurrent-memory infrastructure inside an agent system, but external orchestration is required for tool selection and execution.",
+            "zh": "仓库没有实现自主的“规划、行动、观察”工具循环。其Session状态、人格注册表、热切换API与任务模式状态可作为Agent系统中的身份和循环记忆基础设施，但工具选择与执行仍需要外部编排。"
+        },
+        "主要能力": {
+            "en": [
+                "S0 state tuning for personas, styles, and task modes with frozen model weights",
+                "Millisecond persona hot-swap and per-session O(1) recurrent conversation state",
+                "OpenAI-compatible API, streaming chat WebUI, persona mixer, and training interface",
+                "Int8 and low-rank state compression plus state arithmetic and editing",
+                "Reproducible evaluation and research artifacts for RWKV initial-state behavior"
+            ],
+            "zh": [
+                "冻结模型权重的人格、风格与任务模式S0状态微调",
+                "毫秒级人格热切换与每Session O(1)循环会话状态",
+                "OpenAI兼容API、流式聊天WebUI、人格混合器与训练界面",
+                "int8与低秩状态压缩，以及状态算术和编辑",
+                "可复现的RWKV初始状态行为评测与研究产物"
+            ]
+        },
+        "已知限制": {
+            "en": [
+                "Not a complete autonomous agent and does not provide a tool-execution loop",
+                "S0 tuning changes behavior and task priors but cannot add new factual knowledge",
+                "The documented reproduction stack targets Windows or Linux with an NVIDIA GPU and Python 3.12+",
+                "Conversation quality remains bounded by the frozen base model"
+            ],
+            "zh": [
+                "不是完整自主Agent，也不提供工具执行循环",
+                "S0微调可改变行为与任务先验，但不能注入新的事实知识",
+                "文档中的复现环境主要面向Windows或Linux、NVIDIA GPU与Python 3.12+",
+                "会话质量仍受冻结基座模型能力上限约束"
+            ]
+        },
+        "支持平台": {
+            "en": "Documented for Windows and Linux with NVIDIA CUDA GPUs; exposes local Python, HTTP API, and browser WebUI interfaces",
+            "zh": "文档主要支持Windows与Linux上的NVIDIA CUDA GPU，并提供本地Python、HTTP API和浏览器WebUI接口"
         },
         "信息来源": {
             "en": [
                 "GitHub repository metadata",
-                "Project README",
-                "Repository Agent and runtime architecture"
+                "Project README and architecture documentation",
+                "Published benchmark and research reports in the repository"
             ],
             "zh": [
                 "GitHub仓库元数据",
-                "项目README",
-                "仓库中的Agent与运行时架构"
+                "项目README与架构文档",
+                "仓库内发布的基准与研究报告"
             ]
         },
         "分类结论": {
-            "en": "Strict Agent",
-            "zh": "严格Agent"
+            "en": "Agent persona and state infrastructure",
+            "zh": "Agent人格与状态基础设施"
         },
         "分类依据": {
-            "en": "The repository provides runnable Agent roles with explicit tool-use and autonomous execution workflows, rather than only exposing an RWKV inference engine.",
-            "zh": "仓库提供可运行的多种Agent角色，并实现明确的工具使用和自主执行工作流，不只是提供RWKV推理引擎。"
+            "en": "The project provides reusable persona, task-mode, and recurrent-session state infrastructure that can materially shape an RWKV agent, but it does not independently choose tools or run an autonomous agent loop.",
+            "zh": "项目提供可复用的人格、任务模式与循环Session状态基础设施，能够实质性支撑RWKV Agent，但自身不负责工具选择，也不运行自主Agent循环。"
         }
     },
     {
@@ -76,12 +155,12 @@
         "GitHub地址": "https://github.com/No-22-Github/dsh-rwkv-plugin",
         "项目名称": "dsh-rwkv-plugin",
         "创建时间": "2026-11-03T11:41:16Z",
-        "最后更新时间": "2026-11-08T02:32:33Z",
+        "最后更新时间": "2026-11-10T08:30:34Z",
         "主要语言": "TypeScript",
         "许可证": "MIT",
         "Stars": 0,
         "Watch": 0,
-        "Fork": 0,
+        "Fork": 1,
         "项目类型": {
             "en": "RWKV Agent plugin for DeepSeek Harness",
             "zh": "DeepSeek Harness的RWKV Agent插件"
@@ -155,6 +234,77 @@
         "分类依据": {
             "en": "RWKV selects actions from tool definitions and consumes tool observations in a repeated execution loop hosted by DeepSeek Harness. The plugin supplies the Agent protocol, output parsing, retries, and loop guards, enabling executable main-Agent and subagent workflows.",
             "zh": "RWKV根据工具定义选择动作，并在DeepSeek Harness承载的持续执行循环中读取工具观察结果；插件提供Agent协议、输出解析、重试和循环保护，形成可执行的主Agent与子Agent工作流。"
+        }
+    },
+    {
+        "创建用户名": "cgisky1980",
+        "作者备注": {
+            "en": "Ai00-X ecosystem maintainer",
+            "zh": "Ai00-X生态维护者"
+        },
+        "用户头像": "https://avatars.githubusercontent.com/u/82481660?v=4",
+        "GitHub地址": "https://github.com/cgisky1980/ai00-x-client",
+        "项目名称": "ai00-x-client",
+        "创建时间": "2026-08-12T06:11:04Z",
+        "最后更新时间": "2026-11-09T09:52:16Z",
+        "主要语言": "Rust",
+        "许可证": "MIT",
+        "Stars": 5,
+        "Watch": 0,
+        "Fork": 2,
+        "项目类型": {
+            "en": "Cross-platform RWKV AI assistant and Agent desktop client",
+            "zh": "跨平台RWKV AI助理与Agent桌面客户端"
+        },
+        "介绍": {
+            "en": "A Tauri 2 desktop client built with Rust and TypeScript. It combines local RWKV inference with remote AI APIs and provides a personal assistant, coding agent, knowledge-work agent, and Markdown-defined custom agents. The application also integrates long-term memory, tool-enabled workflows, Skills, MCP, and remote access through phone browsers and messaging platforms.",
+            "zh": "使用Rust和TypeScript构建的Tauri 2桌面客户端。它将本地RWKV推理与远程AI API结合，提供个人助理、Coding Agent、知识工作Agent和通过Markdown定义的自定义Agent；同时集成长时记忆、工具工作流、Skills、MCP，并支持手机浏览器及消息平台远程访问。"
+        },
+        "Agent循环判断": {
+            "en": "Defines several executable Agent modes. The Code Agent can autonomously read, edit, run, verify, debug, and review; the personal assistant orchestrates Code, Cowork, and custom Agents; and the system supports tool calls, memory, Skills, MCP, and remote commands. Local RWKV inference is used first, with routing to remote models for tasks that need stronger capabilities.",
+            "zh": "定义了多种可执行的Agent模式。Code Agent能够自主读取、编辑、运行、验证、调试和审查；个人助理可按需编排Code、Cowork及自定义Agent；系统还支持工具调用、记忆、Skills、MCP和远程命令。默认优先使用本地RWKV推理，复杂任务再路由到更强的远程模型。"
+        },
+        "主要能力": {
+            "en": [
+                "Personal assistant with long-term memory",
+                "Autonomous coding Agent with read/edit/run/verify workflows",
+                "Knowledge-work Agent for PDF, DOCX, XLSX, and PPTX",
+                "Custom Agents defined with Markdown",
+                "RWKV local inference with remote-model fallback",
+                "Skills, MCP, desktop companion, and remote access"
+            ],
+            "zh": [
+                "带长时记忆的个人助理",
+                "支持读取/编辑/运行/验证工作流的自主Coding Agent",
+                "处理PDF、DOCX、XLSX和PPTX的知识工作Agent",
+                "通过Markdown定义自定义Agent",
+                "RWKV本地推理与远程模型回退",
+                "Skills、MCP、桌面伴侣和远程访问"
+            ]
+        },
+        "支持平台": {
+            "en": "Windows, macOS, and Linux; local RWKV support is optimized for available platform backends",
+            "zh": "Windows、macOS和Linux；本地RWKV支持根据平台后端进行适配"
+        },
+        "信息来源": {
+            "en": [
+                "GitHub repository metadata",
+                "Project README",
+                "Repository Agent and runtime architecture"
+            ],
+            "zh": [
+                "GitHub仓库元数据",
+                "项目README",
+                "仓库中的Agent与运行时架构"
+            ]
+        },
+        "分类结论": {
+            "en": "Strict Agent",
+            "zh": "严格Agent"
+        },
+        "分类依据": {
+            "en": "The repository provides runnable Agent roles with explicit tool-use and autonomous execution workflows, rather than only exposing an RWKV inference engine.",
+            "zh": "仓库提供可运行的多种Agent角色，并实现明确的工具使用和自主执行工作流，不只是提供RWKV推理引擎。"
         }
     },
     {
@@ -417,77 +567,6 @@
         }
     },
     {
-        "创建用户名": "Nice0o0",
-        "用户头像": "https://avatars.githubusercontent.com/u/70088382?v=4",
-        "GitHub地址": "https://github.com/Nice0o0/memopet",
-        "项目名称": "memopet",
-        "创建时间": "2026-09-29T11:34:53Z",
-        "最后更新时间": "2026-11-01T06:17:17Z",
-        "主要语言": "Python",
-        "许可证": "MIT",
-        "Stars": 0,
-        "Watch": 0,
-        "Fork": 0,
-        "项目类型": {
-            "en": "RWKV persistent-state virtual companion",
-            "zh": "RWKV持久状态电子宠物"
-        },
-        "介绍": {
-            "en": "A virtual pet whose memory is an RWKV-7 recurrent-state tensor. Experiences shape its state, which can be saved, restored, exported, and forked into independently evolving companions.",
-            "zh": "以RWKV-7循环状态张量作为记忆的电子宠物。交互经历塑造状态，可保存、恢复、导出，或分身为独立成长的伙伴。"
-        },
-        "Agent循环判断": {
-            "en": "Updates persistent recurrent state through interactions and idle-triggered dreams. It is a stateful companion application rather than a general-purpose tool-execution Agent.",
-            "zh": "通过交互和空闲触发的梦机制更新持久循环状态，属于有状态陪伴应用，而非通用工具执行Agent。"
-        },
-        "主要能力": {
-            "en": [
-                "Persistent RWKV memory and streaming conversations",
-                "Dream generation and persona states",
-                "State saves, restoration, export, and forking"
-            ],
-            "zh": [
-                "持久RWKV记忆与流式对话",
-                "梦机制与人格状态",
-                "状态存档、恢复、导出与分身"
-            ]
-        },
-        "已知限制": {
-            "en": [
-                "Requires stateswap, compatible model weights, and a supported local runtime",
-                "Small-model factual recall is limited"
-            ],
-            "zh": [
-                "需要stateswap、兼容模型权重及本地运行时",
-                "小模型对事实的记忆能力有限"
-            ]
-        },
-        "支持平台": {
-            "en": "Python 3.12 and local NVIDIA GPU inference with a web interface",
-            "zh": "Python 3.12、本地NVIDIA GPU推理与网页界面"
-        },
-        "信息来源": {
-            "en": [
-                "GitHub repository metadata and public counters",
-                "Project README",
-                "Source review: memopet/pet.py"
-            ],
-            "zh": [
-                "GitHub仓库元数据与公开计数",
-                "项目README",
-                "源码核验：memopet/pet.py"
-            ]
-        },
-        "分类结论": {
-            "en": "Agent companion application",
-            "zh": "Agent陪伴应用"
-        },
-        "分类依据": {
-            "en": "Updates persistent recurrent state through interactions and idle-triggered dreams. It is a stateful companion application rather than a general-purpose tool-execution Agent.",
-            "zh": "提供跨重启持久状态、交互、梦机制、分身和存档，依赖 stateswap 及本地 RWKV 权重；适合交互应用分类。"
-        }
-    },
-    {
         "创建用户名": "ConsciousNode",
         "用户头像": "https://avatars.githubusercontent.com/u/253178376?v=4",
         "GitHub地址": "https://github.com/ConsciousNode/HTMLNLM",
@@ -554,85 +633,6 @@
         "分类依据": {
             "en": "Documents autonomous companion activities and recurrent memory experiments. These should be distinguished from a general-purpose planning and external-tool Agent loop.",
             "zh": "已在资源页；README 新增角色、内心独白和自主反思等实验，不能仅据此标成通用工具 Agent。"
-        }
-    },
-    {
-        "创建用户名": "Nice0o0",
-        "用户头像": "https://avatars.githubusercontent.com/u/70088382?v=4",
-        "GitHub地址": "https://github.com/Nice0o0/stateswap",
-        "项目名称": "stateswap",
-        "创建时间": "2026-08-30T15:28:20Z",
-        "最后更新时间": "2026-10-25T13:51:01Z",
-        "主要语言": "Python",
-        "许可证": "MIT",
-        "Stars": 1,
-        "Watch": 1,
-        "Fork": 0,
-        "项目类型": {
-            "en": "RWKV persona-state training and hot-swap runtime",
-            "zh": "RWKV人格状态训练与热切换运行时"
-        },
-        "介绍": {
-            "en": "An RWKV-7 initial-state tuning and serving project. It freezes the base-model weights, trains compact S0 states for personas or task modes, and hot-swaps them per session through an OpenAI-compatible API and WebUI. It also provides state mixing, low-rank and int8 compression, O(1) recurrent multi-turn sessions, evaluation tools, and reproducible state-behavior research.",
-            "zh": "面向RWKV-7的初始状态微调与服务项目。它冻结基座模型权重，为人格或任务模式训练紧凑的S0状态，并通过OpenAI兼容API与WebUI按Session热切换；同时提供状态混合、低秩与int8压缩、O(1)循环多轮会话、评测工具及可复现的状态行为研究。"
-        },
-        "Agent循环判断": {
-            "en": "The repository does not implement an autonomous plan-act-observe tool loop. Its session state, persona registry, hot-swap API, and task-mode states can serve as identity and recurrent-memory infrastructure inside an agent system, but external orchestration is required for tool selection and execution.",
-            "zh": "仓库没有实现自主的“规划、行动、观察”工具循环。其Session状态、人格注册表、热切换API与任务模式状态可作为Agent系统中的身份和循环记忆基础设施，但工具选择与执行仍需要外部编排。"
-        },
-        "主要能力": {
-            "en": [
-                "S0 state tuning for personas, styles, and task modes with frozen model weights",
-                "Millisecond persona hot-swap and per-session O(1) recurrent conversation state",
-                "OpenAI-compatible API, streaming chat WebUI, persona mixer, and training interface",
-                "Int8 and low-rank state compression plus state arithmetic and editing",
-                "Reproducible evaluation and research artifacts for RWKV initial-state behavior"
-            ],
-            "zh": [
-                "冻结模型权重的人格、风格与任务模式S0状态微调",
-                "毫秒级人格热切换与每Session O(1)循环会话状态",
-                "OpenAI兼容API、流式聊天WebUI、人格混合器与训练界面",
-                "int8与低秩状态压缩，以及状态算术和编辑",
-                "可复现的RWKV初始状态行为评测与研究产物"
-            ]
-        },
-        "已知限制": {
-            "en": [
-                "Not a complete autonomous agent and does not provide a tool-execution loop",
-                "S0 tuning changes behavior and task priors but cannot add new factual knowledge",
-                "The documented reproduction stack targets Windows or Linux with an NVIDIA GPU and Python 3.12+",
-                "Conversation quality remains bounded by the frozen base model"
-            ],
-            "zh": [
-                "不是完整自主Agent，也不提供工具执行循环",
-                "S0微调可改变行为与任务先验，但不能注入新的事实知识",
-                "文档中的复现环境主要面向Windows或Linux、NVIDIA GPU与Python 3.12+",
-                "会话质量仍受冻结基座模型能力上限约束"
-            ]
-        },
-        "支持平台": {
-            "en": "Documented for Windows and Linux with NVIDIA CUDA GPUs; exposes local Python, HTTP API, and browser WebUI interfaces",
-            "zh": "文档主要支持Windows与Linux上的NVIDIA CUDA GPU，并提供本地Python、HTTP API和浏览器WebUI接口"
-        },
-        "信息来源": {
-            "en": [
-                "GitHub repository metadata",
-                "Project README and architecture documentation",
-                "Published benchmark and research reports in the repository"
-            ],
-            "zh": [
-                "GitHub仓库元数据",
-                "项目README与架构文档",
-                "仓库内发布的基准与研究报告"
-            ]
-        },
-        "分类结论": {
-            "en": "Agent persona and state infrastructure",
-            "zh": "Agent人格与状态基础设施"
-        },
-        "分类依据": {
-            "en": "The project provides reusable persona, task-mode, and recurrent-session state infrastructure that can materially shape an RWKV agent, but it does not independently choose tools or run an autonomous agent loop.",
-            "zh": "项目提供可复用的人格、任务模式与循环Session状态基础设施，能够实质性支撑RWKV Agent，但自身不负责工具选择，也不运行自主Agent循环。"
         }
     },
     {
@@ -1174,7 +1174,7 @@
         "最后更新时间": "2026-09-22T10:32:18Z",
         "主要语言": "Python",
         "许可证": "MIT",
-        "Stars": 4,
+        "Stars": 5,
         "Watch": 0,
         "Fork": 0,
         "项目类型": {

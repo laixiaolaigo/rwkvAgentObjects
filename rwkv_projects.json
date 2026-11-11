@@ -1,5 +1,152 @@
 [
   {
+    "repositoryUrl": "https://github.com/v3ucn/RWKV_Role_Playing_with_GPT-SoVITS",
+    "owner": "v3ucn",
+    "name": "RWKV_Role_Playing_with_GPT-SoVITS",
+    "category": "package",
+    "summary": {
+      "en": "RWKV role-playing application with GPT-SoVITS voice conversations.",
+      "zh": "集成 GPT-SoVITS 语音对话的 RWKV 角色扮演应用。"
+    },
+    "lastUpdated": "2026-11-11T00:55:06Z",
+    "stars": 30,
+    "watchers": 1,
+    "forks": 2,
+    "language": "Python",
+    "license": "GPL-3.0",
+    "sourcePage": 8,
+    "projectType": {
+      "en": "End-user application",
+      "zh": "终端应用"
+    }
+  },
+  {
+    "repositoryUrl": "https://github.com/v3ucn/RWKV_3B_7B_Webui_GPT-SoVITS",
+    "owner": "v3ucn",
+    "name": "RWKV_3B_7B_Webui_GPT-SoVITS",
+    "category": "package",
+    "summary": {
+      "en": "Local RWKV writing web interface with GPT-SoVITS speech output.",
+      "zh": "集成 GPT-SoVITS 朗读的本地 RWKV 写作 Web 界面。"
+    },
+    "lastUpdated": "2026-11-11T00:46:06Z",
+    "stars": 60,
+    "watchers": 2,
+    "forks": 8,
+    "language": "Python",
+    "license": "MIT",
+    "sourcePage": 8,
+    "projectType": {
+      "en": "RWKV utility",
+      "zh": "RWKV 工具"
+    }
+  },
+  {
+    "repositoryUrl": "https://github.com/Alic-Li/rwkv_lightning_cuda",
+    "owner": "Alic-Li",
+    "name": "rwkv_lightning_cuda",
+    "category": "inference",
+    "summary": {
+      "en": "The fastest pure C++ GPU runtime for RWKV — zero PyTorch, one-command deployment, CUDA/ROCm inference, quantization, state tuning & serving.🕊",
+      "zh": "rwkv_lightning_cuda 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2026-11-10T15:59:52Z",
+    "stars": 13,
+    "watchers": 0,
+    "forks": 2,
+    "language": "C++",
+    "license": null,
+    "sourcePage": 1,
+    "projectType": {
+      "en": "Inference service",
+      "zh": "推理服务"
+    }
+  },
+  {
+    "repositoryUrl": "https://github.com/RWKV-APP/RWKV_APP",
+    "owner": "RWKV-APP",
+    "name": "RWKV_APP",
+    "category": "package",
+    "summary": {
+      "en": "Cross-platform, local-first RWKV chat application for Android, iOS, Windows, macOS, and Linux.",
+      "zh": "面向 Android、iOS、Windows、macOS 与 Linux 的跨平台、本地优先 RWKV 聊天应用。"
+    },
+    "lastUpdated": "2026-11-10T15:46:25Z",
+    "stars": 135,
+    "watchers": 3,
+    "forks": 15,
+    "language": "Dart",
+    "license": "Apache-2.0",
+    "sourcePage": 1,
+    "projectType": {
+      "en": "End-user application",
+      "zh": "终端应用"
+    }
+  },
+  {
+    "repositoryUrl": "https://github.com/youzow3/onnx_rwkv",
+    "owner": "youzow3",
+    "name": "onnx_rwkv",
+    "category": "inference",
+    "summary": {
+      "en": "onnx_rwkv provides RWKV inference, deployment, runtime, or serving support.",
+      "zh": "onnx_rwkv 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2026-11-09T12:44:15Z",
+    "stars": 3,
+    "watchers": 1,
+    "forks": 0,
+    "language": "Python",
+    "license": "MIT",
+    "sourcePage": 1,
+    "projectType": {
+      "en": "Inference service",
+      "zh": "推理服务"
+    }
+  },
+  {
+    "repositoryUrl": "https://github.com/cgisky1980/rwkv-rsv",
+    "owner": "cgisky1980",
+    "name": "rwkv-rsv",
+    "category": "inference",
+    "summary": {
+      "en": "RWKV-7 inference engine in Rust (Vulkan compute shaders) with fp16/any4/int8 quantization paths",
+      "zh": "rwkv-rsv 提供 RWKV 模型推理、部署、运行时或服务支持。"
+    },
+    "lastUpdated": "2026-11-09T08:36:30Z",
+    "stars": 4,
+    "watchers": 0,
+    "forks": 0,
+    "language": "Rust",
+    "license": "MIT",
+    "sourcePage": 1,
+    "projectType": {
+      "en": "Quantization and compression",
+      "zh": "量化与压缩"
+    }
+  },
+  {
+    "repositoryUrl": "https://github.com/Pangu-Immortal/MagicWX",
+    "owner": "Pangu-Immortal",
+    "name": "MagicWX",
+    "category": "package",
+    "summary": {
+      "en": "Android 17 local LLM prototype with Jetpack Compose and ONNX Runtime for offline AI inference experiments.",
+      "zh": "MagicWX 是面向 RWKV 用户的易用应用或开箱即用工具。"
+    },
+    "lastUpdated": "2026-11-09T07:39:46Z",
+    "stars": 863,
+    "watchers": 24,
+    "forks": 363,
+    "language": "Kotlin",
+    "license": "MIT",
+    "sourcePage": 1,
+    "projectType": {
+      "en": "End-user application",
+      "zh": "终端应用"
+    }
+  },
+  {
     "repositoryUrl": "https://github.com/btlqql/sglang-rwkv7",
     "owner": "btlqql",
     "name": "sglang-rwkv7",
@@ -18,69 +165,6 @@
     "projectType": {
       "en": "Inference service",
       "zh": "推理服务"
-    }
-  },
-  {
-    "repositoryUrl": "https://github.com/Alic-Li/rwkv_lightning_cuda",
-    "owner": "Alic-Li",
-    "name": "rwkv_lightning_cuda",
-    "category": "inference",
-    "summary": {
-      "en": "The fastest pure C++ GPU runtime for RWKV — zero PyTorch, one-command deployment, CUDA/ROCm inference, quantization, state tuning & serving.🕊",
-      "zh": "rwkv_lightning_cuda 提供 RWKV 模型推理、部署、运行时或服务支持。"
-    },
-    "lastUpdated": "2026-11-09T00:38:55Z",
-    "stars": 13,
-    "watchers": 0,
-    "forks": 2,
-    "language": "C++",
-    "license": null,
-    "sourcePage": 1,
-    "projectType": {
-      "en": "Inference service",
-      "zh": "推理服务"
-    }
-  },
-  {
-    "repositoryUrl": "https://github.com/cgisky1980/rwkv-rsv",
-    "owner": "cgisky1980",
-    "name": "rwkv-rsv",
-    "category": "inference",
-    "summary": {
-      "en": "RWKV-7 inference engine in Rust (Vulkan compute shaders) with fp16/any4/int8 quantization paths",
-      "zh": "rwkv-rsv 提供 RWKV 模型推理、部署、运行时或服务支持。"
-    },
-    "lastUpdated": "2026-11-08T23:59:22Z",
-    "stars": 4,
-    "watchers": 0,
-    "forks": 0,
-    "language": "Rust",
-    "license": "MIT",
-    "sourcePage": 1,
-    "projectType": {
-      "en": "Quantization and compression",
-      "zh": "量化与压缩"
-    }
-  },
-  {
-    "repositoryUrl": "https://github.com/RWKV-APP/RWKV_APP",
-    "owner": "RWKV-APP",
-    "name": "RWKV_APP",
-    "category": "package",
-    "summary": {
-      "en": "Cross-platform, local-first RWKV chat application for Android, iOS, Windows, macOS, and Linux.",
-      "zh": "面向 Android、iOS、Windows、macOS 与 Linux 的跨平台、本地优先 RWKV 聊天应用。"
-    },
-    "lastUpdated": "2026-11-08T17:55:54Z",
-    "stars": 132,
-    "watchers": 4,
-    "forks": 15,
-    "language": "Dart",
-    "license": "Apache-2.0",
-    "sourcePage": 1,
-    "projectType": {
-      "en": "End-user application",
-      "zh": "终端应用"
     }
   },
   {
@@ -114,7 +198,7 @@
       "zh": "RWKV 语言模型主仓库，包含模型架构、训练代码、CUDA 内核与示例。"
     },
     "lastUpdated": "2026-11-04T10:19:05Z",
-    "stars": 14772,
+    "stars": 14773,
     "watchers": 136,
     "forks": 1026,
     "language": "Python",
@@ -156,7 +240,7 @@
       "zh": "带桌面界面和 OpenAI 兼容 API 的 RWKV 自动化管理与启动工具。"
     },
     "lastUpdated": "2026-11-02T15:42:56Z",
-    "stars": 6502,
+    "stars": 6501,
     "watchers": 47,
     "forks": 593,
     "language": "TypeScript",
@@ -249,27 +333,6 @@
     "projectType": {
       "en": "Training and fine-tuning",
       "zh": "训练与微调"
-    }
-  },
-  {
-    "repositoryUrl": "https://github.com/youzow3/onnx_rwkv",
-    "owner": "youzow3",
-    "name": "onnx_rwkv",
-    "category": "inference",
-    "summary": {
-      "en": "onnx_rwkv provides RWKV inference, deployment, runtime, or serving support.",
-      "zh": "onnx_rwkv 提供 RWKV 模型推理、部署、运行时或服务支持。"
-    },
-    "lastUpdated": "2026-10-29T00:33:04Z",
-    "stars": 3,
-    "watchers": 1,
-    "forks": 0,
-    "language": "Python",
-    "license": "MIT",
-    "sourcePage": 1,
-    "projectType": {
-      "en": "Inference service",
-      "zh": "推理服务"
     }
   },
   {
@@ -492,7 +555,7 @@
       "zh": "从零构建 GLM4、Llama 3 与 RWKV-6 的中文实践课程。"
     },
     "lastUpdated": "2026-09-17T03:01:54Z",
-    "stars": 4452,
+    "stars": 4454,
     "watchers": 37,
     "forks": 615,
     "language": "Jupyter Notebook",
@@ -606,27 +669,6 @@
     "projectType": {
       "en": "Inference runtime",
       "zh": "推理运行时"
-    }
-  },
-  {
-    "repositoryUrl": "https://github.com/Pangu-Immortal/MagicWX",
-    "owner": "Pangu-Immortal",
-    "name": "MagicWX",
-    "category": "package",
-    "summary": {
-      "en": "Android 17 local LLM prototype with Jetpack Compose and ONNX Runtime for offline AI inference experiments.",
-      "zh": "MagicWX 是面向 RWKV 用户的易用应用或开箱即用工具。"
-    },
-    "lastUpdated": "2026-09-06T07:21:39Z",
-    "stars": 863,
-    "watchers": 24,
-    "forks": 363,
-    "language": "Kotlin",
-    "license": "MIT",
-    "sourcePage": 1,
-    "projectType": {
-      "en": "End-user application",
-      "zh": "终端应用"
     }
   },
   {
@@ -891,9 +933,9 @@
       "zh": "rwkv_lightning 提供 RWKV 模型推理、部署、运行时或服务支持。"
     },
     "lastUpdated": "2026-07-27T09:02:47Z",
-    "stars": 36,
+    "stars": 37,
     "watchers": 1,
-    "forks": 9,
+    "forks": 10,
     "language": "Python",
     "license": null,
     "sourcePage": 2,
@@ -954,7 +996,7 @@
       "zh": "用于本地运行 RWKV 语言模型的参考聊天与推理实现。"
     },
     "lastUpdated": "2026-07-19T19:09:29Z",
-    "stars": 9486,
+    "stars": 9487,
     "watchers": 91,
     "forks": 685,
     "language": "Python",
@@ -1206,7 +1248,7 @@
       "zh": "web-rwkv 提供 RWKV 模型推理、部署、运行时或服务支持。"
     },
     "lastUpdated": "2026-06-01T06:59:20Z",
-    "stars": 360,
+    "stars": 361,
     "watchers": 6,
     "forks": 36,
     "language": "Rust",
@@ -1290,7 +1332,7 @@
       "zh": "RWKV State Tuning 的教程材料与示例。"
     },
     "lastUpdated": "2026-05-15T02:54:48Z",
-    "stars": 2,
+    "stars": 3,
     "watchers": 0,
     "forks": 0,
     "language": "Jupyter Notebook",
@@ -1626,7 +1668,7 @@
       "zh": "可在 iOS 与 macOS 离线运行 RWKV 等本地语言模型的应用。"
     },
     "lastUpdated": "2026-01-30T20:52:36Z",
-    "stars": 2079,
+    "stars": 2080,
     "watchers": 26,
     "forks": 188,
     "language": "C",
@@ -2109,7 +2151,7 @@
       "zh": "使用 RWKV 中文预训练生成模型的小说写作应用。"
     },
     "lastUpdated": "2025-05-15T10:31:45Z",
-    "stars": 3933,
+    "stars": 3934,
     "watchers": 51,
     "forks": 569,
     "language": "Python",
@@ -2256,7 +2298,7 @@
       "zh": "支持 INT4、INT5、INT8 与 FP16 的 RWKV 量化 CPU 推理运行时。"
     },
     "lastUpdated": "2025-03-23T05:04:42Z",
-    "stars": 1590,
+    "stars": 1591,
     "watchers": 23,
     "forks": 131,
     "language": "C++",
@@ -2940,48 +2982,6 @@
     }
   },
   {
-    "repositoryUrl": "https://github.com/v3ucn/RWKV_Role_Playing_with_GPT-SoVITS",
-    "owner": "v3ucn",
-    "name": "RWKV_Role_Playing_with_GPT-SoVITS",
-    "category": "package",
-    "summary": {
-      "en": "RWKV role-playing application with GPT-SoVITS voice conversations.",
-      "zh": "集成 GPT-SoVITS 语音对话的 RWKV 角色扮演应用。"
-    },
-    "lastUpdated": "2024-04-08T11:21:58Z",
-    "stars": 30,
-    "watchers": 1,
-    "forks": 2,
-    "language": "Python",
-    "license": "GPL-3.0",
-    "sourcePage": 8,
-    "projectType": {
-      "en": "End-user application",
-      "zh": "终端应用"
-    }
-  },
-  {
-    "repositoryUrl": "https://github.com/v3ucn/RWKV_3B_7B_Webui_GPT-SoVITS",
-    "owner": "v3ucn",
-    "name": "RWKV_3B_7B_Webui_GPT-SoVITS",
-    "category": "package",
-    "summary": {
-      "en": "Local RWKV writing web interface with GPT-SoVITS speech output.",
-      "zh": "集成 GPT-SoVITS 朗读的本地 RWKV 写作 Web 界面。"
-    },
-    "lastUpdated": "2024-04-04T07:30:25Z",
-    "stars": 60,
-    "watchers": 2,
-    "forks": 8,
-    "language": "Python",
-    "license": "MIT",
-    "sourcePage": 8,
-    "projectType": {
-      "en": "RWKV utility",
-      "zh": "RWKV 工具"
-    }
-  },
-  {
     "repositoryUrl": "https://github.com/OpenMOSE/RWKV5-LM-LoRA",
     "owner": "OpenMOSE",
     "name": "RWKV5-LM-LoRA",
@@ -3054,7 +3054,7 @@
       "zh": "rwkv-cpp-accelerated 提供 RWKV 模型推理、部署、运行时或服务支持。"
     },
     "lastUpdated": "2024-01-31T05:43:31Z",
-    "stars": 314,
+    "stars": 315,
     "watchers": 11,
     "forks": 20,
     "language": "C++",
