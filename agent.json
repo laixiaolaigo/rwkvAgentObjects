@@ -5,7 +5,7 @@
         "GitHub地址": "https://github.com/Nice0o0/memopet",
         "项目名称": "memopet",
         "创建时间": "2026-09-29T11:34:53Z",
-        "最后更新时间": "2026-11-10T09:58:51Z",
+        "最后更新时间": "2026-11-15T15:45:34Z",
         "主要语言": "Python",
         "许可证": "MIT",
         "Stars": 0,
@@ -76,7 +76,7 @@
         "GitHub地址": "https://github.com/Nice0o0/stateswap",
         "项目名称": "stateswap",
         "创建时间": "2026-08-30T15:28:20Z",
-        "最后更新时间": "2026-11-10T09:58:48Z",
+        "最后更新时间": "2026-11-15T15:41:59Z",
         "主要语言": "Python",
         "许可证": "MIT",
         "Stars": 1,
@@ -155,10 +155,10 @@
         "GitHub地址": "https://github.com/No-22-Github/dsh-rwkv-plugin",
         "项目名称": "dsh-rwkv-plugin",
         "创建时间": "2026-11-03T11:41:16Z",
-        "最后更新时间": "2026-11-10T08:30:34Z",
+        "最后更新时间": "2026-11-14T13:27:04Z",
         "主要语言": "TypeScript",
         "许可证": "MIT",
-        "Stars": 0,
+        "Stars": 2,
         "Watch": 0,
         "Fork": 1,
         "项目类型": {
@@ -246,7 +246,7 @@
         "GitHub地址": "https://github.com/cgisky1980/ai00-x-client",
         "项目名称": "ai00-x-client",
         "创建时间": "2026-08-12T06:11:04Z",
-        "最后更新时间": "2026-11-09T09:52:16Z",
+        "最后更新时间": "2026-11-14T09:01:30Z",
         "主要语言": "Rust",
         "许可证": "MIT",
         "Stars": 5,
@@ -313,7 +313,7 @@
         "GitHub地址": "https://github.com/Vaniell0/noesis",
         "项目名称": "noesis",
         "创建时间": "2026-07-21T22:04:25Z",
-        "最后更新时间": "2026-11-07T07:09:50Z",
+        "最后更新时间": "2026-11-12T06:07:38Z",
         "主要语言": "Python",
         "许可证": "Apache-2.0",
         "Stars": 4,
@@ -328,6 +328,81 @@
         "信息来源": {"en": ["GitHub metadata", "README", "ROADMAP", "Runtime, memory, and training sources"], "zh": ["GitHub元数据", "README", "ROADMAP", "运行时、记忆与训练源码"]},
         "分类结论": {"en": "Agent boundary project", "zh": "Agent边界项目"},
         "分类依据": {"en": "Explicitly designed as an RWKV Agent runtime and therefore included under the broader Agent-related criterion despite incomplete execution loops.", "zh": "明确以RWKV Agent运行时为目标；虽然执行闭环尚不完整，但按广义Agent相关标准收录。"}
+    },
+    {
+        "创建用户名": "ehooon",
+        "用户头像": "https://avatars.githubusercontent.com/u/128581029?v=4",
+        "GitHub地址": "https://github.com/ehooon/RWKV-ECRA",
+        "项目名称": "RWKV-ECRA",
+        "创建时间": "2026-05-21T07:00:52Z",
+        "最后更新时间": "2026-11-12T02:29:18Z",
+        "主要语言": "Python",
+        "许可证": "MIT",
+        "Stars": 7,
+        "Watch": 0,
+        "Fork": 0,
+        "项目类型": {
+            "en": "Hybrid RWKV long-document research Agent",
+            "zh": "端云协同的RWKV长文本研究Agent"
+        },
+        "介绍": {
+            "en": "A research assistant combining a cloud planning model with concurrent local RWKV document processing. It searches local files and the web, extracts and reduces long inputs, and produces source-attributed analysis reports.",
+            "zh": "将云端规划模型与本地RWKV并发文档处理结合的研究助手。支持本地文件与网页检索、长文本提取压缩，以及带来源的分析报告。"
+        },
+        "Agent循环判断": {
+            "en": "The planner chooses registered actions inside a bounded orchestration loop. Tool outputs update task feedback and memory for subsequent actions. RWKV processes documents; a cloud LLM handles planning.",
+            "zh": "规划器在有界编排循环中选择已注册动作，工具输出更新任务反馈与记忆，供后续动作使用。RWKV负责文档处理，云端LLM负责规划。"
+        },
+        "主要能力": {
+            "en": [
+                "Local and web research with source tracking",
+                "Concurrent RWKV map/reduce over long documents",
+                "Task queue, working memory, and report generation"
+            ],
+            "zh": [
+                "带来源追踪的本地与网页研究",
+                "RWKV并发处理与长文Map/Reduce",
+                "任务队列、工作记忆与报告生成"
+            ]
+        },
+        "已知限制": {
+            "en": [
+                "Planning depends on configured cloud model services",
+                "Local RWKV inference needs a separately running backend and model weights"
+            ],
+            "zh": [
+                "规划依赖配置的云端模型服务",
+                "本地RWKV推理需要单独运行后端并准备模型权重"
+            ]
+        },
+        "支持平台": {
+            "en": "Python backend and web frontend, with local RWKV and cloud API services",
+            "zh": "Python后端与网页前端，配合本地RWKV及云端API服务"
+        },
+        "信息来源": {
+            "en": [
+                "GitHub repository metadata and public counters",
+                "Project README",
+                "Source review: agent/orchestrator.py",
+                "Source review: agent/planner.py",
+                "Source review: tools/registry.py"
+            ],
+            "zh": [
+                "GitHub仓库元数据与公开计数",
+                "项目README",
+                "源码核验：agent/orchestrator.py",
+                "源码核验：agent/planner.py",
+                "源码核验：tools/registry.py"
+            ]
+        },
+        "分类结论": {
+            "en": "Strict Agent",
+            "zh": "严格Agent"
+        },
+        "分类依据": {
+            "en": "The planner chooses registered actions inside a bounded orchestration loop. Tool outputs update task feedback and memory for subsequent actions. RWKV processes documents; a cloud LLM handles planning.",
+            "zh": "云端 LLM 选择行动，本地 RWKV 批量精炼文档；Orchestrator 迭代调用 ToolRegistry 并将执行结果写回 last_feedback。"
+        }
     },
     {
         "创建用户名":  "No-22-Github",
@@ -855,81 +930,6 @@
         "分类依据": {
             "en": "The project directly serves Agents through compatible HTTP and MCP interfaces and implements adaptive model selection plus a complete self-evolution feedback loop, but it does not independently plan and execute arbitrary user tasks.",
             "zh": "项目通过兼容HTTP与MCP接口直接服务Agent，实现自适应模型选择及完整自进化反馈闭环，但不会独立规划和执行任意用户任务。"
-        }
-    },
-    {
-        "创建用户名": "ehooon",
-        "用户头像": "https://avatars.githubusercontent.com/u/128581029?v=4",
-        "GitHub地址": "https://github.com/ehooon/RWKV-ECRA",
-        "项目名称": "RWKV-ECRA",
-        "创建时间": "2026-05-21T07:00:52Z",
-        "最后更新时间": "2026-10-10T07:12:41Z",
-        "主要语言": "Python",
-        "许可证": "MIT",
-        "Stars": 6,
-        "Watch": 0,
-        "Fork": 0,
-        "项目类型": {
-            "en": "Hybrid RWKV long-document research Agent",
-            "zh": "端云协同的RWKV长文本研究Agent"
-        },
-        "介绍": {
-            "en": "A research assistant combining a cloud planning model with concurrent local RWKV document processing. It searches local files and the web, extracts and reduces long inputs, and produces source-attributed analysis reports.",
-            "zh": "将云端规划模型与本地RWKV并发文档处理结合的研究助手。支持本地文件与网页检索、长文本提取压缩，以及带来源的分析报告。"
-        },
-        "Agent循环判断": {
-            "en": "The planner chooses registered actions inside a bounded orchestration loop. Tool outputs update task feedback and memory for subsequent actions. RWKV processes documents; a cloud LLM handles planning.",
-            "zh": "规划器在有界编排循环中选择已注册动作，工具输出更新任务反馈与记忆，供后续动作使用。RWKV负责文档处理，云端LLM负责规划。"
-        },
-        "主要能力": {
-            "en": [
-                "Local and web research with source tracking",
-                "Concurrent RWKV map/reduce over long documents",
-                "Task queue, working memory, and report generation"
-            ],
-            "zh": [
-                "带来源追踪的本地与网页研究",
-                "RWKV并发处理与长文Map/Reduce",
-                "任务队列、工作记忆与报告生成"
-            ]
-        },
-        "已知限制": {
-            "en": [
-                "Planning depends on configured cloud model services",
-                "Local RWKV inference needs a separately running backend and model weights"
-            ],
-            "zh": [
-                "规划依赖配置的云端模型服务",
-                "本地RWKV推理需要单独运行后端并准备模型权重"
-            ]
-        },
-        "支持平台": {
-            "en": "Python backend and web frontend, with local RWKV and cloud API services",
-            "zh": "Python后端与网页前端，配合本地RWKV及云端API服务"
-        },
-        "信息来源": {
-            "en": [
-                "GitHub repository metadata and public counters",
-                "Project README",
-                "Source review: agent/orchestrator.py",
-                "Source review: agent/planner.py",
-                "Source review: tools/registry.py"
-            ],
-            "zh": [
-                "GitHub仓库元数据与公开计数",
-                "项目README",
-                "源码核验：agent/orchestrator.py",
-                "源码核验：agent/planner.py",
-                "源码核验：tools/registry.py"
-            ]
-        },
-        "分类结论": {
-            "en": "Strict Agent",
-            "zh": "严格Agent"
-        },
-        "分类依据": {
-            "en": "The planner chooses registered actions inside a bounded orchestration loop. Tool outputs update task feedback and memory for subsequent actions. RWKV processes documents; a cloud LLM handles planning.",
-            "zh": "云端 LLM 选择行动，本地 RWKV 批量精炼文档；Orchestrator 迭代调用 ToolRegistry 并将执行结果写回 last_feedback。"
         }
     },
     {
