@@ -1,5 +1,81 @@
 ﻿[
     {
+        "创建用户名": "Fantasia-Infinity",
+        "用户头像": "https://avatars.githubusercontent.com/u/26381546?v=4",
+        "GitHub地址": "https://github.com/Fantasia-Infinity/RWKV-AgenticLearning",
+        "项目名称": "RWKV-AgenticLearning",
+        "创建时间": "2026-11-05T21:56:04Z",
+        "最后更新时间": "2026-11-19T23:17:41Z",
+        "许可证": "Apache-2.0",
+        "Stars": 0,
+        "Watch": 0,
+        "Fork": 0,
+        "项目类型": {
+            "en": "RWKV agentic SFT/RL research and multi-turn tool evaluation",
+            "zh": "RWKV Agent SFT/RL研究与多轮工具评测"
+        },
+        "介绍": {
+            "en": "Reproducible research on RWKV-7 G1l-1.5B, covering tool-call SFT, multi-turn calculator-tool experiments, DAPO RLVR, and critic-based SAO. Publishes training recipes, data builders, evaluation scripts, result JSONs, and ecosystem audits.",
+            "zh": "围绕RWKV-7 G1l-1.5B开展可复现研究，涵盖工具调用SFT、多轮计算器工具实验、DAPO RLVR和基于critic的SAO，公开训练配方、数据构建脚本、评测代码、结果JSON及生态审计。"
+        },
+        "Agent循环判断": {
+            "en": "The GSM8K-calc evaluator generates model responses across multiple turns, parses and executes calc calls, and appends tool observations to the conversation before the next generation. This is a research tool-use loop with a turn budget.",
+            "zh": "GSM8K-calc评测器支持多轮模型生成，解析并执行calc调用，再将工具观测追加到对话供下一轮生成使用，形成带轮数预算的研究型工具调用闭环。"
+        },
+        "主要能力": {
+            "en": [
+                "Tool-call SFT data construction and evaluation",
+                "Multi-turn calculator-tool rollout and evaluation",
+                "Reproducible DAPO and SAO training recipes",
+                "Published experiment results and RWKV ecosystem audits"
+            ],
+            "zh": [
+                "工具调用SFT数据构建与评测",
+                "多轮计算器工具轨迹生成与评测",
+                "可复现的DAPO与SAO训练配方",
+                "公开实验结果与RWKV生态审计"
+            ]
+        },
+        "已知限制": {
+            "en": [
+                "Experiments are paused; trained checkpoints and logs remain on the cluster and are not public",
+                "Multi-turn tool RL underperforms the SFT baseline in the reported experiments",
+                "Held-out tool tasks reuse the training task generators with a new seed",
+                "Training depends on skyrl-rwkv, compatible RWKV weights, and substantial GPU resources"
+            ],
+            "zh": [
+                "实验已暂停，训练检查点和日志保留在集群，未公开发布",
+                "已报告的多轮工具RL实验效果低于SFT基线",
+                "工具留出集复用训练任务生成器，仅更换随机种子",
+                "训练依赖skyrl-rwkv、兼容RWKV权重及较多GPU资源"
+            ]
+        },
+        "支持平台": {
+            "en": "Python and shell scripts; training recipes use skyrl-rwkv and 2×NVIDIA A100-40GB, with Slurm templates",
+            "zh": "Python与Shell脚本；训练配方使用skyrl-rwkv和2张NVIDIA A100-40GB，提供Slurm模板"
+        },
+        "信息来源": {
+            "en": [
+                "https://github.com/Fantasia-Infinity/RWKV-AgenticLearning/blob/d8b55ce5fbbf6cf0f84cbfebd13a463346db0f9c/README.md",
+                "https://github.com/Fantasia-Infinity/RWKV-AgenticLearning/blob/d8b55ce5fbbf6cf0f84cbfebd13a463346db0f9c/tools/eval_gsm8k_calc.py",
+                "https://github.com/Fantasia-Infinity/RWKV-AgenticLearning/blob/d8b55ce5fbbf6cf0f84cbfebd13a463346db0f9c/recipes/README.md"
+            ],
+            "zh": [
+                "https://github.com/Fantasia-Infinity/RWKV-AgenticLearning/blob/d8b55ce5fbbf6cf0f84cbfebd13a463346db0f9c/README.md",
+                "https://github.com/Fantasia-Infinity/RWKV-AgenticLearning/blob/d8b55ce5fbbf6cf0f84cbfebd13a463346db0f9c/tools/eval_gsm8k_calc.py",
+                "https://github.com/Fantasia-Infinity/RWKV-AgenticLearning/blob/d8b55ce5fbbf6cf0f84cbfebd13a463346db0f9c/recipes/README.md"
+            ]
+        },
+        "分类结论": {
+            "en": "Research Agent and evaluation",
+            "zh": "研究型Agent与评测"
+        },
+        "分类依据": {
+            "en": "Includes an implemented multi-turn model/tool/observation loop, reproducible SFT/RL recipes, and published results, verified through source review.",
+            "zh": "已实现多轮模型生成、工具执行与观测反馈闭环，并公开SFT/RL配方及实验结果，已通过源码核验。"
+        }
+    },
+    {
         "创建用户名": "Nice0o0",
         "用户头像": "https://avatars.githubusercontent.com/u/70088382?v=4",
         "GitHub地址": "https://github.com/Nice0o0/memopet",

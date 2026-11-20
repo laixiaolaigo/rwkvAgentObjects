@@ -40,27 +40,31 @@
   },
   {
     "repositoryUrl": "https://github.com/Fantasia-Infinity/RWKV-AgenticLearning",
-    "lastPushed": "2026-11-10T21:03:31Z",
-    "reviewedAt": "2026-11-11T06:28:51.201Z",
-    "commitSha": "07b98da735038fd44ba4d3de7a2b7267d0ed31aa",
-    "reviewStatus": "excluded",
-    "reason": "The repository is a research/audit and tooling project: it publishes an ecosystem audit, evaluation scripts, dataset builders, chat-template sync utilities, and quoted evidence from other projects (e.g. verl-rwkv). The only supplied files are audit docs, offline evaluation/data-prep scripts, and a vendored third-party config file. No supplied source implements an RWKV-driven agent loop that selects tools/actions, executes them, and consumes observations across turns. README/ROADMAP describe multi-turn agentic RL as a public gap and future roadmap (P0–P5 gates), i.e. unimplemented work, which is explicitly out of scope.",
+    "lastPushed": "2026-11-19T23:17:41Z",
+    "reviewedAt": "2026-11-20T09:39:28Z",
+    "commitSha": "d8b55ce5fbbf6cf0f84cbfebd13a463346db0f9c",
+    "reviewStatus": "included",
+    "reason": "Manually included at the user's request after reviewing the current source. The GSM8K-calc evaluator implements a multi-turn model/tool/observation loop, and the repository now publishes SFT/RL recipes and results. Listed as a research Agent and evaluation project, with unpublished checkpoints and negative multi-turn RL results disclosed.",
     "reasonLocalized": {
-      "en": "The repository is a research/audit and tooling project: it publishes an ecosystem audit, evaluation scripts, dataset builders, chat-template sync utilities, and quoted evidence from other projects (e.g. verl-rwkv). The only supplied files are audit docs, offline evaluation/data-prep scripts, and a vendored third-party config file. No supplied source implements an RWKV-driven agent loop that selects tools/actions, executes them, and consumes observations across turns. README/ROADMAP describe multi-turn agentic RL as a public gap and future roadmap (P0–P5 gates), i.e. unimplemented work, which is explicitly out of scope.",
-      "zh": "该仓库是研究/审计与工具类项目：发布生态审计、评测脚本、数据集构建脚本、聊天模板同步工具，以及引用其他项目（如 verl-rwkv）的证据文件。所提供文件仅为审计文档、离线评测/数据准备脚本和一个第三方配置文件的引用副本。没有任何提供的源代码实现了由 RWKV 驱动、能选择工具/动作、执行并跨轮消费观测的 Agent 执行循环。README/ROADMAP 将多轮 agentic RL 明确描述为公开空白和未来路线（P0–P5 门禁），属于未实现规划，按规则不纳入。"
+      "en": "Manually included at the user's request after reviewing the current source. The GSM8K-calc evaluator implements a multi-turn model/tool/observation loop, and the repository now publishes SFT/RL recipes and results. Listed as a research Agent and evaluation project, with unpublished checkpoints and negative multi-turn RL results disclosed.",
+      "zh": "按用户要求，经最新源码人工核验后收录。GSM8K-calc评测器已实现多轮模型生成、工具执行与观测反馈闭环，仓库现已公开SFT/RL配方及实验结果。归类为研究型Agent与评测项目，并注明检查点未公开及多轮工具RL的负向结果。"
     },
     "evidence": [
       {
         "path": "README.md",
-        "quote": "**Multi-turn agentic RL — tool-using episodes, per-token log-probs across turns, episode-level training — is still a public gap.** There is no public recipe, no public training result, and no state-native rollout layer connecting a state manager to an RL trainer."
+        "quote": "**Verifiable research on RWKV agentic reinforcement learning** — ecosystem audit, SFT/RL experiments on RWKV-7 G1l-1.5B, multi-turn tool-use evaluation, and fully reproducible recipes."
       },
       {
-        "path": "tools/eval_toolcall.py",
-        "quote": "G3-style evaluation: tool-call parse rate / tool choice on held-out synthetic set."
+        "path": "tools/eval_gsm8k_calc.py",
+        "quote": "        prompts = [render(tok, states[i][\"messages\"]) for i in active]\n        outs = llm.generate([{\"prompt_token_ids\": p} for p in prompts], sp)"
       },
       {
-        "path": "tools/build_gsm8k_calc.py",
-        "quote": "Unlike SFT conversion, no target trajectory is written: RL rollouts are\nsampled by the policy itself against the calculator environment."
+        "path": "tools/eval_gsm8k_calc.py",
+        "quote": "                payload = json.loads(calc.execute_tool(\"calc\", expr))"
+      },
+      {
+        "path": "tools/eval_gsm8k_calc.py",
+        "quote": "            st[\"messages\"].append(obs)"
       }
     ]
   },
