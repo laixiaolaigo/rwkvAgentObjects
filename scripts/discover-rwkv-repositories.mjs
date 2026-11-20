@@ -74,19 +74,14 @@ function matchSignals(repository) {
 
 export async function main({ now = new Date() } = {}) {
   const cutoff = sixMonthsAgo(now);
-  const searchQuery = `rwkv pushed:>=${cutoff.toISOString().slice(0, 10)}`;
-  const [curatedProjects, agentRepositories, repositoryReview, agentReviews] = await Promise.all([
-    readFile("rwkv_projects.json", "utf8").then(JSON.parse),
+  const searchQuery = `rwkv in:name,description,topics,readme pushed:>=${cutoff.toISOString().slice(0, 10)}`;
+  const [agentRepositories, agentReviews] = await Promise.all([
     readFile("agent_repo.json", "utf8").then(JSON.parse),
-    readFile("rwkv_repository_review.json", "utf8").then(JSON.parse),
     readFile("agent_repository_review.json", "utf8").then(JSON.parse),
   ]);
-  const knownUrls = new Set([
-    ...curatedProjects.map((item) => normalizeUrl(item.repositoryUrl)),
-    ...agentRepositories.map((item) => normalizeUrl(item.repositoryUrl)),
-  ]);
+  const knownUrls = new Set(agentRepositories.map((item) => normalizeUrl(item.repositoryUrl)));
   const reviewByUrl = new Map(
-    [...repositoryReview.repositories, ...agentReviews].map((item) => [normalizeUrl(item.repositoryUrl), item])
+    agentReviews.map((item) => [normalizeUrl(item.repositoryUrl), item])
   );
 
   const repositories = [];
@@ -111,6 +106,7 @@ export async function main({ now = new Date() } = {}) {
     .filter(({ repository }) => {
       const previousReview = reviewByUrl.get(normalizeUrl(repository.html_url));
       if (!previousReview) return true;
+      if (previousReview.reviewMethod !== "readme") return true;
       if (previousReview.reviewStatus === "deferred") return true;
       return Date.parse(repository.pushed_at) > Date.parse(previousReview.lastPushed);
     })

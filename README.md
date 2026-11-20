@@ -38,13 +38,13 @@ Pages 工作流每天 UTC 03:17（北京时间 11:17）检查 `.github/rwkv-disc
 
 已有仓库返回 HTTP 404（例如删除或转为私有）时，保留该项目上次的元数据，并在日志和工作流摘要中列出警告，继续更新其他项目；认证失败、限流或其他服务错误仍按错误处理。
 
-`rwkv_projects.json` 维护经过核验的 RWKV 傻瓜包、推理项目和训练项目。`rwkv_repository_review.json` 保留历史搜索审核记录。扫描使用 GitHub 官方 Search API 和 `GITHUB_TOKEN`，限定最近 6 个日历月内有代码推送的仓库，按更新时间每页 100 条扫描最多 10 页（GitHub 搜索接口上限 1000 条），跳过已收录和审核后未变化的仓库。新仓库和发生代码变更的仓库进入候选清单。
+`rwkv_projects.json` 维护经过核验的 RWKV 傻瓜包、推理项目和训练项目。`rwkv_repository_review.json` 保留历史资源分类记录，不作为 Agent 审核的过滤依据；资源目录中的项目仍可接受 Agent 审核。扫描使用 GitHub 官方 Search API 和 `GITHUB_TOKEN`，搜索名称、描述、标签和 README 中的 RWKV，限定最近 6 个日历月内有代码推送的仓库，按更新时间每页 100 条扫描最多 10 页（GitHub 搜索接口上限 1000 条）。跳过已收录的 Agent 和按 README 审核后未变化的仓库；旧源码审核结果会重新进入 README 审核队列，分批处理。
 
 自动收录 Agent 时以 GitHub `pushed_at` 为准，包含恰好半年前的时间点；仓库设置、Stars 等导致的 `updated_at` 变化不算代码更新。搜索时过滤一次，读取候选仓库最新元数据后再次核验，超过半年或缺少有效推送时间的仓库会跳过，不调用审核模型。例如 2026-11-09 扫描时，门槛是同一 UTC 时刻的 2026-05-09；月末日期按目标月份最后一天计算。
 
-审核优先处理名称或描述带 Agent 信号的候选，每次最多 20 个（可配置，最大 100 个）。读取固定提交版本的 README 和最多 6 个实现文件，每个文件最多 10000 字符，不运行外部仓库代码。模型需要提供逐字引用的源码证据，以确认 RWKV 参与动作选择或规划，并在执行循环中接收工具结果；证据不足的项目暂缓收录。程序校验引文、置信度、双语字段和重复地址后，同时更新 `agent.json` 与 `agent_repo.json`。新增和排除决定及对应提交版本保存在 `agent_repository_review.json`；暂缓项目下次继续审核。
+审核优先处理未审核或较早审核的候选，同等条件下优先处理名称或描述带 Agent 信号的项目，每次最多 20 个（可配置，最大 100 个）。只读取固定提交版本的 README（最多 50000 字符），不读取或运行实现源码。根据 README 描述判断 RWKV Agent 应用、框架、插件及 Agent 工具使用训练或评测项目，不要求源码证明执行闭环；普通聊天界面、推理服务、通用模型训练库或仅提到关键词不自动收录。README 缺失或信息不足时暂缓。程序校验 README 引文、置信度、双语字段和重复地址后，同时更新 `agent.json` 与 `agent_repo.json`。审核记录以 `reviewMethod: "readme"` 标记，描述以 README 为依据，不宣称已核验源码或运行效果；暂缓项目下次继续审核。
 
-候选清单和审核报告作为 `rwkv-search-candidates` Artifact 保存 30 天。模型 JSON、字段或源码引文无效时最多尝试 3 次，仍无效则暂缓该项目并继续处理其他候选，不会放宽证据校验；已经通过校验的审核结果正常保存。网络错误、HTTP 429 和常见 5xx 最多尝试 3 次；认证、额度等服务错误或重试后仍失败，会在日志中显示具体仓库和原因，中止本轮且不写入目录。服务或构建检查失败不会推进扫描时间。
+候选清单和审核报告作为 `rwkv-search-candidates` Artifact 保存 30 天。模型 JSON、字段或 README 引文无效时最多尝试 3 次，仍无效则暂缓该项目并继续处理其他候选；已经通过校验的审核结果正常保存。网络错误、HTTP 429 和常见 5xx 最多尝试 3 次；认证、额度等服务错误或重试后仍失败，会在日志中显示具体仓库和原因，中止本轮且不写入目录。服务或构建检查失败不会推进扫描时间。
 
 ### 配置模型接口
 
@@ -59,7 +59,7 @@ Pages 工作流每天 UTC 03:17（北京时间 11:17）检查 `.github/rwkv-disc
 
 默认使用 DeepSeek 官方接口和 `deepseek-flash`，关闭思考模式以直接生成审核 JSON。模型名以 [DeepSeek 官方文档](https://api-docs.deepseek.com/) 为准。只需配置 `AGENT_REVIEW_API_KEY` Secret 即可使用默认服务；密钥不会写入代码或审核报告。
 
-模型接口需要支持 `/chat/completions`、system/user 消息及 `response_format: {"type":"json_object"}`。请使用能够理解代码并稳定输出中英文 JSON 的模型；每轮会消耗相应服务的 API 额度。密钥未配置时，审核步骤会明确失败，候选清单仍上传到 Artifact。
+模型接口需要支持 `/chat/completions`、system/user 消息及 `response_format: {"type":"json_object"}`。请使用能够理解 README 并稳定输出中英文 JSON 的模型；每轮会消耗相应服务的 API 额度。密钥未配置时，审核步骤会明确失败，候选清单仍上传到 Artifact。
 
 本地生成待审核列表时，设置 `GITHUB_TOKEN` 或 `GH_TOKEN` 后运行 `npm run discover:rwkv`；配置上述模型环境变量后运行 `npm run review:agents` 自动审核和收录。输出文件 `rwkv_search_candidates.json` 和 `rwkv_agent_review_report.json` 已加入 `.gitignore`。
 

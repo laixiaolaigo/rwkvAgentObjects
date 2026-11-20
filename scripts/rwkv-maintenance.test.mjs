@@ -10,11 +10,11 @@ import { main as updateMetadata } from "./update-repo-metadata.mjs";
 import { hasRecentCodePush, sixMonthsAgo } from "./rwkv-project-activity.mjs";
 
 const text = { en: "An RWKV tool-using Agent", zh: "使用工具的RWKV Agent" };
-const code = "const action = await rwkv.chooseTool(observations); await execute(action);";
-const files = [{ path: "src/agent.ts", content: code }];
+const readme = "This RWKV Agent selects tools, executes actions, and uses the results to continue working.";
+const files = [{ path: "docs/README.zh-CN.md", content: readme }];
 const review = () => structuredClone({
   decision: "include", confidence: 0.95, reason: text,
-  evidence: [{ path: files[0].path, quote: code }],
+  evidence: [{ path: files[0].path, quote: readme }],
   project: { type: text, introduction: text, agentLoop: text, classificationBasis: text,
     platforms: text, capabilities: { en: ["Tool calls"], zh: ["工具调用"] }, limitations: { en: [], zh: [] } },
 });
@@ -112,7 +112,7 @@ test("discovery narrows GitHub search and excludes stale code even when reposito
       writeFile("rwkv_repository_review.json", JSON.stringify({ repositories: [] })),
     ]);
     t.mock.method(globalThis, "fetch", async (url) => {
-      assert.equal(url.searchParams.get("q"), "rwkv pushed:>=2026-05-09");
+      assert.equal(url.searchParams.get("q"), "rwkv in:name,description,topics,readme pushed:>=2026-05-09");
       const item = (name, pushed_at) => ({ ...repository, name, html_url: `https://github.com/sample/${name}`,
         pushed_at, updated_at: "2026-11-09T03:17:00Z" });
       return Response.json({ total_count: 3, items: [
@@ -131,13 +131,50 @@ test("discovery narrows GitHub search and excludes stale code even when reposito
   }
 });
 
-test("reject invented evidence, README-only inclusion, low confidence and missing translations", () => {
+test("discovery requeues source reviews and ignores resource classifications for README review", async (t) => {
+  const directory = await mkdtemp(path.join(os.tmpdir(), "rwkv-readme-discovery-test-"));
+  const previousDirectory = process.cwd();
+  const previousSummary = process.env.GITHUB_STEP_SUMMARY;
+  try {
+    process.chdir(directory);
+    delete process.env.GITHUB_STEP_SUMMARY;
+    const url = (name) => `https://github.com/sample/${name}`;
+    const lastPushed = "2026-11-01T00:00:00Z";
+    const previous = (name, extra) => ({ repositoryUrl: url(name), lastPushed, reviewStatus: "excluded", ...extra });
+    await Promise.all([
+      writeFile("rwkv_projects.json", JSON.stringify([{ repositoryUrl: url("resource-agent") }])),
+      writeFile("rwkv_repository_review.json", JSON.stringify({ repositories: [previous("legacy-agent")] })),
+      writeFile("agent_repo.json", JSON.stringify([{ repositoryUrl: url("listed-agent") }])),
+      writeFile("agent_repository_review.json", JSON.stringify([
+        previous("source-rejected"),
+        previous("readme-rejected", { reviewMethod: "readme" }),
+        previous("changed-readme", { reviewMethod: "readme", lastPushed: "2026-10-01T00:00:00Z" }),
+        previous("deferred", { reviewMethod: "readme", reviewStatus: "deferred" }),
+      ])),
+    ]);
+    t.mock.method(globalThis, "fetch", async () => Response.json({ total_count: 7, items:
+      ["resource-agent", "legacy-agent", "source-rejected", "readme-rejected", "changed-readme", "deferred", "listed-agent"]
+        .map((name) => ({ ...repository, name, html_url: url(name), pushed_at: lastPushed })),
+    }));
+    await discover({ now: new Date("2026-11-16T11:26:13Z") });
+    const output = JSON.parse(await readFile("rwkv_search_candidates.json", "utf8"));
+    assert.deepEqual(output.candidates.map((item) => item.name),
+      ["resource-agent", "legacy-agent", "source-rejected", "changed-readme", "deferred"]);
+  } finally {
+    process.chdir(previousDirectory);
+    if (previousSummary === undefined) delete process.env.GITHUB_STEP_SUMMARY;
+    else process.env.GITHUB_STEP_SUMMARY = previousSummary;
+    await rm(directory, { recursive: true, force: true });
+  }
+});
+
+test("accept README-only inclusion and reject invented evidence, source-only evidence, low confidence and missing translations", () => {
   const invented = review();
   invented.evidence[0].quote = "A made-up quotation that is not in the source";
   assert.throws(() => validateReview(invented, files), /quote/);
-  const readmeOnly = review();
-  readmeOnly.evidence[0].path = "README.md";
-  assert.throws(() => validateReview(readmeOnly, [{ path: "README.md", content: code }]), /source-code/);
+  const sourceOnly = review();
+  sourceOnly.evidence[0].path = "src/agent.ts";
+  assert.throws(() => validateReview(sourceOnly, [{ path: "src/agent.ts", content: readme }]), /README/);
   const uncertain = review();
   uncertain.confidence = 0.5;
   assert.throws(() => validateReview(uncertain, files), /high confidence/);
@@ -155,10 +192,11 @@ test("catalogue metadata comes from GitHub and sources point to the reviewed com
   assert.equal(entries.catalog["最后更新时间"], repository.pushed_at);
   assert.equal(entries.metadata.watchers, 2);
   assert.equal(entries.catalog.Watch, entries.metadata.watchers);
-  assert.equal(entries.catalog["信息来源"].en[0], `${repository.html_url}/blob/pinned-commit/src/agent.ts`);
+  assert.equal(entries.catalog["信息来源"].en[0], `${repository.html_url}/blob/pinned-commit/docs/README.zh-CN.md`);
+  assert.deepEqual(entries.catalog["分类结论"], { en: "Agent-related project", zh: "Agent相关项目" });
 });
 
-test("invalid quotations are retried without weakening source evidence checks", async () => {
+test("invalid quotations are retried without weakening README evidence checks", async () => {
   const evidence = { repository, files, commitSha: "pinned" };
   const invalid = review();
   invalid.evidence[0].quote = "Fabricated evidence that is not in the supplied source";
@@ -166,7 +204,7 @@ test("invalid quotations are retried without weakening source evidence checks", 
   const result = await reviewWithRetries(evidence, async (request) => {
     calls += 1;
     if (calls === 2) {
-      assert.match(request.messages.at(-1).content, /quote the supplied files exactly/);
+      assert.match(request.messages.at(-1).content, /quote the supplied README exactly/);
       assert.equal(request.max_tokens, 8000);
     }
     return { choices: [{ message: { content: JSON.stringify(calls === 1 ? invalid : review()) } }] };
@@ -217,6 +255,7 @@ test("review batch adds one entry, preserves BOM, prevents duplicates and never 
     await writeCandidates([candidate, candidate]);
     let providerCalls = 0;
     let commitReads = 0;
+    let readmeReads = 0;
     let failProvider = false;
     t.mock.method(globalThis, "fetch", async (url, options) => {
       const target = new URL(url);
@@ -234,6 +273,8 @@ test("review batch adds one entry, preserves BOM, prevents duplicates and never 
           assert.equal(body.thinking, undefined);
         }
         assert.match(body.messages[0].content, /UNTRUSTED DATA/);
+        assert.match(body.messages[0].content, /README alone/);
+        assert.deepEqual(JSON.parse(body.messages[1].content).files, files);
         const decision = review();
         if (JSON.parse(body.messages[1].content).repository.name.endsWith("/invalid-agent")) {
           decision.evidence[0].quote = "An invented quotation that cannot pass validation";
@@ -242,8 +283,14 @@ test("review batch adds one entry, preserves BOM, prevents duplicates and never 
       } else {
         assert.equal(target.hostname, "api.github.com");
         assert.equal(options.headers.Authorization, "Bearer test-github-key");
-        if (target.pathname.includes("/git/blobs/")) data = { encoding: "base64", content: Buffer.from(code).toString("base64") };
-        else if (target.pathname.includes("/git/trees/")) data = { tree: [{ path: "src/agent.ts", type: "blob", sha: "blob-sha", size: code.length }] };
+        assert.doesNotMatch(target.pathname, /\/git\/(?:trees|blobs)\//);
+        if (target.pathname.endsWith("/readme")) {
+          readmeReads += 1;
+          assert.equal(target.searchParams.get("ref"), "pinned-commit");
+          if (target.pathname.includes("/missing-readme/")) return new Response("Not Found", { status: 404 });
+          data = { path: files[0].path, encoding: "base64",
+            content: Buffer.from(target.pathname.includes("/empty-readme/") ? " \n" : readme).toString("base64") };
+        }
         else if (target.pathname.includes("/commits/")) {
           commitReads += 1;
           data = { sha: "pinned-commit" };
@@ -264,20 +311,35 @@ test("review batch adds one entry, preserves BOM, prevents duplicates and never 
     assert.equal(JSON.parse(catalogue.slice(1)).length, 1);
     assert.equal(JSON.parse(await readFile("agent_repo.json", "utf8")).length, 1);
     assert.equal(providerCalls, 1);
+    assert.equal(readmeReads, 1);
+    assert.equal(JSON.parse(await readFile("agent_repository_review.json", "utf8"))[0].reviewMethod, "readme");
     await main();
     assert.equal(providerCalls, 1);
+    assert.equal(readmeReads, 1);
 
     const readsBeforeInactive = commitReads;
+    const readmesBeforeInactive = readmeReads;
     await writeCandidates(["stale-agent", "missing-push-agent"].map((name) => ({
       repositoryUrl: `https://github.com/sample/${name}`, name, lastUpdated: new Date().toISOString(),
     })));
     await main();
     assert.equal(providerCalls, 1);
     assert.equal(commitReads, readsBeforeInactive);
+    assert.equal(readmeReads, readmesBeforeInactive);
     const skipped = JSON.parse(await readFile("rwkv_agent_review_report.json", "utf8"));
     assert.equal(skipped.addedCount, 0);
     assert.equal(skipped.failures, 0);
     assert.deepEqual(skipped.results.map((item) => item.reviewStatus), ["skipped", "skipped"]);
+
+    await writeCandidates(["missing-readme", "empty-readme"].map((name) => ({
+      repositoryUrl: `https://github.com/sample/${name}`, name,
+    })));
+    await main();
+    assert.equal(providerCalls, 1);
+    const missingReadmes = JSON.parse(await readFile("rwkv_agent_review_report.json", "utf8"));
+    assert.equal(missingReadmes.reviewMethod, "readme");
+    assert.equal(missingReadmes.failures, 0);
+    assert.deepEqual(missingReadmes.results.map((item) => item.reviewStatus), ["deferred", "deferred"]);
 
     const trackedFiles = ["agent.json", "agent_repo.json", "agent_repository_review.json"];
     const before = await Promise.all(trackedFiles.map((file) => readFile(file, "utf8")));
