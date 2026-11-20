@@ -1,5 +1,163 @@
 ﻿[
     {
+        "创建用户名": "No-22-Github",
+        "用户头像": "https://avatars.githubusercontent.com/u/132265925?v=4",
+        "GitHub地址": "https://github.com/No-22-Github/dsh-rwkv-plugin",
+        "项目名称": "dsh-rwkv-plugin",
+        "创建时间": "2026-11-03T11:41:16Z",
+        "最后更新时间": "2026-11-20T09:07:57Z",
+        "主要语言": "TypeScript",
+        "许可证": "MIT",
+        "Stars": 3,
+        "Watch": 0,
+        "Fork": 2,
+        "项目类型": {
+            "en": "RWKV Agent plugin for DeepSeek Harness",
+            "zh": "DeepSeek Harness的RWKV Agent插件"
+        },
+        "介绍": {
+            "en": "A DeepSeek Harness plugin that registers RWKV-7 G1 continuation models as an LLM provider. RWKV can act as the main Agent or as a subagent invoked by a DeepSeek main Agent. The plugin converts conversation history and tool definitions into text prompts, parses model-generated tool calls, and returns them to DeepSeek Harness for execution. It supports rwkv_lightning CUDA and iRWKV backends, model and initial-state management, and generation traces.",
+            "zh": "将RWKV-7 G1续写模型注册为LLM提供方的DeepSeek Harness插件。RWKV既可作为主Agent，也可作为DeepSeek主Agent调用的子Agent。插件将会话历史和工具定义转换为文本提示词，解析模型生成的工具调用并交给DeepSeek Harness执行；支持rwkv_lightning CUDA与iRWKV后端、模型及初始state管理和生成轨迹查看。"
+        },
+        "Agent循环判断": {
+            "en": "Implements an Agent loop together with DeepSeek Harness: RWKV selects one tool call or a final answer; the plugin parses and validates the output; DeepSeek Harness executes the tool and sends its result in the next request. The plugin rebuilds the prompt from that history so RWKV can continue the task, with protocol retries, duplicate-call and failure guards, and bounded forced closeout. Sessions, sandboxing, approvals, and tool execution are managed by DeepSeek Harness.",
+            "zh": "与DeepSeek Harness共同实现Agent闭环：RWKV选择一个工具调用或最终回答，插件解析并检查输出，DeepSeek Harness执行工具后将结果带入下一次请求；插件根据历史重新构建提示词，使RWKV继续任务，并提供协议重试、重复调用与失败拦截以及步数受限的强制收尾。会话、沙箱、审批和工具执行由DeepSeek Harness管理。"
+        },
+        "主要能力": {
+            "en": [
+                "RWKV as a main Agent or a subagent through the rwkv_agent tool",
+                "bash, read, write, edit, glob, grep, web_search, and web_fetch tools",
+                "rwkv_lightning CUDA and iRWKV continuation backends",
+                "Tool-call parsing and repair, protocol retries, failure guards, and forced closeout",
+                "Settings UI for models, initial states, sampling, and guard policies",
+                "Raw prompt and model-output traces in the RWKV conversation tab"
+            ],
+            "zh": [
+                "RWKV主Agent或通过rwkv_agent工具调用的子Agent",
+                "bash、read、write、edit、glob、grep、web_search和web_fetch工具",
+                "rwkv_lightning CUDA与iRWKV续写后端",
+                "工具调用解析与修复、协议重试、失败拦截和强制收尾",
+                "通过设置页管理模型、初始state、采样和兜底策略",
+                "在会话RWKV标签页查看提示词原文和模型原始输出"
+            ]
+        },
+        "已知限制": {
+            "en": [
+                "Requires DeepSeek Harness and a configured RWKV inference service",
+                "Only one tool call per step; parallel tool calls are not supported",
+                "No context compression; long conversations can exhaust the context window",
+                "Text-only input; images and file attachments become placeholders"
+            ],
+            "zh": [
+                "依赖DeepSeek Harness及已配置的RWKV推理服务",
+                "每步只调用一个工具，不支持并行工具调用",
+                "没有上下文压缩，长会话可能撑满上下文窗口",
+                "仅支持文字输入，图片和文件附件会转换为占位符"
+            ]
+        },
+        "支持平台": {
+            "en": "DeepSeek Harness desktop 0.2.1+ or its web profile; plugin development requires Node.js 24.9.0+",
+            "zh": "DeepSeek Harness桌面版0.2.1+或其Web配置；插件开发需要Node.js 24.9.0+"
+        },
+        "关联项目": [
+            "https://github.com/deepseek-ai/deepseek-harness",
+            "https://github.com/No-22-Github/RWKV-Agent"
+        ],
+        "信息来源": {
+            "en": [
+                "GitHub repository page and push activity",
+                "Project README and INSTALL.md",
+                "docs/how-it-works.md",
+                "src/index.ts, package.json, and LICENSE"
+            ],
+            "zh": [
+                "GitHub仓库页面与推送活动",
+                "项目README和INSTALL.md",
+                "docs/how-it-works.md工作原理文档",
+                "src/index.ts、package.json和LICENSE"
+            ]
+        },
+        "分类结论": {
+            "en": "Strict Agent",
+            "zh": "严格Agent"
+        },
+        "分类依据": {
+            "en": "RWKV selects actions from tool definitions and consumes tool observations in a repeated execution loop hosted by DeepSeek Harness. The plugin supplies the Agent protocol, output parsing, retries, and loop guards, enabling executable main-Agent and subagent workflows.",
+            "zh": "RWKV根据工具定义选择动作，并在DeepSeek Harness承载的持续执行循环中读取工具观察结果；插件提供Agent协议、输出解析、重试和循环保护，形成可执行的主Agent与子Agent工作流。"
+        }
+    },
+    {
+        "创建用户名": "cgisky1980",
+        "作者备注": {
+            "en": "Ai00-X ecosystem maintainer",
+            "zh": "Ai00-X生态维护者"
+        },
+        "用户头像": "https://avatars.githubusercontent.com/u/82481660?v=4",
+        "GitHub地址": "https://github.com/cgisky1980/ai00-x-client",
+        "项目名称": "ai00-x-client",
+        "创建时间": "2026-08-12T06:11:04Z",
+        "最后更新时间": "2026-11-20T08:55:34Z",
+        "主要语言": "Rust",
+        "许可证": "MIT",
+        "Stars": 5,
+        "Watch": 0,
+        "Fork": 2,
+        "项目类型": {
+            "en": "Cross-platform RWKV AI assistant and Agent desktop client",
+            "zh": "跨平台RWKV AI助理与Agent桌面客户端"
+        },
+        "介绍": {
+            "en": "A Tauri 2 desktop client built with Rust and TypeScript. It combines local RWKV inference with remote AI APIs and provides a personal assistant, coding agent, knowledge-work agent, and Markdown-defined custom agents. The application also integrates long-term memory, tool-enabled workflows, Skills, MCP, and remote access through phone browsers and messaging platforms.",
+            "zh": "使用Rust和TypeScript构建的Tauri 2桌面客户端。它将本地RWKV推理与远程AI API结合，提供个人助理、Coding Agent、知识工作Agent和通过Markdown定义的自定义Agent；同时集成长时记忆、工具工作流、Skills、MCP，并支持手机浏览器及消息平台远程访问。"
+        },
+        "Agent循环判断": {
+            "en": "Defines several executable Agent modes. The Code Agent can autonomously read, edit, run, verify, debug, and review; the personal assistant orchestrates Code, Cowork, and custom Agents; and the system supports tool calls, memory, Skills, MCP, and remote commands. Local RWKV inference is used first, with routing to remote models for tasks that need stronger capabilities.",
+            "zh": "定义了多种可执行的Agent模式。Code Agent能够自主读取、编辑、运行、验证、调试和审查；个人助理可按需编排Code、Cowork及自定义Agent；系统还支持工具调用、记忆、Skills、MCP和远程命令。默认优先使用本地RWKV推理，复杂任务再路由到更强的远程模型。"
+        },
+        "主要能力": {
+            "en": [
+                "Personal assistant with long-term memory",
+                "Autonomous coding Agent with read/edit/run/verify workflows",
+                "Knowledge-work Agent for PDF, DOCX, XLSX, and PPTX",
+                "Custom Agents defined with Markdown",
+                "RWKV local inference with remote-model fallback",
+                "Skills, MCP, desktop companion, and remote access"
+            ],
+            "zh": [
+                "带长时记忆的个人助理",
+                "支持读取/编辑/运行/验证工作流的自主Coding Agent",
+                "处理PDF、DOCX、XLSX和PPTX的知识工作Agent",
+                "通过Markdown定义自定义Agent",
+                "RWKV本地推理与远程模型回退",
+                "Skills、MCP、桌面伴侣和远程访问"
+            ]
+        },
+        "支持平台": {
+            "en": "Windows, macOS, and Linux; local RWKV support is optimized for available platform backends",
+            "zh": "Windows、macOS和Linux；本地RWKV支持根据平台后端进行适配"
+        },
+        "信息来源": {
+            "en": [
+                "GitHub repository metadata",
+                "Project README",
+                "Repository Agent and runtime architecture"
+            ],
+            "zh": [
+                "GitHub仓库元数据",
+                "项目README",
+                "仓库中的Agent与运行时架构"
+            ]
+        },
+        "分类结论": {
+            "en": "Strict Agent",
+            "zh": "严格Agent"
+        },
+        "分类依据": {
+            "en": "The repository provides runnable Agent roles with explicit tool-use and autonomous execution workflows, rather than only exposing an RWKV inference engine.",
+            "zh": "仓库提供可运行的多种Agent角色，并实现明确的工具使用和自主执行工作流，不只是提供RWKV推理引擎。"
+        }
+    },
+    {
         "创建用户名": "Fantasia-Infinity",
         "用户头像": "https://avatars.githubusercontent.com/u/26381546?v=4",
         "GitHub地址": "https://github.com/Fantasia-Infinity/RWKV-AgenticLearning",
@@ -73,6 +231,47 @@
         "分类依据": {
             "en": "Includes an implemented multi-turn model/tool/observation loop, reproducible SFT/RL recipes, and published results, verified through source review.",
             "zh": "已实现多轮模型生成、工具执行与观测反馈闭环，并公开SFT/RL配方及实验结果，已通过源码核验。"
+        }
+    },
+    {
+        "创建用户名": "w1c2j3",
+        "作者备注": {
+            "en": "RWKV ecosystem developer",
+            "zh": "RWKV生态开发者"
+        },
+        "用户头像": "https://avatars.githubusercontent.com/u/184242919?v=4",
+        "GitHub地址": "https://github.com/w1c2j3/RWKV-SearchReader",
+        "项目名称": "RWKV-SearchReader",
+        "创建时间": "2026-09-03T03:18:54Z",
+        "最后更新时间": "2026-11-19T04:03:34Z",
+        "主要语言": "Python",
+        "许可证": "MIT",
+        "Stars": 2,
+        "Watch": 0,
+        "Fork": 1,
+        "项目类型": {
+            "en": "RWKV-powered web and document research assistant",
+            "zh": "基于RWKV的网页与文档研究助手"
+        },
+        "介绍": {
+            "en": "A parallel web and document research assistant powered by RWKV.",
+            "zh": "一个由RWKV驱动的并行网页与文档研究助手。"
+        },
+        "Agent循环判断": {
+            "en": "The assistant coordinates research tasks across web and document sources and uses model-guided processing to produce research results.",
+            "zh": "该助手协调网页与文档来源的研究任务，并通过模型引导的处理流程生成研究结果。"
+        },
+        "信息来源": {
+            "en": ["GitHub repository metadata", "Project description"],
+            "zh": ["GitHub仓库元数据", "项目描述"]
+        },
+        "分类结论": {
+            "en": "Agent-related research assistant",
+            "zh": "Agent相关研究助手"
+        },
+        "分类依据": {
+            "en": "The repository explicitly describes a RWKV-powered assistant for parallel web and document research.",
+            "zh": "仓库明确定位为由RWKV驱动的并行网页与文档研究助手。"
         }
     },
     {
@@ -223,164 +422,6 @@
         "分类依据": {
             "en": "The project provides reusable persona, task-mode, and recurrent-session state infrastructure that can materially shape an RWKV agent, but it does not independently choose tools or run an autonomous agent loop.",
             "zh": "项目提供可复用的人格、任务模式与循环Session状态基础设施，能够实质性支撑RWKV Agent，但自身不负责工具选择，也不运行自主Agent循环。"
-        }
-    },
-    {
-        "创建用户名": "No-22-Github",
-        "用户头像": "https://avatars.githubusercontent.com/u/132265925?v=4",
-        "GitHub地址": "https://github.com/No-22-Github/dsh-rwkv-plugin",
-        "项目名称": "dsh-rwkv-plugin",
-        "创建时间": "2026-11-03T11:41:16Z",
-        "最后更新时间": "2026-11-14T13:27:04Z",
-        "主要语言": "TypeScript",
-        "许可证": "MIT",
-        "Stars": 2,
-        "Watch": 0,
-        "Fork": 1,
-        "项目类型": {
-            "en": "RWKV Agent plugin for DeepSeek Harness",
-            "zh": "DeepSeek Harness的RWKV Agent插件"
-        },
-        "介绍": {
-            "en": "A DeepSeek Harness plugin that registers RWKV-7 G1 continuation models as an LLM provider. RWKV can act as the main Agent or as a subagent invoked by a DeepSeek main Agent. The plugin converts conversation history and tool definitions into text prompts, parses model-generated tool calls, and returns them to DeepSeek Harness for execution. It supports rwkv_lightning CUDA and iRWKV backends, model and initial-state management, and generation traces.",
-            "zh": "将RWKV-7 G1续写模型注册为LLM提供方的DeepSeek Harness插件。RWKV既可作为主Agent，也可作为DeepSeek主Agent调用的子Agent。插件将会话历史和工具定义转换为文本提示词，解析模型生成的工具调用并交给DeepSeek Harness执行；支持rwkv_lightning CUDA与iRWKV后端、模型及初始state管理和生成轨迹查看。"
-        },
-        "Agent循环判断": {
-            "en": "Implements an Agent loop together with DeepSeek Harness: RWKV selects one tool call or a final answer; the plugin parses and validates the output; DeepSeek Harness executes the tool and sends its result in the next request. The plugin rebuilds the prompt from that history so RWKV can continue the task, with protocol retries, duplicate-call and failure guards, and bounded forced closeout. Sessions, sandboxing, approvals, and tool execution are managed by DeepSeek Harness.",
-            "zh": "与DeepSeek Harness共同实现Agent闭环：RWKV选择一个工具调用或最终回答，插件解析并检查输出，DeepSeek Harness执行工具后将结果带入下一次请求；插件根据历史重新构建提示词，使RWKV继续任务，并提供协议重试、重复调用与失败拦截以及步数受限的强制收尾。会话、沙箱、审批和工具执行由DeepSeek Harness管理。"
-        },
-        "主要能力": {
-            "en": [
-                "RWKV as a main Agent or a subagent through the rwkv_agent tool",
-                "bash, read, write, edit, glob, grep, web_search, and web_fetch tools",
-                "rwkv_lightning CUDA and iRWKV continuation backends",
-                "Tool-call parsing and repair, protocol retries, failure guards, and forced closeout",
-                "Settings UI for models, initial states, sampling, and guard policies",
-                "Raw prompt and model-output traces in the RWKV conversation tab"
-            ],
-            "zh": [
-                "RWKV主Agent或通过rwkv_agent工具调用的子Agent",
-                "bash、read、write、edit、glob、grep、web_search和web_fetch工具",
-                "rwkv_lightning CUDA与iRWKV续写后端",
-                "工具调用解析与修复、协议重试、失败拦截和强制收尾",
-                "通过设置页管理模型、初始state、采样和兜底策略",
-                "在会话RWKV标签页查看提示词原文和模型原始输出"
-            ]
-        },
-        "已知限制": {
-            "en": [
-                "Requires DeepSeek Harness and a configured RWKV inference service",
-                "Only one tool call per step; parallel tool calls are not supported",
-                "No context compression; long conversations can exhaust the context window",
-                "Text-only input; images and file attachments become placeholders"
-            ],
-            "zh": [
-                "依赖DeepSeek Harness及已配置的RWKV推理服务",
-                "每步只调用一个工具，不支持并行工具调用",
-                "没有上下文压缩，长会话可能撑满上下文窗口",
-                "仅支持文字输入，图片和文件附件会转换为占位符"
-            ]
-        },
-        "支持平台": {
-            "en": "DeepSeek Harness desktop 0.2.1+ or its web profile; plugin development requires Node.js 24.9.0+",
-            "zh": "DeepSeek Harness桌面版0.2.1+或其Web配置；插件开发需要Node.js 24.9.0+"
-        },
-        "关联项目": [
-            "https://github.com/deepseek-ai/deepseek-harness",
-            "https://github.com/No-22-Github/RWKV-Agent"
-        ],
-        "信息来源": {
-            "en": [
-                "GitHub repository page and push activity",
-                "Project README and INSTALL.md",
-                "docs/how-it-works.md",
-                "src/index.ts, package.json, and LICENSE"
-            ],
-            "zh": [
-                "GitHub仓库页面与推送活动",
-                "项目README和INSTALL.md",
-                "docs/how-it-works.md工作原理文档",
-                "src/index.ts、package.json和LICENSE"
-            ]
-        },
-        "分类结论": {
-            "en": "Strict Agent",
-            "zh": "严格Agent"
-        },
-        "分类依据": {
-            "en": "RWKV selects actions from tool definitions and consumes tool observations in a repeated execution loop hosted by DeepSeek Harness. The plugin supplies the Agent protocol, output parsing, retries, and loop guards, enabling executable main-Agent and subagent workflows.",
-            "zh": "RWKV根据工具定义选择动作，并在DeepSeek Harness承载的持续执行循环中读取工具观察结果；插件提供Agent协议、输出解析、重试和循环保护，形成可执行的主Agent与子Agent工作流。"
-        }
-    },
-    {
-        "创建用户名": "cgisky1980",
-        "作者备注": {
-            "en": "Ai00-X ecosystem maintainer",
-            "zh": "Ai00-X生态维护者"
-        },
-        "用户头像": "https://avatars.githubusercontent.com/u/82481660?v=4",
-        "GitHub地址": "https://github.com/cgisky1980/ai00-x-client",
-        "项目名称": "ai00-x-client",
-        "创建时间": "2026-08-12T06:11:04Z",
-        "最后更新时间": "2026-11-14T09:01:30Z",
-        "主要语言": "Rust",
-        "许可证": "MIT",
-        "Stars": 5,
-        "Watch": 0,
-        "Fork": 2,
-        "项目类型": {
-            "en": "Cross-platform RWKV AI assistant and Agent desktop client",
-            "zh": "跨平台RWKV AI助理与Agent桌面客户端"
-        },
-        "介绍": {
-            "en": "A Tauri 2 desktop client built with Rust and TypeScript. It combines local RWKV inference with remote AI APIs and provides a personal assistant, coding agent, knowledge-work agent, and Markdown-defined custom agents. The application also integrates long-term memory, tool-enabled workflows, Skills, MCP, and remote access through phone browsers and messaging platforms.",
-            "zh": "使用Rust和TypeScript构建的Tauri 2桌面客户端。它将本地RWKV推理与远程AI API结合，提供个人助理、Coding Agent、知识工作Agent和通过Markdown定义的自定义Agent；同时集成长时记忆、工具工作流、Skills、MCP，并支持手机浏览器及消息平台远程访问。"
-        },
-        "Agent循环判断": {
-            "en": "Defines several executable Agent modes. The Code Agent can autonomously read, edit, run, verify, debug, and review; the personal assistant orchestrates Code, Cowork, and custom Agents; and the system supports tool calls, memory, Skills, MCP, and remote commands. Local RWKV inference is used first, with routing to remote models for tasks that need stronger capabilities.",
-            "zh": "定义了多种可执行的Agent模式。Code Agent能够自主读取、编辑、运行、验证、调试和审查；个人助理可按需编排Code、Cowork及自定义Agent；系统还支持工具调用、记忆、Skills、MCP和远程命令。默认优先使用本地RWKV推理，复杂任务再路由到更强的远程模型。"
-        },
-        "主要能力": {
-            "en": [
-                "Personal assistant with long-term memory",
-                "Autonomous coding Agent with read/edit/run/verify workflows",
-                "Knowledge-work Agent for PDF, DOCX, XLSX, and PPTX",
-                "Custom Agents defined with Markdown",
-                "RWKV local inference with remote-model fallback",
-                "Skills, MCP, desktop companion, and remote access"
-            ],
-            "zh": [
-                "带长时记忆的个人助理",
-                "支持读取/编辑/运行/验证工作流的自主Coding Agent",
-                "处理PDF、DOCX、XLSX和PPTX的知识工作Agent",
-                "通过Markdown定义自定义Agent",
-                "RWKV本地推理与远程模型回退",
-                "Skills、MCP、桌面伴侣和远程访问"
-            ]
-        },
-        "支持平台": {
-            "en": "Windows, macOS, and Linux; local RWKV support is optimized for available platform backends",
-            "zh": "Windows、macOS和Linux；本地RWKV支持根据平台后端进行适配"
-        },
-        "信息来源": {
-            "en": [
-                "GitHub repository metadata",
-                "Project README",
-                "Repository Agent and runtime architecture"
-            ],
-            "zh": [
-                "GitHub仓库元数据",
-                "项目README",
-                "仓库中的Agent与运行时架构"
-            ]
-        },
-        "分类结论": {
-            "en": "Strict Agent",
-            "zh": "严格Agent"
-        },
-        "分类依据": {
-            "en": "The repository provides runnable Agent roles with explicit tool-use and autonomous execution workflows, rather than only exposing an RWKV inference engine.",
-            "zh": "仓库提供可运行的多种Agent角色，并实现明确的工具使用和自主执行工作流，不只是提供RWKV推理引擎。"
         }
     },
     {
@@ -876,47 +917,6 @@
         "信息来源": {"en": ["Codeberg metadata", "README", "Evaluation, judge, probe, and training files"], "zh": ["Codeberg元数据", "README", "评测、judge、探针与训练文件"]},
         "分类结论": {"en": "Agent benchmark and training upstream", "zh": "Agent评测与训练上游"},
         "分类依据": {"en": "Directly develops and measures RWKV tool-calling capabilities used by Agents.", "zh": "直接开发并衡量Agent所需的RWKV工具调用能力。"}
-    },
-    {
-        "创建用户名": "w1c2j3",
-        "作者备注": {
-            "en": "RWKV ecosystem developer",
-            "zh": "RWKV生态开发者"
-        },
-        "用户头像": "https://avatars.githubusercontent.com/u/184242919?v=4",
-        "GitHub地址": "https://github.com/w1c2j3/RWKV-SearchReader",
-        "项目名称": "RWKV-SearchReader",
-        "创建时间": "2026-09-03T03:18:54Z",
-        "最后更新时间": "2026-10-19T08:49:31Z",
-        "主要语言": "Python",
-        "许可证": "MIT",
-        "Stars": 2,
-        "Watch": 0,
-        "Fork": 1,
-        "项目类型": {
-            "en": "RWKV-powered web and document research assistant",
-            "zh": "基于RWKV的网页与文档研究助手"
-        },
-        "介绍": {
-            "en": "A parallel web and document research assistant powered by RWKV.",
-            "zh": "一个由RWKV驱动的并行网页与文档研究助手。"
-        },
-        "Agent循环判断": {
-            "en": "The assistant coordinates research tasks across web and document sources and uses model-guided processing to produce research results.",
-            "zh": "该助手协调网页与文档来源的研究任务，并通过模型引导的处理流程生成研究结果。"
-        },
-        "信息来源": {
-            "en": ["GitHub repository metadata", "Project description"],
-            "zh": ["GitHub仓库元数据", "项目描述"]
-        },
-        "分类结论": {
-            "en": "Agent-related research assistant",
-            "zh": "Agent相关研究助手"
-        },
-        "分类依据": {
-            "en": "The repository explicitly describes a RWKV-powered assistant for parallel web and document research.",
-            "zh": "仓库明确定位为由RWKV驱动的并行网页与文档研究助手。"
-        }
     },
     {
         "创建用户名": "cgisky1980",
@@ -2998,7 +2998,7 @@
         "最后更新时间": "2026-03-06T22:53:02Z",
         "主要语言": "Python",
         "许可证": "MIT",
-        "Stars": 21,
+        "Stars": 18,
         "Watch": 3,
         "Fork": 3,
         "项目类型": {

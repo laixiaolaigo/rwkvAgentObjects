@@ -1,10 +1,34 @@
 [
   {
+    "projectName": "dsh-rwkv-plugin",
+    "repositoryUrl": "https://github.com/No-22-Github/dsh-rwkv-plugin",
+    "lastUpdated": "2026-11-20T09:07:57Z",
+    "stars": 3,
+    "forks": 2,
+    "watchers": 0
+  },
+  {
+    "projectName": "ai00-x-client",
+    "repositoryUrl": "https://github.com/cgisky1980/ai00-x-client",
+    "lastUpdated": "2026-11-20T08:55:34Z",
+    "stars": 5,
+    "forks": 2,
+    "watchers": 0
+  },
+  {
     "projectName": "RWKV-AgenticLearning",
     "repositoryUrl": "https://github.com/Fantasia-Infinity/RWKV-AgenticLearning",
     "lastUpdated": "2026-11-19T23:17:41Z",
     "stars": 0,
     "forks": 0,
+    "watchers": 0
+  },
+  {
+    "projectName": "RWKV-SearchReader",
+    "repositoryUrl": "https://github.com/w1c2j3/RWKV-SearchReader",
+    "lastUpdated": "2026-11-19T04:03:34Z",
+    "stars": 2,
+    "forks": 1,
     "watchers": 0
   },
   {
@@ -22,22 +46,6 @@
     "stars": 1,
     "forks": 0,
     "watchers": 1
-  },
-  {
-    "projectName": "dsh-rwkv-plugin",
-    "repositoryUrl": "https://github.com/No-22-Github/dsh-rwkv-plugin",
-    "lastUpdated": "2026-11-14T13:27:04Z",
-    "stars": 2,
-    "forks": 1,
-    "watchers": 0
-  },
-  {
-    "projectName": "ai00-x-client",
-    "repositoryUrl": "https://github.com/cgisky1980/ai00-x-client",
-    "lastUpdated": "2026-11-14T09:01:30Z",
-    "stars": 5,
-    "forks": 2,
-    "watchers": 0
   },
   {
     "projectName": "noesis",
@@ -102,14 +110,6 @@
     "stars": 0,
     "forks": 0,
     "watchers": 1
-  },
-  {
-    "projectName": "RWKV-SearchReader",
-    "repositoryUrl": "https://github.com/w1c2j3/RWKV-SearchReader",
-    "lastUpdated": "2026-10-19T08:49:31Z",
-    "stars": 2,
-    "forks": 1,
-    "watchers": 0
   },
   {
     "projectName": "rwkv-router",
@@ -363,7 +363,7 @@
     "projectName": "birdsnest",
     "repositoryUrl": "https://github.com/Dappit-io/birdsnest",
     "lastUpdated": "2026-03-06T22:53:02Z",
-    "stars": 21,
+    "stars": 18,
     "forks": 3,
     "watchers": 3
   },
