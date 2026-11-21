@@ -969,5 +969,456 @@
         "quote": "This repository supports all **15 combinations** of GDN / KDA / GDN2 / Mamba-2 / RWKV-7 and Random / PoST / DAMI through one training entry point."
       }
     ]
+  },
+  {
+    "repositoryUrl": "https://github.com/wh000wh000/awesome-jev-live",
+    "lastPushed": "2026-11-21T09:35:32Z",
+    "reviewedAt": "2026-11-21T11:10:46.585Z",
+    "commitSha": "4674319951c9ae11260f602afb3ceb2db972a007",
+    "reviewMethod": "readme",
+    "reviewStatus": "deferred",
+    "reason": "The supplied README is a self-described live index/awesome list of projects related to TypeSafe 'Jev' System One decision models, not an RWKV Agent application, framework, plugin, or tool-use training/evaluation project. It contains no mention of RWKV, and the described purpose (cataloguing Jev/System One SDKs, MCP tools, agents and models) is outside the RWKV Agent directory scope. However, because it is a broad index rather than a concrete project whose capabilities can be judged against Agent relevance, defer is used rather than exclude.",
+    "reasonLocalized": {
+      "en": "The supplied README is a self-described live index/awesome list of projects related to TypeSafe 'Jev' System One decision models, not an RWKV Agent application, framework, plugin, or tool-use training/evaluation project. It contains no mention of RWKV, and the described purpose (cataloguing Jev/System One SDKs, MCP tools, agents and models) is outside the RWKV Agent directory scope. However, because it is a broad index rather than a concrete project whose capabilities can be judged against Agent relevance, defer is used rather than exclude.",
+      "zh": "所提供的 README 是一个自称每两小时重建的“Jev”System One 决策模型相关项目索引/awesome 列表，并非 RWKV Agent 应用、框架、插件或工具使用训练/评测项目。文中未提及 RWKV，其描述的目的是编目 Jev/System One 的 SDK、MCP 工具、agent 和模型，超出 RWKV Agent 目录范围。但由于它是宽泛索引而非可据以判断 Agent 相关性的具体项目，故用 defer 而非 exclude。"
+    },
+    "evidence": []
+  },
+  {
+    "repositoryUrl": "https://github.com/enhansome/enhansome_ai_agents",
+    "lastPushed": "2026-11-21T08:59:26Z",
+    "reviewedAt": "2026-11-21T11:10:49.356Z",
+    "commitSha": "cda9c3551fe619622761d760df27d55d606ff84c",
+    "reviewMethod": "readme",
+    "reviewStatus": "deferred",
+    "reason": "The provided README is a general 'Awesome AI Agents' curated list of tools, frameworks, datasets, and projects. It does not clearly establish this project as an RWKV Agent application, framework, host-integrated plugin, or tool-use training/evaluation project, nor does it describe RWKV-specific agent capabilities. It is a broad directory rather than an RWKV agent project, so relevance cannot be confidently judged from the supplied excerpt.",
+    "reasonLocalized": {
+      "en": "The provided README is a general 'Awesome AI Agents' curated list of tools, frameworks, datasets, and projects. It does not clearly establish this project as an RWKV Agent application, framework, host-integrated plugin, or tool-use training/evaluation project, nor does it describe RWKV-specific agent capabilities. It is a broad directory rather than an RWKV agent project, so relevance cannot be confidently judged from the supplied excerpt.",
+      "zh": "所提供的 README 是一个通用的“Awesome AI Agents”精选工具、框架、数据集和项目清单，并未明确表明该项目属于 RWKV Agent 应用、框架、宿主集成插件，或 Agent 工具使用训练/评估项目，也未描述 RWKV 特定的 Agent 能力。它是一个广泛的目录而非 RWKV agent 项目，因此仅凭所提供片段无法自信判定其相关性。"
+    },
+    "evidence": []
+  },
+  {
+    "repositoryUrl": "https://github.com/Mesh-LLM/mesh-llm",
+    "lastPushed": "2026-11-21T10:57:39Z",
+    "reviewedAt": "2026-11-21T11:10:56.256Z",
+    "commitSha": "d7fae2d7ed1e4e90442a023fbbde00414d3477a1",
+    "reviewMethod": "readme",
+    "reviewStatus": "excluded",
+    "reason": "The README describes a distributed LLM compute mesh that pools GPUs/memory and exposes an OpenAI-compatible inference API, including an RWKV model family among supported runtime models. However, the project itself is inference infrastructure for chat and external agents, not an RWKV Agent application, framework, host-integrated plugin, or Agent tool-use training/evaluation project. Agent tool-calling is only mentioned as a property of the serving port, and external tools (Goose, OpenCode, Claude Code, Pi) are merely clients. The RWKV mention is a model-family support keyword, not an agentic purpose, so inclusion criteria are not met.",
+    "reasonLocalized": {
+      "en": "The README describes a distributed LLM compute mesh that pools GPUs/memory and exposes an OpenAI-compatible inference API, including an RWKV model family among supported runtime models. However, the project itself is inference infrastructure for chat and external agents, not an RWKV Agent application, framework, host-integrated plugin, or Agent tool-use training/evaluation project. Agent tool-calling is only mentioned as a property of the serving port, and external tools (Goose, OpenCode, Claude Code, Pi) are merely clients. The RWKV mention is a model-family support keyword, not an agentic purpose, so inclusion criteria are not met.",
+      "zh": "该 README 描述的是一个分布式 LLM 算力网格，汇聚多机 GPU/内存并对外提供 OpenAI 兼容推理 API，受支持的运行时模型族中包含 RWKV 一项。但项目本身是面向聊天与外部 Agent 的推理基础设施，并非 RWKV Agent 应用、框架、宿主集成插件，也不是 Agent 工具使用训练或评测项目。Agent 工具调用仅作为服务端口属性被提及，Goose、OpenCode、Claude Code、Pi 等只是外部客户端。RWKV 仅是模型族支持关键词，不构成智能体用途，故不符合收录条件。"
+    },
+    "evidence": [
+      {
+        "path": "README.md",
+        "quote": "Mesh LLM pools GPUs and memory across machines and exposes the result as one"
+      },
+      {
+        "path": "README.md",
+        "quote": "with 89 certified rows in the full parity inventory, including Qwen, Llama,"
+      },
+      {
+        "path": "README.md",
+        "quote": "The supported path for OpenAI clients in production — including tool"
+      },
+      {
+        "path": "README.md",
+        "quote": "| Use Goose, OpenCode, Claude Code, or Pi |"
+      }
+    ]
+  },
+  {
+    "repositoryUrl": "https://github.com/tayyabimam1/awesome-ai-agent-stack",
+    "lastPushed": "2026-11-21T05:31:43Z",
+    "reviewedAt": "2026-11-21T11:11:01.344Z",
+    "commitSha": "75936e5f98ccbd43ae8c6ecce77788d8f5708474",
+    "reviewMethod": "readme",
+    "reviewStatus": "excluded",
+    "reason": "The README describes a curated directory/awesome-list of thousands of external AI agent tools, ranked by GitHub stars and organized by stack layer. It is a link catalog, not an RWKV Agent application, framework, host-integrated plugin, or a project focused on Agent tool-use training or evaluation; it documents no RWKV support or agent capabilities of its own.",
+    "reasonLocalized": {
+      "en": "The README describes a curated directory/awesome-list of thousands of external AI agent tools, ranked by GitHub stars and organized by stack layer. It is a link catalog, not an RWKV Agent application, framework, host-integrated plugin, or a project focused on Agent tool-use training or evaluation; it documents no RWKV support or agent capabilities of its own.",
+      "zh": "该 README 描述的是一个精选目录/awesome 列表，收录数千个外部 AI 代理工具，按 GitHub 星标排序并按技术栈分层组织。它是一个链接目录，并非 RWKV 代理应用、框架、宿主集成插件，也不是专注于代理工具使用训练或评估的项目；它没有说明自身的 RWKV 支持或代理能力。"
+    },
+    "evidence": [
+      {
+        "path": "README.md",
+        "quote": "**6,000+ tools across 29 categories, ranked by GitHub stars.** Each section is split into sub-groups by what the tools do."
+      },
+      {
+        "path": "README.md",
+        "quote": "A curated, layer-by-layer map of the tools I actually use to build AI agents — from the coding agent in your terminal down to the model serving the tokens."
+      }
+    ]
+  },
+  {
+    "repositoryUrl": "https://github.com/w8mej/heimdall-enclave",
+    "lastPushed": "2026-11-20T19:54:21Z",
+    "reviewedAt": "2026-11-21T11:11:11.057Z",
+    "commitSha": "aaa4a9dffd9ab5c3eafcaa4ea456fce2deb4c8be",
+    "reviewMethod": "readme",
+    "reviewStatus": "deferred",
+    "reason": "The README describes a native MLX inference engine and hardware-attested zero-trust runtime for autonomous AI agents on Apple Silicon, and it explicitly lists RWKV-7 as one supported recurrent state-space model class. However, the documented RWKV-7 element is a model execution class and smoke-check receipt, not an Agent application, framework, host-integrated plugin, or Agent tool-use training/evaluation project. The README does not describe an RWKV-based Agent execution loop or RWKV Agent capabilities, so relevance to the RWKV Agent directory cannot be established from the supplied README alone.",
+    "reasonLocalized": {
+      "en": "The README describes a native MLX inference engine and hardware-attested zero-trust runtime for autonomous AI agents on Apple Silicon, and it explicitly lists RWKV-7 as one supported recurrent state-space model class. However, the documented RWKV-7 element is a model execution class and smoke-check receipt, not an Agent application, framework, host-integrated plugin, or Agent tool-use training/evaluation project. The README does not describe an RWKV-based Agent execution loop or RWKV Agent capabilities, so relevance to the RWKV Agent directory cannot be established from the supplied README alone.",
+      "zh": "该 README 描述的是面向 Apple Silicon 的 MLX 原生推理引擎与硬件证明零信任运行时，并明确列出 RWKV-7 为支持的循环状态空间模型类别之一。但文档中的 RWKV-7 部分仅为模型执行类别与冒烟测试回执，并非 Agent 应用、框架、宿主集成插件，或 Agent 工具使用训练/评估项目。README 未描述基于 RWKV 的 Agent 执行循环或 RWKV Agent 能力，因此仅凭所给 README 无法确定其与 RWKV Agent 目录的相关性。"
+    },
+    "evidence": [
+      {
+        "path": "README.md",
+        "quote": "| **Class 3** | `RECURRENT_SSM_TTT`              | RWKV-7 0.1B                    | `mlx_rwkv7_v1`     |      CPU       | **6.4 ms** (Runner state snapshots; IFC taint `Label { c: C1, t: T0 }`)     |"
+      }
+    ]
+  },
+  {
+    "repositoryUrl": "https://github.com/Anselm04/Ollama-Source-Code-Reference",
+    "lastPushed": "2026-11-19T21:53:44Z",
+    "reviewedAt": "2026-11-21T11:11:13.888Z",
+    "commitSha": "24e3fc9f414773728bd2cfb9fa07305ca7251986",
+    "reviewMethod": "readme",
+    "reviewStatus": "excluded",
+    "reason": "The supplied README is an Ollama inference-tool README (download/install, CLI, REST API, SDKs, and community integration listings). It does not describe an RWKV Agent application, framework, host-integrated plugin, or Agent tool-use training/evaluation project; RWKV appears only as a single line in a list of desktop chat clients. A keyword/list mention of an inference runner does not meet scope, so the project is clearly outside the RWKV Agent directory scope.",
+    "reasonLocalized": {
+      "en": "The supplied README is an Ollama inference-tool README (download/install, CLI, REST API, SDKs, and community integration listings). It does not describe an RWKV Agent application, framework, host-integrated plugin, or Agent tool-use training/evaluation project; RWKV appears only as a single line in a list of desktop chat clients. A keyword/list mention of an inference runner does not meet scope, so the project is clearly outside the RWKV Agent directory scope.",
+      "zh": "提供的 README 是 Ollama 推理工具的说明（下载安装、CLI、REST API、SDK 及社区集成列表）。它并未描述 RWKV Agent 应用、框架、宿主集成插件或 Agent 工具调用训练/评测项目；RWKV 仅在一份桌面聊天客户端列表中出现一行。仅作为推理运行器的关键词/列表提及不符合收录范围，因此该项目明显超出 RWKV Agent 目录范围。"
+    },
+    "evidence": [
+      {
+        "path": "README.md",
+        "quote": "- [RWKV-Runner](https://github.com/josStorer/RWKV-Runner) - Multi-model desktop runner"
+      },
+      {
+        "path": "README.md",
+        "quote": "Ollama has a REST API for running and managing models."
+      }
+    ]
+  },
+  {
+    "repositoryUrl": "https://github.com/karlesmarin/tafagent",
+    "lastPushed": "2026-11-19T21:13:44Z",
+    "reviewedAt": "2026-11-21T11:11:19.582Z",
+    "commitSha": "62df8a854f1260c89b0d3c1cc29683a46e5582d2",
+    "reviewMethod": "readme",
+    "reviewStatus": "excluded",
+    "reason": "The README describes a browser-based transformer LLM diagnostic/inspection tool (memory estimation, attention measurement, formula calculators, report import). RWKV appears only as a metadata tag and among other architecture keywords; the documented purpose and capabilities are model diagnostics and evidence comparison, not an RWKV Agent application, framework, plugin, or agent tool-use training/evaluation project.",
+    "reasonLocalized": {
+      "en": "The README describes a browser-based transformer LLM diagnostic/inspection tool (memory estimation, attention measurement, formula calculators, report import). RWKV appears only as a metadata tag and among other architecture keywords; the documented purpose and capabilities are model diagnostics and evidence comparison, not an RWKV Agent application, framework, plugin, or agent tool-use training/evaluation project.",
+      "zh": "该 README 描述的是一个基于浏览器的 Transformer 大语言模型诊断/检查工具（显存估算、注意力测量、公式计算、报告导入）。RWKV 仅出现在元数据标签中，并与其他架构关键词并列；文档说明的用途和能力是模型诊断与证据比较，而非 RWKV Agent 应用、框架、插件，或面向 Agent 工具使用的训练/评测项目。"
+    },
+    "evidence": [
+      {
+        "path": "README.md",
+        "quote": "Inspect model configuration, estimate resources and compare declared evidence."
+      },
+      {
+        "path": "README.md",
+        "quote": "The browser can generate commands. To run the measurement yourself:"
+      },
+      {
+        "path": "README.md",
+        "quote": "  - rwkv\n  - linear-attention"
+      }
+    ]
+  },
+  {
+    "repositoryUrl": "https://github.com/KalarisLabs/research-agent-skills",
+    "lastPushed": "2026-11-19T15:46:14Z",
+    "reviewedAt": "2026-11-21T11:11:34.181Z",
+    "commitSha": "a74b0dbe5fa865d73b9f250ba5b0c9f107bd1baa",
+    "reviewMethod": "readme",
+    "reviewStatus": "excluded",
+    "reason": "The README describes a library of research/academic agent skills (literature review, hypothesis generation, paper writing, citation verification, peer review) for harnesses like Claude Code, Codex, Cursor and Gemini CLI. It is a domain-specific skills collection, not an RWKV Agent application, framework, host-integrated RWKV plugin, or an RWKV Agent tool-use training/evaluation project; RWKV is never mentioned. The 'autoresearch' skill is a general supervised multi-step research loop, but nothing ties it to RWKV, so the project is outside the requested RWKV Agent directory scope.",
+    "reasonLocalized": {
+      "en": "The README describes a library of research/academic agent skills (literature review, hypothesis generation, paper writing, citation verification, peer review) for harnesses like Claude Code, Codex, Cursor and Gemini CLI. It is a domain-specific skills collection, not an RWKV Agent application, framework, host-integrated RWKV plugin, or an RWKV Agent tool-use training/evaluation project; RWKV is never mentioned. The 'autoresearch' skill is a general supervised multi-step research loop, but nothing ties it to RWKV, so the project is outside the requested RWKV Agent directory scope.",
+      "zh": "该 README 描述的是一个面向科研/学术的 agent 技能库（文献综述、假设生成、论文写作、引用核验、同行评审），可运行于 Claude Code、Codex、Cursor、Gemini CLI 等宿主。它是特定领域的技能集合，并非 RWKV Agent 应用、框架、宿主集成的 RWKV 插件，也不是 RWKV Agent 工具使用训练或评测项目；全文未提及 RWKV。其中的 'autoresearch' 技能只是通用的受监督多步研究循环，与 RWKV 无关，因此该项目不属于本 RWKV Agent 目录的收录范围。"
+    },
+    "evidence": [
+      {
+        "path": "README.md",
+        "quote": "**<!-- count -->280+<!-- /count --> open-source agent skills that take Claude Code, Codex, Cursor, Gemini CLI, Copilot or any Agent Skills harness from the research question to the accepted paper"
+      },
+      {
+        "path": "README.md",
+        "quote": "**Research Agent Skills**, maintained by **[Kalaris Labs](https://github.com/KalarisLabs)**, is a free, open-source library of\n[agent skills](https://agentskills.io) that gives your AI agent the methods of a careful scientist."
+      }
+    ]
+  },
+  {
+    "repositoryUrl": "https://github.com/pjsgo/agentic-nas-representation",
+    "lastPushed": "2026-11-19T15:09:34Z",
+    "reviewedAt": "2026-11-21T11:11:43.370Z",
+    "commitSha": "4c2d59823713fa1f9383c1cc300fb14c9ce9df50",
+    "reviewMethod": "readme",
+    "reviewStatus": "excluded",
+    "reason": "The README describes an architecture reconstruction and genealogy project that documents neural network computations in YAML and reimplements them in PyTorch. It covers 53 architectures, including RWKV as one entry, but it is not an RWKV Agent application, framework, plugin, or Agent tool-use training/evaluation project; the RWKV row only names a time-mixing core. No agent behavior, tool use, or execution loop is described.",
+    "reasonLocalized": {
+      "en": "The README describes an architecture reconstruction and genealogy project that documents neural network computations in YAML and reimplements them in PyTorch. It covers 53 architectures, including RWKV as one entry, but it is not an RWKV Agent application, framework, plugin, or Agent tool-use training/evaluation project; the RWKV row only names a time-mixing core. No agent behavior, tool use, or execution loop is described.",
+      "zh": "该 README 描述的是一个架构重建与谱系研究项目，用 YAML 记录神经网络计算并以 PyTorch 重新实现。它收录 53 个架构，其中 RWKV 只是其中一项，属于 time-mixing 核心，并非 RWKV Agent 应用、框架、插件或 Agent 工具使用训练/评测项目。README 未描述任何 Agent 行为、工具调用或执行循环。"
+    },
+    "evidence": [
+      {
+        "path": "README.md",
+        "quote": "**신경망 아키텍처의 핵심 계산을 YAML로 기술하고 PyTorch 코드로 구현했습니다.**"
+      },
+      {
+        "path": "README.md",
+        "quote": "| [RWKV](architectures/rwkv/README.md) | RWKV v4 time-mixing core, 안정화 WKV, 명시적 상태 이어 계산 |"
+      }
+    ]
+  },
+  {
+    "repositoryUrl": "https://github.com/M1n9X/llm_agents_devtools",
+    "lastPushed": "2026-11-19T03:47:54Z",
+    "reviewedAt": "2026-11-21T11:11:46.224Z",
+    "commitSha": "85044c865b85fe7d0bd717c37e422f9a21f95456",
+    "reviewMethod": "readme",
+    "reviewStatus": "excluded",
+    "reason": "This README is a broad curated list of LLM agents and developer tools covering many unrelated categories (coding assistants, IDEs, foundation models, LLMOps, search, etc.). It does not describe an RWKV Agent application, framework, host-integrated plugin, or Agent tool-use training/evaluation project; RWKV appears only as an incidental mention of a supported model among many (gpt_academic, LocalAI). It is outside the RWKV Agent directory scope.",
+    "reasonLocalized": {
+      "en": "This README is a broad curated list of LLM agents and developer tools covering many unrelated categories (coding assistants, IDEs, foundation models, LLMOps, search, etc.). It does not describe an RWKV Agent application, framework, host-integrated plugin, or Agent tool-use training/evaluation project; RWKV appears only as an incidental mention of a supported model among many (gpt_academic, LocalAI). It is outside the RWKV Agent directory scope.",
+      "zh": "该 README 是一份覆盖面很广的 LLM 智能体与开发者工具清单，包含编码助手、IDE、基础模型、LLMOps、搜索等众多无关类别。它并未描述 RWKV Agent 应用、框架、宿主集成插件或 Agent 工具使用训练/评测项目；RWKV 仅作为众多受支持模型之一被顺带提及（gpt_academic、LocalAI）。因此超出 RWKV Agent 目录范围。"
+    },
+    "evidence": [
+      {
+        "path": "README.md",
+        "quote": "This is a curated list of autonomous agents and developer tools powered by LLM."
+      },
+      {
+        "path": "README.md",
+        "quote": "- [gpt_academic](https://github.com/binary-husky/gpt_academic) - 为 ChatGPT/GLM 提供图形交互界面"
+      },
+      {
+        "path": "README.md",
+        "quote": "Runs ggml, gguf, GPTQ, onnx, TF compatible models: llama, llama2, gpt4all, rwkv, whisper"
+      }
+    ]
+  },
+  {
+    "repositoryUrl": "https://github.com/crit-labs/crit",
+    "lastPushed": "2026-11-20T12:25:09Z",
+    "reviewedAt": "2026-11-21T11:11:57.128Z",
+    "commitSha": "b0797a77eb4e98333b57c869640714d924d9160b",
+    "reviewMethod": "readme",
+    "reviewStatus": "excluded",
+    "reason": "The README presents crit as an agentic toolkit and MCP tool server that helps a coding agent build and optimize inference engines (runtime, kernels, plugins, evaluation). It documents agent-facing infrastructure and MCP command tools, but not an RWKV Agent application, framework, host-integrated plugin, or Agent tool-use training/evaluation project. The only RWKV mention is in a list of external kernel libraries (flash-linear-attention).",
+    "reasonLocalized": {
+      "en": "The README presents crit as an agentic toolkit and MCP tool server that helps a coding agent build and optimize inference engines (runtime, kernels, plugins, evaluation). It documents agent-facing infrastructure and MCP command tools, but not an RWKV Agent application, framework, host-integrated plugin, or Agent tool-use training/evaluation project. The only RWKV mention is in a list of external kernel libraries (flash-linear-attention).",
+      "zh": "该 README 将 crit 描述为帮助编程智能体构建和优化推理引擎（运行时、内核、插件、评测）的智能体工具包与 MCP 工具服务器。它记录的是面向智能体的基础设施和 MCP 命令工具，而不是 RWKV 智能体应用、框架、宿主集成插件，或智能体工具使用训练/评测项目。唯一提到 RWKV 的地方是外部内核库列表（flash-linear-attention）。"
+    },
+    "evidence": [
+      {
+        "path": "README.md",
+        "quote": "**Your coding agent builds the engine; `crit` gives it the runtime, the techniques, the kernels and the measurements.**"
+      },
+      {
+        "path": "README.md",
+        "quote": "### Agentic toolkit for building and optimizing high-performance inference engines tailored to your GPU and desired LLM."
+      },
+      {
+        "path": "README.md",
+        "quote": "`crit mcp` offers crit's command line to an agent as [MCP](https://modelcontextprotocol.io) tools, so an agent whose"
+      },
+      {
+        "path": "README.md",
+        "quote": "| [flash-linear-attention](https://github.com/fla-org/flash-linear-attention) | Chunked prefill and recurrent decode for gated delta, Mamba-style, RWKV and other linear attention |"
+      }
+    ]
+  },
+  {
+    "repositoryUrl": "https://github.com/zoefix/agent-speed",
+    "lastPushed": "2026-11-21T10:59:05Z",
+    "reviewedAt": "2026-11-21T11:12:00.369Z",
+    "commitSha": "5c02c971b6197b2a4cd23ae4e9259330a286f408",
+    "reviewMethod": "readme",
+    "reviewStatus": "excluded",
+    "reason": "Agent Speed is a real-time token-speed monitoring and usage dashboard for third-party coding agents (Codex, Claude Code, etc.). The README describes log-reading, metrics, UI orbs, and cost/network statistics; it is not an RWKV Agent application, Agent framework, host-integrated plugin, or Agent tool-use training/evaluation project. RWKV appears only as one of 17 cosmetic AI character skins, which is a keyword-only mention and not Agent functionality.",
+    "reasonLocalized": {
+      "en": "Agent Speed is a real-time token-speed monitoring and usage dashboard for third-party coding agents (Codex, Claude Code, etc.). The README describes log-reading, metrics, UI orbs, and cost/network statistics; it is not an RWKV Agent application, Agent framework, host-integrated plugin, or Agent tool-use training/evaluation project. RWKV appears only as one of 17 cosmetic AI character skins, which is a keyword-only mention and not Agent functionality.",
+      "zh": "Agent Speed 是一个面向第三方编码智能体（Codex、Claude Code 等）的实时 token 速度监控与用量看板。README 描述的是日志读取、指标统计、界面悬浮球以及成本/网络统计，并非 RWKV Agent 应用、Agent 框架、宿主集成插件或 Agent 工具调用训练/评测项目。RWKV 仅作为 17 个装饰性 AI 角色皮肤之一出现，属于关键词提及，不构成 Agent 能力。"
+    },
+    "evidence": [
+      {
+        "path": "README.md",
+        "quote": "**Feel your AI agents run.** A native racing instrument for the live token speed of Codex, Claude Code, Claude Desktop, DSH (DeepSeek Harness), OpenCode, Gemini CLI, omp, Antigravity, WorkBuddy, WorkBuddy AI, ZCode, Kimi Code CLI and Grok Build"
+      },
+      {
+        "path": "README.md",
+        "quote": "There are 17, one for each model maker: Claude, DeepSeek, Gemini, GLM, GPT, Grok, Hunyuan, JEV, Kimi, Llama, MiniMax, Mistral, Perplexity, Qwen, RWKV, Seed and Wenxin."
+      },
+      {
+        "path": "README.md",
+        "quote": "Agent Speed reads the transcripts your agents already write on your disk"
+      }
+    ]
+  },
+  {
+    "repositoryUrl": "https://github.com/hiiruki/omp-discord-presence",
+    "lastPushed": "2026-11-16T12:31:21Z",
+    "reviewedAt": "2026-11-21T11:12:03.695Z",
+    "commitSha": "ecd0c7d4ac6b8246a79e7d43f2531f17750d493f",
+    "reviewMethod": "readme",
+    "reviewStatus": "excluded",
+    "reason": "This is a Discord Rich Presence display extension for the omp coding agent; it only renders status, model, branch, and subagent counts to Discord. The README does not describe an RWKV Agent application, framework, host-integrated RWKV agent plugin, or agent tool-use training/evaluation project. RWKV appears only as one logo-matching rule for model ids containing 'rwkv' or '/eagle-', which is a keyword mention, not an Agent capability.",
+    "reasonLocalized": {
+      "en": "This is a Discord Rich Presence display extension for the omp coding agent; it only renders status, model, branch, and subagent counts to Discord. The README does not describe an RWKV Agent application, framework, host-integrated RWKV agent plugin, or agent tool-use training/evaluation project. RWKV appears only as one logo-matching rule for model ids containing 'rwkv' or '/eagle-', which is a keyword mention, not an Agent capability.",
+      "zh": "这是一个用于 omp 编程智能体的 Discord Rich Presence 展示扩展，仅将状态、模型、分支和子智能体数量渲染到 Discord。README 未描述 RWKV Agent 应用、框架、宿主集成的 RWKV Agent 插件，或 Agent 工具使用训练/评测项目。RWKV 仅作为一条 logo 匹配规则出现（匹配含 'rwkv' 或 '/eagle-' 的模型 id），属于关键词提及，不构成 Agent 能力。"
+    },
+    "evidence": [
+      {
+        "path": "README.md",
+        "quote": "| <img src=\"https://raw.githubusercontent.com/hiiruki/omp-discord-presence/main/assets/models/rwkv.png\" width=\"20\" height=\"20\" alt=\"\"> | `rwkv` | `rwkv`, `/eagle-` | 0 |"
+      },
+      {
+        "path": "README.md",
+        "quote": "Discord Rich Presence extension for omp (oh-my-pi) coding agent."
+      }
+    ]
+  },
+  {
+    "repositoryUrl": "https://github.com/bnreplah/DARM-ANMN-LLM",
+    "lastPushed": "2026-11-17T02:54:21Z",
+    "reviewedAt": "2026-11-21T11:12:07.793Z",
+    "commitSha": "b28e2f7ee9bde7578da7fa8ee9f7f7a33f5c73d0",
+    "reviewMethod": "readme",
+    "reviewStatus": "deferred",
+    "reason": "The README describes DARM-ANN-LLM as a distributed memory/mesh inference layer with a 'darm' virtual model that routes turns across mesh models by pheromone trails and recalls memories via a signed ledger, plus host commands for running external coding agents (Goose, OpenCode, Claude Code, Pi). It does document agent-adjacent behavior, but it is primarily a mesh inference/pooling and distributed-memory system; the README does not clearly describe an RWKV-based Agent application, framework, plugin, or Agent tool-use training/evaluation project, and RWKV appears only in a list of supported model families. The role of RWKV in the DARM agent behavior is not established by the README, so relevance cannot be judged with confidence.",
+    "reasonLocalized": {
+      "en": "The README describes DARM-ANN-LLM as a distributed memory/mesh inference layer with a 'darm' virtual model that routes turns across mesh models by pheromone trails and recalls memories via a signed ledger, plus host commands for running external coding agents (Goose, OpenCode, Claude Code, Pi). It does document agent-adjacent behavior, but it is primarily a mesh inference/pooling and distributed-memory system; the README does not clearly describe an RWKV-based Agent application, framework, plugin, or Agent tool-use training/evaluation project, and RWKV appears only in a list of supported model families. The role of RWKV in the DARM agent behavior is not established by the README, so relevance cannot be judged with confidence.",
+      "zh": "README 将 DARM-ANN-LLM 描述为分布式记忆/网格推理层，包含一个 `darm` 虚拟模型，按信息素轨迹在网格模型间路由请求并通过签名账本召回记忆，还提供运行外部编码代理（Goose、OpenCode、Claude Code、Pi）的主机命令。它确实记录了与代理相关的行为，但本质上是一个网格推理/算力池化与分布式记忆系统；README 没有清楚描述基于 RWKV 的代理应用、框架、插件或代理工具使用训练/评估项目，RWKV 仅出现在受支持模型家族列表中。README 未说明 RWKV 在 DARM 代理行为中的作用，因此无法有把握地判断相关性。"
+    },
+    "evidence": [
+      {
+        "path": "README.md",
+        "quote": "serves a **`darm` virtual model** that recalls relevant memories from a signed, distributed memory, routes the turn across the mesh's models by ant-colony **pheromone trails**, and learns from every outcome"
+      },
+      {
+        "path": "README.md",
+        "quote": "Falcon, RWKV, and many others."
+      },
+      {
+        "path": "README.md",
+        "quote": "| Use Goose, OpenCode, Claude Code, or Pi | `mesh-llm goose`, `mesh-llm opencode`, `mesh-llm claude`, `mesh-llm pi` | [docs/AGENTS.md](mesh/docs/AGENTS.md) |"
+      }
+    ]
+  },
+  {
+    "repositoryUrl": "https://github.com/oratis/AgenticThinking",
+    "lastPushed": "2026-11-16T04:45:00Z",
+    "reviewedAt": "2026-11-21T11:12:14.380Z",
+    "commitSha": "bcac469e1a0f536a5f08b467229f374724ac246a",
+    "reviewMethod": "readme",
+    "reviewStatus": "excluded",
+    "reason": "The README describes a lecture/slide series on AI Agent engineering practice rather than an Agent application, framework, plugin, or tool-use training/evaluation project. RWKV appears only as a topic in the lecture outline, and no Agent software or execution capabilities are documented.",
+    "reasonLocalized": {
+      "en": "The README describes a lecture/slide series on AI Agent engineering practice rather than an Agent application, framework, plugin, or tool-use training/evaluation project. RWKV appears only as a topic in the lecture outline, and no Agent software or execution capabilities are documented.",
+      "zh": "该 README 描述的是一套关于 AI Agent 工程实践的分享讲义/演示系列，而不是 Agent 应用、框架、插件，也不是工具使用训练或评测项目。RWKV 仅在讲义提纲中作为话题出现，且没有记录任何 Agent 软件或执行能力。"
+    },
+    "evidence": [
+      {
+        "path": "README.md",
+        "quote": "一个关于 **AI Agent 工程实践** 的分享系列。每一期都从第一性原理出发，配一个真实项目的案例。"
+      },
+      {
+        "path": "README.md",
+        "quote": "线性注意力与 RWKV / Mamba / 混合架构 →"
+      }
+    ]
+  },
+  {
+    "repositoryUrl": "https://github.com/WangRongsheng/awesome-LLM-resources",
+    "lastPushed": "2026-11-14T14:18:17Z",
+    "reviewedAt": "2026-11-21T11:12:18.140Z",
+    "commitSha": "7235cfcf12f02e30d1a6461c3058164adb5c2439",
+    "reviewMethod": "readme",
+    "reviewStatus": "deferred",
+    "reason": "The supplied README is a general awesome-list-style catalog of LLM resources spanning data, fine-tuning, inference, evaluation, RAG, agents, research, and more. It is an index of many separate projects rather than itself an RWKV Agent application, framework, host-integrated plugin, or a project focused on Agent tool-use training/evaluation. Nothing in the README references RWKV, and its own purpose is resource aggregation, so it is not clearly in scope as an RWKV Agent project, but it is also not clearly excluded since it catalogues agent-related projects. The README is too broad and vague with respect to the specific scope to make a confident include/exclude call.",
+    "reasonLocalized": {
+      "en": "The supplied README is a general awesome-list-style catalog of LLM resources spanning data, fine-tuning, inference, evaluation, RAG, agents, research, and more. It is an index of many separate projects rather than itself an RWKV Agent application, framework, host-integrated plugin, or a project focused on Agent tool-use training/evaluation. Nothing in the README references RWKV, and its own purpose is resource aggregation, so it is not clearly in scope as an RWKV Agent project, but it is also not clearly excluded since it catalogues agent-related projects. The README is too broad and vague with respect to the specific scope to make a confident include/exclude call.",
+      "zh": "提供的 README 是一个通用的 awesome-list 风格 LLM 资源目录，覆盖数据、微调、推理、评估、RAG、智能体、研究等，是对大量独立项目的索引，本身并非 RWKV Agent 应用、框架、宿主集成插件，也不是专注 Agent 工具使用训练/评估的项目。README 中没有任何 RWKV 相关内容，其自身定位是资源聚合，因此不能明确属于 RWKV Agent 项目范畴；但它确实收录了智能体相关项目，也不能明确排除。就特定范畴而言，README 过于宽泛模糊，无法做出有把握的 include/exclude 判断。"
+    },
+    "evidence": [
+      {
+        "path": "README.md",
+        "quote": "全世界最好的大语言模型资源汇总 持续更新"
+      },
+      {
+        "path": "README.md",
+        "quote": "此处命名为`数据`，但这里并没有提供具体数据集，而是提供了处理获取大规模数据的方法"
+      }
+    ]
+  },
+  {
+    "repositoryUrl": "https://github.com/Iron-LYK/Awesome-Embodied-Memory",
+    "lastPushed": "2026-11-14T07:21:33Z",
+    "reviewedAt": "2026-11-21T11:12:33.901Z",
+    "reviewMethod": "readme",
+    "reviewStatus": "deferred",
+    "reason": "Model output failed validation after 3 attempts: Model review was not valid JSON",
+    "invalidModelOutput": true
+  },
+  {
+    "repositoryUrl": "https://github.com/hagopjay/KeGG-KnowlEdgeGraphGrokker",
+    "lastPushed": "2026-11-13T07:43:50Z",
+    "reviewedAt": "2026-11-21T11:12:37.633Z",
+    "commitSha": "5aa29177e1d339b001308fc7939932e8eed8ed20",
+    "reviewMethod": "readme",
+    "reviewStatus": "excluded",
+    "reason": "The README presents a Rust-based knowledge-graph database and visualization/curation hub of graph and engineering guides; despite the repository description mentioning a coding-agent plugin, the supplied README does not describe any RWKV Agent application, framework, host-integrated plugin, or Agent tool-use training/evaluation purpose. RWKV appears only once as a node label inside a list of ML concepts, which is a mere keyword mention and does not qualify.",
+    "reasonLocalized": {
+      "en": "The README presents a Rust-based knowledge-graph database and visualization/curation hub of graph and engineering guides; despite the repository description mentioning a coding-agent plugin, the supplied README does not describe any RWKV Agent application, framework, host-integrated plugin, or Agent tool-use training/evaluation purpose. RWKV appears only once as a node label inside a list of ML concepts, which is a mere keyword mention and does not qualify.",
+      "zh": "README 展示的是一个基于 Rust 的知识图谱数据库及图分析和工程指南的可视化/汇编中心；尽管仓库描述提到编码智能体插件，但所供 README 未描述任何 RWKV Agent 应用、框架、宿主集成插件或 Agent 工具使用训练/评估目的。RWKV 仅在机器学习概念列表的节点标签中出现一次，属于单纯的关键词提及，不符合收录条件。"
+    },
+    "evidence": [
+      {
+        "path": "README.md",
+        "quote": "Native Rust based Knowledge Database with bespoke, real-time Visual outputs  multi formatted / structured."
+      },
+      {
+        "path": "README.md",
+        "quote": "Interactive 3D knowledge graph visualizer for 2,081 machine learning and mathematics concepts with 5,149 prerequisite edges."
+      },
+      {
+        "path": "README.md",
+        "quote": "\"Sequence-to-Sequence\", \"Transformer\", \"S4\", \"Mamba\", \"RWKV\", \"RetNet\", \"Hyena\""
+      }
+    ]
+  },
+  {
+    "repositoryUrl": "https://github.com/uhub/awesome-agent",
+    "lastPushed": "2026-11-10T15:47:53Z",
+    "reviewedAt": "2026-11-21T11:12:41.427Z",
+    "commitSha": "f2676b9d8565e5f6eb6b4797668a695c15c96444",
+    "reviewMethod": "readme",
+    "reviewStatus": "excluded",
+    "reason": "The supplied README is a general curated 'awesome' index of AI Agent frameworks, libraries, and software. It contains one-line links across many categories and does not describe a single RWKV Agent application, framework, host plugin, or tool-use training/evaluation project. The one RWKV-related entry (Ai00-X/ai00_server, described as 'The all-in-one RWKV runtime box with embed, RAG, AI agents, and more') is only a brief one-line mention within an inference-runtime category, without a README-level description of Agent capabilities. This does not meet the scope threshold.",
+    "reasonLocalized": {
+      "en": "The supplied README is a general curated 'awesome' index of AI Agent frameworks, libraries, and software. It contains one-line links across many categories and does not describe a single RWKV Agent application, framework, host plugin, or tool-use training/evaluation project. The one RWKV-related entry (Ai00-X/ai00_server, described as 'The all-in-one RWKV runtime box with embed, RAG, AI agents, and more') is only a brief one-line mention within an inference-runtime category, without a README-level description of Agent capabilities. This does not meet the scope threshold.",
+      "zh": "提供的 README 是一个通用的 AI Agent 框架、库和软件精选索引，按多个分类罗列单行链接，并未描述单一 RWKV Agent 应用、框架、宿主集成插件或面向 Agent 工具调用训练/评估的项目。唯一与 RWKV 相关的条目（Ai00-X/ai00_server，描述为“The all-in-one RWKV runtime box with embed, RAG, AI agents, and more”）只是推理运行时分类下的一行简短提及，缺少 README 层面对 Agent 能力的描述，不满足收录门槛。"
+    },
+    "evidence": [
+      {
+        "path": "README.md",
+        "quote": "A curated list of awesome AI Agent frameworks, libraries and software."
+      },
+      {
+        "path": "README.md",
+        "quote": "* [Ai00-X/ai00_server](https://github.com/Ai00-X/ai00_server) - The all-in-one RWKV runtime box with embed, RAG, AI agents, and more."
+      }
+    ]
+  },
+  {
+    "repositoryUrl": "https://github.com/Zn-Cu1207/Zn-Cu1207",
+    "lastPushed": "2026-11-10T08:21:18Z",
+    "reviewedAt": "2026-11-21T11:12:45.883Z",
+    "commitSha": "07930cf6578d4ae645b753a7adfdacb1360b97c7",
+    "reviewMethod": "readme",
+    "reviewStatus": "deferred",
+    "reason": "The supplied README is a personal profile page, not a project README. It mentions interest in AI agents and RWKV among studied architectures, but it does not describe any RWKV Agent application, framework, plugin, or tool-use training/evaluation project with concrete, current capabilities. Since the README is largely a bio rather than a clearly scoped project, defer rather than exclude.",
+    "reasonLocalized": {
+      "en": "The supplied README is a personal profile page, not a project README. It mentions interest in AI agents and RWKV among studied architectures, but it does not describe any RWKV Agent application, framework, plugin, or tool-use training/evaluation project with concrete, current capabilities. Since the README is largely a bio rather than a clearly scoped project, defer rather than exclude.",
+      "zh": "提供的 README 是个人简介页面而非项目 README。它提到对 AI 智能体的兴趣，并将 RWKV 列为研究过的架构之一，但并未描述任何具有具体、当前能力的 RWKV 智能体应用、框架、插件或工具使用训练/评估项目。由于 README 主要是个人简介而非范围明确的项目，因此选择 defer 而非 exclude。"
+    },
+    "evidence": []
   }
 ]
